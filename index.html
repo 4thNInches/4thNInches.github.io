@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4th and Inches</title>
+<meta name="description" content="12-team dynasty of a fantasy football league. 10+ seasons deep. Now on Sleeper.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="#top">
+      <img src="assets/logo.png" alt="4th and Inches logo" class="logo" onerror="this.style.display='none'">
+      <span>4th &amp; Inches</span>
+    </a>
+    <nav class="primary-nav">
+      <a href="#standings">Standings</a>
+      <a href="#stats">Stats</a>
+      <a href="#history">History</a>
+      <a href="#feed">Feed</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Est. 2015&nbsp;&middot;&nbsp;12 Teams&nbsp;&middot;&nbsp;Now on Sleeper</p>
+      <h1 class="hero-title">Every season<br>comes down<br>to inches.</h1>
+      <p class="hero-sub">The official home of the <strong>4th &amp; Inches</strong> fantasy football league — standings, stats, records, and the receipts nobody asked for.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#standings">See the standings</a>
+        <a class="btn btn-ghost" href="#feed">Live feed (soon)</a>
+      </div>
+    </div>
+
+    <!-- signature element: the measuring chain -->
+    <div class="chain" role="presentation" aria-hidden="true">
+      <div class="chain-track">
+        <div class="chain-fill"></div>
+        <span class="chain-tick" style="left:0%"></span>
+        <span class="chain-tick" style="left:10%"></span>
+        <span class="chain-tick" style="left:20%"></span>
+        <span class="chain-tick" style="left:30%"></span>
+        <span class="chain-tick" style="left:40%"></span>
+        <span class="chain-tick" style="left:50%"></span>
+        <span class="chain-tick" style="left:60%"></span>
+        <span class="chain-tick" style="left:70%"></span>
+        <span class="chain-tick" style="left:80%"></span>
+        <span class="chain-tick" style="left:90%"></span>
+        <span class="chain-tick" style="left:100%"></span>
+        <div class="chain-marker" style="left:76%">
+          <span class="chain-marker-label">1ST &amp; 10</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAGUE VITALS -->
+  <section class="vitals">
+    <div class="wrap vitals-grid">
+      <div class="vital">
+        <span class="vital-num">12</span>
+        <span class="vital-label">Teams</span>
+      </div>
+      <div class="vital">
+        <span class="vital-num">10+</span>
+        <span class="vital-label">Seasons</span>
+      </div>
+      <div class="vital">
+        <span class="vital-num">1<sup>st</sup></span>
+        <span class="vital-label">Year on Sleeper</span>
+      </div>
+      <div class="vital">
+        <span class="vital-num">&infin;</span>
+        <span class="vital-label">Grudges</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STANDINGS -->
+  <section id="standings" class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="down-tag">2ND &amp; 7</span>
+        <h2>Standings</h2>
+      </div>
+      <div class="card placeholder-card">
+        <p class="placeholder-kicker">Data feed not yet connected</p>
+        <p>This is where the live Sleeper standings table will render — record, points for/against, streak, and playoff seed, updated automatically. Once the league's Sleeper league ID is wired in, this card becomes a real, sortable table.</p>
+        <code class="snippet">GET https://api.sleeper.app/v1/league/&lt;league_id&gt;/rosters</code>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats" class="block block-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="down-tag">3RD &amp; LONG</span>
+        <h2>League Stats</h2>
+      </div>
+      <div class="stat-grid">
+        <div class="card">
+          <p class="placeholder-kicker">Highest single-week score</p>
+          <p class="placeholder-value">— pts</p>
+        </div>
+        <div class="card">
+          <p class="placeholder-kicker">Closest margin ever</p>
+          <p class="placeholder-value">— pts</p>
+        </div>
+        <div class="card">
+          <p class="placeholder-kicker">Longest win streak</p>
+          <p class="placeholder-value">— games</p>
+        </div>
+        <div class="card">
+          <p class="placeholder-kicker">Most championships</p>
+          <p class="placeholder-value">— titles</p>
+        </div>
+      </div>
+      <p class="hint">These four cards are built to drop in real numbers from your Yahoo-era Python scripts once they're pointed at Sleeper.</p>
+    </div>
+  </section>
+
+  <!-- HISTORY -->
+  <section id="history" class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="down-tag">4TH &amp; GOAL</span>
+        <h2>Championship History</h2>
+      </div>
+      <div class="card placeholder-card">
+        <p class="placeholder-kicker">10+ seasons of receipts, not yet loaded</p>
+        <p>A season-by-season list of champions, runner-ups, and the league's all-time draft-bust hall of shame belongs here. Perfect place to pull from the archived Yahoo data while Sleeper only has this year on record.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEED -->
+  <section id="feed" class="block block-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="down-tag">4TH &amp; INCHES</span>
+        <h2>Live Feed</h2>
+      </div>
+      <div class="card placeholder-card feed-card">
+        <p class="placeholder-kicker">Coming soon</p>
+        <p>Weekly recaps, waiver-wire moves, and the data-driven meme of the week will post here once the Sleeper pipeline is live.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>4th &amp; Inches Fantasy Football League</span>
+    <span class="footer-dim">Built by the commissioner. Powered by Sleeper.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
