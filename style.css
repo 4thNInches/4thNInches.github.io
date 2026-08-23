@@ -517,6 +517,33 @@ a { color: inherit; }
   display: block;
 }
 
+.standings-team-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.standings-team-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.standings-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--field);
+  border: 1px solid var(--field-line);
+}
+
+.standings-avatar-empty {
+  display: inline-block;
+  background: var(--field);
+  border: 1px solid var(--field-line);
+}
+
 .standings-manager {
   display: block;
   font-family: var(--font-mono);

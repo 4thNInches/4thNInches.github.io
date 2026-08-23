@@ -33,10 +33,12 @@ async function loadStandings(leagueId) {
     const user = usersById[r.owner_id] || {};
     const teamName = (user.metadata && user.metadata.team_name) || user.display_name || "Unclaimed team";
     const managerName = user.display_name || "\u2014";
+    const avatarId = (user.metadata && user.metadata.avatar) || user.avatar || null;
     const settings = r.settings || {};
     return {
       teamName,
       managerName,
+      avatarId,
       wins: settings.wins || 0,
       losses: settings.losses || 0,
       ties: settings.ties || 0,
@@ -53,8 +55,13 @@ async function loadStandings(leagueId) {
     <tr>
       <td class="standings-rank">${i + 1}</td>
       <td>
-        <span class="standings-team">${escapeHtml(row.teamName)}</span>
-        <span class="standings-manager">${escapeHtml(row.managerName)}</span>
+        <span class="standings-team-cell">
+          ${avatarImg(row.avatarId, row.teamName)}
+          <span class="standings-team-text">
+            <span class="standings-team">${escapeHtml(row.teamName)}</span>
+            <span class="standings-manager">${escapeHtml(row.managerName)}</span>
+          </span>
+        </span>
       </td>
       <td class="standings-record">${row.wins}-${row.losses}${row.ties ? `-${row.ties}` : ""}</td>
       <td class="standings-pts">${row.pointsFor.toFixed(1)}</td>
@@ -77,6 +84,14 @@ async function loadStandings(leagueId) {
       <tbody>${bodyRows}</tbody>
     </table>
   `;
+}
+
+function avatarImg(avatarId, teamName) {
+  if (!avatarId) {
+    return `<span class="standings-avatar standings-avatar-empty" aria-hidden="true"></span>`;
+  }
+  const url = `https://sleepercdn.com/avatars/thumbs/${avatarId}`;
+  return `<img class="standings-avatar" src="${url}" alt="" loading="lazy" onerror="this.classList.add('standings-avatar-empty'); this.removeAttribute('src');">`;
 }
 
 function pointsFromSettings(whole, decimal) {
