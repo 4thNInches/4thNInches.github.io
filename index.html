@@ -122,7 +122,7 @@
         </div>
         <div class="card">
           <p class="placeholder-kicker">Most championships</p>
-          <p class="placeholder-value">— titles</p>
+          <p class="placeholder-value" id="most-titles-value">— titles</p>
         </div>
       </div>
       <p class="hint">These four cards are built to drop in real numbers from your Yahoo-era Python scripts once they're pointed at Sleeper.</p>
@@ -136,9 +136,11 @@
         <span class="down-tag">4TH &amp; GOAL</span>
         <h2>Championship History</h2>
       </div>
-      <div class="card placeholder-card">
-        <p class="placeholder-kicker">10+ seasons of receipts, not yet loaded</p>
-        <p>A season-by-season list of champions, runner-ups, and the league's all-time draft-bust hall of shame belongs here. Perfect place to pull from the archived Yahoo data while Sleeper only has this year on record.</p>
+      <div class="card champs-card">
+        <p class="placeholder-kicker">2015&ndash;2025 &middot; Yahoo era</p>
+        <div id="champs-table" class="champs-table" role="table" aria-label="Championship history">
+          <p class="loading-msg">Loading history&hellip;</p>
+        </div>
       </div>
     </div>
   </section>
