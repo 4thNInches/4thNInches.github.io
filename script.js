@@ -1,7 +1,89 @@
 // 4th & Inches — site script
 
+const SLEEPER_LEAGUE_ID = "1392229432336347136";
+
 const PLACE_LABEL = { first: "1st", second: "2nd", third: "3rd" };
 const PLACE_ICON = { first: "\u{1F3C6}", second: "\u{1F948}", third: "\u{1F949}" };
+
+async function loadStandings(leagueId) {
+  const container = document.getElementById("standings-table");
+  if (!container) return;
+
+  let rosters, users;
+  try {
+    [rosters, users] = await Promise.all([
+      fetch(`https://api.sleeper.app/v1/league/${leagueId}/rosters`).then(r => {
+        if (!r.ok) throw new Error(`rosters HTTP ${r.status}`);
+        return r.json();
+      }),
+      fetch(`https://api.sleeper.app/v1/league/${leagueId}/users`).then(r => {
+        if (!r.ok) throw new Error(`users HTTP ${r.status}`);
+        return r.json();
+      }),
+    ]);
+  } catch (err) {
+    container.innerHTML = `<p class="loading-msg">Couldn't load standings from Sleeper (${err.message}). Sleeper's API is public and needs no auth, so this is usually a temporary network issue — try refreshing.</p>`;
+    return;
+  }
+
+  const usersById = {};
+  users.forEach(u => { usersById[u.user_id] = u; });
+
+  const rows = rosters.map(r => {
+    const user = usersById[r.owner_id] || {};
+    const teamName = (user.metadata && user.metadata.team_name) || user.display_name || "Unclaimed team";
+    const managerName = user.display_name || "\u2014";
+    const settings = r.settings || {};
+    return {
+      teamName,
+      managerName,
+      wins: settings.wins || 0,
+      losses: settings.losses || 0,
+      ties: settings.ties || 0,
+      pointsFor: pointsFromSettings(settings.fpts, settings.fpts_decimal),
+      pointsAgainst: pointsFromSettings(settings.fpts_against, settings.fpts_against_decimal),
+    };
+  });
+
+  rows.sort((a, b) => (b.wins - a.wins) || (b.pointsFor - a.pointsFor));
+
+  const allZero = rows.every(row => row.wins === 0 && row.losses === 0 && row.ties === 0);
+
+  const bodyRows = rows.map((row, i) => `
+    <tr>
+      <td class="standings-rank">${i + 1}</td>
+      <td>
+        <span class="standings-team">${escapeHtml(row.teamName)}</span>
+        <span class="standings-manager">${escapeHtml(row.managerName)}</span>
+      </td>
+      <td class="standings-record">${row.wins}-${row.losses}${row.ties ? `-${row.ties}` : ""}</td>
+      <td class="standings-pts">${row.pointsFor.toFixed(1)}</td>
+      <td class="standings-pts">${row.pointsAgainst.toFixed(1)}</td>
+    </tr>
+  `).join("");
+
+  container.innerHTML = `
+    ${allZero ? `<p class="loading-msg standings-note">Preseason \u2014 records are 0-0 until Week 1 kicks off.</p>` : ""}
+    <table class="standings-real-table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Team</th>
+          <th scope="col">Record</th>
+          <th scope="col">PF</th>
+          <th scope="col">PA</th>
+        </tr>
+      </thead>
+      <tbody>${bodyRows}</tbody>
+    </table>
+  `;
+}
+
+function pointsFromSettings(whole, decimal) {
+  const w = whole || 0;
+  const d = decimal || 0;
+  return w + d / 100;
+}
 
 async function loadChampions() {
   const container = document.getElementById("champs-table");
@@ -70,11 +152,14 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-document.addEventListener("DOMContentLoaded", loadChampions);
+document.addEventListener("DOMContentLoaded", () => {
+  loadStandings(SLEEPER_LEAGUE_ID);
+  loadChampions();
+});
 
-// Below: nothing live yet for standings/stats/feed. This is the spot where
-// Sleeper data will get fetched and dropped into the remaining placeholder
-// cards in index.html (#standings, #feed, and the other #stats cards).
+// Below: nothing live yet for weekly stats or the feed. This is the spot
+// where those get fetched and dropped into the remaining placeholder cards
+// in index.html (#stats cards, #feed).
 //
 // Sleeper's API is public and read-only, no auth needed:
 //   https://api.sleeper.app/v1/league/<league_id>

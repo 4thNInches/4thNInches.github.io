@@ -464,6 +464,73 @@ a { color: inherit; }
   margin-top: 2px;
 }
 
+/* ---------- live standings table ---------- */
+.standings-card {
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.standings-note {
+  color: var(--marker);
+  margin-bottom: 16px;
+}
+
+.standings-real-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+.standings-real-table thead th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--chalk-dim);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--field-line);
+}
+
+.standings-real-table tbody tr {
+  border-bottom: 1px solid var(--field-line);
+  transition: background 0.15s ease;
+}
+
+.standings-real-table tbody tr:hover {
+  background: rgba(244, 241, 232, 0.03);
+}
+
+.standings-real-table td {
+  padding: 14px;
+  vertical-align: top;
+}
+
+.standings-rank {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--brass);
+}
+
+.standings-team {
+  font-weight: 500;
+  display: block;
+}
+
+.standings-manager {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--chalk-dim);
+  margin-top: 2px;
+}
+
+.standings-record,
+.standings-pts {
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
 /* ---------- footer ---------- */
 .site-footer {
   border-top: 1px solid var(--field-line);

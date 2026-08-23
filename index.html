@@ -92,10 +92,11 @@
         <span class="down-tag">2ND &amp; 7</span>
         <h2>Standings</h2>
       </div>
-      <div class="card placeholder-card">
-        <p class="placeholder-kicker">Data feed not yet connected</p>
-        <p>This is where the live Sleeper standings table will render — record, points for/against, streak, and playoff seed, updated automatically. Once the league's Sleeper league ID is wired in, this card becomes a real, sortable table.</p>
-        <code class="snippet">GET https://api.sleeper.app/v1/league/&lt;league_id&gt;/rosters</code>
+      <div class="card standings-card">
+        <p class="placeholder-kicker">Live from Sleeper</p>
+        <div id="standings-table" class="standings-table" role="table" aria-label="League standings">
+          <p class="loading-msg">Loading standings&hellip;</p>
+        </div>
       </div>
     </div>
   </section>
