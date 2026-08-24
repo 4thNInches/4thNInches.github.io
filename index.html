@@ -129,7 +129,15 @@
       <p class="hint">These four cards are built to drop in real numbers from your Yahoo-era Python scripts once they're pointed at Sleeper.</p>
   
         <div class="card ticker-card">
-          <p class="placeholder-kicker">League fact of the moment</p>
+          <div class="ticker-head">
+            <p class="placeholder-kicker">League fact of the moment</p>
+            <div class="play-clock" id="play-clock" aria-hidden="true">
+              <span class="play-clock-digit" id="play-clock-digit">6</span>
+              <span class="play-clock-bar-track">
+                <span class="play-clock-bar-fill" id="play-clock-bar"></span>
+              </span>
+            </div>
+          </div>
           <p id="ticker-text" class="ticker-text">Loading a fact&hellip;</p>
         </div>
     </div>

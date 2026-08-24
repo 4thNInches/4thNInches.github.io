@@ -392,6 +392,74 @@ a { color: inherit; }
   margin-top: 16px;
 }
 
+.ticker-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ticker-head .placeholder-kicker {
+  margin-bottom: 0;
+}
+
+/* ---------- play clock (fact ticker countdown) ---------- */
+.play-clock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.play-clock-digit {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--marker);
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--marker-dim);
+  border-radius: 4px;
+  padding: 4px 9px;
+  min-width: 1.4em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 8px var(--marker-dim);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.play-clock-bar-track {
+  width: 56px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--field-line);
+  overflow: hidden;
+}
+
+.play-clock-bar-fill {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--marker);
+  transform-origin: left center;
+  transform: scaleX(1);
+}
+
+/* brief "snap" flash the instant the clock hits zero */
+.play-clock.is-kicking .play-clock-digit {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 0 14px var(--marker);
+  color: var(--brass);
+  border-color: var(--brass);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .play-clock-bar-fill { transition: none !important; }
+  .play-clock-digit { transition: none !important; }
+}
+
 .ticker-text {
   min-height: 3.2em;
   margin: 0;

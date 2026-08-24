@@ -120,6 +120,42 @@ async function loadChampions() {
 
 const TICKER_ROTATE_MS = 6000;
 const TICKER_FADE_MS = 350;
+const TICKER_ROTATE_SECONDS = Math.round(TICKER_ROTATE_MS / 1000);
+
+let playClockInterval = null;
+
+function resetPlayClock() {
+  const clock = document.getElementById("play-clock");
+  const digit = document.getElementById("play-clock-digit");
+  const bar = document.getElementById("play-clock-bar");
+  if (!clock || !digit || !bar) return;
+
+  clock.classList.remove("is-kicking");
+  clearInterval(playClockInterval);
+
+  let remaining = TICKER_ROTATE_SECONDS;
+  digit.textContent = remaining;
+
+  // Restart the drain bar: snap it back to full with no transition, force a
+  // reflow so the browser registers that reset, then re-enable the
+  // transition and animate to empty over the full interval in one go.
+  bar.style.transition = "none";
+  bar.style.transform = "scaleX(1)";
+  void bar.offsetWidth;
+  bar.style.transition = `transform ${TICKER_ROTATE_SECONDS}s linear`;
+  bar.style.transform = "scaleX(0)";
+
+  playClockInterval = setInterval(() => {
+    remaining -= 1;
+    if (remaining <= 0) {
+      clearInterval(playClockInterval);
+      digit.textContent = "0";
+      clock.classList.add("is-kicking");
+    } else {
+      digit.textContent = remaining;
+    }
+  }, 1000);
+}
 
 async function loadTicker() {
   const el = document.getElementById("ticker-text");
@@ -168,6 +204,7 @@ async function loadTicker() {
       el.textContent = fact.text;
       el.classList.remove("is-swapping");
     }, TICKER_FADE_MS);
+    resetPlayClock();
   }
 
   showFact();
@@ -222,11 +259,6 @@ function escapeHtml(str) {
   div.textContent = str;
   return div.innerHTML;
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  loadStandings(SLEEPER_LEAGUE_ID);
-  loadChampions();
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   loadStandings(SLEEPER_LEAGUE_ID);
