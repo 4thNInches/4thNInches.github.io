@@ -118,6 +118,62 @@ async function loadChampions() {
   renderMostTitles(seasons);
 }
 
+const TICKER_ROTATE_MS = 6000;
+const TICKER_FADE_MS = 350;
+
+async function loadTicker() {
+  const el = document.getElementById("ticker-text");
+  if (!el) return;
+
+  let facts;
+  try {
+    const res = await fetch("data/facts.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    facts = await res.json();
+  } catch (err) {
+    el.textContent = `Couldn't load league facts (${err.message}).`;
+    return;
+  }
+
+  if (!Array.isArray(facts) || facts.length === 0) {
+    el.textContent = "No league facts yet.";
+    return;
+  }
+
+  const byCategory = {};
+  facts.forEach(f => {
+    (byCategory[f.category] = byCategory[f.category] || []).push(f);
+  });
+  const categories = Object.keys(byCategory);
+
+  let lastId = null;
+
+  function pickFact() {
+    // category first, then a fact within it -- keeps rare categories from
+    // getting drowned out by ones with hundreds of entries (e.g. head-to-head)
+    for (let attempt = 0; attempt < 8; attempt++) {
+      const cat = categories[Math.floor(Math.random() * categories.length)];
+      const pool = byCategory[cat];
+      const fact = pool[Math.floor(Math.random() * pool.length)];
+      if (fact.id !== lastId || facts.length === 1) return fact;
+    }
+    return facts[Math.floor(Math.random() * facts.length)];
+  }
+
+  function showFact() {
+    const fact = pickFact();
+    lastId = fact.id;
+    el.classList.add("is-swapping");
+    setTimeout(() => {
+      el.textContent = fact.text;
+      el.classList.remove("is-swapping");
+    }, TICKER_FADE_MS);
+  }
+
+  showFact();
+  setInterval(showFact, TICKER_ROTATE_MS);
+}
+
 function renderChampsTable(container, seasons) {
   const rows = seasons.map(s => `
     <tr>
@@ -170,6 +226,12 @@ function escapeHtml(str) {
 document.addEventListener("DOMContentLoaded", () => {
   loadStandings(SLEEPER_LEAGUE_ID);
   loadChampions();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadStandings(SLEEPER_LEAGUE_ID);
+  loadChampions();
+  loadTicker();
 });
 
 // Below: nothing live yet for weekly stats or the feed. This is the spot
