@@ -388,6 +388,26 @@ a { color: inherit; }
   color: var(--chalk-dim);
 }
 
+.ticker-card {
+  margin-top: 16px;
+}
+
+.ticker-text {
+  min-height: 3.2em;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--chalk);
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.ticker-text.is-swapping {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
 .feed-card {
   max-width: 62ch;
 }
