@@ -118,7 +118,7 @@ async function loadChampions() {
   renderMostTitles(seasons);
 }
 
-const TICKER_ROTATE_MS = 8000;
+const TICKER_ROTATE_MS = 10000;
 const TICKER_FADE_MS = 500;
 const TICKER_ROTATE_SECONDS = Math.round(TICKER_ROTATE_MS / 1000);
 
