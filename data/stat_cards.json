@@ -1,0 +1,78 @@
+{
+  "highest_scores": [
+    {
+      "text": "230.42 pts (Injury Prone, Wk 6, 2018)",
+      "value": 230.42
+    },
+    {
+      "text": "228.14 pts (49ers Resurge, Wk 5, 2019)",
+      "value": 228.14
+    },
+    {
+      "text": "221.32 pts (Bob’s Best, Wk 2, 2024)",
+      "value": 221.32
+    }
+  ],
+  "closest_margins": [
+    {
+      "text": "0.08 pt margin (Big Dumb Sports 129.60 - 129.52 Free Radicals, Wk 13, 2022)",
+      "value": 0.08
+    },
+    {
+      "text": "0.08 pt margin (Hello....Newman 115.00 - 114.92 Jake From State Farm, Wk 17, 2022)",
+      "value": 0.08
+    },
+    {
+      "text": "0.14 pt margin (Free Radicals 139.96 - 139.82 Jake From State Farm, Wk 14, 2020)",
+      "value": 0.14
+    }
+  ],
+  "longest_streaks": [
+    {
+      "text": "Anthony — 13-game win streak (Season 2024 Wk 2 – Season 2024 Wk 14)",
+      "value": 13
+    },
+    {
+      "text": "Nick — 11-game win streak (Season 2019 Wk 14 – Season 2020 Wk 8)",
+      "value": 11
+    },
+    {
+      "text": "Jamie — 10-game win streak (Season 2022 Wk 7 – Season 2022 Wk 17)",
+      "value": 10
+    }
+  ],
+  "most_championships": [
+    {
+      "rank_label": "T1",
+      "managers": [
+        "Nick",
+        "Jamie",
+        "Bill M"
+      ],
+      "text": "T1: Nick, 2 ('15, '19), Jamie, 2 ('17, '22), Bill M, 2 ('21, '24)"
+    }
+  ],
+  "medal_count": [
+    {
+      "manager": "Nick",
+      "golds": 2,
+      "silvers": 3,
+      "bronzes": 2,
+      "emoji_string": "🏆🏆🥈🥈🥈🥉🥉"
+    },
+    {
+      "manager": "Bill M",
+      "golds": 2,
+      "silvers": 0,
+      "bronzes": 1,
+      "emoji_string": "🏆🏆🥉"
+    },
+    {
+      "manager": "Jamie",
+      "golds": 2,
+      "silvers": 0,
+      "bronzes": 0,
+      "emoji_string": "🏆🏆"
+    }
+  ]
+}
