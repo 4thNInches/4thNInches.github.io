@@ -281,7 +281,12 @@ function renderTextStatList(elId, entries) {
     el.innerHTML = `<li class="stat-list-loading">No data yet.</li>`;
     return;
   }
-  el.innerHTML = entries.map(e => `<li>${escapeHtml(e.text)}</li>`).join("");
+  el.innerHTML = entries.map(e => {
+    if (e.headline) {
+      return `<li><strong class="stat-headline">${escapeHtml(e.headline)}</strong> ${escapeHtml(e.detail || "")}</li>`;
+    }
+    return `<li>${escapeHtml(e.text)}</li>`;
+  }).join("");
 }
 
 async function loadLifetimeStandings() {
@@ -304,7 +309,7 @@ async function loadLifetimeStandings() {
   }
 
   const bodyRows = rows.map(r => `
-    <tr>
+    <tr class="${r.active ? "" : "lifetime-inactive"}">
       <td class="lifetime-team">${escapeHtml(r.display)}</td>
       <td class="lifetime-numeric">${r.seasons}</td>
       <td class="lifetime-numeric">${escapeHtml(r.record)}</td>

@@ -402,6 +402,11 @@ a { color: inherit; }
   font-weight: 600;
 }
 
+.stat-headline {
+  color: var(--chalk);
+  font-weight: 700;
+}
+
 .stat-list-loading {
   list-style: none;
   color: var(--chalk-dim);
@@ -562,6 +567,10 @@ a { color: inherit; }
 
 .lifetime-trophy {
   letter-spacing: 1px;
+}
+
+.lifetime-inactive td {
+  color: var(--chalk-dim);
 }
 
 /* ---------- championship history table ---------- */
