@@ -115,7 +115,6 @@ async function loadChampions() {
   }
 
   renderChampsTable(container, seasons);
-  renderMostTitles(seasons);
 }
 
 const TICKER_ROTATE_MS = 10000;
@@ -240,30 +239,110 @@ function renderChampsTable(container, seasons) {
   `;
 }
 
-function renderMostTitles(seasons) {
-  const el = document.getElementById("most-titles-value");
-  if (!el) return;
-
-  const golds = {};
-  seasons.forEach(s => {
-    const m = s.first.manager;
-    golds[m] = (golds[m] || 0) + 1;
-  });
-
-  const [topManager, topCount] = Object.entries(golds).sort((a, b) => b[1] - a[1])[0];
-  el.textContent = `${topCount} \u2014 ${topManager}`;
-}
-
 function escapeHtml(str) {
   const div = document.createElement("div");
   div.textContent = str;
   return div.innerHTML;
 }
 
+async function loadStatCards() {
+  const ids = {
+    highest_scores: "stat-highest-scores",
+    closest_margins: "stat-closest-margins",
+    longest_streaks: "stat-longest-streaks",
+    most_championships: "stat-most-championships",
+  };
+
+  if (!Object.values(ids).some(id => document.getElementById(id))) return;
+
+  let data;
+  try {
+    const res = await fetch("data/stat_cards.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    data = await res.json();
+  } catch (err) {
+    Object.values(ids).forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = `<li class="stat-list-loading">Couldn't load stats (${escapeHtml(err.message)}).</li>`;
+    });
+    return;
+  }
+
+  renderTextStatList(ids.highest_scores, data.highest_scores);
+  renderTextStatList(ids.closest_margins, data.closest_margins);
+  renderTextStatList(ids.longest_streaks, data.longest_streaks);
+  renderTextStatList(ids.most_championships, data.most_championships);
+}
+
+function renderTextStatList(elId, entries) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+  if (!Array.isArray(entries) || entries.length === 0) {
+    el.innerHTML = `<li class="stat-list-loading">No data yet.</li>`;
+    return;
+  }
+  el.innerHTML = entries.map(e => `<li>${escapeHtml(e.text)}</li>`).join("");
+}
+
+async function loadLifetimeStandings() {
+  const container = document.getElementById("lifetime-table");
+  if (!container) return;
+
+  let rows;
+  try {
+    const res = await fetch("data/lifetime_standings.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    rows = await res.json();
+  } catch (err) {
+    container.innerHTML = `<p class="loading-msg">Couldn't load lifetime standings (${escapeHtml(err.message)}).</p>`;
+    return;
+  }
+
+  if (!Array.isArray(rows) || rows.length === 0) {
+    container.innerHTML = `<p class="loading-msg">No data yet.</p>`;
+    return;
+  }
+
+  const bodyRows = rows.map(r => `
+    <tr>
+      <td class="lifetime-team">${escapeHtml(r.display)}</td>
+      <td class="lifetime-numeric">${r.seasons}</td>
+      <td class="lifetime-numeric">${escapeHtml(r.record)}</td>
+      <td class="lifetime-numeric">${escapeHtml(r.win_pct_display)}</td>
+      <td class="lifetime-numeric">${r.pf.toFixed(2)}</td>
+      <td class="lifetime-numeric">${r.pa.toFixed(2)}</td>
+      <td class="lifetime-numeric">${r.playoff_seasons}</td>
+      <td class="lifetime-numeric">${escapeHtml(r.playoff_record)}</td>
+      <td class="lifetime-trophy">${r.trophy_case || "\u2014"}</td>
+    </tr>
+  `).join("");
+
+  container.innerHTML = `
+    <table class="lifetime-real-table">
+      <thead>
+        <tr>
+          <th scope="col">Team (Manager)</th>
+          <th scope="col">Seasons</th>
+          <th scope="col">Record</th>
+          <th scope="col">W%</th>
+          <th scope="col">PF</th>
+          <th scope="col">PA</th>
+          <th scope="col">Playoff Szns</th>
+          <th scope="col">Playoff Rec</th>
+          <th scope="col">Trophy Case</th>
+        </tr>
+      </thead>
+      <tbody>${bodyRows}</tbody>
+    </table>
+  `;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   loadStandings(SLEEPER_LEAGUE_ID);
   loadChampions();
   loadTicker();
+  loadStatCards();
+  loadLifetimeStandings();
 });
 
 // Below: nothing live yet for weekly stats or the feed. This is the spot

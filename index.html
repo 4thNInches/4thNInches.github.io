@@ -110,23 +110,23 @@
       </div>
       <div class="stat-grid">
         <div class="card">
-          <p class="placeholder-kicker">Highest single-week score</p>
-          <p class="placeholder-value">— pts</p>
+          <p class="placeholder-kicker">Highest single-game scores</p>
+          <ol class="stat-list" id="stat-highest-scores"><li class="stat-list-loading">Loading&hellip;</li></ol>
         </div>
         <div class="card">
-          <p class="placeholder-kicker">Closest margin ever</p>
-          <p class="placeholder-value">— pts</p>
+          <p class="placeholder-kicker">Closest margins ever</p>
+          <ol class="stat-list" id="stat-closest-margins"><li class="stat-list-loading">Loading&hellip;</li></ol>
         </div>
         <div class="card">
-          <p class="placeholder-kicker">Longest win streak</p>
-          <p class="placeholder-value">— games</p>
+          <p class="placeholder-kicker">Longest win streaks</p>
+          <ol class="stat-list" id="stat-longest-streaks"><li class="stat-list-loading">Loading&hellip;</li></ol>
         </div>
         <div class="card">
           <p class="placeholder-kicker">Most championships</p>
-          <p class="placeholder-value" id="most-titles-value">— titles</p>
+          <ul class="stat-list stat-list-plain" id="stat-most-championships"><li class="stat-list-loading">Loading&hellip;</li></ul>
         </div>
       </div>
-      <p class="hint">These four cards are built to drop in real numbers from your Yahoo-era Python scripts once they're pointed at Sleeper.</p>
+      <p class="hint">Highest scores, closest margins, and win streaks span the full 2015&ndash;2025 Yahoo era. Championship count is reconstructed from every season's playoff bracket, with ties marked "T".</p>
   
         <div class="card ticker-card">
           <div class="ticker-head">
@@ -139,6 +139,13 @@
             </div>
           </div>
           <p id="ticker-text" class="ticker-text">Loading a fact&hellip;</p>
+        </div>
+
+        <div class="card lifetime-card">
+          <p class="placeholder-kicker">Lifetime Standings &middot; every manager, 2015&ndash;2025</p>
+          <div id="lifetime-table" class="lifetime-table" role="table" aria-label="Lifetime standings">
+            <p class="loading-msg">Loading lifetime standings&hellip;</p>
+          </div>
         </div>
     </div>
   </section>
