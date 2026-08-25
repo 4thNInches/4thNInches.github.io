@@ -1,43 +1,55 @@
 {
   "highest_scores": [
     {
+      "headline": "230.42 pts",
+      "detail": "(Injury Prone, Wk 6, 2018)",
       "text": "230.42 pts (Injury Prone, Wk 6, 2018)",
       "value": 230.42
     },
     {
+      "headline": "228.14 pts",
+      "detail": "(49ers Resurge, Wk 5, 2019)",
       "text": "228.14 pts (49ers Resurge, Wk 5, 2019)",
       "value": 228.14
     },
     {
+      "headline": "221.32 pts",
+      "detail": "(Bob’s Best, Wk 2, 2024)",
       "text": "221.32 pts (Bob’s Best, Wk 2, 2024)",
       "value": 221.32
     }
   ],
   "closest_margins": [
     {
+      "headline": "0.08 pt margin",
+      "detail": "(Big Dumb Sports 129.60 - 129.52 Free Radicals, Wk 13, 2022)",
       "text": "0.08 pt margin (Big Dumb Sports 129.60 - 129.52 Free Radicals, Wk 13, 2022)",
       "value": 0.08
     },
     {
+      "headline": "0.08 pt margin",
+      "detail": "(Hello....Newman 115.00 - 114.92 Jake From State Farm, Wk 17, 2022)",
       "text": "0.08 pt margin (Hello....Newman 115.00 - 114.92 Jake From State Farm, Wk 17, 2022)",
       "value": 0.08
     },
     {
+      "headline": "0.14 pt margin",
+      "detail": "(Free Radicals 139.96 - 139.82 Jake From State Farm, Wk 14, 2020)",
       "text": "0.14 pt margin (Free Radicals 139.96 - 139.82 Jake From State Farm, Wk 14, 2020)",
       "value": 0.14
     }
   ],
   "longest_streaks": [
     {
-      "text": "Anthony — 13-game win streak (Season 2024 Wk 2 – Season 2024 Wk 14)",
+      "text": "Anthony (13 games; 2024 Wk 2 - 2024 Wk 14)",
       "value": 13
     },
     {
-      "text": "Nick — 11-game win streak (Season 2019 Wk 14 – Season 2020 Wk 8)",
+      "text": "Nick (11 games; 2019 Wk 14 - 2020 Wk 8)",
       "value": 11
     },
     {
-      "text": "Jamie — 10-game win streak (Season 2022 Wk 7 – Season 2022 Wk 17)",
+      "text": "Jamie (10 games; 2022 Wk 7 - 2022 Wk 17)",
       "value": 10
     }
   ],

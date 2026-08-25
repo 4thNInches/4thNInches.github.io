@@ -4,6 +4,7 @@
     "manager": "Mikey G",
     "team_name": "phillyphilly06",
     "display": "phillyphilly06 (Mikey G)",
+    "active": true,
     "seasons": 2,
     "record": "18-10",
     "win_pct": 0.643,
@@ -19,6 +20,7 @@
     "manager": "Brian",
     "team_name": "Monger",
     "display": "Monger (Brian)",
+    "active": false,
     "seasons": 5,
     "record": "43-24",
     "win_pct": 0.642,
@@ -26,7 +28,7 @@
     "pf": 8875.88,
     "pa": 8484.36,
     "playoff_seasons": 5,
-    "playoff_record": "6-6",
+    "playoff_record": "6-5",
     "trophy_case": "🏆🥈🥉"
   },
   {
@@ -34,6 +36,7 @@
     "manager": "Jamie",
     "team_name": "Hello....Newman",
     "display": "Hello....Newman (Jamie)",
+    "active": false,
     "seasons": 8,
     "record": "69-39",
     "win_pct": 0.639,
@@ -41,7 +44,7 @@
     "pf": 14850.96,
     "pa": 13591.7,
     "playoff_seasons": 7,
-    "playoff_record": "6-8",
+    "playoff_record": "4-7",
     "trophy_case": "🏆🏆"
   },
   {
@@ -49,6 +52,7 @@
     "manager": "Nick",
     "team_name": "Jake From State Farm",
     "display": "Jake From State Farm (Nick)",
+    "active": true,
     "seasons": 11,
     "record": "93-55",
     "win_pct": 0.628,
@@ -56,7 +60,7 @@
     "pf": 20350.56,
     "pa": 18955.48,
     "playoff_seasons": 10,
-    "playoff_record": "16-9",
+    "playoff_record": "14-9",
     "trophy_case": "🏆🏆🥈🥈🥈🥉🥉"
   },
   {
@@ -64,6 +68,7 @@
     "manager": "Mark",
     "team_name": "Supernovas",
     "display": "Supernovas (Mark)",
+    "active": true,
     "seasons": 11,
     "record": "83-65",
     "win_pct": 0.561,
@@ -71,7 +76,7 @@
     "pf": 20332.16,
     "pa": 19361.24,
     "playoff_seasons": 7,
-    "playoff_record": "10-7",
+    "playoff_record": "9-7",
     "trophy_case": "🏆🥈🥈🥉🥉"
   },
   {
@@ -79,6 +84,7 @@
     "manager": "Steve",
     "team_name": "WINNING",
     "display": "WINNING (Steve)",
+    "active": false,
     "seasons": 6,
     "record": "42-36",
     "win_pct": 0.538,
@@ -86,7 +92,7 @@
     "pf": 10261.34,
     "pa": 9798.94,
     "playoff_seasons": 3,
-    "playoff_record": "2-4",
+    "playoff_record": "0-4",
     "trophy_case": ""
   },
   {
@@ -94,6 +100,7 @@
     "manager": "John",
     "team_name": "jschnides4",
     "display": "jschnides4 (John)",
+    "active": true,
     "seasons": 6,
     "record": "44-39",
     "win_pct": 0.53,
@@ -109,6 +116,7 @@
     "manager": "Pat",
     "team_name": "Free Radicals",
     "display": "Free Radicals (Pat)",
+    "active": false,
     "seasons": 10,
     "record": "70-64",
     "win_pct": 0.522,
@@ -116,7 +124,7 @@
     "pf": 17041.14,
     "pa": 17164.76,
     "playoff_seasons": 6,
-    "playoff_record": "6-9",
+    "playoff_record": "6-8",
     "trophy_case": "🏆🥉"
   },
   {
@@ -124,6 +132,7 @@
     "manager": "Bill M",
     "team_name": "Bandits",
     "display": "Bandits (Bill M)",
+    "active": true,
     "seasons": 8,
     "record": "55-54",
     "win_pct": 0.505,
@@ -131,7 +140,7 @@
     "pf": 14685.06,
     "pa": 14678.16,
     "playoff_seasons": 4,
-    "playoff_record": "8-2",
+    "playoff_record": "7-2",
     "trophy_case": "🏆🏆🥉"
   },
   {
@@ -139,6 +148,7 @@
     "manager": "Matt",
     "team_name": "theMadgician",
     "display": "theMadgician (Matt)",
+    "active": true,
     "seasons": 1,
     "record": "7-7",
     "win_pct": 0.5,
@@ -154,6 +164,7 @@
     "manager": "Anthony",
     "team_name": "ACap1214",
     "display": "ACap1214 (Anthony)",
+    "active": true,
     "seasons": 11,
     "record": "72-76",
     "win_pct": 0.486,
@@ -161,7 +172,7 @@
     "pf": 19248.16,
     "pa": 19206.76,
     "playoff_seasons": 5,
-    "playoff_record": "6-7",
+    "playoff_record": "6-6",
     "trophy_case": "🥈🥉🥉"
   },
   {
@@ -169,6 +180,7 @@
     "manager": "Connor",
     "team_name": "Mr Sam's Gayborhood",
     "display": "Mr Sam's Gayborhood (Connor)",
+    "active": false,
     "seasons": 3,
     "record": "18-21",
     "win_pct": 0.462,
@@ -176,7 +188,7 @@
     "pf": 4650.58,
     "pa": 4925.56,
     "playoff_seasons": 2,
-    "playoff_record": "2-3",
+    "playoff_record": "1-3",
     "trophy_case": ""
   },
   {
@@ -184,6 +196,7 @@
     "manager": "Bill C",
     "team_name": "Yoda Can Ball",
     "display": "Yoda Can Ball (Bill C)",
+    "active": false,
     "seasons": 6,
     "record": "35-45",
     "win_pct": 0.438,
@@ -191,7 +204,7 @@
     "pf": 10080.44,
     "pa": 10596.84,
     "playoff_seasons": 3,
-    "playoff_record": "4-3",
+    "playoff_record": "4-2",
     "trophy_case": "🏆🥈"
   },
   {
@@ -199,6 +212,7 @@
     "manager": "Bob",
     "team_name": "packerlove24",
     "display": "packerlove24 (Bob)",
+    "active": true,
     "seasons": 11,
     "record": "64-84",
     "win_pct": 0.432,
@@ -206,7 +220,7 @@
     "pf": 19127.28,
     "pa": 19780.16,
     "playoff_seasons": 3,
-    "playoff_record": "1-5",
+    "playoff_record": "1-3",
     "trophy_case": "🥈"
   },
   {
@@ -214,6 +228,7 @@
     "manager": "Owen",
     "team_name": "Newman’s Owen",
     "display": "Newman’s Owen (Owen)",
+    "active": true,
     "seasons": 10,
     "record": "58-77",
     "win_pct": 0.43,
@@ -221,7 +236,7 @@
     "pf": 16741.7,
     "pa": 17522.54,
     "playoff_seasons": 4,
-    "playoff_record": "3-6",
+    "playoff_record": "2-4",
     "trophy_case": "🥈"
   },
   {
@@ -229,6 +244,7 @@
     "manager": "Dennis",
     "team_name": "Big Dumb Sports",
     "display": "Big Dumb Sports (Dennis)",
+    "active": true,
     "seasons": 7,
     "record": "41-55",
     "win_pct": 0.427,
@@ -236,7 +252,7 @@
     "pf": 12592.14,
     "pa": 13044.4,
     "playoff_seasons": 1,
-    "playoff_record": "1-1",
+    "playoff_record": "0-1",
     "trophy_case": ""
   },
   {
@@ -244,6 +260,7 @@
     "manager": "TJ",
     "team_name": "Owens at Law",
     "display": "Owens at Law (TJ)",
+    "active": false,
     "seasons": 8,
     "record": "45-62",
     "win_pct": 0.421,
@@ -251,7 +268,7 @@
     "pf": 13051.1,
     "pa": 13893.26,
     "playoff_seasons": 2,
-    "playoff_record": "0-4",
+    "playoff_record": "0-2",
     "trophy_case": ""
   },
   {
@@ -259,6 +276,7 @@
     "manager": "Will",
     "team_name": "No Punt Intended",
     "display": "No Punt Intended (Will)",
+    "active": false,
     "seasons": 2,
     "record": "10-16",
     "win_pct": 0.385,
@@ -274,6 +292,7 @@
     "manager": "Aengus",
     "team_name": "BMS Goats",
     "display": "BMS Goats (Aengus)",
+    "active": false,
     "seasons": 1,
     "record": "4-9",
     "win_pct": 0.308,
@@ -289,6 +308,7 @@
     "manager": "Alex",
     "team_name": "Viola's Victors",
     "display": "Viola's Victors (Alex)",
+    "active": false,
     "seasons": 1,
     "record": "4-9",
     "win_pct": 0.308,
@@ -304,6 +324,7 @@
     "manager": "Justin",
     "team_name": "Justin's Swell Team",
     "display": "Justin's Swell Team (Justin)",
+    "active": false,
     "seasons": 1,
     "record": "4-9",
     "win_pct": 0.308,
@@ -319,6 +340,7 @@
     "manager": "Kodi",
     "team_name": "VRDNO",
     "display": "VRDNO (Kodi)",
+    "active": true,
     "seasons": 1,
     "record": "4-10",
     "win_pct": 0.286,
@@ -334,6 +356,7 @@
     "manager": "Ezra",
     "team_name": "69ers",
     "display": "69ers (Ezra)",
+    "active": false,
     "seasons": 1,
     "record": "3-10",
     "win_pct": 0.231,
@@ -349,6 +372,7 @@
     "manager": "Mikey K",
     "team_name": "ROK Navy's Finest",
     "display": "ROK Navy's Finest (Mikey K)",
+    "active": true,
     "seasons": 1,
     "record": "2-12",
     "win_pct": 0.143,
