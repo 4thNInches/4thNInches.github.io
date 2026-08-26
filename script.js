@@ -292,6 +292,7 @@ function renderTextStatList(elId, entries) {
 let lifetimeRows = [];
 let lifetimeSortKey = "win_pct";
 let lifetimeSortDir = -1; // -1 = descending, 1 = ascending
+let lifetimeShowActiveOnly = false;
 
 const LIFETIME_COLUMNS = [
   { key: "display", label: "Team (Manager)", numeric: false },
@@ -328,6 +329,7 @@ async function loadLifetimeStandings() {
   }
 
   lifetimeRows = baseline.map(prepareLifetimeRow);
+  setupLifetimeToggle();
   renderLifetimeTable(); // show historical baseline immediately, don't block on live fetch
 
   try {
@@ -338,6 +340,17 @@ async function loadLifetimeStandings() {
     console.warn("Couldn't merge live Sleeper season into lifetime standings:", err);
     // Baseline is already rendered -- fail quietly rather than blocking the table.
   }
+}
+
+function setupLifetimeToggle() {
+  const toggle = document.getElementById("lifetime-active-toggle");
+  if (!toggle || toggle.dataset.wired) return;
+  toggle.dataset.wired = "true";
+  toggle.checked = lifetimeShowActiveOnly;
+  toggle.addEventListener("change", () => {
+    lifetimeShowActiveOnly = toggle.checked;
+    renderLifetimeTable();
+  });
 }
 
 function prepareLifetimeRow(r) {
@@ -386,7 +399,8 @@ async function mergeLiveSleeperSeason(baseline) {
     }
   });
 
-  const playedWeeks = await fetchPlayedSleeperWeeks(SLEEPER_LEAGUE_ID);
+  const regSeasonWeeks = await fetchRegularSeasonWeekCount(SLEEPER_LEAGUE_ID);
+  const playedWeeks = await fetchPlayedSleeperWeeks(SLEEPER_LEAGUE_ID, regSeasonWeeks);
   const live = computeLiveStatsFromWeeks(playedWeeks, rosterToManager);
 
   const byManager = {};
@@ -410,6 +424,19 @@ async function mergeLiveSleeperSeason(baseline) {
   });
 
   return Object.values(byManager).map(row => mergeRow(row, live[row.manager_id], rosterToTeamName, rosterToManager));
+}
+
+async function fetchRegularSeasonWeekCount(leagueId, fallback = 14) {
+  try {
+    const res = await fetch(`https://api.sleeper.app/v1/league/${leagueId}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const league = await res.json();
+    const playoffStart = league.settings && league.settings.playoff_week_start;
+    if (playoffStart && playoffStart > 1) return playoffStart - 1;
+  } catch (err) {
+    console.warn(`Couldn't fetch Sleeper playoff_week_start, falling back to week ${fallback}:`, err);
+  }
+  return fallback;
 }
 
 async function fetchPlayedSleeperWeeks(leagueId, maxWeeks = 18) {
@@ -521,7 +548,8 @@ function renderLifetimeTable() {
 
   const dir = lifetimeSortDir;
   const key = lifetimeSortKey;
-  const sorted = [...lifetimeRows].sort((a, b) => {
+  const filtered = lifetimeShowActiveOnly ? lifetimeRows.filter(r => r.active) : lifetimeRows;
+  const sorted = [...filtered].sort((a, b) => {
     let av = a[key], bv = b[key];
     if (typeof av === "string") { av = av.toLowerCase(); bv = (bv || "").toLowerCase(); }
     if (av < bv) return -1 * dir;

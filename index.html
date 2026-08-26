@@ -142,7 +142,14 @@
         </div>
 
         <div class="card lifetime-card">
-          <p class="placeholder-kicker">Lifetime Standings &middot; every manager, 2015&ndash;2025</p>
+          <div class="lifetime-head">
+            <p class="placeholder-kicker">Lifetime Standings &middot; every manager, 2015&ndash;2025</p>
+            <label class="lifetime-toggle">
+              <input type="checkbox" id="lifetime-active-toggle">
+              <span class="lifetime-toggle-track"><span class="lifetime-toggle-thumb"></span></span>
+              <span class="lifetime-toggle-label">Only show this year's teams</span>
+            </label>
+          </div>
           <div id="lifetime-table" class="lifetime-table" role="table" aria-label="Lifetime standings">
             <p class="loading-msg">Loading lifetime standings&hellip;</p>
           </div>

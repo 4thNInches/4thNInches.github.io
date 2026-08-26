@@ -522,6 +522,73 @@ a { color: inherit; }
   overflow-x: auto;
 }
 
+.lifetime-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.lifetime-head .placeholder-kicker {
+  margin-bottom: 0;
+}
+
+.lifetime-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.lifetime-toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.lifetime-toggle-track {
+  width: 34px;
+  height: 18px;
+  border-radius: 10px;
+  background: var(--field-line);
+  position: relative;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.lifetime-toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--chalk-dim);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.lifetime-toggle input:checked ~ .lifetime-toggle-track {
+  background: var(--marker-dim);
+}
+
+.lifetime-toggle input:checked ~ .lifetime-toggle-track .lifetime-toggle-thumb {
+  transform: translateX(16px);
+  background: var(--marker);
+}
+
+.lifetime-toggle-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--chalk-dim);
+}
+
 .lifetime-real-table {
   width: 100%;
   border-collapse: collapse;
