@@ -390,6 +390,71 @@
     ]
   },
   {
+    "id": "ugliest_win_0001",
+    "category": "ugliest_win",
+    "text": "Mr. Bean's Football Team (John) won the 3rd place game of 2022, Week 17 with just 69.70 points against Free Radicals (Pat) (68.10) — the ugliest winning score in league history.",
+    "value": 69.7,
+    "season": 2022,
+    "week": 17,
+    "round": "third_place",
+    "managers": [
+      "john",
+      "pat"
+    ]
+  },
+  {
+    "id": "ugliest_win_0002",
+    "category": "ugliest_win",
+    "text": "69ers (Ezra) won the regular season of 2015, Week 4 with just 75.42 points against Hello.....Newman (Jamie) (69.96) — the 2nd-ugliest winning score in league history.",
+    "value": 75.42,
+    "season": 2015,
+    "week": 4,
+    "round": "regular_season",
+    "managers": [
+      "ezra",
+      "jamie"
+    ]
+  },
+  {
+    "id": "ugliest_win_0003",
+    "category": "ugliest_win",
+    "text": "Jake From State Farm (Nick) won the regular season of 2021, Week 4 with just 76.34 points against 2 Tight Ends 1 Loose Fantasy (Anthony) (67.62) — the 3rd-ugliest winning score in league history.",
+    "value": 76.34,
+    "season": 2021,
+    "week": 4,
+    "round": "regular_season",
+    "managers": [
+      "anthony",
+      "nick"
+    ]
+  },
+  {
+    "id": "ugliest_win_0004",
+    "category": "ugliest_win",
+    "text": "Fossil Fuel Frackers (TJ) won the regular season of 2021, Week 8 with just 78.66 points against 2 Tight Ends 1 Loose Fantasy (Anthony) (62.34) — the 4th-ugliest winning score in league history.",
+    "value": 78.66,
+    "season": 2021,
+    "week": 8,
+    "round": "regular_season",
+    "managers": [
+      "anthony",
+      "tj"
+    ]
+  },
+  {
+    "id": "ugliest_win_0005",
+    "category": "ugliest_win",
+    "text": "Newman’s Owen won the regular season of 2019, Week 6 with just 78.82 points against Monger (Brian) (69.90) — the 5th-ugliest winning score in league history.",
+    "value": 78.82,
+    "season": 2019,
+    "week": 6,
+    "round": "regular_season",
+    "managers": [
+      "brian",
+      "owen"
+    ]
+  },
+  {
     "id": "best_season_record_0001",
     "category": "best_season_record",
     "text": "Kuppa My Puka (Anthony) posted a 13-1-0 record in 2024 (2386.92 points, 170.49 PPG) — the best single-season record in league history.",
@@ -1928,6 +1993,126 @@
     "round": null,
     "managers": [
       "anthony"
+    ]
+  },
+  {
+    "id": "playoff_appearance_streak_0001",
+    "category": "playoff_appearance_streak",
+    "text": "Nick made the playoffs in 9 consecutive seasons (2015-2023) — the longest active or historical run in league history.",
+    "value": 9,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "nick"
+    ]
+  },
+  {
+    "id": "playoff_appearance_streak_0002",
+    "category": "playoff_appearance_streak",
+    "text": "Mark made the playoffs in 5 consecutive seasons (2021-2025) — the 2nd-longest active or historical run in league history.",
+    "value": 5,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "mark"
+    ]
+  },
+  {
+    "id": "playoff_appearance_streak_0003",
+    "category": "playoff_appearance_streak",
+    "text": "Brian made the playoffs in 5 consecutive seasons (2018-2022) — the 3rd-longest active or historical run in league history.",
+    "value": 5,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "brian"
+    ]
+  },
+  {
+    "id": "playoff_appearance_streak_0004",
+    "category": "playoff_appearance_streak",
+    "text": "Jamie made the playoffs in 4 consecutive seasons (2021-2024) — the 4th-longest active or historical run in league history.",
+    "value": 4,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "jamie"
+    ]
+  },
+  {
+    "id": "playoff_appearance_streak_0005",
+    "category": "playoff_appearance_streak",
+    "text": "Pat made the playoffs in 3 consecutive seasons (2015-2017) — the 5th-longest active or historical run in league history.",
+    "value": 3,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "pat"
+    ]
+  },
+  {
+    "id": "career_playoff_record_0001",
+    "category": "career_playoff_record",
+    "text": "Mikey G has a career playoff record of 2-0 (100%) — the best playoff win rate in league history (min. 2 playoff games).",
+    "value": 100.0,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "mikey_g"
+    ]
+  },
+  {
+    "id": "career_playoff_record_0002",
+    "category": "career_playoff_record",
+    "text": "Bill M has a career playoff record of 8-2 (80%) — the 2nd-best playoff win rate in league history (min. 2 playoff games).",
+    "value": 80.0,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bill_m"
+    ]
+  },
+  {
+    "id": "career_playoff_record_0003",
+    "category": "career_playoff_record",
+    "text": "Nick has a career playoff record of 16-9 (64%) — the 3rd-best playoff win rate in league history (min. 2 playoff games).",
+    "value": 64.0,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "nick"
+    ]
+  },
+  {
+    "id": "career_playoff_record_0004",
+    "category": "career_playoff_record",
+    "text": "Mark has a career playoff record of 10-7 (59%) — the 4th-best playoff win rate in league history (min. 2 playoff games).",
+    "value": 58.82352941176471,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "mark"
+    ]
+  },
+  {
+    "id": "career_playoff_record_0005",
+    "category": "career_playoff_record",
+    "text": "Bill C has a career playoff record of 4-3 (57%) — the 5th-best playoff win rate in league history (min. 2 playoff games).",
+    "value": 57.14285714285714,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bill_c"
     ]
   },
   {
@@ -11456,6 +11641,810 @@
     "round": null,
     "managers": [
       "mark",
+      "owen"
+    ]
+  },
+  {
+    "id": "seed_champion_history_0001",
+    "category": "seed_champion_history",
+    "text": "#1 seeds are 4-for-11 in championships won (2017, 2022, 2023, 2025).",
+    "value": 4,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_champion_history_0002",
+    "category": "seed_champion_history",
+    "text": "The #2 seed has won the championship 3 times in league history (2015, 2018, 2024).",
+    "value": 3,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_champion_history_0003",
+    "category": "seed_champion_history",
+    "text": "#3 seeds are 1-for-11 in championships won (2019).",
+    "value": 1,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_champion_history_0004",
+    "category": "seed_champion_history",
+    "text": "The #4 seed has won the championship 2 times in league history (2016, 2021).",
+    "value": 2,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_champion_history_0005",
+    "category": "seed_champion_history",
+    "text": "No #5 seed has ever won the championship, across 11 seasons of league history.",
+    "value": 0,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_champion_history_0006",
+    "category": "seed_champion_history",
+    "text": "#6 seeds are 1-for-11 in championships won (2020).",
+    "value": 1,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_championship_rate_0001",
+    "category": "seed_championship_rate",
+    "text": "The #1 seed has the highest championship rate of any seed: 36% of seasons.",
+    "value": 0.36363636363636365,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_championship_rate_0002",
+    "category": "seed_championship_rate",
+    "text": "The #2 seed has the 2nd-highest championship rate of any seed: 27% of seasons.",
+    "value": 0.2727272727272727,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_championship_rate_0003",
+    "category": "seed_championship_rate",
+    "text": "The #4 seed has the 3rd-highest championship rate of any seed: 18% of seasons.",
+    "value": 0.18181818181818182,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_playoff_wins_0001",
+    "category": "seed_playoff_wins",
+    "text": "The #5 seed has won the fewest playoff games of any seed in league history, just 6.",
+    "value": 6,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "seed_playoff_wins_0002",
+    "category": "seed_playoff_wins",
+    "text": "The #3 seed has won the most playoff games of any seed in league history: 18.",
+    "value": 18,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": []
+  },
+  {
+    "id": "worst_record_to_win_playoff_game_0001",
+    "category": "worst_record_to_win_playoff_game",
+    "text": "Mr Sam's Gayborhood (Connor) won a playoff game in 2015 with just 6 regular-season wins — the fewest regular-season wins by a team that still won a playoff game.",
+    "value": 6,
+    "season": 2015,
+    "week": 14,
+    "round": "quarterfinal",
+    "managers": [
+      "connor"
+    ]
+  },
+  {
+    "id": "worst_record_to_win_playoff_game_0002",
+    "category": "worst_record_to_win_playoff_game",
+    "text": "Injury Prone (Anthony) won a playoff game in 2016 with just 7 regular-season wins — the 2nd-fewest regular-season wins by a team that still won a playoff game.",
+    "value": 7,
+    "season": 2016,
+    "week": 14,
+    "round": "quarterfinal",
+    "managers": [
+      "anthony"
+    ]
+  },
+  {
+    "id": "worst_record_to_win_playoff_game_0003",
+    "category": "worst_record_to_win_playoff_game",
+    "text": "Mr Sam's Gayborhood (Connor) won a playoff game in 2017 with just 7 regular-season wins — the 3rd-fewest regular-season wins by a team that still won a playoff game.",
+    "value": 7,
+    "season": 2017,
+    "week": 15,
+    "round": "fifth_place",
+    "managers": [
+      "connor"
+    ]
+  },
+  {
+    "id": "worst_record_to_win_playoff_game_0004",
+    "category": "worst_record_to_win_playoff_game",
+    "text": "Injury Prone (Anthony) won a playoff game in 2018 with just 7 regular-season wins — the 4th-fewest regular-season wins by a team that still won a playoff game.",
+    "value": 7,
+    "season": 2018,
+    "week": 14,
+    "round": "quarterfinal",
+    "managers": [
+      "anthony"
+    ]
+  },
+  {
+    "id": "worst_record_to_win_playoff_game_0005",
+    "category": "worst_record_to_win_playoff_game",
+    "text": "Bandits (Bill M) won a playoff game in 2018 with just 7 regular-season wins — the 5th-fewest regular-season wins by a team that still won a playoff game.",
+    "value": 7,
+    "season": 2018,
+    "week": 15,
+    "round": "fifth_place",
+    "managers": [
+      "bill_m"
+    ]
+  },
+  {
+    "id": "low_pf_rank_made_playoffs_0001",
+    "category": "low_pf_rank_made_playoffs",
+    "text": "Mr Sam's Gayborhood (Connor) made the playoffs in 2015 with just the 10th-most points scored in the league that season.",
+    "value": 10,
+    "season": 2015,
+    "week": null,
+    "round": null,
+    "managers": [
+      "connor"
+    ]
+  },
+  {
+    "id": "low_pf_rank_made_playoffs_0002",
+    "category": "low_pf_rank_made_playoffs",
+    "text": "Sad Carolines (TJ) made the playoffs in 2017 with just the 10th-most points scored in the league that season.",
+    "value": 10,
+    "season": 2017,
+    "week": null,
+    "round": null,
+    "managers": [
+      "tj"
+    ]
+  },
+  {
+    "id": "low_pf_rank_made_playoffs_0003",
+    "category": "low_pf_rank_made_playoffs",
+    "text": "Monger (Brian) made the playoffs in 2018 with just the 10th-most points scored in the league that season.",
+    "value": 10,
+    "season": 2018,
+    "week": null,
+    "round": null,
+    "managers": [
+      "brian"
+    ]
+  },
+  {
+    "id": "high_pf_rank_missed_playoffs_0001",
+    "category": "high_pf_rank_missed_playoffs",
+    "text": "Supernovas (Mark) missed the playoffs in 2016 despite having the 3rd-most points scored in the league that season.",
+    "value": 3,
+    "season": 2016,
+    "week": null,
+    "round": null,
+    "managers": [
+      "mark"
+    ]
+  },
+  {
+    "id": "high_pf_rank_missed_playoffs_0002",
+    "category": "high_pf_rank_missed_playoffs",
+    "text": "Bob’s Best (Owen) missed the playoffs in 2022 despite having the 3rd-most points scored in the league that season.",
+    "value": 3,
+    "season": 2022,
+    "week": null,
+    "round": null,
+    "managers": [
+      "owen"
+    ]
+  },
+  {
+    "id": "high_pf_rank_missed_playoffs_0003",
+    "category": "high_pf_rank_missed_playoffs",
+    "text": "Lambeau Leapers (Bob) missed the playoffs in 2025 despite having the 3rd-most points scored in the league that season.",
+    "value": 3,
+    "season": 2025,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bob"
+    ]
+  },
+  {
+    "id": "low_pa_missed_playoffs_0001",
+    "category": "low_pa_missed_playoffs",
+    "text": "Lambeau Leapers (Bob) missed the playoffs in 2018 despite allowing the 1st-fewest points in the league that season.",
+    "value": 1,
+    "season": 2018,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bob"
+    ]
+  },
+  {
+    "id": "low_pa_missed_playoffs_0002",
+    "category": "low_pa_missed_playoffs",
+    "text": "WINNING (Steve) missed the playoffs in 2020 despite allowing the 2nd-fewest points in the league that season.",
+    "value": 2,
+    "season": 2020,
+    "week": null,
+    "round": null,
+    "managers": [
+      "steve"
+    ]
+  },
+  {
+    "id": "low_pa_missed_playoffs_0003",
+    "category": "low_pa_missed_playoffs",
+    "text": "2 Tight Ends 1 Loose Fantasy (Anthony) missed the playoffs in 2021 despite allowing the 2nd-fewest points in the league that season.",
+    "value": 2,
+    "season": 2021,
+    "week": null,
+    "round": null,
+    "managers": [
+      "anthony"
+    ]
+  },
+  {
+    "id": "high_pa_made_playoffs_0001",
+    "category": "high_pa_made_playoffs",
+    "text": "WINNING (Steve) made the playoffs in 2019 despite allowing the 11th-most points in the league that season.",
+    "value": 11,
+    "season": 2019,
+    "week": null,
+    "round": null,
+    "managers": [
+      "steve"
+    ]
+  },
+  {
+    "id": "high_pa_made_playoffs_0002",
+    "category": "high_pa_made_playoffs",
+    "text": "Lambeau Leapers (Bob) made the playoffs in 2023 despite allowing the 11th-most points in the league that season.",
+    "value": 11,
+    "season": 2023,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bob"
+    ]
+  },
+  {
+    "id": "high_pa_made_playoffs_0003",
+    "category": "high_pa_made_playoffs",
+    "text": "Bandits (Bill M) made the playoffs in 2021 despite allowing the 10th-most points in the league that season.",
+    "value": 10,
+    "season": 2021,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bill_m"
+    ]
+  },
+  {
+    "id": "luckiest_win_0001",
+    "category": "luckiest_win",
+    "text": "69ers (Ezra) beat Hello.....Newman (Jamie) in the regular season of 2015, Week 4 despite having only the 11th-highest score in the league that week — the luckiest win in league history.",
+    "value": 11,
+    "season": 2015,
+    "week": 4,
+    "round": "regular_season",
+    "managers": [
+      "ezra",
+      "jamie"
+    ]
+  },
+  {
+    "id": "luckiest_win_0002",
+    "category": "luckiest_win",
+    "text": "The White Russians (Owen) beat Mr Sam's Gayborhood (Connor) in the regular season of 2015, Week 2 despite having only the 11th-highest score in the league that week — the 2nd-luckiest win in league history.",
+    "value": 11,
+    "season": 2015,
+    "week": 2,
+    "round": "regular_season",
+    "managers": [
+      "connor",
+      "owen"
+    ]
+  },
+  {
+    "id": "luckiest_win_0003",
+    "category": "luckiest_win",
+    "text": "No Punt Intended (Will) beat Jake From State Farm (Nick) in the regular season of 2016, Week 7 despite having only the 11th-highest score in the league that week — the 3rd-luckiest win in league history.",
+    "value": 11,
+    "season": 2016,
+    "week": 7,
+    "round": "regular_season",
+    "managers": [
+      "nick",
+      "will"
+    ]
+  },
+  {
+    "id": "luckiest_win_0004",
+    "category": "luckiest_win",
+    "text": "Lambeau Leapers (Bob) beat Jamie’s left nip (Owen) in the regular season of 2017, Week 1 despite having only the 11th-highest score in the league that week — the 4th-luckiest win in league history.",
+    "value": 11,
+    "season": 2017,
+    "week": 1,
+    "round": "regular_season",
+    "managers": [
+      "bob",
+      "owen"
+    ]
+  },
+  {
+    "id": "luckiest_win_0005",
+    "category": "luckiest_win",
+    "text": "Newman’s Owen beat Monger (Brian) in the regular season of 2019, Week 6 despite having only the 11th-highest score in the league that week — the 5th-luckiest win in league history.",
+    "value": 11,
+    "season": 2019,
+    "week": 6,
+    "round": "regular_season",
+    "managers": [
+      "brian",
+      "owen"
+    ]
+  },
+  {
+    "id": "unluckiest_loss_0001",
+    "category": "unluckiest_loss",
+    "text": "Injury Prone (Anthony) lost to Hello.....Newman (Jamie) in the regular season of 2015, Week 8 despite having the 2nd-highest score in the league that week — the unluckiest loss in league history.",
+    "value": 2,
+    "season": 2015,
+    "week": 8,
+    "round": "regular_season",
+    "managers": [
+      "anthony",
+      "jamie"
+    ]
+  },
+  {
+    "id": "unluckiest_loss_0002",
+    "category": "unluckiest_loss",
+    "text": "WINNING (Steve) lost to Supernovas (Mark) in the regular season of 2015, Week 9 despite having the 2nd-highest score in the league that week — the 2nd-unluckiest loss in league history.",
+    "value": 2,
+    "season": 2015,
+    "week": 9,
+    "round": "regular_season",
+    "managers": [
+      "mark",
+      "steve"
+    ]
+  },
+  {
+    "id": "unluckiest_loss_0003",
+    "category": "unluckiest_loss",
+    "text": "Viola's Victors (Alex) lost to Jake From State Farm (Nick) in the regular season of 2015, Week 10 despite having the 2nd-highest score in the league that week — the 3rd-unluckiest loss in league history.",
+    "value": 2,
+    "season": 2015,
+    "week": 10,
+    "round": "regular_season",
+    "managers": [
+      "alex",
+      "nick"
+    ]
+  },
+  {
+    "id": "unluckiest_loss_0004",
+    "category": "unluckiest_loss",
+    "text": "No Punt Intended (Will) lost to WINNING (Steve) in the regular season of 2016, Week 4 despite having the 2nd-highest score in the league that week — the 4th-unluckiest loss in league history.",
+    "value": 2,
+    "season": 2016,
+    "week": 4,
+    "round": "regular_season",
+    "managers": [
+      "steve",
+      "will"
+    ]
+  },
+  {
+    "id": "unluckiest_loss_0005",
+    "category": "unluckiest_loss",
+    "text": "Injury Prone (Anthony) lost to Bandits (Bill M) in the regular season of 2018, Week 2 despite having the 2nd-highest score in the league that week — the 5th-unluckiest loss in league history.",
+    "value": 2,
+    "season": 2018,
+    "week": 2,
+    "round": "regular_season",
+    "managers": [
+      "anthony",
+      "bill_m"
+    ]
+  },
+  {
+    "id": "luckiest_season_0001",
+    "category": "luckiest_season",
+    "text": "Mr. Bean's Football Team (John) went 10-4-0 in 2022 despite an expected record of just 6.5 wins by scoring alone — the luckiest season (by X-Win) in league history.",
+    "value": 3.454545454545454,
+    "season": 2022,
+    "week": null,
+    "round": null,
+    "managers": [
+      "john"
+    ]
+  },
+  {
+    "id": "luckiest_season_0002",
+    "category": "luckiest_season",
+    "text": "BurrowMyBrownJohnsonInLondon (Anthony) went 9-5-0 in 2025 despite an expected record of just 5.6 wins by scoring alone — the 2nd-luckiest season (by X-Win) in league history.",
+    "value": 3.3636363636363633,
+    "season": 2025,
+    "week": null,
+    "round": null,
+    "managers": [
+      "anthony"
+    ]
+  },
+  {
+    "id": "luckiest_season_0003",
+    "category": "luckiest_season",
+    "text": "Monger (Brian) went 9-4-0 in 2018 despite an expected record of just 6.2 wins by scoring alone — the 3rd-luckiest season (by X-Win) in league history.",
+    "value": 2.8181818181818183,
+    "season": 2018,
+    "week": null,
+    "round": null,
+    "managers": [
+      "brian"
+    ]
+  },
+  {
+    "id": "luckiest_season_0004",
+    "category": "luckiest_season",
+    "text": "Free Radicals (Pat) went 10-4-0 in 2021 despite an expected record of just 7.2 wins by scoring alone — the 4th-luckiest season (by X-Win) in league history.",
+    "value": 2.8181818181818183,
+    "season": 2021,
+    "week": null,
+    "round": null,
+    "managers": [
+      "pat"
+    ]
+  },
+  {
+    "id": "luckiest_season_0005",
+    "category": "luckiest_season",
+    "text": "Cock Warts (Bill C) went 10-3-0 in 2017 despite an expected record of just 7.4 wins by scoring alone — the 5th-luckiest season (by X-Win) in league history.",
+    "value": 2.6363636363636376,
+    "season": 2017,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bill_c"
+    ]
+  },
+  {
+    "id": "unluckiest_season_0001",
+    "category": "unluckiest_season",
+    "text": "Lambeau Leapers (Bob) went just 5-9-0 in 2025 despite an expected record of 8.8 wins by scoring alone — the unluckiest season (by X-Win) in league history.",
+    "value": -3.8181818181818183,
+    "season": 2025,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bob"
+    ]
+  },
+  {
+    "id": "unluckiest_season_0002",
+    "category": "unluckiest_season",
+    "text": "Big Dumb Sports (Dennis) went just 4-10-0 in 2024 despite an expected record of 7.3 wins by scoring alone — the 2nd-unluckiest season (by X-Win) in league history.",
+    "value": -3.2727272727272716,
+    "season": 2024,
+    "week": null,
+    "round": null,
+    "managers": [
+      "dennis"
+    ]
+  },
+  {
+    "id": "unluckiest_season_0003",
+    "category": "unluckiest_season",
+    "text": "No Punt Intended (Will) went just 3-10-0 in 2017 despite an expected record of 6.0 wins by scoring alone — the 3rd-unluckiest season (by X-Win) in league history.",
+    "value": -3.0,
+    "season": 2017,
+    "week": null,
+    "round": null,
+    "managers": [
+      "will"
+    ]
+  },
+  {
+    "id": "unluckiest_season_0004",
+    "category": "unluckiest_season",
+    "text": "Injury Prone (Anthony) went just 4-9-0 in 2017 despite an expected record of 6.8 wins by scoring alone — the 4th-unluckiest season (by X-Win) in league history.",
+    "value": -2.8181818181818183,
+    "season": 2017,
+    "week": null,
+    "round": null,
+    "managers": [
+      "anthony"
+    ]
+  },
+  {
+    "id": "unluckiest_season_0005",
+    "category": "unluckiest_season",
+    "text": "WINNING (Steve) went just 5-8-0 in 2018 despite an expected record of 7.7 wins by scoring alone — the 5th-unluckiest season (by X-Win) in league history.",
+    "value": -2.7272727272727266,
+    "season": 2018,
+    "week": null,
+    "round": null,
+    "managers": [
+      "steve"
+    ]
+  },
+  {
+    "id": "cross_season_win_streak_0001",
+    "category": "cross_season_win_streak",
+    "text": "Pat won 8 straight games spanning the 2016-2017 seasons — the longest streak to cross a season boundary in league history.",
+    "value": 8,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "pat"
+    ]
+  },
+  {
+    "id": "cross_season_win_streak_0002",
+    "category": "cross_season_win_streak",
+    "text": "Mikey G won 7 straight games spanning the 2024-2025 seasons — the 2nd-longest streak to cross a season boundary in league history.",
+    "value": 7,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "mikey_g"
+    ]
+  },
+  {
+    "id": "cross_season_win_streak_0003",
+    "category": "cross_season_win_streak",
+    "text": "Bill C won 6 straight games spanning the 2016-2017 seasons — the 3rd-longest streak to cross a season boundary in league history.",
+    "value": 6,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bill_c"
+    ]
+  },
+  {
+    "id": "cross_season_win_streak_0004",
+    "category": "cross_season_win_streak",
+    "text": "Owen won 5 straight games spanning the 2017-2019 seasons — the 4th-longest streak to cross a season boundary in league history.",
+    "value": 5,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "owen"
+    ]
+  },
+  {
+    "id": "cross_season_win_streak_0005",
+    "category": "cross_season_win_streak",
+    "text": "Steve won 5 straight games spanning the 2015-2016 seasons — the 5th-longest streak to cross a season boundary in league history.",
+    "value": 5,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "steve"
+    ]
+  },
+  {
+    "id": "cross_season_loss_streak_0001",
+    "category": "cross_season_loss_streak",
+    "text": "Anthony lost 8 straight games spanning the 2016-2017 seasons — the longest streak to cross a season boundary in league history.",
+    "value": 8,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "anthony"
+    ]
+  },
+  {
+    "id": "cross_season_loss_streak_0002",
+    "category": "cross_season_loss_streak",
+    "text": "Steve lost 6 straight games spanning the 2017-2018 seasons — the 2nd-longest streak to cross a season boundary in league history.",
+    "value": 6,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "steve"
+    ]
+  },
+  {
+    "id": "cross_season_loss_streak_0003",
+    "category": "cross_season_loss_streak",
+    "text": "Mark lost 6 straight games spanning the 2016-2017 seasons — the 3rd-longest streak to cross a season boundary in league history.",
+    "value": 6,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "mark"
+    ]
+  },
+  {
+    "id": "cross_season_loss_streak_0004",
+    "category": "cross_season_loss_streak",
+    "text": "Bill M lost 6 straight games spanning the 2018-2019 seasons — the 4th-longest streak to cross a season boundary in league history.",
+    "value": 6,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bill_m"
+    ]
+  },
+  {
+    "id": "cross_season_loss_streak_0005",
+    "category": "cross_season_loss_streak",
+    "text": "Bill C lost 5 straight games spanning the 2017-2018 seasons — the 5th-longest streak to cross a season boundary in league history.",
+    "value": 5,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bill_c"
+    ]
+  },
+  {
+    "id": "year_over_year_improvement_0001",
+    "category": "year_over_year_improvement",
+    "text": "Anthony improved from 5 wins in 2023 to 13 wins in 2024, a swing of +8 — the biggest single-season turnaround in league history.",
+    "value": 8,
+    "season": 2024,
+    "week": null,
+    "round": null,
+    "managers": [
+      "anthony"
+    ]
+  },
+  {
+    "id": "year_over_year_improvement_0002",
+    "category": "year_over_year_improvement",
+    "text": "Bob improved from 5 wins in 2019 to 11 wins in 2020, a swing of +6 — the 2nd-biggest single-season turnaround in league history.",
+    "value": 6,
+    "season": 2020,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bob"
+    ]
+  },
+  {
+    "id": "year_over_year_improvement_0003",
+    "category": "year_over_year_improvement",
+    "text": "TJ improved from 2 wins in 2020 to 8 wins in 2021, a swing of +6 — the 3rd-biggest single-season turnaround in league history.",
+    "value": 6,
+    "season": 2021,
+    "week": null,
+    "round": null,
+    "managers": [
+      "tj"
+    ]
+  },
+  {
+    "id": "year_over_year_improvement_0004",
+    "category": "year_over_year_improvement",
+    "text": "Mikey G improved from 6 wins in 2024 to 12 wins in 2025, a swing of +6 — the 4th-biggest single-season turnaround in league history.",
+    "value": 6,
+    "season": 2025,
+    "week": null,
+    "round": null,
+    "managers": [
+      "mikey_g"
+    ]
+  },
+  {
+    "id": "year_over_year_improvement_0005",
+    "category": "year_over_year_improvement",
+    "text": "Nick improved from 5 wins in 2024 to 10 wins in 2025, a swing of +5 — the 5th-biggest single-season turnaround in league history.",
+    "value": 5,
+    "season": 2025,
+    "week": null,
+    "round": null,
+    "managers": [
+      "nick"
+    ]
+  },
+  {
+    "id": "year_over_year_decline_0001",
+    "category": "year_over_year_decline",
+    "text": "Bill C fell from 10 wins in 2017 to 3 wins in 2018, a swing of -7 — the biggest single-season collapse in league history.",
+    "value": -7,
+    "season": 2018,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bill_c"
+    ]
+  },
+  {
+    "id": "year_over_year_decline_0002",
+    "category": "year_over_year_decline",
+    "text": "Bob fell from 11 wins in 2020 to 5 wins in 2021, a swing of -6 — the 2nd-biggest single-season collapse in league history.",
+    "value": -6,
+    "season": 2021,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bob"
+    ]
+  },
+  {
+    "id": "year_over_year_decline_0003",
+    "category": "year_over_year_decline",
+    "text": "Bill M fell from 11 wins in 2024 to 5 wins in 2025, a swing of -6 — the 3rd-biggest single-season collapse in league history.",
+    "value": -6,
+    "season": 2025,
+    "week": null,
+    "round": null,
+    "managers": [
+      "bill_m"
+    ]
+  },
+  {
+    "id": "year_over_year_decline_0004",
+    "category": "year_over_year_decline",
+    "text": "Pat fell from 7 wins in 2023 to 2 wins in 2024, a swing of -5 — the 4th-biggest single-season collapse in league history.",
+    "value": -5,
+    "season": 2024,
+    "week": null,
+    "round": null,
+    "managers": [
+      "pat"
+    ]
+  },
+  {
+    "id": "year_over_year_decline_0005",
+    "category": "year_over_year_decline",
+    "text": "Owen fell from 8 wins in 2019 to 3 wins in 2020, a swing of -5 — the 5th-biggest single-season collapse in league history.",
+    "value": -5,
+    "season": 2020,
+    "week": null,
+    "round": null,
+    "managers": [
       "owen"
     ]
   }
