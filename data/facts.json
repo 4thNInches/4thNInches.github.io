@@ -896,6 +896,19 @@
     ]
   },
   {
+    "id": "fifth_place_history_0001",
+    "category": "fifth_place_history",
+    "text": "2015 5th Place: WINNING (Steve) beat The White Russians (Owen) 186.20-104.64.",
+    "value": 2015,
+    "season": 2015,
+    "week": 15,
+    "round": "fifth_place",
+    "managers": [
+      "owen",
+      "steve"
+    ]
+  },
+  {
     "id": "championship_history_0002",
     "category": "championship_history",
     "text": "2016 Champion: Cock Warts (Bill C) beat Jake From State Farm (Nick) 135.06-130.40.",
@@ -919,6 +932,19 @@
     "managers": [
       "anthony",
       "jamie"
+    ]
+  },
+  {
+    "id": "fifth_place_history_0002",
+    "category": "fifth_place_history",
+    "text": "2016 5th Place: WINNING (Steve) beat Free Radicals (Pat) 122.94-111.96.",
+    "value": 2016,
+    "season": 2016,
+    "week": 15,
+    "round": "fifth_place",
+    "managers": [
+      "pat",
+      "steve"
     ]
   },
   {
@@ -948,6 +974,19 @@
     ]
   },
   {
+    "id": "fifth_place_history_0003",
+    "category": "fifth_place_history",
+    "text": "2017 5th Place: Mr Sam's Gayborhood (Connor) beat Sad Carolines (TJ) 130.68-85.08.",
+    "value": 2017,
+    "season": 2017,
+    "week": 15,
+    "round": "fifth_place",
+    "managers": [
+      "connor",
+      "tj"
+    ]
+  },
+  {
     "id": "championship_history_0004",
     "category": "championship_history",
     "text": "2018 Champion: Monger (Brian) beat Injury Prone (Anthony) 191.66-179.44.",
@@ -971,6 +1010,19 @@
     "managers": [
       "jamie",
       "nick"
+    ]
+  },
+  {
+    "id": "fifth_place_history_0004",
+    "category": "fifth_place_history",
+    "text": "2018 5th Place: Bandits (Bill M) beat Sad Carolines (TJ) 115.42-78.54.",
+    "value": 2018,
+    "season": 2018,
+    "week": 15,
+    "round": "fifth_place",
+    "managers": [
+      "bill_m",
+      "tj"
     ]
   },
   {
@@ -1000,6 +1052,19 @@
     ]
   },
   {
+    "id": "fifth_place_history_0005",
+    "category": "fifth_place_history",
+    "text": "2019 5th Place: Newman’s Owen beat 49ers Resurge (Bill C) 140.18-127.12.",
+    "value": 2019,
+    "season": 2019,
+    "week": 15,
+    "round": "fifth_place",
+    "managers": [
+      "bill_c",
+      "owen"
+    ]
+  },
+  {
     "id": "championship_history_0006",
     "category": "championship_history",
     "text": "2020 Champion: Free Radicals (Pat) beat Lambeau Leapers (Bob) 163.88-131.34.",
@@ -1023,6 +1088,19 @@
     "managers": [
       "brian",
       "john"
+    ]
+  },
+  {
+    "id": "fifth_place_history_0006",
+    "category": "fifth_place_history",
+    "text": "2020 5th Place: Jake From State Farm (Nick) beat Injury Immunity (Anthony) 128.16-101.56.",
+    "value": 2020,
+    "season": 2020,
+    "week": 15,
+    "round": "fifth_place",
+    "managers": [
+      "anthony",
+      "nick"
     ]
   },
   {
@@ -1052,6 +1130,19 @@
     ]
   },
   {
+    "id": "fifth_place_history_0007",
+    "category": "fifth_place_history",
+    "text": "2021 5th Place: Jake From State Farm (Nick) beat Hello....Newman (Jamie) 198.86-177.40.",
+    "value": 2021,
+    "season": 2021,
+    "week": 16,
+    "round": "fifth_place",
+    "managers": [
+      "jamie",
+      "nick"
+    ]
+  },
+  {
     "id": "championship_history_0008",
     "category": "championship_history",
     "text": "2022 Champion: Hello....Newman (Jamie) beat Jake From State Farm (Nick) 115.00-114.92.",
@@ -1075,6 +1166,19 @@
     "managers": [
       "john",
       "pat"
+    ]
+  },
+  {
+    "id": "fifth_place_history_0008",
+    "category": "fifth_place_history",
+    "text": "2022 5th Place: Supernovas (Mark) beat Monger (Brian) 117.72-93.40.",
+    "value": 2022,
+    "season": 2022,
+    "week": 16,
+    "round": "fifth_place",
+    "managers": [
+      "brian",
+      "mark"
     ]
   },
   {
@@ -1104,6 +1208,19 @@
     ]
   },
   {
+    "id": "fifth_place_history_0009",
+    "category": "fifth_place_history",
+    "text": "2023 5th Place: Hello....Newman (Jamie) beat Lambeau Leapers (Bob) 172.02-82.70.",
+    "value": 2023,
+    "season": 2023,
+    "week": 16,
+    "round": "fifth_place",
+    "managers": [
+      "bob",
+      "jamie"
+    ]
+  },
+  {
     "id": "championship_history_0010",
     "category": "championship_history",
     "text": "2024 Champion: Bandits (Bill M) beat Bob’s Best (Owen) 163.88-112.90.",
@@ -1127,6 +1244,19 @@
     "managers": [
       "anthony",
       "mark"
+    ]
+  },
+  {
+    "id": "fifth_place_history_0010",
+    "category": "fifth_place_history",
+    "text": "2024 5th Place: Hello....Newman (Jamie) beat Lambeau Leapers (Bob) 151.00-143.68.",
+    "value": 2024,
+    "season": 2024,
+    "week": 16,
+    "round": "fifth_place",
+    "managers": [
+      "bob",
+      "jamie"
     ]
   },
   {
@@ -1156,6 +1286,19 @@
     ]
   },
   {
+    "id": "fifth_place_history_0011",
+    "category": "fifth_place_history",
+    "text": "2025 5th Place: Big Dumb Sports (Dennis) beat Bob’s Best (Owen) 193.88-137.58.",
+    "value": 2025,
+    "season": 2025,
+    "week": 16,
+    "round": "fifth_place",
+    "managers": [
+      "dennis",
+      "owen"
+    ]
+  },
+  {
     "id": "highest_scoring_playoff_game_0001",
     "category": "highest_scoring_playoff_game",
     "text": "Supernovas (Mark) and Kuppa My Puka (Anthony) combined for 379.66 points in the 3rd place game of 2024, Week 17 — the highest-scoring playoff game in league history.",
@@ -1171,7 +1314,20 @@
   {
     "id": "highest_scoring_playoff_game_0002",
     "category": "highest_scoring_playoff_game",
-    "text": "Monger (Brian) and Injury Prone (Anthony) combined for 371.10 points in the championship of 2018, Week 16 — the 2nd-highest-scoring playoff game in league history.",
+    "text": "Jake From State Farm (Nick) and Hello....Newman (Jamie) combined for 376.26 points in the 5th place game of 2021, Week 16 — the 2nd-highest-scoring playoff game in league history.",
+    "value": 376.26,
+    "season": 2021,
+    "week": 16,
+    "round": "fifth_place",
+    "managers": [
+      "jamie",
+      "nick"
+    ]
+  },
+  {
+    "id": "highest_scoring_playoff_game_0003",
+    "category": "highest_scoring_playoff_game",
+    "text": "Monger (Brian) and Injury Prone (Anthony) combined for 371.10 points in the championship of 2018, Week 16 — the 3rd-highest-scoring playoff game in league history.",
     "value": 371.1,
     "season": 2018,
     "week": 16,
@@ -1182,23 +1338,10 @@
     ]
   },
   {
-    "id": "highest_scoring_playoff_game_0003",
-    "category": "highest_scoring_playoff_game",
-    "text": "New Kid in Town (John) and Monger (Brian) combined for 354.72 points in the 3rd place game of 2020, Week 16 — the 3rd-highest-scoring playoff game in league history.",
-    "value": 354.72,
-    "season": 2020,
-    "week": 16,
-    "round": "third_place",
-    "managers": [
-      "brian",
-      "john"
-    ]
-  },
-  {
     "id": "playoff_upset_0001",
     "category": "playoff_upset",
-    "text": "#12 seed Injury Prone (Anthony) knocked out #1 seed Hello.....Newman (Jamie) in the 3rd place game of 2016, Week 16 — the biggest seed upset in playoff history. Chalk lost that one.",
-    "value": 11,
+    "text": "#6 seed Injury Prone (Anthony) knocked out #1 seed Hello.....Newman (Jamie) in the 3rd place game of 2016, Week 16 — the biggest seed upset in playoff history. Chalk lost that one.",
+    "value": 5,
     "season": 2016,
     "week": 16,
     "round": "third_place",
@@ -1210,27 +1353,27 @@
   {
     "id": "playoff_upset_0002",
     "category": "playoff_upset",
-    "text": "Seeding didn't matter in the quarterfinals of 2025, Week 15: #12 seed Supernovas (Mark) eliminated #3 seed Big Dumb Sports (Dennis), a 9-seed upset — 2nd-biggest in league history.",
-    "value": 9,
-    "season": 2025,
-    "week": 15,
-    "round": "quarterfinal",
+    "text": "Seeding didn't matter in the championship of 2020, Week 16: #6 seed Free Radicals (Pat) eliminated #1 seed Lambeau Leapers (Bob), a 5-seed upset — 2nd-biggest in league history.",
+    "value": 5,
+    "season": 2020,
+    "week": 16,
+    "round": "championship",
     "managers": [
-      "dennis",
-      "mark"
+      "bob",
+      "pat"
     ]
   },
   {
     "id": "playoff_upset_0003",
     "category": "playoff_upset",
-    "text": "Seeding didn't matter in the quarterfinals of 2015, Week 14: #8 seed Mr Sam's Gayborhood (Connor) eliminated #2 seed WINNING (Steve), a 6-seed upset — 3rd-biggest in league history.",
-    "value": 6,
-    "season": 2015,
-    "week": 14,
-    "round": "quarterfinal",
+    "text": "Seeding didn't matter in the 3rd place game of 2024, Week 17: #6 seed Supernovas (Mark) eliminated #1 seed Kuppa My Puka (Anthony), a 5-seed upset — 3rd-biggest in league history.",
+    "value": 5,
+    "season": 2024,
+    "week": 17,
+    "round": "third_place",
     "managers": [
-      "connor",
-      "steve"
+      "anthony",
+      "mark"
     ]
   },
   {
@@ -1706,43 +1849,7 @@
   {
     "id": "never_made_playoffs_0001",
     "category": "never_made_playoffs",
-    "text": "Owen has never made the playoffs, across 10 seasons in the league.",
-    "value": 10,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "owen"
-    ]
-  },
-  {
-    "id": "never_made_playoffs_0002",
-    "category": "never_made_playoffs",
-    "text": "6 seasons, zero playoff appearances — Bill C's franchise is still chasing its first taste of the postseason.",
-    "value": 6,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "bill_c"
-    ]
-  },
-  {
-    "id": "never_made_playoffs_0003",
-    "category": "never_made_playoffs",
-    "text": "5 seasons, zero playoff appearances — Brian's franchise is still chasing its first taste of the postseason.",
-    "value": 5,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "brian"
-    ]
-  },
-  {
-    "id": "never_made_playoffs_0004",
-    "category": "never_made_playoffs",
-    "text": "2 seasons, zero playoff appearances — Will's franchise is still chasing its first taste of the postseason.",
+    "text": "Will has never made the playoffs, across 2 seasons in the league.",
     "value": 2,
     "season": null,
     "week": null,
@@ -1752,82 +1859,22 @@
     ]
   },
   {
-    "id": "never_made_playoffs_0005",
-    "category": "never_made_playoffs",
-    "text": "2 seasons, zero playoff appearances — Mikey G's franchise is still chasing its first taste of the postseason.",
-    "value": 2,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "mikey_g"
-    ]
-  },
-  {
     "id": "perfect_playoff_streak_0001",
     "category": "perfect_playoff_streak",
-    "text": "Anthony has made the playoffs in every one of their 11 seasons in the league — a perfect record.",
-    "value": 11,
+    "text": "Brian has made the playoffs in every one of their 5 seasons in the league — a perfect record.",
+    "value": 5,
     "season": null,
     "week": null,
     "round": null,
     "managers": [
-      "anthony"
-    ]
-  },
-  {
-    "id": "perfect_playoff_streak_0002",
-    "category": "perfect_playoff_streak",
-    "text": "Pat has made the playoffs in every one of their 10 seasons in the league — a perfect record.",
-    "value": 10,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "pat"
-    ]
-  },
-  {
-    "id": "perfect_playoff_streak_0003",
-    "category": "perfect_playoff_streak",
-    "text": "Dennis has made the playoffs in every one of their 7 seasons in the league — a perfect record.",
-    "value": 7,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "dennis"
+      "brian"
     ]
   },
   {
     "id": "career_playoff_appearances_0001",
     "category": "career_playoff_appearances",
-    "text": "Anthony has made the playoffs 11 times — the most in league history.",
-    "value": 11,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "anthony"
-    ]
-  },
-  {
-    "id": "career_playoff_appearances_0002",
-    "category": "career_playoff_appearances",
-    "text": "Pat has made the playoffs 10 times — the 2nd-most in league history.",
+    "text": "Nick has made the playoffs 10 times — the most in league history.",
     "value": 10,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "pat"
-    ]
-  },
-  {
-    "id": "career_playoff_appearances_0003",
-    "category": "career_playoff_appearances",
-    "text": "Nick has made the playoffs 9 times — the 3rd-most in league history.",
-    "value": 9,
     "season": null,
     "week": null,
     "round": null,
@@ -1836,10 +1883,22 @@
     ]
   },
   {
-    "id": "career_playoff_appearances_0004",
+    "id": "career_playoff_appearances_0002",
     "category": "career_playoff_appearances",
-    "text": "Mark has made the playoffs 8 times — the 4th-most in league history.",
-    "value": 8,
+    "text": "Jamie has made the playoffs 7 times — the 2nd-most in league history.",
+    "value": 7,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "jamie"
+    ]
+  },
+  {
+    "id": "career_playoff_appearances_0003",
+    "category": "career_playoff_appearances",
+    "text": "Mark has made the playoffs 7 times — the 3rd-most in league history.",
+    "value": 7,
     "season": null,
     "week": null,
     "round": null,
@@ -1848,15 +1907,27 @@
     ]
   },
   {
-    "id": "career_playoff_appearances_0005",
+    "id": "career_playoff_appearances_0004",
     "category": "career_playoff_appearances",
-    "text": "Bill M has made the playoffs 7 times — the 5th-most in league history.",
-    "value": 7,
+    "text": "Pat has made the playoffs 6 times — the 4th-most in league history.",
+    "value": 6,
     "season": null,
     "week": null,
     "round": null,
     "managers": [
-      "bill_m"
+      "pat"
+    ]
+  },
+  {
+    "id": "career_playoff_appearances_0005",
+    "category": "career_playoff_appearances",
+    "text": "Anthony has made the playoffs 5 times — the 5th-most in league history.",
+    "value": 5,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "anthony"
     ]
   },
   {
@@ -1940,8 +2011,8 @@
   {
     "id": "head_to_head_record_0002",
     "category": "head_to_head_record",
-    "text": "Jamie is a career 8-5 against Nick, spanning 13 meetings.",
-    "value": 3,
+    "text": "Jamie leads the all-time series 8-6 over Nick (14 meetings and counting).",
+    "value": 2,
     "season": null,
     "week": null,
     "round": null,
@@ -1979,11 +2050,11 @@
   {
     "id": "head_to_head_highest_combined_0002",
     "category": "head_to_head_highest_combined",
-    "text": "Jamie and Nick combined for 321.62 points in the regular season of 2021, Week 5 — their highest-scoring meeting ever.",
-    "value": 321.62,
+    "text": "Jamie and Nick combined for 376.26 points in the 5th place game of 2021, Week 16 — their highest-scoring meeting ever.",
+    "value": 376.26,
     "season": 2021,
-    "week": 5,
-    "round": "regular_season",
+    "week": 16,
+    "round": "fifth_place",
     "managers": [
       "jamie",
       "nick"
@@ -1992,7 +2063,7 @@
   {
     "id": "head_to_head_record_0003",
     "category": "head_to_head_record",
-    "text": "Jamie is a career 1-0 against Alex, spanning 1 meeting.",
+    "text": "Jamie leads the all-time series 1-0 over Alex (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -2018,7 +2089,7 @@
   {
     "id": "head_to_head_record_0004",
     "category": "head_to_head_record",
-    "text": "Ezra is a career 1-0 against Jamie, spanning 1 meeting.",
+    "text": "Ezra leads the all-time series 1-0 over Jamie (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -2044,7 +2115,7 @@
   {
     "id": "head_to_head_record_0005",
     "category": "head_to_head_record",
-    "text": "Jamie is a career 4-1 against Steve, spanning 5 meetings.",
+    "text": "Jamie leads the all-time series 4-1 over Steve (5 meetings and counting).",
     "value": 3,
     "season": null,
     "week": null,
@@ -2109,7 +2180,7 @@
   {
     "id": "head_to_head_streak_0002",
     "category": "head_to_head_streak",
-    "text": "Jamie has strung together as many as 4 straight wins against Steve.",
+    "text": "Jamie's longest winning streak against Steve sits at 4 games.",
     "value": 4,
     "season": null,
     "week": null,
@@ -2252,7 +2323,7 @@
   {
     "id": "head_to_head_streak_0004",
     "category": "head_to_head_streak",
-    "text": "Jamie's longest winning streak against Connor sits at 3 games.",
+    "text": "Jamie has strung together as many as 3 straight wins against Connor.",
     "value": 3,
     "season": null,
     "week": null,
@@ -2265,7 +2336,7 @@
   {
     "id": "head_to_head_record_0008",
     "category": "head_to_head_record",
-    "text": "Jamie leads the all-time series 8-4 over Anthony (12 meetings and counting).",
+    "text": "Jamie is a career 8-4 against Anthony, spanning 12 meetings.",
     "value": 4,
     "season": null,
     "week": null,
@@ -2317,7 +2388,7 @@
   {
     "id": "head_to_head_streak_0005",
     "category": "head_to_head_streak",
-    "text": "Jamie has strung together as many as 4 straight wins against Anthony.",
+    "text": "Jamie's longest winning streak against Anthony sits at 4 games.",
     "value": 4,
     "season": null,
     "week": null,
@@ -2330,8 +2401,8 @@
   {
     "id": "head_to_head_record_0009",
     "category": "head_to_head_record",
-    "text": "Jamie is a career 7-3 against Bob, spanning 10 meetings.",
-    "value": 4,
+    "text": "Jamie is a career 9-3 against Bob, spanning 12 meetings.",
+    "value": 6,
     "season": null,
     "week": null,
     "round": null,
@@ -2380,22 +2451,9 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0004",
-    "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 10 times, Bob and Jamie have never crossed paths in the playoffs.",
-    "value": 10,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "bob",
-      "jamie"
-    ]
-  },
-  {
     "id": "head_to_head_streak_0006",
     "category": "head_to_head_streak",
-    "text": "Jamie has strung together as many as 7 straight wins against Bob.",
+    "text": "Jamie's longest winning streak against Bob sits at 7 games.",
     "value": 7,
     "season": null,
     "week": null,
@@ -2408,7 +2466,7 @@
   {
     "id": "head_to_head_record_0010",
     "category": "head_to_head_record",
-    "text": "Mark is a career 7-3 against Jamie, spanning 10 meetings.",
+    "text": "Mark leads the all-time series 7-3 over Jamie (10 meetings and counting).",
     "value": 4,
     "season": null,
     "week": null,
@@ -2460,7 +2518,7 @@
   {
     "id": "head_to_head_record_0011",
     "category": "head_to_head_record",
-    "text": "Jamie is a career 1-0 against Aengus, spanning 1 meeting.",
+    "text": "Jamie leads the all-time series 1-0 over Aengus (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -2562,7 +2620,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0005",
+    "id": "head_to_head_never_playoffs_0004",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 4 times, Connor and Owen have never crossed paths in the playoffs.",
     "value": 4,
@@ -2629,7 +2687,7 @@
   {
     "id": "head_to_head_shutout_0001",
     "category": "head_to_head_shutout",
-    "text": "Connor is winless against Nick, 0-4 across their history.",
+    "text": "Nick owns Connor outright: 4-0 all-time, no ties.",
     "value": 4,
     "season": null,
     "week": null,
@@ -2681,7 +2739,7 @@
   {
     "id": "head_to_head_record_0016",
     "category": "head_to_head_record",
-    "text": "Connor leads the all-time series 1-0 over Ezra (1 meeting and counting).",
+    "text": "Connor is a career 1-0 against Ezra, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -2874,7 +2932,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0006",
+    "id": "head_to_head_never_playoffs_0005",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 4 times, Anthony and Connor have never crossed paths in the playoffs.",
     "value": 4,
@@ -2939,7 +2997,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0007",
+    "id": "head_to_head_never_playoffs_0006",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Bob and Connor have never crossed paths in the playoffs.",
     "value": 3,
@@ -2967,7 +3025,7 @@
   {
     "id": "head_to_head_streak_0009",
     "category": "head_to_head_streak",
-    "text": "Connor has strung together as many as 3 straight wins against Bob.",
+    "text": "Connor's longest winning streak against Bob sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -3030,7 +3088,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0008",
+    "id": "head_to_head_never_playoffs_0007",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Connor and Mark have never crossed paths in the playoffs.",
     "value": 3,
@@ -3097,7 +3155,7 @@
   {
     "id": "head_to_head_streak_0010",
     "category": "head_to_head_streak",
-    "text": "Mark's longest winning streak against Anthony sits at 4 games.",
+    "text": "Mark has strung together as many as 4 straight wins against Anthony.",
     "value": 4,
     "season": null,
     "week": null,
@@ -3136,7 +3194,7 @@
   {
     "id": "head_to_head_record_0024",
     "category": "head_to_head_record",
-    "text": "Anthony leads the all-time series 12-5 over Owen (17 meetings and counting).",
+    "text": "Anthony is a career 12-5 against Owen, spanning 17 meetings.",
     "value": 7,
     "season": null,
     "week": null,
@@ -3201,8 +3259,8 @@
   {
     "id": "head_to_head_record_0025",
     "category": "head_to_head_record",
-    "text": "Nick leads the all-time series 8-3 over Anthony (11 meetings and counting).",
-    "value": 5,
+    "text": "Nick is a career 9-3 against Anthony, spanning 12 meetings.",
+    "value": 6,
     "season": null,
     "week": null,
     "round": null,
@@ -3253,7 +3311,7 @@
   {
     "id": "head_to_head_streak_0012",
     "category": "head_to_head_streak",
-    "text": "Nick has strung together as many as 4 straight wins against Anthony.",
+    "text": "Nick's longest winning streak against Anthony sits at 4 games.",
     "value": 4,
     "season": null,
     "week": null,
@@ -3266,7 +3324,7 @@
   {
     "id": "head_to_head_record_0026",
     "category": "head_to_head_record",
-    "text": "Anthony is a career 1-0 against Alex, spanning 1 meeting.",
+    "text": "Anthony leads the all-time series 1-0 over Alex (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -3318,7 +3376,7 @@
   {
     "id": "head_to_head_record_0028",
     "category": "head_to_head_record",
-    "text": "Anthony is a career 4-3 against Steve, spanning 7 meetings.",
+    "text": "Anthony leads the all-time series 4-3 over Steve (7 meetings and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -3370,7 +3428,7 @@
   {
     "id": "head_to_head_streak_0013",
     "category": "head_to_head_streak",
-    "text": "Anthony's longest winning streak against Steve sits at 3 games.",
+    "text": "Anthony has strung together as many as 3 straight wins against Steve.",
     "value": 3,
     "season": null,
     "week": null,
@@ -3383,7 +3441,7 @@
   {
     "id": "head_to_head_record_0029",
     "category": "head_to_head_record",
-    "text": "Anthony leads the all-time series 7-5 over Pat (12 meetings and counting).",
+    "text": "Anthony is a career 7-5 against Pat, spanning 12 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -3433,7 +3491,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0009",
+    "id": "head_to_head_never_playoffs_0008",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 12 times, Anthony and Pat have never crossed paths in the playoffs.",
     "value": 12,
@@ -3511,7 +3569,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0010",
+    "id": "head_to_head_never_playoffs_0009",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 14 times, Anthony and Bob have never crossed paths in the playoffs.",
     "value": 14,
@@ -3526,7 +3584,7 @@
   {
     "id": "head_to_head_streak_0015",
     "category": "head_to_head_streak",
-    "text": "Bob has strung together as many as 3 straight wins against Anthony.",
+    "text": "Bob's longest winning streak against Anthony sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -3539,7 +3597,7 @@
   {
     "id": "head_to_head_record_0031",
     "category": "head_to_head_record",
-    "text": "Pat is a career 8-7 against Bob, spanning 15 meetings.",
+    "text": "Pat leads the all-time series 8-7 over Bob (15 meetings and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -3591,7 +3649,7 @@
   {
     "id": "head_to_head_streak_0016",
     "category": "head_to_head_streak",
-    "text": "Bob's longest winning streak against Pat sits at 3 games.",
+    "text": "Bob has strung together as many as 3 straight wins against Pat.",
     "value": 3,
     "season": null,
     "week": null,
@@ -3630,7 +3688,7 @@
   {
     "id": "head_to_head_record_0033",
     "category": "head_to_head_record",
-    "text": "Mark is a career 8-5 against Pat, spanning 13 meetings.",
+    "text": "Mark leads the all-time series 8-5 over Pat (13 meetings and counting).",
     "value": 3,
     "season": null,
     "week": null,
@@ -3682,7 +3740,7 @@
   {
     "id": "head_to_head_streak_0017",
     "category": "head_to_head_streak",
-    "text": "Mark has strung together as many as 4 straight wins against Pat.",
+    "text": "Mark's longest winning streak against Pat sits at 4 games.",
     "value": 4,
     "season": null,
     "week": null,
@@ -3695,8 +3753,8 @@
   {
     "id": "head_to_head_record_0034",
     "category": "head_to_head_record",
-    "text": "Steve leads the all-time series 4-3 over Pat (7 meetings and counting).",
-    "value": 1,
+    "text": "Steve is a career 5-3 against Pat, spanning 8 meetings.",
+    "value": 2,
     "season": null,
     "week": null,
     "round": null,
@@ -3745,19 +3803,6 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0011",
-    "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 7 times, Pat and Steve have never crossed paths in the playoffs.",
-    "value": 7,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "pat",
-      "steve"
-    ]
-  },
-  {
     "id": "head_to_head_streak_0018",
     "category": "head_to_head_streak",
     "text": "Steve's longest winning streak against Pat sits at 3 games.",
@@ -3773,7 +3818,7 @@
   {
     "id": "head_to_head_record_0035",
     "category": "head_to_head_record",
-    "text": "Pat leads the all-time series 1-0 over Aengus (1 meeting and counting).",
+    "text": "Pat is a career 1-0 against Aengus, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -3799,7 +3844,7 @@
   {
     "id": "head_to_head_record_0036",
     "category": "head_to_head_record",
-    "text": "Pat is a career 6-5 against Owen, spanning 11 meetings.",
+    "text": "Pat leads the all-time series 6-5 over Owen (11 meetings and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -3849,7 +3894,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0012",
+    "id": "head_to_head_never_playoffs_0010",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 11 times, Owen and Pat have never crossed paths in the playoffs.",
     "value": 11,
@@ -3864,7 +3909,7 @@
   {
     "id": "head_to_head_streak_0019",
     "category": "head_to_head_streak",
-    "text": "Pat's longest winning streak against Owen sits at 3 games.",
+    "text": "Pat has strung together as many as 3 straight wins against Owen.",
     "value": 3,
     "season": null,
     "week": null,
@@ -3877,7 +3922,7 @@
   {
     "id": "head_to_head_record_0037",
     "category": "head_to_head_record",
-    "text": "Nick leads the all-time series 7-6 over Pat (13 meetings and counting).",
+    "text": "Nick is a career 7-6 against Pat, spanning 13 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -3929,7 +3974,7 @@
   {
     "id": "head_to_head_streak_0020",
     "category": "head_to_head_streak",
-    "text": "Pat's longest winning streak against Nick sits at 5 games.",
+    "text": "Pat has strung together as many as 5 straight wins against Nick.",
     "value": 5,
     "season": null,
     "week": null,
@@ -3942,7 +3987,7 @@
   {
     "id": "head_to_head_record_0038",
     "category": "head_to_head_record",
-    "text": "Pat leads the all-time series 1-0 over Alex (1 meeting and counting).",
+    "text": "Pat is a career 1-0 against Alex, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -3968,7 +4013,7 @@
   {
     "id": "head_to_head_record_0039",
     "category": "head_to_head_record",
-    "text": "Mark leads the all-time series 9-5 over Bob (14 meetings and counting).",
+    "text": "Mark is a career 9-5 against Bob, spanning 14 meetings.",
     "value": 4,
     "season": null,
     "week": null,
@@ -4018,7 +4063,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0013",
+    "id": "head_to_head_never_playoffs_0011",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 14 times, Bob and Mark have never crossed paths in the playoffs.",
     "value": 14,
@@ -4046,7 +4091,7 @@
   {
     "id": "head_to_head_record_0040",
     "category": "head_to_head_record",
-    "text": "Mark leads the all-time series 1-0 over Aengus (1 meeting and counting).",
+    "text": "Mark is a career 1-0 against Aengus, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -4072,7 +4117,7 @@
   {
     "id": "head_to_head_record_0041",
     "category": "head_to_head_record",
-    "text": "Mark is a career 10-5 against Owen, spanning 15 meetings.",
+    "text": "Mark leads the all-time series 10-5 over Owen (15 meetings and counting).",
     "value": 5,
     "season": null,
     "week": null,
@@ -4202,7 +4247,7 @@
   {
     "id": "head_to_head_record_0043",
     "category": "head_to_head_record",
-    "text": "Alex leads the all-time series 1-0 over Mark (1 meeting and counting).",
+    "text": "Alex is a career 1-0 against Mark, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -4228,7 +4273,7 @@
   {
     "id": "head_to_head_record_0044",
     "category": "head_to_head_record",
-    "text": "Ezra is a career 1-0 against Mark, spanning 1 meeting.",
+    "text": "Ezra leads the all-time series 1-0 over Mark (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -4254,7 +4299,7 @@
   {
     "id": "head_to_head_record_0045",
     "category": "head_to_head_record",
-    "text": "Steve is a career 5-2 against Mark, spanning 7 meetings.",
+    "text": "Steve leads the all-time series 5-2 over Mark (7 meetings and counting).",
     "value": 3,
     "season": null,
     "week": null,
@@ -4304,7 +4349,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0014",
+    "id": "head_to_head_never_playoffs_0012",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 7 times, Mark and Steve have never crossed paths in the playoffs.",
     "value": 7,
@@ -4319,7 +4364,7 @@
   {
     "id": "head_to_head_streak_0024",
     "category": "head_to_head_streak",
-    "text": "Steve's longest winning streak against Mark sits at 3 games.",
+    "text": "Steve has strung together as many as 3 straight wins against Mark.",
     "value": 3,
     "season": null,
     "week": null,
@@ -4332,7 +4377,7 @@
   {
     "id": "head_to_head_record_0046",
     "category": "head_to_head_record",
-    "text": "Nick is a career 9-1 against Steve, spanning 10 meetings.",
+    "text": "Nick leads the all-time series 9-1 over Steve (10 meetings and counting).",
     "value": 8,
     "season": null,
     "week": null,
@@ -4384,7 +4429,7 @@
   {
     "id": "head_to_head_streak_0025",
     "category": "head_to_head_streak",
-    "text": "Nick has strung together as many as 7 straight wins against Steve.",
+    "text": "Nick's longest winning streak against Steve sits at 7 games.",
     "value": 7,
     "season": null,
     "week": null,
@@ -4397,7 +4442,7 @@
   {
     "id": "head_to_head_record_0047",
     "category": "head_to_head_record",
-    "text": "Steve leads the all-time series 2-0 over Alex (2 meetings and counting).",
+    "text": "Steve is a career 2-0 against Alex, spanning 2 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -4499,7 +4544,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0015",
+    "id": "head_to_head_never_playoffs_0013",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 6 times, Bob and Steve have never crossed paths in the playoffs.",
     "value": 6,
@@ -4540,8 +4585,8 @@
   {
     "id": "head_to_head_record_0051",
     "category": "head_to_head_record",
-    "text": "Owen leads the all-time series 3-2 over Steve (5 meetings and counting).",
-    "value": 1,
+    "text": "Owen and Steve are dead even, 3-3, across 6 all-time meetings — as balanced a rivalry as this league has.",
+    "value": 0,
     "season": null,
     "week": null,
     "round": null,
@@ -4579,24 +4624,11 @@
   {
     "id": "head_to_head_highest_combined_0033",
     "category": "head_to_head_highest_combined",
-    "text": "Owen and Steve combined for 282.12 points in the regular season of 2019, Week 10 — their highest-scoring meeting ever.",
-    "value": 282.12,
-    "season": 2019,
-    "week": 10,
-    "round": "regular_season",
-    "managers": [
-      "owen",
-      "steve"
-    ]
-  },
-  {
-    "id": "head_to_head_never_playoffs_0016",
-    "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 5 times, Owen and Steve have never crossed paths in the playoffs.",
-    "value": 5,
-    "season": null,
-    "week": null,
-    "round": null,
+    "text": "Owen and Steve combined for 290.84 points in the 5th place game of 2015, Week 15 — their highest-scoring meeting ever.",
+    "value": 290.84,
+    "season": 2015,
+    "week": 15,
+    "round": "fifth_place",
     "managers": [
       "owen",
       "steve"
@@ -4605,7 +4637,7 @@
   {
     "id": "head_to_head_record_0052",
     "category": "head_to_head_record",
-    "text": "Bob is a career 1-0 against Aengus, spanning 1 meeting.",
+    "text": "Bob leads the all-time series 1-0 over Aengus (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -4631,7 +4663,7 @@
   {
     "id": "head_to_head_record_0053",
     "category": "head_to_head_record",
-    "text": "Owen leads the all-time series 1-0 over Aengus (1 meeting and counting).",
+    "text": "Owen is a career 1-0 against Aengus, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -4683,7 +4715,7 @@
   {
     "id": "head_to_head_record_0055",
     "category": "head_to_head_record",
-    "text": "Aengus is a career 1-0 against Alex, spanning 1 meeting.",
+    "text": "Aengus leads the all-time series 1-0 over Alex (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -4709,7 +4741,7 @@
   {
     "id": "head_to_head_record_0056",
     "category": "head_to_head_record",
-    "text": "Aengus is a career 1-0 against Ezra, spanning 1 meeting.",
+    "text": "Aengus leads the all-time series 1-0 over Ezra (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -4735,7 +4767,7 @@
   {
     "id": "head_to_head_record_0057",
     "category": "head_to_head_record",
-    "text": "Nick leads the all-time series 9-6 over Bob (15 meetings and counting).",
+    "text": "Nick is a career 9-6 against Bob, spanning 15 meetings.",
     "value": 3,
     "season": null,
     "week": null,
@@ -4800,7 +4832,7 @@
   {
     "id": "head_to_head_record_0058",
     "category": "head_to_head_record",
-    "text": "Nick leads the all-time series 9-4 over Owen (13 meetings and counting).",
+    "text": "Nick is a career 9-4 against Owen, spanning 13 meetings.",
     "value": 5,
     "season": null,
     "week": null,
@@ -4850,7 +4882,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0017",
+    "id": "head_to_head_never_playoffs_0014",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 13 times, Nick and Owen have never crossed paths in the playoffs.",
     "value": 13,
@@ -4865,7 +4897,7 @@
   {
     "id": "head_to_head_streak_0027",
     "category": "head_to_head_streak",
-    "text": "Nick has strung together as many as 5 straight wins against Owen.",
+    "text": "Nick's longest winning streak against Owen sits at 5 games.",
     "value": 5,
     "season": null,
     "week": null,
@@ -4878,7 +4910,7 @@
   {
     "id": "head_to_head_record_0059",
     "category": "head_to_head_record",
-    "text": "Nick leads the all-time series 1-0 over Alex (1 meeting and counting).",
+    "text": "Nick is a career 1-0 against Alex, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -4995,7 +5027,7 @@
   {
     "id": "head_to_head_record_0062",
     "category": "head_to_head_record",
-    "text": "Owen is a career 1-0 against Alex, spanning 1 meeting.",
+    "text": "Owen leads the all-time series 1-0 over Alex (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -5021,7 +5053,7 @@
   {
     "id": "head_to_head_record_0063",
     "category": "head_to_head_record",
-    "text": "Owen is a career 1-0 against Ezra, spanning 1 meeting.",
+    "text": "Owen leads the all-time series 1-0 over Ezra (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -5073,7 +5105,7 @@
   {
     "id": "head_to_head_record_0065",
     "category": "head_to_head_record",
-    "text": "Ezra is a career 1-0 against Bob, spanning 1 meeting.",
+    "text": "Ezra leads the all-time series 1-0 over Bob (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -5099,7 +5131,7 @@
   {
     "id": "head_to_head_record_0066",
     "category": "head_to_head_record",
-    "text": "Bob is a career 1-0 against Alex, spanning 1 meeting.",
+    "text": "Bob leads the all-time series 1-0 over Alex (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -5125,7 +5157,7 @@
   {
     "id": "head_to_head_record_0067",
     "category": "head_to_head_record",
-    "text": "Jamie leads the all-time series 5-3 over TJ (8 meetings and counting).",
+    "text": "Jamie is a career 5-3 against TJ, spanning 8 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -5175,7 +5207,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0018",
+    "id": "head_to_head_never_playoffs_0015",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 8 times, Jamie and TJ have never crossed paths in the playoffs.",
     "value": 8,
@@ -5281,8 +5313,8 @@
   {
     "id": "head_to_head_record_0070",
     "category": "head_to_head_record",
-    "text": "Connor leads the all-time series 2-1 over TJ (3 meetings and counting).",
-    "value": 1,
+    "text": "Connor is a career 3-1 against TJ, spanning 4 meetings.",
+    "value": 2,
     "season": null,
     "week": null,
     "round": null,
@@ -5331,22 +5363,9 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0019",
-    "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 3 times, Connor and TJ have never crossed paths in the playoffs.",
-    "value": 3,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "connor",
-      "tj"
-    ]
-  },
-  {
     "id": "head_to_head_record_0071",
     "category": "head_to_head_record",
-    "text": "TJ leads the all-time series 6-3 over Owen (9 meetings and counting).",
+    "text": "TJ is a career 6-3 against Owen, spanning 9 meetings.",
     "value": 3,
     "season": null,
     "week": null,
@@ -5396,7 +5415,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0020",
+    "id": "head_to_head_never_playoffs_0016",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 9 times, Owen and TJ have never crossed paths in the playoffs.",
     "value": 9,
@@ -5411,7 +5430,7 @@
   {
     "id": "head_to_head_streak_0030",
     "category": "head_to_head_streak",
-    "text": "TJ's longest winning streak against Owen sits at 3 games.",
+    "text": "TJ has strung together as many as 3 straight wins against Owen.",
     "value": 3,
     "season": null,
     "week": null,
@@ -5424,7 +5443,7 @@
   {
     "id": "head_to_head_record_0072",
     "category": "head_to_head_record",
-    "text": "Steve leads the all-time series 4-2 over TJ (6 meetings and counting).",
+    "text": "Steve is a career 4-2 against TJ, spanning 6 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -5474,7 +5493,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0021",
+    "id": "head_to_head_never_playoffs_0017",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 6 times, Steve and TJ have never crossed paths in the playoffs.",
     "value": 6,
@@ -5539,7 +5558,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0022",
+    "id": "head_to_head_never_playoffs_0018",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 10 times, Mark and TJ have never crossed paths in the playoffs.",
     "value": 10,
@@ -5554,7 +5573,7 @@
   {
     "id": "head_to_head_streak_0031",
     "category": "head_to_head_streak",
-    "text": "Mark's longest winning streak against TJ sits at 4 games.",
+    "text": "Mark has strung together as many as 4 straight wins against TJ.",
     "value": 4,
     "season": null,
     "week": null,
@@ -5708,7 +5727,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0023",
+    "id": "head_to_head_never_playoffs_0019",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 9 times, Pat and TJ have never crossed paths in the playoffs.",
     "value": 9,
@@ -5786,7 +5805,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0024",
+    "id": "head_to_head_never_playoffs_0020",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 6 times, Bill C and TJ have never crossed paths in the playoffs.",
     "value": 6,
@@ -5814,7 +5833,7 @@
   {
     "id": "head_to_head_record_0078",
     "category": "head_to_head_record",
-    "text": "TJ leads the all-time series 5-4 over Bob (9 meetings and counting).",
+    "text": "TJ is a career 5-4 against Bob, spanning 9 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -5864,7 +5883,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0025",
+    "id": "head_to_head_never_playoffs_0021",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 9 times, Bob and TJ have never crossed paths in the playoffs.",
     "value": 9,
@@ -5879,7 +5898,7 @@
   {
     "id": "head_to_head_streak_0035",
     "category": "head_to_head_streak",
-    "text": "TJ's longest winning streak against Bob sits at 4 games.",
+    "text": "TJ has strung together as many as 4 straight wins against Bob.",
     "value": 4,
     "season": null,
     "week": null,
@@ -5892,7 +5911,7 @@
   {
     "id": "head_to_head_record_0079",
     "category": "head_to_head_record",
-    "text": "TJ is a career 5-4 against Anthony, spanning 9 meetings.",
+    "text": "TJ leads the all-time series 5-4 over Anthony (9 meetings and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -5942,7 +5961,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0026",
+    "id": "head_to_head_never_playoffs_0022",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 9 times, Anthony and TJ have never crossed paths in the playoffs.",
     "value": 9,
@@ -5970,7 +5989,7 @@
   {
     "id": "head_to_head_record_0080",
     "category": "head_to_head_record",
-    "text": "Bill C is a career 5-4 against Pat, spanning 9 meetings.",
+    "text": "Bill C leads the all-time series 5-4 over Pat (9 meetings and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -6022,7 +6041,7 @@
   {
     "id": "head_to_head_record_0081",
     "category": "head_to_head_record",
-    "text": "Pat is a career 3-0 against Will, spanning 3 meetings.",
+    "text": "Pat leads the all-time series 3-0 over Will (3 meetings and counting).",
     "value": 3,
     "season": null,
     "week": null,
@@ -6072,7 +6091,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0027",
+    "id": "head_to_head_never_playoffs_0023",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Pat and Will have never crossed paths in the playoffs.",
     "value": 3,
@@ -6087,7 +6106,7 @@
   {
     "id": "head_to_head_shutout_0003",
     "category": "head_to_head_shutout",
-    "text": "Pat owns Will outright: 3-0 all-time, no ties.",
+    "text": "Will is winless against Pat, 0-3 across their history.",
     "value": 3,
     "season": null,
     "week": null,
@@ -6113,7 +6132,7 @@
   {
     "id": "head_to_head_record_0082",
     "category": "head_to_head_record",
-    "text": "Anthony leads the all-time series 2-1 over Will (3 meetings and counting).",
+    "text": "Anthony is a career 2-1 against Will, spanning 3 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -6163,7 +6182,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0028",
+    "id": "head_to_head_never_playoffs_0024",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Anthony and Will have never crossed paths in the playoffs.",
     "value": 3,
@@ -6228,7 +6247,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0029",
+    "id": "head_to_head_never_playoffs_0025",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 7 times, Anthony and Bill C have never crossed paths in the playoffs.",
     "value": 7,
@@ -6256,7 +6275,7 @@
   {
     "id": "head_to_head_record_0084",
     "category": "head_to_head_record",
-    "text": "Bill C is a career 7-6 against Nick, spanning 13 meetings.",
+    "text": "Bill C leads the all-time series 7-6 over Nick (13 meetings and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -6308,7 +6327,7 @@
   {
     "id": "head_to_head_streak_0039",
     "category": "head_to_head_streak",
-    "text": "Nick has strung together as many as 5 straight wins against Bill C.",
+    "text": "Nick's longest winning streak against Bill C sits at 5 games.",
     "value": 5,
     "season": null,
     "week": null,
@@ -6371,7 +6390,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0030",
+    "id": "head_to_head_never_playoffs_0026",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Nick and Will have never crossed paths in the playoffs.",
     "value": 3,
@@ -6436,7 +6455,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0031",
+    "id": "head_to_head_never_playoffs_0027",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 7 times, Bill C and Bob have never crossed paths in the playoffs.",
     "value": 7,
@@ -6477,7 +6496,7 @@
   {
     "id": "head_to_head_record_0088",
     "category": "head_to_head_record",
-    "text": "Connor leads the all-time series 2-1 over Will (3 meetings and counting).",
+    "text": "Connor is a career 2-1 against Will, spanning 3 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -6527,7 +6546,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0032",
+    "id": "head_to_head_never_playoffs_0028",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Connor and Will have never crossed paths in the playoffs.",
     "value": 3,
@@ -6644,7 +6663,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0033",
+    "id": "head_to_head_never_playoffs_0029",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 7 times, Bill C and Mark have never crossed paths in the playoffs.",
     "value": 7,
@@ -6698,8 +6717,8 @@
   {
     "id": "head_to_head_record_0093",
     "category": "head_to_head_record",
-    "text": "Owen is a career 4-1 against Bill C, spanning 5 meetings.",
-    "value": 3,
+    "text": "Owen leads the all-time series 5-1 over Bill C (6 meetings and counting).",
+    "value": 4,
     "season": null,
     "week": null,
     "round": null,
@@ -6748,23 +6767,10 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0034",
-    "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 5 times, Bill C and Owen have never crossed paths in the playoffs.",
-    "value": 5,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "bill_c",
-      "owen"
-    ]
-  },
-  {
     "id": "head_to_head_streak_0041",
     "category": "head_to_head_streak",
-    "text": "Owen's longest winning streak against Bill C sits at 3 games.",
-    "value": 3,
+    "text": "Owen has strung together as many as 4 straight wins against Bill C.",
+    "value": 4,
     "season": null,
     "week": null,
     "round": null,
@@ -6776,7 +6782,7 @@
   {
     "id": "head_to_head_record_0094",
     "category": "head_to_head_record",
-    "text": "Steve is a career 2-0 against Will, spanning 2 meetings.",
+    "text": "Steve leads the all-time series 2-0 over Will (2 meetings and counting).",
     "value": 2,
     "season": null,
     "week": null,
@@ -6878,7 +6884,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0035",
+    "id": "head_to_head_never_playoffs_0030",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 4 times, Bill C and Steve have never crossed paths in the playoffs.",
     "value": 4,
@@ -6919,7 +6925,7 @@
   {
     "id": "head_to_head_record_0098",
     "category": "head_to_head_record",
-    "text": "Bill M leads the all-time series 4-3 over Jamie (7 meetings and counting).",
+    "text": "Bill M is a career 4-3 against Jamie, spanning 7 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -7021,7 +7027,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0036",
+    "id": "head_to_head_never_playoffs_0031",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 4 times, Brian and Jamie have never crossed paths in the playoffs.",
     "value": 4,
@@ -7036,7 +7042,7 @@
   {
     "id": "head_to_head_streak_0042",
     "category": "head_to_head_streak",
-    "text": "Brian has strung together as many as 3 straight wins against Jamie.",
+    "text": "Brian's longest winning streak against Jamie sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -7101,7 +7107,7 @@
   {
     "id": "head_to_head_record_0101",
     "category": "head_to_head_record",
-    "text": "Justin leads the all-time series 1-0 over Pat (1 meeting and counting).",
+    "text": "Justin is a career 1-0 against Pat, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -7192,7 +7198,7 @@
   {
     "id": "head_to_head_record_0103",
     "category": "head_to_head_record",
-    "text": "Anthony is a career 6-4 against Bill M, spanning 10 meetings.",
+    "text": "Anthony leads the all-time series 6-4 over Bill M (10 meetings and counting).",
     "value": 2,
     "season": null,
     "week": null,
@@ -7257,7 +7263,7 @@
   {
     "id": "head_to_head_record_0104",
     "category": "head_to_head_record",
-    "text": "Brian is a career 7-1 against Anthony, spanning 8 meetings.",
+    "text": "Brian leads the all-time series 7-1 over Anthony (8 meetings and counting).",
     "value": 6,
     "season": null,
     "week": null,
@@ -7348,7 +7354,7 @@
   {
     "id": "head_to_head_record_0106",
     "category": "head_to_head_record",
-    "text": "Brian leads the all-time series 5-2 over Nick (7 meetings and counting).",
+    "text": "Brian is a career 5-2 against Nick, spanning 7 meetings.",
     "value": 3,
     "season": null,
     "week": null,
@@ -7400,7 +7406,7 @@
   {
     "id": "head_to_head_streak_0046",
     "category": "head_to_head_streak",
-    "text": "Brian has strung together as many as 3 straight wins against Nick.",
+    "text": "Brian's longest winning streak against Nick sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -7491,7 +7497,7 @@
   {
     "id": "head_to_head_streak_0047",
     "category": "head_to_head_streak",
-    "text": "Nick has strung together as many as 3 straight wins against Bill M.",
+    "text": "Nick's longest winning streak against Bill M sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -7554,7 +7560,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0037",
+    "id": "head_to_head_never_playoffs_0032",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 7 times, Bob and Brian have never crossed paths in the playoffs.",
     "value": 7,
@@ -7569,7 +7575,7 @@
   {
     "id": "head_to_head_streak_0048",
     "category": "head_to_head_streak",
-    "text": "Bob's longest winning streak against Brian sits at 3 games.",
+    "text": "Bob has strung together as many as 3 straight wins against Brian.",
     "value": 3,
     "season": null,
     "week": null,
@@ -7608,7 +7614,7 @@
   {
     "id": "head_to_head_record_0111",
     "category": "head_to_head_record",
-    "text": "Bob is a career 6-4 against Bill M, spanning 10 meetings.",
+    "text": "Bob leads the all-time series 6-4 over Bill M (10 meetings and counting).",
     "value": 2,
     "season": null,
     "week": null,
@@ -7658,7 +7664,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0038",
+    "id": "head_to_head_never_playoffs_0033",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 10 times, Bill M and Bob have never crossed paths in the playoffs.",
     "value": 10,
@@ -7686,7 +7692,7 @@
   {
     "id": "head_to_head_record_0112",
     "category": "head_to_head_record",
-    "text": "Bill M is a career 7-5 against Mark, spanning 12 meetings.",
+    "text": "Bill M leads the all-time series 7-5 over Mark (12 meetings and counting).",
     "value": 2,
     "season": null,
     "week": null,
@@ -7751,7 +7757,7 @@
   {
     "id": "head_to_head_record_0113",
     "category": "head_to_head_record",
-    "text": "Brian leads the all-time series 4-2 over Bill M (6 meetings and counting).",
+    "text": "Brian is a career 4-2 against Bill M, spanning 6 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -7866,7 +7872,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0039",
+    "id": "head_to_head_never_playoffs_0034",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 5 times, Bill M and Steve have never crossed paths in the playoffs.",
     "value": 5,
@@ -7881,8 +7887,8 @@
   {
     "id": "head_to_head_record_0115",
     "category": "head_to_head_record",
-    "text": "TJ leads the all-time series 4-3 over Bill M (7 meetings and counting).",
-    "value": 1,
+    "text": "Bill M and TJ are dead even, 4-4, across 8 all-time meetings — as balanced a rivalry as this league has.",
+    "value": 0,
     "season": null,
     "week": null,
     "round": null,
@@ -7931,22 +7937,9 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0040",
-    "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 7 times, Bill M and TJ have never crossed paths in the playoffs.",
-    "value": 7,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "bill_m",
-      "tj"
-    ]
-  },
-  {
     "id": "head_to_head_streak_0052",
     "category": "head_to_head_streak",
-    "text": "TJ's longest winning streak against Bill M sits at 3 games.",
+    "text": "Bill M's longest winning streak against TJ sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -7959,7 +7952,7 @@
   {
     "id": "head_to_head_record_0116",
     "category": "head_to_head_record",
-    "text": "Bill M leads the all-time series 3-2 over Bill C (5 meetings and counting).",
+    "text": "Bill M is a career 3-2 against Bill C, spanning 5 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -8009,7 +8002,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0041",
+    "id": "head_to_head_never_playoffs_0035",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 5 times, Bill C and Bill M have never crossed paths in the playoffs.",
     "value": 5,
@@ -8063,8 +8056,8 @@
   {
     "id": "head_to_head_record_0118",
     "category": "head_to_head_record",
-    "text": "Brian and Mark are dead even, 4-4, across 8 all-time meetings — as balanced a rivalry as this league has.",
-    "value": 0,
+    "text": "Mark leads the all-time series 5-4 over Brian (9 meetings and counting).",
+    "value": 1,
     "season": null,
     "week": null,
     "round": null,
@@ -8191,7 +8184,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0042",
+    "id": "head_to_head_never_playoffs_0036",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 6 times, Brian and TJ have never crossed paths in the playoffs.",
     "value": 6,
@@ -8206,7 +8199,7 @@
   {
     "id": "head_to_head_streak_0054",
     "category": "head_to_head_streak",
-    "text": "Brian's longest winning streak against TJ sits at 3 games.",
+    "text": "Brian has strung together as many as 3 straight wins against TJ.",
     "value": 3,
     "season": null,
     "week": null,
@@ -8245,7 +8238,7 @@
   {
     "id": "head_to_head_record_0122",
     "category": "head_to_head_record",
-    "text": "Brian leads the all-time series 4-1 over Steve (5 meetings and counting).",
+    "text": "Brian is a career 4-1 against Steve, spanning 5 meetings.",
     "value": 3,
     "season": null,
     "week": null,
@@ -8336,7 +8329,7 @@
   {
     "id": "head_to_head_record_0124",
     "category": "head_to_head_record",
-    "text": "Justin leads the all-time series 2-0 over Bill C (2 meetings and counting).",
+    "text": "Justin is a career 2-0 against Bill C, spanning 2 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -8464,7 +8457,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0043",
+    "id": "head_to_head_never_playoffs_0037",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 5 times, Brian and Dennis have never crossed paths in the playoffs.",
     "value": 5,
@@ -8505,7 +8498,7 @@
   {
     "id": "head_to_head_record_0129",
     "category": "head_to_head_record",
-    "text": "Pat leads the all-time series 4-3 over Dennis (7 meetings and counting).",
+    "text": "Pat is a career 4-3 against Dennis, spanning 7 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -8555,7 +8548,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0044",
+    "id": "head_to_head_never_playoffs_0038",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 7 times, Dennis and Pat have never crossed paths in the playoffs.",
     "value": 7,
@@ -8570,8 +8563,8 @@
   {
     "id": "head_to_head_record_0130",
     "category": "head_to_head_record",
-    "text": "Dennis is a career 8-0 against Owen, spanning 8 meetings.",
-    "value": 8,
+    "text": "Dennis leads the all-time series 9-0 over Owen (9 meetings and counting).",
+    "value": 9,
     "season": null,
     "week": null,
     "round": null,
@@ -8620,23 +8613,10 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0045",
-    "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 8 times, Dennis and Owen have never crossed paths in the playoffs.",
-    "value": 8,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "dennis",
-      "owen"
-    ]
-  },
-  {
     "id": "head_to_head_shutout_0004",
     "category": "head_to_head_shutout",
-    "text": "Dennis owns Owen outright: 8-0 all-time, no ties.",
-    "value": 8,
+    "text": "Dennis owns Owen outright: 9-0 all-time, no ties.",
+    "value": 9,
     "season": null,
     "week": null,
     "round": null,
@@ -8648,8 +8628,8 @@
   {
     "id": "head_to_head_streak_0056",
     "category": "head_to_head_streak",
-    "text": "Dennis has strung together as many as 8 straight wins against Owen.",
-    "value": 8,
+    "text": "Dennis has strung together as many as 9 straight wins against Owen.",
+    "value": 9,
     "season": null,
     "week": null,
     "round": null,
@@ -8661,7 +8641,7 @@
   {
     "id": "head_to_head_record_0131",
     "category": "head_to_head_record",
-    "text": "Mark is a career 9-3 against Dennis, spanning 12 meetings.",
+    "text": "Mark leads the all-time series 9-3 over Dennis (12 meetings and counting).",
     "value": 6,
     "season": null,
     "week": null,
@@ -8713,7 +8693,7 @@
   {
     "id": "head_to_head_streak_0057",
     "category": "head_to_head_streak",
-    "text": "Mark's longest winning streak against Dennis sits at 5 games.",
+    "text": "Mark has strung together as many as 5 straight wins against Dennis.",
     "value": 5,
     "season": null,
     "week": null,
@@ -8726,7 +8706,7 @@
   {
     "id": "head_to_head_record_0132",
     "category": "head_to_head_record",
-    "text": "Bill M leads the all-time series 8-1 over Dennis (9 meetings and counting).",
+    "text": "Bill M is a career 8-1 against Dennis, spanning 9 meetings.",
     "value": 7,
     "season": null,
     "week": null,
@@ -8776,7 +8756,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0046",
+    "id": "head_to_head_never_playoffs_0039",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 9 times, Bill M and Dennis have never crossed paths in the playoffs.",
     "value": 9,
@@ -8791,7 +8771,7 @@
   {
     "id": "head_to_head_streak_0058",
     "category": "head_to_head_streak",
-    "text": "Bill M's longest winning streak against Dennis sits at 5 games.",
+    "text": "Bill M has strung together as many as 5 straight wins against Dennis.",
     "value": 5,
     "season": null,
     "week": null,
@@ -8804,7 +8784,7 @@
   {
     "id": "head_to_head_record_0133",
     "category": "head_to_head_record",
-    "text": "Nick is a career 6-4 against Dennis, spanning 10 meetings.",
+    "text": "Nick leads the all-time series 6-4 over Dennis (10 meetings and counting).",
     "value": 2,
     "season": null,
     "week": null,
@@ -8854,7 +8834,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0047",
+    "id": "head_to_head_never_playoffs_0040",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 10 times, Dennis and Nick have never crossed paths in the playoffs.",
     "value": 10,
@@ -8919,7 +8899,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0048",
+    "id": "head_to_head_never_playoffs_0041",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 6 times, Dennis and TJ have never crossed paths in the playoffs.",
     "value": 6,
@@ -8984,7 +8964,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0049",
+    "id": "head_to_head_never_playoffs_0042",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Dennis and Steve have never crossed paths in the playoffs.",
     "value": 3,
@@ -8999,7 +8979,7 @@
   {
     "id": "head_to_head_shutout_0005",
     "category": "head_to_head_shutout",
-    "text": "Dennis is winless against Steve, 0-3 across their history.",
+    "text": "Steve owns Dennis outright: 3-0 all-time, no ties.",
     "value": 3,
     "season": null,
     "week": null,
@@ -9012,7 +8992,7 @@
   {
     "id": "head_to_head_streak_0059",
     "category": "head_to_head_streak",
-    "text": "Steve has strung together as many as 3 straight wins against Dennis.",
+    "text": "Steve's longest winning streak against Dennis sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -9075,7 +9055,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0050",
+    "id": "head_to_head_never_playoffs_0043",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 9 times, Anthony and Dennis have never crossed paths in the playoffs.",
     "value": 9,
@@ -9153,7 +9133,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0051",
+    "id": "head_to_head_never_playoffs_0044",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 8 times, Bob and Dennis have never crossed paths in the playoffs.",
     "value": 8,
@@ -9233,7 +9213,7 @@
   {
     "id": "head_to_head_streak_0062",
     "category": "head_to_head_streak",
-    "text": "Bill M has strung together as many as 3 straight wins against Owen.",
+    "text": "Bill M's longest winning streak against Owen sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -9246,7 +9226,7 @@
   {
     "id": "head_to_head_record_0139",
     "category": "head_to_head_record",
-    "text": "Owen leads the all-time series 3-2 over Brian (5 meetings and counting).",
+    "text": "Owen is a career 3-2 against Brian, spanning 5 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -9298,7 +9278,7 @@
   {
     "id": "head_to_head_record_0140",
     "category": "head_to_head_record",
-    "text": "Mark leads the all-time series 6-3 over John (9 meetings and counting).",
+    "text": "Mark is a career 6-3 against John, spanning 9 meetings.",
     "value": 3,
     "season": null,
     "week": null,
@@ -9363,7 +9343,7 @@
   {
     "id": "head_to_head_record_0141",
     "category": "head_to_head_record",
-    "text": "John is a career 5-2 against Dennis, spanning 7 meetings.",
+    "text": "John leads the all-time series 5-2 over Dennis (7 meetings and counting).",
     "value": 3,
     "season": null,
     "week": null,
@@ -9413,7 +9393,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0052",
+    "id": "head_to_head_never_playoffs_0045",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 7 times, Dennis and John have never crossed paths in the playoffs.",
     "value": 7,
@@ -9441,7 +9421,7 @@
   {
     "id": "head_to_head_record_0142",
     "category": "head_to_head_record",
-    "text": "John is a career 4-2 against Owen, spanning 6 meetings.",
+    "text": "John leads the all-time series 4-2 over Owen (6 meetings and counting).",
     "value": 2,
     "season": null,
     "week": null,
@@ -9491,7 +9471,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0053",
+    "id": "head_to_head_never_playoffs_0046",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 6 times, John and Owen have never crossed paths in the playoffs.",
     "value": 6,
@@ -9506,7 +9486,7 @@
   {
     "id": "head_to_head_streak_0065",
     "category": "head_to_head_streak",
-    "text": "John's longest winning streak against Owen sits at 4 games.",
+    "text": "John has strung together as many as 4 straight wins against Owen.",
     "value": 4,
     "season": null,
     "week": null,
@@ -9569,7 +9549,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0054",
+    "id": "head_to_head_never_playoffs_0047",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 7 times, John and TJ have never crossed paths in the playoffs.",
     "value": 7,
@@ -9584,7 +9564,7 @@
   {
     "id": "head_to_head_streak_0066",
     "category": "head_to_head_streak",
-    "text": "John has strung together as many as 4 straight wins against TJ.",
+    "text": "John's longest winning streak against TJ sits at 4 games.",
     "value": 4,
     "season": null,
     "week": null,
@@ -9597,7 +9577,7 @@
   {
     "id": "head_to_head_record_0144",
     "category": "head_to_head_record",
-    "text": "Steve is a career 1-0 against John, spanning 1 meeting.",
+    "text": "Steve leads the all-time series 1-0 over John (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -9688,7 +9668,7 @@
   {
     "id": "head_to_head_record_0146",
     "category": "head_to_head_record",
-    "text": "John leads the all-time series 3-2 over Brian (5 meetings and counting).",
+    "text": "John is a career 3-2 against Brian, spanning 5 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -9792,7 +9772,7 @@
   {
     "id": "head_to_head_streak_0068",
     "category": "head_to_head_streak",
-    "text": "John has strung together as many as 3 straight wins against Bill M.",
+    "text": "John's longest winning streak against Bill M sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -9922,7 +9902,7 @@
   {
     "id": "head_to_head_streak_0070",
     "category": "head_to_head_streak",
-    "text": "Nick's longest winning streak against John sits at 9 games.",
+    "text": "Nick has strung together as many as 9 straight wins against John.",
     "value": 9,
     "season": null,
     "week": null,
@@ -9935,7 +9915,7 @@
   {
     "id": "head_to_head_record_0150",
     "category": "head_to_head_record",
-    "text": "John is a career 6-2 against Anthony, spanning 8 meetings.",
+    "text": "John leads the all-time series 6-2 over Anthony (8 meetings and counting).",
     "value": 4,
     "season": null,
     "week": null,
@@ -10050,7 +10030,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0055",
+    "id": "head_to_head_never_playoffs_0048",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 4 times, Dennis and Jamie have never crossed paths in the playoffs.",
     "value": 4,
@@ -10065,7 +10045,7 @@
   {
     "id": "head_to_head_shutout_0006",
     "category": "head_to_head_shutout",
-    "text": "Dennis is winless against Jamie, 0-4 across their history.",
+    "text": "Jamie owns Dennis outright: 4-0 all-time, no ties.",
     "value": 4,
     "season": null,
     "week": null,
@@ -10091,7 +10071,7 @@
   {
     "id": "head_to_head_record_0152",
     "category": "head_to_head_record",
-    "text": "Jamie leads the all-time series 3-2 over John (5 meetings and counting).",
+    "text": "Jamie is a career 3-2 against John, spanning 5 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -10141,7 +10121,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0056",
+    "id": "head_to_head_never_playoffs_0049",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 5 times, Jamie and John have never crossed paths in the playoffs.",
     "value": 5,
@@ -10156,7 +10136,7 @@
   {
     "id": "head_to_head_record_0153",
     "category": "head_to_head_record",
-    "text": "John leads the all-time series 2-0 over Bill C (2 meetings and counting).",
+    "text": "John is a career 2-0 against Bill C, spanning 2 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -10284,7 +10264,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0057",
+    "id": "head_to_head_never_playoffs_0050",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Dennis and Mikey G have never crossed paths in the playoffs.",
     "value": 3,
@@ -10325,7 +10305,7 @@
   {
     "id": "head_to_head_record_0157",
     "category": "head_to_head_record",
-    "text": "Mikey G is a career 1-0 against Pat, spanning 1 meeting.",
+    "text": "Mikey G leads the all-time series 1-0 over Pat (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -10403,7 +10383,7 @@
   {
     "id": "head_to_head_record_0159",
     "category": "head_to_head_record",
-    "text": "Mikey G leads the all-time series 3-1 over Nick (4 meetings and counting).",
+    "text": "Mikey G is a career 3-1 against Nick, spanning 4 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -10455,7 +10435,7 @@
   {
     "id": "head_to_head_streak_0074",
     "category": "head_to_head_streak",
-    "text": "Mikey G has strung together as many as 3 straight wins against Nick.",
+    "text": "Mikey G's longest winning streak against Nick sits at 3 games.",
     "value": 3,
     "season": null,
     "week": null,
@@ -10468,7 +10448,7 @@
   {
     "id": "head_to_head_record_0160",
     "category": "head_to_head_record",
-    "text": "Bob leads the all-time series 2-1 over Mikey G (3 meetings and counting).",
+    "text": "Bob is a career 2-1 against Mikey G, spanning 3 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -10518,7 +10498,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0058",
+    "id": "head_to_head_never_playoffs_0051",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Bob and Mikey G have never crossed paths in the playoffs.",
     "value": 3,
@@ -10611,7 +10591,7 @@
   {
     "id": "head_to_head_record_0164",
     "category": "head_to_head_record",
-    "text": "Jamie is a career 1-0 against Mikey G, spanning 1 meeting.",
+    "text": "Jamie leads the all-time series 1-0 over Mikey G (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -10793,7 +10773,7 @@
   {
     "id": "head_to_head_record_0171",
     "category": "head_to_head_record",
-    "text": "Dennis is a career 2-0 against Mikey K, spanning 2 meetings.",
+    "text": "Dennis leads the all-time series 2-0 over Mikey K (2 meetings and counting).",
     "value": 2,
     "season": null,
     "week": null,
@@ -10819,7 +10799,7 @@
   {
     "id": "head_to_head_record_0172",
     "category": "head_to_head_record",
-    "text": "Dennis is a career 1-0 against Matt, spanning 1 meeting.",
+    "text": "Dennis leads the all-time series 1-0 over Matt (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -10845,7 +10825,7 @@
   {
     "id": "head_to_head_record_0173",
     "category": "head_to_head_record",
-    "text": "Dennis leads the all-time series 1-0 over Kodi (1 meeting and counting).",
+    "text": "Dennis is a career 1-0 against Kodi, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -10975,7 +10955,7 @@
   {
     "id": "head_to_head_record_0178",
     "category": "head_to_head_record",
-    "text": "Mikey G leads the all-time series 2-0 over Mikey K (2 meetings and counting).",
+    "text": "Mikey G is a career 2-0 against Mikey K, spanning 2 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -11001,7 +10981,7 @@
   {
     "id": "head_to_head_record_0179",
     "category": "head_to_head_record",
-    "text": "Matt is a career 1-0 against Mikey K, spanning 1 meeting.",
+    "text": "Matt leads the all-time series 1-0 over Mikey K (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -11053,7 +11033,7 @@
   {
     "id": "head_to_head_record_0181",
     "category": "head_to_head_record",
-    "text": "Owen is a career 1-0 against Mikey K, spanning 1 meeting.",
+    "text": "Owen leads the all-time series 1-0 over Mikey K (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -11079,7 +11059,7 @@
   {
     "id": "head_to_head_record_0182",
     "category": "head_to_head_record",
-    "text": "Anthony leads the all-time series 2-0 over Kodi (2 meetings and counting).",
+    "text": "Anthony is a career 2-0 against Kodi, spanning 2 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -11209,7 +11189,7 @@
   {
     "id": "head_to_head_record_0187",
     "category": "head_to_head_record",
-    "text": "Matt leads the all-time series 1-0 over Bob (1 meeting and counting).",
+    "text": "Matt is a career 1-0 against Bob, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -11235,7 +11215,7 @@
   {
     "id": "head_to_head_record_0188",
     "category": "head_to_head_record",
-    "text": "Kodi is a career 2-0 against Matt, spanning 2 meetings.",
+    "text": "Kodi leads the all-time series 2-0 over Matt (2 meetings and counting).",
     "value": 2,
     "season": null,
     "week": null,
@@ -11287,7 +11267,7 @@
   {
     "id": "head_to_head_record_0190",
     "category": "head_to_head_record",
-    "text": "Owen leads the all-time series 1-0 over Kodi (1 meeting and counting).",
+    "text": "Owen is a career 1-0 against Kodi, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -11365,7 +11345,7 @@
   {
     "id": "head_to_head_record_0193",
     "category": "head_to_head_record",
-    "text": "Matt leads the all-time series 1-0 over Owen (1 meeting and counting).",
+    "text": "Matt is a career 1-0 against Owen, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -11430,7 +11410,7 @@
   {
     "id": "most_played_rivalry_0002",
     "category": "most_played_rivalry",
-    "text": "Mark vs Nick is the 2nd-most-played rivalry in league history — 17 all-time meetings.",
+    "text": "Few matchups have run it back as often as Mark and Nick: 17 meetings and counting, 2nd-most in league history.",
     "value": 17,
     "season": null,
     "week": null,
@@ -11443,7 +11423,7 @@
   {
     "id": "most_played_rivalry_0003",
     "category": "most_played_rivalry",
-    "text": "Few matchups have run it back as often as Anthony and Mark: 16 meetings and counting, 3rd-most in league history.",
+    "text": "Anthony vs Mark is the 3rd-most-played rivalry in league history — 16 all-time meetings.",
     "value": 16,
     "season": null,
     "week": null,
@@ -11456,7 +11436,7 @@
   {
     "id": "most_played_rivalry_0004",
     "category": "most_played_rivalry",
-    "text": "Bob vs Pat is the 4th-most-played rivalry in league history — 15 all-time meetings.",
+    "text": "Few matchups have run it back as often as Bob and Pat: 15 meetings and counting, 4th-most in league history.",
     "value": 15,
     "season": null,
     "week": null,
