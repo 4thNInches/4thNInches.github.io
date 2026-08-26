@@ -4,6 +4,18 @@ const SLEEPER_LEAGUE_ID = "1392229432336347136";
 
 const PLACE_ICON = { first: "\u{1F3C6}", second: "\u{1F948}", third: "\u{1F949}" };
 
+let standingsRows = [];
+let standingsSortKey = "rank";
+let standingsSortDir = -1; // -1 = descending, 1 = ascending
+
+const STANDINGS_COLUMNS = [
+  { key: "rank", label: "#" },
+  { key: "teamName", label: "Team" },
+  { key: "wins", label: "Record" }, // "sort by record" = by total wins, matching lifetime table
+  { key: "pointsFor", label: "PF" },
+  { key: "pointsAgainst", label: "PA" },
+];
+
 async function loadStandings(leagueId) {
   const container = document.getElementById("standings-table");
   if (!container) return;
@@ -28,7 +40,7 @@ async function loadStandings(leagueId) {
   const usersById = {};
   users.forEach(u => { usersById[u.user_id] = u; });
 
-  const rows = rosters.map(r => {
+  standingsRows = rosters.map(r => {
     const user = usersById[r.owner_id] || {};
     const teamName = (user.metadata && user.metadata.team_name) || user.display_name || "Unclaimed team";
     const managerName = user.display_name || "\u2014";
@@ -46,11 +58,40 @@ async function loadStandings(leagueId) {
     };
   });
 
-  rows.sort((a, b) => (b.wins - a.wins) || (b.pointsFor - a.pointsFor));
+  renderStandingsTable();
+}
 
-  const allZero = rows.every(row => row.wins === 0 && row.losses === 0 && row.ties === 0);
+function renderStandingsTable() {
+  const container = document.getElementById("standings-table");
+  if (!container) return;
 
-  const bodyRows = rows.map((row, i) => `
+  const dir = standingsSortDir;
+  const key = standingsSortKey;
+
+  let sorted;
+  if (key === "rank") {
+    // default order: wins desc, then PF desc as tiebreak
+    sorted = [...standingsRows].sort((a, b) => (b.wins - a.wins) || (b.pointsFor - a.pointsFor));
+    if (dir === 1) sorted.reverse();
+  } else {
+    sorted = [...standingsRows].sort((a, b) => {
+      let av = a[key], bv = b[key];
+      if (typeof av === "string") { av = av.toLowerCase(); bv = (bv || "").toLowerCase(); }
+      if (av < bv) return -1 * dir;
+      if (av > bv) return 1 * dir;
+      return 0;
+    });
+  }
+
+  const allZero = standingsRows.every(row => row.wins === 0 && row.losses === 0 && row.ties === 0);
+
+  const headerCells = STANDINGS_COLUMNS.map(col => {
+    const active = col.key === key;
+    const arrow = active ? (dir === -1 ? " \u25BC" : " \u25B2") : "";
+    return `<th scope="col" data-sort-key="${col.key}" class="${active ? "standings-sorted" : ""}">${col.label}${arrow}</th>`;
+  }).join("");
+
+  const bodyRows = sorted.map((row, i) => `
     <tr>
       <td class="standings-rank">${i + 1}</td>
       <td>
@@ -71,19 +112,25 @@ async function loadStandings(leagueId) {
   container.innerHTML = `
     ${allZero ? `<p class="loading-msg standings-note">Preseason \u2014 records are 0-0 until Week 1 kicks off.</p>` : ""}
     <table class="standings-real-table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Team</th>
-          <th scope="col">Record</th>
-          <th scope="col">PF</th>
-          <th scope="col">PA</th>
-        </tr>
-      </thead>
+      <thead><tr>${headerCells}</tr></thead>
       <tbody>${bodyRows}</tbody>
     </table>
   `;
+
+  container.querySelectorAll("th[data-sort-key]").forEach(th => {
+    th.addEventListener("click", () => {
+      const clickedKey = th.getAttribute("data-sort-key");
+      if (clickedKey === standingsSortKey) {
+        standingsSortDir *= -1;
+      } else {
+        standingsSortKey = clickedKey;
+        standingsSortDir = clickedKey === "rank" ? -1 : -1;
+      }
+      renderStandingsTable();
+    });
+  });
 }
+
 
 function avatarImg(avatarId, teamName) {
   if (!avatarId) {
@@ -308,6 +355,29 @@ const LIFETIME_COLUMNS = [
   { key: "trophy_case", label: "Trophy Case", numeric: false },
 ];
 
+const LIFETIME_CACHE_KEY = "4thinches_lifetime_live_v1";
+const LIFETIME_CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes -- fresh enough to feel "live", short enough to spare Sleeper repeat hits
+
+function readLifetimeCache() {
+  try {
+    const raw = sessionStorage.getItem(LIFETIME_CACHE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed.timestamp || Date.now() - parsed.timestamp > LIFETIME_CACHE_TTL_MS) return null;
+    return parsed.data;
+  } catch {
+    return null; // sessionStorage unavailable (private browsing, quota, etc.) -- just skip caching
+  }
+}
+
+function writeLifetimeCache(data) {
+  try {
+    sessionStorage.setItem(LIFETIME_CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data }));
+  } catch {
+    // fine to fail silently -- caching is an optimization, not a requirement
+  }
+}
+
 async function loadLifetimeStandings() {
   const container = document.getElementById("lifetime-table");
   if (!container) return;
@@ -331,8 +401,16 @@ async function loadLifetimeStandings() {
   setupLifetimeToggle();
   renderLifetimeTable(); // show historical baseline immediately, don't block on live fetch
 
+  const cached = readLifetimeCache();
+  if (cached) {
+    lifetimeRows = cached.map(prepareLifetimeRow);
+    renderLifetimeTable();
+    return;
+  }
+
   try {
     const merged = await mergeLiveSleeperSeason(baseline);
+    writeLifetimeCache(merged);
     lifetimeRows = merged.map(prepareLifetimeRow);
     renderLifetimeTable();
   } catch (err) {
@@ -340,6 +418,7 @@ async function loadLifetimeStandings() {
     // Baseline is already rendered -- fail quietly rather than blocking the table.
   }
 }
+
 
 function setupLifetimeToggle() {
   const toggle = document.getElementById("lifetime-active-toggle");

@@ -758,6 +758,17 @@ a { color: inherit; }
   color: var(--chalk-dim);
   padding: 10px 14px;
   border-bottom: 1px solid var(--field-line);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease;
+}
+
+.standings-real-table thead th:hover {
+  color: var(--chalk);
+}
+
+.standings-real-table thead th.standings-sorted {
+  color: var(--marker);
 }
 
 .standings-real-table tbody tr {
