@@ -2,7 +2,6 @@
 
 const SLEEPER_LEAGUE_ID = "1392229432336347136";
 
-const PLACE_LABEL = { first: "1st", second: "2nd", third: "3rd" };
 const PLACE_ICON = { first: "\u{1F3C6}", second: "\u{1F948}", third: "\u{1F949}" };
 
 async function loadStandings(leagueId) {
@@ -465,6 +464,7 @@ function computeLiveStatsFromWeeks(playedWeeks, rosterToManager) {
   playedWeeks.forEach(({ matchups }) => {
     const byMatchupId = {};
     matchups.forEach(m => {
+      if (m.matchup_id === null || m.matchup_id === undefined) return; // bye -- not a real matchup
       (byMatchupId[m.matchup_id] = byMatchupId[m.matchup_id] || []).push(m);
     });
 
