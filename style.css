@@ -525,7 +525,7 @@ a { color: inherit; }
 .lifetime-real-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 920px;
+  min-width: 1080px;
 }
 
 .lifetime-real-table thead th {
@@ -538,6 +538,17 @@ a { color: inherit; }
   padding: 8px 10px;
   border-bottom: 1px solid var(--field-line);
   white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease;
+}
+
+.lifetime-real-table thead th:hover {
+  color: var(--chalk);
+}
+
+.lifetime-real-table thead th.lifetime-sorted {
+  color: var(--marker);
 }
 
 .lifetime-real-table tbody tr {
@@ -570,6 +581,15 @@ a { color: inherit; }
 }
 
 .lifetime-inactive td {
+  color: var(--chalk-dim);
+}
+
+.lifetime-streak-W {
+  color: var(--marker);
+  font-weight: 600;
+}
+
+.lifetime-streak-L {
   color: var(--chalk-dim);
 }
 

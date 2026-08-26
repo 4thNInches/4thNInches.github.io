@@ -289,33 +289,263 @@ function renderTextStatList(elId, entries) {
   }).join("");
 }
 
+let lifetimeRows = [];
+let lifetimeSortKey = "win_pct";
+let lifetimeSortDir = -1; // -1 = descending, 1 = ascending
+
+const LIFETIME_COLUMNS = [
+  { key: "display", label: "Team (Manager)", numeric: false },
+  { key: "seasons", label: "Seasons", numeric: true },
+  { key: "wins", label: "Record", numeric: true }, // "sort by record" = by total wins
+  { key: "win_pct", label: "W%", numeric: true },
+  { key: "pf", label: "PF", numeric: true },
+  { key: "pf_per_wk", label: "PF/Wk", numeric: true },
+  { key: "pa", label: "PA", numeric: true },
+  { key: "pa_per_wk", label: "PA/Wk", numeric: true },
+  { key: "streak_sort", label: "Streak", numeric: true },
+  { key: "playoff_seasons", label: "Playoff Szns", numeric: true },
+  { key: "playoff_wins", label: "Playoff Rec", numeric: true },
+  { key: "trophy_case", label: "Trophy Case", numeric: false },
+];
+
 async function loadLifetimeStandings() {
   const container = document.getElementById("lifetime-table");
   if (!container) return;
 
-  let rows;
+  let baseline;
   try {
     const res = await fetch("data/lifetime_standings.json");
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    rows = await res.json();
+    baseline = await res.json();
   } catch (err) {
     container.innerHTML = `<p class="loading-msg">Couldn't load lifetime standings (${escapeHtml(err.message)}).</p>`;
     return;
   }
 
-  if (!Array.isArray(rows) || rows.length === 0) {
+  if (!Array.isArray(baseline) || baseline.length === 0) {
     container.innerHTML = `<p class="loading-msg">No data yet.</p>`;
     return;
   }
 
-  const bodyRows = rows.map(r => `
+  lifetimeRows = baseline.map(prepareLifetimeRow);
+  renderLifetimeTable(); // show historical baseline immediately, don't block on live fetch
+
+  try {
+    const merged = await mergeLiveSleeperSeason(baseline);
+    lifetimeRows = merged.map(prepareLifetimeRow);
+    renderLifetimeTable();
+  } catch (err) {
+    console.warn("Couldn't merge live Sleeper season into lifetime standings:", err);
+    // Baseline is already rendered -- fail quietly rather than blocking the table.
+  }
+}
+
+function prepareLifetimeRow(r) {
+  return { ...r, streak_sort: streakSortValue(r.current_streak) };
+}
+
+function streakSortValue(streak) {
+  if (!streak || !streak.type) return 0;
+  return streak.type === "W" ? streak.count : -streak.count;
+}
+
+function formatStreak(streak) {
+  if (!streak || !streak.type || !streak.count) return "\u2014";
+  return `${streak.type}${streak.count}`;
+}
+
+function formatWinPct(p) {
+  const s = p.toFixed(3);
+  return p < 1 ? s.replace(/^0/, "") : s;
+}
+
+async function mergeLiveSleeperSeason(baseline) {
+  const sleeperMapping = await fetch("data/sleeper_manager_mapping.json").then(r => {
+    if (!r.ok) throw new Error(`HTTP ${r.status} loading sleeper_manager_mapping.json`);
+    return r.json();
+  });
+
+  const [rosters, users] = await Promise.all([
+    fetch(`https://api.sleeper.app/v1/league/${SLEEPER_LEAGUE_ID}/rosters`).then(r => r.json()),
+    fetch(`https://api.sleeper.app/v1/league/${SLEEPER_LEAGUE_ID}/users`).then(r => r.json()),
+  ]);
+
+  const userById = {};
+  users.forEach(u => { userById[u.user_id] = u; });
+
+  const rosterToManager = {};
+  const rosterToTeamName = {};
+  rosters.forEach(r => {
+    const user = userById[r.owner_id];
+    if (!user) return;
+    const teamName = (user.metadata && user.metadata.team_name) || user.display_name;
+    rosterToTeamName[r.roster_id] = teamName;
+    const mgr = sleeperMapping[user.display_name];
+    if (mgr && mgr !== "FILL_IN_MANAGER_ID") {
+      rosterToManager[r.roster_id] = mgr;
+    }
+  });
+
+  const playedWeeks = await fetchPlayedSleeperWeeks(SLEEPER_LEAGUE_ID);
+  const live = computeLiveStatsFromWeeks(playedWeeks, rosterToManager);
+
+  const byManager = {};
+  baseline.forEach(r => { byManager[r.manager_id] = r; });
+
+  // Managers with live games this season but no Yahoo history at all yet
+  // (brand new for 2026) get a synthetic zero baseline.
+  Object.keys(live).forEach(mgr => {
+    if (!byManager[mgr]) {
+      const rosterEntry = Object.entries(rosterToManager).find(([, m]) => m === mgr);
+      const teamName = rosterEntry ? (rosterToTeamName[rosterEntry[0]] || mgr) : mgr;
+      byManager[mgr] = {
+        manager_id: mgr, manager: mgr, team_name: teamName, display: teamName,
+        active: true, seasons: 0, wins: 0, losses: 0, ties: 0, record: "0-0",
+        win_pct: 0, pf: 0, pa: 0, pf_per_wk: 0, pa_per_wk: 0,
+        current_streak: { count: 0, type: null },
+        playoff_seasons: 0, playoff_wins: 0, playoff_losses: 0,
+        playoff_record: "0-0", trophy_case: "",
+      };
+    }
+  });
+
+  return Object.values(byManager).map(row => mergeRow(row, live[row.manager_id], rosterToTeamName, rosterToManager));
+}
+
+async function fetchPlayedSleeperWeeks(leagueId, maxWeeks = 18) {
+  const weeks = [];
+  for (let week = 1; week <= maxWeeks; week++) {
+    let data;
+    try {
+      const res = await fetch(`https://api.sleeper.app/v1/league/${leagueId}/matchups/${week}`);
+      if (!res.ok) break;
+      data = await res.json();
+    } catch {
+      break;
+    }
+    if (!Array.isArray(data) || data.length === 0) break;
+    const anyScored = data.some(m => (m.points || 0) > 0);
+    if (!anyScored) break; // this week hasn't been played yet -- stop here
+    weeks.push({ week, matchups: data });
+  }
+  return weeks;
+}
+
+function computeLiveStatsFromWeeks(playedWeeks, rosterToManager) {
+  const live = {};
+  const ensure = mgr => (live[mgr] = live[mgr] || { wins: 0, losses: 0, ties: 0, pf: 0, pa: 0, sequence: [] });
+
+  playedWeeks.forEach(({ matchups }) => {
+    const byMatchupId = {};
+    matchups.forEach(m => {
+      (byMatchupId[m.matchup_id] = byMatchupId[m.matchup_id] || []).push(m);
+    });
+
+    Object.values(byMatchupId).forEach(pair => {
+      if (pair.length !== 2) return; // bye or malformed entry
+      const [a, b] = pair;
+      const scoreA = a.points || 0;
+      const scoreB = b.points || 0;
+      recordLiveResult(ensure, rosterToManager[a.roster_id], scoreA, scoreB);
+      recordLiveResult(ensure, rosterToManager[b.roster_id], scoreB, scoreA);
+    });
+  });
+
+  return live;
+}
+
+function recordLiveResult(ensure, mgr, myScore, oppScore) {
+  if (!mgr) return;
+  const s = ensure(mgr);
+  s.pf += myScore;
+  s.pa += oppScore;
+  if (myScore > oppScore) { s.wins++; s.sequence.push("W"); }
+  else if (myScore < oppScore) { s.losses++; s.sequence.push("L"); }
+  else { s.ties++; s.sequence.push("T"); }
+}
+
+function extendStreak(baselineStreak, sequence) {
+  let type = (baselineStreak && baselineStreak.type) || null;
+  let count = (baselineStreak && baselineStreak.count) || 0;
+  sequence.forEach(result => {
+    if (result === "T") { type = null; count = 0; return; }
+    if (result === type) count += 1;
+    else { type = result; count = 1; }
+  });
+  return { count, type };
+}
+
+function mergeRow(baseRow, liveStats, rosterToTeamName, rosterToManager) {
+  const l = liveStats || { wins: 0, losses: 0, ties: 0, pf: 0, pa: 0, sequence: [] };
+
+  const wins = (baseRow.wins || 0) + l.wins;
+  const losses = (baseRow.losses || 0) + l.losses;
+  const ties = (baseRow.ties || 0) + l.ties;
+  const played = wins + losses + ties;
+  const winPct = played ? (wins + 0.5 * ties) / played : 0;
+  const pf = (baseRow.pf || 0) + l.pf;
+  const pa = (baseRow.pa || 0) + l.pa;
+
+  const streak = extendStreak(baseRow.current_streak, l.sequence);
+
+  // Prefer the live Sleeper team name if this manager currently owns a
+  // roster; otherwise keep whatever the baseline already resolved.
+  let teamName = baseRow.team_name;
+  for (const [rosterId, mgrId] of Object.entries(rosterToManager)) {
+    if (mgrId === baseRow.manager_id && rosterToTeamName[rosterId]) {
+      teamName = rosterToTeamName[rosterId];
+    }
+  }
+
+  return {
+    ...baseRow,
+    team_name: teamName,
+    display: `${teamName} (${baseRow.manager})`,
+    wins, losses, ties,
+    record: `${wins}-${losses}` + (ties ? `-${ties}` : ""),
+    win_pct: winPct,
+    win_pct_display: formatWinPct(winPct),
+    pf: Math.round(pf * 100) / 100,
+    pa: Math.round(pa * 100) / 100,
+    pf_per_wk: played ? Math.round((pf / played) * 100) / 100 : 0,
+    pa_per_wk: played ? Math.round((pa / played) * 100) / 100 : 0,
+    current_streak: streak,
+    playoff_wins: baseRow.playoff_wins || 0,
+    playoff_losses: baseRow.playoff_losses || 0,
+  };
+}
+
+function renderLifetimeTable() {
+  const container = document.getElementById("lifetime-table");
+  if (!container) return;
+
+  const dir = lifetimeSortDir;
+  const key = lifetimeSortKey;
+  const sorted = [...lifetimeRows].sort((a, b) => {
+    let av = a[key], bv = b[key];
+    if (typeof av === "string") { av = av.toLowerCase(); bv = (bv || "").toLowerCase(); }
+    if (av < bv) return -1 * dir;
+    if (av > bv) return 1 * dir;
+    return 0;
+  });
+
+  const headerCells = LIFETIME_COLUMNS.map(col => {
+    const active = col.key === key;
+    const arrow = active ? (dir === -1 ? " \u25BC" : " \u25B2") : "";
+    return `<th scope="col" data-sort-key="${col.key}" class="${active ? "lifetime-sorted" : ""}">${col.label}${arrow}</th>`;
+  }).join("");
+
+  const bodyRows = sorted.map(r => `
     <tr class="${r.active ? "" : "lifetime-inactive"}">
       <td class="lifetime-team">${escapeHtml(r.display)}</td>
       <td class="lifetime-numeric">${r.seasons}</td>
       <td class="lifetime-numeric">${escapeHtml(r.record)}</td>
       <td class="lifetime-numeric">${escapeHtml(r.win_pct_display)}</td>
       <td class="lifetime-numeric">${r.pf.toFixed(2)}</td>
+      <td class="lifetime-numeric">${r.pf_per_wk.toFixed(2)}</td>
       <td class="lifetime-numeric">${r.pa.toFixed(2)}</td>
+      <td class="lifetime-numeric">${r.pa_per_wk.toFixed(2)}</td>
+      <td class="lifetime-numeric lifetime-streak-${(r.current_streak && r.current_streak.type) || "none"}">${formatStreak(r.current_streak)}</td>
       <td class="lifetime-numeric">${r.playoff_seasons}</td>
       <td class="lifetime-numeric">${escapeHtml(r.playoff_record)}</td>
       <td class="lifetime-trophy">${r.trophy_case || "\u2014"}</td>
@@ -324,23 +554,25 @@ async function loadLifetimeStandings() {
 
   container.innerHTML = `
     <table class="lifetime-real-table">
-      <thead>
-        <tr>
-          <th scope="col">Team (Manager)</th>
-          <th scope="col">Seasons</th>
-          <th scope="col">Record</th>
-          <th scope="col">W%</th>
-          <th scope="col">PF</th>
-          <th scope="col">PA</th>
-          <th scope="col">Playoff Szns</th>
-          <th scope="col">Playoff Rec</th>
-          <th scope="col">Trophy Case</th>
-        </tr>
-      </thead>
+      <thead><tr>${headerCells}</tr></thead>
       <tbody>${bodyRows}</tbody>
     </table>
   `;
+
+  container.querySelectorAll("th[data-sort-key]").forEach(th => {
+    th.addEventListener("click", () => {
+      const clickedKey = th.getAttribute("data-sort-key");
+      if (clickedKey === lifetimeSortKey) {
+        lifetimeSortDir *= -1;
+      } else {
+        lifetimeSortKey = clickedKey;
+        lifetimeSortDir = -1;
+      }
+      renderLifetimeTable();
+    });
+  });
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
   loadStandings(SLEEPER_LEAGUE_ID);
