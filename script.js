@@ -13,16 +13,52 @@ const STANDINGS_COLUMNS = [
   { key: "teamName", label: "Team" },
   { key: "wins", label: "Record" }, // "sort by record" = by total wins, matching lifetime table
   { key: "pointsFor", label: "PF" },
+  { key: "pfPerWk", label: "PF/Wk" },
   { key: "pointsAgainst", label: "PA" },
+  { key: "paPerWk", label: "PA/Wk" },
+  { key: "streakSort", label: "Streak" },
+  { key: "playoffPct", label: "Playoff %" },
+  { key: "byePct", label: "Bye %" },
 ];
+
+let sharedPlayedWeeksPromise = null;
+function getSharedPlayedWeeks() {
+  if (!sharedPlayedWeeksPromise) {
+    sharedPlayedWeeksPromise = (async () => {
+      const regSeasonWeeks = await fetchRegularSeasonWeekCount(SLEEPER_LEAGUE_ID);
+      return fetchPlayedSleeperWeeks(SLEEPER_LEAGUE_ID, regSeasonWeeks);
+    })();
+  }
+  return sharedPlayedWeeksPromise;
+}
+
+function computeRosterSequences(playedWeeks) {
+  const sequences = {}; // roster_id -> ["W"/"L"/"T", ...] in chronological order
+  playedWeeks.forEach(({ matchups }) => {
+    const byMatchupId = {};
+    matchups.forEach(m => {
+      if (m.matchup_id === null || m.matchup_id === undefined) return; // bye -- not a real matchup
+      (byMatchupId[m.matchup_id] = byMatchupId[m.matchup_id] || []).push(m);
+    });
+    Object.values(byMatchupId).forEach(pair => {
+      if (pair.length !== 2) return;
+      const [a, b] = pair;
+      const scoreA = a.points || 0;
+      const scoreB = b.points || 0;
+      (sequences[a.roster_id] = sequences[a.roster_id] || []).push(scoreA > scoreB ? "W" : scoreA < scoreB ? "L" : "T");
+      (sequences[b.roster_id] = sequences[b.roster_id] || []).push(scoreB > scoreA ? "W" : scoreB < scoreA ? "L" : "T");
+    });
+  });
+  return sequences;
+}
 
 async function loadStandings(leagueId) {
   const container = document.getElementById("standings-table");
   if (!container) return;
 
-  let rosters, users;
+  let rosters, users, sleeperMapping, managers;
   try {
-    [rosters, users] = await Promise.all([
+    [rosters, users, sleeperMapping, managers] = await Promise.all([
       fetch(`https://api.sleeper.app/v1/league/${leagueId}/rosters`).then(r => {
         if (!r.ok) throw new Error(`rosters HTTP ${r.status}`);
         return r.json();
@@ -31,6 +67,8 @@ async function loadStandings(leagueId) {
         if (!r.ok) throw new Error(`users HTTP ${r.status}`);
         return r.json();
       }),
+      fetch("data/sleeper_manager_mapping.json").then(r => (r.ok ? r.json() : {})).catch(() => ({})),
+      fetch("data/managers.json").then(r => (r.ok ? r.json() : {})).catch(() => ({})),
     ]);
   } catch (err) {
     container.innerHTML = `<p class="loading-msg">Couldn't load standings from Sleeper (${err.message}). Sleeper's API is public and needs no auth, so this is usually a temporary network issue — try refreshing.</p>`;
@@ -43,22 +81,46 @@ async function loadStandings(leagueId) {
   standingsRows = rosters.map(r => {
     const user = usersById[r.owner_id] || {};
     const teamName = (user.metadata && user.metadata.team_name) || user.display_name || "Unclaimed team";
-    const managerName = user.display_name || "\u2014";
+    const mgrId = sleeperMapping[user.display_name];
+    const managerName = (mgrId && managers[mgrId] && managers[mgrId].display_name) || user.display_name || "\u2014";
     const avatarId = (user.metadata && user.metadata.avatar) || user.avatar || null;
     const settings = r.settings || {};
+    const wins = settings.wins || 0;
+    const losses = settings.losses || 0;
+    const ties = settings.ties || 0;
+    const played = wins + losses + ties;
+    const pointsFor = pointsFromSettings(settings.fpts, settings.fpts_decimal);
+    const pointsAgainst = pointsFromSettings(settings.fpts_against, settings.fpts_against_decimal);
     return {
+      rosterId: r.roster_id,
       teamName,
       managerName,
       avatarId,
-      wins: settings.wins || 0,
-      losses: settings.losses || 0,
-      ties: settings.ties || 0,
-      pointsFor: pointsFromSettings(settings.fpts, settings.fpts_decimal),
-      pointsAgainst: pointsFromSettings(settings.fpts_against, settings.fpts_against_decimal),
+      wins, losses, ties,
+      pointsFor,
+      pointsAgainst,
+      pfPerWk: played ? pointsFor / played : 0,
+      paPerWk: played ? pointsAgainst / played : 0,
+      streak: { count: 0, type: null },
+      streakSort: 0,
+      playoffPct: "\u2014",
+      byePct: "\u2014",
     };
   });
 
-  renderStandingsTable();
+  renderStandingsTable(); // render immediately; streak fills in once weekly data resolves
+
+  try {
+    const playedWeeks = await getSharedPlayedWeeks();
+    const sequences = computeRosterSequences(playedWeeks);
+    standingsRows = standingsRows.map(row => {
+      const streak = extendStreak(null, sequences[row.rosterId] || []);
+      return { ...row, streak, streakSort: streakSortValue(streak) };
+    });
+    renderStandingsTable();
+  } catch (err) {
+    console.warn("Couldn't compute current-season streaks:", err);
+  }
 }
 
 function renderStandingsTable() {
@@ -105,7 +167,12 @@ function renderStandingsTable() {
       </td>
       <td class="standings-record">${row.wins}-${row.losses}${row.ties ? `-${row.ties}` : ""}</td>
       <td class="standings-pts">${row.pointsFor.toFixed(1)}</td>
+      <td class="standings-pts">${row.pfPerWk.toFixed(2)}</td>
       <td class="standings-pts">${row.pointsAgainst.toFixed(1)}</td>
+      <td class="standings-pts">${row.paPerWk.toFixed(2)}</td>
+      <td class="standings-pts streak-${(row.streak && row.streak.type) || "none"}">${formatStreak(row.streak)}</td>
+      <td class="standings-pts">${row.playoffPct}</td>
+      <td class="standings-pts">${row.byePct}</td>
     </tr>
   `).join("");
 
@@ -466,19 +533,20 @@ async function mergeLiveSleeperSeason(baseline) {
 
   const rosterToManager = {};
   const rosterToTeamName = {};
+  const rosterToAvatarId = {};
   rosters.forEach(r => {
     const user = userById[r.owner_id];
     if (!user) return;
     const teamName = (user.metadata && user.metadata.team_name) || user.display_name;
     rosterToTeamName[r.roster_id] = teamName;
+    rosterToAvatarId[r.roster_id] = (user.metadata && user.metadata.avatar) || user.avatar || null;
     const mgr = sleeperMapping[user.display_name];
     if (mgr && mgr !== "FILL_IN_MANAGER_ID") {
       rosterToManager[r.roster_id] = mgr;
     }
   });
 
-  const regSeasonWeeks = await fetchRegularSeasonWeekCount(SLEEPER_LEAGUE_ID);
-  const playedWeeks = await fetchPlayedSleeperWeeks(SLEEPER_LEAGUE_ID, regSeasonWeeks);
+  const playedWeeks = await getSharedPlayedWeeks();
   const live = computeLiveStatsFromWeeks(playedWeeks, rosterToManager);
 
   const byManager = {};
@@ -501,7 +569,7 @@ async function mergeLiveSleeperSeason(baseline) {
     }
   });
 
-  return Object.values(byManager).map(row => mergeRow(row, live[row.manager_id], rosterToTeamName, rosterToManager));
+  return Object.values(byManager).map(row => mergeRow(row, live[row.manager_id], rosterToTeamName, rosterToManager, rosterToAvatarId));
 }
 
 async function fetchRegularSeasonWeekCount(leagueId, fallback = 14) {
@@ -581,7 +649,7 @@ function extendStreak(baselineStreak, sequence) {
   return { count, type };
 }
 
-function mergeRow(baseRow, liveStats, rosterToTeamName, rosterToManager) {
+function mergeRow(baseRow, liveStats, rosterToTeamName, rosterToManager, rosterToAvatarId) {
   const l = liveStats || { wins: 0, losses: 0, ties: 0, pf: 0, pa: 0, sequence: [] };
 
   const wins = (baseRow.wins || 0) + l.wins;
@@ -594,18 +662,21 @@ function mergeRow(baseRow, liveStats, rosterToTeamName, rosterToManager) {
 
   const streak = extendStreak(baseRow.current_streak, l.sequence);
 
-  // Prefer the live Sleeper team name if this manager currently owns a
-  // roster; otherwise keep whatever the baseline already resolved.
+  // Prefer the live Sleeper team name/avatar if this manager currently owns
+  // a roster; otherwise keep whatever the baseline already resolved.
   let teamName = baseRow.team_name;
+  let avatarId = baseRow.avatarId || null;
   for (const [rosterId, mgrId] of Object.entries(rosterToManager)) {
-    if (mgrId === baseRow.manager_id && rosterToTeamName[rosterId]) {
-      teamName = rosterToTeamName[rosterId];
+    if (mgrId === baseRow.manager_id) {
+      if (rosterToTeamName[rosterId]) teamName = rosterToTeamName[rosterId];
+      if (rosterToAvatarId[rosterId]) avatarId = rosterToAvatarId[rosterId];
     }
   }
 
   return {
     ...baseRow,
     team_name: teamName,
+    avatarId,
     display: `${teamName} (${baseRow.manager})`,
     wins, losses, ties,
     record: `${wins}-${losses}` + (ties ? `-${ties}` : ""),
@@ -644,7 +715,15 @@ function renderLifetimeTable() {
 
   const bodyRows = sorted.map(r => `
     <tr class="${r.active ? "" : "lifetime-inactive"}">
-      <td class="lifetime-team">${escapeHtml(r.display)}</td>
+      <td>
+        <span class="standings-team-cell">
+          ${avatarImg(r.avatarId, r.team_name)}
+          <span class="standings-team-text">
+            <span class="standings-team">${escapeHtml(r.team_name)}</span>
+            <span class="standings-manager">${escapeHtml(r.manager)}</span>
+          </span>
+        </span>
+      </td>
       <td class="lifetime-numeric">${r.seasons}</td>
       <td class="lifetime-numeric">${escapeHtml(r.record)}</td>
       <td class="lifetime-numeric">${escapeHtml(r.win_pct_display)}</td>
@@ -652,7 +731,7 @@ function renderLifetimeTable() {
       <td class="lifetime-numeric">${r.pf_per_wk.toFixed(2)}</td>
       <td class="lifetime-numeric">${r.pa.toFixed(2)}</td>
       <td class="lifetime-numeric">${r.pa_per_wk.toFixed(2)}</td>
-      <td class="lifetime-numeric lifetime-streak-${(r.current_streak && r.current_streak.type) || "none"}">${formatStreak(r.current_streak)}</td>
+      <td class="lifetime-numeric streak-${(r.current_streak && r.current_streak.type) || "none"}">${formatStreak(r.current_streak)}</td>
       <td class="lifetime-numeric">${r.playoff_seasons}</td>
       <td class="lifetime-numeric">${escapeHtml(r.playoff_record)}</td>
       <td class="lifetime-trophy">${r.trophy_case || "\u2014"}</td>

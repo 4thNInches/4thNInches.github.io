@@ -634,11 +634,6 @@ a { color: inherit; }
   white-space: nowrap;
 }
 
-.lifetime-team {
-  font-weight: 500;
-  color: var(--chalk);
-}
-
 .lifetime-numeric {
   font-family: var(--font-mono);
 }
@@ -651,12 +646,12 @@ a { color: inherit; }
   color: var(--chalk-dim);
 }
 
-.lifetime-streak-W {
+.streak-W {
   color: var(--marker);
   font-weight: 600;
 }
 
-.lifetime-streak-L {
+.streak-L {
   color: var(--chalk-dim);
 }
 
@@ -746,7 +741,7 @@ a { color: inherit; }
 .standings-real-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 480px;
+  min-width: 920px;
 }
 
 .standings-real-table thead th {
