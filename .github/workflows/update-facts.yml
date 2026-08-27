@@ -35,7 +35,7 @@ jobs:
         run: python export_sleeper_season.py
 
       - name: Regenerate facts.json across all seasons
-        run: python generate_facts.py --out data/facts.json
+        run: python generate_facts.py --out data/facts.json --managers data/managers.json
 
       - name: Commit and push if anything changed
         run: |
