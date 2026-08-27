@@ -203,7 +203,13 @@ function avatarImg(avatarId, teamName) {
   if (!avatarId) {
     return `<span class="standings-avatar standings-avatar-empty" aria-hidden="true"></span>`;
   }
-  const url = `https://sleepercdn.com/avatars/thumbs/${avatarId}`;
+  // Sleeper stores a full URL directly (not a bare id) when someone sets a
+  // custom team logo via pasted image link rather than picking from
+  // Sleeper's own avatar gallery -- use it as-is instead of gluing it onto
+  // the CDN path, which produced a broken (blank) image for those teams.
+  const url = /^https?:\/\//i.test(avatarId)
+    ? avatarId
+    : `https://sleepercdn.com/avatars/thumbs/${avatarId}`;
   return `<img class="standings-avatar" src="${url}" alt="" loading="lazy" onerror="this.classList.add('standings-avatar-empty'); this.removeAttribute('src');">`;
 }
 
