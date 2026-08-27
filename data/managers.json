@@ -1,0 +1,346 @@
+{
+  "aengus": {
+    "display_name": "Aengus",
+    "seasons_played": [
+      2015
+    ],
+    "team_names_used": [
+      "BMS Goats"
+    ]
+  },
+  "alex": {
+    "display_name": "Alex",
+    "seasons_played": [
+      2015
+    ],
+    "team_names_used": [
+      "Viola's Victors"
+    ]
+  },
+  "anthony": {
+    "display_name": "Anthony",
+    "seasons_played": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "team_names_used": [
+      "Injury Prone",
+      "Injury Immunity",
+      "2 Tight Ends 1 Loose Fantasy",
+      "Clyde Edwards-Despair",
+      "Kuppa My Puka",
+      "BurrowMyBrownJohnsonInLondon"
+    ]
+  },
+  "bill_c": {
+    "display_name": "Bill C",
+    "seasons_played": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2023,
+      2024
+    ],
+    "team_names_used": [
+      "Cock Warts",
+      "Le’Veon stinkin Bell",
+      "49ers Resurge",
+      "Yoda Can Ball"
+    ]
+  },
+  "bill_m": {
+    "display_name": "Bill M",
+    "seasons_played": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "team_names_used": [
+      "Bandits",
+      "Dolphins"
+    ]
+  },
+  "bob": {
+    "display_name": "Bob",
+    "seasons_played": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "team_names_used": [
+      "Lambeau Leapers"
+    ]
+  },
+  "brian": {
+    "display_name": "Brian",
+    "seasons_played": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "team_names_used": [
+      "Monger"
+    ]
+  },
+  "connor": {
+    "display_name": "Connor",
+    "seasons_played": [
+      2015,
+      2016,
+      2017
+    ],
+    "team_names_used": [
+      "Mr Sam's Gayborhood"
+    ]
+  },
+  "dennis": {
+    "display_name": "Dennis",
+    "seasons_played": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "team_names_used": [
+      "BluesJr",
+      "Big Dumb Sports"
+    ]
+  },
+  "ezra": {
+    "display_name": "Ezra",
+    "seasons_played": [
+      2015
+    ],
+    "team_names_used": [
+      "69ers"
+    ]
+  },
+  "jamie": {
+    "display_name": "Jamie",
+    "seasons_played": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "team_names_used": [
+      "Hello.....Newman",
+      "Hello....Newman"
+    ]
+  },
+  "john": {
+    "display_name": "John",
+    "seasons_played": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "team_names_used": [
+      "New Kid in Town",
+      "Actual Garbage",
+      "Mr. Bean's Football Team"
+    ]
+  },
+  "justin": {
+    "display_name": "Justin",
+    "seasons_played": [
+      2018
+    ],
+    "team_names_used": [
+      "Justin's Swell Team"
+    ]
+  },
+  "kodi": {
+    "display_name": "Kodi",
+    "seasons_played": [
+      2025
+    ],
+    "team_names_used": [
+      "Dust Off Kodi"
+    ]
+  },
+  "mark": {
+    "display_name": "Mark",
+    "seasons_played": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "team_names_used": [
+      "Supernovas"
+    ]
+  },
+  "matt": {
+    "display_name": "Matt",
+    "seasons_played": [
+      2025
+    ],
+    "team_names_used": [
+      "Fake Jaime’s Injury Factory"
+    ]
+  },
+  "mikey_g": {
+    "display_name": "Mikey G",
+    "seasons_played": [
+      2024,
+      2025
+    ],
+    "team_names_used": [
+      "Supernova Takeover"
+    ]
+  },
+  "mikey_k": {
+    "display_name": "Mikey K",
+    "seasons_played": [
+      2025
+    ],
+    "team_names_used": [
+      "ROK Navy's Finest"
+    ]
+  },
+  "nick": {
+    "display_name": "Nick",
+    "seasons_played": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "team_names_used": [
+      "Jake From State Farm"
+    ]
+  },
+  "owen": {
+    "display_name": "Owen",
+    "seasons_played": [
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "team_names_used": [
+      "The White Russians",
+      "Jamie’s left nip",
+      "Newman’s Owen",
+      "Bob’s Best"
+    ]
+  },
+  "pat": {
+    "display_name": "Pat",
+    "seasons_played": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "team_names_used": [
+      "Free Radicals"
+    ]
+  },
+  "steve": {
+    "display_name": "Steve",
+    "seasons_played": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "team_names_used": [
+      "WINNING"
+    ]
+  },
+  "tj": {
+    "display_name": "TJ",
+    "seasons_played": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "team_names_used": [
+      "Sad Carolines",
+      "ハッピーオーウェンズ",
+      "Tscharner Thomas",
+      "Fossil Fuel Frackers",
+      "Owens at Law"
+    ]
+  },
+  "will": {
+    "display_name": "Will",
+    "seasons_played": [
+      2016,
+      2017
+    ],
+    "team_names_used": [
+      "No Punt Intended"
+    ]
+  }
+}
