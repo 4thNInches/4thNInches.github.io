@@ -1,0 +1,50 @@
+name: Update in-season facts
+
+# Runs every Tuesday morning, after Monday Night Football has finished, so
+# the previous week's games are fully in the books before this pulls them.
+# 13:00 UTC is 8am Eastern during EDT (summer/fall) or 9am during EST
+# (winter) -- close enough either way that "Tuesday morning" holds all
+# season. Adjust the cron below if a different time is wanted.
+#
+# Also runnable by hand any time from the Actions tab (workflow_dispatch),
+# e.g. to force a refresh right after fixing something.
+on:
+  schedule:
+    - cron: '0 13 * * 2'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write  # needed to commit the updated JSON back to the repo
+
+jobs:
+  update-facts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Pull current Sleeper season into data/history/
+        run: python export_sleeper_season.py
+
+      - name: Regenerate facts.json across all seasons
+        run: python generate_facts.py --out data/facts.json
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ manager_mapping.json
+          if git diff --staged --quiet; then
+            echo "Nothing changed -- skipping commit."
+          else
+            git commit -m "Weekly facts update: $(date -u +%Y-%m-%d)"
+            git push
+          fi
