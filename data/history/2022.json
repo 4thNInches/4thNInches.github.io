@@ -1,0 +1,1549 @@
+{
+  "season": 2022,
+  "regular_season_weeks": 14,
+  "teams": {
+    "1": {
+      "team_name": "Supernovas",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1813.42,
+      "points_against": 1830.92,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 104.62,
+          "opp_score": 153.2,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 196.52,
+          "opp_score": 137.28,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 157.72,
+          "opp_score": 127.0,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 135.06,
+          "opp_score": 146.88,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 140.36,
+          "opp_score": 104.04,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 145.6,
+          "opp_score": 110.58,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 70.6,
+          "opp_score": 103.14,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 119.28,
+          "opp_score": 152.88,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 101.04,
+          "opp_score": 169.94,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 125.84,
+          "opp_score": 117.58,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 129.16,
+          "opp_score": 70.64,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 149.46,
+          "opp_score": 174.92,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 129.14,
+          "opp_score": 125.96,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 109.02,
+          "opp_score": 136.88,
+          "result": "Loss"
+        }
+      ]
+    },
+    "2": {
+      "team_name": "Bandits",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1703.3,
+      "points_against": 1936.2,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 137.62,
+          "opp_score": 141.22,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 147.12,
+          "opp_score": 158.66,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 127.8,
+          "opp_score": 124.3,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 143.26,
+          "opp_score": 167.62,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 137.56,
+          "opp_score": 135.9,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 88.2,
+          "opp_score": 79.62,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 104.92,
+          "opp_score": 133.44,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 104.9,
+          "opp_score": 167.8,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 113.12,
+          "opp_score": 109.5,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 90.8,
+          "opp_score": 182.44,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 104.8,
+          "opp_score": 159.6,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 115.52,
+          "opp_score": 127.0,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 150.8,
+          "opp_score": 140.08,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 136.88,
+          "opp_score": 109.02,
+          "result": "Win"
+        }
+      ]
+    },
+    "3": {
+      "team_name": "Big Dumb Sports",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1806.16,
+      "points_against": 1862.42,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 99.6,
+          "opp_score": 133.28,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 137.28,
+          "opp_score": 196.52,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 109.42,
+          "opp_score": 141.3,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 167.62,
+          "opp_score": 143.26,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 104.04,
+          "opp_score": 140.36,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 111.82,
+          "opp_score": 113.34,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 100.24,
+          "opp_score": 115.68,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 178.64,
+          "opp_score": 112.52,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 168.66,
+          "opp_score": 119.8,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 111.02,
+          "opp_score": 95.88,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 125.34,
+          "opp_score": 115.68,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 121.9,
+          "opp_score": 199.6,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 129.6,
+          "opp_score": 129.52,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 140.98,
+          "opp_score": 105.68,
+          "result": "Win"
+        }
+      ]
+    },
+    "4": {
+      "team_name": "Free Radicals",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1893.16,
+      "points_against": 1709.6,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 150.18,
+          "opp_score": 92.66,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 187.08,
+          "opp_score": 112.4,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 124.3,
+          "opp_score": 127.8,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 110.02,
+          "opp_score": 139.14,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 190.36,
+          "opp_score": 127.84,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 144.56,
+          "opp_score": 94.78,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 103.14,
+          "opp_score": 70.6,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 166.62,
+          "opp_score": 138.54,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 109.5,
+          "opp_score": 113.12,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 92.7,
+          "opp_score": 143.3,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 151.58,
+          "opp_score": 120.32,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 113.22,
+          "opp_score": 137.04,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 129.52,
+          "opp_score": 129.6,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 120.38,
+          "opp_score": 162.46,
+          "result": "Loss"
+        }
+      ]
+    },
+    "5": {
+      "team_name": "Clyde Edwards-Despair",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1552.44,
+      "points_against": 1765.18,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 153.2,
+          "opp_score": 104.62,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 114.4,
+          "opp_score": 121.76,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 114.34,
+          "opp_score": 108.84,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 121.1,
+          "opp_score": 137.5,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 135.9,
+          "opp_score": 137.56,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 94.78,
+          "opp_score": 144.56,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 103.76,
+          "opp_score": 129.42,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 130.24,
+          "opp_score": 118.2,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 93.0,
+          "opp_score": 177.72,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 95.88,
+          "opp_score": 111.02,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 70.64,
+          "opp_score": 129.16,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 114.24,
+          "opp_score": 75.54,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 142.2,
+          "opp_score": 155.02,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 68.76,
+          "opp_score": 114.26,
+          "result": "Loss"
+        }
+      ]
+    },
+    "6": {
+      "team_name": "Jake From State Farm",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 2164.18,
+      "points_against": 1810.72,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 92.66,
+          "opp_score": 150.18,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 128.88,
+          "opp_score": 136.36,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 135.98,
+          "opp_score": 127.98,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 178.26,
+          "opp_score": 106.48,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 144.78,
+          "opp_score": 184.78,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 158.62,
+          "opp_score": 130.9,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 187.22,
+          "opp_score": 132.3,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 138.54,
+          "opp_score": 166.62,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 169.94,
+          "opp_score": 101.04,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 182.44,
+          "opp_score": 90.8,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 186.56,
+          "opp_score": 78.2,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 199.6,
+          "opp_score": 121.9,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 155.02,
+          "opp_score": 142.2,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 105.68,
+          "opp_score": 140.98,
+          "result": "Loss"
+        }
+      ]
+    },
+    "7": {
+      "team_name": "Lambeau Leapers",
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1643.86,
+      "points_against": 1779.06,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 89.6,
+          "opp_score": 116.92,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 121.76,
+          "opp_score": 114.4,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 127.0,
+          "opp_score": 157.72,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 139.14,
+          "opp_score": 110.02,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 184.78,
+          "opp_score": 144.78,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 89.84,
+          "opp_score": 113.56,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 131.46,
+          "opp_score": 98.9,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 112.52,
+          "opp_score": 178.64,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 104.44,
+          "opp_score": 128.7,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 115.36,
+          "opp_score": 122.18,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 125.48,
+          "opp_score": 128.6,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 127.0,
+          "opp_score": 115.52,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 93.98,
+          "opp_score": 160.54,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 81.5,
+          "opp_score": 88.58,
+          "result": "Loss"
+        }
+      ]
+    },
+    "8": {
+      "team_name": "Monger",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1673.38,
+      "points_against": 1721.86,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 141.2,
+          "opp_score": 178.46,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 136.36,
+          "opp_score": 128.88,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 106.3,
+          "opp_score": 111.26,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 85.12,
+          "opp_score": 124.3,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 127.84,
+          "opp_score": 190.36,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 113.34,
+          "opp_score": 111.82,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 129.42,
+          "opp_score": 103.76,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 152.88,
+          "opp_score": 119.28,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 77.5,
+          "opp_score": 136.44,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 122.18,
+          "opp_score": 115.36,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 159.6,
+          "opp_score": 104.8,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 128.06,
+          "opp_score": 78.24,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 105.0,
+          "opp_score": 137.4,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 88.58,
+          "opp_score": 81.5,
+          "result": "Win"
+        }
+      ]
+    },
+    "9": {
+      "team_name": "Mr. Bean's Football Team",
+      "wins": 10,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1743.96,
+      "points_against": 1558.5,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 116.92,
+          "opp_score": 89.6,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 104.78,
+          "opp_score": 94.86,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 111.26,
+          "opp_score": 106.3,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 106.48,
+          "opp_score": 178.26,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 132.76,
+          "opp_score": 118.02,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 113.56,
+          "opp_score": 89.84,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 115.68,
+          "opp_score": 100.24,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 167.8,
+          "opp_score": 104.9,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 177.72,
+          "opp_score": 93.0,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 117.58,
+          "opp_score": 125.84,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 120.32,
+          "opp_score": 151.58,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 75.54,
+          "opp_score": 114.24,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 137.4,
+          "opp_score": 105.0,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 146.16,
+          "opp_score": 86.82,
+          "result": "Win"
+        }
+      ]
+    },
+    "10": {
+      "team_name": "Bob\u2019s Best",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1866.94,
+      "points_against": 1997.68,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 178.46,
+          "opp_score": 141.2,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 158.66,
+          "opp_score": 147.12,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 127.98,
+          "opp_score": 135.98,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 137.5,
+          "opp_score": 121.1,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 118.02,
+          "opp_score": 132.76,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 110.58,
+          "opp_score": 145.6,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 98.9,
+          "opp_score": 131.46,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 131.58,
+          "opp_score": 141.28,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 119.8,
+          "opp_score": 168.66,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 129.8,
+          "opp_score": 125.32,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 78.2,
+          "opp_score": 186.56,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 174.92,
+          "opp_score": 149.46,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 140.08,
+          "opp_score": 150.8,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 162.46,
+          "opp_score": 120.38,
+          "result": "Win"
+        }
+      ]
+    },
+    "11": {
+      "team_name": "Fossil Fuel Frackers",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1633.2,
+      "points_against": 1759.94,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 133.28,
+          "opp_score": 99.6,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 112.4,
+          "opp_score": 187.08,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 108.84,
+          "opp_score": 114.34,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 124.3,
+          "opp_score": 85.12,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 12,
+          "opponent_name": "Hello....Newman",
+          "my_score": 163.54,
+          "opp_score": 105.2,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 79.62,
+          "opp_score": 88.2,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 132.3,
+          "opp_score": 187.22,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 118.2,
+          "opp_score": 130.24,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 128.7,
+          "opp_score": 104.44,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 125.32,
+          "opp_score": 129.8,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 115.68,
+          "opp_score": 125.34,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 78.24,
+          "opp_score": 128.06,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 125.96,
+          "opp_score": 129.14,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 86.82,
+          "opp_score": 146.16,
+          "result": "Loss"
+        }
+      ]
+    },
+    "12": {
+      "team_name": "Hello....Newman",
+      "wins": 11,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 1855.26,
+      "points_against": 1617.18,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 141.22,
+          "opp_score": 137.62,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 94.86,
+          "opp_score": 104.78,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 141.3,
+          "opp_score": 109.42,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 146.88,
+          "opp_score": 135.06,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 11,
+          "opponent_name": "Fossil Fuel Frackers",
+          "my_score": 105.2,
+          "opp_score": 163.54,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 130.9,
+          "opp_score": 158.62,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 133.44,
+          "opp_score": 104.92,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 141.28,
+          "opp_score": 131.58,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 136.44,
+          "opp_score": 77.5,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 143.3,
+          "opp_score": 92.7,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 128.6,
+          "opp_score": 125.48,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 137.04,
+          "opp_score": 113.22,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 160.54,
+          "opp_score": 93.98,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 5,
+          "opponent_name": "Clyde Edwards-Despair",
+          "my_score": 114.26,
+          "opp_score": 68.76,
+          "result": "Win"
+        }
+      ]
+    }
+  },
+  "playoffs": {
+    "seeds": {
+      "4": 5,
+      "8": 4,
+      "6": 3,
+      "1": 6,
+      "12": 1,
+      "9": 2
+    },
+    "championship": {
+      "week": 17,
+      "team1_id": 12,
+      "team2_id": 6,
+      "team1_score": 115.0,
+      "team2_score": 114.92,
+      "winner_id": 12,
+      "loser_id": 6
+    },
+    "third_place": {
+      "week": 17,
+      "team1_id": 9,
+      "team2_id": 4,
+      "team1_score": 69.7,
+      "team2_score": 68.1,
+      "winner_id": 9,
+      "loser_id": 4
+    },
+    "quarterfinal": [
+      {
+        "week": 15,
+        "team1_id": 4,
+        "team2_id": 8,
+        "team1_score": 155.46,
+        "team2_score": 135.22,
+        "winner_id": 4,
+        "loser_id": 8
+      },
+      {
+        "week": 15,
+        "team1_id": 6,
+        "team2_id": 1,
+        "team1_score": 156.74,
+        "team2_score": 115.66,
+        "winner_id": 6,
+        "loser_id": 1
+      }
+    ],
+    "semifinal": [
+      {
+        "week": 16,
+        "team1_id": 12,
+        "team2_id": 4,
+        "team1_score": 181.8,
+        "team2_score": 143.58,
+        "winner_id": 12,
+        "loser_id": 4
+      },
+      {
+        "week": 16,
+        "team1_id": 6,
+        "team2_id": 9,
+        "team1_score": 124.36,
+        "team2_score": 104.56,
+        "winner_id": 6,
+        "loser_id": 9
+      }
+    ],
+    "fifth_place": [
+      {
+        "week": 16,
+        "team1_id": 1,
+        "team2_id": 8,
+        "team1_score": 117.72,
+        "team2_score": 93.4,
+        "winner_id": 1,
+        "loser_id": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,1453 @@
+{
+  "season": 2015,
+  "regular_season_weeks": 13,
+  "teams": {
+    "1": {
+      "team_name": "Hello.....Newman",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1681.46,
+      "points_against": 1700.6,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 164.04,
+          "opp_score": 120.2,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 105.7,
+          "opp_score": 111.32,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 157.98,
+          "opp_score": 121.88,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 69.96,
+          "opp_score": 75.42,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 135.56,
+          "opp_score": 159.28,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 127.24,
+          "opp_score": 156.84,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 142.68,
+          "opp_score": 173.62,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 157.4,
+          "opp_score": 156.2,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 107.94,
+          "opp_score": 138.86,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 109.42,
+          "opp_score": 119.92,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 156.38,
+          "opp_score": 102.42,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 104.76,
+          "opp_score": 142.92,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 142.4,
+          "opp_score": 121.72,
+          "result": "Win"
+        }
+      ]
+    },
+    "2": {
+      "team_name": "Mr Sam's Gayborhood",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1473.94,
+      "points_against": 1539.7,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 104.22,
+          "opp_score": 116.3,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 72.2,
+          "opp_score": 91.2,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 104.14,
+          "opp_score": 187.4,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 96.88,
+          "opp_score": 108.2,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 115.5,
+          "opp_score": 106.0,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 101.84,
+          "opp_score": 132.96,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 173.62,
+          "opp_score": 142.68,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 104.44,
+          "opp_score": 145.6,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 137.48,
+          "opp_score": 119.42,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 115.72,
+          "opp_score": 92.42,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 117.88,
+          "opp_score": 62.02,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 120.54,
+          "opp_score": 100.8,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 109.48,
+          "opp_score": 134.7,
+          "result": "Loss"
+        }
+      ]
+    },
+    "3": {
+      "team_name": "Injury Prone",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1510.06,
+      "points_against": 1645.16,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 91.56,
+          "opp_score": 145.84,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 108.68,
+          "opp_score": 110.84,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 123.18,
+          "opp_score": 96.52,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 82.08,
+          "opp_score": 130.94,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 96.54,
+          "opp_score": 93.12,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 131.76,
+          "opp_score": 111.88,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 91.2,
+          "opp_score": 140.08,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 156.2,
+          "opp_score": 157.4,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 119.42,
+          "opp_score": 137.48,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 132.44,
+          "opp_score": 145.6,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 126.38,
+          "opp_score": 120.18,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 139.74,
+          "opp_score": 145.5,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 110.88,
+          "opp_score": 109.78,
+          "result": "Win"
+        }
+      ]
+    },
+    "4": {
+      "team_name": "Free Radicals",
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "points_for": 1888.04,
+      "points_against": 1479.96,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 156.44,
+          "opp_score": 112.06,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 137.54,
+          "opp_score": 130.74,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 135.5,
+          "opp_score": 124.58,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 155.78,
+          "opp_score": 98.06,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 127.32,
+          "opp_score": 79.54,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 156.84,
+          "opp_score": 127.24,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 106.4,
+          "opp_score": 143.3,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 145.6,
+          "opp_score": 104.44,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 138.54,
+          "opp_score": 142.42,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 145.6,
+          "opp_score": 132.44,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 126.4,
+          "opp_score": 80.28,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 169.1,
+          "opp_score": 86.08,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 186.98,
+          "opp_score": 118.78,
+          "result": "Win"
+        }
+      ]
+    },
+    "5": {
+      "team_name": "Supernovas",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1797.68,
+      "points_against": 1643.04,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 145.84,
+          "opp_score": 91.56,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 155.56,
+          "opp_score": 113.46,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 124.58,
+          "opp_score": 135.5,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 128.72,
+          "opp_score": 112.42,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 159.7,
+          "opp_score": 113.3,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 165.62,
+          "opp_score": 117.8,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 125.84,
+          "opp_score": 136.24,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 131.34,
+          "opp_score": 131.84,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 190.46,
+          "opp_score": 174.66,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 119.92,
+          "opp_score": 109.42,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 62.02,
+          "opp_score": 117.88,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 145.5,
+          "opp_score": 139.74,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 142.58,
+          "opp_score": 149.22,
+          "result": "Loss"
+        }
+      ]
+    },
+    "6": {
+      "team_name": "WINNING",
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1716.22,
+      "points_against": 1474.24,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 103.54,
+          "opp_score": 116.34,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 194.26,
+          "opp_score": 113.36,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 114.38,
+          "opp_score": 98.12,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 98.06,
+          "opp_score": 155.78,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 159.28,
+          "opp_score": 135.56,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 132.96,
+          "opp_score": 101.84,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 140.08,
+          "opp_score": 91.2,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 134.82,
+          "opp_score": 65.88,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 174.66,
+          "opp_score": 190.46,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 104.18,
+          "opp_score": 75.7,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 100.34,
+          "opp_score": 98.1,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 94.72,
+          "opp_score": 143.4,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 164.94,
+          "opp_score": 88.5,
+          "result": "Win"
+        }
+      ]
+    },
+    "7": {
+      "team_name": "BMS Goats",
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1395.02,
+      "points_against": 1612.44,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 116.3,
+          "opp_score": 104.22,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 110.84,
+          "opp_score": 108.68,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 170.06,
+          "opp_score": 171.32,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 112.42,
+          "opp_score": 128.72,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 79.54,
+          "opp_score": 127.32,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 107.3,
+          "opp_score": 149.32,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 80.48,
+          "opp_score": 127.04,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 122.5,
+          "opp_score": 115.78,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 106.88,
+          "opp_score": 88.06,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 75.7,
+          "opp_score": 104.18,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 102.42,
+          "opp_score": 156.38,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 100.8,
+          "opp_score": 120.54,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 109.78,
+          "opp_score": 110.88,
+          "result": "Loss"
+        }
+      ]
+    },
+    "8": {
+      "team_name": "Jake From State Farm",
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "points_for": 1761.96,
+      "points_against": 1472.92,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 116.34,
+          "opp_score": 103.54,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 111.32,
+          "opp_score": 105.7,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 187.4,
+          "opp_score": 104.14,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 130.94,
+          "opp_score": 82.08,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 128.66,
+          "opp_score": 119.74,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 117.8,
+          "opp_score": 165.62,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 127.04,
+          "opp_score": 80.48,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 150.08,
+          "opp_score": 71.94,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 142.42,
+          "opp_score": 138.54,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 168.48,
+          "opp_score": 149.94,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 116.36,
+          "opp_score": 114.08,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 143.4,
+          "opp_score": 94.72,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 121.72,
+          "opp_score": 142.4,
+          "result": "Loss"
+        }
+      ]
+    },
+    "9": {
+      "team_name": "The White Russians",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1511.98,
+      "points_against": 1524.6,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 120.2,
+          "opp_score": 164.04,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 91.2,
+          "opp_score": 72.2,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 96.52,
+          "opp_score": 123.18,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 101.64,
+          "opp_score": 133.46,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 113.3,
+          "opp_score": 159.7,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 149.32,
+          "opp_score": 107.3,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 143.3,
+          "opp_score": 106.4,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 71.94,
+          "opp_score": 150.08,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 121.26,
+          "opp_score": 103.0,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 127.58,
+          "opp_score": 90.66,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 98.1,
+          "opp_score": 100.34,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 142.92,
+          "opp_score": 104.76,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 134.7,
+          "opp_score": 109.48,
+          "result": "Win"
+        }
+      ]
+    },
+    "10": {
+      "team_name": "69ers",
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1442.4,
+      "points_against": 1602.84,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 130.42,
+          "opp_score": 137.24,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 130.74,
+          "opp_score": 137.54,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 98.12,
+          "opp_score": 114.38,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 75.42,
+          "opp_score": 69.96,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 106.0,
+          "opp_score": 115.5,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 111.88,
+          "opp_score": 131.76,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 131.7,
+          "opp_score": 94.34,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 131.84,
+          "opp_score": 131.34,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 88.06,
+          "opp_score": 106.88,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 90.66,
+          "opp_score": 127.58,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 114.08,
+          "opp_score": 116.36,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 114.7,
+          "opp_score": 132.98,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 118.78,
+          "opp_score": 186.98,
+          "result": "Loss"
+        }
+      ]
+    },
+    "11": {
+      "team_name": "Viola's Victors",
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1483.92,
+      "points_against": 1725.2,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 137.24,
+          "opp_score": 130.42,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 113.36,
+          "opp_score": 194.26,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 121.88,
+          "opp_score": 157.98,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 108.2,
+          "opp_score": 96.88,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 93.12,
+          "opp_score": 96.54,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 12,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 103.4,
+          "opp_score": 105.0,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 136.24,
+          "opp_score": 125.84,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 115.78,
+          "opp_score": 122.5,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 103.0,
+          "opp_score": 121.26,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 149.94,
+          "opp_score": 168.48,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 80.28,
+          "opp_score": 126.4,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 132.98,
+          "opp_score": 114.7,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 88.5,
+          "opp_score": 164.94,
+          "result": "Loss"
+        }
+      ]
+    },
+    "12": {
+      "team_name": "Lambeau Leapers",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1502.02,
+      "points_against": 1744.0,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 112.06,
+          "opp_score": 156.44,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 113.46,
+          "opp_score": 155.56,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 7,
+          "opponent_name": "BMS Goats",
+          "my_score": 171.32,
+          "opp_score": 170.06,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 133.46,
+          "opp_score": 101.64,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 8,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 119.74,
+          "opp_score": 128.66,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 11,
+          "opponent_name": "Viola's Victors",
+          "my_score": 105.0,
+          "opp_score": 103.4,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 10,
+          "opponent_name": "69ers",
+          "my_score": 94.34,
+          "opp_score": 131.7,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 6,
+          "opponent_name": "WINNING",
+          "my_score": 65.88,
+          "opp_score": 134.82,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 138.86,
+          "opp_score": 107.94,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 2,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 92.42,
+          "opp_score": 115.72,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 120.18,
+          "opp_score": 126.38,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 86.08,
+          "opp_score": 169.1,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 5,
+          "opponent_name": "Supernovas",
+          "my_score": 149.22,
+          "opp_score": 142.58,
+          "result": "Win"
+        }
+      ]
+    }
+  },
+  "playoffs": {
+    "seeds": {
+      "5": 4,
+      "9": 5,
+      "2": 6,
+      "6": 3,
+      "4": 1,
+      "8": 2
+    },
+    "championship": {
+      "week": 16,
+      "team1_id": 8,
+      "team2_id": 5,
+      "team1_score": 153.56,
+      "team2_score": 126.18,
+      "winner_id": 8,
+      "loser_id": 5
+    },
+    "third_place": {
+      "week": 16,
+      "team1_id": 4,
+      "team2_id": 2,
+      "team1_score": 119.36,
+      "team2_score": 96.46,
+      "winner_id": 4,
+      "loser_id": 2
+    },
+    "quarterfinal": [
+      {
+        "week": 14,
+        "team1_id": 5,
+        "team2_id": 9,
+        "team1_score": 145.44,
+        "team2_score": 113.86,
+        "winner_id": 5,
+        "loser_id": 9
+      },
+      {
+        "week": 14,
+        "team1_id": 2,
+        "team2_id": 6,
+        "team1_score": 153.2,
+        "team2_score": 97.38,
+        "winner_id": 2,
+        "loser_id": 6
+      }
+    ],
+    "semifinal": [
+      {
+        "week": 15,
+        "team1_id": 5,
+        "team2_id": 4,
+        "team1_score": 159.34,
+        "team2_score": 151.36,
+        "winner_id": 5,
+        "loser_id": 4
+      },
+      {
+        "week": 15,
+        "team1_id": 8,
+        "team2_id": 2,
+        "team1_score": 109.54,
+        "team2_score": 98.66,
+        "winner_id": 8,
+        "loser_id": 2
+      }
+    ],
+    "fifth_place": [
+      {
+        "week": 15,
+        "team1_id": 6,
+        "team2_id": 9,
+        "team1_score": 186.2,
+        "team2_score": 104.64,
+        "winner_id": 6,
+        "loser_id": 9
+      }
+    ]
+  }
+}

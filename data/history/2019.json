@@ -1,0 +1,1453 @@
+{
+  "season": 2019,
+  "regular_season_weeks": 13,
+  "teams": {
+    "1": {
+      "team_name": "BluesJr",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1638.36,
+      "points_against": 1711.62,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 155.22,
+          "opp_score": 132.6,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 138.16,
+          "opp_score": 161.56,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 142.82,
+          "opp_score": 150.34,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 135.5,
+          "opp_score": 91.62,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 127.16,
+          "opp_score": 119.14,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 142.1,
+          "opp_score": 145.82,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 95.86,
+          "opp_score": 125.62,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 124.24,
+          "opp_score": 179.98,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 141.8,
+          "opp_score": 138.92,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 129.92,
+          "opp_score": 80.38,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 111.64,
+          "opp_score": 125.38,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 102.42,
+          "opp_score": 104.44,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 91.52,
+          "opp_score": 155.82,
+          "result": "Loss"
+        }
+      ]
+    },
+    "2": {
+      "team_name": "Free Radicals",
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1386.02,
+      "points_against": 1782.78,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 130.02,
+          "opp_score": 197.92,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 95.16,
+          "opp_score": 142.4,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 150.34,
+          "opp_score": 142.82,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 102.68,
+          "opp_score": 147.08,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 127.42,
+          "opp_score": 87.6,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 137.74,
+          "opp_score": 128.42,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 52.56,
+          "opp_score": 174.06,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 139.66,
+          "opp_score": 141.66,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 78.2,
+          "opp_score": 133.7,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 80.38,
+          "opp_score": 129.92,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 101.24,
+          "opp_score": 147.86,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 80.84,
+          "opp_score": 100.54,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 109.78,
+          "opp_score": 108.8,
+          "result": "Win"
+        }
+      ]
+    },
+    "3": {
+      "team_name": "Injury Prone",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1630.04,
+      "points_against": 1683.76,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 147.52,
+          "opp_score": 73.7,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 91.94,
+          "opp_score": 144.96,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 131.46,
+          "opp_score": 210.96,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 95.1,
+          "opp_score": 141.38,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 128.28,
+          "opp_score": 169.74,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 112.14,
+          "opp_score": 160.4,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 138.74,
+          "opp_score": 120.54,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 168.68,
+          "opp_score": 124.16,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 130.84,
+          "opp_score": 70.34,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 145.82,
+          "opp_score": 164.08,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 147.86,
+          "opp_score": 101.24,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 104.44,
+          "opp_score": 102.42,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 87.22,
+          "opp_score": 99.84,
+          "result": "Loss"
+        }
+      ]
+    },
+    "4": {
+      "team_name": "Jake From State Farm",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1895.92,
+      "points_against": 1600.24,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 125.76,
+          "opp_score": 157.3,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 141.42,
+          "opp_score": 95.66,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 117.32,
+          "opp_score": 135.14,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 165.98,
+          "opp_score": 87.6,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 169.74,
+          "opp_score": 128.28,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 178.8,
+          "opp_score": 134.84,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 129.24,
+          "opp_score": 149.36,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 179.98,
+          "opp_score": 124.24,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 133.7,
+          "opp_score": 78.2,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 126.16,
+          "opp_score": 111.5,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 119.68,
+          "opp_score": 138.54,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 213.48,
+          "opp_score": 127.82,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 94.66,
+          "opp_score": 131.76,
+          "result": "Loss"
+        }
+      ]
+    },
+    "5": {
+      "team_name": "Lambeau Leapers",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1573.1,
+      "points_against": 1810.8,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 115.52,
+          "opp_score": 156.76,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 95.66,
+          "opp_score": 141.42,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 162.3,
+          "opp_score": 131.12,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 141.38,
+          "opp_score": 95.1,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 103.12,
+          "opp_score": 228.14,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 128.42,
+          "opp_score": 137.74,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 149.36,
+          "opp_score": 129.24,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 122.7,
+          "opp_score": 119.78,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 122.84,
+          "opp_score": 169.7,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 89.02,
+          "opp_score": 181.82,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 91.1,
+          "opp_score": 121.96,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 95.86,
+          "opp_score": 106.5,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 155.82,
+          "opp_score": 91.52,
+          "result": "Win"
+        }
+      ]
+    },
+    "6": {
+      "team_name": "Supernovas",
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 1886.24,
+      "points_against": 1600.52,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 156.76,
+          "opp_score": 115.52,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 144.38,
+          "opp_score": 105.62,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 166.68,
+          "opp_score": 159.44,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 147.08,
+          "opp_score": 102.68,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 119.14,
+          "opp_score": 127.16,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 134.84,
+          "opp_score": 178.8,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 125.62,
+          "opp_score": 95.86,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 122.22,
+          "opp_score": 151.72,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 191.92,
+          "opp_score": 133.66,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 181.82,
+          "opp_score": 89.02,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 140.78,
+          "opp_score": 120.74,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 155.16,
+          "opp_score": 133.08,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 99.84,
+          "opp_score": 87.22,
+          "result": "Win"
+        }
+      ]
+    },
+    "7": {
+      "team_name": "WINNING",
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1840.06,
+      "points_against": 1787.76,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 197.92,
+          "opp_score": 130.02,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 115.42,
+          "opp_score": 110.72,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 210.96,
+          "opp_score": 131.46,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 119.6,
+          "opp_score": 163.0,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 142.84,
+          "opp_score": 215.04,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 146.42,
+          "opp_score": 120.6,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 59.54,
+          "opp_score": 102.22,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 151.72,
+          "opp_score": 122.22,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 169.7,
+          "opp_score": 122.84,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 146.74,
+          "opp_score": 135.38,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 125.38,
+          "opp_score": 111.64,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 127.82,
+          "opp_score": 213.48,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 126.0,
+          "opp_score": 109.14,
+          "result": "Win"
+        }
+      ]
+    },
+    "8": {
+      "team_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1662.02,
+      "points_against": 1658.9,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 140.6,
+          "opp_score": 129.62,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 142.4,
+          "opp_score": 95.16,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 151.64,
+          "opp_score": 83.32,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 87.6,
+          "opp_score": 165.98,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 108.02,
+          "opp_score": 165.92,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 120.6,
+          "opp_score": 146.42,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 120.54,
+          "opp_score": 138.74,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 109.38,
+          "opp_score": 173.02,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 138.92,
+          "opp_score": 141.8,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 174.48,
+          "opp_score": 71.12,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 120.74,
+          "opp_score": 140.78,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 106.5,
+          "opp_score": 95.86,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 140.6,
+          "opp_score": 111.16,
+          "result": "Win"
+        }
+      ]
+    },
+    "9": {
+      "team_name": "49ers Resurge",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1797.32,
+      "points_against": 1714.72,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 129.62,
+          "opp_score": 140.6,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 161.56,
+          "opp_score": 138.16,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 159.44,
+          "opp_score": 166.68,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 163.0,
+          "opp_score": 119.6,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 228.14,
+          "opp_score": 103.12,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 160.4,
+          "opp_score": 112.14,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 114.72,
+          "opp_score": 138.86,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 141.66,
+          "opp_score": 139.66,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 70.34,
+          "opp_score": 130.84,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 111.5,
+          "opp_score": 126.16,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 106.16,
+          "opp_score": 125.52,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 139.62,
+          "opp_score": 132.78,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 111.16,
+          "opp_score": 140.6,
+          "result": "Loss"
+        }
+      ]
+    },
+    "10": {
+      "team_name": "Dolphins",
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1381.66,
+      "points_against": 1686.46,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 73.7,
+          "opp_score": 147.52,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 105.62,
+          "opp_score": 144.38,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 83.32,
+          "opp_score": 151.64,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 115.92,
+          "opp_score": 132.2,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 87.6,
+          "opp_score": 127.42,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 145.82,
+          "opp_score": 142.1,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 102.22,
+          "opp_score": 59.54,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 119.78,
+          "opp_score": 122.7,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 96.1,
+          "opp_score": 99.18,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 71.12,
+          "opp_score": 174.48,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 138.54,
+          "opp_score": 119.68,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 132.78,
+          "opp_score": 139.62,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 109.14,
+          "opp_score": 126.0,
+          "result": "Loss"
+        }
+      ]
+    },
+    "11": {
+      "team_name": "Monger",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1794.22,
+      "points_against": 1551.86,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 132.6,
+          "opp_score": 155.22,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 110.72,
+          "opp_score": 115.42,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 131.12,
+          "opp_score": 162.3,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 132.2,
+          "opp_score": 115.92,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 215.04,
+          "opp_score": 142.84,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 12,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 69.9,
+          "opp_score": 78.82,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 174.06,
+          "opp_score": 52.56,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 173.02,
+          "opp_score": 109.38,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 133.66,
+          "opp_score": 191.92,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 164.08,
+          "opp_score": 145.82,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 125.52,
+          "opp_score": 106.16,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 100.54,
+          "opp_score": 80.84,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 131.76,
+          "opp_score": 94.66,
+          "result": "Win"
+        }
+      ]
+    },
+    "12": {
+      "team_name": "Newman\u2019s Owen",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1635.18,
+      "points_against": 1530.72,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 157.3,
+          "opp_score": 125.76,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 144.96,
+          "opp_score": 91.94,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 135.14,
+          "opp_score": 117.32,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 1,
+          "opponent_name": "BluesJr",
+          "my_score": 91.62,
+          "opp_score": 135.5,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 8,
+          "opponent_name": "\u30cf\u30c3\u30d4\u30fc\u30aa\u30fc\u30a6\u30a7\u30f3\u30ba",
+          "my_score": 165.92,
+          "opp_score": 108.02,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 11,
+          "opponent_name": "Monger",
+          "my_score": 78.82,
+          "opp_score": 69.9,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 9,
+          "opponent_name": "49ers Resurge",
+          "my_score": 138.86,
+          "opp_score": 114.72,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 124.16,
+          "opp_score": 168.68,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 10,
+          "opponent_name": "Dolphins",
+          "my_score": 99.18,
+          "opp_score": 96.1,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 7,
+          "opponent_name": "WINNING",
+          "my_score": 135.38,
+          "opp_score": 146.74,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 121.96,
+          "opp_score": 91.1,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 6,
+          "opponent_name": "Supernovas",
+          "my_score": 133.08,
+          "opp_score": 155.16,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 108.8,
+          "opp_score": 109.78,
+          "result": "Loss"
+        }
+      ]
+    }
+  },
+  "playoffs": {
+    "seeds": {
+      "11": 4,
+      "12": 5,
+      "4": 3,
+      "9": 6,
+      "6": 1,
+      "7": 2
+    },
+    "championship": {
+      "week": 16,
+      "team1_id": 4,
+      "team2_id": 6,
+      "team1_score": 117.48,
+      "team2_score": 107.42,
+      "winner_id": 4,
+      "loser_id": 6
+    },
+    "third_place": {
+      "week": 16,
+      "team1_id": 11,
+      "team2_id": 7,
+      "team1_score": 178.16,
+      "team2_score": 143.44,
+      "winner_id": 11,
+      "loser_id": 7
+    },
+    "quarterfinal": [
+      {
+        "week": 14,
+        "team1_id": 11,
+        "team2_id": 12,
+        "team1_score": 184.86,
+        "team2_score": 128.26,
+        "winner_id": 11,
+        "loser_id": 12
+      },
+      {
+        "week": 14,
+        "team1_id": 4,
+        "team2_id": 9,
+        "team1_score": 155.84,
+        "team2_score": 124.08,
+        "winner_id": 4,
+        "loser_id": 9
+      }
+    ],
+    "semifinal": [
+      {
+        "week": 15,
+        "team1_id": 6,
+        "team2_id": 11,
+        "team1_score": 182.08,
+        "team2_score": 157.28,
+        "winner_id": 6,
+        "loser_id": 11
+      },
+      {
+        "week": 15,
+        "team1_id": 4,
+        "team2_id": 7,
+        "team1_score": 169.66,
+        "team2_score": 149.1,
+        "winner_id": 4,
+        "loser_id": 7
+      }
+    ],
+    "fifth_place": [
+      {
+        "week": 15,
+        "team1_id": 12,
+        "team2_id": 9,
+        "team1_score": 140.18,
+        "team2_score": 127.12,
+        "winner_id": 12,
+        "loser_id": 9
+      }
+    ]
+  }
+}

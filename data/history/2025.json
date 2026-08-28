@@ -1,0 +1,1549 @@
+{
+  "season": 2025,
+  "regular_season_weeks": 14,
+  "teams": {
+    "1": {
+      "team_name": "Supernovas",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1939.2,
+      "points_against": 1842.86,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 167.98,
+          "opp_score": 165.16,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 116.74,
+          "opp_score": 130.78,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 182.14,
+          "opp_score": 107.32,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 157.6,
+          "opp_score": 167.7,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 159.02,
+          "opp_score": 141.42,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 124.12,
+          "opp_score": 104.54,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 135.94,
+          "opp_score": 142.44,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 111.06,
+          "opp_score": 98.38,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 154.52,
+          "opp_score": 169.0,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 130.62,
+          "opp_score": 80.8,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 130.7,
+          "opp_score": 95.3,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 181.46,
+          "opp_score": 147.32,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 96.5,
+          "opp_score": 136.66,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 90.8,
+          "opp_score": 156.04,
+          "result": "Loss"
+        }
+      ]
+    },
+    "2": {
+      "team_name": "Bandits",
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1942.36,
+      "points_against": 2027.5,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 123.32,
+          "opp_score": 162.72,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 124.76,
+          "opp_score": 130.6,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 153.88,
+          "opp_score": 156.36,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 127.52,
+          "opp_score": 133.98,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 141.42,
+          "opp_score": 159.02,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 140.92,
+          "opp_score": 124.94,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 133.44,
+          "opp_score": 112.66,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 156.62,
+          "opp_score": 99.18,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 128.64,
+          "opp_score": 174.92,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 177.18,
+          "opp_score": 203.62,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 95.3,
+          "opp_score": 130.7,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 158.26,
+          "opp_score": 157.98,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 137.64,
+          "opp_score": 129.64,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 143.46,
+          "opp_score": 151.18,
+          "result": "Loss"
+        }
+      ]
+    },
+    "3": {
+      "team_name": "Big Dumb Sports",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 2067.58,
+      "points_against": 1770.84,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 158.56,
+          "opp_score": 102.18,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 173.5,
+          "opp_score": 165.1,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 138.72,
+          "opp_score": 159.9,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 156.08,
+          "opp_score": 79.58,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 188.46,
+          "opp_score": 150.1,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 104.54,
+          "opp_score": 124.12,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 197.08,
+          "opp_score": 141.94,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 131.02,
+          "opp_score": 123.22,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 173.66,
+          "opp_score": 116.58,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 101.04,
+          "opp_score": 159.5,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 150.02,
+          "opp_score": 86.14,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 109.22,
+          "opp_score": 134.04,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 129.64,
+          "opp_score": 137.64,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 156.04,
+          "opp_score": 90.8,
+          "result": "Win"
+        }
+      ]
+    },
+    "4": {
+      "team_name": "ROK Navy's Finest",
+      "wins": 2,
+      "losses": 12,
+      "ties": 0,
+      "points_for": 1541.54,
+      "points_against": 1972.66,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 102.18,
+          "opp_score": 158.56,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 133.74,
+          "opp_score": 136.1,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 143.92,
+          "opp_score": 122.96,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 141.06,
+          "opp_score": 155.68,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 117.1,
+          "opp_score": 133.84,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 124.94,
+          "opp_score": 140.92,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 136.76,
+          "opp_score": 146.8,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 90.82,
+          "opp_score": 166.66,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 73.6,
+          "opp_score": 109.72,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 80.8,
+          "opp_score": 130.62,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 86.14,
+          "opp_score": 150.02,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 70.16,
+          "opp_score": 128.44,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 88.88,
+          "opp_score": 157.54,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 151.44,
+          "opp_score": 134.8,
+          "result": "Win"
+        }
+      ]
+    },
+    "5": {
+      "team_name": "BurrowMyBrownJohnsonInLondon",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1870.76,
+      "points_against": 1871.74,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 94.42,
+          "opp_score": 154.32,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 191.34,
+          "opp_score": 149.92,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 141.42,
+          "opp_score": 136.92,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 133.98,
+          "opp_score": 127.52,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 133.84,
+          "opp_score": 117.1,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 117.48,
+          "opp_score": 107.84,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 147.88,
+          "opp_score": 208.32,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 122.2,
+          "opp_score": 172.78,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 159.8,
+          "opp_score": 165.3,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 159.5,
+          "opp_score": 101.04,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 105.02,
+          "opp_score": 87.82,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 100.56,
+          "opp_score": 140.22,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 136.66,
+          "opp_score": 96.5,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 126.66,
+          "opp_score": 106.14,
+          "result": "Win"
+        }
+      ]
+    },
+    "6": {
+      "team_name": "Jake From State Farm",
+      "wins": 10,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 2171.04,
+      "points_against": 2039.84,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 128.42,
+          "opp_score": 118.82,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 136.1,
+          "opp_score": 133.74,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 156.36,
+          "opp_score": 153.88,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 167.7,
+          "opp_score": 157.6,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 150.1,
+          "opp_score": 188.46,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 163.42,
+          "opp_score": 138.98,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 132.94,
+          "opp_score": 150.72,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 208.38,
+          "opp_score": 155.36,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 165.3,
+          "opp_score": 159.8,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 203.62,
+          "opp_score": 177.18,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 129.16,
+          "opp_score": 152.84,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 165.96,
+          "opp_score": 88.52,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 123.82,
+          "opp_score": 129.24,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 139.76,
+          "opp_score": 134.7,
+          "result": "Win"
+        }
+      ]
+    },
+    "7": {
+      "team_name": "Lambeau Leapers",
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 2105.84,
+      "points_against": 2116.44,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 154.32,
+          "opp_score": 94.42,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 155.88,
+          "opp_score": 160.34,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 122.96,
+          "opp_score": 143.92,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 167.2,
+          "opp_score": 146.96,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 159.12,
+          "opp_score": 162.96,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 191.9,
+          "opp_score": 147.46,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 141.94,
+          "opp_score": 197.08,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 155.36,
+          "opp_score": 208.38,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 169.0,
+          "opp_score": 154.52,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 106.62,
+          "opp_score": 146.62,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 149.52,
+          "opp_score": 167.44,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 157.98,
+          "opp_score": 158.26,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 139.34,
+          "opp_score": 88.32,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 134.7,
+          "opp_score": 139.76,
+          "result": "Loss"
+        }
+      ]
+    },
+    "8": {
+      "team_name": "Dust Off Kodi",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1825.48,
+      "points_against": 1882.1,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 165.16,
+          "opp_score": 167.98,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 149.92,
+          "opp_score": 191.34,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 148.32,
+          "opp_score": 73.76,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 146.96,
+          "opp_score": 167.2,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 124.32,
+          "opp_score": 176.24,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 123.0,
+          "opp_score": 129.34,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 112.66,
+          "opp_score": 133.44,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 123.22,
+          "opp_score": 131.02,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 109.72,
+          "opp_score": 73.6,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 165.24,
+          "opp_score": 84.62,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 173.98,
+          "opp_score": 121.6,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 88.52,
+          "opp_score": 165.96,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 88.32,
+          "opp_score": 139.34,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 106.14,
+          "opp_score": 126.66,
+          "result": "Loss"
+        }
+      ]
+    },
+    "9": {
+      "team_name": "Mr. Bean's Football Team",
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1899.28,
+      "points_against": 2173.48,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 99.24,
+          "opp_score": 142.08,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 160.34,
+          "opp_score": 155.88,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 107.32,
+          "opp_score": 182.14,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 155.68,
+          "opp_score": 141.06,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 151.88,
+          "opp_score": 104.64,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 138.98,
+          "opp_score": 163.42,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 208.32,
+          "opp_score": 147.88,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 99.18,
+          "opp_score": 156.62,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 116.58,
+          "opp_score": 173.66,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 128.8,
+          "opp_score": 175.4,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 121.6,
+          "opp_score": 173.98,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 147.32,
+          "opp_score": 181.46,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 129.24,
+          "opp_score": 123.82,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 134.8,
+          "opp_score": 151.44,
+          "result": "Loss"
+        }
+      ]
+    },
+    "10": {
+      "team_name": "Bob\u2019s Best",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1979.72,
+      "points_against": 1814.44,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 142.08,
+          "opp_score": 99.24,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 165.1,
+          "opp_score": 173.5,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 136.92,
+          "opp_score": 141.42,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 161.98,
+          "opp_score": 165.32,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 162.96,
+          "opp_score": 159.12,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 129.34,
+          "opp_score": 123.0,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 150.72,
+          "opp_score": 132.94,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 98.38,
+          "opp_score": 111.06,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 174.92,
+          "opp_score": 128.64,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 146.62,
+          "opp_score": 106.62,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 87.82,
+          "opp_score": 105.02,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 128.44,
+          "opp_score": 70.16,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 143.26,
+          "opp_score": 154.94,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 151.18,
+          "opp_score": 143.46,
+          "result": "Win"
+        }
+      ]
+    },
+    "11": {
+      "team_name": "Fake Jaime\u2019s Injury Factory",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1745.44,
+      "points_against": 1889.1,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 118.82,
+          "opp_score": 128.42,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 130.6,
+          "opp_score": 124.76,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 73.76,
+          "opp_score": 148.32,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 79.58,
+          "opp_score": 156.08,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 104.64,
+          "opp_score": 151.88,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 107.84,
+          "opp_score": 117.48,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 142.44,
+          "opp_score": 135.94,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 166.66,
+          "opp_score": 90.82,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 143.62,
+          "opp_score": 143.4,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 84.62,
+          "opp_score": 165.24,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 167.44,
+          "opp_score": 149.52,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 140.22,
+          "opp_score": 100.56,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 154.94,
+          "opp_score": 143.26,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 130.26,
+          "opp_score": 133.42,
+          "result": "Loss"
+        }
+      ]
+    },
+    "12": {
+      "team_name": "Supernova Takeover",
+      "wins": 12,
+      "losses": 2,
+      "ties": 0,
+      "points_for": 2158.64,
+      "points_against": 1845.88,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 162.72,
+          "opp_score": 123.32,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 130.78,
+          "opp_score": 116.74,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 159.9,
+          "opp_score": 138.72,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 165.32,
+          "opp_score": 161.98,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 8,
+          "opponent_name": "Dust Off Kodi",
+          "my_score": 176.24,
+          "opp_score": 124.32,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 147.46,
+          "opp_score": 191.9,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 146.8,
+          "opp_score": 136.76,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 5,
+          "opponent_name": "BurrowMyBrownJohnsonInLondon",
+          "my_score": 172.78,
+          "opp_score": 122.2,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 143.4,
+          "opp_score": 143.62,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 175.4,
+          "opp_score": 128.8,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 152.84,
+          "opp_score": 129.16,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 134.04,
+          "opp_score": 109.22,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 4,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 157.54,
+          "opp_score": 88.88,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 11,
+          "opponent_name": "Fake Jaime\u2019s Injury Factory",
+          "my_score": 133.42,
+          "opp_score": 130.26,
+          "result": "Win"
+        }
+      ]
+    }
+  },
+  "playoffs": {
+    "seeds": {
+      "5": 4,
+      "10": 5,
+      "1": 6,
+      "3": 3,
+      "12": 1,
+      "6": 2
+    },
+    "championship": {
+      "week": 17,
+      "team1_id": 12,
+      "team2_id": 6,
+      "team1_score": 152.64,
+      "team2_score": 137.72,
+      "winner_id": 12,
+      "loser_id": 6
+    },
+    "third_place": {
+      "week": 17,
+      "team1_id": 5,
+      "team2_id": 1,
+      "team1_score": 177.22,
+      "team2_score": 150.88,
+      "winner_id": 5,
+      "loser_id": 1
+    },
+    "quarterfinal": [
+      {
+        "week": 15,
+        "team1_id": 5,
+        "team2_id": 10,
+        "team1_score": 204.9,
+        "team2_score": 120.54,
+        "winner_id": 5,
+        "loser_id": 10
+      },
+      {
+        "week": 15,
+        "team1_id": 1,
+        "team2_id": 3,
+        "team1_score": 155.7,
+        "team2_score": 130.02,
+        "winner_id": 1,
+        "loser_id": 3
+      }
+    ],
+    "semifinal": [
+      {
+        "week": 16,
+        "team1_id": 12,
+        "team2_id": 5,
+        "team1_score": 198.4,
+        "team2_score": 127.32,
+        "winner_id": 12,
+        "loser_id": 5
+      },
+      {
+        "week": 16,
+        "team1_id": 6,
+        "team2_id": 1,
+        "team1_score": 147.32,
+        "team2_score": 136.6,
+        "winner_id": 6,
+        "loser_id": 1
+      }
+    ],
+    "fifth_place": [
+      {
+        "week": 16,
+        "team1_id": 3,
+        "team2_id": 10,
+        "team1_score": 193.88,
+        "team2_score": 137.58,
+        "winner_id": 3,
+        "loser_id": 10
+      }
+    ]
+  }
+}

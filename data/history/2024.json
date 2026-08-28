@@ -1,0 +1,1549 @@
+{
+  "season": 2024,
+  "regular_season_weeks": 14,
+  "teams": {
+    "1": {
+      "team_name": "Supernovas",
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 2028.46,
+      "points_against": 1987.04,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 119.88,
+          "opp_score": 163.0,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 166.44,
+          "opp_score": 221.32,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 153.28,
+          "opp_score": 88.86,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 125.66,
+          "opp_score": 137.92,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 139.1,
+          "opp_score": 174.48,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 156.76,
+          "opp_score": 150.14,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 158.0,
+          "opp_score": 99.66,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 147.28,
+          "opp_score": 180.28,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 117.26,
+          "opp_score": 113.8,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 139.44,
+          "opp_score": 137.68,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 186.7,
+          "opp_score": 110.88,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 124.3,
+          "opp_score": 130.78,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 170.8,
+          "opp_score": 145.36,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 123.56,
+          "opp_score": 132.88,
+          "result": "Loss"
+        }
+      ]
+    },
+    "2": {
+      "team_name": "Bandits",
+      "wins": 11,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 2147.08,
+      "points_against": 1823.62,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 147.76,
+          "opp_score": 140.02,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 178.26,
+          "opp_score": 112.78,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 143.86,
+          "opp_score": 151.56,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 141.98,
+          "opp_score": 132.48,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 174.48,
+          "opp_score": 139.1,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 163.92,
+          "opp_score": 128.1,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 128.28,
+          "opp_score": 158.46,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 164.7,
+          "opp_score": 157.94,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 162.64,
+          "opp_score": 131.04,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 125.92,
+          "opp_score": 113.04,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 196.46,
+          "opp_score": 178.12,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 118.5,
+          "opp_score": 128.16,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 156.06,
+          "opp_score": 66.02,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 144.26,
+          "opp_score": 86.8,
+          "result": "Win"
+        }
+      ]
+    },
+    "3": {
+      "team_name": "Big Dumb Sports",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1942.84,
+      "points_against": 2168.6,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 178.88,
+          "opp_score": 125.18,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 92.88,
+          "opp_score": 104.2,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 88.86,
+          "opp_score": 153.28,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 157.98,
+          "opp_score": 102.7,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 188.56,
+          "opp_score": 171.36,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 128.1,
+          "opp_score": 163.92,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 112.78,
+          "opp_score": 129.96,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 157.94,
+          "opp_score": 164.7,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 153.28,
+          "opp_score": 196.42,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 124.84,
+          "opp_score": 200.5,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 115.22,
+          "opp_score": 155.04,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 143.86,
+          "opp_score": 118.42,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 149.54,
+          "opp_score": 172.6,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 150.12,
+          "opp_score": 210.32,
+          "result": "Loss"
+        }
+      ]
+    },
+    "4": {
+      "team_name": "Free Radicals",
+      "wins": 2,
+      "losses": 12,
+      "ties": 0,
+      "points_for": 1212.92,
+      "points_against": 1893.62,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 125.18,
+          "opp_score": 178.88,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 92.26,
+          "opp_score": 127.58,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 95.82,
+          "opp_score": 147.48,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 76.7,
+          "opp_score": 113.8,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 117.54,
+          "opp_score": 90.46,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 85.4,
+          "opp_score": 110.92,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 83.52,
+          "opp_score": 143.34,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 65.12,
+          "opp_score": 207.14,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 113.8,
+          "opp_score": 117.26,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 52.3,
+          "opp_score": 101.64,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 62.98,
+          "opp_score": 132.78,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 43.4,
+          "opp_score": 142.72,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 66.02,
+          "opp_score": 156.06,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 132.88,
+          "opp_score": 123.56,
+          "result": "Win"
+        }
+      ]
+    },
+    "5": {
+      "team_name": "Kuppa My Puka",
+      "wins": 13,
+      "losses": 1,
+      "ties": 0,
+      "points_for": 2386.92,
+      "points_against": 1702.2,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 140.02,
+          "opp_score": 147.76,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 127.58,
+          "opp_score": 92.26,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 181.88,
+          "opp_score": 154.46,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 143.14,
+          "opp_score": 115.16,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 210.32,
+          "opp_score": 82.84,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 185.32,
+          "opp_score": 82.3,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 143.34,
+          "opp_score": 83.52,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 180.28,
+          "opp_score": 147.28,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 155.88,
+          "opp_score": 154.22,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 200.5,
+          "opp_score": 124.84,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 170.18,
+          "opp_score": 110.04,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 156.88,
+          "opp_score": 148.38,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 181.28,
+          "opp_score": 109.02,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 210.32,
+          "opp_score": 150.12,
+          "result": "Win"
+        }
+      ]
+    },
+    "6": {
+      "team_name": "Jake From State Farm",
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1768.66,
+      "points_against": 2043.14,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 138.88,
+          "opp_score": 132.96,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 118.16,
+          "opp_score": 164.6,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 151.98,
+          "opp_score": 115.84,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 132.48,
+          "opp_score": 141.98,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 82.84,
+          "opp_score": 210.32,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 117.6,
+          "opp_score": 134.98,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 129.96,
+          "opp_score": 112.78,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 124.0,
+          "opp_score": 164.46,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 104.52,
+          "opp_score": 160.64,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 149.0,
+          "opp_score": 137.94,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 110.88,
+          "opp_score": 186.7,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 142.72,
+          "opp_score": 43.4,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 145.36,
+          "opp_score": 170.8,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 120.28,
+          "opp_score": 165.74,
+          "result": "Loss"
+        }
+      ]
+    },
+    "7": {
+      "team_name": "Lambeau Leapers",
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1998.12,
+      "points_against": 1763.74,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 163.0,
+          "opp_score": 119.88,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 134.5,
+          "opp_score": 139.64,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 151.56,
+          "opp_score": 143.86,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 113.8,
+          "opp_score": 76.7,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 138.86,
+          "opp_score": 132.74,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 189.12,
+          "opp_score": 92.28,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 122.2,
+          "opp_score": 106.04,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 142.06,
+          "opp_score": 152.5,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 154.22,
+          "opp_score": 155.88,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 113.04,
+          "opp_score": 125.92,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 154.54,
+          "opp_score": 115.18,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 118.42,
+          "opp_score": 143.86,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 137.06,
+          "opp_score": 138.98,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 165.74,
+          "opp_score": 120.28,
+          "result": "Win"
+        }
+      ]
+    },
+    "8": {
+      "team_name": "Yoda Can Ball",
+      "wins": 4,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1658.1,
+      "points_against": 1998.52,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 135.64,
+          "opp_score": 144.12,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 139.64,
+          "opp_score": 134.5,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 112.88,
+          "opp_score": 128.5,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 102.7,
+          "opp_score": 157.98,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 138.14,
+          "opp_score": 148.68,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 82.3,
+          "opp_score": 185.32,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 99.66,
+          "opp_score": 158.0,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 184.28,
+          "opp_score": 130.4,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 160.64,
+          "opp_score": 104.52,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 101.64,
+          "opp_score": 52.3,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 115.18,
+          "opp_score": 154.54,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 108.82,
+          "opp_score": 181.1,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 89.78,
+          "opp_score": 174.3,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 86.8,
+          "opp_score": 144.26,
+          "result": "Loss"
+        }
+      ]
+    },
+    "9": {
+      "team_name": "Mr. Bean's Football Team",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1945.52,
+      "points_against": 1928.74,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 121.48,
+          "opp_score": 133.02,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 112.78,
+          "opp_score": 178.26,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 147.48,
+          "opp_score": 95.82,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 115.16,
+          "opp_score": 143.14,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 90.46,
+          "opp_score": 117.54,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 150.14,
+          "opp_score": 156.76,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 158.46,
+          "opp_score": 128.28,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 152.5,
+          "opp_score": 142.06,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 102.3,
+          "opp_score": 160.28,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 137.94,
+          "opp_score": 149.0,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 155.04,
+          "opp_score": 115.22,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 181.1,
+          "opp_score": 108.82,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 172.6,
+          "opp_score": 149.54,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 148.08,
+          "opp_score": 151.0,
+          "result": "Loss"
+        }
+      ]
+    },
+    "10": {
+      "team_name": "Bob\u2019s Best",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 2055.94,
+      "points_against": 1990.8,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 144.12,
+          "opp_score": 135.64,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 221.32,
+          "opp_score": 166.44,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 115.84,
+          "opp_score": 151.98,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 137.92,
+          "opp_score": 125.66,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 171.36,
+          "opp_score": 188.56,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 92.28,
+          "opp_score": 189.12,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 158.56,
+          "opp_score": 138.3,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 207.14,
+          "opp_score": 65.12,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 160.28,
+          "opp_score": 102.3,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 132.58,
+          "opp_score": 112.68,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 110.04,
+          "opp_score": 170.18,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 128.16,
+          "opp_score": 118.5,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 109.02,
+          "opp_score": 181.28,
+          "result": "Loss"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 167.32,
+          "opp_score": 145.04,
+          "result": "Win"
+        }
+      ]
+    },
+    "11": {
+      "team_name": "Hello....Newman",
+      "wins": 9,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 2107.76,
+      "points_against": 1892.78,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 133.02,
+          "opp_score": 121.48,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 164.6,
+          "opp_score": 118.16,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 154.46,
+          "opp_score": 181.88,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 12,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 188.24,
+          "opp_score": 137.8,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 148.68,
+          "opp_score": 138.14,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 110.92,
+          "opp_score": 85.4,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 106.04,
+          "opp_score": 122.2,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 164.46,
+          "opp_score": 124.0,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 196.42,
+          "opp_score": 153.28,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 112.68,
+          "opp_score": 132.58,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 178.12,
+          "opp_score": 196.46,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 130.78,
+          "opp_score": 124.3,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 174.3,
+          "opp_score": 89.78,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 145.04,
+          "opp_score": 167.32,
+          "result": "Loss"
+        }
+      ]
+    },
+    "12": {
+      "team_name": "Supernova Takeover",
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1879.74,
+      "points_against": 1939.26,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 132.96,
+          "opp_score": 138.88,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 3,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 104.2,
+          "opp_score": 92.88,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 128.5,
+          "opp_score": 112.88,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 11,
+          "opponent_name": "Hello....Newman",
+          "my_score": 137.8,
+          "opp_score": 188.24,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 132.74,
+          "opp_score": 138.86,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 134.98,
+          "opp_score": 117.6,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 10,
+          "opponent_name": "Bob\u2019s Best",
+          "my_score": 138.3,
+          "opp_score": 158.56,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 8,
+          "opponent_name": "Yoda Can Ball",
+          "my_score": 130.4,
+          "opp_score": 184.28,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 2,
+          "opponent_name": "Bandits",
+          "my_score": 131.04,
+          "opp_score": 162.64,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernovas",
+          "my_score": 137.68,
+          "opp_score": 139.44,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 4,
+          "opponent_name": "Free Radicals",
+          "my_score": 132.78,
+          "opp_score": 62.98,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 5,
+          "opponent_name": "Kuppa My Puka",
+          "my_score": 148.38,
+          "opp_score": 156.88,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 7,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 138.98,
+          "opp_score": 137.06,
+          "result": "Win"
+        },
+        {
+          "week": 14,
+          "opponent_team_id": 9,
+          "opponent_name": "Mr. Bean's Football Team",
+          "my_score": 151.0,
+          "opp_score": 148.08,
+          "result": "Win"
+        }
+      ]
+    }
+  },
+  "playoffs": {
+    "seeds": {
+      "10": 4,
+      "7": 5,
+      "1": 6,
+      "11": 3,
+      "5": 1,
+      "2": 2
+    },
+    "championship": {
+      "week": 17,
+      "team1_id": 2,
+      "team2_id": 10,
+      "team1_score": 163.88,
+      "team2_score": 112.9,
+      "winner_id": 2,
+      "loser_id": 10
+    },
+    "third_place": {
+      "week": 17,
+      "team1_id": 1,
+      "team2_id": 5,
+      "team1_score": 206.74,
+      "team2_score": 172.92,
+      "winner_id": 1,
+      "loser_id": 5
+    },
+    "quarterfinal": [
+      {
+        "week": 15,
+        "team1_id": 10,
+        "team2_id": 7,
+        "team1_score": 163.7,
+        "team2_score": 130.06,
+        "winner_id": 10,
+        "loser_id": 7
+      },
+      {
+        "week": 15,
+        "team1_id": 1,
+        "team2_id": 11,
+        "team1_score": 187.96,
+        "team2_score": 134.84,
+        "winner_id": 1,
+        "loser_id": 11
+      }
+    ],
+    "semifinal": [
+      {
+        "week": 16,
+        "team1_id": 10,
+        "team2_id": 5,
+        "team1_score": 167.94,
+        "team2_score": 161.28,
+        "winner_id": 10,
+        "loser_id": 5
+      },
+      {
+        "week": 16,
+        "team1_id": 2,
+        "team2_id": 1,
+        "team1_score": 150.58,
+        "team2_score": 133.08,
+        "winner_id": 2,
+        "loser_id": 1
+      }
+    ],
+    "fifth_place": [
+      {
+        "week": 16,
+        "team1_id": 11,
+        "team2_id": 7,
+        "team1_score": 151.0,
+        "team2_score": 143.68,
+        "winner_id": 11,
+        "loser_id": 7
+      }
+    ]
+  }
+}

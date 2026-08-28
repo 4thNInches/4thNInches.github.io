@@ -1,0 +1,1453 @@
+{
+  "season": 2016,
+  "regular_season_weeks": 13,
+  "teams": {
+    "1": {
+      "team_name": "Hello.....Newman",
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1696.28,
+      "points_against": 1529.22,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 176.1,
+          "opp_score": 104.22,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 129.48,
+          "opp_score": 98.12,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 134.94,
+          "opp_score": 84.18,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 114.96,
+          "opp_score": 90.98,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 160.58,
+          "opp_score": 106.3,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 112.88,
+          "opp_score": 160.6,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 166.82,
+          "opp_score": 98.84,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 100.8,
+          "opp_score": 182.32,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 82.14,
+          "opp_score": 131.68,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 116.5,
+          "opp_score": 133.36,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 148.88,
+          "opp_score": 121.6,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 131.04,
+          "opp_score": 106.66,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 121.16,
+          "opp_score": 110.36,
+          "result": "Win"
+        }
+      ]
+    },
+    "2": {
+      "team_name": "Sad Carolines",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1521.38,
+      "points_against": 1623.88,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 108.46,
+          "opp_score": 127.86,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 124.3,
+          "opp_score": 96.32,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 114.64,
+          "opp_score": 126.88,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 93.12,
+          "opp_score": 115.74,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 120.4,
+          "opp_score": 174.78,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 116.44,
+          "opp_score": 75.42,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 98.84,
+          "opp_score": 166.82,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 114.5,
+          "opp_score": 126.52,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 105.44,
+          "opp_score": 141.08,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 124.68,
+          "opp_score": 110.74,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 130.72,
+          "opp_score": 129.44,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 140.5,
+          "opp_score": 137.84,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 129.34,
+          "opp_score": 94.44,
+          "result": "Win"
+        }
+      ]
+    },
+    "3": {
+      "team_name": "Free Radicals",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1672.08,
+      "points_against": 1624.38,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 114.22,
+          "opp_score": 124.34,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 108.16,
+          "opp_score": 153.0,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 130.32,
+          "opp_score": 178.4,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 144.26,
+          "opp_score": 129.8,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 124.26,
+          "opp_score": 95.38,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 74.4,
+          "opp_score": 121.06,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 166.1,
+          "opp_score": 141.02,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 126.52,
+          "opp_score": 114.5,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 187.88,
+          "opp_score": 122.36,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 133.36,
+          "opp_score": 116.5,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 115.68,
+          "opp_score": 124.98,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 118.74,
+          "opp_score": 106.64,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 128.18,
+          "opp_score": 96.4,
+          "result": "Win"
+        }
+      ]
+    },
+    "4": {
+      "team_name": "Injury Prone",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1681.26,
+      "points_against": 1629.0,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 141.46,
+          "opp_score": 138.96,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 98.12,
+          "opp_score": 129.48,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 178.4,
+          "opp_score": 130.32,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 111.2,
+          "opp_score": 123.94,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 109.06,
+          "opp_score": 106.86,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 93.36,
+          "opp_score": 131.84,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 165.44,
+          "opp_score": 113.68,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 146.74,
+          "opp_score": 111.3,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 128.38,
+          "opp_score": 122.46,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 158.34,
+          "opp_score": 132.68,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 129.44,
+          "opp_score": 130.72,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 110.96,
+          "opp_score": 135.6,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 110.36,
+          "opp_score": 121.16,
+          "result": "Loss"
+        }
+      ]
+    },
+    "5": {
+      "team_name": "Jake From State Farm",
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1685.08,
+      "points_against": 1463.06,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 120.9,
+          "opp_score": 144.3,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 112.06,
+          "opp_score": 128.84,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 146.96,
+          "opp_score": 132.5,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 114.18,
+          "opp_score": 109.54,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 174.78,
+          "opp_score": 120.4,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 131.84,
+          "opp_score": 93.36,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 86.74,
+          "opp_score": 91.9,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 144.48,
+          "opp_score": 90.08,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 131.68,
+          "opp_score": 82.14,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 112.8,
+          "opp_score": 109.22,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 124.98,
+          "opp_score": 115.68,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 157.5,
+          "opp_score": 111.44,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 126.18,
+          "opp_score": 133.66,
+          "result": "Loss"
+        }
+      ]
+    },
+    "6": {
+      "team_name": "Lambeau Leapers",
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "points_for": 1483.98,
+      "points_against": 1666.74,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 104.22,
+          "opp_score": 176.1,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 153.0,
+          "opp_score": 108.16,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 116.24,
+          "opp_score": 121.84,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 109.54,
+          "opp_score": 114.18,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 106.86,
+          "opp_score": 109.06,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 130.42,
+          "opp_score": 134.38,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 139.54,
+          "opp_score": 118.78,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 81.48,
+          "opp_score": 130.78,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 123.9,
+          "opp_score": 140.86,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 110.74,
+          "opp_score": 124.68,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 104.98,
+          "opp_score": 128.7,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 106.66,
+          "opp_score": 131.04,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 96.4,
+          "opp_score": 128.18,
+          "result": "Loss"
+        }
+      ]
+    },
+    "7": {
+      "team_name": "Mr Sam's Gayborhood",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1600.22,
+      "points_against": 1810.24,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 127.86,
+          "opp_score": 108.46,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 172.22,
+          "opp_score": 141.76,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 84.18,
+          "opp_score": 134.94,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 129.8,
+          "opp_score": 144.26,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 173.02,
+          "opp_score": 160.94,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 134.38,
+          "opp_score": 130.42,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 113.68,
+          "opp_score": 165.44,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 90.08,
+          "opp_score": 144.48,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 117.4,
+          "opp_score": 116.02,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 118.5,
+          "opp_score": 162.22,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 103.38,
+          "opp_score": 126.6,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 137.84,
+          "opp_score": 140.5,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 97.88,
+          "opp_score": 134.2,
+          "result": "Loss"
+        }
+      ]
+    },
+    "8": {
+      "team_name": "Supernovas",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1721.22,
+      "points_against": 1818.4,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 170.88,
+          "opp_score": 150.02,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 107.92,
+          "opp_score": 150.56,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 132.5,
+          "opp_score": 146.96,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 115.74,
+          "opp_score": 93.12,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 111.56,
+          "opp_score": 131.18,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 160.6,
+          "opp_score": 112.88,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 141.02,
+          "opp_score": 166.1,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 142.92,
+          "opp_score": 189.2,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 140.86,
+          "opp_score": 123.9,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 132.68,
+          "opp_score": 158.34,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 126.6,
+          "opp_score": 103.38,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 129.76,
+          "opp_score": 113.2,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 108.18,
+          "opp_score": 179.56,
+          "result": "Loss"
+        }
+      ]
+    },
+    "9": {
+      "team_name": "The White Russians",
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1534.7,
+      "points_against": 1639.78,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 150.02,
+          "opp_score": 170.88,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 96.32,
+          "opp_score": 124.3,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 155.64,
+          "opp_score": 89.88,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 90.98,
+          "opp_score": 114.96,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 95.38,
+          "opp_score": 124.26,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 146.5,
+          "opp_score": 131.24,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 118.78,
+          "opp_score": 139.54,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 111.3,
+          "opp_score": 146.74,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 116.02,
+          "opp_score": 117.4,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 109.22,
+          "opp_score": 112.8,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 136.9,
+          "opp_score": 108.68,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 113.2,
+          "opp_score": 129.76,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 94.44,
+          "opp_score": 129.34,
+          "result": "Loss"
+        }
+      ]
+    },
+    "10": {
+      "team_name": "No Punt Intended",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1664.14,
+      "points_against": 1732.3,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 138.96,
+          "opp_score": 141.46,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 141.76,
+          "opp_score": 172.22,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 89.88,
+          "opp_score": 155.64,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 144.32,
+          "opp_score": 203.1,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 131.18,
+          "opp_score": 111.56,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 75.42,
+          "opp_score": 116.44,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 91.9,
+          "opp_score": 86.74,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 182.32,
+          "opp_score": 100.8,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 122.36,
+          "opp_score": 187.88,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 147.54,
+          "opp_score": 142.64,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 128.7,
+          "opp_score": 104.98,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 135.6,
+          "opp_score": 110.96,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 134.2,
+          "opp_score": 97.88,
+          "result": "Win"
+        }
+      ]
+    },
+    "11": {
+      "team_name": "WINNING",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1784.4,
+      "points_against": 1582.68,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 144.3,
+          "opp_score": 120.9,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 150.56,
+          "opp_score": 107.92,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 126.88,
+          "opp_score": 114.64,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 203.1,
+          "opp_score": 144.32,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 106.3,
+          "opp_score": 160.58,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 121.06,
+          "opp_score": 74.4,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 12,
+          "opponent_name": "Cock Warts",
+          "my_score": 117.06,
+          "opp_score": 128.98,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 130.78,
+          "opp_score": 81.48,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 122.46,
+          "opp_score": 128.38,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 162.22,
+          "opp_score": 118.5,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 108.68,
+          "opp_score": 136.9,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 111.44,
+          "opp_score": 157.5,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 179.56,
+          "opp_score": 108.18,
+          "result": "Win"
+        }
+      ]
+    },
+    "12": {
+      "team_name": "Cock Warts",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1754.94,
+      "points_against": 1680.0,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 124.34,
+          "opp_score": 114.22,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 128.84,
+          "opp_score": 112.06,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 6,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 121.84,
+          "opp_score": 116.24,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 4,
+          "opponent_name": "Injury Prone",
+          "my_score": 123.94,
+          "opp_score": 111.2,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 7,
+          "opponent_name": "Mr Sam's Gayborhood",
+          "my_score": 160.94,
+          "opp_score": 173.02,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 9,
+          "opponent_name": "The White Russians",
+          "my_score": 131.24,
+          "opp_score": 146.5,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 11,
+          "opponent_name": "WINNING",
+          "my_score": 128.98,
+          "opp_score": 117.06,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 8,
+          "opponent_name": "Supernovas",
+          "my_score": 189.2,
+          "opp_score": 142.92,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 2,
+          "opponent_name": "Sad Carolines",
+          "my_score": 141.08,
+          "opp_score": 105.44,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 10,
+          "opponent_name": "No Punt Intended",
+          "my_score": 142.64,
+          "opp_score": 147.54,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 121.6,
+          "opp_score": 148.88,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 3,
+          "opponent_name": "Free Radicals",
+          "my_score": 106.64,
+          "opp_score": 118.74,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 5,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 133.66,
+          "opp_score": 126.18,
+          "result": "Win"
+        }
+      ]
+    }
+  },
+  "playoffs": {
+    "seeds": {
+      "12": 4,
+      "3": 5,
+      "4": 6,
+      "11": 3,
+      "1": 1,
+      "5": 2
+    },
+    "championship": {
+      "week": 16,
+      "team1_id": 12,
+      "team2_id": 5,
+      "team1_score": 135.06,
+      "team2_score": 130.4,
+      "winner_id": 12,
+      "loser_id": 5
+    },
+    "third_place": {
+      "week": 16,
+      "team1_id": 4,
+      "team2_id": 1,
+      "team1_score": 176.48,
+      "team2_score": 133.02,
+      "winner_id": 4,
+      "loser_id": 1
+    },
+    "quarterfinal": [
+      {
+        "week": 14,
+        "team1_id": 12,
+        "team2_id": 3,
+        "team1_score": 131.74,
+        "team2_score": 91.4,
+        "winner_id": 12,
+        "loser_id": 3
+      },
+      {
+        "week": 14,
+        "team1_id": 4,
+        "team2_id": 11,
+        "team1_score": 133.64,
+        "team2_score": 118.9,
+        "winner_id": 4,
+        "loser_id": 11
+      }
+    ],
+    "semifinal": [
+      {
+        "week": 15,
+        "team1_id": 12,
+        "team2_id": 1,
+        "team1_score": 154.32,
+        "team2_score": 111.5,
+        "winner_id": 12,
+        "loser_id": 1
+      },
+      {
+        "week": 15,
+        "team1_id": 5,
+        "team2_id": 4,
+        "team1_score": 101.4,
+        "team2_score": 92.88,
+        "winner_id": 5,
+        "loser_id": 4
+      }
+    ],
+    "fifth_place": [
+      {
+        "week": 15,
+        "team1_id": 11,
+        "team2_id": 3,
+        "team1_score": 122.94,
+        "team2_score": 111.96,
+        "winner_id": 11,
+        "loser_id": 3
+      }
+    ]
+  }
+}

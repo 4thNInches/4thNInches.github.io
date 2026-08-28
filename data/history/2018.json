@@ -1,0 +1,1453 @@
+{
+  "season": 2018,
+  "regular_season_weeks": 13,
+  "teams": {
+    "1": {
+      "team_name": "Hello.....Newman",
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 1972.18,
+      "points_against": 1833.84,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 190.14,
+          "opp_score": 148.04,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 141.68,
+          "opp_score": 119.34,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 183.16,
+          "opp_score": 131.76,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 173.26,
+          "opp_score": 136.36,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 137.7,
+          "opp_score": 178.1,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 167.5,
+          "opp_score": 147.16,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 159.68,
+          "opp_score": 155.38,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 146.9,
+          "opp_score": 138.66,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 123.9,
+          "opp_score": 94.26,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 98.6,
+          "opp_score": 159.62,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 147.04,
+          "opp_score": 166.72,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 165.68,
+          "opp_score": 151.84,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 136.94,
+          "opp_score": 106.6,
+          "result": "Win"
+        }
+      ]
+    },
+    "2": {
+      "team_name": "Free Radicals",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1779.48,
+      "points_against": 1847.94,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 159.78,
+          "opp_score": 166.2,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 149.16,
+          "opp_score": 142.68,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 138.02,
+          "opp_score": 134.14,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 136.36,
+          "opp_score": 173.26,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 105.84,
+          "opp_score": 169.48,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 144.8,
+          "opp_score": 147.98,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 145.08,
+          "opp_score": 136.38,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 167.56,
+          "opp_score": 108.06,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 133.86,
+          "opp_score": 152.7,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 114.96,
+          "opp_score": 102.26,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 118.5,
+          "opp_score": 129.68,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 153.02,
+          "opp_score": 129.44,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 112.54,
+          "opp_score": 155.68,
+          "result": "Loss"
+        }
+      ]
+    },
+    "3": {
+      "team_name": "Injury Prone",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 2016.36,
+      "points_against": 1832.92,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 166.2,
+          "opp_score": 159.78,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 176.78,
+          "opp_score": 201.2,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 124.64,
+          "opp_score": 163.72,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 155.32,
+          "opp_score": 165.08,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 178.1,
+          "opp_score": 137.7,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 230.42,
+          "opp_score": 139.5,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 146.1,
+          "opp_score": 130.54,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 130.04,
+          "opp_score": 139.5,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 100.54,
+          "opp_score": 128.48,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 197.0,
+          "opp_score": 82.84,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 148.34,
+          "opp_score": 109.22,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 129.44,
+          "opp_score": 153.02,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 133.44,
+          "opp_score": 122.34,
+          "result": "Win"
+        }
+      ]
+    },
+    "4": {
+      "team_name": "Jake From State Farm",
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 1829.4,
+      "points_against": 1787.5,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 164.34,
+          "opp_score": 137.3,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 118.84,
+          "opp_score": 103.84,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 131.76,
+          "opp_score": 183.16,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 113.06,
+          "opp_score": 166.02,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 148.72,
+          "opp_score": 148.46,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 155.18,
+          "opp_score": 72.18,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 155.52,
+          "opp_score": 178.76,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 136.02,
+          "opp_score": 130.38,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 197.3,
+          "opp_score": 185.26,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 102.26,
+          "opp_score": 114.96,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 109.22,
+          "opp_score": 148.34,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 149.68,
+          "opp_score": 143.02,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 147.5,
+          "opp_score": 75.82,
+          "result": "Win"
+        }
+      ]
+    },
+    "5": {
+      "team_name": "Lambeau Leapers",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1758.18,
+      "points_against": 1748.26,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 117.94,
+          "opp_score": 134.74,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 151.64,
+          "opp_score": 129.9,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 120.1,
+          "opp_score": 106.58,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 166.02,
+          "opp_score": 113.06,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 169.48,
+          "opp_score": 105.84,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 139.5,
+          "opp_score": 230.42,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 95.94,
+          "opp_score": 121.24,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 150.64,
+          "opp_score": 84.1,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 94.26,
+          "opp_score": 123.9,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 164.06,
+          "opp_score": 192.44,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 137.48,
+          "opp_score": 149.44,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 124.4,
+          "opp_score": 138.2,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 126.72,
+          "opp_score": 118.4,
+          "result": "Win"
+        }
+      ]
+    },
+    "6": {
+      "team_name": "Bandits",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1915.48,
+      "points_against": 1818.62,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 136.36,
+          "opp_score": 108.56,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 201.2,
+          "opp_score": 176.78,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 154.44,
+          "opp_score": 114.3,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 142.68,
+          "opp_score": 126.96,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 115.04,
+          "opp_score": 144.18,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 112.52,
+          "opp_score": 119.94,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 112.14,
+          "opp_score": 119.64,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 138.66,
+          "opp_score": 146.9,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 185.26,
+          "opp_score": 197.3,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 192.44,
+          "opp_score": 164.06,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 129.68,
+          "opp_score": 118.5,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 172.72,
+          "opp_score": 148.06,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 122.34,
+          "opp_score": 133.44,
+          "result": "Loss"
+        }
+      ]
+    },
+    "7": {
+      "team_name": "Supernovas",
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "points_for": 1876.18,
+      "points_against": 1798.94,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 108.56,
+          "opp_score": 136.36,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 150.14,
+          "opp_score": 109.0,
+          "result": "Win"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 109.34,
+          "opp_score": 119.0,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 172.9,
+          "opp_score": 111.78,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 148.46,
+          "opp_score": 148.72,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 147.98,
+          "opp_score": 144.8,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 130.54,
+          "opp_score": 146.1,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 159.26,
+          "opp_score": 156.76,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 148.52,
+          "opp_score": 168.84,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 159.62,
+          "opp_score": 98.6,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 149.44,
+          "opp_score": 137.48,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 148.06,
+          "opp_score": 172.72,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 143.36,
+          "opp_score": 148.78,
+          "result": "Loss"
+        }
+      ]
+    },
+    "8": {
+      "team_name": "Monger",
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "points_for": 1746.66,
+      "points_against": 1749.24,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 134.74,
+          "opp_score": 117.94,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 109.0,
+          "opp_score": 150.14,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 114.3,
+          "opp_score": 154.44,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 144.3,
+          "opp_score": 136.4,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 144.8,
+          "opp_score": 120.92,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 72.18,
+          "opp_score": 155.18,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 136.38,
+          "opp_score": 145.08,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 139.5,
+          "opp_score": 130.04,
+          "result": "Win"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 133.34,
+          "opp_score": 125.8,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 164.42,
+          "opp_score": 98.5,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 166.72,
+          "opp_score": 147.04,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 138.2,
+          "opp_score": 124.4,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 148.78,
+          "opp_score": 143.36,
+          "result": "Win"
+        }
+      ]
+    },
+    "9": {
+      "team_name": "Justin's Swell Team",
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 1521.34,
+      "points_against": 1862.6,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 125.82,
+          "opp_score": 120.16,
+          "result": "Win"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 119.34,
+          "opp_score": 141.68,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 106.58,
+          "opp_score": 120.1,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 111.78,
+          "opp_score": 172.9,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 120.92,
+          "opp_score": 144.8,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 134.08,
+          "opp_score": 173.0,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 119.64,
+          "opp_score": 112.14,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 130.38,
+          "opp_score": 136.02,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 152.7,
+          "opp_score": 133.86,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 82.84,
+          "opp_score": 197.0,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 80.5,
+          "opp_score": 164.86,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 130.16,
+          "opp_score": 109.14,
+          "result": "Win"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 106.6,
+          "opp_score": 136.94,
+          "result": "Loss"
+        }
+      ]
+    },
+    "10": {
+      "team_name": "WINNING",
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "points_for": 1904.28,
+      "points_against": 1774.92,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 137.3,
+          "opp_score": 164.34,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 142.68,
+          "opp_score": 149.16,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 163.72,
+          "opp_score": 124.64,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 126.96,
+          "opp_score": 142.68,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 161.18,
+          "opp_score": 123.92,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 147.16,
+          "opp_score": 167.5,
+          "result": "Loss"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 121.24,
+          "opp_score": 95.94,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 156.76,
+          "opp_score": 159.26,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 125.8,
+          "opp_score": 133.34,
+          "result": "Loss"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 157.92,
+          "opp_score": 171.42,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 164.86,
+          "opp_score": 80.5,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 143.02,
+          "opp_score": 149.68,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 155.68,
+          "opp_score": 112.54,
+          "result": "Win"
+        }
+      ]
+    },
+    "11": {
+      "team_name": "Sad Carolines",
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 1857.16,
+      "points_against": 1846.3,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 148.04,
+          "opp_score": 190.14,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 129.9,
+          "opp_score": 151.64,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 119.0,
+          "opp_score": 109.34,
+          "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 136.4,
+          "opp_score": 144.3,
+          "result": "Loss"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 144.18,
+          "opp_score": 115.04,
+          "result": "Win"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 173.0,
+          "opp_score": 134.08,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 178.76,
+          "opp_score": 155.52,
+          "result": "Win"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 108.06,
+          "opp_score": 167.56,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 128.48,
+          "opp_score": 100.54,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 171.42,
+          "opp_score": 157.92,
+          "result": "Win"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 12,
+          "opponent_name": "Le\u2019Veon stinkin Bell",
+          "my_score": 149.68,
+          "opp_score": 127.82,
+          "result": "Win"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 151.84,
+          "opp_score": 165.68,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 118.4,
+          "opp_score": 126.72,
+          "result": "Loss"
+        }
+      ]
+    },
+    "12": {
+      "team_name": "Le\u2019Veon stinkin Bell",
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 1586.68,
+      "points_against": 1862.3,
+      "schedule": [
+        {
+          "week": 1,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 120.16,
+          "opp_score": 125.82,
+          "result": "Loss"
+        },
+        {
+          "week": 2,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 103.84,
+          "opp_score": 118.84,
+          "result": "Loss"
+        },
+        {
+          "week": 3,
+          "opponent_team_id": 2,
+          "opponent_name": "Free Radicals",
+          "my_score": 134.14,
+          "opp_score": 138.02,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 3,
+          "opponent_name": "Injury Prone",
+          "my_score": 165.08,
+          "opp_score": 155.32,
+          "result": "Win"
+        },
+        {
+          "week": 5,
+          "opponent_team_id": 10,
+          "opponent_name": "WINNING",
+          "my_score": 123.92,
+          "opp_score": 161.18,
+          "result": "Loss"
+        },
+        {
+          "week": 6,
+          "opponent_team_id": 6,
+          "opponent_name": "Bandits",
+          "my_score": 119.94,
+          "opp_score": 112.52,
+          "result": "Win"
+        },
+        {
+          "week": 7,
+          "opponent_team_id": 1,
+          "opponent_name": "Hello.....Newman",
+          "my_score": 155.38,
+          "opp_score": 159.68,
+          "result": "Loss"
+        },
+        {
+          "week": 8,
+          "opponent_team_id": 5,
+          "opponent_name": "Lambeau Leapers",
+          "my_score": 84.1,
+          "opp_score": 150.64,
+          "result": "Loss"
+        },
+        {
+          "week": 9,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 168.84,
+          "opp_score": 148.52,
+          "result": "Win"
+        },
+        {
+          "week": 10,
+          "opponent_team_id": 8,
+          "opponent_name": "Monger",
+          "my_score": 98.5,
+          "opp_score": 164.42,
+          "result": "Loss"
+        },
+        {
+          "week": 11,
+          "opponent_team_id": 11,
+          "opponent_name": "Sad Carolines",
+          "my_score": 127.82,
+          "opp_score": 149.68,
+          "result": "Loss"
+        },
+        {
+          "week": 12,
+          "opponent_team_id": 9,
+          "opponent_name": "Justin's Swell Team",
+          "my_score": 109.14,
+          "opp_score": 130.16,
+          "result": "Loss"
+        },
+        {
+          "week": 13,
+          "opponent_team_id": 4,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 75.82,
+          "opp_score": 147.5,
+          "result": "Loss"
+        }
+      ]
+    }
+  },
+  "playoffs": {
+    "seeds": {
+      "3": 4,
+      "6": 5,
+      "4": 3,
+      "11": 6,
+      "1": 1,
+      "8": 2
+    },
+    "championship": {
+      "week": 16,
+      "team1_id": 8,
+      "team2_id": 3,
+      "team1_score": 191.66,
+      "team2_score": 179.44,
+      "winner_id": 8,
+      "loser_id": 3
+    },
+    "third_place": {
+      "week": 16,
+      "team1_id": 4,
+      "team2_id": 1,
+      "team1_score": 138.22,
+      "team2_score": 134.96,
+      "winner_id": 4,
+      "loser_id": 1
+    },
+    "quarterfinal": [
+      {
+        "week": 14,
+        "team1_id": 3,
+        "team2_id": 6,
+        "team1_score": 150.82,
+        "team2_score": 131.72,
+        "winner_id": 3,
+        "loser_id": 6
+      },
+      {
+        "week": 14,
+        "team1_id": 4,
+        "team2_id": 11,
+        "team1_score": 149.68,
+        "team2_score": 133.6,
+        "winner_id": 4,
+        "loser_id": 11
+      }
+    ],
+    "semifinal": [
+      {
+        "week": 15,
+        "team1_id": 3,
+        "team2_id": 1,
+        "team1_score": 121.04,
+        "team2_score": 96.24,
+        "winner_id": 3,
+        "loser_id": 1
+      },
+      {
+        "week": 15,
+        "team1_id": 8,
+        "team2_id": 4,
+        "team1_score": 133.46,
+        "team2_score": 103.02,
+        "winner_id": 8,
+        "loser_id": 4
+      }
+    ],
+    "fifth_place": [
+      {
+        "week": 15,
+        "team1_id": 6,
+        "team2_id": 11,
+        "team1_score": 115.42,
+        "team2_score": 78.54,
+        "winner_id": 6,
+        "loser_id": 11
+      }
+    ]
+  }
+}
