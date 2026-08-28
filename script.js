@@ -1,6 +1,11 @@
 // 4th & Inches — site script
 
+// ============================================================
+// CONFIG -- the one value another league would need to change
+// to adopt this site for themselves.
+// ============================================================
 const SLEEPER_LEAGUE_ID = "1392229432336347136";
+// ============================================================
 
 const PLACE_ICON = { first: "\u{1F3C6}", second: "\u{1F948}", third: "\u{1F949}" };
 
@@ -21,6 +26,28 @@ const STANDINGS_COLUMNS = [
   { key: "byePct", label: "Bye %" },
 ];
 
+let sharedSleeperCorePromise = null;
+function getSharedSleeperCore(leagueId) {
+  if (!sharedSleeperCorePromise) {
+    sharedSleeperCorePromise = (async () => {
+      const [rosters, users, sleeperMapping, managers] = await Promise.all([
+        fetch(`https://api.sleeper.app/v1/league/${leagueId}/rosters`).then(r => {
+          if (!r.ok) throw new Error(`rosters HTTP ${r.status}`);
+          return r.json();
+        }),
+        fetch(`https://api.sleeper.app/v1/league/${leagueId}/users`).then(r => {
+          if (!r.ok) throw new Error(`users HTTP ${r.status}`);
+          return r.json();
+        }),
+        fetch("data/sleeper_manager_mapping.json").then(r => (r.ok ? r.json() : {})).catch(() => ({})),
+        fetch("data/managers.json").then(r => (r.ok ? r.json() : {})).catch(() => ({})),
+      ]);
+      return { rosters, users, sleeperMapping, managers };
+    })();
+  }
+  return sharedSleeperCorePromise;
+}
+
 let sharedPlayedWeeksPromise = null;
 function getSharedPlayedWeeks() {
   if (!sharedPlayedWeeksPromise) {
@@ -32,17 +59,19 @@ function getSharedPlayedWeeks() {
   return sharedPlayedWeeksPromise;
 }
 
+function groupMatchupPairs(matchups) {
+  const byMatchupId = {};
+  matchups.forEach(m => {
+    if (m.matchup_id === null || m.matchup_id === undefined) return; // bye -- not a real matchup
+    (byMatchupId[m.matchup_id] = byMatchupId[m.matchup_id] || []).push(m);
+  });
+  return Object.values(byMatchupId).filter(pair => pair.length === 2);
+}
+
 function computeRosterSequences(playedWeeks) {
   const sequences = {}; // roster_id -> ["W"/"L"/"T", ...] in chronological order
   playedWeeks.forEach(({ matchups }) => {
-    const byMatchupId = {};
-    matchups.forEach(m => {
-      if (m.matchup_id === null || m.matchup_id === undefined) return; // bye -- not a real matchup
-      (byMatchupId[m.matchup_id] = byMatchupId[m.matchup_id] || []).push(m);
-    });
-    Object.values(byMatchupId).forEach(pair => {
-      if (pair.length !== 2) return;
-      const [a, b] = pair;
+    groupMatchupPairs(matchups).forEach(([a, b]) => {
       const scoreA = a.points || 0;
       const scoreB = b.points || 0;
       (sequences[a.roster_id] = sequences[a.roster_id] || []).push(scoreA > scoreB ? "W" : scoreA < scoreB ? "L" : "T");
@@ -58,18 +87,7 @@ async function loadStandings(leagueId) {
 
   let rosters, users, sleeperMapping, managers;
   try {
-    [rosters, users, sleeperMapping, managers] = await Promise.all([
-      fetch(`https://api.sleeper.app/v1/league/${leagueId}/rosters`).then(r => {
-        if (!r.ok) throw new Error(`rosters HTTP ${r.status}`);
-        return r.json();
-      }),
-      fetch(`https://api.sleeper.app/v1/league/${leagueId}/users`).then(r => {
-        if (!r.ok) throw new Error(`users HTTP ${r.status}`);
-        return r.json();
-      }),
-      fetch("data/sleeper_manager_mapping.json").then(r => (r.ok ? r.json() : {})).catch(() => ({})),
-      fetch("data/managers.json").then(r => (r.ok ? r.json() : {})).catch(() => ({})),
-    ]);
+    ({ rosters, users, sleeperMapping, managers } = await getSharedSleeperCore(leagueId));
   } catch (err) {
     container.innerHTML = `<p class="loading-msg">Couldn't load standings from Sleeper (${err.message}). Sleeper's API is public and needs no auth, so this is usually a temporary network issue — try refreshing.</p>`;
     return;
@@ -191,7 +209,7 @@ function renderStandingsTable() {
         standingsSortDir *= -1;
       } else {
         standingsSortKey = clickedKey;
-        standingsSortDir = clickedKey === "rank" ? -1 : -1;
+        standingsSortDir = -1;
       }
       renderStandingsTable();
     });
@@ -414,18 +432,18 @@ let lifetimeSortDir = -1; // -1 = descending, 1 = ascending
 let lifetimeShowActiveOnly = false;
 
 const LIFETIME_COLUMNS = [
-  { key: "display", label: "Team (Manager)", numeric: false },
-  { key: "seasons", label: "Seasons", numeric: true },
-  { key: "wins", label: "Record", numeric: true }, // "sort by record" = by total wins
-  { key: "win_pct", label: "W%", numeric: true },
-  { key: "pf", label: "PF", numeric: true },
-  { key: "pf_per_wk", label: "PF/Wk", numeric: true },
-  { key: "pa", label: "PA", numeric: true },
-  { key: "pa_per_wk", label: "PA/Wk", numeric: true },
-  { key: "streak_sort", label: "Streak", numeric: true },
-  { key: "playoff_seasons", label: "Playoff Szns", numeric: true },
-  { key: "playoff_wins", label: "Playoff Rec", numeric: true },
-  { key: "trophy_case", label: "Trophy Case", numeric: false },
+  { key: "display", label: "Team (Manager)" },
+  { key: "seasons", label: "Seasons" },
+  { key: "wins", label: "Record" }, // "sort by record" = by total wins
+  { key: "win_pct", label: "W%" },
+  { key: "pf", label: "PF" },
+  { key: "pf_per_wk", label: "PF/Wk" },
+  { key: "pa", label: "PA" },
+  { key: "pa_per_wk", label: "PA/Wk" },
+  { key: "streak_sort", label: "Streak" },
+  { key: "playoff_seasons", label: "Playoff Szns" },
+  { key: "playoff_wins", label: "Playoff Rec" },
+  { key: "trophy_case", label: "Trophy Case" },
 ];
 
 const LIFETIME_CACHE_KEY = "4thinches_lifetime_live_v1";
@@ -524,15 +542,7 @@ function formatWinPct(p) {
 }
 
 async function mergeLiveSleeperSeason(baseline) {
-  const sleeperMapping = await fetch("data/sleeper_manager_mapping.json").then(r => {
-    if (!r.ok) throw new Error(`HTTP ${r.status} loading sleeper_manager_mapping.json`);
-    return r.json();
-  });
-
-  const [rosters, users] = await Promise.all([
-    fetch(`https://api.sleeper.app/v1/league/${SLEEPER_LEAGUE_ID}/rosters`).then(r => r.json()),
-    fetch(`https://api.sleeper.app/v1/league/${SLEEPER_LEAGUE_ID}/users`).then(r => r.json()),
-  ]);
+  const { rosters, users, sleeperMapping, managers } = await getSharedSleeperCore(SLEEPER_LEAGUE_ID);
 
   const userById = {};
   users.forEach(u => { userById[u.user_id] = u; });
@@ -564,8 +574,9 @@ async function mergeLiveSleeperSeason(baseline) {
     if (!byManager[mgr]) {
       const rosterEntry = Object.entries(rosterToManager).find(([, m]) => m === mgr);
       const teamName = rosterEntry ? (rosterToTeamName[rosterEntry[0]] || mgr) : mgr;
+      const displayName = (managers[mgr] && managers[mgr].display_name) || mgr;
       byManager[mgr] = {
-        manager_id: mgr, manager: mgr, team_name: teamName, display: teamName,
+        manager_id: mgr, manager: displayName, team_name: teamName, display: `${teamName} (${displayName})`,
         active: true, seasons: 0, wins: 0, losses: 0, ties: 0, record: "0-0",
         win_pct: 0, pf: 0, pa: 0, pf_per_wk: 0, pa_per_wk: 0,
         current_streak: { count: 0, type: null },
@@ -615,15 +626,7 @@ function computeLiveStatsFromWeeks(playedWeeks, rosterToManager) {
   const ensure = mgr => (live[mgr] = live[mgr] || { wins: 0, losses: 0, ties: 0, pf: 0, pa: 0, sequence: [] });
 
   playedWeeks.forEach(({ matchups }) => {
-    const byMatchupId = {};
-    matchups.forEach(m => {
-      if (m.matchup_id === null || m.matchup_id === undefined) return; // bye -- not a real matchup
-      (byMatchupId[m.matchup_id] = byMatchupId[m.matchup_id] || []).push(m);
-    });
-
-    Object.values(byMatchupId).forEach(pair => {
-      if (pair.length !== 2) return; // bye or malformed entry
-      const [a, b] = pair;
+    groupMatchupPairs(matchups).forEach(([a, b]) => {
       const scoreA = a.points || 0;
       const scoreB = b.points || 0;
       recordLiveResult(ensure, rosterToManager[a.roster_id], scoreA, scoreB);
