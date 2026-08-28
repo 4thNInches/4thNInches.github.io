@@ -1003,29 +1003,33 @@ def seed_trend_facts(fb: FactBook, seasons: dict, games: list[dict], team_season
         if seed is not None:
             champ_years_by_seed[seed].append(g["season"])
 
-    for seed in range(1, 7):
-        years = sorted(champ_years_by_seed.get(seed, []))
-        if years:
-            yrs_str = ", ".join(str(y) for y in years)
-            n = len(years)
-            text = pick([
-                f"The #{seed} seed has won the championship {n} time{'s' if n != 1 else ''} in league "
-                f"history ({yrs_str}).",
-                f"#{seed} seeds are {n}-for-{total_seasons_count} in championships won ({yrs_str}).",
-            ])
-        else:
-            text = f"No #{seed} seed has ever won the championship, across {total_seasons_count} seasons of league history."
-        fb.add("seed_champion_history", text, value=len(years))
+    if total_seasons_count == 0:
+        print("  !! seed_trend_facts: zero complete seasons found -- skipping "
+              "seed_champion_history/seed_championship_rate (nothing meaningful to report yet).")
+    else:
+        for seed in range(1, 7):
+            years = sorted(champ_years_by_seed.get(seed, []))
+            if years:
+                yrs_str = ", ".join(str(y) for y in years)
+                n = len(years)
+                text = pick([
+                    f"The #{seed} seed has won the championship {n} time{'s' if n != 1 else ''} in league "
+                    f"history ({yrs_str}).",
+                    f"#{seed} seeds are {n}-for-{total_seasons_count} in championships won ({yrs_str}).",
+                ])
+            else:
+                text = f"No #{seed} seed has ever won the championship, across {total_seasons_count} seasons of league history."
+            fb.add("seed_champion_history", text, value=len(years))
 
-    rates = [(seed, len(champ_years_by_seed.get(seed, [])) / total_seasons_count) for seed in range(1, 7)]
-    for i, (seed, rate) in enumerate(sorted(rates, key=lambda x: -x[1])[:3], start=1):
-        if rate == 0:
-            continue
-        ordinal = ordinal_word(i, "highest")
-        fb.add("seed_championship_rate",
-               f"The #{seed} seed has the {ordinal} championship rate of any seed: {rate*100:.0f}% of "
-               f"seasons.",
-               value=rate)
+        rates = [(seed, len(champ_years_by_seed.get(seed, [])) / total_seasons_count) for seed in range(1, 7)]
+        for i, (seed, rate) in enumerate(sorted(rates, key=lambda x: -x[1])[:3], start=1):
+            if rate == 0:
+                continue
+            ordinal = ordinal_word(i, "highest")
+            fb.add("seed_championship_rate",
+                   f"The #{seed} seed has the {ordinal} championship rate of any seed: {rate*100:.0f}% of "
+                   f"seasons.",
+                   value=rate)
 
     # playoff GAME wins by seed, across every bracket round
     wins_by_seed = defaultdict(int)
@@ -1315,9 +1319,18 @@ def main():
     args = parser.parse_args()
 
     seasons, name_to_mgr, managers, years = load_all(args.data_dir, args.mapping, args.managers)
+    complete_seasons = {y for y, d in seasons.items() if is_season_complete(d)}
+    print(f"Loaded {len(seasons)} season file(s) from {args.data_dir}: {sorted(seasons.keys())}")
+    print(f"  of those, {len(complete_seasons)} are complete (have a decided championship): "
+          f"{sorted(complete_seasons)}")
+    if len(seasons) <= 1:
+        print(f"  !! WARNING: expected many years of history here, only found {len(seasons)}. "
+              f"This almost always means --data-dir ({args.data_dir}) is pointing somewhere that "
+              f"doesn't have your historical season files committed -- check that before trusting "
+              f"the output below.")
+
     games = build_games(seasons, name_to_mgr)
     team_seasons = build_team_seasons(seasons, name_to_mgr)
-    complete_seasons = {y for y, d in seasons.items() if is_season_complete(d)}
 
     fb = FactBook()
     single_game_records(fb, games, managers)
