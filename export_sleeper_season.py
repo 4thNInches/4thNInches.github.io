@@ -47,7 +47,7 @@ SLEEPER_API = "https://api.sleeper.app/v1"
 REQUEST_DELAY_SECONDS = 0.3
 
 OUT_DIR = Path("data/history")
-MAPPING_PATH = Path("manager_mapping.json")
+MAPPING_PATH = Path("data/manager_mapping.json")
 
 # Sleeper user_id -> manager_id, matching managers.json / manager_mapping.json
 # from the Yahoo-era history. Keep this in sync with the identical table in
