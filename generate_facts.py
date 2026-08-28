@@ -1330,7 +1330,22 @@ def main():
               f"the output below.")
 
     games = build_games(seasons, name_to_mgr)
-    team_seasons = build_team_seasons(seasons, name_to_mgr)
+    team_seasons_raw = build_team_seasons(seasons, name_to_mgr)
+    # A team that exists in the file but hasn't played yet (games_played == 0
+    # -- an in-progress season before its first completed week) isn't a real
+    # "season" for ranking or counting purposes. Left unfiltered, this
+    # produces two real problems: a 0-0-0 record looks like a new all-time
+    # "worst season" (it has the lowest possible point total, but only
+    # because nothing has happened yet), and it inflates a manager's season
+    # count enough to make them prematurely eligible for min-seasons-gated
+    # rankings like career_win_pct_leaderboard. Filtering here, once, at the
+    # source is safer than trying to patch every downstream consumer
+    # individually and risk missing one.
+    zero_game_dropped = [ts for ts in team_seasons_raw if ts["games_played"] == 0]
+    team_seasons = [ts for ts in team_seasons_raw if ts["games_played"] > 0]
+    if zero_game_dropped:
+        print(f"  dropped {len(zero_game_dropped)} zero-game team-season row(s) before ranking "
+              f"(not yet played): {sorted(set(ts['season'] for ts in zero_game_dropped))}")
 
     fb = FactBook()
     single_game_records(fb, games, managers)
