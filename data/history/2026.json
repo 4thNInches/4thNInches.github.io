@@ -1,0 +1,138 @@
+{
+  "season": 2026,
+  "regular_season_weeks": 14,
+  "teams": {
+    "1": {
+      "team_name": "phillyphilly06",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "2": {
+      "team_name": "jschnides4",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "3": {
+      "team_name": "ACap1214",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "4": {
+      "team_name": "Big Dumb Sports",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "5": {
+      "team_name": "theMadgician",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "6": {
+      "team_name": "Jake From State Farm",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "7": {
+      "team_name": "Supernovas",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "8": {
+      "team_name": "Bandits",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "9": {
+      "team_name": "ROK Navy's Finest",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "10": {
+      "team_name": "Newman\u2019s Owen",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "11": {
+      "team_name": "packerlove24",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    },
+    "12": {
+      "team_name": "VRDNO",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "schedule": []
+    }
+  },
+  "playoffs": {
+    "seeds": {},
+    "quarterfinal": [],
+    "semifinal": [],
+    "fifth_place": [],
+    "third_place": {
+      "week": null,
+      "team1_id": null,
+      "team2_id": null,
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null,
+      "loser_id": null
+    },
+    "championship": {
+      "week": null,
+      "team1_id": null,
+      "team2_id": null,
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null,
+      "loser_id": null
+    }
+  }
+}
