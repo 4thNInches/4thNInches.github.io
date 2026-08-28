@@ -35,13 +35,22 @@ jobs:
         run: python export_sleeper_season.py
 
       - name: Regenerate facts.json across all seasons
-        run: python generate_facts.py --out data/facts.json --managers data/managers.json
+        # Every path spelled out explicitly here -- this repo keeps
+        # manager_mapping.json and managers.json under data/, not at repo
+        # root, so the script's own built-in defaults don't match and
+        # can't be relied on.
+        run: >
+          python generate_facts.py
+          --data-dir data/history
+          --mapping data/manager_mapping.json
+          --managers data/managers.json
+          --out data/facts.json
 
       - name: Commit and push if anything changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ manager_mapping.json
+          git add data/
           if git diff --staged --quiet; then
             echo "Nothing changed -- skipping commit."
           else
