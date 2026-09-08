@@ -1,0 +1,166 @@
+{
+  "_README": [
+    "Cross-manager personal/relationship lore, proposed in recaps-architecture-spec.md",
+    "Section 4. Distinct from team_flavor.json, which is single-manager wordplay -- this",
+    "file is pairs/groups of managers with a real personal connection (family, real-life",
+    "friendship, an origin story between them). The engine splices this in only when the",
+    "relevant managers are in the same matchup, and only sometimes -- same optional-",
+    "seasoning rule as team_flavor.json.",
+    "'managers' is an unordered list of manager_ids involved. 'confidence' follows the",
+    "same scale as team_flavor.json: 'established' = confirmed by the commissioner or",
+    "directly stated as fact in a real write-up (e.g. a quoted manager). 'unconfirmed' =",
+    "a strong signal from a write-up that hasn't been verified with the commissioner yet",
+    "-- do not wire into the generator until moved to 'established' or removed."
+  ],
+  "jamie_owen": {
+    "managers": [
+      "jamie",
+      "owen"
+    ],
+    "relationship": "league founder / successor",
+    "confidence": "established",
+    "tags": [
+      "league founder",
+      "succession",
+      "submarine",
+      "commander of the league"
+    ],
+    "story": "Jamie founded 4th and Inches in 2015. Owen played the first three seasons, then had an embarrassing 2017 (6-7, missed playoffs) and renamed his team 'Jamie's left nip' as a symbolic burn-it-down gesture before sitting out 2018. The following year Jamie himself left the league ('submarined into the ocean' / 'into the depths of the sea' -- the site's standing metaphor for his absence), and asked Owen to come back and take over as 'Commander of the League' in his place -- the origin of the Newman's Owen franchise name/identity. Jamie eventually returned (2021+) but Owen has not formally ceded the role back.",
+    "note": "Extremely well-attested across multiple write-ups (2021 Week 1, Week 10 in particular). Safe to treat as established."
+  },
+  "bob_mark_mikeyg": {
+    "managers": [
+      "bob",
+      "mark",
+      "mikey_g"
+    ],
+    "relationship": "father / sons (Mark and Mikey G are brothers)",
+    "confidence": "established",
+    "tags": [
+      "father",
+      "sons",
+      "brothers",
+      "family",
+      "best man"
+    ],
+    "story": "Bob (Lambeau Leapers/packerlove24) is the father of both Mark (Supernovas) and Mikey G (Supernova Takeover/phillyphilly06), who are brothers. The 2021 Week 13 preview headlined the Bob-vs-Mark matchup 'Father versus son' without spelling out the details. Mikey G was Mark's best man, underscoring how close the brothers are.",
+    "note": "Confirmed directly by the commissioner (2026-09-08). Ready to use. Note team_flavor.json's mikey_g entry currently guesses a 'Philly sports' angle from his Sleeper username alone -- that can stay (it's a separate, harmless tag), but the family tie to Bob/Mark is the stronger, confirmed material and should be preferred in any splice involving mikey_g and bob or mark. Additionally confirmed (2026-09-08): Mikey G was Mark's best man."
+  },
+  "bill_m_nick": {
+    "managers": [
+      "bill_m",
+      "nick"
+    ],
+    "relationship": "father / son",
+    "confidence": "established",
+    "tags": [
+      "father",
+      "son",
+      "family",
+      "Zeus and Cronus"
+    ],
+    "story": "Bill M (Bandits) is Nick's (Jake From State Farm) father. The 2020 Week 4 preview built an extended Greek-mythology bit around it ('manager Nick against the man who taught him everything he knows... In Greek mythology, Zeus famously overthrew his father Cronus'), and a 2020 Week 1 award referred to them as 'the father-son tandem of Bandits and Jake From State Farm.'",
+    "note": "Confirmed directly by the commissioner (2026-09-08). Ready to use. JFSF (Nick) has historically dominated this matchup in the write-ups (e.g. highest-ever matchup score between them, 2018) -- fine texture for the generator to draw on."
+  },
+  "pat_billc_brian": {
+    "managers": [
+      "pat",
+      "bill_c",
+      "brian"
+    ],
+    "relationship": "father (Bill C) / uncle (Brian) / son-nephew (Pat) -- the 'Carione' family",
+    "confidence": "established",
+    "tags": [
+      "family",
+      "dynasty",
+      "Carione",
+      "father",
+      "uncle"
+    ],
+    "story": "Pat (Free Radicals) is part of a three-championship fantasy dynasty: his father is Bill C (won as Cock Warts, 2016) and his uncle is Brian (won as Monger, 2018). Pat himself won in 2020, making a different Carione family member champion in every even year since the league's 2015 inception. A 2020 post-championship 'Free Press with Free Radicals' interview has Pat discussing it directly in his own words ('It feels like fantasy football championships are in my blood... It's the 3rd victory in 4 championship appearances for the Carione family... We're a dynasty').",
+    "note": "Confirmed by the commissioner (2026-09-08): 'Carione' is the real family surname, Bill C is Pat's father and Brian his uncle, and both readings were correct. As of now none of the three (Pat, Bill C, Brian) are active in the league -- fine as historical/all-time lore, but the generator should not expect any of them to appear in a live current-season matchup."
+  },
+  "nick_john": {
+    "managers": [
+      "nick",
+      "john"
+    ],
+    "relationship": "unconfirmed -- possibly real long-time friendship (not family)",
+    "confidence": "established",
+    "tags": [
+      "real-life friendship",
+      "Rowan University",
+      "college friends"
+    ],
+    "story": "Nick and John are real college friends who attended Rowan University together (referenced via 'Rowan Profs' Frisbee golf).",
+    "note": "Confirmed by the commissioner (2026-09-08)."
+  },
+  "acap_dennis": {
+    "managers": [
+      "anthony",
+      "dennis"
+    ],
+    "relationship": "real-life former housemates (the 'matching birthmark' rivalry origin is an in-universe joke, not real)",
+    "confidence": "established",
+    "tags": [
+      "housemates",
+      "roommates"
+    ],
+    "story": "Acap (Anthony) and Dennis were real-life housemates at one point, though they no longer live together. A 2020 write-up jokingly invents a birth-tattoo prophecy origin story for their rivalry, but the housemates fact itself is real.",
+    "note": "Confirmed by the commissioner (2026-09-08): real but past tense -- they are no longer housemates. Phrase any generated line in past tense accordingly ('once shared a place' rather than 'live together'). The tattoo-prophecy bit is still purely a joke and should never be treated as lore."
+  },
+  "delsea_hs": {
+    "managers": [
+      "pat",
+      "jamie",
+      "nick",
+      "mark",
+      "anthony",
+      "kodi",
+      "dennis",
+      "tj"
+    ],
+    "relationship": "real high school classmates (Delsea)",
+    "confidence": "established",
+    "tags": [
+      "high school",
+      "Delsea"
+    ],
+    "story": "Pat, Jamie, Nick, Mark, Anthony (Acap), Kodi, Dennis, and TJ all attended Delsea together for high school. Owen jokes that he also went to Delsea to fit in with the group, but did not actually attend. Mikey G also attended Delsea, but years later than this group (different era, not classmates with them).",
+    "note": "Confirmed by the commissioner (2026-09-08), who noted this is not a major storytelling thread -- use sparingly as background texture, not a headline angle. Owen's fake-Delsea-alum joke is a single-manager bit and may fit team_flavor.json better than here."
+  },
+  "drexel_college": {
+    "managers": [
+      "jamie",
+      "pat",
+      "mark",
+      "owen",
+      "mikey_g",
+      "tj"
+    ],
+    "relationship": "real college classmates (Drexel)",
+    "confidence": "established",
+    "tags": [
+      "college",
+      "Drexel"
+    ],
+    "story": "Jamie, Pat, Mark, Owen, Mikey (likely Mikey G), and TJ all attended Drexel together for college.",
+    "note": "Confirmed by the commissioner (2026-09-08), who noted this is not a major storytelling thread -- use sparingly. The 'Mikey' in this group was given without a last-initial; assumed to be Mikey G given context, but worth a quick confirm before relying on it, since Mikey K is a separate, much more recently-joined manager."
+  },
+  "pat_nick_soccer": {
+    "managers": [
+      "pat",
+      "nick"
+    ],
+    "relationship": "real high school soccer teammates",
+    "confidence": "established",
+    "tags": [
+      "high school",
+      "soccer",
+      "teammates",
+      "Delsea"
+    ],
+    "story": "Pat and Nick actually played high school soccer together (both part of the broader Delsea group in delsea_hs, but this is a closer, specific bond -- real teammates on the same team, not just classmates). Owen jokingly claims he played with them too, continuing the same running bit as his fake Delsea-alum claim.",
+    "note": "Confirmed by the commissioner (2026-09-08). This is a sharper, more usable hook than the general delsea_hs group entry -- prefer this one specifically when Pat and Nick play each other. Owen's joke insertion is a recurring single-manager bit (see delsea_hs and team_flavor.json's owen entry) and could be generalized into one 'Owen inserts himself into others' shared history' tag rather than repeated per-instance."
+  }
+}

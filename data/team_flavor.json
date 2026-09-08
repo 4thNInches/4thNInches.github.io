@@ -1,0 +1,157 @@
+{
+  "_README": [
+    "Optional flavor layer for the storyline/template engine -- see",
+    "recaps-architecture-spec.md Section 6. Every entry is OPTIONAL seasoning:",
+    "the engine should work perfectly with this file empty, and most entries",
+    "here should still only get used SOMETIMES, not every time that",
+    "manager/team shows up, or it stops feeling like a nice surprise and",
+    "starts feeling like a tic.",
+    "",
+    "'scope': 'manager' entries survive team renames automatically (identity",
+    "is manager_id, which never changes). 'scope': 'team_name' entries are",
+    "tied to the literal current name and should stop being used the moment",
+    "that name is no longer current -- the engine should just check against",
+    "whatever the CURRENT team_name lookup says, so these naturally retire",
+    "themselves on a rename without anyone needing to edit this file.",
+    "",
+    "'confidence' is honest about how much real material backs each entry:",
+    "'established' = used repeatedly across multiple real seasons/write-ups.",
+    "'inferred' = a reasonable read of a name/username, not yet confirmed by",
+    "repeated real usage. 'thin' = new manager, one season or less of",
+    "history, include for completeness but don't lean on it.",
+    "",
+    "Managers not listed here either have no real wordplay material found in",
+    "the write-ups reviewed, or are long-inactive (pre-2020, never returned)",
+    "-- skipped rather than inventing something. Revisit this file as new",
+    "managers accumulate more seasons."
+  ],
+
+  "nick": {
+    "scope": "manager",
+    "confidence": "established",
+    "tags": ["insurance", "State Farm", "\"like a good neighbor\""],
+    "nickname": "the insurance company",
+    "note": "Team name 'Jake From State Farm' has been constant every season since 2015 (per facts.json's own team-name-longevity fact) -- this is about as safe a tag as exists in the whole file."
+  },
+
+  "mark": {
+    "scope": "manager",
+    "confidence": "established",
+    "tags": ["supernova", "explosion", "stellar", "astronomy"],
+    "nickname": "the exploding stars",
+    "note": "Team name 'Supernovas' also constant since 2015. Note mikey_g's 2024+ team 'Supernova Takeover' shares the same root -- worth NOT reusing the identical nickname for both, to avoid confusing the two in a given week's post."
+  },
+
+  "bob": {
+    "scope": "manager",
+    "confidence": "established",
+    "tags": ["Packers", "cheese", "Wisconsin", "frozen tundra"],
+    "nickname": "the cheeseheads",
+    "note": "Long-running team name 'Lambeau Leapers'; current 2026 Sleeper team name shows as a default ('Team packerlove24'), meaning no custom name is set this year -- but the Sleeper username itself ('packerlove24') reinforces the same Packers identity, so this tag is safe to use manager-scoped even while the team name is a default."
+  },
+
+  "pat": {
+    "scope": "manager",
+    "confidence": "established",
+    "tags": ["chemistry", "reactive", "unstable in a good way"],
+    "nickname": "the loose chemicals",
+    "note": "Team name 'Free Radicals' constant across seasons. Also has real personal/family lore (father and uncle both won championships in the league) -- that belongs in rivalry_lore.json as personal narrative, not here, but flagging the connection."
+  },
+
+  "bill_m": {
+    "scope": "manager",
+    "confidence": "inferred",
+    "tags": ["theft", "outlaw", "heist"],
+    "nickname": "the thieves",
+    "note": "Team name 'Bandits' recurs across seasons and matches current 2026 usage. Manager-id match to the current 2026 Sleeper account is inferred from name continuity, not confirmed by user_id cross-check -- worth a quick confirm against SLEEPER_USER_TO_MANAGER before relying on this in production."
+  },
+
+  "owen": {
+    "scope": "manager",
+    "confidence": "established",
+    "tags": ["Newman's Own", "salad dressing", "charity"],
+    "nickname": "the charitable salad dressings",
+    "note": "Team name 'Newman's Owen' (Newman's Own pun) recurs across many seasons and matches current 2026 usage. Also tied into Jamie's manager-level lore below (Owen inherited league 'command' from Jamie per the 2021 season-preview origin story) -- good candidate for a rivalry_lore.json entry pairing the two of them specifically."
+  },
+
+  "jamie": {
+    "scope": "manager",
+    "confidence": "established",
+    "tags": ["submarine", "the depths", "sea", "returned from the ocean"],
+    "nickname": null,
+    "note": "This one is personal narrative more than wordplay: real recurring bit across multiple seasons about Jamie (the league founder) leaving the league and being described as 'submarined into the ocean' / returning 'from the depths of the sea', with league command passing to Owen in his absence. Team name 'Hello.....Newman' (Seinfeld reference) has also been long-running. Because this is genuinely a personal story rather than a name pun, it may fit better as a manager-level entry in rivalry_lore.json than here -- flagging for that discussion rather than double-filing it."
+  },
+
+  "john": {
+    "scope": "team_name",
+    "confidence": "established",
+    "applies_to_team_name": "Actual Garbage",
+    "tags": ["trash", "garbage", "waste"],
+    "nickname": "the trash",
+    "note": "Strong recurring material, but explicitly name-scoped (not manager-scoped) since John has changed names multiple times (New Kid in Town, Actual Garbage, Mr. Bean's Football Team per managers.json) and the garbage jokes only work while 'Actual Garbage' is the actual current name. Retires itself automatically on his next rename."
+  },
+
+  "anthony": {
+    "scope": "manager",
+    "confidence": "established",
+    "tags": ["clever renames", "gambling lines", "player-name puns"],
+    "nickname": null,
+    "note": "The one stable thing about this manager (Acap) is that the team name changes almost every year, and each one is a clever, often gambling-line or player-pun-based joke (Injury Prone -> Injury Immunity -> 2 Tight Ends 1 Loose Fantasy -> Clyde Edwards-Despair -> Kuppa My Puka -> BurrowMyBrownJohnsonInLondon -> 2026's 'Hurts Over 10.5int @-1000'). Rather than chase each individual past name's specific joke, tag the PATTERN itself: this manager is known for renaming, and a headline noting 'yet another new team name from Acap' is safe and accurate almost every season."
+  },
+
+  "tj": {
+    "scope": "manager",
+    "confidence": "established",
+    "tags": ["oil", "fracking", "drilling"],
+    "nickname": null,
+    "note": "Team name 'Fossil Fuel Frackers' (2021 era) had strong recurring oil/fracking wordplay. managers.json shows TJ's last season as 2023 -- not visible in the 2026 Sleeper screenshot, likely inactive. Kept for completeness (useful if TJ returns, harmless if not) rather than discarded."
+  },
+
+  "dennis": {
+    "scope": "manager",
+    "confidence": "thin",
+    "tags": ["self-aware", "proudly mediocre"],
+    "nickname": null,
+    "note": "Team name 'Big Dumb Sports' is consistent (also current 2026) but the write-ups reviewed didn't show much recurring wordplay beyond the name's own self-deprecating literalism. Fine to lean on the name itself in a headline; not much more to add yet."
+  },
+
+  "mikey_g": {
+    "scope": "manager",
+    "confidence": "thin",
+    "tags": ["Philadelphia", "Philly sports"],
+    "nickname": null,
+    "note": "New manager (2024+). Current team 'Supernova Takeover' matches 2026 screenshot. Sleeper username 'phillyphilly06' suggests Philly sports fandom, but this is inferred from the handle alone, not from any write-up usage -- thin material, revisit after a season or two."
+  },
+
+  "mikey_k": {
+    "scope": "manager",
+    "confidence": "thin",
+    "tags": ["Korea", "Navy", "military"],
+    "nickname": null,
+    "note": "New manager (2025+). Team name 'ROK Navy's Finest' (matches 2026 screenshot) clearly signals a Korea/Navy connection, but there's no recurring write-up usage yet to confirm tone -- include the tag, don't force jokes around it yet."
+  },
+
+  "kodi": {
+    "scope": "manager",
+    "confidence": "thin",
+    "tags": [],
+    "nickname": null,
+    "note": "New manager (2025+). 2025 name was 'Dust Off Kodi'; 2026 Sleeper shows a default team name ('Team VRDNO'), meaning no custom name set yet this year. Nothing to tag until a real pattern emerges."
+  },
+
+  "matt": {
+    "scope": "manager",
+    "confidence": "thin",
+    "tags": [],
+    "nickname": null,
+    "note": "New manager (2025+). 2026 Sleeper shows a default team name ('Team theMadgician'). Username suggests a magic-themed persona if a custom name ever leans into it, but nothing confirmed yet."
+  },
+
+  "bill_c": {
+    "scope": "manager",
+    "confidence": "thin",
+    "tags": [],
+    "nickname": null,
+    "note": "Historical names (Cock Warts, Le'Veon stinkin Bell, 49ers Resurge, Yoda Can Ball) suggest an irreverent naming style, but none recurred long enough in the reviewed write-ups to extract a stable bit. Last active season per managers.json was 2024 -- not confirmed active in 2026."
+  }
+}
