@@ -515,6 +515,109 @@ a { color: inherit; }
   max-width: 62ch;
 }
 
+/* ---------- live feed ---------- */
+.feed-item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.feed-item {
+  border: 1px solid var(--field-line);
+  border-radius: 4px;
+  padding: 12px 14px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.feed-item-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.feed-team {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+}
+
+.feed-time {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--chalk-dim);
+  white-space: nowrap;
+}
+
+.feed-item-body {
+  font-size: 0.9rem;
+  color: var(--chalk-dim);
+  line-height: 1.5;
+}
+
+.feed-pos {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  color: var(--brass);
+  border: 1px solid var(--field-line);
+  border-radius: 2px;
+  padding: 1px 5px;
+  margin-right: 4px;
+}
+
+.feed-faab {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--marker);
+  margin-left: 4px;
+}
+
+.feed-remark {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  border: 1px solid var(--field-line);
+  color: var(--chalk-dim);
+}
+
+.feed-trade-side {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 3px 0;
+}
+
+.feed-matchup-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+}
+
+.feed-matchup-vs {
+  color: var(--chalk-dim);
+  text-align: center;
+}
+
+.feed-matchup-score {
+  font-weight: 600;
+  text-align: center;
+}
+
 /* ---------- lifetime standings ---------- */
 .lifetime-card {
   margin-top: 16px;

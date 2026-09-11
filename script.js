@@ -769,30 +769,129 @@ function renderLifetimeTable() {
 }
 
 
+// ============================================================
+// LIVE FEED (waiver moves, trades, in-progress scores)
+// Reads data/feed.json, produced by export_sleeper_feed.py on its own
+// schedule (see update-feed.yml) -- independent of the weekly stats
+// pipeline above, since transactions happen any day of the week, not
+// just when update-facts.yml runs.
+// ============================================================
+
+const FEED_REMARK_LABEL = { depth: "Depth piece", streamer: "Streamer" };
+
+function timeAgo(isoOrEpoch) {
+  if (!isoOrEpoch) return "";
+  const then = typeof isoOrEpoch === "number" ? isoOrEpoch : new Date(isoOrEpoch).getTime();
+  const diffMs = Date.now() - then;
+  if (!isFinite(diffMs) || diffMs < 0) return "";
+  const mins = Math.round(diffMs / 60000);
+  if (mins < 60) return `${mins}m ago`;
+  const hours = Math.round(mins / 60);
+  if (hours < 24) return `${hours}h ago`;
+  return `${Math.round(hours / 24)}d ago`;
+}
+
+function renderFeedPlayer(p) {
+  if (!p) return "";
+  const pos = p.position ? `<span class="feed-pos">${escapeHtml(p.position)}</span>` : "";
+  return `${pos} ${escapeHtml(p.name || "\u2014")}`;
+}
+
+function renderFeedItem(item) {
+  if (item.type === "waiver_move") {
+    const remark = item.remark && FEED_REMARK_LABEL[item.remark]
+      ? `<span class="feed-remark feed-remark-${item.remark}">${FEED_REMARK_LABEL[item.remark]}</span>`
+      : "";
+    const faab = (item.faab !== null && item.faab !== undefined)
+      ? `<span class="feed-faab">$${item.faab} FAAB</span>` : "";
+    return `
+      <li class="feed-item feed-item-waiver">
+        <div class="feed-item-head">
+          <span class="feed-team">${escapeHtml(item.team_name || "\u2014")}</span>
+          <span class="feed-time">${timeAgo(item.timestamp)}</span>
+        </div>
+        <div class="feed-item-body">
+          signs ${renderFeedPlayer(item.added)}${item.dropped ? ` and releases ${renderFeedPlayer(item.dropped)}` : ""}
+          ${faab} ${remark}
+        </div>
+      </li>`;
+  }
+
+  if (item.type === "trade") {
+    const sides = (item.sides || []).map(side => `
+      <div class="feed-trade-side">
+        <span class="feed-team">${escapeHtml(side.team_name || "\u2014")}</span>
+        <span class="feed-trade-got">gets ${(side.got || []).map(renderFeedPlayer).join(", ") || "\u2014"}</span>
+      </div>`).join("");
+    return `
+      <li class="feed-item feed-item-trade">
+        <div class="feed-item-head">
+          <span class="feed-team">Trade</span>
+          <span class="feed-time">${timeAgo(item.timestamp)}</span>
+        </div>
+        <div class="feed-item-body">${sides}</div>
+      </li>`;
+  }
+
+  if (item.type === "matchup_inprogress") {
+    const rows = (item.matchups || []).map(m => `
+      <div class="feed-matchup-row">
+        <span class="feed-matchup-team">${escapeHtml(m.team)}</span>
+        <span class="feed-matchup-score">${(m.score || 0).toFixed(1)}</span>
+        <span class="feed-matchup-vs">vs</span>
+        <span class="feed-matchup-score">${(m.opponent_score || 0).toFixed(1)}</span>
+        <span class="feed-matchup-team">${escapeHtml(m.opponent)}</span>
+      </div>`).join("");
+    return `
+      <li class="feed-item feed-item-matchups">
+        <div class="feed-item-head"><span class="feed-team">Week ${item.week} scores so far</span></div>
+        <div class="feed-item-body">${rows}</div>
+      </li>`;
+  }
+
+  return "";
+}
+
+async function loadFeed() {
+  const container = document.getElementById("feed-list");
+  if (!container) return;
+
+  let data;
+  try {
+    const res = await fetch("data/feed.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    data = await res.json();
+  } catch (err) {
+    container.innerHTML = `<p class="loading-msg">Couldn't load the live feed (${escapeHtml(err.message)}).</p>`;
+    return;
+  }
+
+  const items = Array.isArray(data.items) ? data.items : [];
+  if (items.length === 0) {
+    container.innerHTML = `<p class="loading-msg">No recent moves yet \u2014 check back after the next waiver run.</p>`;
+    return;
+  }
+
+  container.innerHTML = `<ul class="feed-item-list">${items.map(renderFeedItem).join("")}</ul>`;
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
   loadStandings(SLEEPER_LEAGUE_ID);
   loadChampions();
   loadTicker();
   loadStatCards();
   loadLifetimeStandings();
+  loadFeed();
 });
 
-// Below: nothing live yet for weekly stats or the feed. This is the spot
-// where those get fetched and dropped into the remaining placeholder cards
-// in index.html (#stats cards, #feed).
+// Below: nothing live yet for the weekly recap/preview pipeline. This is
+// the spot where that eventually gets fetched and dropped into the
+// remaining placeholder cards in index.html (#stats cards, once the
+// recap/power-score engine exists).
 //
 // Sleeper's API is public and read-only, no auth needed:
 //   https://api.sleeper.app/v1/league/<league_id>
 //   https://api.sleeper.app/v1/league/<league_id>/rosters
 //   https://api.sleeper.app/v1/league/<league_id>/users
 //   https://api.sleeper.app/v1/league/<league_id>/matchups/<week>
-//
-// Rough shape of what will eventually live here:
-//
-// async function loadStandings(leagueId) {
-//   const rosters = await fetch(`https://api.sleeper.app/v1/league/${leagueId}/rosters`).then(r => r.json());
-//   const users   = await fetch(`https://api.sleeper.app/v1/league/${leagueId}/users`).then(r => r.json());
-//   // merge rosters + users, sort by wins/points, render into #standings
-// }
-//
-// loadStandings("YOUR_LEAGUE_ID");
