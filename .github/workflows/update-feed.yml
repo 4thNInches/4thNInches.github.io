@@ -1,0 +1,48 @@
+name: Update live feed
+
+# Runs more often than update-facts.yml on purpose -- transactions and
+# in-progress scores happen any day of the week, not just Tuesdays.
+# Every 4 hours is a starting point; easy to tighten or loosen later.
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      # GitHub Actions runners are fresh VMs every run, so the script's own
+      # on-disk cache check (data/.players_cache.json) does nothing across
+      # runs by itself -- without this step, running every 4 hours would hit
+      # Sleeper's /players/nfl six times a day instead of once. Keying the
+      # cache by today's date means it's restored across same-day runs but
+      # naturally expires and refetches once a new day starts.
+      - name: Get today's date
+        id: date
+        run: echo "date=$(date -u +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/cache@v4
+        with:
+          path: data/.players_cache.json
+          key: players-cache-${{ steps.date.outputs.date }}
+
+      - name: Generate feed
+        run: python export_sleeper_feed.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/feed.json
+          git diff --staged --quiet || git commit -m "Update live feed"
+          git push
