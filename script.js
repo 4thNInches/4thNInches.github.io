@@ -770,91 +770,57 @@ function renderLifetimeTable() {
 
 
 // ============================================================
-// LIVE FEED (waiver moves, trades, in-progress scores)
+// LIVE FEED TICKER (waiver moves, trades, in-progress scores)
 // Reads data/feed.json, produced by export_sleeper_feed.py on its own
 // schedule (see update-feed.yml) -- independent of the weekly stats
 // pipeline above, since transactions happen any day of the week, not
-// just when update-facts.yml runs.
+// just when update-facts.yml runs. The script already windows this to
+// the last few days server-side, so everything returned here is meant
+// to be shown -- no client-side filtering needed.
 // ============================================================
 
 const FEED_REMARK_LABEL = { depth: "Depth piece", streamer: "Streamer" };
-
-function timeAgo(isoOrEpoch) {
-  if (!isoOrEpoch) return "";
-  const then = typeof isoOrEpoch === "number" ? isoOrEpoch : new Date(isoOrEpoch).getTime();
-  const diffMs = Date.now() - then;
-  if (!isFinite(diffMs) || diffMs < 0) return "";
-  const mins = Math.round(diffMs / 60000);
-  if (mins < 60) return `${mins}m ago`;
-  const hours = Math.round(mins / 60);
-  if (hours < 24) return `${hours}h ago`;
-  return `${Math.round(hours / 24)}d ago`;
-}
+const FEED_TICKER_SECONDS_PER_ITEM = 5.5; // tune scroll speed by adjusting this, not the CSS
 
 function renderFeedPlayer(p) {
   if (!p) return "";
   const pos = p.position ? `<span class="feed-pos">${escapeHtml(p.position)}</span>` : "";
-  return `${pos} ${escapeHtml(p.name || "\u2014")}`;
+  return `${pos}${escapeHtml(p.name || "\u2014")}`;
 }
 
-function renderFeedItem(item) {
+function renderFeedTickerItem(item) {
   if (item.type === "waiver_move") {
     const remark = item.remark && FEED_REMARK_LABEL[item.remark]
-      ? `<span class="feed-remark feed-remark-${item.remark}">${FEED_REMARK_LABEL[item.remark]}</span>`
-      : "";
+      ? `<span class="feed-remark">${FEED_REMARK_LABEL[item.remark]}</span>` : "";
     const faab = (item.faab !== null && item.faab !== undefined)
       ? `<span class="feed-faab">$${item.faab} FAAB</span>` : "";
-    return `
-      <li class="feed-item feed-item-waiver">
-        <div class="feed-item-head">
-          <span class="feed-team">${escapeHtml(item.team_name || "\u2014")}</span>
-          <span class="feed-time">${timeAgo(item.timestamp)}</span>
-        </div>
-        <div class="feed-item-body">
-          signs ${renderFeedPlayer(item.added)}${item.dropped ? ` and releases ${renderFeedPlayer(item.dropped)}` : ""}
-          ${faab} ${remark}
-        </div>
-      </li>`;
+    return `<span class="feed-ticker-item">
+      <span class="feed-team">${escapeHtml(item.team_name || "\u2014")}</span>
+      signs ${renderFeedPlayer(item.added)}${item.dropped ? ` and releases ${renderFeedPlayer(item.dropped)}` : ""}${faab}${remark}
+    </span>`;
   }
 
   if (item.type === "trade") {
-    const sides = (item.sides || []).map(side => `
-      <div class="feed-trade-side">
-        <span class="feed-team">${escapeHtml(side.team_name || "\u2014")}</span>
-        <span class="feed-trade-got">gets ${(side.got || []).map(renderFeedPlayer).join(", ") || "\u2014"}</span>
-      </div>`).join("");
-    return `
-      <li class="feed-item feed-item-trade">
-        <div class="feed-item-head">
-          <span class="feed-team">Trade</span>
-          <span class="feed-time">${timeAgo(item.timestamp)}</span>
-        </div>
-        <div class="feed-item-body">${sides}</div>
-      </li>`;
+    const sides = (item.sides || [])
+      .map(side => `<span class="feed-team">${escapeHtml(side.team_name || "\u2014")}</span> gets ${(side.got || []).map(renderFeedPlayer).join(", ") || "\u2014"}`)
+      .join(" &nbsp;/&nbsp; ");
+    return `<span class="feed-ticker-item">TRADE: ${sides}</span>`;
   }
 
-  if (item.type === "matchup_inprogress") {
-    const rows = (item.matchups || []).map(m => `
-      <div class="feed-matchup-row">
-        <span class="feed-matchup-team">${escapeHtml(m.team)}</span>
-        <span class="feed-matchup-score">${(m.score || 0).toFixed(1)}</span>
-        <span class="feed-matchup-vs">vs</span>
-        <span class="feed-matchup-score">${(m.opponent_score || 0).toFixed(1)}</span>
-        <span class="feed-matchup-team">${escapeHtml(m.opponent)}</span>
-      </div>`).join("");
-    return `
-      <li class="feed-item feed-item-matchups">
-        <div class="feed-item-head"><span class="feed-team">Week ${item.week} scores so far</span></div>
-        <div class="feed-item-body">${rows}</div>
-      </li>`;
+  if (item.type === "live_score") {
+    return `<span class="feed-ticker-item">
+      <span class="feed-team">${escapeHtml(item.team)}</span>
+      ${(item.score || 0).toFixed(1)} pts so far vs ${escapeHtml(item.opponent)} (${(item.opponent_score || 0).toFixed(1)})
+    </span>`;
   }
 
   return "";
 }
 
 async function loadFeed() {
-  const container = document.getElementById("feed-list");
-  if (!container) return;
+  const ticker = document.getElementById("feed-ticker");
+  const track = document.getElementById("feed-ticker-track");
+  if (!ticker || !track) return;
 
   let data;
   try {
@@ -862,17 +828,21 @@ async function loadFeed() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     data = await res.json();
   } catch (err) {
-    container.innerHTML = `<p class="loading-msg">Couldn't load the live feed (${escapeHtml(err.message)}).</p>`;
+    track.innerHTML = `<span class="feed-ticker-loading">Couldn't load the live feed (${escapeHtml(err.message)}).</span>`;
     return;
   }
 
   const items = Array.isArray(data.items) ? data.items : [];
   if (items.length === 0) {
-    container.innerHTML = `<p class="loading-msg">No recent moves yet \u2014 check back after the next waiver run.</p>`;
+    track.innerHTML = `<span class="feed-ticker-loading">No moves in the last ${data.window_days || 7} days \u2014 check back soon.</span>`;
     return;
   }
 
-  container.innerHTML = `<ul class="feed-item-list">${items.map(renderFeedItem).join("")}</ul>`;
+  // Duplicate the item list once so the CSS marquee (translateX 0 -> -50%)
+  // loops seamlessly instead of jump-cutting back to the start.
+  const html = items.map(renderFeedTickerItem).join("");
+  track.innerHTML = html + html;
+  track.style.setProperty("--ticker-duration", `${items.length * FEED_TICKER_SECONDS_PER_ITEM}s`);
 }
 
 

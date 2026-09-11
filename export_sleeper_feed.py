@@ -35,7 +35,15 @@ REQUEST_DELAY_SECONDS = 0.3
 
 OUT_PATH = Path("data/feed.json")
 PLAYERS_CACHE_PATH = Path("data/.players_cache.json")
-FEED_ITEM_LIMIT = 40  # trim to the most recent N items when writing
+FEED_ITEM_LIMIT = 40  # safety cap; the rolling window below should keep well under this
+
+# How far back to include waiver/trade items in the *displayed* feed. Heuristics
+# (depth, streamer) still need the full season's history to compute correctly --
+# this only trims what gets shown, not what gets computed. Called out as its own
+# constant because the plan is to eventually switch this to "since last Tuesday"
+# instead of a flat rolling window -- when that happens, swap out
+# get_window_cutoff() below rather than the filtering logic that calls it.
+FEED_WINDOW_DAYS = 7
 
 # Sleeper user_id -> manager_id. Copied from export_sleeper_season.py --
 # keep in sync if either changes (new manager, departure, etc.).
@@ -274,37 +282,55 @@ def build_feed_items(transactions: list[dict], team_lookup: dict, rosters_by_id:
     return items
 
 
-def build_matchup_inprogress_item(in_progress_week: int | None, team_lookup: dict) -> dict | None:
-    """A single fresh snapshot of any matchup with a non-zero score so far
-    this week -- e.g. useful Friday morning after Thursday Night Football.
-    Not accumulated across runs; each run's snapshot simply replaces the
-    last one, since a stale in-progress score is actively misleading."""
+def build_live_score_items(in_progress_week: int | None, team_lookup: dict) -> list[dict]:
+    """One item per *team* (not per matchup pair) with a non-zero score so
+    far this week -- e.g. useful Friday morning after Thursday Night
+    Football. Deliberately per-team rather than a paired row: this feeds a
+    scrolling ticker, not a table, so "Team X: 24.6 pts so far (vs Team Y)"
+    reads better one line at a time than a two-column matchup grid would.
+    Only a team whose *own* score is non-zero gets a line -- if just one
+    side of a matchup has played, only that side shows. Not accumulated
+    across runs; each run's snapshot simply replaces the last one, since a
+    stale in-progress score is actively misleading."""
     if in_progress_week is None:
-        return None
+        return []
 
     matchups = sleeper_get(f"/league/{SLEEPER_LEAGUE_ID}/matchups/{in_progress_week}")
     by_matchup_id: dict = {}
     for entry in matchups:
         by_matchup_id.setdefault(entry["matchup_id"], []).append(entry)
 
-    pairs = []
+    items = []
     for pair in by_matchup_id.values():
         if len(pair) != 2:
             continue
         a, b = pair
-        if (a.get("points") or 0) == 0 and (b.get("points") or 0) == 0:
-            continue  # nobody's played yet -- nothing worth mentioning
-        pairs.append({
-            "team": team_lookup.get(a["roster_id"], {}).get("team_name"),
-            "score": a.get("points") or 0,
-            "opponent": team_lookup.get(b["roster_id"], {}).get("team_name"),
-            "opponent_score": b.get("points") or 0,
-        })
+        for mine, theirs in ((a, b), (b, a)):
+            score = mine.get("points") or 0
+            if score == 0:
+                continue  # this team hasn't kicked off yet -- nothing worth mentioning
+            items.append({
+                "type": "live_score",
+                "week": in_progress_week,
+                "team": team_lookup.get(mine["roster_id"], {}).get("team_name"),
+                "score": score,
+                "opponent": team_lookup.get(theirs["roster_id"], {}).get("team_name"),
+                "opponent_score": theirs.get("points") or 0,
+                # live scores are always "now" -- stamp with generation time so
+                # the window filter below never accidentally drops them
+                "timestamp": datetime.now(timezone.utc).timestamp() * 1000,
+            })
+    return items
 
-    if not pairs:
-        return None
 
-    return {"type": "matchup_inprogress", "week": in_progress_week, "matchups": pairs}
+def within_window(item: dict, cutoff_ms: float) -> bool:
+    """Trims the *displayed* feed to the rolling window -- live_score items
+    are exempt since they're always freshly generated (see
+    build_live_score_items) and represent 'right now' regardless of when
+    the underlying matchup started."""
+    if item["type"] == "live_score":
+        return True
+    return (item.get("timestamp") or 0) >= cutoff_ms
 
 
 def main():
@@ -331,20 +357,22 @@ def main():
     tx_weeks = completed_weeks + ([in_progress_week] if in_progress_week else [])
     print(f"  fetching transactions for weeks: {tx_weeks}")
     transactions = fetch_all_transactions(tx_weeks)
-    print(f"  {len(transactions)} completed transactions found")
+    print(f"  {len(transactions)} completed transactions found (full season, before windowing)")
 
     items = build_feed_items(transactions, team_lookup, rosters_by_id, players_db, points_by_player)
+    items.extend(build_live_score_items(in_progress_week, team_lookup))
 
-    matchup_item = build_matchup_inprogress_item(in_progress_week, team_lookup)
-    if matchup_item:
-        items.append(matchup_item)
+    cutoff_ms = (datetime.now(timezone.utc).timestamp() - FEED_WINDOW_DAYS * 86400) * 1000
+    items = [i for i in items if within_window(i, cutoff_ms)]
+    print(f"  {len(items)} items within the last {FEED_WINDOW_DAYS} days")
 
-    # newest first, trimmed to the most recent N
+    # newest first, trimmed to the safety cap
     items.sort(key=lambda i: i.get("timestamp") or 0, reverse=True)
     items = items[:FEED_ITEM_LIMIT]
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "window_days": FEED_WINDOW_DAYS,
         "items": items,
     }
 

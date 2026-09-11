@@ -21,20 +21,27 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap header-row">
-    <a class="wordmark" href="#top">
-      <img src="assets/logo.png" alt="4th and Inches logo" class="logo" onerror="this.style.display='none'">
-      <span>4th &amp; Inches</span>
-    </a>
-    <nav class="primary-nav">
-      <a href="#standings">Standings</a>
-      <a href="#stats">Stats</a>
-      <a href="#feed">Feed</a>
-      <a href="#history">History</a>
-    </nav>
+<div class="sticky-top">
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="#top">
+        <img src="assets/logo.png" alt="4th and Inches logo" class="logo" onerror="this.style.display='none'">
+        <span>4th &amp; Inches</span>
+      </a>
+      <nav class="primary-nav">
+        <a href="#standings">Standings</a>
+        <a href="#stats">Stats</a>
+        <a href="#history">History</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="feed-ticker" id="feed-ticker" aria-label="Live league feed">
+    <div class="feed-ticker-track" id="feed-ticker-track">
+      <span class="feed-ticker-loading">Loading feed&hellip;</span>
+    </div>
   </div>
-</header>
+</div>
 
 <main id="top">
 
@@ -46,7 +53,6 @@
       <p class="hero-sub">The official home of the <strong>4th &amp; Inches</strong> fantasy football league — standings, stats, records, and the receipts nobody asked for.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#standings">See the standings</a>
-        <a class="btn btn-ghost" href="#feed">See the live feed</a>
       </div>
     </div>
 
@@ -163,22 +169,6 @@
             <p class="loading-msg">Loading lifetime standings&hellip;</p>
           </div>
         </div>
-    </div>
-  </section>
-
-  <!-- FEED -->
-  <section id="feed" class="block block-alt">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="down-tag">4TH &amp; INCHES</span>
-        <h2>Live Feed</h2>
-      </div>
-      <div class="card feed-card">
-        <p class="placeholder-kicker">Waiver moves, trades &amp; live scores</p>
-        <div id="feed-list">
-          <p class="loading-msg">Loading the feed&hellip;</p>
-        </div>
-      </div>
     </div>
   </section>
 
