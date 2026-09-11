@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T00:06:51.919649+00:00",
+  "generated_at": "2026-09-11T04:17:42.516342+00:00",
   "items": [
     {
       "type": "waiver_move",
@@ -385,20 +385,26 @@
       "week": 1,
       "matchups": [
         {
+          "team": "Supernova Takeover",
+          "score": 21.1,
+          "opponent": "Supernovas",
+          "opponent_score": 0
+        },
+        {
           "team": "Big Dumb Sports",
-          "score": 0,
+          "score": 24.6,
           "opponent": "theMadgician",
-          "opponent_score": 14.5
+          "opponent_score": 45.2
         },
         {
           "team": "Bandits",
           "score": 0,
           "opponent": "packerlove24",
-          "opponent_score": 15.0
+          "opponent_score": 30.4
         },
         {
           "team": "Newman’s Owen",
-          "score": 6.6,
+          "score": 12.2,
           "opponent": "VRDNO",
           "opponent_score": 47.62
         }
