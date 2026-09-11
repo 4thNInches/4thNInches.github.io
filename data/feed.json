@@ -1,6 +1,61 @@
 {
-  "generated_at": "2026-09-11T08:17:55.874970+00:00",
+  "generated_at": "2026-09-11T12:21:55.261105+00:00",
+  "window_days": 7,
   "items": [
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "VRDNO",
+      "score": 47.62,
+      "opponent": "Newman’s Owen",
+      "opponent_score": 12.2,
+      "timestamp": 1789129315261.054
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "Newman’s Owen",
+      "score": 12.2,
+      "opponent": "VRDNO",
+      "opponent_score": 47.62,
+      "timestamp": 1789129315261.053
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "packerlove24",
+      "score": 30.4,
+      "opponent": "Bandits",
+      "opponent_score": 0,
+      "timestamp": 1789129315261.051
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "theMadgician",
+      "score": 45.2,
+      "opponent": "Big Dumb Sports",
+      "opponent_score": 24.6,
+      "timestamp": 1789129315261.048
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "Big Dumb Sports",
+      "score": 24.6,
+      "opponent": "theMadgician",
+      "opponent_score": 45.2,
+      "timestamp": 1789129315261.046
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "Supernova Takeover",
+      "score": 21.1,
+      "opponent": "Supernovas",
+      "opponent_score": 0,
+      "timestamp": 1789129315261.025
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1403531930154127360",
@@ -106,309 +161,6 @@
       },
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1401086461125619712",
-      "timestamp": 1788407552562,
-      "manager_id": "dennis",
-      "team_name": "Big Dumb Sports",
-      "added": {
-        "player_id": "13414",
-        "name": "Kaelon Black",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "2078",
-        "name": "Odell Beckham",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1400998852852510720",
-      "timestamp": 1788386665122,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "11237",
-        "name": "Jacob Saylors",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "11576",
-        "name": "Braelon Allen",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1400642719356825600",
-      "timestamp": 1788301756280,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "12504",
-        "name": "Kaleb Johnson",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "11237",
-        "name": "Jacob Saylors",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399920695248437248",
-      "timestamp": 1788129612317,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "11237",
-        "name": "Jacob Saylors",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "13414",
-        "name": "Kaelon Black",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399920590868992000",
-      "timestamp": 1788129587432,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "13411",
-        "name": "Zavion Thomas",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "13264",
-        "name": "Dohnte Meyers",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399920489589137408",
-      "timestamp": 1788129563284,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "13264",
-        "name": "Dohnte Meyers",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "12457",
-        "name": "Jaydon Blue",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399918336032149504",
-      "timestamp": 1788129049836,
-      "manager_id": "matt",
-      "team_name": "theMadgician",
-      "added": {
-        "player_id": "7002",
-        "name": "Juwan Johnson",
-        "position": "TE"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399873789298221056",
-      "timestamp": 1788118429068,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "8800",
-        "name": "Malik Davis",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "12504",
-        "name": "Kaleb Johnson",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399856921661472768",
-      "timestamp": 1788114407509,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "12504",
-        "name": "Kaleb Johnson",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "6650",
-        "name": "Chase McLaughlin",
-        "position": "K"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399762248309731328",
-      "timestamp": 1788091835623,
-      "manager_id": "dennis",
-      "team_name": "Big Dumb Sports",
-      "added": {
-        "player_id": "2078",
-        "name": "Odell Beckham",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399761916779315200",
-      "timestamp": 1788091756580,
-      "manager_id": "dennis",
-      "team_name": "Big Dumb Sports",
-      "added": {
-        "player_id": "3321",
-        "name": "Tyreek Hill",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "1479",
-        "name": "Keenan Allen",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399727269391372288",
-      "timestamp": 1788083495999,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "13424",
-        "name": "Seth McGowan",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "12467",
-        "name": "Jordan James",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399536421030592512",
-      "timestamp": 1788037994204,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "12711",
-        "name": "Tyler Loop",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "11579",
-        "name": "Audric Estime",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399512058021580800",
-      "timestamp": 1788032185610,
-      "manager_id": "mikey_g",
-      "team_name": "Supernova Takeover",
-      "added": {
-        "player_id": "JAX",
-        "name": "JAX",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "BUF",
-        "name": "BUF",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1399507971569922048",
-      "timestamp": 1788031211325,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "12467",
-        "name": "Jordan James",
-        "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "matchup_inprogress",
-      "week": 1,
-      "matchups": [
-        {
-          "team": "Supernova Takeover",
-          "score": 21.1,
-          "opponent": "Supernovas",
-          "opponent_score": 0
-        },
-        {
-          "team": "Big Dumb Sports",
-          "score": 24.6,
-          "opponent": "theMadgician",
-          "opponent_score": 45.2
-        },
-        {
-          "team": "Bandits",
-          "score": 0,
-          "opponent": "packerlove24",
-          "opponent_score": 30.4
-        },
-        {
-          "team": "Newman’s Owen",
-          "score": 12.2,
-          "opponent": "VRDNO",
-          "opponent_score": 47.62
-        }
-      ]
     }
   ]
 }
