@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T20:16:37.593987+00:00",
+  "generated_at": "2026-09-12T00:22:32.572998+00:00",
   "window_days": 7,
   "items": [
     {
@@ -9,7 +9,7 @@
       "score": 47.62,
       "opponent": "Newman’s Owen",
       "opponent_score": 12.2,
-      "timestamp": 1789157797593.932
+      "timestamp": 1789172552572.9412
     },
     {
       "type": "live_score",
@@ -18,7 +18,7 @@
       "score": 12.2,
       "opponent": "VRDNO",
       "opponent_score": 47.62,
-      "timestamp": 1789157797593.931
+      "timestamp": 1789172552572.9402
     },
     {
       "type": "live_score",
@@ -27,7 +27,7 @@
       "score": 30.4,
       "opponent": "Bandits",
       "opponent_score": 0,
-      "timestamp": 1789157797593.929
+      "timestamp": 1789172552572.938
     },
     {
       "type": "live_score",
@@ -36,7 +36,7 @@
       "score": 45.2,
       "opponent": "Big Dumb Sports",
       "opponent_score": 24.6,
-      "timestamp": 1789157797593.926
+      "timestamp": 1789172552572.936
     },
     {
       "type": "live_score",
@@ -45,7 +45,7 @@
       "score": 24.6,
       "opponent": "theMadgician",
       "opponent_score": 45.2,
-      "timestamp": 1789157797593.925
+      "timestamp": 1789172552572.9338
     },
     {
       "type": "live_score",
@@ -54,7 +54,41 @@
       "score": 21.1,
       "opponent": "Supernovas",
       "opponent_score": 0,
-      "timestamp": 1789157797593.908
+      "timestamp": 1789172552572.918
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1404279834221264896",
+      "timestamp": 1789168912037,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "KC",
+        "name": "KC",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "5849",
+        "name": "Kyler Murray",
+        "position": "QB"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1404264423429791744",
+      "timestamp": 1789165237818,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "5849",
+        "name": "Kyler Murray",
+        "position": "QB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
