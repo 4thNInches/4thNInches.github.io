@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T16:45:08.545304+00:00",
+  "generated_at": "2026-09-13T16:55:48.166248+00:00",
   "window_days": 7,
   "items": [
     {
@@ -9,7 +9,7 @@
       "score": 47.62,
       "opponent": "Newman’s Owen",
       "opponent_score": 12.2,
-      "timestamp": 1789317908545.2458
+      "timestamp": 1789318548166.1912
     },
     {
       "type": "live_score",
@@ -18,7 +18,7 @@
       "score": 12.2,
       "opponent": "VRDNO",
       "opponent_score": 47.62,
-      "timestamp": 1789317908545.2449
+      "timestamp": 1789318548166.189
     },
     {
       "type": "live_score",
@@ -27,7 +27,7 @@
       "score": 30.4,
       "opponent": "Bandits",
       "opponent_score": 0,
-      "timestamp": 1789317908545.243
+      "timestamp": 1789318548166.187
     },
     {
       "type": "live_score",
@@ -36,7 +36,7 @@
       "score": 45.2,
       "opponent": "Big Dumb Sports",
       "opponent_score": 24.6,
-      "timestamp": 1789317908545.2412
+      "timestamp": 1789318548166.1838
     },
     {
       "type": "live_score",
@@ -45,7 +45,7 @@
       "score": 24.6,
       "opponent": "theMadgician",
       "opponent_score": 45.2,
-      "timestamp": 1789317908545.239
+      "timestamp": 1789318548166.1812
     },
     {
       "type": "live_score",
@@ -54,7 +54,7 @@
       "score": 21.1,
       "opponent": "Supernovas",
       "opponent_score": 0,
-      "timestamp": 1789317908545.222
+      "timestamp": 1789318548166.162
     },
     {
       "type": "waiver_move",
