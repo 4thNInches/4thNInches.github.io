@@ -957,3 +957,53 @@ a { color: inherit; }
   .stat-grid { grid-template-columns: repeat(2, 1fr); }
   .chain-marker-label { display: none; }
 }
+
+/* ---------- recaps.html ---------- */
+.primary-nav a.nav-current {
+  color: var(--marker);
+}
+
+.recap-hero {
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+.week-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.week-nav h1 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin: 0;
+  min-width: 220px;
+  text-align: center;
+}
+
+.preview-card {
+  margin-bottom: 16px;
+}
+
+.preview-teams {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+
+.preview-vs {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--chalk-dim);
+  margin: 0 6px;
+}
+
+.preview-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--chalk-dim);
+  margin: 0;
+}

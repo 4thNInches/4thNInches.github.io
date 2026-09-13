@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recaps & Previews — 4th and Inches</title>
+<meta name="description" content="Weekly matchup previews for the 4th and Inches fantasy football league.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sticky-top">
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="index.html">
+        <img src="assets/logo.png" alt="4th and Inches logo" class="logo" onerror="this.style.display='none'">
+        <span>4th &amp; Inches</span>
+      </a>
+      <nav class="primary-nav">
+        <a href="index.html#standings">Standings</a>
+        <a href="index.html#stats">Stats</a>
+        <a href="index.html#history">History</a>
+        <a href="recaps.html" class="nav-current">Previews</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="feed-ticker" id="feed-ticker" aria-label="Live league feed">
+    <div class="feed-ticker-track" id="feed-ticker-track">
+      <span class="feed-ticker-loading">Loading feed&hellip;</span>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- WEEK NAV -->
+  <section class="block recap-hero">
+    <div class="wrap">
+      <div class="week-nav">
+        <button class="btn btn-ghost" id="prev-week-btn" type="button">&larr; Prev</button>
+        <h1 id="week-heading">Loading&hellip;</h1>
+        <button class="btn btn-ghost" id="next-week-btn" type="button">Next &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASON AT A GLANCE (plots) -->
+  <section id="season-plots" class="block block-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="down-tag">SEASON AT A GLANCE</span>
+        <h2>Season Plots</h2>
+      </div>
+      <div class="card placeholder-card">
+        <p class="placeholder-kicker">Coming soon</p>
+        <p>Power-rank history, Lady Luck, positional PPW, and flex distribution will live here once the seasonal-plots data pipeline is built. This section always shows the current season state, regardless of which week's preview you're looking at below.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECAP (last week) -->
+  <section id="recap" class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="down-tag">LAST WEEK</span>
+        <h2>Recap</h2>
+      </div>
+      <div class="card placeholder-card">
+        <p class="placeholder-kicker">Coming soon</p>
+        <p>Results, weekly awards (Best Bench, You Didn't Lose, and friends), and the storylines from what actually happened will post here once the recap side of the engine is built. Only the forward-looking preview below is live so far.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW (this week) -->
+  <section id="preview" class="block block-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="down-tag">THIS WEEK</span>
+        <h2>Matchup Previews</h2>
+      </div>
+      <div id="preview-list">
+        <p class="loading-msg">Loading previews&hellip;</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>4th &amp; Inches Fantasy Football League</span>
+    <span class="footer-dim">Built by the commissioner. Powered by Sleeper.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="recaps.js"></script>
+</body>
+</html>
