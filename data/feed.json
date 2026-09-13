@@ -1,60 +1,114 @@
 {
-  "generated_at": "2026-09-13T16:55:48.166248+00:00",
+  "generated_at": "2026-09-13T20:16:05.343710+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 1,
       "team": "VRDNO",
-      "score": 47.62,
+      "score": 109.42,
       "opponent": "Newman’s Owen",
-      "opponent_score": 12.2,
-      "timestamp": 1789318548166.1912
+      "opponent_score": 85.56,
+      "timestamp": 1789330565343.662
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "Newman’s Owen",
-      "score": 12.2,
+      "score": 85.56,
       "opponent": "VRDNO",
-      "opponent_score": 47.62,
-      "timestamp": 1789318548166.189
+      "opponent_score": 109.42,
+      "timestamp": 1789330565343.6611
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "packerlove24",
-      "score": 30.4,
+      "score": 126.66,
       "opponent": "Bandits",
-      "opponent_score": 0,
-      "timestamp": 1789318548166.187
+      "opponent_score": 112.6,
+      "timestamp": 1789330565343.6602
     },
     {
       "type": "live_score",
       "week": 1,
-      "team": "theMadgician",
-      "score": 45.2,
-      "opponent": "Big Dumb Sports",
-      "opponent_score": 24.6,
-      "timestamp": 1789318548166.1838
+      "team": "Bandits",
+      "score": 112.6,
+      "opponent": "packerlove24",
+      "opponent_score": 126.66,
+      "timestamp": 1789330565343.659
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "Jake From State Farm",
+      "score": 34.9,
+      "opponent": "ROK Navy's Finest",
+      "opponent_score": 45.1,
+      "timestamp": 1789330565343.655
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "ROK Navy's Finest",
+      "score": 45.1,
+      "opponent": "Jake From State Farm",
+      "opponent_score": 34.9,
+      "timestamp": 1789330565343.655
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "Big Dumb Sports",
-      "score": 24.6,
+      "score": 129.1,
       "opponent": "theMadgician",
-      "opponent_score": 45.2,
-      "timestamp": 1789318548166.1812
+      "opponent_score": 147.16,
+      "timestamp": 1789330565343.653
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "theMadgician",
+      "score": 147.16,
+      "opponent": "Big Dumb Sports",
+      "opponent_score": 129.1,
+      "timestamp": 1789330565343.653
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "Hurts Over 10.5int @-1000",
+      "score": 58.56,
+      "opponent": "jschnides4",
+      "opponent_score": 116.6,
+      "timestamp": 1789330565343.6511
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "jschnides4",
+      "score": 116.6,
+      "opponent": "Hurts Over 10.5int @-1000",
+      "opponent_score": 58.56,
+      "timestamp": 1789330565343.6501
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "Supernovas",
+      "score": 62.6,
+      "opponent": "Supernova Takeover",
+      "opponent_score": 96.1,
+      "timestamp": 1789330565343.648
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "Supernova Takeover",
-      "score": 21.1,
+      "score": 96.1,
       "opponent": "Supernovas",
-      "opponent_score": 0,
-      "timestamp": 1789318548166.162
+      "opponent_score": 62.6,
+      "timestamp": 1789330565343.633
     },
     {
       "type": "waiver_move",
@@ -241,25 +295,6 @@
         "player_id": "8698",
         "name": "Jake Tonges",
         "position": "TE"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1402389036642861056",
-      "timestamp": 1788718110765,
-      "manager_id": "mikey_g",
-      "team_name": "Supernova Takeover",
-      "added": {
-        "player_id": "11834",
-        "name": "Devaughn Vele",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "13320",
-        "name": "Zachariah Branch",
-        "position": "WR"
       },
       "faab": null,
       "remark": null
