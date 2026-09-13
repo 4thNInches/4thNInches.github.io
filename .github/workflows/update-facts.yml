@@ -56,6 +56,21 @@ jobs:
         continue-on-error: true
         run: python compute_power_stats.py
 
+      - name: Generate matchup storylines for the upcoming week
+        # Same isolation reasoning as the power-stats step -- also rides
+        # on the undocumented projections endpoint (for roster_strength),
+        # and is newer/less proven than the facts pipeline above it.
+        continue-on-error: true
+        run: python generate_matchup_storylines.py
+
+      - name: Render matchup previews to readable prose
+        # Unlike power_log.json, this step is safe to simply regenerate --
+        # it's a pure function of the storylines file plus team_flavor.json/
+        # rivalry_lore.json, not a point-in-time snapshot that can't be
+        # recreated. No overwrite-refusal needed here on purpose.
+        continue-on-error: true
+        run: python render_matchup_previews.py
+
       - name: Commit and push if anything changed
         run: |
           git config user.name "github-actions[bot]"
