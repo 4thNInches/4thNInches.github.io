@@ -952,7 +952,18 @@ a { color: inherit; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 720px) {
-  .primary-nav { display: none; }
+  /* Was `.primary-nav { display: none; }` -- fine when the nav only
+     pointed to in-page anchors, but "Previews" is the sole route to a
+     whole separate page (recaps.html), so hiding it entirely on mobile
+     with no alternative was a real navigation dead-end, not just a
+     cosmetic gap. Wraps the nav onto its own row instead of hiding it. */
+  .header-row { flex-wrap: wrap; row-gap: 10px; }
+  .primary-nav {
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+  .primary-nav a { font-size: 0.82rem; }
   .vitals-grid { grid-template-columns: repeat(2, 1fr); }
   .stat-grid { grid-template-columns: repeat(2, 1fr); }
   .chain-marker-label { display: none; }

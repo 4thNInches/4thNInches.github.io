@@ -6,14 +6,18 @@
 // and prev/next navigation via the URL's ?season=&week= params.
 // ============================================================
 
-const SLEEPER_LEAGUE_ID = "1392229432336347136"; // same convention as the Python scripts -- redeclared per-file, not shared
+const RECAPS_SLEEPER_LEAGUE_ID = "1392229432336347136"; // NOT named SLEEPER_LEAGUE_ID on purpose --
+// script.js (loaded before this on the page) already declares that exact name as a top-level const,
+// and browser <script> tags share one global scope, unlike the Python scripts' separate processes.
+// Redeclaring it here threw a SyntaxError that silently killed this entire file before anything in
+// it could run -- caught from a real bug report, not a guess.
 const SLEEPER_API = "https://api.sleeper.app/v1";
 
-function escapeHtml(str) {
-  const div = document.createElement("div");
-  div.textContent = str ?? "";
-  return div.innerHTML;
-}
+// escapeHtml() is intentionally NOT redeclared here -- script.js (loaded
+// first on this page) already defines it, and reusing it avoids the same
+// class of naming mistake that caused the SLEEPER_LEAGUE_ID bug above,
+// even though a duplicate function declaration wouldn't have been fatal
+// the way the duplicate const was.
 
 function getWeekFromUrl() {
   const params = new URLSearchParams(window.location.search);
@@ -41,7 +45,7 @@ async function detectDefaultSeasonWeek() {
   // default landing view. Not a full port on purpose.
   try {
     const [league, state] = await Promise.all([
-      fetch(`${SLEEPER_API}/league/${SLEEPER_LEAGUE_ID}`).then(r => r.json()),
+      fetch(`${SLEEPER_API}/league/${RECAPS_SLEEPER_LEAGUE_ID}`).then(r => r.json()),
       fetch(`${SLEEPER_API}/state/nfl`).then(r => r.json()),
     ]);
     const week = state.season_type === "pre" ? 1 : state.week;
