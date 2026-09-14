@@ -1,60 +1,69 @@
 {
-  "generated_at": "2026-09-13T20:16:05.343710+00:00",
+  "generated_at": "2026-09-14T00:24:39.223352+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 1,
       "team": "VRDNO",
-      "score": 109.42,
+      "score": 141.82,
       "opponent": "Newman’s Owen",
-      "opponent_score": 85.56,
-      "timestamp": 1789330565343.662
+      "opponent_score": 162.96,
+      "timestamp": 1789345479223.292
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "Newman’s Owen",
-      "score": 85.56,
+      "score": 162.96,
       "opponent": "VRDNO",
-      "opponent_score": 109.42,
-      "timestamp": 1789330565343.6611
+      "opponent_score": 141.82,
+      "timestamp": 1789345479223.291
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "packerlove24",
-      "score": 126.66,
+      "score": 130.66,
       "opponent": "Bandits",
-      "opponent_score": 112.6,
-      "timestamp": 1789330565343.6602
+      "opponent_score": 115.6,
+      "timestamp": 1789345479223.285
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "Bandits",
-      "score": 112.6,
+      "score": 115.6,
       "opponent": "packerlove24",
-      "opponent_score": 126.66,
-      "timestamp": 1789330565343.659
-    },
-    {
-      "type": "live_score",
-      "week": 1,
-      "team": "Jake From State Farm",
-      "score": 34.9,
-      "opponent": "ROK Navy's Finest",
-      "opponent_score": 45.1,
-      "timestamp": 1789330565343.655
+      "opponent_score": 130.66,
+      "timestamp": 1789345479223.284
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "ROK Navy's Finest",
-      "score": 45.1,
+      "score": 174.32,
       "opponent": "Jake From State Farm",
-      "opponent_score": 34.9,
-      "timestamp": 1789330565343.655
+      "opponent_score": 75.16,
+      "timestamp": 1789345479223.282
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "Jake From State Farm",
+      "score": 75.16,
+      "opponent": "ROK Navy's Finest",
+      "opponent_score": 174.32,
+      "timestamp": 1789345479223.281
+    },
+    {
+      "type": "live_score",
+      "week": 1,
+      "team": "theMadgician",
+      "score": 164.56,
+      "opponent": "Big Dumb Sports",
+      "opponent_score": 129.1,
+      "timestamp": 1789345479223.279
     },
     {
       "type": "live_score",
@@ -62,53 +71,44 @@
       "team": "Big Dumb Sports",
       "score": 129.1,
       "opponent": "theMadgician",
-      "opponent_score": 147.16,
-      "timestamp": 1789330565343.653
-    },
-    {
-      "type": "live_score",
-      "week": 1,
-      "team": "theMadgician",
-      "score": 147.16,
-      "opponent": "Big Dumb Sports",
-      "opponent_score": 129.1,
-      "timestamp": 1789330565343.653
+      "opponent_score": 164.56,
+      "timestamp": 1789345479223.277
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "Hurts Over 10.5int @-1000",
-      "score": 58.56,
+      "score": 90.26,
       "opponent": "jschnides4",
-      "opponent_score": 116.6,
-      "timestamp": 1789330565343.6511
+      "opponent_score": 143.6,
+      "timestamp": 1789345479223.275
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "jschnides4",
-      "score": 116.6,
+      "score": 143.6,
       "opponent": "Hurts Over 10.5int @-1000",
-      "opponent_score": 58.56,
-      "timestamp": 1789330565343.6501
+      "opponent_score": 90.26,
+      "timestamp": 1789345479223.274
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "Supernovas",
-      "score": 62.6,
+      "score": 92.96,
       "opponent": "Supernova Takeover",
-      "opponent_score": 96.1,
-      "timestamp": 1789330565343.648
+      "opponent_score": 141.1,
+      "timestamp": 1789345479223.27
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "Supernova Takeover",
-      "score": 96.1,
+      "score": 141.1,
       "opponent": "Supernovas",
-      "opponent_score": 62.6,
-      "timestamp": 1789330565343.633
+      "opponent_score": 92.96,
+      "timestamp": 1789345479223.258
     },
     {
       "type": "waiver_move",
