@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T20:16:47.734368+00:00",
+  "generated_at": "2026-09-15T00:24:26.752264+00:00",
   "window_days": 7,
   "items": [
     {
@@ -9,7 +9,7 @@
       "score": 141.82,
       "opponent": "Newman’s Owen",
       "opponent_score": 162.96,
-      "timestamp": 1789417007734.312
+      "timestamp": 1789431866752.197
     },
     {
       "type": "live_score",
@@ -18,16 +18,16 @@
       "score": 162.96,
       "opponent": "VRDNO",
       "opponent_score": 141.82,
-      "timestamp": 1789417007734.311
+      "timestamp": 1789431866752.196
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "packerlove24",
-      "score": 130.66,
+      "score": 131.76,
       "opponent": "Bandits",
       "opponent_score": 154.2,
-      "timestamp": 1789417007734.3088
+      "timestamp": 1789431866752.189
     },
     {
       "type": "live_score",
@@ -35,8 +35,8 @@
       "team": "Bandits",
       "score": 154.2,
       "opponent": "packerlove24",
-      "opponent_score": 130.66,
-      "timestamp": 1789417007734.308
+      "opponent_score": 131.76,
+      "timestamp": 1789431866752.188
     },
     {
       "type": "live_score",
@@ -45,7 +45,7 @@
       "score": 161.32,
       "opponent": "Jake From State Farm",
       "opponent_score": 102.96,
-      "timestamp": 1789417007734.302
+      "timestamp": 1789431866752.186
     },
     {
       "type": "live_score",
@@ -54,7 +54,7 @@
       "score": 102.96,
       "opponent": "ROK Navy's Finest",
       "opponent_score": 161.32,
-      "timestamp": 1789417007734.301
+      "timestamp": 1789431866752.185
     },
     {
       "type": "live_score",
@@ -63,7 +63,7 @@
       "score": 178.66,
       "opponent": "Big Dumb Sports",
       "opponent_score": 129.1,
-      "timestamp": 1789417007734.2988
+      "timestamp": 1789431866752.1829
     },
     {
       "type": "live_score",
@@ -72,16 +72,16 @@
       "score": 129.1,
       "opponent": "theMadgician",
       "opponent_score": 178.66,
-      "timestamp": 1789417007734.298
+      "timestamp": 1789431866752.1821
     },
     {
       "type": "live_score",
       "week": 1,
       "team": "Hurts Over 10.5int @-1000",
-      "score": 91.26,
+      "score": 91.46,
       "opponent": "jschnides4",
       "opponent_score": 159.0,
-      "timestamp": 1789417007734.295
+      "timestamp": 1789431866752.179
     },
     {
       "type": "live_score",
@@ -89,8 +89,8 @@
       "team": "jschnides4",
       "score": 159.0,
       "opponent": "Hurts Over 10.5int @-1000",
-      "opponent_score": 91.26,
-      "timestamp": 1789417007734.294
+      "opponent_score": 91.46,
+      "timestamp": 1789431866752.177
     },
     {
       "type": "live_score",
@@ -99,7 +99,7 @@
       "score": 111.66,
       "opponent": "Supernova Takeover",
       "opponent_score": 141.1,
-      "timestamp": 1789417007734.2898
+      "timestamp": 1789431866752.1729
     },
     {
       "type": "live_score",
@@ -108,7 +108,7 @@
       "score": 141.1,
       "opponent": "Supernovas",
       "opponent_score": 111.66,
-      "timestamp": 1789417007734.2761
+      "timestamp": 1789431866752.158
     },
     {
       "type": "waiver_move",
