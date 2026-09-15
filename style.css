@@ -1003,6 +1003,10 @@ a { color: inherit; }
   font-weight: 600;
   font-size: 1.05rem;
   margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .preview-vs {

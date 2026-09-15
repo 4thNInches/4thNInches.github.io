@@ -29,6 +29,8 @@ from pathlib import Path
 
 import requests
 
+import compute_power_stats as pws  # reuses fetch_projected_points for the ticker's projected-total column
+
 SLEEPER_LEAGUE_ID = "1392229432336347136"
 SLEEPER_API = "https://api.sleeper.app/v1"
 REQUEST_DELAY_SECONDS = 0.3
@@ -282,16 +284,33 @@ def build_feed_items(transactions: list[dict], team_lookup: dict, rosters_by_id:
     return items
 
 
-def build_live_score_items(in_progress_week: int | None, team_lookup: dict) -> list[dict]:
-    """One item per *team* (not per matchup pair) with a non-zero score so
-    far this week -- e.g. useful Friday morning after Thursday Night
-    Football. Deliberately per-team rather than a paired row: this feeds a
-    scrolling ticker, not a table, so "Team X: 24.6 pts so far (vs Team Y)"
-    reads better one line at a time than a two-column matchup grid would.
-    Only a team whose *own* score is non-zero gets a line -- if just one
-    side of a matchup has played, only that side shows. Not accumulated
-    across runs; each run's snapshot simply replaces the last one, since a
-    stale in-progress score is actively misleading."""
+def fetch_week_projected_totals(season: int, week: int, scoring_settings: dict, rosters_by_id: dict) -> dict:
+    """Static pre-game projected total for each roster's ACTUAL starting
+    lineup this week (not the optimal lineup -- this is 'what was this
+    team expected to score', not 'what's the best they could have done').
+    A fixed reference point shown alongside the live in-progress score.
+    Deliberately NOT a live-blended 'projected final' (swapping in real
+    scores for players who've already played) -- that needs per-player
+    real-time game-status data (has this player's NFL game started or
+    finished?) that isn't available from the matchups endpoint alone.
+    Flagged as a natural v2, not silently approximated here."""
+    projected_points = pws.fetch_projected_points(season, week, scoring_settings)
+    totals = {}
+    for roster_id, roster in rosters_by_id.items():
+        starters = roster.get("starters") or []
+        totals[roster_id] = sum(projected_points.get(pid, 0.0) for pid in starters if pid not in ("0", None))
+    return totals
+
+
+def build_live_score_items(in_progress_week: int | None, team_lookup: dict, projected_totals: dict) -> list[dict]:
+    """One item per MATCHUP (not per team) with at least one side showing
+    a non-zero score so far -- e.g. useful Friday morning after Thursday
+    Night Football. Avoids the redundant pair the ticker used to show for
+    the same game ('Team X scored N vs Team Y' immediately followed by
+    'Team Y scored M vs Team X') -- the leading team is listed first, the
+    trailing team second, once per game. Not accumulated across runs;
+    each run's snapshot simply replaces the last one, since a stale
+    in-progress score is actively misleading."""
     if in_progress_week is None:
         return []
 
@@ -305,21 +324,24 @@ def build_live_score_items(in_progress_week: int | None, team_lookup: dict) -> l
         if len(pair) != 2:
             continue
         a, b = pair
-        for mine, theirs in ((a, b), (b, a)):
-            score = mine.get("points") or 0
-            if score == 0:
-                continue  # this team hasn't kicked off yet -- nothing worth mentioning
-            items.append({
-                "type": "live_score",
-                "week": in_progress_week,
-                "team": team_lookup.get(mine["roster_id"], {}).get("team_name"),
-                "score": score,
-                "opponent": team_lookup.get(theirs["roster_id"], {}).get("team_name"),
-                "opponent_score": theirs.get("points") or 0,
-                # live scores are always "now" -- stamp with generation time so
-                # the window filter below never accidentally drops them
-                "timestamp": datetime.now(timezone.utc).timestamp() * 1000,
-            })
+        a_score, b_score = a.get("points") or 0, b.get("points") or 0
+        if a_score == 0 and b_score == 0:
+            continue  # nobody's kicked off yet -- nothing worth mentioning
+
+        leader, trailer = (a, b) if a_score >= b_score else (b, a)
+        items.append({
+            "type": "live_score",
+            "week": in_progress_week,
+            "team_a": team_lookup.get(leader["roster_id"], {}).get("team_name"),
+            "score_a": leader.get("points") or 0,
+            "projected_a": round(projected_totals.get(leader["roster_id"], 0.0), 2),
+            "team_b": team_lookup.get(trailer["roster_id"], {}).get("team_name"),
+            "score_b": trailer.get("points") or 0,
+            "projected_b": round(projected_totals.get(trailer["roster_id"], 0.0), 2),
+            # live scores are always "now" -- stamp with generation time so
+            # the window filter below never accidentally drops them
+            "timestamp": datetime.now(timezone.utc).timestamp() * 1000,
+        })
     return items
 
 
@@ -360,7 +382,12 @@ def main():
     print(f"  {len(transactions)} completed transactions found (full season, before windowing)")
 
     items = build_feed_items(transactions, team_lookup, rosters_by_id, players_db, points_by_player)
-    items.extend(build_live_score_items(in_progress_week, team_lookup))
+
+    if in_progress_week is not None:
+        scoring_settings = league["settings"].get("scoring_settings") or league.get("scoring_settings") or {}
+        print(f"  fetching Week {in_progress_week} projections for the ticker's projected-total column...")
+        projected_totals = fetch_week_projected_totals(league["season"], in_progress_week, scoring_settings, rosters_by_id)
+        items.extend(build_live_score_items(in_progress_week, team_lookup, projected_totals))
 
     cutoff_ms = (datetime.now(timezone.utc).timestamp() - FEED_WINDOW_DAYS * 86400) * 1000
     items = [i for i in items if within_window(i, cutoff_ms)]

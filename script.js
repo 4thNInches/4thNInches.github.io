@@ -809,8 +809,10 @@ function renderFeedTickerItem(item) {
 
   if (item.type === "live_score") {
     return `<span class="feed-ticker-item">
-      <span class="feed-team">${escapeHtml(item.team)}</span>
-      ${(item.score || 0).toFixed(1)} pts so far vs ${escapeHtml(item.opponent)} (${(item.opponent_score || 0).toFixed(1)})
+      <span class="feed-team">${escapeHtml(item.team_a)}</span>
+      ${(item.score_a || 0).toFixed(1)} pts (proj ${(item.projected_a || 0).toFixed(1)}),
+      <span class="feed-team">${escapeHtml(item.team_b)}</span>
+      ${(item.score_b || 0).toFixed(1)} pts (proj ${(item.projected_b || 0).toFixed(1)})
     </span>`;
   }
 
