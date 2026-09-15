@@ -86,6 +86,19 @@ jobs:
         continue-on-error: true
         run: python render_recap_awards.py
 
+      - name: Compute season plot data (Lady Luck, positional PPW, flex distribution)
+        # Same isolation reasoning as the other newer/less-proven steps
+        # above. Safe to simply regenerate every run (a pure function of
+        # data/history/ + this week's live rosters, no point-in-time
+        # snapshot involved) -- unlike power_log.json, which this
+        # deliberately does NOT duplicate; recaps.js reads that file
+        # directly for the power-rank-history chart instead. Makes one
+        # live Sleeper call per completed week (data/history/ only stores
+        # team-level totals, not per-slot detail) -- more calls than any
+        # other step here, but bounded by the season length.
+        continue-on-error: true
+        run: python compute_season_plots.py
+
       - name: Commit and push if anything changed
         run: |
           git config user.name "github-actions[bot]"
