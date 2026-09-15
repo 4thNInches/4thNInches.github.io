@@ -71,6 +71,21 @@ jobs:
         continue-on-error: true
         run: python render_matchup_previews.py
 
+      - name: Generate recap awards for last week
+        # Same isolation reasoning as the two steps above -- newer and
+        # less proven than the facts pipeline. Also makes its own live
+        # Sleeper call (matchups/{week}) for player-level starter/bench
+        # data, since data/history/ only stores team-level weekly scores.
+        continue-on-error: true
+        run: python generate_recap_awards.py
+
+      - name: Render recap awards to readable prose
+        # Safe to simply regenerate, same reasoning as the preview-prose
+        # step above -- a pure function of the recap-storylines file, no
+        # point-in-time snapshot involved.
+        continue-on-error: true
+        run: python render_recap_awards.py
+
       - name: Commit and push if anything changed
         run: |
           git config user.name "github-actions[bot]"
