@@ -1,10 +1,20 @@
 // 4th & Inches — site script
 
 // ============================================================
-// CONFIG -- the one value another league would need to change
-// to adopt this site for themselves.
+// CONFIG -- resolved from data/league_config.json at load time, not
+// hardcoded here. SLEEPER_LEAGUE_ID starts null and is set once by the
+// DOMContentLoaded handler at the bottom of this file, before anything
+// that needs it runs. To point this whole site at a different Sleeper
+// league, edit data/league_config.json -- nothing in this file should
+// need to change.
 // ============================================================
-const SLEEPER_LEAGUE_ID = "1392229432336347136";
+let SLEEPER_LEAGUE_ID = null;
+
+async function loadLeagueConfig() {
+  const res = await fetch("data/league_config.json");
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
 // ============================================================
 
 const PLACE_ICON = { first: "\u{1F3C6}", second: "\u{1F948}", third: "\u{1F949}" };
@@ -543,6 +553,8 @@ function formatWinPct(p) {
 
 async function mergeLiveSleeperSeason(baseline) {
   const { rosters, users, sleeperMapping, managers } = await getSharedSleeperCore(SLEEPER_LEAGUE_ID);
+  // (SLEEPER_LEAGUE_ID is resolved by the DOMContentLoaded handler below
+  // before loadLifetimeStandings() -- and therefore this -- ever runs.)
 
   const userById = {};
   users.forEach(u => { userById[u.user_id] = u; });
@@ -848,13 +860,29 @@ async function loadFeed() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  loadStandings(SLEEPER_LEAGUE_ID);
+document.addEventListener("DOMContentLoaded", async () => {
+  // These four read static data/ files, not live Sleeper calls -- no
+  // reason to make them wait on league config.
   loadChampions();
   loadTicker();
   loadStatCards();
-  loadLifetimeStandings();
   loadFeed();
+
+  try {
+    const config = await loadLeagueConfig();
+    SLEEPER_LEAGUE_ID = config.sleeper_league_id;
+  } catch (err) {
+    console.error("Couldn't load data/league_config.json:", err);
+    const standingsEl = document.getElementById("standings-table");
+    if (standingsEl) standingsEl.innerHTML = `<p class="loading-msg">Couldn't load site configuration (${escapeHtml(err.message)}).</p>`;
+    return;
+  }
+
+  // Both of these read SLEEPER_LEAGUE_ID (loadStandings takes it as an
+  // argument; loadLifetimeStandings reads it internally via
+  // mergeLiveSleeperSeason) -- held until the config fetch above resolves.
+  loadStandings(SLEEPER_LEAGUE_ID);
+  loadLifetimeStandings();
 });
 
 // Below: nothing live yet for the weekly recap/preview pipeline. This is

@@ -49,7 +49,7 @@ from pathlib import Path
 import numpy as np
 import requests
 
-SLEEPER_LEAGUE_ID = "1392229432336347136"
+from league_config import SLEEPER_LEAGUE_ID  # single source of truth -- see league_config.py
 SLEEPER_API = "https://api.sleeper.app/v1"
 PROJECTIONS_API = "https://api.sleeper.app/projections/nfl"  # undocumented -- no /v1 prefix
 REQUEST_DELAY_SECONDS = 0.3

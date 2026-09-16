@@ -18,11 +18,14 @@ staples plus the two lowest-effort third/fourth candidates):
                          score
   - Mega Blowout      -- largest point differential of the week
 
-Award DISPLAY NAMES live in AWARD_NAMES below, not hardcoded anywhere else
-in this file or in render_recap_awards.py -- per the architecture spec's
-explicit call (Section 5) for award names to be easy to rename for
-another league, without building a full config system for it. Matches the
-"workable framework, easy to update later" bar rather than gold-plating.
+Award DISPLAY NAMES are sourced from data/league_config.json via
+league_config.py, not hardcoded here or in render_recap_awards.py -- per
+the architecture spec's explicit call (Section 5) for award names to be
+easy to rename for another league. Originally this file had its own
+AWARD_NAMES dict as a lighter-weight version of that ask; consolidated
+into league_config.py once SLEEPER_LEAGUE_ID turned up hardcoded in four
+separate places, at which point a single config file for all of it made
+more sense than one config point per value.
 
 "Bottom half" and every other team-count-shaped threshold below is
 derived from num_teams (itself derived from however many teams actually
@@ -58,18 +61,10 @@ import json
 from pathlib import Path
 
 import compute_power_stats as pws  # sleeper_get, load_players, resolve_weeks
+from league_config import AWARD_NAMES  # single source of truth -- see league_config.py
 
 MANAGER_MAPPING_PATH = Path("data/manager_mapping.json")
 OUT_DIR = Path("data/recap_storylines")
-
-# Display names live here, not sprinkled through compute/render code -- a
-# fork for another league (or a rename here) only needs to touch this.
-AWARD_NAMES = {
-    "best_bench": "Best Bench",
-    "you_didnt_lose": "You Didn't Lose!",
-    "great_defense": "Great Defense!",
-    "mega_blowout": "Mega Blowout",
-}
 
 
 def load_json(path: Path) -> dict:

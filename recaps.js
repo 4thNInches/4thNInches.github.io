@@ -6,12 +6,30 @@
 // and prev/next navigation via the URL's ?season=&week= params.
 // ============================================================
 
-const RECAPS_SLEEPER_LEAGUE_ID = "1392229432336347136"; // NOT named SLEEPER_LEAGUE_ID on purpose --
-// script.js (loaded before this on the page) already declares that exact name as a top-level const,
-// and browser <script> tags share one global scope, unlike the Python scripts' separate processes.
-// Redeclaring it here threw a SyntaxError that silently killed this entire file before anything in
-// it could run -- caught from a real bug report, not a guess.
+// RECAPS_SLEEPER_LEAGUE_ID resolves independently from data/league_config.json
+// rather than reading script.js's own SLEEPER_LEAGUE_ID -- both files load
+// this same JSON, but script.js resolves it inside its own async
+// DOMContentLoaded handler, and this file's DOMContentLoaded handler could
+// start running before that resolves (handlers fire in registration order,
+// but an async handler yields at its first await, so "script.js's listener
+// runs first" doesn't guarantee "script.js's listener FINISHES first").
+// Fetching it again here avoids that race entirely; the browser's HTTP
+// cache makes the second fetch essentially free.
+//
+// NOT named SLEEPER_LEAGUE_ID on purpose -- script.js (loaded before this
+// on the page) already declares that exact name at top level, and browser
+// <script> tags share one global scope, unlike the Python scripts' separate
+// processes. Redeclaring it here threw a SyntaxError that silently killed
+// this entire file before anything in it could run -- caught from a real
+// bug report, not a guess.
+let RECAPS_SLEEPER_LEAGUE_ID = null;
 const SLEEPER_API = "https://api.sleeper.app/v1";
+
+async function loadRecapsLeagueConfig() {
+  const res = await fetch("data/league_config.json");
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
 
 // escapeHtml() is intentionally NOT redeclared here -- script.js (loaded
 // first on this page) already defines it, and reusing it avoids the same
@@ -191,6 +209,16 @@ async function loadRecap(season, week) {
 }
 
 async function init() {
+  try {
+    const config = await loadRecapsLeagueConfig();
+    RECAPS_SLEEPER_LEAGUE_ID = config.sleeper_league_id;
+  } catch (err) {
+    console.error("Couldn't load data/league_config.json:", err);
+    const list = document.getElementById("preview-list");
+    if (list) list.innerHTML = `<p class="loading-msg">Couldn't load site configuration (${escapeHtml(err.message)}).</p>`;
+    return;
+  }
+
   let { season, week } = getWeekFromUrl();
   const lookupsPromise = buildAvatarLookup(); // kick off in parallel, don't block week detection on it
 

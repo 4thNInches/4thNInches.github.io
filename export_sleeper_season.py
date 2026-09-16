@@ -25,10 +25,17 @@ work, not an oversight.
 Identity: Sleeper's own team_name field is only set for about half of
 this league's managers. Rather than depend on that being consistently
 set, every roster's manager identity is resolved directly from
-SLEEPER_USER_TO_MANAGER below (the same mapping used in sleeper-facts.js),
+SLEEPER_USER_TO_MANAGER (now sourced from data/league_config.json via
+league_config.py, not hardcoded here -- see that module's docstring),
 and manager_mapping.json is updated with whatever team_name each roster
 is currently using, so generate_facts.py's existing team_name -> manager
 lookup keeps working unchanged.
+
+NOTE: sleeper-facts.js was previously described as holding an identical
+copy of this mapping to keep in sync by hand. That file hasn't been
+reviewed as part of this config consolidation (not among the files this
+project has seen) -- worth pointing it at data/league_config.json too,
+or at minimum confirming it doesn't still carry its own hardcoded copy.
 
 Usage:
     python export_sleeper_season.py
@@ -42,30 +49,13 @@ from pathlib import Path
 
 import requests
 
-SLEEPER_LEAGUE_ID = "1392229432336347136"
+from league_config import SLEEPER_LEAGUE_ID, SLEEPER_USER_TO_MANAGER  # single source of truth -- see league_config.py
+
 SLEEPER_API = "https://api.sleeper.app/v1"
 REQUEST_DELAY_SECONDS = 0.3
 
 OUT_DIR = Path("data/history")
 MAPPING_PATH = Path("data/manager_mapping.json")
-
-# Sleeper user_id -> manager_id, matching managers.json / manager_mapping.json
-# from the Yahoo-era history. Keep this in sync with the identical table in
-# sleeper-facts.js if either ever changes (new manager, departure, etc.).
-SLEEPER_USER_TO_MANAGER = {
-    "684050990101504000": "nick",
-    "684091770841165824": "john",
-    "684101253923418112": "mark",
-    "870464286609313792": "kodi",
-    "884851377262829568": "mikey_g",
-    "966417154155261952": "matt",
-    "1002733712884359168": "owen",
-    "1014914132291805184": "dennis",
-    "1126229965009297408": "anthony",
-    "1129123243807399936": "bob",
-    "1390859945867476992": "bill_m",
-    "1393763098669621248": "mikey_k",
-}
 
 EMPTY_PLAYOFF_GAME = {
     "week": None, "team1_id": None, "team2_id": None,
