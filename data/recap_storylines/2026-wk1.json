@@ -1,0 +1,53 @@
+{
+  "season": "2026",
+  "week": 1,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "mikey_k",
+        "team_name": "ROK Navy's Finest",
+        "bench_points": 73.8,
+        "top_bench_player": {
+          "name": "Jaxson Dart",
+          "points": 26.6
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "john",
+          "team_name": "jschnides4",
+          "score": 159.0
+        },
+        "loser": {
+          "manager_id": "anthony",
+          "team_name": "Hurts Over 10.5int @-1000",
+          "score": 94.86,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "john",
+          "team_name": "jschnides4",
+          "score": 159.0
+        },
+        "loser": {
+          "manager_id": "anthony",
+          "team_name": "Hurts Over 10.5int @-1000",
+          "score": 94.86
+        },
+        "margin": 64.14
+      }
+    }
+  ]
+}

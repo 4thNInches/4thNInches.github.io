@@ -1,0 +1,202 @@
+{
+  "season": "2026",
+  "weeks_complete": 1,
+  "teams": {
+    "mikey_g": {
+      "team_name": "Supernova Takeover",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "xwins": 0.64,
+      "luck_delta": 0.36,
+      "positional_ppw": {
+        "QB": 21.1,
+        "RB": 23.87,
+        "WR": 7.97,
+        "TE": 24.5,
+        "K": 2.0,
+        "DEF": 16.0
+      }
+    },
+    "john": {
+      "team_name": "jschnides4",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "xwins": 0.55,
+      "luck_delta": 0.45,
+      "positional_ppw": {
+        "QB": 26.1,
+        "RB": 14.57,
+        "WR": 17.97,
+        "TE": 7.5,
+        "K": 7.8,
+        "DEF": 20.0
+      }
+    },
+    "anthony": {
+      "team_name": "Hurts Over 10.5int @-1000",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "xwins": 0.0,
+      "luck_delta": 0.0,
+      "positional_ppw": {
+        "QB": 36.96,
+        "RB": 7.8,
+        "WR": 6.33,
+        "TE": 0.0,
+        "K": 1.0,
+        "DEF": 16.0
+      }
+    },
+    "dennis": {
+      "team_name": "Big Dumb Sports",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "xwins": 0.27,
+      "luck_delta": -0.27,
+      "positional_ppw": {
+        "QB": 7.1,
+        "RB": 25.63,
+        "WR": 12.07,
+        "TE": 0.0,
+        "K": 8.1,
+        "DEF": 2.0
+      }
+    },
+    "matt": {
+      "team_name": "theMadgician",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "xwins": 0.91,
+      "luck_delta": 0.09,
+      "positional_ppw": {
+        "QB": 44.66,
+        "RB": 14.13,
+        "WR": 20.47,
+        "TE": 9.5,
+        "K": 12.7,
+        "DEF": 8.0
+      }
+    },
+    "nick": {
+      "team_name": "Jake From State Farm",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "xwins": 0.09,
+      "luck_delta": -0.09,
+      "positional_ppw": {
+        "QB": 13.26,
+        "RB": 11.0,
+        "WR": 7.03,
+        "TE": 27.8,
+        "K": 6.8,
+        "DEF": 1.0
+      }
+    },
+    "mark": {
+      "team_name": "Supernovas",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "xwins": 0.18,
+      "luck_delta": -0.18,
+      "positional_ppw": {
+        "QB": 17.66,
+        "RB": 21.6,
+        "WR": 8.0,
+        "TE": 9.8,
+        "K": 12.0,
+        "DEF": -3.0
+      }
+    },
+    "bill_m": {
+      "team_name": "Bandits",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "xwins": 0.45,
+      "luck_delta": -0.45,
+      "positional_ppw": {
+        "QB": 14.4,
+        "RB": 27.75,
+        "WR": 11.62,
+        "TE": 10.3,
+        "K": 19.5,
+        "DEF": 8.0
+      }
+    },
+    "mikey_k": {
+      "team_name": "ROK Navy's Finest",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "xwins": 0.73,
+      "luck_delta": 0.27,
+      "positional_ppw": {
+        "QB": 32.72,
+        "RB": 7.5,
+        "WR": 19.7,
+        "TE": 22.0,
+        "K": 9.8,
+        "DEF": 3.0
+      }
+    },
+    "owen": {
+      "team_name": "Newman’s Owen",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "xwins": 0.82,
+      "luck_delta": 0.18,
+      "positional_ppw": {
+        "QB": 40.26,
+        "RB": 23.35,
+        "WR": 15.08,
+        "TE": 4.1,
+        "K": 6.6,
+        "DEF": 5.0
+      }
+    },
+    "bob": {
+      "team_name": "packerlove24",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "xwins": 1.0,
+      "luck_delta": 0.0,
+      "positional_ppw": {
+        "QB": 14.16,
+        "RB": 23.6,
+        "WR": 21.5,
+        "TE": 13.1,
+        "K": 6.3,
+        "DEF": 15.0
+      }
+    },
+    "kodi": {
+      "team_name": "VRDNO",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "xwins": 0.36,
+      "luck_delta": -0.36,
+      "positional_ppw": {
+        "QB": 9.82,
+        "RB": 11.43,
+        "WR": 14.93,
+        "TE": 28.7,
+        "K": 15.2,
+        "DEF": 9.0
+      }
+    }
+  },
+  "flex_distribution": {
+    "RB": 29.2,
+    "WR": 70.8
+  }
+}

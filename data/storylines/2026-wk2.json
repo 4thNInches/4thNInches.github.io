@@ -73,14 +73,14 @@
                 "leader": "a",
                 "projected_ppw": {
                   "a": 27.89,
-                  "b": 20.04
+                  "b": 20.26
                 }
               },
               {
                 "position": "WR",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 16.09,
+                  "a": 15.74,
                   "b": 14.49
                 }
               },
@@ -88,7 +88,7 @@
                 "position": "TE",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 16.32,
+                  "a": 16.96,
                   "b": 11.23
                 }
               },
@@ -96,7 +96,7 @@
                 "position": "K",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 8.46,
+                  "a": 8.42,
                   "b": 6.08
                 }
               },
@@ -104,8 +104,8 @@
                 "position": "DEF",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 5.57,
-                  "b": 8.12
+                  "a": 5.67,
+                  "b": 8.09
                 }
               }
             ]
@@ -184,15 +184,15 @@
                 "position": "QB",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 16.99,
-                  "b": 21.88
+                  "a": 17.95,
+                  "b": 21.32
                 }
               },
               {
                 "position": "RB",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 16.98,
+                  "a": 17.01,
                   "b": 24.07
                 }
               },
@@ -200,7 +200,7 @@
                 "position": "WR",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 20.99,
+                  "a": 20.42,
                   "b": 19.37
                 }
               },
@@ -214,10 +214,10 @@
               },
               {
                 "position": "K",
-                "leader": "a",
+                "leader": "b",
                 "projected_ppw": {
-                  "a": 6.99,
-                  "b": 6.92
+                  "a": 6.92,
+                  "b": 6.95
                 }
               },
               {
@@ -225,7 +225,7 @@
                 "leader": "a",
                 "projected_ppw": {
                   "a": 5.12,
-                  "b": 4.64
+                  "b": 4.65
                 }
               }
             ]
@@ -317,26 +317,26 @@
               },
               {
                 "position": "TE",
-                "leader": "b",
+                "leader": "a",
                 "projected_ppw": {
                   "a": 13.38,
-                  "b": 14.08
+                  "b": 13.02
                 }
               },
               {
                 "position": "K",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 8.07,
-                  "b": 6.77
+                  "a": 8.1,
+                  "b": 6.83
                 }
               },
               {
                 "position": "DEF",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 6.07,
-                  "b": 5.7
+                  "a": 6.11,
+                  "b": 5.66
                 }
               }
             ]
@@ -404,10 +404,10 @@
             "positional_edge": [
               {
                 "position": "QB",
-                "leader": "a",
+                "leader": "b",
                 "projected_ppw": {
-                  "a": 17.87,
-                  "b": 17.52
+                  "a": 17.99,
+                  "b": 18.02
                 }
               },
               {
@@ -415,7 +415,7 @@
                 "leader": "a",
                 "projected_ppw": {
                   "a": 18.31,
-                  "b": 15.77
+                  "b": 15.86
                 }
               },
               {
@@ -431,22 +431,22 @@
                 "leader": "a",
                 "projected_ppw": {
                   "a": 12.56,
-                  "b": 11.57
+                  "b": 11.23
                 }
               },
               {
                 "position": "K",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 7.43,
-                  "b": 7.57
+                  "a": 7.36,
+                  "b": 7.54
                 }
               },
               {
                 "position": "DEF",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 8.41,
+                  "a": 8.38,
                   "b": 10.83
                 }
               }
@@ -523,8 +523,8 @@
                 "position": "QB",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 21.5,
-                  "b": 18.75
+                  "a": 21.47,
+                  "b": 18.36
                 }
               },
               {
@@ -539,7 +539,7 @@
                 "position": "WR",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 19.02,
+                  "a": 18.6,
                   "b": 22.31
                 }
               },
@@ -555,16 +555,16 @@
                 "position": "K",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 7.41,
-                  "b": 7.93
+                  "a": 7.35,
+                  "b": 7.9
                 }
               },
               {
                 "position": "DEF",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 6.46,
-                  "b": 8.21
+                  "a": 6.39,
+                  "b": 8.18
                 }
               }
             ]
@@ -635,7 +635,7 @@
                 "leader": "a",
                 "projected_ppw": {
                   "a": 21.78,
-                  "b": 18.6
+                  "b": 19.35
                 }
               },
               {
@@ -650,7 +650,7 @@
                 "position": "WR",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 19.9,
+                  "a": 19.74,
                   "b": 21.55
                 }
               },
@@ -659,14 +659,14 @@
                 "leader": "b",
                 "projected_ppw": {
                   "a": 13.55,
-                  "b": 15.32
+                  "b": 15.11
                 }
               },
               {
                 "position": "K",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 8.27,
+                  "a": 8.23,
                   "b": 7.59
                 }
               },
@@ -674,7 +674,7 @@
                 "position": "DEF",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 6.25,
+                  "a": 6.28,
                   "b": 8.27
                 }
               }

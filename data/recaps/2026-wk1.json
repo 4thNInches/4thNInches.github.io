@@ -1,0 +1,21 @@
+{
+  "season": "2026",
+  "week": 1,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "ROK Navy's Finest left 73.8 points on the bench this week -- including 26.6 from Jaxson Dart, who never even got on the field."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "jschnides4's defense (well, their opponent's offense) did the work: Hurts Over 10.5int @-1000 finished with just 94.86."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "Not close: jschnides4 beat Hurts Over 10.5int @-1000 by 64.14 points, 159.0 to 94.86."
+    }
+  ]
+}
