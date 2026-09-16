@@ -324,7 +324,18 @@ def fetch_remaining_schedule(regular_season_weeks: int, completed_weeks: list) -
         matchups = sleeper_get(f"/league/{SLEEPER_LEAGUE_ID}/matchups/{week}")
         by_matchup_id: dict = {}
         for entry in matchups:
-            by_matchup_id.setdefault(entry["matchup_id"], []).append(entry["roster_id"])
+            # str() here is load-bearing, not cosmetic: team_ids in
+            # simulate_season() come from season_data["teams"] (always
+            # string roster ids, matching data/history/<season>.json),
+            # but Sleeper's live matchups endpoint returns roster_id as a
+            # raw JSON int. Without this cast, idx[a]/idx[b] in
+            # simulate_season() KeyErrors on every single call -- not
+            # occasionally, every time, since the type mismatch is
+            # unconditional. Caught from a real, continue-on-error-masked
+            # failure: this step showed green in the workflow (exit code
+            # swallowed on purpose) while silently never reaching
+            # append_to_log() underneath it.
+            by_matchup_id.setdefault(entry["matchup_id"], []).append(str(entry["roster_id"]))
         remaining.append([tuple(v) for v in by_matchup_id.values() if len(v) == 2])
     return remaining
 
