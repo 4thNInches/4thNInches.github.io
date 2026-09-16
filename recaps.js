@@ -61,6 +61,12 @@ async function buildAvatarLookup() {
   // display_name, metadata.avatar falls back to the account avatar. Reuses
   // script.js's avatarImg() to actually render it -- same reasoning as
   // reusing escapeHtml() above, not reimplementing a second copy.
+  //
+  // Also returns roster_id -> team_name, needed by the Season Plots
+  // power-rank chart below: data/power_log.json is keyed by roster_id
+  // with no team names in it at all, so this is the only place that
+  // mapping exists on this page. One shared fetch backs both lookups
+  // rather than hitting Sleeper twice for the same users/rosters.
   try {
     const [users, rosters] = await Promise.all([
       fetch(`${SLEEPER_API}/league/${RECAPS_SLEEPER_LEAGUE_ID}/users`).then(r => r.json()),
@@ -70,17 +76,30 @@ async function buildAvatarLookup() {
     users.forEach(u => { userById[u.user_id] = u; });
 
     const lookup = {};
+    const teamNameByRosterId = {};
     rosters.forEach(r => {
       const u = userById[r.owner_id];
       if (!u) return;
       const teamName = (u.metadata && u.metadata.team_name) || u.display_name;
       const avatarId = (u.metadata && u.metadata.avatar) || u.avatar || null;
-      if (teamName) lookup[teamName] = avatarId;
+      if (teamName) {
+        lookup[teamName] = avatarId;
+        teamNameByRosterId[r.roster_id] = teamName;
+      }
     });
-    return lookup;
+    return { lookup, teamNameByRosterId };
   } catch {
-    return {}; // avatarImg() already renders a graceful empty placeholder for a missing id
+    return { lookup: {}, teamNameByRosterId: {} }; // avatarImg() already renders a graceful empty placeholder for a missing id
   }
+}
+
+function avatarUrl(avatarId) {
+  // Mirrors avatarImg()'s URL resolution above -- duplicated rather than
+  // shared because SVG <image> needs a bare URL string, not the <img>
+  // markup avatarImg() returns. Keep both in sync if Sleeper's avatar URL
+  // scheme ever changes.
+  if (!avatarId) return null;
+  return /^https?:\/\//i.test(avatarId) ? avatarId : `https://sleepercdn.com/avatars/thumbs/${avatarId}`;
 }
 
 function renderMatchup(m, avatarLookup) {
@@ -173,7 +192,7 @@ async function loadRecap(season, week) {
 
 async function init() {
   let { season, week } = getWeekFromUrl();
-  const avatarLookupPromise = buildAvatarLookup(); // kick off in parallel, don't block week detection on it
+  const lookupsPromise = buildAvatarLookup(); // kick off in parallel, don't block week detection on it
 
   if (season === null || week === null) {
     const defaults = await detectDefaultSeasonWeek();
@@ -182,9 +201,10 @@ async function init() {
   }
   setWeekInUrl(season, week);
 
-  const avatarLookup = await avatarLookupPromise;
+  const { lookup: avatarLookup, teamNameByRosterId } = await lookupsPromise;
   loadPreviews(season, week, avatarLookup);
   loadRecap(season, week);
+  loadSeasonPlots(teamNameByRosterId, avatarLookup); // independent of week -- always current season
 
   document.getElementById("prev-week-btn").addEventListener("click", () => {
     if (week <= 1) return;
@@ -203,3 +223,253 @@ async function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
+// ============================================================
+// Season Plots -- independent of the week nav above; always shows the
+// CURRENT season state (recaps-roadmap.md Section 6b, "settled": one
+// live data source, not tied to whichever week's recap/preview is being
+// viewed elsewhere on this page). Reads data/season_plots.json (Lady
+// Luck/Xwins, positional PPW, flex distribution -- computed by
+// compute_season_plots.py) and data/power_log.json directly for the
+// power-rank-history chart. That file is NOT recomputed here -- it
+// already exists, written weekly by compute_power_stats.py, so
+// repackaging it into season_plots.json would just create a second
+// source of truth for the same numbers.
+//
+// Charts are hand-built SVG/HTML, not a charting library -- there's no
+// charting precedent anywhere else on this site, and a library's
+// canvas-based theming fights transparent backgrounds + CSS custom
+// properties more than it helps for four fairly simple chart shapes.
+// Every stroke/fill below is a var(--...) reference, so retinting
+// style.css's tokens re-themes these charts automatically.
+// ============================================================
+
+function niceDomain(values, pad = 1) {
+  const min = Math.min(...values), max = Math.max(...values);
+  return [Math.floor(min - pad), Math.ceil(max + pad)];
+}
+
+function scaleLinear(domain, range) {
+  const span = (domain[1] - domain[0]) || 1;
+  return (v) => range[0] + ((v - domain[0]) / span) * (range[1] - range[0]);
+}
+
+function domId(prefix, raw) {
+  return `${prefix}-${String(raw)}`.replace(/[^a-zA-Z0-9_-]/g, "");
+}
+
+// ---------- Lady Luck: actual wins vs. expected wins (Xwins) ----------
+
+function renderLadyLuck(teams, avatarByTeamName) {
+  const entries = Object.values(teams || {});
+  if (entries.length === 0) return `<p class="loading-msg">No data yet.</p>`;
+
+  const [domMin, domMax] = niceDomain(entries.flatMap(t => [t.wins, t.xwins]), 1);
+  const W = 560, H = 360, M = { top: 12, right: 16, bottom: 44, left: 34 };
+  const plotW = W - M.left - M.right, plotH = H - M.top - M.bottom;
+  const sx = scaleLinear([domMin, domMax], [0, plotW]);
+  const sy = scaleLinear([domMin, domMax], [plotH, 0]);
+
+  const ticks = [];
+  for (let v = Math.ceil(domMin); v <= Math.floor(domMax); v++) ticks.push(v);
+
+  const gridLines = ticks.map(v => `
+    <line class="chart-grid-line" x1="${sx(v)}" y1="0" x2="${sx(v)}" y2="${plotH}" />
+    <line class="chart-grid-line" x1="0" y1="${sy(v)}" x2="${plotW}" y2="${sy(v)}" />`).join("");
+
+  const tickLabels = ticks.map(v => `
+    <text class="chart-axis-label" x="${sx(v)}" y="${plotH + 16}" text-anchor="middle">${v}</text>
+    <text class="chart-axis-label" x="-8" y="${sy(v) + 3}" text-anchor="end">${v}</text>`).join("");
+
+  const diagonal = `<line x1="${sx(domMin)}" y1="${sy(domMin)}" x2="${sx(domMax)}" y2="${sy(domMax)}"
+    stroke="var(--chalk-dim)" stroke-width="1" stroke-dasharray="4 4" />`;
+
+  const points = entries.map(t => {
+    const cx = sx(t.xwins), cy = sy(t.wins);
+    const url = avatarUrl((avatarByTeamName || {})[t.team_name]);
+    const clipId = domId("luck-clip", t.team_name);
+    const deltaLabel = `${t.luck_delta >= 0 ? "+" : ""}${t.luck_delta}`;
+    const img = url ? `
+      <clipPath id="${clipId}"><circle cx="${cx}" cy="${cy}" r="11" /></clipPath>
+      <image href="${url}" x="${cx - 11}" y="${cy - 11}" width="22" height="22"
+             clip-path="url(#${clipId})" onerror="this.remove()" />` : "";
+    return `
+      <g>
+        <circle cx="${cx}" cy="${cy}" r="11" fill="var(--marker)" opacity="0.28" />
+        ${img}
+        <circle cx="${cx}" cy="${cy}" r="11" fill="none" stroke="var(--field)" stroke-width="1.5" />
+        <title>${escapeHtml(t.team_name)}: ${t.wins} actual wins vs ${t.xwins} expected (${deltaLabel})</title>
+      </g>`;
+  }).join("");
+
+  return `
+    <svg class="chart-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Lady Luck: actual wins versus expected wins">
+      <g transform="translate(${M.left},${M.top})">
+        ${gridLines}
+        ${diagonal}
+        ${tickLabels}
+        ${points}
+        <text class="chart-axis-label" x="${plotW / 2}" y="${plotH + 34}" text-anchor="middle">EXPECTED WINS (XWINS)</text>
+        <text class="chart-axis-label" x="${-plotH / 2}" y="-24" text-anchor="middle" transform="rotate(-90)">ACTUAL WINS</text>
+      </g>
+    </svg>
+    <p class="chart-caption">Above the dashed line: winning more than their weekly scores alone would predict. Below it: the reverse.</p>`;
+}
+
+// ---------- Positional PPW: ranked mini bar-lists (HTML/CSS, not SVG --
+// a ranked list is simpler and more legible this way than as bar-chart SVG) ----------
+
+const PPW_POSITIONS = ["QB", "RB", "WR", "TE", "K", "DEF"];
+
+function renderPositionalPpw(teams) {
+  const entries = Object.values(teams || {});
+  const panels = PPW_POSITIONS.map(pos => {
+    const rows = entries
+      .filter(t => t.positional_ppw && t.positional_ppw[pos] != null)
+      .map(t => ({ name: t.team_name, value: t.positional_ppw[pos] }))
+      .sort((a, b) => b.value - a.value);
+    if (rows.length === 0) return "";
+    const max = rows[0].value || 1;
+    const rowsHtml = rows.map(r => `
+      <div class="ppw-row">
+        <span class="ppw-row-name" title="${escapeHtml(r.name)}">${escapeHtml(r.name)}</span>
+        <span class="ppw-row-bar-track"><span class="ppw-row-bar-fill" style="width:${Math.max(4, (r.value / max) * 100)}%"></span></span>
+        <span class="ppw-row-value">${r.value.toFixed(1)}</span>
+      </div>`).join("");
+    return `
+      <div class="ppw-panel">
+        <p class="ppw-panel-title">${pos}</p>
+        ${rowsHtml}
+      </div>`;
+  }).join("");
+
+  return panels || `<p class="loading-msg">No positional data yet.</p>`;
+}
+
+// ---------- Flex distribution: single stacked bar (HTML/CSS, not SVG) ----------
+
+// Colors pulled from --chart-1..4 (defined in style.css) rather than
+// hardcoded here -- RB/WR/TE/QB are the only flex-eligible positions
+// (see compute_season_plots.py's FLEX_ELIGIBLE), so 4 categories is the
+// ceiling, never more.
+const FLEX_COLORS = { RB: "var(--chart-1)", WR: "var(--chart-2)", TE: "var(--chart-3)", QB: "var(--chart-4)" };
+const FLEX_ORDER = ["RB", "WR", "TE", "QB"];
+
+function renderFlexDistribution(flexDistribution) {
+  const entries = FLEX_ORDER.filter(pos => (flexDistribution || {})[pos] != null);
+  if (entries.length === 0) return `<p class="loading-msg">No flex starts recorded yet.</p>`;
+
+  const segments = entries.map(pos => `<span class="flex-bar-segment" style="width:${flexDistribution[pos]}%; background:${FLEX_COLORS[pos]}"></span>`).join("");
+  const legend = entries.map(pos => `
+    <span class="chart-legend-item">
+      <span class="chart-legend-swatch" style="background:${FLEX_COLORS[pos]}"></span>
+      ${pos} &middot; ${flexDistribution[pos]}%
+    </span>`).join("");
+
+  return `<div class="flex-bar-track">${segments}</div><div class="chart-legend">${legend}</div>`;
+}
+
+// ---------- Power rankings history: multi-line, hover-highlight one team at a time ----------
+
+function renderPowerRankHistory(logEntries, season, teamNameByRosterId) {
+  const seasonEntries = (logEntries || []).filter(e => e.season === season).sort((a, b) => a.week - b.week);
+  if (seasonEntries.length === 0) return `<p class="loading-msg">No power-rank history logged yet.</p>`;
+
+  const rosterIds = new Set();
+  seasonEntries.forEach(e => Object.keys(e.teams).forEach(tid => rosterIds.add(tid)));
+
+  const series = Array.from(rosterIds).map(tid => ({
+    tid,
+    teamName: (teamNameByRosterId || {})[tid] || `Roster ${tid}`,
+    points: seasonEntries
+      .filter(e => e.teams[tid] && e.teams[tid].power_score != null)
+      .map(e => ({ week: e.week, score: e.teams[tid].power_score })),
+  })).filter(s => s.points.length > 0);
+  if (series.length === 0) return `<p class="loading-msg">No power-rank history logged yet.</p>`;
+
+  const weeks = seasonEntries.map(e => e.week);
+  const [wMin, wMax] = [Math.min(...weeks), Math.max(...weeks)];
+  const [sMin, sMax] = niceDomain(series.flatMap(s => s.points.map(p => p.score)), 2);
+
+  const W = 560, H = 340, M = { top: 12, right: 16, bottom: 32, left: 34 };
+  const plotW = W - M.left - M.right, plotH = H - M.top - M.bottom;
+  const sx = scaleLinear([wMin, wMax], [0, plotW]);
+  const sy = scaleLinear([sMin, sMax], [plotH, 0]);
+
+  const weekTicks = [];
+  for (let w = wMin; w <= wMax; w++) weekTicks.push(w);
+  const gridLines = weekTicks.map(w => `<line class="chart-grid-line" x1="${sx(w)}" y1="0" x2="${sx(w)}" y2="${plotH}" />`).join("");
+  const tickLabels = weekTicks.map(w => `<text class="chart-axis-label" x="${sx(w)}" y="${plotH + 16}" text-anchor="middle">W${w}</text>`).join("");
+
+  const lines = series.map(s => {
+    const pts = s.points.map(p => `${sx(p.week)},${sy(p.score)}`).join(" ");
+    return `<polyline id="${domId("pr", s.tid)}" class="power-rank-line" points="${pts}"><title>${escapeHtml(s.teamName)}</title></polyline>`;
+  }).join("");
+
+  const legend = series.map(s => `<span class="chart-legend-item" data-target="${domId("pr", s.tid)}">${escapeHtml(s.teamName)}</span>`).join("");
+
+  return `
+    <svg class="chart-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Power score history by week">
+      <g transform="translate(${M.left},${M.top})">
+        ${gridLines}
+        ${tickLabels}
+        ${lines}
+      </g>
+    </svg>
+    <div class="chart-legend" id="power-rank-legend">${legend}</div>`;
+}
+
+function wirePowerRankHover(container) {
+  // Plain event listeners rather than a :has()-based CSS trick -- matches
+  // this codebase's existing preference (see the lifetime-toggle switch
+  // in style.css) for explicit, broadly-supported behavior over newer
+  // selector tricks.
+  const legend = container.querySelector("#power-rank-legend");
+  if (!legend) return;
+  legend.querySelectorAll(".chart-legend-item").forEach(item => {
+    const line = container.querySelector(`#${item.dataset.target}`);
+    if (!line) return;
+    const activate = () => { line.classList.add("is-active"); item.classList.add("is-active"); };
+    const deactivate = () => { line.classList.remove("is-active"); item.classList.remove("is-active"); };
+    item.addEventListener("mouseenter", activate);
+    item.addEventListener("mouseleave", deactivate);
+    line.addEventListener("mouseenter", activate);
+    line.addEventListener("mouseleave", deactivate);
+  });
+}
+
+// ---------- assembly ----------
+
+function chartCard(kicker, title, bodyHtml, wide) {
+  return `
+    <div class="card chart-card${wide ? " chart-card-wide" : ""}">
+      <p class="placeholder-kicker">${escapeHtml(kicker)}</p>
+      <h3 class="chart-title">${escapeHtml(title)}</h3>
+      ${bodyHtml}
+    </div>`;
+}
+
+async function loadSeasonPlots(teamNameByRosterId, avatarByTeamName) {
+  const container = document.getElementById("season-plots-content");
+  try {
+    const [plotsRes, logRes] = await Promise.all([
+      fetch("data/season_plots.json"),
+      fetch("data/power_log.json"),
+    ]);
+    if (!plotsRes.ok) throw new Error("No season plot data generated yet.");
+    const plots = await plotsRes.json();
+    const log = logRes.ok ? await logRes.json() : { entries: [] };
+
+    container.innerHTML = `
+      <div class="season-plots-grid">
+        ${chartCard("LADY LUCK", "Actual Wins vs. Expected Wins", renderLadyLuck(plots.teams, avatarByTeamName), true)}
+        ${chartCard("POWER RANKINGS", "A Season's Glance", renderPowerRankHistory(log.entries || [], plots.season, teamNameByRosterId), true)}
+        ${chartCard("POSITIONAL PPW", "Points Per Week by Slot", renderPositionalPpw(plots.teams))}
+        ${chartCard("START FLEXIN'", "Flex Slot Usage League-Wide", renderFlexDistribution(plots.flex_distribution || {}))}
+      </div>`;
+
+    wirePowerRankHover(container);
+  } catch (err) {
+    container.innerHTML = `<p class="loading-msg">${escapeHtml(err.message)}</p>`;
+  }
+}

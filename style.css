@@ -1022,3 +1022,175 @@ a { color: inherit; }
   color: var(--chalk-dim);
   margin: 0;
 }
+
+/* ---------- season plots charts ---------- */
+:root {
+  /* Two extra categorical accents for charts that need more than the
+     theme's two named accents (marker, brass) -- e.g. flex distribution
+     has up to 4 categories (QB/RB/WR/TE). --chart-1/2 just alias the
+     existing accents so every chart draws from one four-color list;
+     --chart-4 is the only genuinely new hue, a muted "turf" green kept
+     close to the field-at-dusk palette rather than an arbitrary color. */
+  --chart-1: var(--marker);
+  --chart-2: var(--brass);
+  --chart-3: var(--chalk-dim);
+  --chart-4: #6f9c86;
+}
+
+.season-plots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.chart-card-wide { grid-column: 1 / -1; }
+
+@media (max-width: 720px) {
+  .season-plots-grid { grid-template-columns: 1fr; }
+}
+
+.chart-card { overflow-x: auto; }
+
+.chart-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 16px;
+}
+
+.chart-caption {
+  font-size: 0.8rem;
+  color: var(--chalk-dim);
+  margin: 12px 0 0;
+}
+
+.chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+  font-family: var(--font-mono);
+}
+
+.chart-axis-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  fill: var(--chalk-dim);
+}
+
+.chart-grid-line {
+  stroke: var(--field-line);
+  stroke-width: 1;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 14px;
+}
+
+.chart-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--chalk-dim);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease;
+}
+
+.chart-legend-item:hover,
+.chart-legend-item.is-active {
+  color: var(--chalk);
+}
+
+.chart-legend-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ---- positional PPW: ranked mini bar-lists ---- */
+.ppw-panel + .ppw-panel { margin-top: 20px; }
+
+.ppw-panel-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin: 0 0 10px;
+}
+
+.ppw-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.ppw-row-name {
+  width: 40%;
+  flex-shrink: 0;
+  color: var(--chalk-dim);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ppw-row-bar-track {
+  flex: 1;
+  height: 10px;
+  background: var(--field-line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ppw-row-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--marker);
+  border-radius: 2px;
+}
+
+.ppw-row-value {
+  width: 38px;
+  flex-shrink: 0;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--chalk);
+}
+
+/* ---- flex distribution: single stacked bar ---- */
+.flex-bar-track {
+  display: flex;
+  width: 100%;
+  height: 22px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--field-line);
+}
+
+.flex-bar-segment { display: block; height: 100%; }
+
+/* ---- power rankings history: multi-line, one highlighted at a time ---- */
+.power-rank-line {
+  fill: none;
+  stroke: var(--chalk-dim);
+  stroke-width: 1.5;
+  opacity: 0.5;
+  transition: stroke 0.15s ease, stroke-width 0.15s ease, opacity 0.15s ease;
+}
+
+.power-rank-line.is-active {
+  stroke: var(--marker);
+  stroke-width: 3;
+  opacity: 1;
+}
