@@ -19,7 +19,13 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests
+        # numpy added alongside requests -- export_sleeper_feed.py now
+        # imports compute_power_stats (for fetch_projected_points, reused
+        # for the ticker's projected-total column), and that module
+        # imports numpy at the top unconditionally. Nothing else new:
+        # compute_power_stats.py's only third-party imports are numpy and
+        # requests, and requests was already here.
+        run: pip install requests numpy
 
       # GitHub Actions runners are fresh VMs every run, so the script's own
       # on-disk cache check (data/.players_cache.json) does nothing across
