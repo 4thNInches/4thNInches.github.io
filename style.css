@@ -1182,15 +1182,29 @@ a { color: inherit; }
 
 /* ---- power rankings history: multi-line, one highlighted at a time ---- */
 .power-rank-line {
+  opacity: 0.55;
+  transition: opacity 0.15s ease;
+}
+
+.power-rank-line polyline {
   fill: none;
   stroke: var(--chalk-dim);
   stroke-width: 1.5;
-  opacity: 0.5;
-  transition: stroke 0.15s ease, stroke-width 0.15s ease, opacity 0.15s ease;
+  transition: stroke 0.15s ease, stroke-width 0.15s ease;
 }
 
-.power-rank-line.is-active {
+.power-rank-line circle {
+  fill: var(--chalk-dim);
+  transition: fill 0.15s ease;
+}
+
+.power-rank-line.is-active { opacity: 1; }
+
+.power-rank-line.is-active polyline {
   stroke: var(--marker);
   stroke-width: 3;
-  opacity: 1;
+}
+
+.power-rank-line.is-active circle {
+  fill: var(--marker);
 }

@@ -264,7 +264,14 @@ function renderLadyLuck(teams, avatarByTeamName) {
   const entries = Object.values(teams || {});
   if (entries.length === 0) return `<p class="loading-msg">No data yet.</p>`;
 
-  const [domMin, domMax] = niceDomain(entries.flatMap(t => [t.wins, t.xwins]), 1);
+  // Tight, non-integer-snapped padding (0.1, not niceDomain's whole-number
+  // pad-by-1) -- early season, wins/xwins both sit in [0,1], and a whole-
+  // integer pad wastes most of the chart on empty space. Stays correct
+  // later in the season too: it just tracks whatever range the data
+  // actually spans, plus a small margin, rather than a fixed literal.
+  const rawVals = entries.flatMap(t => [t.wins, t.xwins]);
+  const domMin = Math.min(...rawVals) - 0.1;
+  const domMax = Math.max(...rawVals) + 0.1;
   const W = 560, H = 360, M = { top: 12, right: 16, bottom: 44, left: 34 };
   const plotW = W - M.left - M.right, plotH = H - M.top - M.bottom;
   const sx = scaleLinear([domMin, domMax], [0, plotW]);
@@ -393,7 +400,11 @@ function renderPowerRankHistory(logEntries, season, teamNameByRosterId) {
 
   const W = 560, H = 340, M = { top: 12, right: 16, bottom: 32, left: 34 };
   const plotW = W - M.left - M.right, plotH = H - M.top - M.bottom;
-  const sx = scaleLinear([wMin, wMax], [0, plotW]);
+  // Only one week logged so far -- no span to scale a week-axis against.
+  // Center that single week rather than dividing by a zero-width domain
+  // (which scaleLinear would otherwise do, via its own `|| 1` guard, but
+  // landing everything at x=0 rather than a sensible mid-chart position).
+  const sx = wMin === wMax ? () => plotW / 2 : scaleLinear([wMin, wMax], [0, plotW]);
   const sy = scaleLinear([sMin, sMax], [plotH, 0]);
 
   const weekTicks = [];
@@ -402,8 +413,17 @@ function renderPowerRankHistory(logEntries, season, teamNameByRosterId) {
   const tickLabels = weekTicks.map(w => `<text class="chart-axis-label" x="${sx(w)}" y="${plotH + 16}" text-anchor="middle">W${w}</text>`).join("");
 
   const lines = series.map(s => {
-    const pts = s.points.map(p => `${sx(p.week)},${sy(p.score)}`).join(" ");
-    return `<polyline id="${domId("pr", s.tid)}" class="power-rank-line" points="${pts}"><title>${escapeHtml(s.teamName)}</title></polyline>`;
+    const coords = s.points.map(p => [sx(p.week), sy(p.score)]);
+    // A <polyline> needs 2+ points to draw any visible stroke at all --
+    // with only one week logged so far, that's every series right now.
+    // Dots are drawn for every point regardless, so the very first
+    // logged week is already visible, not just once there's enough
+    // history for a line to connect.
+    const polyline = coords.length > 1
+      ? `<polyline points="${coords.map(([x, y]) => `${x},${y}`).join(" ")}" />`
+      : "";
+    const dots = coords.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3" />`).join("");
+    return `<g id="${domId("pr", s.tid)}" class="power-rank-line">${polyline}${dots}<title>${escapeHtml(s.teamName)}</title></g>`;
   }).join("");
 
   const legend = series.map(s => `<span class="chart-legend-item" data-target="${domId("pr", s.tid)}">${escapeHtml(s.teamName)}</span>`).join("");
