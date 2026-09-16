@@ -378,7 +378,7 @@ function renderFlexDistribution(flexDistribution) {
 
 // ---------- Power rankings history: multi-line, hover-highlight one team at a time ----------
 
-function renderPowerRankHistory(logEntries, season, teamNameByRosterId) {
+function renderPowerRankHistory(logEntries, season, teamNameByRosterId, avatarByTeamName) {
   const seasonEntries = (logEntries || []).filter(e => e.season === season).sort((a, b) => a.week - b.week);
   if (seasonEntries.length === 0) return `<p class="loading-msg">No power-rank history logged yet.</p>`;
 
@@ -400,10 +400,6 @@ function renderPowerRankHistory(logEntries, season, teamNameByRosterId) {
 
   const W = 560, H = 340, M = { top: 12, right: 16, bottom: 32, left: 34 };
   const plotW = W - M.left - M.right, plotH = H - M.top - M.bottom;
-  // Only one week logged so far -- no span to scale a week-axis against.
-  // Center that single week rather than dividing by a zero-width domain
-  // (which scaleLinear would otherwise do, via its own `|| 1` guard, but
-  // landing everything at x=0 rather than a sensible mid-chart position).
   const sx = wMin === wMax ? () => plotW / 2 : scaleLinear([wMin, wMax], [0, plotW]);
   const sy = scaleLinear([sMin, sMax], [plotH, 0]);
 
@@ -413,16 +409,17 @@ function renderPowerRankHistory(logEntries, season, teamNameByRosterId) {
   const tickLabels = weekTicks.map(w => `<text class="chart-axis-label" x="${sx(w)}" y="${plotH + 16}" text-anchor="middle">W${w}</text>`).join("");
 
   const lines = series.map(s => {
-    const coords = s.points.map(p => [sx(p.week), sy(p.score)]);
+    const avatarSrc = avatarUrl((avatarByTeamName || {})[s.teamName]);
+    const coords = s.points.map(p => ({ week: p.week, x: sx(p.week), y: sy(p.score) }));
     // A <polyline> needs 2+ points to draw any visible stroke at all --
     // with only one week logged so far, that's every series right now.
     // Dots are drawn for every point regardless, so the very first
     // logged week is already visible, not just once there's enough
     // history for a line to connect.
     const polyline = coords.length > 1
-      ? `<polyline points="${coords.map(([x, y]) => `${x},${y}`).join(" ")}" />`
+      ? `<polyline points="${coords.map(c => `${c.x},${c.y}`).join(" ")}" />`
       : "";
-    const dots = coords.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3" />`).join("");
+    const dots = coords.map(c => renderPowerRankDot(c.x, c.y, avatarSrc, domId("pr-clip", `${s.tid}-${c.week}`))).join("");
     return `<g id="${domId("pr", s.tid)}" class="power-rank-line">${polyline}${dots}<title>${escapeHtml(s.teamName)}</title></g>`;
   }).join("");
 
@@ -437,6 +434,23 @@ function renderPowerRankHistory(logEntries, season, teamNameByRosterId) {
       </g>
     </svg>
     <div class="chart-legend" id="power-rank-legend">${legend}</div>`;
+}
+
+function renderPowerRankDot(x, y, avatarSrc, clipId) {
+  // Same layered approach as Lady Luck's markers: a colored fallback
+  // circle drawn first (always visible), the team's avatar clipped on
+  // top if one resolves, and a thin ring on top of both -- the ring is
+  // what actually brightens on hover (a raster image can't be recolored
+  // via CSS the way a <circle fill> can).
+  const r = 7, innerR = r - 1.5;
+  const img = avatarSrc ? `
+    <clipPath id="${clipId}"><circle cx="${x}" cy="${y}" r="${innerR}" /></clipPath>
+    <image href="${avatarSrc}" x="${x - innerR}" y="${y - innerR}" width="${innerR * 2}" height="${innerR * 2}"
+           clip-path="url(#${clipId})" onerror="this.remove()" />` : "";
+  return `
+    <circle class="pr-dot-fallback" cx="${x}" cy="${y}" r="${innerR}" />
+    ${img}
+    <circle class="pr-dot-ring" cx="${x}" cy="${y}" r="${r}" />`;
 }
 
 function wirePowerRankHover(container) {
@@ -456,6 +470,53 @@ function wirePowerRankHover(container) {
     line.addEventListener("mouseenter", activate);
     line.addEventListener("mouseleave", deactivate);
   });
+}
+
+// ---------- What-If Schedule: same Xwins computation as Lady Luck, table
+// form instead of a scatter -- distinct plot per recaps-roadmap.md
+// Section 6b/6c ("what-if schedule" and "Lady Luck" are listed as two
+// separate season plots, not one). A table reads exact numbers more
+// easily than a scatter, and -- per that same section -- can render
+// meaningfully at Week 1 (0-0 for everyone) even when a scatter plot of
+// all-zero points wouldn't be worth drawing. No new backend computation
+// needed: season_plots.json's wins/losses/ties/xwins/luck_delta already
+// have everything this table needs. ----------
+
+function formatRecord(wins, losses, ties) {
+  return ties ? `${wins}-${losses}-${ties}` : `${wins}-${losses}`;
+}
+
+function renderWhatIfSchedule(teams, weeksComplete) {
+  const entries = Object.values(teams || {}).sort((a, b) => b.luck_delta - a.luck_delta);
+  if (entries.length === 0) return `<p class="loading-msg">No data yet.</p>`;
+
+  const rows = entries.map(t => {
+    const whatIfWins = t.xwins;
+    const whatIfLosses = Math.max(0, (weeksComplete || 0) - t.xwins);
+    const deltaClass = t.luck_delta > 0 ? "whatif-luck-positive" : "whatif-luck-neutral";
+    const deltaLabel = `${t.luck_delta >= 0 ? "+" : ""}${t.luck_delta.toFixed(1)}`;
+    return `
+      <tr>
+        <td class="whatif-team-cell">${escapeHtml(t.team_name)}</td>
+        <td>${formatRecord(t.wins, t.losses, t.ties)}</td>
+        <td>${whatIfWins.toFixed(1)}-${whatIfLosses.toFixed(1)}</td>
+        <td class="${deltaClass}">${deltaLabel}</td>
+      </tr>`;
+  }).join("");
+
+  return `
+    <table class="whatif-real-table">
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Actual</th>
+          <th>What-If</th>
+          <th>Luck</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <p class="chart-caption">"What-If" is the record each team's weekly scores alone would predict, ignoring who they actually played -- the same Xwins used in Lady Luck above, just as exact numbers instead of a scatter.</p>`;
 }
 
 // ---------- assembly ----------
@@ -483,9 +544,10 @@ async function loadSeasonPlots(teamNameByRosterId, avatarByTeamName) {
     container.innerHTML = `
       <div class="season-plots-grid">
         ${chartCard("LADY LUCK", "Actual Wins vs. Expected Wins", renderLadyLuck(plots.teams, avatarByTeamName), true)}
-        ${chartCard("POWER RANKINGS", "A Season's Glance", renderPowerRankHistory(log.entries || [], plots.season, teamNameByRosterId), true)}
+        ${chartCard("POWER RANKINGS", "A Season's Glance", renderPowerRankHistory(log.entries || [], plots.season, teamNameByRosterId, avatarByTeamName), true)}
         ${chartCard("POSITIONAL PPW", "Points Per Week by Slot", renderPositionalPpw(plots.teams))}
         ${chartCard("START FLEXIN'", "Flex Slot Usage League-Wide", renderFlexDistribution(plots.flex_distribution || {}))}
+        ${chartCard("WHAT-IF SCHEDULE", "Record vs. a Neutral Schedule", renderWhatIfSchedule(plots.teams, plots.weeks_complete))}
       </div>`;
 
     wirePowerRankHover(container);

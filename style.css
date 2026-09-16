@@ -1178,7 +1178,56 @@ a { color: inherit; }
   background: var(--field-line);
 }
 
-.flex-bar-segment { display: block; height: 100%; }
+.flex-bar-segment {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.flex-bar-segment:not(:first-child) {
+  border-left: 2px solid var(--field);
+}
+
+/* ---- what-if schedule: same computation as Lady Luck, table form ---- */
+.whatif-real-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.whatif-real-table thead th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--chalk-dim);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--field-line);
+}
+
+.whatif-real-table tbody tr {
+  border-bottom: 1px solid var(--field-line);
+  transition: background 0.15s ease;
+}
+
+.whatif-real-table tbody tr:hover {
+  background: rgba(244, 241, 232, 0.03);
+}
+
+.whatif-real-table td {
+  padding: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.whatif-team-cell {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--chalk);
+}
+
+.whatif-luck-positive { color: var(--marker); }
+.whatif-luck-neutral { color: var(--chalk-dim); }
 
 /* ---- power rankings history: multi-line, one highlighted at a time ---- */
 .power-rank-line {
@@ -1193,9 +1242,16 @@ a { color: inherit; }
   transition: stroke 0.15s ease, stroke-width 0.15s ease;
 }
 
-.power-rank-line circle {
+.power-rank-line .pr-dot-fallback {
   fill: var(--chalk-dim);
   transition: fill 0.15s ease;
+}
+
+.power-rank-line .pr-dot-ring {
+  fill: none;
+  stroke: var(--field);
+  stroke-width: 1.5;
+  transition: stroke 0.15s ease, stroke-width 0.15s ease;
 }
 
 .power-rank-line.is-active { opacity: 1; }
@@ -1205,6 +1261,11 @@ a { color: inherit; }
   stroke-width: 3;
 }
 
-.power-rank-line.is-active circle {
+.power-rank-line.is-active .pr-dot-fallback {
   fill: var(--marker);
+}
+
+.power-rank-line.is-active .pr-dot-ring {
+  stroke: var(--marker);
+  stroke-width: 2;
 }
