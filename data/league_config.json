@@ -1,0 +1,25 @@
+{
+  "sleeper_league_id": "1392229432336347136",
+
+  "manager_identities": {
+    "684050990101504000": "nick",
+    "684091770841165824": "john",
+    "684101253923418112": "mark",
+    "870464286609313792": "kodi",
+    "884851377262829568": "mikey_g",
+    "966417154155261952": "matt",
+    "1002733712884359168": "owen",
+    "1014914132291805184": "dennis",
+    "1126229965009297408": "anthony",
+    "1129123243807399936": "bob",
+    "1390859945867476992": "bill_m",
+    "1393763098669621248": "mikey_k"
+  },
+
+  "award_names": {
+    "best_bench": "Best Bench",
+    "you_didnt_lose": "You Didn't Lose!",
+    "great_defense": "Great Defense!",
+    "mega_blowout": "Mega Blowout"
+  }
+}
