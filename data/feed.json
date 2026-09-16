@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T16:16:59.112149+00:00",
+  "generated_at": "2026-09-16T20:17:19.466538+00:00",
   "window_days": 7,
   "items": [
     {
@@ -255,36 +255,6 @@
       },
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1403453038441558017",
-      "timestamp": 1788971788562,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "5001",
-        "name": "Dalton Schultz",
-        "position": "TE"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1403452601424482304",
-      "timestamp": 1788971684369,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "9502",
-        "name": "Tank Dell",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
