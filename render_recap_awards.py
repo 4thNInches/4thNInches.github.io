@@ -101,6 +101,56 @@ RENDERERS = {
 }
 
 
+# ============================================================
+# League-wide recap context -- "how the week went" as a short lede
+# paragraph, distinct from the four per-award storylines above. Always
+# states the weekly point total, then up to two "ranks Nth all-time"
+# call-outs IF something this week is actually notable (top-10 all-time)
+# -- otherwise stays with just the total, matching how the real write-ups
+# this was pattern-mined from often report a perfectly ordinary week
+# without reaching for a superlative that isn't there.
+# ============================================================
+
+def render_recap_context(context: dict, seed_key: str) -> str:
+    lede_variants = [
+        f"The league combined for {context['weekly_total']} points this week ({context['weekly_avg']} per team).",
+        f"Across all {context['num_teams']} teams, the week added up to {context['weekly_total']} points -- {context['weekly_avg']} on average.",
+        f"This week's {context['num_teams']} teams put up {context['weekly_total']} points between them, {context['weekly_avg']} a team.",
+    ]
+    sentences = [pick(lede_variants, seed_key + "_lede")]
+
+    notable = [c for c in context.get("candidates", []) if c["rank"] <= 10][:2]
+    for c in notable:
+        d, seed = c["data"], seed_key + "_" + c["type"]
+        if c["type"] == "closest_game":
+            winner, loser = (d["team_a"], d["team_b"]) if d["score_a"] > d["score_b"] else (d["team_b"], d["team_a"])
+            variants = [
+                f"{winner} escaped with a {d['margin']}-point win over {loser} -- the {_ordinal(c['rank'])} closest game in league history.",
+                f"It doesn't get much tighter than {winner}'s {d['margin']}-point squeaker over {loser}, the {_ordinal(c['rank'])} slimmest margin ever.",
+            ]
+        elif c["type"] == "biggest_blowout":
+            winner, loser = (d["team_a"], d["team_b"]) if d["score_a"] > d["score_b"] else (d["team_b"], d["team_a"])
+            variants = [
+                f"{winner} throttled {loser} by {d['margin']} points -- the {_ordinal(c['rank'])}-biggest blowout in league history.",
+                f"Not close: {winner} put {d['margin']} points on {loser}, the {_ordinal(c['rank'])}-largest margin the league has ever seen.",
+            ]
+        elif c["type"] == "highest_score":
+            variants = [
+                f"{d['team_name']}'s {d['score']} points led the week -- the {_ordinal(c['rank'])}-highest single score in league history.",
+                f"Nobody topped {d['team_name']}'s {d['score']}, good for the {_ordinal(c['rank'])}-best week any team has ever had.",
+            ]
+        elif c["type"] == "lowest_score":
+            variants = [
+                f"{d['team_name']} could only muster {d['score']} points -- the {_ordinal(c['rank'])}-worst score in league history.",
+                f"{d['team_name']}'s {d['score']}-point week ranks {_ordinal(c['rank'])} on the all-time list nobody wants to be on.",
+            ]
+        else:
+            continue
+        sentences.append(pick(variants, seed))
+
+    return " ".join(sentences)
+
+
 def render_award(award: dict, season: int, week: int) -> dict:
     seed_key = f"{season}-{week}-{award['type']}"
     text = RENDERERS[award["type"]](award["data"], seed_key)
@@ -153,6 +203,11 @@ def main():
     doc = json.loads(args.recap_file.read_text())
     rendered = [render_award(a, doc["season"], doc["week"]) for a in doc["awards"]]
 
+    context_text = ""
+    if doc.get("context"):
+        context_text = render_recap_context(doc["context"], f"{doc['season']}-{doc['week']}-context")
+        print(f"\nWeek {doc['week']} recap context:\n  {context_text}")
+
     print(f"\nWeek {doc['week']} recap awards:")
     for r in rendered:
         print(f"  {r['name']}: {r['text']}")
@@ -162,7 +217,7 @@ def main():
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps({
-        "season": doc["season"], "week": doc["week"], "awards": rendered,
+        "season": doc["season"], "week": doc["week"], "context": context_text, "awards": rendered,
     }, indent=2, ensure_ascii=False))
     print(f"\n  wrote {out_path}")
 

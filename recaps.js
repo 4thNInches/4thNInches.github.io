@@ -198,11 +198,21 @@ async function loadRecap(season, week) {
     const res = await fetch(`data/recaps/${season}-wk${recapWeek}.json`);
     if (!res.ok) throw new Error(`No recap generated for Week ${recapWeek} yet`);
     const data = await res.json();
-    if (!data.awards || data.awards.length === 0) {
-      list.innerHTML = `<p class="loading-msg">No awards to report for Week ${recapWeek}.</p>`;
+
+    // context is a short "how the week went" lede, distinct from the
+    // per-award cards below it -- rendered first if present. Either can
+    // independently be empty (a week can have awards but no notable
+    // league-wide superlative, or vice versa isn't expected but handled
+    // the same defensive way), so only show the empty-state message if
+    // BOTH are missing.
+    const contextHtml = data.context ? `<p class="recap-context">${escapeHtml(data.context)}</p>` : "";
+    const awardsHtml = (data.awards && data.awards.length > 0) ? data.awards.map(renderAward).join("") : "";
+
+    if (!contextHtml && !awardsHtml) {
+      list.innerHTML = `<p class="loading-msg">No recap content for Week ${recapWeek}.</p>`;
       return;
     }
-    list.innerHTML = data.awards.map(renderAward).join("");
+    list.innerHTML = contextHtml + awardsHtml;
   } catch (err) {
     list.innerHTML = `<p class="loading-msg">${escapeHtml(err.message)}</p>`;
   }

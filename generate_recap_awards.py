@@ -64,6 +64,7 @@ import compute_power_stats as pws  # sleeper_get, load_players, resolve_weeks
 from league_config import AWARD_NAMES  # single source of truth -- see league_config.py
 
 MANAGER_MAPPING_PATH = Path("data/manager_mapping.json")
+HISTORY_DIR = Path("data/history")
 OUT_DIR = Path("data/recap_storylines")
 
 
@@ -236,6 +237,107 @@ def compute_mega_blowout(pairs: list) -> dict | None:
 # Assembly
 # ============================================================
 
+# ============================================================
+# League-wide recap context -- "how the week went" for the league as a
+# whole, distinct from the four per-award storylines above. Mined from
+# every 2020/2021 write-up: the recurring move is a weekly point total
+# (vs. season average), then up to two "this ranks Nth all-time" call-
+# outs (closest game, biggest blowout, highest/lowest individual score),
+# selected by how extreme they are -- not force-fit every week, since the
+# real write-ups often have nothing record-setting to report and just
+# state the plain total instead.
+#
+# Needs the FULL cross-season game/score log (not just this week's live
+# matchups) to know what "Nth all-time" even means. Built the same way
+# generate_matchup_storylines.py's build_all_games() reads data/history/,
+# but flattened for league-wide superlatives rather than head-to-head
+# lookups between two specific managers -- kept as its own copy rather
+# than imported, same reasoning as build_team_meta_by_roster above.
+# ============================================================
+
+def build_historical_logs(history_dir: Path, manager_mapping: dict) -> tuple:
+    """Returns (games, scores) across every season in data/history/.
+    games: one entry per real-world matchup, deduplicated (not once per
+    side). scores: one entry per team-week, every individual score ever
+    recorded."""
+    games, scores = [], []
+    for path in sorted(history_dir.glob("*.json")):
+        season_data = json.loads(path.read_text())
+        season, teams = season_data["season"], season_data["teams"]
+        seen = set()
+        for tid, team in teams.items():
+            for g in team.get("schedule") or []:
+                scores.append({
+                    "season": season, "week": g["week"],
+                    "manager_id": manager_mapping.get(team["team_name"]),
+                    "team_name": team["team_name"], "score": g["my_score"],
+                })
+                opp_tid = str(g["opponent_team_id"])
+                key = tuple(sorted([tid, opp_tid])) + (g["week"],)
+                if key in seen:
+                    continue
+                seen.add(key)
+                games.append({
+                    "season": season, "week": g["week"],
+                    "team_a": team["team_name"], "team_b": g["opponent_name"],
+                    "score_a": g["my_score"], "score_b": g["opp_score"],
+                    "margin": round(abs(g["my_score"] - g["opp_score"]), 2),
+                })
+    return games, scores
+
+
+def _rank_smallest(value: float, population: list) -> int:
+    """1-indexed rank if `value` were inserted into `population` sorted
+    ascending -- i.e. how many all-time entries are strictly SMALLER.
+    Ties don't inflate the rank (strict inequality), so this week's own
+    game being present in the population (data/history is already
+    updated by the time this runs) doesn't skew its own ranking."""
+    return 1 + sum(1 for v in population if v < value)
+
+
+def _rank_largest(value: float, population: list) -> int:
+    """Same as _rank_smallest, but for how many entries are strictly LARGER."""
+    return 1 + sum(1 for v in population if v > value)
+
+
+def compute_recap_context(pairs: list, games_all_time: list, scores_all_time: list) -> dict:
+    """Builds the candidate list of league-wide storylines for this week
+    -- weekly total plus up to a few "how extreme is this, all-time"
+    candidates. Selection of which candidates actually get written about
+    happens in the render layer (same split as every other part of this
+    pipeline: compute finds what's TRUE, render decides what's USED)."""
+    this_week_games, this_week_scores = [], []
+    for a, b in pairs:
+        this_week_games.append({
+            "team_a": a["team_name"], "team_b": b["team_name"],
+            "score_a": a["score"], "score_b": b["score"],
+            "margin": round(abs(a["score"] - b["score"]), 2),
+        })
+        this_week_scores.append({"team_name": a["team_name"], "score": a["score"]})
+        this_week_scores.append({"team_name": b["team_name"], "score": b["score"]})
+
+    weekly_total = round(sum(s["score"] for s in this_week_scores), 2)
+    weekly_avg = round(weekly_total / len(this_week_scores), 2) if this_week_scores else 0.0
+
+    all_time_margins = [g["margin"] for g in games_all_time]
+    all_time_scores = [s["score"] for s in scores_all_time]
+
+    candidates = []
+    if this_week_games:
+        closest = min(this_week_games, key=lambda g: g["margin"])
+        candidates.append({"type": "closest_game", "rank": _rank_smallest(closest["margin"], all_time_margins), "data": closest})
+        biggest = max(this_week_games, key=lambda g: g["margin"])
+        candidates.append({"type": "biggest_blowout", "rank": _rank_largest(biggest["margin"], all_time_margins), "data": biggest})
+    if this_week_scores:
+        highest = max(this_week_scores, key=lambda s: s["score"])
+        candidates.append({"type": "highest_score", "rank": _rank_largest(highest["score"], all_time_scores), "data": highest})
+        lowest = min(this_week_scores, key=lambda s: s["score"])
+        candidates.append({"type": "lowest_score", "rank": _rank_smallest(lowest["score"], all_time_scores), "data": lowest})
+
+    candidates.sort(key=lambda c: c["rank"])
+    return {"weekly_total": weekly_total, "weekly_avg": weekly_avg, "num_teams": len(this_week_scores), "candidates": candidates}
+
+
 def build_recap_awards(pairs: list, players_db: dict) -> list:
     if not pairs:
         return []
@@ -294,7 +396,12 @@ def main():
         return
 
     awards = build_recap_awards(pairs, players_db)
-    output = {"season": league["season"], "week": week, "awards": awards}
+
+    print("  building league-wide recap context (historical superlatives)...")
+    games_all_time, scores_all_time = build_historical_logs(HISTORY_DIR, manager_mapping)
+    context = compute_recap_context(pairs, games_all_time, scores_all_time)
+
+    output = {"season": league["season"], "week": week, "awards": awards, "context": context}
 
     if args.dry_run:
         print("\n--- DRY RUN ---")

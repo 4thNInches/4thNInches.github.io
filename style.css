@@ -1023,6 +1023,13 @@ a { color: inherit; }
   margin: 0;
 }
 
+.recap-context {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--chalk);
+  margin: 0 0 20px;
+}
+
 /* ---------- season plots charts ---------- */
 :root {
   /* Two extra categorical accents for charts that need more than the
