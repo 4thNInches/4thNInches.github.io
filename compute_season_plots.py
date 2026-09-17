@@ -117,6 +117,71 @@ def compute_xwins(ranks_by_team: dict, num_teams: int, completed_weeks: list) ->
 
 
 # ============================================================
+# What-If Schedule grid -- distinct from the Xwins closed-form above.
+# This is the FULL pairwise "if manager A had played manager B's exact
+# schedule, what would A's record be" swap, matching analyze_scores.py's
+# original get_record(if_manager=...) capability, which recaps-roadmap.md
+# Section 6 concluded was NOT what the Lady Luck chart itself plots -- but
+# is still a real, distinct, useful visualization on its own (a request
+# to add it back, seeing the original matplotlib output side by side,
+# confirmed these are two different plots, not duplicates).
+#
+# Every cell is computable directly from data/history/<season>.json's
+# existing per-team schedule -- no live Sleeper call needed. The key
+# simplification: B's schedule entry for week W already stores
+# B's-opponent's score directly (as opp_score), so "who did B play, and
+# what did that opponent score" never needs a separate lookup.
+# ============================================================
+
+def compute_what_if_grid(season_data: dict, manager_mapping: dict, completed_weeks: list) -> dict:
+    teams = season_data["teams"]
+    completed_set = set(completed_weeks)
+
+    manager_by_tid: dict = {}
+    weekly_by_tid: dict = {}
+    for tid, team in teams.items():
+        mgr = manager_mapping.get(team["team_name"])
+        if not mgr:
+            continue  # unmapped team_name -- same guard used everywhere else in this pipeline
+        manager_by_tid[tid] = mgr
+        weekly_by_tid[tid] = {g["week"]: g for g in (team.get("schedule") or []) if g["week"] in completed_set}
+
+    cells: dict = {}
+    for a_tid, a_mgr in manager_by_tid.items():
+        row: dict = {}
+        for b_tid, b_mgr in manager_by_tid.items():
+            wins = losses = ties = 0
+            for week in completed_weeks:
+                a_game = weekly_by_tid[a_tid].get(week)
+                b_game = weekly_by_tid[b_tid].get(week)
+                if not a_game or not b_game:
+                    continue  # bye or missing data that week -- skip rather than guess
+                a_score = a_game["my_score"]
+                opp_score = b_game["opp_score"]  # whoever B actually played that week, and what they scored
+                if a_score > opp_score:
+                    wins += 1
+                elif a_score < opp_score:
+                    losses += 1
+                else:
+                    ties += 1
+            row[b_mgr] = {"wins": wins, "losses": losses, "ties": ties}
+        cells[a_mgr] = row
+
+    # Delta relative to each row's own diagonal (its real actual record,
+    # which the swap trivially reproduces when a_mgr == b_mgr).
+    for a_mgr, row in cells.items():
+        actual_wins = row[a_mgr]["wins"]
+        for b_mgr, cell in row.items():
+            cell["delta"] = cell["wins"] - actual_wins
+
+    return {
+        "managers": list(manager_by_tid.values()),
+        "team_names": {mgr: teams[tid]["team_name"] for tid, mgr in manager_by_tid.items()},
+        "cells": cells,
+    }
+
+
+# ============================================================
 # Positional PPW + flex distribution -- needs a live per-week matchups
 # call, since data/history/ only stores team-level totals.
 # ============================================================
@@ -208,6 +273,9 @@ def main():
     ranks_by_team = compute_weekly_ranks_by_team(season_data, completed_weeks)
     xwins = compute_xwins(ranks_by_team, num_teams, completed_weeks)
 
+    print("  computing What-If Schedule grid...")
+    what_if_grid = compute_what_if_grid(season_data, manager_mapping, completed_weeks)
+
     players_db = pws.load_players()
     roster_positions = league["roster_positions"]
 
@@ -249,6 +317,7 @@ def main():
         "weeks_complete": len(completed_weeks),
         "teams": team_output,
         "flex_distribution": flex_distribution,
+        "what_if_grid": what_if_grid,
     }
 
     if args.dry_run:

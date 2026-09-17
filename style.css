@@ -1035,6 +1035,10 @@ a { color: inherit; }
   --chart-2: var(--brass);
   --chart-3: var(--chalk-dim);
   --chart-4: #6f9c86;
+  /* Cool pole for the What-If Schedule Grid heatmap, paired with
+     --marker as the warm pole (hot/cold luck, rather than literal
+     red/green, which would fight the dark green background). */
+  --chart-cold: #5b7a94;
 }
 
 .season-plots-grid {
@@ -1229,6 +1233,55 @@ a { color: inherit; }
 .whatif-luck-positive { color: var(--marker); }
 .whatif-luck-neutral { color: var(--chalk-dim); }
 
+/* ---- what-if schedule GRID: full pairwise swap, heatmap table ---- */
+.whatif-grid-table {
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
+.whatif-grid-table th,
+.whatif-grid-table td {
+  padding: 6px 8px;
+  text-align: center;
+  border: 1px solid var(--field-line);
+}
+
+.whatif-grid-table thead th {
+  color: var(--brass);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+
+.whatif-grid-corner {
+  color: var(--chalk-dim) !important;
+  text-transform: none !important;
+  font-size: 0.62rem;
+  text-align: left !important;
+}
+
+.whatif-grid-rowhead {
+  color: var(--brass);
+  text-align: left;
+  position: sticky;
+  left: 0;
+  background: var(--field-light);
+  z-index: 1;
+}
+
+.whatif-grid-record {
+  color: var(--chalk);
+  font-weight: 500;
+}
+
+.whatif-grid-delta {
+  color: var(--chalk-dim);
+  font-size: 0.62rem;
+}
+
 /* ---- power rankings history: multi-line, one highlighted at a time ---- */
 .power-rank-line {
   opacity: 0.55;
@@ -1269,3 +1322,61 @@ a { color: inherit; }
   stroke: var(--marker);
   stroke-width: 2;
 }
+
+/* ---- current power rankings: ranked list with rank-move indicators ---- */
+.power-rank-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--field-line);
+}
+
+.power-rank-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+}
+
+.power-rank-number {
+  width: 20px;
+  flex-shrink: 0;
+  text-align: right;
+  font-family: var(--font-mono);
+  color: var(--chalk-dim);
+  font-size: 0.8rem;
+}
+
+.power-rank-name {
+  flex: 1;
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--chalk);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.power-rank-score {
+  font-family: var(--font-mono);
+  color: var(--chalk-dim);
+  font-size: 0.78rem;
+  width: 46px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.rank-move {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  width: 34px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.rank-up { color: var(--marker); }
+.rank-down { color: var(--chart-cold); }
+.rank-same { color: var(--chalk-dim); }

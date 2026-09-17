@@ -547,7 +547,116 @@ function renderWhatIfSchedule(teams, weeksComplete) {
     <p class="chart-caption">"What-If" is the record each team's weekly scores alone would predict, ignoring who they actually played -- the same Xwins used in Lady Luck above, just as exact numbers instead of a scatter.</p>`;
 }
 
+// ---------- What-If Schedule GRID: the full pairwise swap ("if manager A
+// had played manager B's exact schedule"), distinct from the closed-form
+// table above. Every cell comes straight from compute_season_plots.py's
+// what_if_grid (no client-side computation) -- this just colors and lays
+// it out. Colors are read live from CSS custom properties rather than
+// hardcoded here, so retinting style.css re-themes this heatmap too. ----------
+
+function hexToRgbArr(hex) {
+  const n = parseInt(hex.replace("#", "").trim(), 16);
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+}
+
+function mixColor(hexA, hexB, t) {
+  const a = hexToRgbArr(hexA), b = hexToRgbArr(hexB);
+  const clamped = Math.max(0, Math.min(1, t));
+  return `rgb(${a.map((c, i) => Math.round(c + (b[i] - c) * clamped)).join(", ")})`;
+}
+
+function cssVar(name, fallback) {
+  const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  return v || fallback;
+}
+
+function renderWhatIfGrid(grid) {
+  const managers = (grid && grid.managers) || [];
+  if (managers.length === 0) return `<p class="loading-msg">No data yet.</p>`;
+
+  const allDeltas = managers.flatMap(a => managers.map(b => grid.cells[a][b].delta));
+  const maxAbsDelta = Math.max(1, ...allDeltas.map(Math.abs)); // avoid divide-by-zero before any delta exists
+
+  const neutral = cssVar("--field-light", "#16332a");
+  const positive = cssVar("--marker", "#ff6a13");
+  const negative = cssVar("--chart-cold", "#5b7a94");
+
+  const headerRow = managers.map(b => `<th>${escapeHtml(grid.team_names[b] || b)}</th>`).join("");
+
+  const bodyRows = managers.map(a => {
+    const cells = managers.map(b => {
+      const cell = grid.cells[a][b];
+      const t = (Math.abs(cell.delta) / maxAbsDelta) * 0.8; // cap mix intensity so chalk text stays legible
+      const bg = cell.delta > 0 ? mixColor(neutral, positive, t)
+        : cell.delta < 0 ? mixColor(neutral, negative, t)
+        : neutral;
+      const record = cell.ties ? `${cell.wins}-${cell.losses}-${cell.ties}` : `${cell.wins}-${cell.losses}`;
+      const deltaLabel = `${cell.delta >= 0 ? "+" : ""}${cell.delta}`;
+      return `<td style="background:${bg}"><div class="whatif-grid-record">${record}</div><div class="whatif-grid-delta">${deltaLabel}</div></td>`;
+    }).join("");
+    return `<tr><th class="whatif-grid-rowhead">${escapeHtml(grid.team_names[a] || a)}</th>${cells}</tr>`;
+  }).join("");
+
+  return `
+    <table class="whatif-grid-table">
+      <thead><tr><th class="whatif-grid-corner">had this team's schedule &rarr;</th>${headerRow}</tr></thead>
+      <tbody>${bodyRows}</tbody>
+    </table>
+    <p class="chart-caption">Each row's actual weekly scores, replayed against each column's actual opponents. The diagonal is always a team's real record. Orange: better than they actually did. Blue: worse.</p>`;
+}
+
 // ---------- assembly ----------
+
+// ---------- Current Power Rankings: latest week, ranked, with a
+// rank-movement arrow vs. the previous logged week. Omitted entirely when
+// there's no previous week to compare against (e.g. the season's first
+// logged week) -- per the request, rather than showing a meaningless
+// "same" for every team. ----------
+
+function renderCurrentPowerRankings(logEntries, season, teamNameByRosterId, avatarByTeamName) {
+  const seasonEntries = (logEntries || []).filter(e => e.season === season).sort((a, b) => a.week - b.week);
+  if (seasonEntries.length === 0) return "";
+
+  const rankWeek = (entry) => Object.entries(entry.teams)
+    .filter(([, t]) => t.power_score != null)
+    .map(([tid, t]) => ({ tid, score: t.power_score }))
+    .sort((a, b) => b.score - a.score)
+    .map((t, i) => ({ ...t, rank: i + 1 }));
+
+  const latest = seasonEntries[seasonEntries.length - 1];
+  const latestRanked = rankWeek(latest);
+  if (latestRanked.length === 0) return "";
+
+  let prevRankByTid = null;
+  if (seasonEntries.length > 1) {
+    prevRankByTid = {};
+    rankWeek(seasonEntries[seasonEntries.length - 2]).forEach(t => { prevRankByTid[t.tid] = t.rank; });
+  }
+
+  const rows = latestRanked.map(t => {
+    const teamName = (teamNameByRosterId || {})[t.tid] || `Roster ${t.tid}`;
+    const avatar = avatarImg((avatarByTeamName || {})[teamName], teamName);
+
+    let moveHtml = "";
+    if (prevRankByTid && prevRankByTid[t.tid] != null) {
+      const prevRank = prevRankByTid[t.tid];
+      if (t.rank < prevRank) moveHtml = `<span class="rank-move rank-up" title="Up from #${prevRank}">&#9650; ${prevRank - t.rank}</span>`;
+      else if (t.rank > prevRank) moveHtml = `<span class="rank-move rank-down" title="Down from #${prevRank}">&#9660; ${t.rank - prevRank}</span>`;
+      else moveHtml = `<span class="rank-move rank-same" title="Unchanged">&#8213;</span>`;
+    }
+
+    return `
+      <div class="power-rank-row">
+        <span class="power-rank-number">${t.rank}</span>
+        ${avatar}
+        <span class="power-rank-name">${escapeHtml(teamName)}</span>
+        <span class="power-rank-score">${t.score.toFixed(1)}</span>
+        ${moveHtml}
+      </div>`;
+  }).join("");
+
+  return `<div class="power-rank-list">${rows}</div>`;
+}
 
 function chartCard(kicker, title, bodyHtml, wide) {
   return `
@@ -572,10 +681,13 @@ async function loadSeasonPlots(teamNameByRosterId, avatarByTeamName) {
     container.innerHTML = `
       <div class="season-plots-grid">
         ${chartCard("LADY LUCK", "Actual Wins vs. Expected Wins", renderLadyLuck(plots.teams, avatarByTeamName), true)}
-        ${chartCard("POWER RANKINGS", "A Season's Glance", renderPowerRankHistory(log.entries || [], plots.season, teamNameByRosterId, avatarByTeamName), true)}
+        ${chartCard("POWER RANKINGS", "Current Standings & Season History",
+          renderCurrentPowerRankings(log.entries || [], plots.season, teamNameByRosterId, avatarByTeamName) +
+          renderPowerRankHistory(log.entries || [], plots.season, teamNameByRosterId, avatarByTeamName), true)}
         ${chartCard("POSITIONAL PPW", "Points Per Week by Slot", renderPositionalPpw(plots.teams))}
         ${chartCard("START FLEXIN'", "Flex Slot Usage League-Wide", renderFlexDistribution(plots.flex_distribution || {}))}
         ${chartCard("WHAT-IF SCHEDULE", "Record vs. a Neutral Schedule", renderWhatIfSchedule(plots.teams, plots.weeks_complete))}
+        ${chartCard("WHAT-IF SCHEDULE GRID", "Every Manager vs. Every Other Manager's Schedule", renderWhatIfGrid(plots.what_if_grid), true)}
       </div>`;
 
     wirePowerRankHover(container);
