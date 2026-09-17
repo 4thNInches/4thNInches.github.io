@@ -19,7 +19,7 @@
       }
     },
     "john": {
-      "team_name": "jschnides4",
+      "team_name": "Chig-a-Doodle-Doo",
       "wins": 1,
       "losses": 0,
       "ties": 0,
@@ -198,5 +198,925 @@
   "flex_distribution": {
     "RB": 29.2,
     "WR": 70.8
+  },
+  "what_if_grid": {
+    "managers": [
+      "mikey_g",
+      "john",
+      "anthony",
+      "dennis",
+      "matt",
+      "nick",
+      "mark",
+      "bill_m",
+      "mikey_k",
+      "owen",
+      "bob",
+      "kodi"
+    ],
+    "team_names": {
+      "mikey_g": "Supernova Takeover",
+      "john": "Chig-a-Doodle-Doo",
+      "anthony": "Hurts Over 10.5int @-1000",
+      "dennis": "Big Dumb Sports",
+      "matt": "theMadgician",
+      "nick": "Jake From State Farm",
+      "mark": "Supernovas",
+      "bill_m": "Bandits",
+      "mikey_k": "ROK Navy's Finest",
+      "owen": "Newman’s Owen",
+      "bob": "packerlove24",
+      "kodi": "VRDNO"
+    },
+    "cells": {
+      "mikey_g": {
+        "mikey_g": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "anthony": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "matt": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "mark": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": -1
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "owen": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        }
+      },
+      "john": {
+        "mikey_g": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "anthony": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": -1
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "matt": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "mark": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "owen": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        }
+      },
+      "anthony": {
+        "mikey_g": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "john": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": 0
+        },
+        "anthony": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "matt": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mark": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mikey_k": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "owen": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        }
+      },
+      "dennis": {
+        "mikey_g": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "anthony": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "matt": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mark": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "owen": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        }
+      },
+      "matt": {
+        "mikey_g": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "anthony": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": -1
+        },
+        "matt": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "mark": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "owen": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        }
+      },
+      "nick": {
+        "mikey_g": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "anthony": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "matt": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mark": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mikey_k": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": 0
+        },
+        "owen": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        }
+      },
+      "mark": {
+        "mikey_g": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": 0
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "anthony": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "matt": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mark": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "owen": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        }
+      },
+      "bill_m": {
+        "mikey_g": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "anthony": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "matt": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "nick": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mark": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "owen": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "bob": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        }
+      },
+      "mikey_k": {
+        "mikey_g": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "anthony": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "matt": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": -1
+        },
+        "mark": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "owen": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        }
+      },
+      "owen": {
+        "mikey_g": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "anthony": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "matt": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "mark": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": -1
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "owen": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": -1
+        }
+      },
+      "bob": {
+        "mikey_g": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "anthony": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "matt": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "nick": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "mark": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": -1
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "owen": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 0
+        }
+      },
+      "kodi": {
+        "mikey_g": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "john": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "anthony": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "dennis": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "matt": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "nick": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mark": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "bill_m": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "mikey_k": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "delta": 1
+        },
+        "owen": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 1,
+          "delta": 0
+        },
+        "bob": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        },
+        "kodi": {
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "delta": 0
+        }
+      }
+    }
   }
 }

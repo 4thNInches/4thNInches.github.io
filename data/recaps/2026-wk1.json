@@ -1,6 +1,7 @@
 {
   "season": "2026",
   "week": 1,
+  "context": "This week's 12 teams put up 1740.7 points between them, 145.06 a team.",
   "awards": [
     {
       "type": "best_bench",
@@ -10,12 +11,12 @@
     {
       "type": "great_defense",
       "name": "Great Defense!",
-      "text": "jschnides4's defense (well, their opponent's offense) did the work: Hurts Over 10.5int @-1000 finished with just 94.86."
+      "text": "Chig-a-Doodle-Doo's defense (well, their opponent's offense) did the work: Hurts Over 10.5int @-1000 finished with just 94.86."
     },
     {
       "type": "mega_blowout",
       "name": "Mega Blowout",
-      "text": "Not close: jschnides4 beat Hurts Over 10.5int @-1000 by 64.14 points, 159.0 to 94.86."
+      "text": "Not close: Chig-a-Doodle-Doo beat Hurts Over 10.5int @-1000 by 64.14 points, 159.0 to 94.86."
     }
   ]
 }

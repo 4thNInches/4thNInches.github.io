@@ -21,7 +21,7 @@
       ]
     },
     "2": {
-      "team_name": "jschnides4",
+      "team_name": "Chig-a-Doodle-Doo",
       "wins": 1,
       "losses": 0,
       "ties": 0,
@@ -49,7 +49,7 @@
         {
           "week": 1,
           "opponent_team_id": 2,
-          "opponent_name": "jschnides4",
+          "opponent_name": "Chig-a-Doodle-Doo",
           "my_score": 94.86,
           "opp_score": 159.0,
           "result": "Loss"

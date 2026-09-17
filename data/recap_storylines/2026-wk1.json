@@ -21,7 +21,7 @@
       "data": {
         "winner": {
           "manager_id": "john",
-          "team_name": "jschnides4",
+          "team_name": "Chig-a-Doodle-Doo",
           "score": 159.0
         },
         "loser": {
@@ -38,7 +38,7 @@
       "data": {
         "winner": {
           "manager_id": "john",
-          "team_name": "jschnides4",
+          "team_name": "Chig-a-Doodle-Doo",
           "score": 159.0
         },
         "loser": {
@@ -49,5 +49,50 @@
         "margin": 64.14
       }
     }
-  ]
+  ],
+  "context": {
+    "weekly_total": 1740.7,
+    "weekly_avg": 145.06,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "highest_score",
+        "rank": 71,
+        "data": {
+          "team_name": "packerlove24",
+          "score": 183.86
+        }
+      },
+      {
+        "type": "biggest_blowout",
+        "rank": 105,
+        "data": {
+          "team_a": "Chig-a-Doodle-Doo",
+          "team_b": "Hurts Over 10.5int @-1000",
+          "score_a": 159.0,
+          "score_b": 94.86,
+          "margin": 64.14
+        }
+      },
+      {
+        "type": "lowest_score",
+        "rank": 199,
+        "data": {
+          "team_name": "Hurts Over 10.5int @-1000",
+          "score": 94.86
+        }
+      },
+      {
+        "type": "closest_game",
+        "rank": 389,
+        "data": {
+          "team_a": "Newman’s Owen",
+          "team_b": "VRDNO",
+          "score_a": 162.96,
+          "score_b": 141.82,
+          "margin": 21.14
+        }
+      }
+    ]
+  }
 }
