@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T20:17:19.466538+00:00",
+  "generated_at": "2026-09-17T00:22:26.036360+00:00",
   "window_days": 7,
   "items": [
     {
@@ -233,25 +233,6 @@
         "player_id": "13411",
         "name": "Zavion Thomas",
         "position": "WR"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1403531930154127360",
-      "timestamp": 1788990597812,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "9482",
-        "name": "Michael Mayer",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "13424",
-        "name": "Seth McGowan",
-        "position": "RB"
       },
       "faab": null,
       "remark": null
