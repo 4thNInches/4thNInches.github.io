@@ -1,39 +1,87 @@
 {
-  "generated_at": "2026-09-18T00:22:57.557757+00:00",
+  "generated_at": "2026-09-18T04:16:49.217752+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 2,
-      "team_a": "Jake From State Farm",
-      "score_a": 1.2,
-      "projected_a": 133.53,
-      "team_b": "Newman’s Owen",
+      "team_a": "ROK Navy's Finest",
+      "score_a": 22.5,
+      "projected_a": 145.04,
+      "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 139.63,
-      "timestamp": 1789690977557.686
+      "projected_b": 116.78,
+      "timestamp": 1789705009217.69
+    },
+    {
+      "type": "live_score",
+      "week": 2,
+      "team_a": "Supernovas",
+      "score_a": 17.2,
+      "projected_a": 136.36,
+      "team_b": "packerlove24",
+      "score_b": 7.1,
+      "projected_b": 146.53,
+      "timestamp": 1789705009217.687
+    },
+    {
+      "type": "live_score",
+      "week": 2,
+      "team_a": "Newman’s Owen",
+      "score_a": 36.2,
+      "projected_a": 139.67,
+      "team_b": "Jake From State Farm",
+      "score_b": 27.2,
+      "projected_b": 133.53,
+      "timestamp": 1789705009217.684
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "theMadgician",
-      "score_a": 1.76,
+      "score_a": 45.82,
       "projected_a": 142.91,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
       "projected_b": 126.37,
-      "timestamp": 1789690977557.6812
+      "timestamp": 1789705009217.681
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Bandits",
-      "score_a": 1.9,
+      "score_a": 6.8,
       "projected_a": 140.31,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
       "projected_b": 133.12,
-      "timestamp": 1789690977557.663
+      "timestamp": 1789705009217.677
+    },
+    {
+      "type": "live_score",
+      "week": 2,
+      "team_a": "Supernova Takeover",
+      "score_a": 23.3,
+      "projected_a": 149.56,
+      "team_b": "Big Dumb Sports",
+      "score_b": -0.1,
+      "projected_b": 137.03,
+      "timestamp": 1789705009217.661
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1406480457360515072",
+      "timestamp": 1789693581480,
+      "manager_id": "bob",
+      "team_name": "packerlove24",
+      "added": {
+        "player_id": "4892",
+        "name": "Baker Mayfield",
+        "position": "QB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
