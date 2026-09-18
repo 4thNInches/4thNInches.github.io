@@ -648,7 +648,15 @@ function renderWhatIfGrid(grid) {
 // this pipeline: compute what's TRUE, render only what's actually
 // worth saying). ----------
 
-function computeBlurbCandidates(teamData, numTeams, moveDirection, moveAmount) {
+function _ordinal(n) {
+  n = Math.round(n);
+  const mod100 = n % 100;
+  if (mod100 >= 10 && mod100 <= 20) return `${n}th`;
+  const suffix = { 1: "st", 2: "nd", 3: "rd" }[n % 10] || "th";
+  return `${n}${suffix}`;
+}
+
+function computeBlurbCandidates(teamData, numTeams, moveDirection, moveAmount, benchRank) {
   const candidates = [];
 
   const streak = teamData.streak;
@@ -661,18 +669,36 @@ function computeBlurbCandidates(teamData, numTeams, moveDirection, moveAmount) {
     candidates.push({ type: luck > 0 ? "lucky" : "unlucky", notability: Math.abs(luck) * 2, data: { delta: Math.abs(luck) } });
   }
 
+  // Widened from "must be exactly #1 / dead-last" to top-2 / bottom-2 --
+  // strict #1-only was so rare across a 12-team, 6-position field that
+  // almost nobody ever qualified, which was a real gap, not just an
+  // early-season artifact.
   const posRanks = teamData.positional_ranks || {};
   const posEntries = Object.entries(posRanks);
   if (posEntries.length > 0) {
     const best = posEntries.reduce((a, b) => (b[1] < a[1] ? b : a));
-    if (best[1] === 1) candidates.push({ type: "strength", notability: 6, data: { position: best[0] } });
+    if (best[1] <= 2) candidates.push({ type: "strength", notability: best[1] === 1 ? 6 : 4.5, data: { position: best[0], isBest: best[1] === 1 } });
     const worst = posEntries.reduce((a, b) => (b[1] > a[1] ? b : a));
-    if (worst[1] === numTeams && numTeams > 1) candidates.push({ type: "weakness", notability: 5, data: { position: worst[0] } });
+    if (numTeams > 1 && worst[1] >= numTeams - 1) candidates.push({ type: "weakness", notability: worst[1] === numTeams ? 5 : 3.5, data: { position: worst[0], isWorst: worst[1] === numTeams } });
   }
 
-  const lastWeekRank = teamData.last_week_rank;
-  if (lastWeekRank === 1) candidates.push({ type: "best_week", notability: 7, data: {} });
-  else if (lastWeekRank === numTeams && numTeams > 1) candidates.push({ type: "worst_week", notability: 7, data: {} });
+  // Weekly finish -- graded and ALMOST ALWAYS available (as soon as one
+  // week exists), so this is what actually replaces the flat "sit at
+  // X-Y" fallback most weeks, not a rare category. Notability scales
+  // with distance from either edge: a true middle-of-the-pack week still
+  // beats the fully generic fallback (every team gets a real, specific
+  // sentence about their actual week), but easily loses to a genuine
+  // streak/luck/positional story once a season has enough history for
+  // those to exist.
+  const rank = teamData.last_week_rank, score = teamData.last_week_score;
+  if (rank != null && score != null && numTeams > 1) {
+    const distFromEdge = Math.min(rank - 1, numTeams - rank);
+    candidates.push({ type: "weekly_finish", notability: Math.max(2, 10 - distFromEdge * 2), data: { rank, score, numTeams } });
+  }
+
+  if (teamData.last_week_bench_points != null && benchRank != null && benchRank <= 2) {
+    candidates.push({ type: "bench", notability: benchRank === 1 ? 4.5 : 3.5, data: { points: teamData.last_week_bench_points } });
+  }
 
   if (moveAmount >= 3) candidates.push({ type: moveDirection === "up" ? "rank_jump_up" : "rank_jump_down", notability: moveAmount, data: { amount: moveAmount } });
 
@@ -700,21 +726,46 @@ function blurbVariants(candidate, teamName) {
       `${teamName}'s record doesn't reflect how they've actually played -- ${d.delta.toFixed(1)} wins below expectation.`,
       `The numbers say ${teamName} have been unlucky: ${d.delta.toFixed(1)} wins off their Xwins pace.`,
     ];
-    case "strength": return [
+    case "strength": return d.isBest ? [
       `${teamName} boast the league's best ${d.position} corps.`,
       `No one beats ${teamName} at ${d.position} this season.`,
+    ] : [
+      `${teamName} have one of the league's best ${d.position} rooms.`,
+      `${teamName} rank near the top of the league at ${d.position}.`,
     ];
-    case "weakness": return [
+    case "weakness": return d.isWorst ? [
       `${teamName}'s ${d.position} room has been the league's worst.`,
       `${d.position} remains the clear hole in ${teamName}'s roster.`,
+    ] : [
+      `${teamName}'s ${d.position} room has struggled, near the bottom of the league.`,
+      `${d.position} is proving to be a soft spot for ${teamName}.`,
     ];
-    case "best_week": return [
-      `${teamName} posted the week's best score.`,
-      `Nobody outscored ${teamName} this week.`,
-    ];
-    case "worst_week": return [
-      `${teamName} finished with the week's worst score.`,
-      `${teamName} brought up the rear this week.`,
+    case "weekly_finish": {
+      const scoreStr = d.score.toFixed(1);
+      if (d.rank === 1) return [
+        `${teamName} posted the week's best score (${scoreStr} points).`,
+        `Nobody outscored ${teamName} this week (${scoreStr}).`,
+      ];
+      if (d.rank === d.numTeams) return [
+        `${teamName} finished with the week's worst score (${scoreStr} points).`,
+        `${teamName} brought up the rear this week with ${scoreStr} points.`,
+      ];
+      if (d.rank <= 3) return [
+        `${teamName} finished ${_ordinal(d.rank)} on the week with ${scoreStr} points.`,
+        `${teamName} was one of the week's top scorers (${scoreStr}, ${_ordinal(d.rank)}).`,
+      ];
+      if (d.rank >= d.numTeams - 2) return [
+        `${teamName} scored just ${scoreStr} points -- ${_ordinal(d.numTeams - d.rank + 1)}-worst this week.`,
+        `${teamName} struggled to ${scoreStr} points this week.`,
+      ];
+      return [
+        `${teamName} scored ${scoreStr} points this week, good for ${_ordinal(d.rank)}.`,
+        `${teamName} finished ${_ordinal(d.rank)} on the week (${scoreStr} points).`,
+      ];
+    }
+    case "bench": return [
+      `${teamName} left ${d.points.toFixed(1)} points on the bench this week.`,
+      `${teamName}'s bench outscored plenty of starting lineups -- ${d.points.toFixed(1)} points left unused.`,
     ];
     case "rank_jump_up": return [
       `${teamName} climbed ${d.amount} spots in the power rankings.`,
@@ -728,11 +779,13 @@ function blurbVariants(candidate, teamName) {
   }
 }
 
-function renderPowerRankBlurb(teamName, teamData, numTeams, moveDirection, moveAmount, seedKey) {
-  const candidates = computeBlurbCandidates(teamData || {}, numTeams, moveDirection, moveAmount);
+function renderPowerRankBlurb(teamName, teamData, numTeams, moveDirection, moveAmount, benchRank, seedKey) {
+  const candidates = computeBlurbCandidates(teamData || {}, numTeams, moveDirection, moveAmount, benchRank);
   let variants = blurbVariants(candidates[0], teamName);
   if (!variants) {
-    // Generic fallback -- always available, so every team gets a line.
+    // Generic fallback -- should now be rare (only when we don't even
+    // know last week's rank/score for this team), but always available
+    // so no row is ever left blank.
     const record = teamData && teamData.ties ? `${teamData.wins}-${teamData.losses}-${teamData.ties}` : `${(teamData || {}).wins}-${(teamData || {}).losses}`;
     variants = [`${teamName} sit at ${record} on the season.`];
   }
@@ -766,6 +819,16 @@ function renderCurrentPowerRankings(logEntries, season, teamNameByRosterId, avat
   Object.entries(plotTeams || {}).forEach(([mgrId, t]) => { managerIdByTeamName[t.team_name] = mgrId; });
   const numTeams = latestRanked.length;
 
+  // Bench points ranked across the whole league for this week, so the
+  // "left N points on the bench" candidate only fires for the top 2 --
+  // otherwise it'd fire for literally everyone (every team has SOME
+  // bench points) and stop being a notable callout at all.
+  const benchRankByMgrId = {};
+  Object.entries(plotTeams || {})
+    .filter(([, t]) => t.last_week_bench_points != null)
+    .sort((a, b) => b[1].last_week_bench_points - a[1].last_week_bench_points)
+    .forEach(([mgrId], i) => { benchRankByMgrId[mgrId] = i + 1; });
+
   const rows = latestRanked.map(t => {
     const teamName = (teamNameByRosterId || {})[t.tid] || `Roster ${t.tid}`;
     const avatar = avatarImg((avatarByTeamName || {})[teamName], teamName);
@@ -780,7 +843,8 @@ function renderCurrentPowerRankings(logEntries, season, teamNameByRosterId, avat
 
     const mgrId = managerIdByTeamName[teamName];
     const teamData = mgrId ? plotTeams[mgrId] : null;
-    const blurb = renderPowerRankBlurb(teamName, teamData, numTeams, moveDirection, moveAmount, `${season}-${latest.week}-${t.tid}-blurb`);
+    const benchRank = mgrId ? benchRankByMgrId[mgrId] : null;
+    const blurb = renderPowerRankBlurb(teamName, teamData, numTeams, moveDirection, moveAmount, benchRank, `${season}-${latest.week}-${t.tid}-blurb`);
 
     return `
       <div class="power-rank-row">
@@ -821,7 +885,7 @@ async function loadSeasonPlots(teamNameByRosterId, avatarByTeamName) {
     container.innerHTML = `
       <div class="season-plots-grid">
         ${chartCard("LADY LUCK", "Actual Wins vs. Expected Wins", renderLadyLuck(plots.teams, avatarByTeamName), true)}
-        ${chartCard("POWER RANKINGS", "Current Standings & Season History",
+        ${chartCard("POWER RANKINGS", "Where Things Stand",
           renderCurrentPowerRankings(log.entries || [], plots.season, teamNameByRosterId, avatarByTeamName, plots.teams) +
           renderPowerRankHistory(log.entries || [], plots.season, teamNameByRosterId, avatarByTeamName), true)}
         ${chartCard("POSITIONAL PPW", "Points Per Week by Slot", renderPositionalPpw(plots.teams))}

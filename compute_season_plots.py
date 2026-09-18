@@ -174,6 +174,23 @@ def compute_positional_ranks(positional_ppw_by_roster: dict) -> dict:
     return ranks
 
 
+def compute_week_bench_points(matchups: list) -> dict:
+    """tid -> total points left on the bench for one specific week --
+    same starters/players/players_points fields generate_recap_awards.py's
+    Best Bench award already uses. Computed here from the SAME matchups
+    payload compute_season_plots.py already fetches for positional PPW,
+    rather than making a second live call for data already in hand."""
+    bench_points = {}
+    for entry in matchups:
+        tid = str(entry["roster_id"])
+        starters = set(entry.get("starters") or [])
+        players = entry.get("players") or []
+        points = entry.get("players_points") or {}
+        bench_ids = [pid for pid in players if pid not in starters]
+        bench_points[tid] = round(sum(points.get(pid, 0.0) for pid in bench_ids), 2)
+    return bench_points
+
+
 # ============================================================
 # What-If Schedule grid -- distinct from the Xwins closed-form above.
 # This is the FULL pairwise "if manager A had played manager B's exact
@@ -377,14 +394,22 @@ def main():
     ppw_sum: dict = {}
     ppw_starts: dict = {}
     flex_counts: dict = {}
+    last_week_bench_points: dict = {}
     for week in completed_weeks:
         print(f"  fetching Week {week} starters for positional PPW / flex distribution...")
         matchups = pws.sleeper_get(f"/league/{pws.SLEEPER_LEAGUE_ID}/matchups/{week}")
         accumulate_week(matchups, roster_positions, players_db, ppw_sum, ppw_starts, flex_counts)
+        if week == last_completed_week:
+            last_week_bench_points = compute_week_bench_points(matchups)
 
     positional_ppw_by_roster = finalize_ppw(ppw_sum, ppw_starts)
     positional_ranks_by_roster = compute_positional_ranks(positional_ppw_by_roster)
     flex_distribution = finalize_flex_distribution(flex_counts)
+
+    last_week_score_by_tid = {
+        tid: next((g["my_score"] for g in (team.get("schedule") or []) if g["week"] == last_completed_week), None)
+        for tid, team in teams.items()
+    }
 
     user_by_id = {u["user_id"]: u for u in users}
     team_output = {}
@@ -409,6 +434,8 @@ def main():
             "positional_ranks": positional_ranks_by_roster.get(rid, {}),
             "streak": streaks.get(rid, {"type": None, "length": 0}),
             "last_week_rank": ranks_by_team.get(rid, {}).get(last_completed_week),
+            "last_week_score": last_week_score_by_tid.get(rid),
+            "last_week_bench_points": last_week_bench_points.get(rid),
         }
 
     output = {
