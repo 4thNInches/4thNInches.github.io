@@ -1,7 +1,40 @@
 {
-  "generated_at": "2026-09-17T20:17:26.561673+00:00",
+  "generated_at": "2026-09-18T00:22:57.557757+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "live_score",
+      "week": 2,
+      "team_a": "Jake From State Farm",
+      "score_a": 1.2,
+      "projected_a": 133.53,
+      "team_b": "Newman’s Owen",
+      "score_b": 0,
+      "projected_b": 139.63,
+      "timestamp": 1789690977557.686
+    },
+    {
+      "type": "live_score",
+      "week": 2,
+      "team_a": "theMadgician",
+      "score_a": 1.76,
+      "projected_a": 142.91,
+      "team_b": "Hurts Over 10.5int @-1000",
+      "score_b": 0,
+      "projected_b": 126.37,
+      "timestamp": 1789690977557.6812
+    },
+    {
+      "type": "live_score",
+      "week": 2,
+      "team_a": "Bandits",
+      "score_a": 1.9,
+      "projected_a": 140.31,
+      "team_b": "Chig-a-Doodle-Doo",
+      "score_b": 0,
+      "projected_b": 133.12,
+      "timestamp": 1789690977557.663
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1405722161796182016",
