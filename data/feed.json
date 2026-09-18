@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T12:20:31.733603+00:00",
+  "generated_at": "2026-09-18T16:15:38.993378+00:00",
   "window_days": 7,
   "items": [
     {
@@ -11,29 +11,29 @@
       "team_b": "VRDNO",
       "score_b": 0,
       "projected_b": 116.78,
-      "timestamp": 1789734031733.5278
+      "timestamp": 1789748138993.298
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernovas",
       "score_a": 17.2,
-      "projected_a": 136.36,
+      "projected_a": 136.2,
       "team_b": "packerlove24",
       "score_b": 7.1,
-      "projected_b": 146.53,
-      "timestamp": 1789734031733.5251
+      "projected_b": 147.16,
+      "timestamp": 1789748138993.296
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Newman’s Owen",
       "score_a": 36.2,
-      "projected_a": 139.67,
+      "projected_a": 139.61,
       "team_b": "Jake From State Farm",
       "score_b": 27.2,
-      "projected_b": 133.53,
-      "timestamp": 1789734031733.522
+      "projected_b": 133.83,
+      "timestamp": 1789748138993.293
     },
     {
       "type": "live_score",
@@ -44,29 +44,29 @@
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
       "projected_b": 126.37,
-      "timestamp": 1789734031733.5178
+      "timestamp": 1789748138993.289
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Bandits",
       "score_a": 6.8,
-      "projected_a": 140.31,
+      "projected_a": 139.43,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 133.12,
-      "timestamp": 1789734031733.5132
+      "projected_b": 132.59,
+      "timestamp": 1789748138993.286
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernova Takeover",
       "score_a": 23.3,
-      "projected_a": 149.56,
+      "projected_a": 149.19,
       "team_b": "Big Dumb Sports",
       "score_b": -0.1,
       "projected_b": 137.03,
-      "timestamp": 1789734031733.4968
+      "timestamp": 1789748138993.27
     },
     {
       "type": "waiver_move",
@@ -296,25 +296,6 @@
         "position": "QB"
       },
       "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1404154635198984192",
-      "timestamp": 1789139062264,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "LV",
-        "name": "LV",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "13411",
-        "name": "Zavion Thomas",
-        "position": "WR"
-      },
       "faab": null,
       "remark": null
     }
