@@ -131,6 +131,15 @@ def compute_xwins(ranks_by_team: dict, num_teams: int, completed_weeks: list) ->
 # simplification: B's schedule entry for week W already stores
 # B's-opponent's score directly (as opp_score), so "who did B play, and
 # what did that opponent score" never needs a separate lookup.
+#
+# One real edge case this needs to handle explicitly: the week A and B
+# actually played each other. "If A had B's schedule" can't sensibly mean
+# "A plays A" for that week -- a manager can never play themselves, full
+# stop -- so that week uses A's real result instead of the swap formula.
+# (An earlier version of this function got this wrong: comparing A's
+# score to B's-opponent's-score, when B's opponent that week WAS A,
+# reduces to comparing A's score to itself -- a guaranteed tie regardless
+# of what actually happened, which is a bug, not a feature.)
 # ============================================================
 
 def compute_what_if_grid(season_data: dict, manager_mapping: dict, completed_weeks: list) -> dict:
@@ -146,6 +155,20 @@ def compute_what_if_grid(season_data: dict, manager_mapping: dict, completed_wee
         manager_by_tid[tid] = mgr
         weekly_by_tid[tid] = {g["week"]: g for g in (team.get("schedule") or []) if g["week"] in completed_set}
 
+    # tid -> {week: opponent_tid actually faced that week} -- needed below
+    # to detect the one case the plain swap formula can't handle sensibly:
+    # the week A and B actually played each other for real. "If A had B's
+    # schedule" for THAT particular week can't mean "A plays A" -- that
+    # week's schedule already IS the real A-vs-B game, for both of them,
+    # so there's nothing to swap. Use A's real result for that week
+    # instead of comparing A's score against itself (which would force a
+    # nonsensical guaranteed tie every single time two managers were
+    # actually matched up, no matter what the real result was).
+    opponent_tid_by_week: dict = {
+        tid: {g["week"]: str(g["opponent_team_id"]) for g in (team.get("schedule") or []) if g["week"] in completed_set}
+        for tid, team in teams.items()
+    }
+
     cells: dict = {}
     for a_tid, a_mgr in manager_by_tid.items():
         row: dict = {}
@@ -156,8 +179,13 @@ def compute_what_if_grid(season_data: dict, manager_mapping: dict, completed_wee
                 b_game = weekly_by_tid[b_tid].get(week)
                 if not a_game or not b_game:
                     continue  # bye or missing data that week -- skip rather than guess
-                a_score = a_game["my_score"]
-                opp_score = b_game["opp_score"]  # whoever B actually played that week, and what they scored
+                if a_tid != b_tid and opponent_tid_by_week[a_tid].get(week) == b_tid:
+                    # A and B were each other's real opponent this week --
+                    # use A's own real result rather than a self-comparison.
+                    a_score, opp_score = a_game["my_score"], a_game["opp_score"]
+                else:
+                    a_score = a_game["my_score"]
+                    opp_score = b_game["opp_score"]  # whoever B actually played that week, and what they scored
                 if a_score > opp_score:
                     wins += 1
                 elif a_score < opp_score:
@@ -168,7 +196,12 @@ def compute_what_if_grid(season_data: dict, manager_mapping: dict, completed_wee
         cells[a_mgr] = row
 
     # Delta relative to each row's own diagonal (its real actual record,
-    # which the swap trivially reproduces when a_mgr == b_mgr).
+    # which the swap trivially reproduces when a_mgr == b_mgr -- the
+    # diagonal never hits the "real opponent" branch above, since a team
+    # is never recorded as its own opponent, so it always falls through
+    # to the plain formula, which for a_tid == b_tid reduces to comparing
+    # a team's real score against its own real opponent's score: its
+    # actual result, exactly).
     for a_mgr, row in cells.items():
         actual_wins = row[a_mgr]["wins"]
         for b_mgr, cell in row.items():
