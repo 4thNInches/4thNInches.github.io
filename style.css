@@ -1341,10 +1341,24 @@ a { color: inherit; }
 }
 
 .power-rank-row {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--field-line);
+}
+
+.power-rank-row:last-child { border-bottom: none; }
+
+.power-rank-row-main {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 4px 0;
+}
+
+.power-rank-blurb {
+  margin: 4px 0 0;
+  padding-left: 30px; /* lines up under the name, past the rank number + avatar */
+  font-size: 0.78rem;
+  color: var(--chalk-dim);
+  line-height: 1.4;
 }
 
 .power-rank-number {

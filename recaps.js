@@ -282,6 +282,21 @@ document.addEventListener("DOMContentLoaded", init);
 // style.css's tokens re-themes these charts automatically.
 // ============================================================
 
+// Deterministic "random" choice, seeded by a string key -- same purpose
+// as the Python render scripts' pick(random.Random(seed_key).choice(...)):
+// re-rendering the same week's data shouldn't reshuffle the wording every
+// time, but different teams/weeks/categories should still get variety.
+// JS has no built-in seedable Math.random, so a small string hash
+// standing in for one is enough here -- this only ever needs a single
+// deterministic pick per seed, not a reproducible sequence of draws.
+function pick(options, seedKey) {
+  let hash = 0;
+  for (let i = 0; i < seedKey.length; i++) {
+    hash = (hash * 31 + seedKey.charCodeAt(i)) | 0;
+  }
+  return options[Math.abs(hash) % options.length];
+}
+
 function niceDomain(values, pad = 1) {
   const min = Math.min(...values), max = Math.max(...values);
   return [Math.floor(min - pad), Math.ceil(max + pad)];
@@ -623,7 +638,108 @@ function renderWhatIfGrid(grid) {
 // logged week) -- per the request, rather than showing a meaningless
 // "same" for every team. ----------
 
-function renderCurrentPowerRankings(logEntries, season, teamNameByRosterId, avatarByTeamName) {
+// ---------- Power ranking blurbs: for each team, pick the single most
+// notable thing about them this week (streak, luck, a positional
+// strength/weakness, an extreme weekly finish, or a big power-rank jump)
+// and render one sentence from a phrasing bank -- mined from the
+// "Week N Power Rankings" one-liners across both seasons of real
+// write-ups. Falls back to a plain record statement if nothing this
+// team did is notable enough to headline (matches every other part of
+// this pipeline: compute what's TRUE, render only what's actually
+// worth saying). ----------
+
+function computeBlurbCandidates(teamData, numTeams, moveDirection, moveAmount) {
+  const candidates = [];
+
+  const streak = teamData.streak;
+  if (streak && streak.length >= 3 && (streak.type === "W" || streak.type === "L")) {
+    candidates.push({ type: streak.type === "W" ? "streak_win" : "streak_loss", notability: streak.length, data: { length: streak.length } });
+  }
+
+  const luck = teamData.luck_delta;
+  if (luck != null && Math.abs(luck) >= 1.0) {
+    candidates.push({ type: luck > 0 ? "lucky" : "unlucky", notability: Math.abs(luck) * 2, data: { delta: Math.abs(luck) } });
+  }
+
+  const posRanks = teamData.positional_ranks || {};
+  const posEntries = Object.entries(posRanks);
+  if (posEntries.length > 0) {
+    const best = posEntries.reduce((a, b) => (b[1] < a[1] ? b : a));
+    if (best[1] === 1) candidates.push({ type: "strength", notability: 6, data: { position: best[0] } });
+    const worst = posEntries.reduce((a, b) => (b[1] > a[1] ? b : a));
+    if (worst[1] === numTeams && numTeams > 1) candidates.push({ type: "weakness", notability: 5, data: { position: worst[0] } });
+  }
+
+  const lastWeekRank = teamData.last_week_rank;
+  if (lastWeekRank === 1) candidates.push({ type: "best_week", notability: 7, data: {} });
+  else if (lastWeekRank === numTeams && numTeams > 1) candidates.push({ type: "worst_week", notability: 7, data: {} });
+
+  if (moveAmount >= 3) candidates.push({ type: moveDirection === "up" ? "rank_jump_up" : "rank_jump_down", notability: moveAmount, data: { amount: moveAmount } });
+
+  candidates.sort((a, b) => b.notability - a.notability);
+  return candidates;
+}
+
+function blurbVariants(candidate, teamName) {
+  if (!candidate) return null;
+  const d = candidate.data;
+  switch (candidate.type) {
+    case "streak_win": return [
+      `${teamName} are riding a ${d.length}-game winning streak.`,
+      `${d.length} in a row now for ${teamName}.`,
+    ];
+    case "streak_loss": return [
+      `${teamName} have dropped ${d.length} straight.`,
+      `${teamName} are stuck in a ${d.length}-game skid.`,
+    ];
+    case "lucky": return [
+      `${teamName} have more wins than their weekly scores alone would suggest -- ${d.delta.toFixed(1)} above expectation.`,
+      `Fortune's been kind to ${teamName}: ${d.delta.toFixed(1)} wins clear of their Xwins pace.`,
+    ];
+    case "unlucky": return [
+      `${teamName}'s record doesn't reflect how they've actually played -- ${d.delta.toFixed(1)} wins below expectation.`,
+      `The numbers say ${teamName} have been unlucky: ${d.delta.toFixed(1)} wins off their Xwins pace.`,
+    ];
+    case "strength": return [
+      `${teamName} boast the league's best ${d.position} corps.`,
+      `No one beats ${teamName} at ${d.position} this season.`,
+    ];
+    case "weakness": return [
+      `${teamName}'s ${d.position} room has been the league's worst.`,
+      `${d.position} remains the clear hole in ${teamName}'s roster.`,
+    ];
+    case "best_week": return [
+      `${teamName} posted the week's best score.`,
+      `Nobody outscored ${teamName} this week.`,
+    ];
+    case "worst_week": return [
+      `${teamName} finished with the week's worst score.`,
+      `${teamName} brought up the rear this week.`,
+    ];
+    case "rank_jump_up": return [
+      `${teamName} climbed ${d.amount} spots in the power rankings.`,
+      `${teamName} are on the move, up ${d.amount} spots this week.`,
+    ];
+    case "rank_jump_down": return [
+      `${teamName} tumbled ${d.amount} spots this week.`,
+      `A rough week sends ${teamName} down ${d.amount} spots.`,
+    ];
+    default: return null;
+  }
+}
+
+function renderPowerRankBlurb(teamName, teamData, numTeams, moveDirection, moveAmount, seedKey) {
+  const candidates = computeBlurbCandidates(teamData || {}, numTeams, moveDirection, moveAmount);
+  let variants = blurbVariants(candidates[0], teamName);
+  if (!variants) {
+    // Generic fallback -- always available, so every team gets a line.
+    const record = teamData && teamData.ties ? `${teamData.wins}-${teamData.losses}-${teamData.ties}` : `${(teamData || {}).wins}-${(teamData || {}).losses}`;
+    variants = [`${teamName} sit at ${record} on the season.`];
+  }
+  return pick(variants, seedKey);
+}
+
+function renderCurrentPowerRankings(logEntries, season, teamNameByRosterId, avatarByTeamName, plotTeams) {
   const seasonEntries = (logEntries || []).filter(e => e.season === season).sort((a, b) => a.week - b.week);
   if (seasonEntries.length === 0) return "";
 
@@ -643,25 +759,39 @@ function renderCurrentPowerRankings(logEntries, season, teamNameByRosterId, avat
     rankWeek(seasonEntries[seasonEntries.length - 2]).forEach(t => { prevRankByTid[t.tid] = t.rank; });
   }
 
+  // roster_id -> manager_id, via team_name, so each row can look up its
+  // streak/luck/positional_ranks from season_plots.json's teams dict
+  // (keyed by manager_id, unlike power_log.json which is roster_id-keyed).
+  const managerIdByTeamName = {};
+  Object.entries(plotTeams || {}).forEach(([mgrId, t]) => { managerIdByTeamName[t.team_name] = mgrId; });
+  const numTeams = latestRanked.length;
+
   const rows = latestRanked.map(t => {
     const teamName = (teamNameByRosterId || {})[t.tid] || `Roster ${t.tid}`;
     const avatar = avatarImg((avatarByTeamName || {})[teamName], teamName);
 
-    let moveHtml = "";
+    let moveHtml = "", moveDirection = null, moveAmount = 0;
     if (prevRankByTid && prevRankByTid[t.tid] != null) {
       const prevRank = prevRankByTid[t.tid];
-      if (t.rank < prevRank) moveHtml = `<span class="rank-move rank-up" title="Up from #${prevRank}">&#9650; ${prevRank - t.rank}</span>`;
-      else if (t.rank > prevRank) moveHtml = `<span class="rank-move rank-down" title="Down from #${prevRank}">&#9660; ${t.rank - prevRank}</span>`;
+      if (t.rank < prevRank) { moveDirection = "up"; moveAmount = prevRank - t.rank; moveHtml = `<span class="rank-move rank-up" title="Up from #${prevRank}">&#9650; ${moveAmount}</span>`; }
+      else if (t.rank > prevRank) { moveDirection = "down"; moveAmount = t.rank - prevRank; moveHtml = `<span class="rank-move rank-down" title="Down from #${prevRank}">&#9660; ${moveAmount}</span>`; }
       else moveHtml = `<span class="rank-move rank-same" title="Unchanged">&#8213;</span>`;
     }
 
+    const mgrId = managerIdByTeamName[teamName];
+    const teamData = mgrId ? plotTeams[mgrId] : null;
+    const blurb = renderPowerRankBlurb(teamName, teamData, numTeams, moveDirection, moveAmount, `${season}-${latest.week}-${t.tid}-blurb`);
+
     return `
       <div class="power-rank-row">
-        <span class="power-rank-number">${t.rank}</span>
-        ${avatar}
-        <span class="power-rank-name">${escapeHtml(teamName)}</span>
-        <span class="power-rank-score">${t.score.toFixed(1)}</span>
-        ${moveHtml}
+        <div class="power-rank-row-main">
+          <span class="power-rank-number">${t.rank}</span>
+          ${avatar}
+          <span class="power-rank-name">${escapeHtml(teamName)}</span>
+          <span class="power-rank-score">${t.score.toFixed(1)}</span>
+          ${moveHtml}
+        </div>
+        <p class="power-rank-blurb">${escapeHtml(blurb)}</p>
       </div>`;
   }).join("");
 
@@ -692,7 +822,7 @@ async function loadSeasonPlots(teamNameByRosterId, avatarByTeamName) {
       <div class="season-plots-grid">
         ${chartCard("LADY LUCK", "Actual Wins vs. Expected Wins", renderLadyLuck(plots.teams, avatarByTeamName), true)}
         ${chartCard("POWER RANKINGS", "Current Standings & Season History",
-          renderCurrentPowerRankings(log.entries || [], plots.season, teamNameByRosterId, avatarByTeamName) +
+          renderCurrentPowerRankings(log.entries || [], plots.season, teamNameByRosterId, avatarByTeamName, plots.teams) +
           renderPowerRankHistory(log.entries || [], plots.season, teamNameByRosterId, avatarByTeamName), true)}
         ${chartCard("POSITIONAL PPW", "Points Per Week by Slot", renderPositionalPpw(plots.teams))}
         ${chartCard("START FLEXIN'", "Flex Slot Usage League-Wide", renderFlexDistribution(plots.flex_distribution || {}))}

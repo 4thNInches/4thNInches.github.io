@@ -117,6 +117,64 @@ def compute_xwins(ranks_by_team: dict, num_teams: int, completed_weeks: list) ->
 
 
 # ============================================================
+# Feeds for the Current Power Rankings blurbs (recaps.js renders the
+# actual phrasing bank -- these are the two data-only inputs it doesn't
+# already have from power_log.json/Xwins: current streak, and how each
+# team ranked by raw score in the last completed week specifically
+# (distinct from power-rank movement, which power_log.json already
+# covers -- this is "how well did they play THIS week", not "how has
+# their blended power score trended").
+# ============================================================
+
+def compute_streaks(season_data: dict, completed_weeks: list) -> dict:
+    """tid -> {"type": "W"/"L"/"T", "length": N}, walking backward from
+    the most recent completed week. Stops at the first result that
+    doesn't match (or the first tie, which never extends a streak either
+    way -- a tie isn't a continuation of a win or loss streak)."""
+    teams = season_data["teams"]
+    streaks: dict = {}
+    for tid, team in teams.items():
+        by_week = {g["week"]: g for g in (team.get("schedule") or []) if g["week"] in completed_weeks}
+        ordered_weeks = sorted(by_week.keys(), reverse=True)
+        streak_type, length = None, 0
+        for w in ordered_weeks:
+            g = by_week[w]
+            if g["my_score"] > g["opp_score"]:
+                result = "W"
+            elif g["my_score"] < g["opp_score"]:
+                result = "L"
+            else:
+                result = "T"
+            if streak_type is None:
+                streak_type, length = result, 1
+            elif result == streak_type:
+                length += 1
+            else:
+                break
+        streaks[tid] = {"type": streak_type, "length": length} if streak_type else {"type": None, "length": 0}
+    return streaks
+
+
+def compute_positional_ranks(positional_ppw_by_roster: dict) -> dict:
+    """tid -> {position: rank}, 1 = best PPW at that position, ranked
+    across every team that has a value for it (a team with no data for a
+    position, e.g. never started one, simply has no entry for it here)."""
+    positions = set()
+    for ppw in positional_ppw_by_roster.values():
+        positions.update(ppw.keys())
+
+    ranks: dict = {tid: {} for tid in positional_ppw_by_roster}
+    for pos in positions:
+        ordered = sorted(
+            ((tid, ppw[pos]) for tid, ppw in positional_ppw_by_roster.items() if pos in ppw),
+            key=lambda tv: -tv[1],
+        )
+        for i, (tid, _) in enumerate(ordered):
+            ranks[tid][pos] = i + 1
+    return ranks
+
+
+# ============================================================
 # What-If Schedule grid -- distinct from the Xwins closed-form above.
 # This is the FULL pairwise "if manager A had played manager B's exact
 # schedule, what would A's record be" swap, matching analyze_scores.py's
@@ -305,6 +363,10 @@ def main():
     print(f"  computing Lady Luck / Xwins across {len(completed_weeks)} completed week(s)...")
     ranks_by_team = compute_weekly_ranks_by_team(season_data, completed_weeks)
     xwins = compute_xwins(ranks_by_team, num_teams, completed_weeks)
+    last_completed_week = max(completed_weeks)
+
+    print("  computing current streaks...")
+    streaks = compute_streaks(season_data, completed_weeks)
 
     print("  computing What-If Schedule grid...")
     what_if_grid = compute_what_if_grid(season_data, manager_mapping, completed_weeks)
@@ -321,6 +383,7 @@ def main():
         accumulate_week(matchups, roster_positions, players_db, ppw_sum, ppw_starts, flex_counts)
 
     positional_ppw_by_roster = finalize_ppw(ppw_sum, ppw_starts)
+    positional_ranks_by_roster = compute_positional_ranks(positional_ppw_by_roster)
     flex_distribution = finalize_flex_distribution(flex_counts)
 
     user_by_id = {u["user_id"]: u for u in users}
@@ -343,6 +406,9 @@ def main():
             "xwins": team_xwins,
             "luck_delta": round(wins - team_xwins, 2),
             "positional_ppw": positional_ppw_by_roster.get(rid, {}),
+            "positional_ranks": positional_ranks_by_roster.get(rid, {}),
+            "streak": streaks.get(rid, {"type": None, "length": 0}),
+            "last_week_rank": ranks_by_team.get(rid, {}).get(last_completed_week),
         }
 
     output = {
