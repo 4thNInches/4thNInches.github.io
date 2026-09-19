@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T16:15:43.164827+00:00",
+  "generated_at": "2026-09-19T20:15:39.440317+00:00",
   "window_days": 7,
   "items": [
     {
@@ -11,40 +11,40 @@
       "team_b": "VRDNO",
       "score_b": 0,
       "projected_b": 125.11,
-      "timestamp": 1789834543164.763
+      "timestamp": 1789848939440.2412
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernovas",
       "score_a": 17.2,
-      "projected_a": 136.56,
+      "projected_a": 136.53,
       "team_b": "packerlove24",
       "score_b": 7.1,
-      "projected_b": 147.16,
-      "timestamp": 1789834543164.76
+      "projected_b": 147.15,
+      "timestamp": 1789848939440.227
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Newman’s Owen",
       "score_a": 36.2,
-      "projected_a": 142.64,
+      "projected_a": 142.58,
       "team_b": "Jake From State Farm",
       "score_b": 27.2,
       "projected_b": 135.8,
-      "timestamp": 1789834543164.757
+      "timestamp": 1789848939440.206
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "theMadgician",
       "score_a": 45.82,
-      "projected_a": 140.7,
+      "projected_a": 138.8,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
       "projected_b": 127.58,
-      "timestamp": 1789834543164.753
+      "timestamp": 1789848939440.202
     },
     {
       "type": "live_score",
@@ -54,19 +54,49 @@
       "projected_a": 142.13,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 136.37,
-      "timestamp": 1789834543164.749
+      "projected_b": 138.43,
+      "timestamp": 1789848939440.199
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernova Takeover",
       "score_a": 23.3,
-      "projected_a": 149.62,
+      "projected_a": 149.6,
       "team_b": "Big Dumb Sports",
       "score_b": -0.1,
-      "projected_b": 137.97,
-      "timestamp": 1789834543164.734
+      "projected_b": 137.96,
+      "timestamp": 1789848939440.1802
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407131998815858688",
+      "timestamp": 1789848921067,
+      "manager_id": "matt",
+      "team_name": "theMadgician",
+      "added": {
+        "player_id": "10218",
+        "name": "Xavier Hutchinson",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407104465466617856",
+      "timestamp": 1789842356606,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "NE",
+        "name": "NE",
+        "position": "DEF"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
