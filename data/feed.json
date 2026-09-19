@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T20:16:24.761114+00:00",
+  "generated_at": "2026-09-19T00:22:49.804282+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,11 +7,11 @@
       "week": 2,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.5,
-      "projected_a": 144.82,
+      "projected_a": 145.15,
       "team_b": "VRDNO",
       "score_b": 0,
       "projected_b": 125.11,
-      "timestamp": 1789762584761.05
+      "timestamp": 1789777369804.217
     },
     {
       "type": "live_score",
@@ -22,29 +22,29 @@
       "team_b": "packerlove24",
       "score_b": 7.1,
       "projected_b": 147.16,
-      "timestamp": 1789762584761.0469
+      "timestamp": 1789777369804.214
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Newman’s Owen",
       "score_a": 36.2,
-      "projected_a": 140.39,
+      "projected_a": 141.56,
       "team_b": "Jake From State Farm",
       "score_b": 27.2,
       "projected_b": 135.8,
-      "timestamp": 1789762584761.044
+      "timestamp": 1789777369804.211
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "theMadgician",
       "score_a": 45.82,
-      "projected_a": 142.91,
+      "projected_a": 140.46,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
-      "projected_b": 127.08,
-      "timestamp": 1789762584761.041
+      "projected_b": 127.28,
+      "timestamp": 1789777369804.207
     },
     {
       "type": "live_score",
@@ -54,19 +54,19 @@
       "projected_a": 139.86,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 135.98,
-      "timestamp": 1789762584761.037
+      "projected_b": 136.34,
+      "timestamp": 1789777369804.2031
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernova Takeover",
       "score_a": 23.3,
-      "projected_a": 149.19,
+      "projected_a": 149.62,
       "team_b": "Big Dumb Sports",
       "score_b": -0.1,
-      "projected_b": 137.03,
-      "timestamp": 1789762584761.021
+      "projected_b": 137.97,
+      "timestamp": 1789777369804.189
     },
     {
       "type": "waiver_move",
@@ -260,40 +260,6 @@
         "player_id": "13285",
         "name": "Malachi Fields",
         "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1404279834221264896",
-      "timestamp": 1789168912037,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "KC",
-        "name": "KC",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "5849",
-        "name": "Kyler Murray",
-        "position": "QB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1404264423429791744",
-      "timestamp": 1789165237818,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "5849",
-        "name": "Kyler Murray",
-        "position": "QB"
       },
       "dropped": null,
       "faab": null,
