@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T12:20:47.341942+00:00",
+  "generated_at": "2026-09-19T16:15:43.164827+00:00",
   "window_days": 7,
   "items": [
     {
@@ -11,7 +11,7 @@
       "team_b": "VRDNO",
       "score_b": 0,
       "projected_b": 125.11,
-      "timestamp": 1789820447341.879
+      "timestamp": 1789834543164.763
     },
     {
       "type": "live_score",
@@ -22,7 +22,7 @@
       "team_b": "packerlove24",
       "score_b": 7.1,
       "projected_b": 147.16,
-      "timestamp": 1789820447341.876
+      "timestamp": 1789834543164.76
     },
     {
       "type": "live_score",
@@ -33,7 +33,7 @@
       "team_b": "Jake From State Farm",
       "score_b": 27.2,
       "projected_b": 135.8,
-      "timestamp": 1789820447341.873
+      "timestamp": 1789834543164.757
     },
     {
       "type": "live_score",
@@ -44,18 +44,18 @@
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
       "projected_b": 127.58,
-      "timestamp": 1789820447341.8691
+      "timestamp": 1789834543164.753
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Bandits",
       "score_a": 6.8,
-      "projected_a": 139.86,
+      "projected_a": 142.13,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
       "projected_b": 136.37,
-      "timestamp": 1789820447341.865
+      "timestamp": 1789834543164.749
     },
     {
       "type": "live_score",
@@ -66,7 +66,26 @@
       "team_b": "Big Dumb Sports",
       "score_b": -0.1,
       "projected_b": 137.97,
-      "timestamp": 1789820447341.85
+      "timestamp": 1789834543164.734
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407020886803980288",
+      "timestamp": 1789822429900,
+      "manager_id": "mikey_k",
+      "team_name": "ROK Navy's Finest",
+      "added": {
+        "player_id": "12502",
+        "name": "Gunnar Helm",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "5850",
+        "name": "Josh Jacobs",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
