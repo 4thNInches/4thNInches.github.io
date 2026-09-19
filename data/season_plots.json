@@ -16,7 +16,22 @@
         "TE": 24.5,
         "K": 2.0,
         "DEF": 16.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 3,
+        "WR": 10,
+        "TE": 3,
+        "DEF": 2,
+        "QB": 6,
+        "K": 11
+      },
+      "streak": {
+        "type": "W",
+        "length": 1
+      },
+      "last_week_rank": 5,
+      "last_week_score": 159.1,
+      "last_week_bench_points": 49.2
     },
     "john": {
       "team_name": "Chig-a-Doodle-Doo",
@@ -32,7 +47,22 @@
         "TE": 7.5,
         "K": 7.8,
         "DEF": 20.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 7,
+        "WR": 4,
+        "TE": 9,
+        "DEF": 1,
+        "QB": 5,
+        "K": 7
+      },
+      "streak": {
+        "type": "W",
+        "length": 1
+      },
+      "last_week_rank": 6,
+      "last_week_score": 159.0,
+      "last_week_bench_points": 27.4
     },
     "anthony": {
       "team_name": "Hurts Over 10.5int @-1000",
@@ -48,7 +78,22 @@
         "TE": 0.0,
         "K": 1.0,
         "DEF": 16.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 11,
+        "WR": 12,
+        "TE": 11,
+        "DEF": 3,
+        "QB": 3,
+        "K": 12
+      },
+      "streak": {
+        "type": "L",
+        "length": 1
+      },
+      "last_week_rank": 12,
+      "last_week_score": 94.86,
+      "last_week_bench_points": 24.54
     },
     "dennis": {
       "team_name": "Big Dumb Sports",
@@ -64,7 +109,22 @@
         "TE": 0.0,
         "K": 8.1,
         "DEF": 2.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 2,
+        "WR": 7,
+        "TE": 12,
+        "DEF": 10,
+        "QB": 12,
+        "K": 6
+      },
+      "streak": {
+        "type": "L",
+        "length": 1
+      },
+      "last_week_rank": 9,
+      "last_week_score": 130.3,
+      "last_week_bench_points": 49.8
     },
     "matt": {
       "team_name": "theMadgician",
@@ -80,7 +140,22 @@
         "TE": 9.5,
         "K": 12.7,
         "DEF": 8.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 8,
+        "WR": 2,
+        "TE": 8,
+        "DEF": 6,
+        "QB": 1,
+        "K": 3
+      },
+      "streak": {
+        "type": "W",
+        "length": 1
+      },
+      "last_week_rank": 2,
+      "last_week_score": 178.66,
+      "last_week_bench_points": 49.6
     },
     "nick": {
       "team_name": "Jake From State Farm",
@@ -96,7 +171,22 @@
         "TE": 27.8,
         "K": 6.8,
         "DEF": 1.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 10,
+        "WR": 11,
+        "TE": 2,
+        "DEF": 11,
+        "QB": 10,
+        "K": 8
+      },
+      "streak": {
+        "type": "L",
+        "length": 1
+      },
+      "last_week_rank": 11,
+      "last_week_score": 102.96,
+      "last_week_bench_points": 37.7
     },
     "mark": {
       "team_name": "Supernovas",
@@ -112,7 +202,22 @@
         "TE": 9.8,
         "K": 12.0,
         "DEF": -3.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 6,
+        "WR": 9,
+        "TE": 7,
+        "DEF": 12,
+        "QB": 7,
+        "K": 4
+      },
+      "streak": {
+        "type": "L",
+        "length": 1
+      },
+      "last_week_rank": 10,
+      "last_week_score": 111.66,
+      "last_week_bench_points": 67.6
     },
     "bill_m": {
       "team_name": "Bandits",
@@ -128,7 +233,22 @@
         "TE": 10.3,
         "K": 19.5,
         "DEF": 8.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 1,
+        "WR": 8,
+        "TE": 6,
+        "DEF": 7,
+        "QB": 8,
+        "K": 1
+      },
+      "streak": {
+        "type": "L",
+        "length": 1
+      },
+      "last_week_rank": 7,
+      "last_week_score": 154.2,
+      "last_week_bench_points": 69.08
     },
     "mikey_k": {
       "team_name": "ROK Navy's Finest",
@@ -144,7 +264,22 @@
         "TE": 22.0,
         "K": 9.8,
         "DEF": 3.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 12,
+        "WR": 3,
+        "TE": 4,
+        "DEF": 9,
+        "QB": 4,
+        "K": 5
+      },
+      "streak": {
+        "type": "W",
+        "length": 1
+      },
+      "last_week_rank": 4,
+      "last_week_score": 161.32,
+      "last_week_bench_points": 73.8
     },
     "owen": {
       "team_name": "Newman’s Owen",
@@ -160,7 +295,22 @@
         "TE": 4.1,
         "K": 6.6,
         "DEF": 5.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 5,
+        "WR": 5,
+        "TE": 10,
+        "DEF": 8,
+        "QB": 2,
+        "K": 9
+      },
+      "streak": {
+        "type": "W",
+        "length": 1
+      },
+      "last_week_rank": 3,
+      "last_week_score": 162.96,
+      "last_week_bench_points": 46.1
     },
     "bob": {
       "team_name": "packerlove24",
@@ -176,7 +326,22 @@
         "TE": 13.1,
         "K": 6.3,
         "DEF": 15.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 4,
+        "WR": 1,
+        "TE": 5,
+        "DEF": 4,
+        "QB": 9,
+        "K": 10
+      },
+      "streak": {
+        "type": "W",
+        "length": 1
+      },
+      "last_week_rank": 1,
+      "last_week_score": 183.86,
+      "last_week_bench_points": 24.7
     },
     "kodi": {
       "team_name": "VRDNO",
@@ -192,7 +357,22 @@
         "TE": 28.7,
         "K": 15.2,
         "DEF": 9.0
-      }
+      },
+      "positional_ranks": {
+        "RB": 9,
+        "WR": 6,
+        "TE": 1,
+        "DEF": 5,
+        "QB": 11,
+        "K": 2
+      },
+      "streak": {
+        "type": "L",
+        "length": 1
+      },
+      "last_week_rank": 8,
+      "last_week_score": 141.82,
+      "last_week_bench_points": 44.86
     }
   },
   "flex_distribution": {
@@ -267,10 +447,10 @@
           "delta": -1
         },
         "mark": {
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
-          "ties": 1,
-          "delta": -1
+          "ties": 0,
+          "delta": 0
         },
         "bill_m": {
           "wins": 0,
@@ -317,10 +497,10 @@
           "delta": 0
         },
         "anthony": {
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
-          "ties": 1,
-          "delta": -1
+          "ties": 0,
+          "delta": 0
         },
         "dennis": {
           "wins": 0,
@@ -386,8 +566,8 @@
         },
         "john": {
           "wins": 0,
-          "losses": 0,
-          "ties": 1,
+          "losses": 1,
+          "ties": 0,
           "delta": 0
         },
         "anthony": {
@@ -478,8 +658,8 @@
         },
         "matt": {
           "wins": 0,
-          "losses": 0,
-          "ties": 1,
+          "losses": 1,
+          "ties": 0,
           "delta": 0
         },
         "nick": {
@@ -545,10 +725,10 @@
           "delta": 0
         },
         "dennis": {
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
-          "ties": 1,
-          "delta": -1
+          "ties": 0,
+          "delta": 0
         },
         "matt": {
           "wins": 1,
@@ -650,8 +830,8 @@
         },
         "mikey_k": {
           "wins": 0,
-          "losses": 0,
-          "ties": 1,
+          "losses": 1,
+          "ties": 0,
           "delta": 0
         },
         "owen": {
@@ -676,8 +856,8 @@
       "mark": {
         "mikey_g": {
           "wins": 0,
-          "losses": 0,
-          "ties": 1,
+          "losses": 1,
+          "ties": 0,
           "delta": 0
         },
         "john": {
@@ -810,8 +990,8 @@
         },
         "bob": {
           "wins": 0,
-          "losses": 0,
-          "ties": 1,
+          "losses": 1,
+          "ties": 0,
           "delta": 0
         },
         "kodi": {
@@ -853,10 +1033,10 @@
           "delta": 0
         },
         "nick": {
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
-          "ties": 1,
-          "delta": -1
+          "ties": 0,
+          "delta": 0
         },
         "mark": {
           "wins": 1,
@@ -963,10 +1143,10 @@
           "delta": 0
         },
         "kodi": {
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
-          "ties": 1,
-          "delta": -1
+          "ties": 0,
+          "delta": 0
         }
       },
       "bob": {
@@ -1013,10 +1193,10 @@
           "delta": 0
         },
         "bill_m": {
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
-          "ties": 1,
-          "delta": -1
+          "ties": 0,
+          "delta": 0
         },
         "mikey_k": {
           "wins": 1,
@@ -1100,8 +1280,8 @@
         },
         "owen": {
           "wins": 0,
-          "losses": 0,
-          "ties": 1,
+          "losses": 1,
+          "ties": 0,
           "delta": 0
         },
         "bob": {
