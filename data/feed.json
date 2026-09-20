@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T04:16:37.077029+00:00",
+  "generated_at": "2026-09-20T08:16:19.791573+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,11 +7,11 @@
       "week": 2,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.5,
-      "projected_a": 145.18,
+      "projected_a": 145.15,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 124.98,
-      "timestamp": 1789877797076.963
+      "projected_b": 125.07,
+      "timestamp": 1789892179791.527
     },
     {
       "type": "live_score",
@@ -21,8 +21,8 @@
       "projected_a": 136.53,
       "team_b": "packerlove24",
       "score_b": 7.1,
-      "projected_b": 147.15,
-      "timestamp": 1789877797076.949
+      "projected_b": 147.2,
+      "timestamp": 1789892179791.519
     },
     {
       "type": "live_score",
@@ -33,40 +33,40 @@
       "team_b": "Jake From State Farm",
       "score_b": 27.2,
       "projected_b": 135.82,
-      "timestamp": 1789877797076.945
+      "timestamp": 1789892179791.516
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "theMadgician",
       "score_a": 45.82,
-      "projected_a": 138.79,
+      "projected_a": 138.84,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
       "projected_b": 125.16,
-      "timestamp": 1789877797076.941
+      "timestamp": 1789892179791.513
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Bandits",
       "score_a": 6.8,
-      "projected_a": 142.08,
+      "projected_a": 142.13,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
       "projected_b": 138.46,
-      "timestamp": 1789877797076.936
+      "timestamp": 1789892179791.51
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernova Takeover",
       "score_a": 23.3,
-      "projected_a": 149.53,
+      "projected_a": 149.84,
       "team_b": "Big Dumb Sports",
       "score_b": -0.1,
-      "projected_b": 137.91,
-      "timestamp": 1789877797076.9192
+      "projected_b": 137.96,
+      "timestamp": 1789892179791.5
     },
     {
       "type": "waiver_move",
