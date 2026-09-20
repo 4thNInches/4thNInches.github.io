@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T20:15:39.440317+00:00",
+  "generated_at": "2026-09-20T00:24:07.304468+00:00",
   "window_days": 7,
   "items": [
     {
@@ -10,8 +10,8 @@
       "projected_a": 145.15,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 125.11,
-      "timestamp": 1789848939440.2412
+      "projected_b": 125.09,
+      "timestamp": 1789863847304.3972
     },
     {
       "type": "live_score",
@@ -22,7 +22,7 @@
       "team_b": "packerlove24",
       "score_b": 7.1,
       "projected_b": 147.15,
-      "timestamp": 1789848939440.227
+      "timestamp": 1789863847304.393
     },
     {
       "type": "live_score",
@@ -32,19 +32,19 @@
       "projected_a": 142.58,
       "team_b": "Jake From State Farm",
       "score_b": 27.2,
-      "projected_b": 135.8,
-      "timestamp": 1789848939440.206
+      "projected_b": 135.82,
+      "timestamp": 1789863847304.39
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "theMadgician",
       "score_a": 45.82,
-      "projected_a": 138.8,
+      "projected_a": 138.77,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
-      "projected_b": 127.58,
-      "timestamp": 1789848939440.202
+      "projected_b": 125.17,
+      "timestamp": 1789863847304.386
     },
     {
       "type": "live_score",
@@ -54,19 +54,19 @@
       "projected_a": 142.13,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 138.43,
-      "timestamp": 1789848939440.199
+      "projected_b": 138.46,
+      "timestamp": 1789863847304.382
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernova Takeover",
       "score_a": 23.3,
-      "projected_a": 149.6,
+      "projected_a": 149.53,
       "team_b": "Big Dumb Sports",
       "score_b": -0.1,
-      "projected_b": 137.96,
-      "timestamp": 1789848939440.1802
+      "projected_b": 137.91,
+      "timestamp": 1789863847304.3662
     },
     {
       "type": "waiver_move",
