@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T00:24:07.304468+00:00",
+  "generated_at": "2026-09-20T04:16:37.077029+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,11 +7,11 @@
       "week": 2,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.5,
-      "projected_a": 145.15,
+      "projected_a": 145.18,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 125.09,
-      "timestamp": 1789863847304.3972
+      "projected_b": 124.98,
+      "timestamp": 1789877797076.963
     },
     {
       "type": "live_score",
@@ -22,7 +22,7 @@
       "team_b": "packerlove24",
       "score_b": 7.1,
       "projected_b": 147.15,
-      "timestamp": 1789863847304.393
+      "timestamp": 1789877797076.949
     },
     {
       "type": "live_score",
@@ -33,29 +33,29 @@
       "team_b": "Jake From State Farm",
       "score_b": 27.2,
       "projected_b": 135.82,
-      "timestamp": 1789863847304.39
+      "timestamp": 1789877797076.945
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "theMadgician",
       "score_a": 45.82,
-      "projected_a": 138.77,
+      "projected_a": 138.79,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
-      "projected_b": 125.17,
-      "timestamp": 1789863847304.386
+      "projected_b": 125.16,
+      "timestamp": 1789877797076.941
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Bandits",
       "score_a": 6.8,
-      "projected_a": 142.13,
+      "projected_a": 142.08,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
       "projected_b": 138.46,
-      "timestamp": 1789863847304.382
+      "timestamp": 1789877797076.936
     },
     {
       "type": "live_score",
@@ -66,7 +66,7 @@
       "team_b": "Big Dumb Sports",
       "score_b": -0.1,
       "projected_b": 137.91,
-      "timestamp": 1789863847304.3662
+      "timestamp": 1789877797076.9192
     },
     {
       "type": "waiver_move",
