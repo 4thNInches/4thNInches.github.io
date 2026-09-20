@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T08:16:19.791573+00:00",
+  "generated_at": "2026-09-20T12:19:51.000560+00:00",
   "window_days": 7,
   "items": [
     {
@@ -11,7 +11,7 @@
       "team_b": "VRDNO",
       "score_b": 0,
       "projected_b": 125.07,
-      "timestamp": 1789892179791.527
+      "timestamp": 1789906791000.4932
     },
     {
       "type": "live_score",
@@ -22,7 +22,7 @@
       "team_b": "packerlove24",
       "score_b": 7.1,
       "projected_b": 147.2,
-      "timestamp": 1789892179791.519
+      "timestamp": 1789906791000.491
     },
     {
       "type": "live_score",
@@ -33,18 +33,18 @@
       "team_b": "Jake From State Farm",
       "score_b": 27.2,
       "projected_b": 135.82,
-      "timestamp": 1789892179791.516
+      "timestamp": 1789906791000.4749
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "theMadgician",
       "score_a": 45.82,
-      "projected_a": 138.84,
+      "projected_a": 138.87,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
-      "projected_b": 125.16,
-      "timestamp": 1789892179791.513
+      "projected_b": 125.13,
+      "timestamp": 1789906791000.4722
     },
     {
       "type": "live_score",
@@ -55,18 +55,37 @@
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
       "projected_b": 138.46,
-      "timestamp": 1789892179791.51
+      "timestamp": 1789906791000.469
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernova Takeover",
       "score_a": 23.3,
-      "projected_a": 149.84,
+      "projected_a": 149.91,
       "team_b": "Big Dumb Sports",
       "score_b": -0.1,
       "projected_b": 137.96,
-      "timestamp": 1789892179791.5
+      "timestamp": 1789906791000.4521
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407037491025838080",
+      "timestamp": 1789905252016,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "5850",
+        "name": "Josh Jacobs",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "8180",
+        "name": "Jalen Nailor",
+        "position": "WR"
+      },
+      "faab": 63,
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
