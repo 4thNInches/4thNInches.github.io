@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T12:19:51.000560+00:00",
+  "generated_at": "2026-09-20T16:16:10.515959+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,66 +7,149 @@
       "week": 2,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.5,
-      "projected_a": 145.15,
+      "projected_a": 145.35,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 125.07,
-      "timestamp": 1789906791000.4932
+      "projected_b": 125.03,
+      "timestamp": 1789920970515.861
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernovas",
       "score_a": 17.2,
-      "projected_a": 136.53,
+      "projected_a": 136.52,
       "team_b": "packerlove24",
       "score_b": 7.1,
-      "projected_b": 147.2,
-      "timestamp": 1789906791000.491
+      "projected_b": 147.21,
+      "timestamp": 1789920970515.858
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Newman’s Owen",
       "score_a": 36.2,
-      "projected_a": 142.58,
+      "projected_a": 142.56,
       "team_b": "Jake From State Farm",
       "score_b": 27.2,
-      "projected_b": 135.82,
-      "timestamp": 1789906791000.4749
+      "projected_b": 137.16,
+      "timestamp": 1789920970515.855
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "theMadgician",
       "score_a": 45.82,
-      "projected_a": 138.87,
+      "projected_a": 138.85,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 0,
-      "projected_b": 125.13,
-      "timestamp": 1789906791000.4722
+      "projected_b": 127.94,
+      "timestamp": 1789920970515.851
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Bandits",
       "score_a": 6.8,
-      "projected_a": 142.13,
+      "projected_a": 141.75,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 138.46,
-      "timestamp": 1789906791000.469
+      "projected_b": 136.58,
+      "timestamp": 1789920970515.848
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernova Takeover",
       "score_a": 23.3,
-      "projected_a": 149.91,
+      "projected_a": 142.45,
       "team_b": "Big Dumb Sports",
       "score_b": -0.1,
-      "projected_b": 137.96,
-      "timestamp": 1789906791000.4521
+      "projected_b": 138.01,
+      "timestamp": 1789920970515.832
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407425664423862272",
+      "timestamp": 1789918936405,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "13545",
+        "name": "Trey Smack",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "12185",
+        "name": "Spencer Shrader",
+        "position": "K"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407418353450078208",
+      "timestamp": 1789917193332,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "9504",
+        "name": "Kayshon Boutte",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407418252962844672",
+      "timestamp": 1789917169374,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "5849",
+        "name": "Kyler Murray",
+        "position": "QB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407418023962230784",
+      "timestamp": 1789917114777,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "4137",
+        "name": "James Conner",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "11237",
+        "name": "Jacob Saylors",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407394504511705088",
+      "timestamp": 1789911507302,
+      "manager_id": "owen",
+      "team_name": "Newman’s Owen",
+      "added": {
+        "player_id": "6130",
+        "name": "Devin Singletary",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -85,7 +168,7 @@
         "position": "WR"
       },
       "faab": 63,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -263,74 +346,6 @@
         "position": "DEF"
       },
       "faab": 2,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1404896415980806144",
-      "timestamp": 1789315916584,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "13311",
-        "name": "Chris Bell",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1404896105283497984",
-      "timestamp": 1789315842508,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "2020",
-        "name": "Cairo Santos",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "11653",
-        "name": "Charlie Smyth",
-        "position": "K"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1404875682584035328",
-      "timestamp": 1789310973358,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "11653",
-        "name": "Charlie Smyth",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "11647",
-        "name": "Kimani Vidal",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1404866744681521152",
-      "timestamp": 1789308842395,
-      "manager_id": "mikey_g",
-      "team_name": "Supernova Takeover",
-      "added": {
-        "player_id": "13285",
-        "name": "Malachi Fields",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
       "remark": null
     }
   ]
