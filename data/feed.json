@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T00:23:26.269840+00:00",
+  "generated_at": "2026-09-21T04:17:05.341089+00:00",
   "window_days": 7,
   "items": [
     {
@@ -11,18 +11,18 @@
       "team_b": "VRDNO",
       "score_b": 110.12,
       "projected_b": 125.98,
-      "timestamp": 1789950206269.769
+      "timestamp": 1789964225341.018
     },
     {
       "type": "live_score",
       "week": 2,
-      "team_a": "Supernovas",
-      "score_a": 122.14,
-      "projected_a": 136.5,
-      "team_b": "packerlove24",
-      "score_b": 98.78,
-      "projected_b": 147.25,
-      "timestamp": 1789950206269.766
+      "team_a": "packerlove24",
+      "score_a": 149.68,
+      "projected_a": 147.25,
+      "team_b": "Supernovas",
+      "score_b": 122.14,
+      "projected_b": 136.5,
+      "timestamp": 1789964225341.014
     },
     {
       "type": "live_score",
@@ -31,9 +31,9 @@
       "score_a": 122.22,
       "projected_a": 142.62,
       "team_b": "Jake From State Farm",
-      "score_b": 120.38,
-      "projected_b": 137.16,
-      "timestamp": 1789950206269.762
+      "score_b": 121.38,
+      "projected_b": 137.11,
+      "timestamp": 1789964225341.011
     },
     {
       "type": "live_score",
@@ -44,7 +44,7 @@
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 77.7,
       "projected_b": 128.41,
-      "timestamp": 1789950206269.759
+      "timestamp": 1789964225341.008
     },
     {
       "type": "live_score",
@@ -53,20 +53,20 @@
       "score_a": 170.06,
       "projected_a": 136.55,
       "team_b": "Bandits",
-      "score_b": 94.96,
+      "score_b": 109.36,
       "projected_b": 141.75,
-      "timestamp": 1789950206269.755
+      "timestamp": 1789964225341.003
     },
     {
       "type": "live_score",
       "week": 2,
       "team_a": "Supernova Takeover",
-      "score_a": 103.48,
+      "score_a": 115.78,
       "projected_a": 150.32,
       "team_b": "Big Dumb Sports",
-      "score_b": 65.4,
+      "score_b": 94.6,
       "projected_b": 138.01,
-      "timestamp": 1789950206269.74
+      "timestamp": 1789964225340.988
     },
     {
       "type": "waiver_move",
