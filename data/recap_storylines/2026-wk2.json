@@ -1,0 +1,116 @@
+{
+  "season": "2026",
+  "week": 2,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "mikey_k",
+        "team_name": "ROK Navy's Finest",
+        "bench_points": 64.3,
+        "top_bench_player": {
+          "name": "Denzel Boston",
+          "points": 25.5
+        }
+      }
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "data": {
+        "winner": {
+          "manager_id": "mikey_k",
+          "team_name": "ROK Navy's Finest",
+          "score": 113.86,
+          "rank": 9
+        },
+        "loser": {
+          "manager_id": "kodi",
+          "team_name": "VRDNO",
+          "score": 110.12,
+          "rank": 10
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "matt",
+          "team_name": "theMadgician",
+          "score": 127.92
+        },
+        "loser": {
+          "manager_id": "anthony",
+          "team_name": "Hurts Over 10.5int @-1000",
+          "score": 77.7,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "john",
+          "team_name": "Chig-a-Doodle-Doo",
+          "score": 170.06
+        },
+        "loser": {
+          "manager_id": "bill_m",
+          "team_name": "Bandits",
+          "score": 109.36
+        },
+        "margin": 60.7
+      }
+    }
+  ],
+  "context": {
+    "weekly_total": 1550.4,
+    "weekly_avg": 129.2,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "lowest_score",
+        "rank": 50,
+        "data": {
+          "team_name": "Hurts Over 10.5int @-1000",
+          "score": 77.7
+        }
+      },
+      {
+        "type": "closest_game",
+        "rank": 73,
+        "data": {
+          "team_a": "ROK Navy's Finest",
+          "team_b": "VRDNO",
+          "score_a": 113.86,
+          "score_b": 110.12,
+          "margin": 3.74
+        }
+      },
+      {
+        "type": "biggest_blowout",
+        "rank": 122,
+        "data": {
+          "team_a": "Chig-a-Doodle-Doo",
+          "team_b": "Bandits",
+          "score_a": 170.06,
+          "score_b": 109.36,
+          "margin": 60.7
+        }
+      },
+      {
+        "type": "highest_score",
+        "rank": 157,
+        "data": {
+          "team_name": "Chig-a-Doodle-Doo",
+          "score": 170.06
+        }
+      }
+    ]
+  }
+}

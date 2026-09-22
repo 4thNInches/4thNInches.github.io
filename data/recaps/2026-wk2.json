@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 2,
+  "context": "This week's 12 teams put up 1550.4 points between them, 129.2 a team.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "ROK Navy's Finest's bench outscored their good sense: 64.3 points left sitting, 25.5 of it from Denzel Boston alone."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "ROK Navy's Finest scored just 113.86 -- the 9th-highest score in the league this week -- but VRDNO somehow scored even less (110.12), so the win counts all the same."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "theMadgician's defense (well, their opponent's offense) did the work: Hurts Over 10.5int @-1000 finished with just 77.7."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "Chig-a-Doodle-Doo demolished Bandits 170.06-109.36, a 60.7-point margin -- the biggest blowout of the week."
+    }
+  ]
+}

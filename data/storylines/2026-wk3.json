@@ -1,0 +1,709 @@
+{
+  "season": "2026",
+  "week": 3,
+  "matchups": [
+    {
+      "team_a": {
+        "manager_id": "mikey_g",
+        "team_name": "Supernova Takeover"
+      },
+      "team_b": {
+        "manager_id": "kodi",
+        "team_name": "VRDNO"
+      },
+      "storylines": [
+        {
+          "type": "head_to_head",
+          "data": {
+            "career_record": {
+              "mikey_g": 1,
+              "kodi": 0
+            },
+            "avg_score": {
+              "mikey_g": 176.24,
+              "kodi": 124.32
+            },
+            "current_streak": {
+              "manager_id": "mikey_g",
+              "count": 1
+            }
+          }
+        },
+        {
+          "type": "notable_matchup",
+          "data": {
+            "season": 2025,
+            "week": 5,
+            "phase": "regular",
+            "score": {
+              "mikey_g": 176.24,
+              "kodi": 124.32
+            },
+            "note_key": "highest_combined_score_between_them"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "mikey_g",
+            "flavor_key": "mikey_g"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "kodi",
+            "flavor_key": "kodi"
+          }
+        },
+        {
+          "type": "roster_strength",
+          "data": {
+            "positional_edge": [
+              {
+                "position": "QB",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 22.1,
+                  "b": 22.02
+                }
+              },
+              {
+                "position": "RB",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 25.32,
+                  "b": 14.56
+                }
+              },
+              {
+                "position": "WR",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 13.87,
+                  "b": 24.68
+                }
+              },
+              {
+                "position": "TE",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 19.49,
+                  "b": 15.37
+                }
+              },
+              {
+                "position": "K",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 8.71,
+                  "b": 9.57
+                }
+              },
+              {
+                "position": "DEF",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 6.09,
+                  "b": 5.76
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "team_a": {
+        "manager_id": "john",
+        "team_name": "Chig-a-Doodle-Doo"
+      },
+      "team_b": {
+        "manager_id": "nick",
+        "team_name": "Jake From State Farm"
+      },
+      "storylines": [
+        {
+          "type": "head_to_head",
+          "data": {
+            "career_record": {
+              "john": 1,
+              "nick": 8
+            },
+            "avg_score": {
+              "john": 119.0,
+              "nick": 137.93
+            },
+            "current_streak": {
+              "manager_id": "john",
+              "count": 1
+            }
+          }
+        },
+        {
+          "type": "postseason_history",
+          "data": {
+            "meetings": [
+              {
+                "season": 2022,
+                "round": "semifinal",
+                "winner": "nick",
+                "score": {
+                  "nick": 124.36,
+                  "john": 104.56
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "notable_matchup",
+          "data": {
+            "season": 2025,
+            "week": 6,
+            "phase": "regular",
+            "score": {
+              "john": 138.98,
+              "nick": 163.42
+            },
+            "note_key": "highest_combined_score_between_them"
+          }
+        },
+        {
+          "type": "rivalry_lore",
+          "data": {
+            "lore_key": "nick_john"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "nick",
+            "flavor_key": "nick"
+          }
+        },
+        {
+          "type": "roster_strength",
+          "data": {
+            "positional_edge": [
+              {
+                "position": "QB",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 21.51,
+                  "b": 18.14
+                }
+              },
+              {
+                "position": "RB",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 17.82,
+                  "b": 17.29
+                }
+              },
+              {
+                "position": "WR",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 18.19,
+                  "b": 18.06
+                }
+              },
+              {
+                "position": "TE",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 11.89,
+                  "b": 13.88
+                }
+              },
+              {
+                "position": "K",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 8.69,
+                  "b": 10.03
+                }
+              },
+              {
+                "position": "DEF",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 5.8,
+                  "b": 8.43
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "team_a": {
+        "manager_id": "anthony",
+        "team_name": "Hurts Over 10.5int @-1000"
+      },
+      "team_b": {
+        "manager_id": "bob",
+        "team_name": "packerlove24"
+      },
+      "storylines": [
+        {
+          "type": "head_to_head",
+          "data": {
+            "career_record": {
+              "anthony": 6,
+              "bob": 8
+            },
+            "avg_score": {
+              "anthony": 132.77,
+              "bob": 136.58
+            },
+            "current_streak": {
+              "manager_id": "bob",
+              "count": 1
+            }
+          }
+        },
+        {
+          "type": "notable_matchup",
+          "data": {
+            "season": 2018,
+            "week": 6,
+            "phase": "regular",
+            "score": {
+              "anthony": 230.42,
+              "bob": 139.5
+            },
+            "note_key": "highest_combined_score_between_them"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "anthony",
+            "flavor_key": "anthony"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "bob",
+            "flavor_key": "bob"
+          }
+        },
+        {
+          "type": "roster_strength",
+          "data": {
+            "positional_edge": [
+              {
+                "position": "QB",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 25.54,
+                  "b": 19.5
+                }
+              },
+              {
+                "position": "RB",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 17.37,
+                  "b": 21.19
+                }
+              },
+              {
+                "position": "WR",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 14.85,
+                  "b": 18.5
+                }
+              },
+              {
+                "position": "TE",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 11.16,
+                  "b": 13.6
+                }
+              },
+              {
+                "position": "K",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 9.85,
+                  "b": 9.51
+                }
+              },
+              {
+                "position": "DEF",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 5.75,
+                  "b": 8.85
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "team_a": {
+        "manager_id": "dennis",
+        "team_name": "Big Dumb Sports"
+      },
+      "team_b": {
+        "manager_id": "bill_m",
+        "team_name": "Bandits"
+      },
+      "storylines": [
+        {
+          "type": "head_to_head",
+          "data": {
+            "career_record": {
+              "dennis": 1,
+              "bill_m": 8
+            },
+            "avg_score": {
+              "dennis": 120.83,
+              "bill_m": 152.18
+            },
+            "current_streak": {
+              "manager_id": "bill_m",
+              "count": 5
+            }
+          }
+        },
+        {
+          "type": "notable_matchup",
+          "data": {
+            "season": 2024,
+            "week": 8,
+            "phase": "regular",
+            "score": {
+              "dennis": 157.94,
+              "bill_m": 164.7
+            },
+            "note_key": "highest_combined_score_between_them"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "dennis",
+            "flavor_key": "dennis"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "bill_m",
+            "flavor_key": "bill_m"
+          }
+        },
+        {
+          "type": "roster_strength",
+          "data": {
+            "positional_edge": [
+              {
+                "position": "QB",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 16.73,
+                  "b": 18.34
+                }
+              },
+              {
+                "position": "RB",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 21.71,
+                  "b": 22.24
+                }
+              },
+              {
+                "position": "WR",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 15.4,
+                  "b": 16.32
+                }
+              },
+              {
+                "position": "TE",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 12.92,
+                  "b": 11.82
+                }
+              },
+              {
+                "position": "K",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 8.48,
+                  "b": 8.21
+                }
+              },
+              {
+                "position": "DEF",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 6.2,
+                  "b": 5.85
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "team_a": {
+        "manager_id": "matt",
+        "team_name": "theMadgician"
+      },
+      "team_b": {
+        "manager_id": "mikey_k",
+        "team_name": "ROK Navy's Finest"
+      },
+      "storylines": [
+        {
+          "type": "head_to_head",
+          "data": {
+            "career_record": {
+              "matt": 1,
+              "mikey_k": 0
+            },
+            "avg_score": {
+              "matt": 166.66,
+              "mikey_k": 90.82
+            },
+            "current_streak": {
+              "manager_id": "matt",
+              "count": 1
+            }
+          }
+        },
+        {
+          "type": "notable_matchup",
+          "data": {
+            "season": 2025,
+            "week": 8,
+            "phase": "regular",
+            "score": {
+              "matt": 166.66,
+              "mikey_k": 90.82
+            },
+            "note_key": "highest_combined_score_between_them"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "matt",
+            "flavor_key": "matt"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "mikey_k",
+            "flavor_key": "mikey_k"
+          }
+        },
+        {
+          "type": "roster_strength",
+          "data": {
+            "positional_edge": [
+              {
+                "position": "QB",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 22.4,
+                  "b": 20.13
+                }
+              },
+              {
+                "position": "RB",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 21.73,
+                  "b": 18.45
+                }
+              },
+              {
+                "position": "WR",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 18.05,
+                  "b": 18.69
+                }
+              },
+              {
+                "position": "TE",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 12.33,
+                  "b": 14.12
+                }
+              },
+              {
+                "position": "K",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 9.28,
+                  "b": 9.61
+                }
+              },
+              {
+                "position": "DEF",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 8.26,
+                  "b": 3.53
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "team_a": {
+        "manager_id": "mark",
+        "team_name": "Supernovas"
+      },
+      "team_b": {
+        "manager_id": "owen",
+        "team_name": "Newman’s Owen"
+      },
+      "storylines": [
+        {
+          "type": "head_to_head",
+          "data": {
+            "career_record": {
+              "mark": 9,
+              "owen": 5
+            },
+            "avg_score": {
+              "mark": 139.94,
+              "owen": 132.11
+            },
+            "current_streak": {
+              "manager_id": "mark",
+              "count": 1
+            }
+          }
+        },
+        {
+          "type": "postseason_history",
+          "data": {
+            "meetings": [
+              {
+                "season": 2015,
+                "round": "quarterfinal",
+                "winner": "mark",
+                "score": {
+                  "mark": 145.44,
+                  "owen": 113.86
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "notable_matchup",
+          "data": {
+            "season": 2024,
+            "week": 2,
+            "phase": "regular",
+            "score": {
+              "mark": 166.44,
+              "owen": 221.32
+            },
+            "note_key": "highest_combined_score_between_them"
+          }
+        },
+        {
+          "type": "rivalry_lore",
+          "data": {
+            "lore_key": "drexel_college"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "mark",
+            "flavor_key": "mark"
+          }
+        },
+        {
+          "type": "team_flavor",
+          "data": {
+            "manager_id": "owen",
+            "flavor_key": "owen"
+          }
+        },
+        {
+          "type": "roster_strength",
+          "data": {
+            "positional_edge": [
+              {
+                "position": "QB",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 18.57,
+                  "b": 0.0
+                }
+              },
+              {
+                "position": "RB",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 14.09,
+                  "b": 16.68
+                }
+              },
+              {
+                "position": "WR",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 19.95,
+                  "b": 21.89
+                }
+              },
+              {
+                "position": "TE",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 13.51,
+                  "b": 10.11
+                }
+              },
+              {
+                "position": "K",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 8.37,
+                  "b": 9.26
+                }
+              },
+              {
+                "position": "DEF",
+                "leader": "a",
+                "projected_ppw": {
+                  "a": 7.69,
+                  "b": 7.67
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
