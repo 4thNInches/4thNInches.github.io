@@ -1,7 +1,22 @@
 {
-  "generated_at": "2026-09-23T13:33:07.634704+00:00",
+  "generated_at": "2026-09-23T19:36:44.950728+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408565782694174720",
+      "timestamp": 1790190761783,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "3163",
+        "name": "Jared Goff",
+        "position": "QB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1408323899694825472",
