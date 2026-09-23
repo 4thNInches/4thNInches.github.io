@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T22:51:40.343912+00:00",
+  "generated_at": "2026-09-23T04:26:39.951833+00:00",
   "window_days": 7,
   "items": [
     {
@@ -49,7 +49,7 @@
       },
       "dropped": null,
       "faab": null,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
