@@ -1,7 +1,26 @@
 {
-  "generated_at": "2026-09-23T19:36:44.950728+00:00",
+  "generated_at": "2026-09-23T22:52:19.979313+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408613082346913792",
+      "timestamp": 1790202038898,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "MIN",
+        "name": "MIN",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "9504",
+        "name": "Kayshon Boutte",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1408565782694174720",
