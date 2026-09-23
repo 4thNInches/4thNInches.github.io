@@ -1,7 +1,189 @@
 {
-  "generated_at": "2026-09-23T04:26:39.951833+00:00",
+  "generated_at": "2026-09-23T13:33:07.634704+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408323899694825472",
+      "timestamp": 1790147625034,
+      "manager_id": "owen",
+      "team_name": "Newman’s Owen",
+      "added": {
+        "player_id": "6650",
+        "name": "Chase McLaughlin",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "2747",
+        "name": "Jason Myers",
+        "position": "K"
+      },
+      "faab": 0,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408282540921434112",
+      "timestamp": 1790147625034,
+      "manager_id": "bill_m",
+      "team_name": "Bandits",
+      "added": {
+        "player_id": "11625",
+        "name": "Adonai Mitchell",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "10222",
+        "name": "Jayden Reed",
+        "position": "WR"
+      },
+      "faab": 15,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408272181024014336",
+      "timestamp": 1790147625034,
+      "manager_id": "matt",
+      "team_name": "theMadgician",
+      "added": {
+        "player_id": "9225",
+        "name": "Tank Bigsby",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "13305",
+        "name": "Mike Washington",
+        "position": "RB"
+      },
+      "faab": 4,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408121076134764544",
+      "timestamp": 1790147625034,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "11637",
+        "name": "Keon Coleman",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "9482",
+        "name": "Michael Mayer",
+        "position": "TE"
+      },
+      "faab": 6,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408076883311992832",
+      "timestamp": 1790147625034,
+      "manager_id": "mikey_k",
+      "team_name": "ROK Navy's Finest",
+      "added": {
+        "player_id": "2505",
+        "name": "Darren Waller",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "12502",
+        "name": "Gunnar Helm",
+        "position": "TE"
+      },
+      "faab": 0,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408076690109792256",
+      "timestamp": 1790147625034,
+      "manager_id": "mikey_k",
+      "team_name": "ROK Navy's Finest",
+      "added": {
+        "player_id": "7670",
+        "name": "Joshua Palmer",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": 5,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408070653986283520",
+      "timestamp": 1790147625034,
+      "manager_id": "bill_m",
+      "team_name": "Bandits",
+      "added": {
+        "player_id": "CIN",
+        "name": "CIN",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "TB",
+        "name": "TB",
+        "position": "DEF"
+      },
+      "faab": 10,
+      "remark": "streamer"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408051422951411712",
+      "timestamp": 1790147625034,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "7571",
+        "name": "Rashod Bateman",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": 15,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407928130802372608",
+      "timestamp": 1790147625034,
+      "manager_id": "owen",
+      "team_name": "Newman’s Owen",
+      "added": {
+        "player_id": "9228",
+        "name": "Bryce Young",
+        "position": "QB"
+      },
+      "dropped": {
+        "player_id": "13288",
+        "name": "Nicholas Singleton",
+        "position": "RB"
+      },
+      "faab": 69,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1407882928536535040",
+      "timestamp": 1790147625034,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "11435",
+        "name": "Emanuel Wilson",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "12504",
+        "name": "Kaleb Johnson",
+        "position": "RB"
+      },
+      "faab": 22,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1407425664423862272",
@@ -166,120 +348,6 @@
       },
       "dropped": null,
       "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1405722161796182016",
-      "timestamp": 1789542865412,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "12492",
-        "name": "Pat Bryant",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "9504",
-        "name": "Kayshon Boutte",
-        "position": "WR"
-      },
-      "faab": 0,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1405636295488786432",
-      "timestamp": 1789542865412,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "12545",
-        "name": "Tyler Shough",
-        "position": "QB"
-      },
-      "dropped": {
-        "player_id": "9225",
-        "name": "Tank Bigsby",
-        "position": "RB"
-      },
-      "faab": 2,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1405579699752574976",
-      "timestamp": 1789542865412,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "13301",
-        "name": "Antonio Williams",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "10219",
-        "name": "Chris Rodriguez",
-        "position": "RB"
-      },
-      "faab": 19,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1405579236214861824",
-      "timestamp": 1789542865412,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "13296",
-        "name": "Caleb Douglas",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "LAC",
-        "name": "LAC",
-        "position": "DEF"
-      },
-      "faab": 34,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1405559847931371520",
-      "timestamp": 1789542865412,
-      "manager_id": "matt",
-      "team_name": "theMadgician",
-      "added": {
-        "player_id": "SF",
-        "name": "SF",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "MIN",
-        "name": "MIN",
-        "position": "DEF"
-      },
-      "faab": 0,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1404975351825702912",
-      "timestamp": 1789542865412,
-      "manager_id": "bill_m",
-      "team_name": "Bandits",
-      "added": {
-        "player_id": "TB",
-        "name": "TB",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "DET",
-        "name": "DET",
-        "position": "DEF"
-      },
-      "faab": 2,
       "remark": null
     }
   ]
