@@ -1,7 +1,60 @@
 {
-  "generated_at": "2026-09-24T13:28:34.480958+00:00",
+  "generated_at": "2026-09-24T19:55:43.886520+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408935143963406336",
+      "timestamp": 1790278824371,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "CAR",
+        "name": "CAR",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "LV",
+        "name": "LV",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408934670036439040",
+      "timestamp": 1790278711378,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "7600",
+        "name": "Pat Freiermuth",
+        "position": "TE"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1408847471257366528",
+      "timestamp": 1790257921569,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "12185",
+        "name": "Spencer Shrader",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "13545",
+        "name": "Trey Smack",
+        "position": "K"
+      },
+      "faab": null,
+      "remark": "streamer"
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1408613082346913792",
