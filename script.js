@@ -22,6 +22,7 @@ const PLACE_ICON = { first: "\u{1F3C6}", second: "\u{1F948}", third: "\u{1F949}"
 let standingsRows = [];
 let standingsSortKey = "rank";
 let standingsSortDir = -1; // -1 = descending, 1 = ascending
+let standingsOddsAsOfWeek = null; // set once data/power_log.json resolves; playoff%/bye% are a weekly snapshot, not live
 
 const STANDINGS_COLUMNS = [
   { key: "rank", label: "#" },
@@ -131,12 +132,12 @@ async function loadStandings(leagueId) {
       paPerWk: played ? pointsAgainst / played : 0,
       streak: { count: 0, type: null },
       streakSort: 0,
-      playoffPct: "\u2014",
-      byePct: "\u2014",
+      playoffPct: -1, // sentinel: no data yet / unavailable -- rendered as "\u2014", sorts below real percentages
+      byePct: -1,
     };
   });
 
-  renderStandingsTable(); // render immediately; streak fills in once weekly data resolves
+  renderStandingsTable(); // render immediately; streak and playoff odds fill in once their data resolves
 
   try {
     const playedWeeks = await getSharedPlayedWeeks();
@@ -149,6 +150,64 @@ async function loadStandings(leagueId) {
   } catch (err) {
     console.warn("Couldn't compute current-season streaks:", err);
   }
+
+  try {
+    const entry = await getLatestPowerLogEntry();
+    if (entry) {
+      standingsOddsAsOfWeek = entry.week;
+      standingsRows = standingsRows.map(row => {
+        const teamOdds = entry.teams[String(row.rosterId)];
+        if (!teamOdds) return row; // this roster wasn't in that week's log entry -- leave the "\u2014" placeholder
+        return {
+          ...row,
+          playoffPct: typeof teamOdds.playoff_pct === "number" ? teamOdds.playoff_pct : -1,
+          byePct: typeof teamOdds.bye_pct === "number" ? teamOdds.bye_pct : -1,
+        };
+      });
+      renderStandingsTable();
+    }
+  } catch (err) {
+    console.warn("Couldn't load playoff odds from data/power_log.json:", err);
+  }
+}
+
+// ============================================================
+// Playoff / bye odds -- backed by data/power_log.json, written weekly by
+// compute_power_stats.py's Monte Carlo simulator. This is a snapshot from
+// the last automation run, NOT computed live in the browser (the sim is
+// too heavy for that, and per that script's own docstring, odds can't be
+// recomputed retroactively anyway since they depend on a point-in-time
+// projection). Keyed by roster_id (as a string) to match
+// data/history/<season>.json's team keys, which is what compute_power_stats.py
+// itself keys its output by.
+// ============================================================
+
+async function loadPowerLog() {
+  const res = await fetch("data/power_log.json");
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+function latestPowerLogEntry(log) {
+  if (!log || !Array.isArray(log.entries) || log.entries.length === 0) return null;
+  // Not just "last in the array" -- append_to_log() only ever appends, but
+  // --force reruns first strip then re-append the target week's entry, so
+  // relying purely on array order is one edge case away from being wrong.
+  // Highest (season, week) wins instead.
+  return log.entries.reduce((latest, e) => {
+    if (!latest) return e;
+    if (e.season !== latest.season) return e.season > latest.season ? e : latest;
+    return e.week > latest.week ? e : latest;
+  }, null);
+}
+
+async function getLatestPowerLogEntry() {
+  const log = await loadPowerLog();
+  return latestPowerLogEntry(log);
+}
+
+function formatPct(value) {
+  return typeof value === "number" && value >= 0 ? `${value.toFixed(1)}%` : "\u2014";
 }
 
 function renderStandingsTable() {
@@ -199,8 +258,8 @@ function renderStandingsTable() {
       <td class="standings-pts">${row.pointsAgainst.toFixed(1)}</td>
       <td class="standings-pts">${row.paPerWk.toFixed(2)}</td>
       <td class="standings-pts streak-${(row.streak && row.streak.type) || "none"}">${formatStreak(row.streak)}</td>
-      <td class="standings-pts">${row.playoffPct}</td>
-      <td class="standings-pts">${row.byePct}</td>
+      <td class="standings-pts">${formatPct(row.playoffPct)}</td>
+      <td class="standings-pts">${formatPct(row.byePct)}</td>
     </tr>
   `).join("");
 
@@ -210,6 +269,7 @@ function renderStandingsTable() {
       <thead><tr>${headerCells}</tr></thead>
       <tbody>${bodyRows}</tbody>
     </table>
+    ${standingsOddsAsOfWeek != null ? `<p class="hint">Playoff % and Bye % are from the Week ${standingsOddsAsOfWeek} odds run \u2014 they update weekly, not live.</p>` : ""}
   `;
 
   container.querySelectorAll("th[data-sort-key]").forEach(th => {
