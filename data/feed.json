@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T04:35:00.243324+00:00",
+  "generated_at": "2026-09-25T13:34:11.558427+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,44 @@
       "week": 3,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.6,
-      "projected_a": 137.39,
+      "projected_a": 137.54,
       "team_b": "theMadgician",
       "score_b": 6.6,
-      "projected_b": 139.81,
-      "timestamp": 1790310900243.227
+      "projected_b": 139.25,
+      "timestamp": 1790343251558.325
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Bandits",
       "score_a": 64.3,
-      "projected_a": 131.07,
+      "projected_a": 131.26,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 136.95,
-      "timestamp": 1790310900243.223
+      "projected_b": 136.42,
+      "timestamp": 1790343251558.321
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 35.4,
-      "projected_a": 125.64,
+      "projected_a": 125.89,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 151.92,
-      "timestamp": 1790310900243.218
+      "projected_b": 151.33,
+      "timestamp": 1790343251558.316
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "VRDNO",
       "score_a": 3.8,
-      "projected_a": 131.36,
+      "projected_a": 131.56,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 145.84,
-      "timestamp": 1790310900243.201
+      "projected_b": 145.93,
+      "timestamp": 1790343251558.299
     },
     {
       "type": "waiver_move",
