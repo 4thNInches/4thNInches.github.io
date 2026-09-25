@@ -51,6 +51,8 @@ def render_best_bench(data: dict, seed_key: str) -> str:
         f"{top['name']}'s {top['points']}-point no-show in the starting lineup.",
         f"{team}'s bench outscored their good sense: {bench_pts} points left sitting, "
         f"{top['points']} of it from {top['name']} alone.",
+        f"Somewhere, {top['name']} is still on {team}'s bench wondering why -- {top['points']} points' "
+        f"worth of wondering, out of {bench_pts} total left stranded.",
     ]
     return pick(variants, seed_key)
 
@@ -64,6 +66,8 @@ def render_you_didnt_lose(data: dict, seed_key: str) -> str:
         f"thanks to {l['team_name']}'s {l['score']}.",
         f"Proof records can lie: {w['team_name']} beat {l['team_name']} despite the "
         f"{_ordinal(w['rank'])}-worst score of the week.",
+        f"{w['team_name']} did the bare minimum ({w['score']}, {_ordinal(w['rank'])} in the league) "
+        f"and it was enough, because {l['team_name']} did even less ({l['score']}).",
     ]
     return pick(variants, seed_key)
 
@@ -76,6 +80,8 @@ def render_great_defense(data: dict, seed_key: str) -> str:
         f"{l['team_name']} never had a chance against {w['team_name']}, managing only {l['score']} points all week.",
         f"{w['team_name']}'s defense (well, their opponent's offense) did the work: {l['team_name']} "
         f"finished with just {l['score']}.",
+        f"{l['team_name']} put up {l['score']} -- the {_ordinal(l['rank'])}-worst week anyone had -- and "
+        f"{w['team_name']} happily took the free win.",
     ]
     return pick(variants, seed_key)
 
@@ -89,6 +95,8 @@ def render_mega_blowout(data: dict, seed_key: str) -> str:
         f"({data['margin']} points).",
         f"Not close: {w['team_name']} beat {l['team_name']} by {data['margin']} points, "
         f"{w['score']} to {l['score']}.",
+        f"{l['team_name']} lost by {data['margin']} to {w['team_name']} this week -- the kind of score "
+        f"you screenshot and never bring up again.",
     ]
     return pick(variants, seed_key)
 
@@ -116,6 +124,7 @@ def render_recap_context(context: dict, seed_key: str) -> str:
         f"The league combined for {context['weekly_total']} points this week ({context['weekly_avg']} per team).",
         f"Across all {context['num_teams']} teams, the week added up to {context['weekly_total']} points -- {context['weekly_avg']} on average.",
         f"This week's {context['num_teams']} teams put up {context['weekly_total']} points between them, {context['weekly_avg']} a team.",
+        f"{context['weekly_total']} points got scored across the league this week, {context['weekly_avg']} per team -- make of that what you will.",
     ]
     sentences = [pick(lede_variants, seed_key + "_lede")]
 

@@ -8,6 +8,13 @@ A later template layer (not built here) turns this into actual sentences
 with phrasing variants, the same way generate_facts.py's pick() already
 does for the ticker.
 
+Storyline types computed: win_probability, head_to_head,
+postseason_history, notable_matchup, rivalry_lore, team_flavor,
+roster_strength (skill positions only -- QB/RB/WR/TE, see
+ROSTER_STRENGTH_POSITIONS). win_probability reads compute_power_stats.py's
+already-logged power_score/stdev from data/power_log.json rather than
+recomputing them -- see that section's own comment for why.
+
 Deliberately reuses compute_power_stats.py's projection-fetching and
 scoring-translation machinery for the roster_strength storyline, rather
 than re-implementing it -- same undocumented-endpoint caveat applies here
@@ -24,6 +31,7 @@ Usage:
 
 import argparse
 import json
+import math
 from pathlib import Path
 
 import compute_power_stats as pws  # reuses sleeper_get, fetch_projected_points, load_players, etc.
@@ -32,9 +40,14 @@ HISTORY_DIR = Path("data/history")
 MANAGER_MAPPING_PATH = Path("data/manager_mapping.json")
 TEAM_FLAVOR_PATH = Path("data/team_flavor.json")
 RIVALRY_LORE_PATH = Path("data/rivalry_lore.json")
+POWER_LOG_PATH = Path("data/power_log.json")
 OUT_DIR = Path("data/storylines")
 
-ROSTER_STRENGTH_POSITIONS = ("QB", "RB", "WR", "TE", "K", "DEF")
+# K/DEF dropped on purpose -- commissioner's call. Week-to-week K/DEF
+# projection gaps are mostly noise, and even a "real" one rarely reflects
+# an actual roster-strength edge the way a WR1-vs-WR2 gap does.
+ROSTER_STRENGTH_POSITIONS = ("QB", "RB", "WR", "TE")
+ROSTER_STRENGTH_MIN_GAP = 2.0  # projected points/week -- below this, a "leader" is noise, not a real edge
 
 
 def load_json(path: Path) -> dict:
@@ -226,13 +239,73 @@ def compute_roster_strength(roster_a: dict, roster_b: dict, projected_points: di
         a_pts, b_pts = a_by_pos.get(pos, 0.0), b_by_pos.get(pos, 0.0)
         if a_pts == 0 and b_pts == 0:
             continue
-        if a_pts == b_pts:
-            continue
+        gap = round(abs(a_pts - b_pts), 2)
+        if gap < ROSTER_STRENGTH_MIN_GAP:
+            continue  # too close to call a real edge -- see ROSTER_STRENGTH_MIN_GAP
         edges.append({
             "position": pos, "leader": "a" if a_pts > b_pts else "b",
             "projected_ppw": {"a": round(a_pts, 2), "b": round(b_pts, 2)},
+            "gap": gap,
         })
     return {"positional_edge": edges} if edges else None
+
+
+# ============================================================
+# Win probability -- reuses compute_power_stats.py's own power_score
+# (mu) / stdev (sigma) per team, read from data/power_log.json rather
+# than recomputed here. Two reasons not to recompute: (1) it would mean
+# a second, separate fetch of every remaining week's projections just to
+# rederive numbers compute_power_stats.py already fetched and logged
+# this same run (update-facts.yml runs that script before this one --
+# see its own docstring / the workflow step order); (2) the standings
+# page's Playoff %/Bye % columns read the exact same power_log.json
+# entry, so a matchup preview's win probability and the site's playoff
+# odds are guaranteed to agree instead of being two models that can
+# quietly drift apart.
+# ============================================================
+
+def load_latest_power_log_entry() -> dict | None:
+    if not POWER_LOG_PATH.exists():
+        return None
+    log = json.loads(POWER_LOG_PATH.read_text())
+    entries = log.get("entries") or []
+    if not entries:
+        return None
+    # Not just "last in the array" -- append_to_log()'s --force path
+    # strips then re-appends a week's entry, so array order alone isn't a
+    # safe assumption (same reasoning as script.js's latestPowerLogEntry()).
+    return max(entries, key=lambda e: (e["season"], e["week"]))
+
+
+def normal_win_probability(mu_a: float, sigma_a: float, mu_b: float, sigma_b: float) -> float:
+    """P(team A's drawn score > team B's drawn score) under the same
+    generative model compute_power_stats.py's Monte Carlo already samples
+    from (each team's week score ~ Normal(power_score, stdev)) -- this is
+    that model's closed-form pairwise result, not a second competing one.
+    diff = A - B ~ Normal(mu_a - mu_b, sqrt(sigma_a^2 + sigma_b^2))."""
+    diff_mean = mu_a - mu_b
+    diff_stdev = math.sqrt(sigma_a ** 2 + sigma_b ** 2)
+    if diff_stdev == 0:
+        return 100.0 if diff_mean > 0 else (0.0 if diff_mean < 0 else 50.0)
+    z = diff_mean / (diff_stdev * math.sqrt(2))
+    return 100 * 0.5 * (1 + math.erf(z))
+
+
+def compute_win_probability(power_log_entry: dict | None, roster_a_id, roster_b_id) -> dict | None:
+    if not power_log_entry:
+        return None
+    teams = power_log_entry.get("teams") or {}
+    a, b = teams.get(str(roster_a_id)), teams.get(str(roster_b_id))
+    if not a or not b or "power_score" not in a or "power_score" not in b:
+        return None
+    a_pct = round(normal_win_probability(a["power_score"], a.get("stdev", 20.0),
+                                          b["power_score"], b.get("stdev", 20.0)), 1)
+    return {
+        "team_a_pct": a_pct,
+        "team_b_pct": round(100 - a_pct, 1),
+        "power_score": {"a": a["power_score"], "b": b["power_score"]},
+        "as_of_week": power_log_entry["week"],
+    }
 
 
 # ============================================================
@@ -242,8 +315,18 @@ def compute_roster_strength(roster_a: dict, roster_b: dict, projected_points: di
 def build_matchup_storylines(games: list, manager_a: str, manager_b: str,
                               team_a_meta: dict, team_b_meta: dict,
                               rivalry_lore_data: dict, team_flavor_data: dict,
-                              roster_strength_data: dict | None) -> dict:
+                              roster_strength_data: dict | None,
+                              win_probability_data: dict | None = None) -> dict:
     storylines = []
+
+    # Always included when we have it (not part of the render layer's
+    # random-extras pool) -- render_matchup_previews.py decides whether
+    # it's notable enough to actually say out loud (lopsided/toss-up
+    # only, per the commissioner's call), but that's a rendering choice,
+    # not a "does this qualify at all" one, so the data belongs here
+    # alongside head_to_head/rivalry_lore, not gated at compute time.
+    if win_probability_data:
+        storylines.append({"type": "win_probability", "data": win_probability_data})
 
     h2h = compute_head_to_head(games, manager_a, manager_b)
     if h2h:
@@ -302,6 +385,13 @@ def main():
     print(f"  fetching Week {week} projections for roster_strength...")
     projected_points = pws.fetch_projected_points(league["season"], week, scoring_settings)
 
+    power_log_entry = load_latest_power_log_entry()
+    if power_log_entry:
+        print(f"  using power scores from data/power_log.json (Week {power_log_entry['week']}) for win probability")
+    else:
+        print("  no data/power_log.json entry found -- run compute_power_stats.py first; "
+              "previews will skip win probability for now")
+
     user_by_id = {u["user_id"]: u for u in users}
     team_meta_by_roster = {}
     for r in rosters:
@@ -330,9 +420,11 @@ def main():
         roster_strength = compute_roster_strength(
             rosters_by_id[roster_a_id], rosters_by_id[roster_b_id], projected_points, players_db,
         )
+        win_probability = compute_win_probability(power_log_entry, roster_a_id, roster_b_id)
         previews.append(build_matchup_storylines(
             games, team_a_meta["manager_id"], team_b_meta["manager_id"],
             team_a_meta, team_b_meta, rivalry_lore_data, team_flavor_data, roster_strength,
+            win_probability,
         ))
 
     output = {"season": league["season"], "week": week, "matchups": previews}

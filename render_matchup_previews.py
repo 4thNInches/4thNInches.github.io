@@ -8,7 +8,14 @@ phrasing bank (same pattern generate_facts.py already uses for the
 ticker) rather than an LLM, consistent with the project's core
 zero-cost/deterministic design principle.
 
-Two things this deliberately does that are worth knowing:
+TONE: confident/witty sports-blog voice blended with dry, deadpan
+stats-nerd humor -- the same register the old write-ups (and the
+rivalry_lore/team_flavor content pulled from them) already use. This is
+a phrasing-bank change, not a structural one; widen the variant lists
+below rather than reaching for an LLM if it starts feeling repetitive
+again.
+
+Three things this deliberately does that are worth knowing:
 
 1. SELECTION: a matchup's storylines list can hold everything that
    qualifies, but a preview shouldn't necessarily use all of it every
@@ -19,7 +26,18 @@ Two things this deliberately does that are worth knowing:
    whatever else qualifies, seeded per-matchup so re-rendering the same
    week doesn't reshuffle the wording every time.
 
-2. RIVALRY_LORE BLURBS: rivalry_lore.json's "story" field is reference
+2. WIN PROBABILITY IS NOT AN "EXTRA": generate_matchup_storylines.py
+   always attaches win_probability when it has the data (same tier as
+   head_to_head), but per the commissioner's explicit call, a plain
+   58/42 number doesn't tell anyone anything they couldn't already
+   guess -- it's only worth saying out loud at the extremes. So it never
+   competes for one of the random "extra" slots below; render_intro()
+   decides whether this matchup is notable (WIN_PROB_TOSSUP_BAND /
+   WIN_PROB_LOPSIDED_THRESHOLD) and, if so, leads the whole preview with
+   it instead of the generic "X takes on Y" opener. Otherwise it's
+   simply not mentioned anywhere in the preview.
+
+3. RIVALRY_LORE BLURBS: rivalry_lore.json's "story" field is reference
    prose, not a publish-ready sentence. This pulls just the first
    sentence out of it as a stopgap -- a real fix is adding a proper short
    "blurb" field to that file later (flagged, not solved here).
@@ -39,6 +57,12 @@ RIVALRY_LORE_PATH = Path("data/rivalry_lore.json")
 
 MAX_EXTRA_STORYLINES = 2  # beyond the always-included head_to_head/rivalry_lore
 
+# Win-probability notability thresholds -- tune here, not in render_intro().
+# A game inside the toss-up band or at/above the lopsided threshold gets a
+# win-probability-led opener; anything in between just isn't mentioned.
+WIN_PROB_TOSSUP_BAND = 5.0        # within 45-55% either way counts as a coin flip
+WIN_PROB_LOPSIDED_THRESHOLD = 70.0  # favorite needs at least this % to be called a mismatch
+
 
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text()) if path.exists() else {}
@@ -48,6 +72,17 @@ def pick(options: list, seed_key: str):
     return random.Random(seed_key).choice(options)
 
 
+def win_probability_notability(data: dict | None) -> str | None:
+    """Returns 'lopsided', 'tossup', or None (not worth calling out)."""
+    if not data:
+        return None
+    if abs(data["team_a_pct"] - 50) <= WIN_PROB_TOSSUP_BAND:
+        return "tossup"
+    if max(data["team_a_pct"], data["team_b_pct"]) >= WIN_PROB_LOPSIDED_THRESHOLD:
+        return "lopsided"
+    return None
+
+
 # ============================================================
 # Per-storyline-type renderers -- each returns one sentence (a phrasing
 # variant chosen deterministically per matchup) or None if it can't
@@ -55,21 +90,72 @@ def pick(options: list, seed_key: str):
 # crash a whole preview over one bad storyline).
 # ============================================================
 
+def render_intro(team_a: str, team_b: str, win_prob_data: dict | None, seed_key: str) -> str:
+    notability = win_probability_notability(win_prob_data)
+
+    if notability == "lopsided":
+        if win_prob_data["team_a_pct"] >= win_prob_data["team_b_pct"]:
+            favorite, fav_pct, underdog, dog_pct = team_a, win_prob_data["team_a_pct"], team_b, win_prob_data["team_b_pct"]
+        else:
+            favorite, fav_pct, underdog, dog_pct = team_b, win_prob_data["team_b_pct"], team_a, win_prob_data["team_a_pct"]
+        variants = [
+            f"On paper, this isn't close: the power scores make {favorite} a {fav_pct:.0f}% favorite over {underdog}.",
+            f"{favorite} walks in as a {fav_pct:.0f}% favorite here -- {underdog} is going to need the upset, not the odds.",
+            f"The power rankings are not being subtle about this one: {favorite} projects at {fav_pct:.0f}% to beat {underdog}.",
+            f"{underdog} is the sentimental pick against {favorite} this week, because the numbers "
+            f"({fav_pct:.0f}-{dog_pct:.0f}) sure aren't.",
+        ]
+    elif notability == "tossup":
+        variants = [
+            f"{team_a} and {team_b} is as close to a coin flip as the power scores get this week.",
+            f"Nobody's touching this one with confidence -- {team_a} vs. {team_b} is basically a pick 'em on paper.",
+            f"{team_a} takes on {team_b} in one of the tightest projected games of the week. Flip a coin, honestly.",
+            f"The power scores refuse to pick a side between {team_a} and {team_b} this week.",
+        ]
+    else:
+        variants = [
+            f"{team_a} takes on {team_b} this week.",
+            f"Up next: {team_a} and {team_b}.",
+            f"{team_a} and {team_b} face off this week.",
+            f"This week's slate includes {team_a} vs. {team_b}.",
+        ]
+    return pick(variants, seed_key)
+
+
 def render_head_to_head(data: dict, manager_a: str, team_a: str, manager_b: str, team_b: str, seed_key: str) -> str:
     wins_a, wins_b = data["career_record"][manager_a], data["career_record"][manager_b]
     avg_a, avg_b = data["avg_score"][manager_a], data["avg_score"][manager_b]
     n = wins_a + wins_b
+    streak = data.get("current_streak")
+
+    if n == 1:
+        # One game isn't a "series" yet -- avoid record/average/streak
+        # language that implies more history than actually exists. This
+        # is the exact "has won 1 straight in this series" phrasing that
+        # prompted this rewrite.
+        if streak:
+            winner_team = team_a if streak["manager_id"] == manager_a else team_b
+            variants = [
+                f"{team_a} and {team_b} have only played once before -- {winner_team} won it.",
+                f"This is only the second-ever meeting between {team_a} and {team_b}; {winner_team} took the first.",
+            ]
+        else:
+            variants = [f"{team_a} and {team_b} have only met once before, and it ended in a tie."]
+        return pick(variants, seed_key)
 
     variants = [
-        f"{team_a} and {team_b} have met {n} time{'s' if n != 1 else ''} in the regular season, "
-        f"with {team_a} averaging {avg_a} points to {team_b}'s {avg_b}.",
+        f"{team_a} and {team_b} have met {n} times in the regular season, with {team_a} averaging "
+        f"{avg_a} points to {team_b}'s {avg_b}.",
     ]
     if wins_a != wins_b:
         leader, ld_w, trailer, tr_w = (team_a, wins_a, team_b, wins_b) if wins_a > wins_b else (team_b, wins_b, team_a, wins_a)
-        variants.append(f"{leader} holds a {ld_w}-{tr_w} career edge over {trailer} in the regular season.")
+        margin = ld_w - tr_w
+        blunt_tail = " -- not exactly a rivalry at this point" if margin >= 4 else ""
+        variants.append(f"{leader} holds a {ld_w}-{tr_w} career edge over {trailer} in the regular season{blunt_tail}.")
+    else:
+        variants.append(f"They're dead even at {wins_a}-{wins_b} across {n} meetings -- no edge either way, historically.")
 
-    streak = data.get("current_streak")
-    if streak:
+    if streak and streak["count"] >= 2:
         streak_team = team_a if streak["manager_id"] == manager_a else team_b
         variants.append(f"{streak_team} has won {streak['count']} straight in this series.")
 
@@ -85,15 +171,19 @@ def render_postseason_history(data: dict, manager_a: str, team_a: str, manager_b
     variants = [
         f"{team_a} and {team_b} have crossed paths in the playoffs {n} time{'s' if n != 1 else ''} before.",
         f"The last playoff meeting between these two ({most_recent['season']} {most_recent['round']}) went to {winner_team}.",
+        f"These two have playoff history -- {n} meeting{'s' if n != 1 else ''}, most recently the "
+        f"{most_recent['season']} {most_recent['round']}, won by {winner_team}.",
     ]
     return pick(variants, seed_key)
 
 
 def render_notable_matchup(data: dict, manager_a: str, team_a: str, manager_b: str, team_b: str, seed_key: str) -> str:
     total = round(data["score"][manager_a] + data["score"][manager_b], 2)
+    week_str = f" Week {data['week']}" if data.get("week") else ""
     variants = [
-        f"Their highest-scoring meeting ever came in {data['season']}"
-        f"{' Week ' + str(data['week']) if data.get('week') else ''}, when they combined for {total} points.",
+        f"Their highest-scoring meeting ever came in {data['season']}{week_str}, when they combined for {total} points.",
+        f"Back in {data['season']}{week_str}, these two combined for {total} points -- still their high-water mark against each other.",
+        f"If you want offense, check the archives: {data['season']}{week_str} saw this pair put up {total} points between them.",
     ]
     return pick(variants, seed_key)
 
@@ -106,6 +196,7 @@ def render_team_flavor(data: dict, team_flavor_data: dict, team_name: str, seed_
     variants = [
         f"{team_name} is better known to the league as {nickname}.",
         f"Around the league, {team_name} goes by {nickname}.",
+        f"You might know {team_name} better as {nickname}.",
     ]
     return pick(variants, seed_key)
 
@@ -129,8 +220,14 @@ def render_roster_strength(data: dict, manager_a: str, team_a: str, manager_b: s
         return None
     edge = pick(edges, seed_key)  # feature one position edge, not all of them every time
     leader_team = team_a if edge["leader"] == "a" else team_b
+    trailer_team = team_b if edge["leader"] == "a" else team_a
+    gap = edge["gap"]
     variants = [
-        f"{leader_team} projects to have the edge at {edge['position']} this week.",
+        f"{leader_team} projects for a real edge at {edge['position']} this week -- about {gap:.1f} points "
+        f"clear of {trailer_team} there.",
+        f"At {edge['position']}, {leader_team} is projected to outscore {trailer_team} by roughly {gap:.1f} points.",
+        f"The numbers favor {leader_team} at {edge['position']} by about {gap:.1f} points this week -- "
+        f"worth a lineup check if you're {trailer_team}.",
     ]
     return pick(variants, seed_key + "_phrasing")
 
@@ -156,7 +253,10 @@ def render_matchup(matchup: dict, team_flavor_data: dict, rivalry_lore_data: dic
     for s in matchup["storylines"]:
         by_type.setdefault(s["type"], []).append(s["data"])
 
-    sentences = [f"{team_a} takes on {team_b} this week."]
+    # win_probability is never in extra_candidates below -- see module
+    # docstring point 2. It either drives the intro or isn't mentioned.
+    win_prob_data = by_type.get("win_probability", [None])[0]
+    sentences = [render_intro(team_a, team_b, win_prob_data, base_seed + "_intro")]
 
     if "head_to_head" in by_type:
         sentences.append(render_head_to_head(by_type["head_to_head"][0], manager_a, team_a, manager_b, team_b, base_seed + "_h2h"))
