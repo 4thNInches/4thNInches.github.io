@@ -1,7 +1,51 @@
 {
-  "generated_at": "2026-09-24T23:09:28.735196+00:00",
+  "generated_at": "2026-09-25T04:35:00.243324+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "live_score",
+      "week": 3,
+      "team_a": "ROK Navy's Finest",
+      "score_a": 22.6,
+      "projected_a": 137.39,
+      "team_b": "theMadgician",
+      "score_b": 6.6,
+      "projected_b": 139.81,
+      "timestamp": 1790310900243.227
+    },
+    {
+      "type": "live_score",
+      "week": 3,
+      "team_a": "Bandits",
+      "score_a": 64.3,
+      "projected_a": 131.07,
+      "team_b": "Big Dumb Sports",
+      "score_b": 0,
+      "projected_b": 136.95,
+      "timestamp": 1790310900243.223
+    },
+    {
+      "type": "live_score",
+      "week": 3,
+      "team_a": "Hurts Over 10.5int @-1000",
+      "score_a": 35.4,
+      "projected_a": 125.64,
+      "team_b": "packerlove24",
+      "score_b": 0,
+      "projected_b": 151.92,
+      "timestamp": 1790310900243.218
+    },
+    {
+      "type": "live_score",
+      "week": 3,
+      "team_a": "VRDNO",
+      "score_a": 3.8,
+      "projected_a": 131.36,
+      "team_b": "Supernova Takeover",
+      "score_b": 0,
+      "projected_b": 145.84,
+      "timestamp": 1790310900243.201
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1408935143963406336",
@@ -421,21 +465,6 @@
       },
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1406480457360515072",
-      "timestamp": 1789693581480,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "4892",
-        "name": "Baker Mayfield",
-        "position": "QB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
     }
   ]
 }
