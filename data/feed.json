@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T13:34:11.558427+00:00",
+  "generated_at": "2026-09-25T19:57:28.531504+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,59 @@
       "week": 3,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.6,
-      "projected_a": 137.54,
+      "projected_a": 138.66,
       "team_b": "theMadgician",
       "score_b": 6.6,
-      "projected_b": 139.25,
-      "timestamp": 1790343251558.325
+      "projected_b": 139.19,
+      "timestamp": 1790366248531.403
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Bandits",
       "score_a": 64.3,
-      "projected_a": 131.26,
+      "projected_a": 131.42,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 136.42,
-      "timestamp": 1790343251558.321
+      "projected_b": 136.91,
+      "timestamp": 1790366248531.385
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 35.4,
-      "projected_a": 125.89,
+      "projected_a": 125.91,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 151.33,
-      "timestamp": 1790343251558.316
+      "projected_b": 153.08,
+      "timestamp": 1790366248531.379
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "VRDNO",
       "score_a": 3.8,
-      "projected_a": 131.56,
+      "projected_a": 135.15,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 145.93,
-      "timestamp": 1790343251558.299
+      "projected_b": 145.94,
+      "timestamp": 1790366248531.3599
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1409228224390606848",
+      "timestamp": 1790348700190,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "NYJ",
+        "name": "NYJ",
+        "position": "DEF"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
