@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T12:56:08.739409+00:00",
+  "generated_at": "2026-09-26T19:09:22.524105+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,11 +7,11 @@
       "week": 3,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.6,
-      "projected_a": 139.31,
+      "projected_a": 138.88,
       "team_b": "theMadgician",
       "score_b": 6.6,
-      "projected_b": 138.72,
-      "timestamp": 1790427368739.326
+      "projected_b": 139.21,
+      "timestamp": 1790449762524.021
     },
     {
       "type": "live_score",
@@ -22,29 +22,29 @@
       "team_b": "Big Dumb Sports",
       "score_b": 0,
       "projected_b": 137.96,
-      "timestamp": 1790427368739.3179
+      "timestamp": 1790449762524.005
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 35.4,
-      "projected_a": 125.86,
+      "projected_a": 125.87,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 139.42,
-      "timestamp": 1790427368739.314
+      "projected_b": 139.58,
+      "timestamp": 1790449762523.999
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "VRDNO",
       "score_a": 3.8,
-      "projected_a": 134.27,
+      "projected_a": 137.93,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 145.32,
-      "timestamp": 1790427368739.299
+      "projected_b": 145.19,
+      "timestamp": 1790449762523.982
     },
     {
       "type": "waiver_move",
@@ -446,21 +446,6 @@
       "dropped": null,
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1407104465466617856",
-      "timestamp": 1789842356606,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "NE",
-        "name": "NE",
-        "position": "DEF"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
     }
   ]
 }
