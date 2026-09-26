@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T19:09:22.524105+00:00",
+  "generated_at": "2026-09-26T22:37:26.883371+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,44 @@
       "week": 3,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.6,
-      "projected_a": 138.88,
+      "projected_a": 138.86,
       "team_b": "theMadgician",
       "score_b": 6.6,
-      "projected_b": 139.21,
-      "timestamp": 1790449762524.021
+      "projected_b": 138.64,
+      "timestamp": 1790462246883.2942
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Bandits",
       "score_a": 64.3,
-      "projected_a": 131.09,
+      "projected_a": 131.06,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 137.96,
-      "timestamp": 1790449762524.005
+      "projected_b": 137.95,
+      "timestamp": 1790462246883.2852
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 35.4,
-      "projected_a": 125.87,
+      "projected_a": 125.55,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 139.58,
-      "timestamp": 1790449762523.999
+      "projected_b": 139.55,
+      "timestamp": 1790462246883.281
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "VRDNO",
       "score_a": 3.8,
-      "projected_a": 137.93,
+      "projected_a": 137.88,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 145.19,
-      "timestamp": 1790449762523.982
+      "projected_b": 145.36,
+      "timestamp": 1790462246883.268
     },
     {
       "type": "waiver_move",
@@ -430,21 +430,6 @@
         "position": "WR"
       },
       "faab": 63,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1407131998815858688",
-      "timestamp": 1789848921067,
-      "manager_id": "matt",
-      "team_name": "theMadgician",
-      "added": {
-        "player_id": "10218",
-        "name": "Xavier Hutchinson",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
       "remark": "depth"
     }
   ]
