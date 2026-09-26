@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T04:38:44.824627+00:00",
+  "generated_at": "2026-09-26T12:56:08.739409+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,44 @@
       "week": 3,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.6,
-      "projected_a": 138.97,
+      "projected_a": 139.31,
       "team_b": "theMadgician",
       "score_b": 6.6,
-      "projected_b": 138.15,
-      "timestamp": 1790397524824.475
+      "projected_b": 138.72,
+      "timestamp": 1790427368739.326
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Bandits",
       "score_a": 64.3,
-      "projected_a": 131.1,
+      "projected_a": 131.09,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 137.97,
-      "timestamp": 1790397524824.471
+      "projected_b": 137.96,
+      "timestamp": 1790427368739.3179
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 35.4,
-      "projected_a": 125.71,
+      "projected_a": 125.86,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 139.11,
-      "timestamp": 1790397524824.465
+      "projected_b": 139.42,
+      "timestamp": 1790427368739.314
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "VRDNO",
       "score_a": 3.8,
-      "projected_a": 133.97,
+      "projected_a": 134.27,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 145.03,
-      "timestamp": 1790397524824.451
+      "projected_b": 145.32,
+      "timestamp": 1790427368739.299
     },
     {
       "type": "waiver_move",
@@ -461,25 +461,6 @@
       "dropped": null,
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1407020886803980288",
-      "timestamp": 1789822429900,
-      "manager_id": "mikey_k",
-      "team_name": "ROK Navy's Finest",
-      "added": {
-        "player_id": "12502",
-        "name": "Gunnar Helm",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "5850",
-        "name": "Josh Jacobs",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
