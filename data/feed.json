@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T04:59:00.865815+00:00",
+  "generated_at": "2026-09-27T13:47:46.285462+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,82 @@
       "week": 3,
       "team_a": "ROK Navy's Finest",
       "score_a": 22.6,
-      "projected_a": 139.54,
+      "projected_a": 139.01,
       "team_b": "theMadgician",
       "score_b": 6.6,
-      "projected_b": 139.26,
-      "timestamp": 1790485140865.732
+      "projected_b": 138.52,
+      "timestamp": 1790516866285.378
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Bandits",
       "score_a": 64.3,
-      "projected_a": 131.3,
+      "projected_a": 132.07,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 137.97,
-      "timestamp": 1790485140865.7278
+      "projected_b": 136.79,
+      "timestamp": 1790516866285.375
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 35.4,
-      "projected_a": 126.28,
+      "projected_a": 125.97,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 139.51,
-      "timestamp": 1790485140865.724
+      "projected_b": 139.47,
+      "timestamp": 1790516866285.371
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "VRDNO",
       "score_a": 3.8,
-      "projected_a": 137.52,
+      "projected_a": 137.71,
       "team_b": "Supernova Takeover",
       "score_b": 0,
       "projected_b": 145.15,
-      "timestamp": 1790485140865.71
+      "timestamp": 1790516866285.355
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1409908612498776064",
+      "timestamp": 1790510917357,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "4227",
+        "name": "Harrison Butker",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "11792",
+        "name": "Will Reichard",
+        "position": "K"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1409908464985116672",
+      "timestamp": 1790510882186,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "12487",
+        "name": "Terrance Ferguson",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "9480",
+        "name": "Brenton Strange",
+        "position": "TE"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -396,40 +434,6 @@
         "position": "RB"
       },
       "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1407394504511705088",
-      "timestamp": 1789911507302,
-      "manager_id": "owen",
-      "team_name": "Newman’s Owen",
-      "added": {
-        "player_id": "6130",
-        "name": "Devin Singletary",
-        "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1407037491025838080",
-      "timestamp": 1789905252016,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "5850",
-        "name": "Josh Jacobs",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "8180",
-        "name": "Jalen Nailor",
-        "position": "WR"
-      },
-      "faab": 63,
       "remark": "depth"
     }
   ]
