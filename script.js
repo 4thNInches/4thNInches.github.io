@@ -674,9 +674,33 @@ async function fetchRegularSeasonWeekCount(leagueId, fallback = 14) {
   return fallback;
 }
 
+async function fetchCurrentNflWeek() {
+  try {
+    const res = await fetch("https://api.sleeper.app/v1/state/nfl");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const state = await res.json();
+    return typeof state.week === "number" ? state.week : null;
+  } catch (err) {
+    console.warn("Couldn't fetch current NFL week from /state/nfl -- streaks will fall back to the live-score heuristic:", err);
+    return null;
+  }
+}
+
 async function fetchPlayedSleeperWeeks(leagueId, maxWeeks = 18) {
+  // Mirrors export_sleeper_season.py's resolve_completed_weeks() (itself
+  // kept in sync with sleeper-facts.js's resolveCompletedWeeks(), per that
+  // script's docstring): the CURRENT week is never "played," full stop,
+  // no matter what partial scores are live -- a lone Thursday-night score
+  // isn't a finished week. Checking "did anyone score anything yet"
+  // instead of "is this week actually over" is exactly what let a single
+  // early game make an entire in-progress week look complete, corrupting
+  // both this table's Streak column and Lifetime Standings' live-merged
+  // win/loss/PF/PA totals (both are built from this same weeks list).
+  const currentWeek = await fetchCurrentNflWeek();
+
   const weeks = [];
   for (let week = 1; week <= maxWeeks; week++) {
+    if (currentWeek != null && week >= currentWeek) break; // still in progress (or hasn't started) -- not played yet
     let data;
     try {
       const res = await fetch(`https://api.sleeper.app/v1/league/${leagueId}/matchups/${week}`);
@@ -686,8 +710,12 @@ async function fetchPlayedSleeperWeeks(leagueId, maxWeeks = 18) {
       break;
     }
     if (!Array.isArray(data) || data.length === 0) break;
-    const anyScored = data.some(m => (m.points || 0) > 0);
-    if (!anyScored) break; // this week hasn't been played yet -- stop here
+    if (currentWeek == null) {
+      // /state/nfl failed -- fall back to the old (imperfect but better-
+      // than-nothing) heuristic rather than silently returning no weeks.
+      const anyScored = data.some(m => (m.points || 0) > 0);
+      if (!anyScored) break;
+    }
     weeks.push({ week, matchups: data });
   }
   return weeks;
