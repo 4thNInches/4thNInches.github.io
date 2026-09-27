@@ -1,72 +1,72 @@
 {
-  "generated_at": "2026-09-27T19:42:02.888528+00:00",
+  "generated_at": "2026-09-27T22:56:38.994690+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Supernovas",
-      "score_a": 61.72,
+      "score_a": 112.56,
       "projected_a": 144.33,
       "team_b": "Newman’s Owen",
-      "score_b": 42.02,
-      "projected_b": 140.88,
-      "timestamp": 1790538122888.437
+      "score_b": 100.24,
+      "projected_b": 140.95,
+      "timestamp": 1790549798994.598
     },
     {
       "type": "live_score",
       "week": 3,
-      "team_a": "ROK Navy's Finest",
-      "score_a": 50.7,
-      "projected_a": 139.03,
-      "team_b": "theMadgician",
-      "score_b": 45.02,
-      "projected_b": 139.78,
-      "timestamp": 1790538122888.4338
+      "team_a": "theMadgician",
+      "score_a": 102.36,
+      "projected_a": 139.78,
+      "team_b": "ROK Navy's Finest",
+      "score_b": 75.1,
+      "projected_b": 139.03,
+      "timestamp": 1790549798994.595
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Bandits",
-      "score_a": 95.9,
-      "projected_a": 131.97,
+      "score_a": 137.14,
+      "projected_a": 131.93,
       "team_b": "Big Dumb Sports",
-      "score_b": 16.2,
-      "projected_b": 137.33,
-      "timestamp": 1790538122888.4312
+      "score_b": 69.5,
+      "projected_b": 137.47,
+      "timestamp": 1790549798994.592
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "packerlove24",
-      "score_a": 106.38,
+      "score_a": 135.28,
       "projected_a": 148.43,
       "team_b": "Hurts Over 10.5int @-1000",
-      "score_b": 52.7,
+      "score_b": 72.66,
       "projected_b": 126.1,
-      "timestamp": 1790538122888.427
+      "timestamp": 1790549798994.589
     },
     {
       "type": "live_score",
       "week": 3,
-      "team_a": "Chig-a-Doodle-Doo",
-      "score_a": 71.38,
-      "projected_a": 148.73,
-      "team_b": "Jake From State Farm",
-      "score_b": 53.5,
-      "projected_b": 137.03,
-      "timestamp": 1790538122888.4229
+      "team_a": "Jake From State Farm",
+      "score_a": 125.82,
+      "projected_a": 137.03,
+      "team_b": "Chig-a-Doodle-Doo",
+      "score_b": 86.98,
+      "projected_b": 148.73,
+      "timestamp": 1790549798994.585
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Supernova Takeover",
-      "score_a": 91.6,
+      "score_a": 177.74,
       "projected_a": 145.42,
       "team_b": "VRDNO",
-      "score_b": 51.7,
+      "score_b": 125.2,
       "projected_b": 137.28,
-      "timestamp": 1790538122888.408
+      "timestamp": 1790549798994.57
     },
     {
       "type": "waiver_move",
