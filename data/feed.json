@@ -1,50 +1,140 @@
 {
-  "generated_at": "2026-09-27T13:47:46.285462+00:00",
+  "generated_at": "2026-09-27T19:42:02.888528+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 3,
+      "team_a": "Supernovas",
+      "score_a": 61.72,
+      "projected_a": 144.33,
+      "team_b": "Newman’s Owen",
+      "score_b": 42.02,
+      "projected_b": 140.88,
+      "timestamp": 1790538122888.437
+    },
+    {
+      "type": "live_score",
+      "week": 3,
       "team_a": "ROK Navy's Finest",
-      "score_a": 22.6,
-      "projected_a": 139.01,
+      "score_a": 50.7,
+      "projected_a": 139.03,
       "team_b": "theMadgician",
-      "score_b": 6.6,
-      "projected_b": 138.52,
-      "timestamp": 1790516866285.378
+      "score_b": 45.02,
+      "projected_b": 139.78,
+      "timestamp": 1790538122888.4338
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Bandits",
-      "score_a": 64.3,
-      "projected_a": 132.07,
+      "score_a": 95.9,
+      "projected_a": 131.97,
       "team_b": "Big Dumb Sports",
-      "score_b": 0,
-      "projected_b": 136.79,
-      "timestamp": 1790516866285.375
+      "score_b": 16.2,
+      "projected_b": 137.33,
+      "timestamp": 1790538122888.4312
     },
     {
       "type": "live_score",
       "week": 3,
-      "team_a": "Hurts Over 10.5int @-1000",
-      "score_a": 35.4,
-      "projected_a": 125.97,
-      "team_b": "packerlove24",
-      "score_b": 0,
-      "projected_b": 139.47,
-      "timestamp": 1790516866285.371
+      "team_a": "packerlove24",
+      "score_a": 106.38,
+      "projected_a": 148.43,
+      "team_b": "Hurts Over 10.5int @-1000",
+      "score_b": 52.7,
+      "projected_b": 126.1,
+      "timestamp": 1790538122888.427
     },
     {
       "type": "live_score",
       "week": 3,
-      "team_a": "VRDNO",
-      "score_a": 3.8,
-      "projected_a": 137.71,
-      "team_b": "Supernova Takeover",
-      "score_b": 0,
-      "projected_b": 145.15,
-      "timestamp": 1790516866285.355
+      "team_a": "Chig-a-Doodle-Doo",
+      "score_a": 71.38,
+      "projected_a": 148.73,
+      "team_b": "Jake From State Farm",
+      "score_b": 53.5,
+      "projected_b": 137.03,
+      "timestamp": 1790538122888.4229
+    },
+    {
+      "type": "live_score",
+      "week": 3,
+      "team_a": "Supernova Takeover",
+      "score_a": 91.6,
+      "projected_a": 145.42,
+      "team_b": "VRDNO",
+      "score_b": 51.7,
+      "projected_b": 137.28,
+      "timestamp": 1790538122888.408
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1410010372156510208",
+      "timestamp": 1790535178749,
+      "manager_id": "bob",
+      "team_name": "packerlove24",
+      "added": {
+        "player_id": "11783",
+        "name": "Ryan Flournoy",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1410004213454458880",
+      "timestamp": 1790533710400,
+      "manager_id": "bob",
+      "team_name": "packerlove24",
+      "added": {
+        "player_id": "9493",
+        "name": "Puka Nacua",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1409999982882275328",
+      "timestamp": 1790532701753,
+      "manager_id": "bob",
+      "team_name": "packerlove24",
+      "added": {
+        "player_id": "11783",
+        "name": "Ryan Flournoy",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "9493",
+        "name": "Puka Nacua",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1409959084404305920",
+      "timestamp": 1790522950796,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "5095",
+        "name": "Daniel Carlson",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "2020",
+        "name": "Cairo Santos",
+        "position": "K"
+      },
+      "faab": null,
+      "remark": "streamer"
     },
     {
       "type": "waiver_move",
@@ -367,74 +457,6 @@
       },
       "faab": 22,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1407425664423862272",
-      "timestamp": 1789918936405,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "13545",
-        "name": "Trey Smack",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "12185",
-        "name": "Spencer Shrader",
-        "position": "K"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1407418353450078208",
-      "timestamp": 1789917193332,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "9504",
-        "name": "Kayshon Boutte",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1407418252962844672",
-      "timestamp": 1789917169374,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "5849",
-        "name": "Kyler Murray",
-        "position": "QB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1407418023962230784",
-      "timestamp": 1789917114777,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "4137",
-        "name": "James Conner",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "11237",
-        "name": "Jacob Saylors",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
