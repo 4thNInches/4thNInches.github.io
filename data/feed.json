@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T05:00:22.085116+00:00",
+  "generated_at": "2026-09-28T16:41:24.906322+00:00",
   "window_days": 7,
   "items": [
     {
@@ -10,19 +10,19 @@
       "projected_a": 140.93,
       "team_b": "Supernovas",
       "score_b": 121.16,
-      "projected_b": 144.33,
-      "timestamp": 1790571622085.0178
+      "projected_b": 145.17,
+      "timestamp": 1790613684906.1912
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "theMadgician",
       "score_a": 106.16,
-      "projected_a": 139.78,
+      "projected_a": 139.91,
       "team_b": "ROK Navy's Finest",
       "score_b": 82.0,
-      "projected_b": 139.03,
-      "timestamp": 1790571622085.0151
+      "projected_b": 138.66,
+      "timestamp": 1790613684906.187
     },
     {
       "type": "live_score",
@@ -33,7 +33,7 @@
       "team_b": "Big Dumb Sports",
       "score_b": 139.6,
       "projected_b": 137.35,
-      "timestamp": 1790571622085.012
+      "timestamp": 1790613684906.1838
     },
     {
       "type": "live_score",
@@ -43,30 +43,49 @@
       "projected_a": 148.43,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 84.54,
-      "projected_b": 126.1,
-      "timestamp": 1790571622085.0078
+      "projected_b": 126.21,
+      "timestamp": 1790613684906.1812
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Jake From State Farm",
       "score_a": 131.7,
-      "projected_a": 137.03,
+      "projected_a": 136.64,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 99.28,
       "projected_b": 148.73,
-      "timestamp": 1790571622085.0042
+      "timestamp": 1790613684906.176
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Supernova Takeover",
-      "score_a": 193.78,
+      "score_a": 194.78,
       "projected_a": 145.42,
       "team_b": "VRDNO",
       "score_b": 134.2,
-      "projected_b": 137.28,
-      "timestamp": 1790571622084.9868
+      "projected_b": 136.96,
+      "timestamp": 1790613684906.159
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1410225181288361984",
+      "timestamp": 1790586393237,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "4663",
+        "name": "Austin Ekeler",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "13285",
+        "name": "Malachi Fields",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
