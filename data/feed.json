@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-28T16:41:24.906322+00:00",
+  "generated_at": "2026-09-29T00:18:22.443190+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Newman’s Owen",
-      "score_a": 132.54,
-      "projected_a": 140.93,
+      "score_a": 148.54,
+      "projected_a": 140.97,
       "team_b": "Supernovas",
       "score_b": 121.16,
-      "projected_b": 145.17,
-      "timestamp": 1790613684906.1912
+      "projected_b": 145.31,
+      "timestamp": 1790641102443.1018
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "theMadgician",
       "score_a": 106.16,
-      "projected_a": 139.91,
+      "projected_a": 140.58,
       "team_b": "ROK Navy's Finest",
       "score_b": 82.0,
-      "projected_b": 138.66,
-      "timestamp": 1790613684906.187
+      "projected_b": 138.76,
+      "timestamp": 1790641102443.099
     },
     {
       "type": "live_score",
@@ -33,7 +33,7 @@
       "team_b": "Big Dumb Sports",
       "score_b": 139.6,
       "projected_b": 137.35,
-      "timestamp": 1790613684906.1838
+      "timestamp": 1790641102443.096
     },
     {
       "type": "live_score",
@@ -43,19 +43,19 @@
       "projected_a": 148.43,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 84.54,
-      "projected_b": 126.21,
-      "timestamp": 1790613684906.1812
+      "projected_b": 119.32,
+      "timestamp": 1790641102443.093
     },
     {
       "type": "live_score",
       "week": 3,
       "team_a": "Jake From State Farm",
       "score_a": 131.7,
-      "projected_a": 136.64,
+      "projected_a": 136.65,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 99.28,
       "projected_b": 148.73,
-      "timestamp": 1790613684906.176
+      "timestamp": 1790641102443.089
     },
     {
       "type": "live_score",
@@ -65,8 +65,27 @@
       "projected_a": 145.42,
       "team_b": "VRDNO",
       "score_b": 134.2,
-      "projected_b": 136.96,
-      "timestamp": 1790613684906.159
+      "projected_b": 137.01,
+      "timestamp": 1790641102443.073
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1410398838153342976",
+      "timestamp": 1790627796260,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "1339",
+        "name": "Zach Ertz",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "11435",
+        "name": "Emanuel Wilson",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
