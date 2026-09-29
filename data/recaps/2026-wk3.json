@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 3,
+  "context": "This week's 12 teams put up 1595.1 points between them, 132.92 a team.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "Somewhere, Bo Nix is still on Hurts Over 10.5int @-1000's bench wondering why -- 24.14 points' worth of wondering, out of 69.74 total left stranded."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "Proof records can lie: theMadgician beat ROK Navy's Finest despite the 9th-worst score of the week."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "theMadgician's defense (well, their opponent's offense) did the work: ROK Navy's Finest finished with just 94.62."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "The week's biggest mismatch: Supernova Takeover over VRDNO, 194.78-140.1 (54.68 points)."
+    }
+  ]
+}

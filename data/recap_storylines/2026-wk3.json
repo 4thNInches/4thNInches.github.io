@@ -1,0 +1,116 @@
+{
+  "season": "2026",
+  "week": 3,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "anthony",
+        "team_name": "Hurts Over 10.5int @-1000",
+        "bench_points": 69.74,
+        "top_bench_player": {
+          "name": "Bo Nix",
+          "points": 24.14
+        }
+      }
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "data": {
+        "winner": {
+          "manager_id": "matt",
+          "team_name": "theMadgician",
+          "score": 125.96,
+          "rank": 9
+        },
+        "loser": {
+          "manager_id": "mikey_k",
+          "team_name": "ROK Navy's Finest",
+          "score": 94.62,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "matt",
+          "team_name": "theMadgician",
+          "score": 125.96
+        },
+        "loser": {
+          "manager_id": "mikey_k",
+          "team_name": "ROK Navy's Finest",
+          "score": 94.62,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "score": 194.78
+        },
+        "loser": {
+          "manager_id": "kodi",
+          "team_name": "VRDNO",
+          "score": 140.1
+        },
+        "margin": 54.68
+      }
+    }
+  ],
+  "context": {
+    "weekly_total": 1595.1,
+    "weekly_avg": 132.92,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "closest_game",
+        "rank": 20,
+        "data": {
+          "team_a": "Supernovas",
+          "team_b": "Newman’s Owen",
+          "score_a": 131.96,
+          "score_b": 133.54,
+          "margin": 1.58
+        }
+      },
+      {
+        "type": "highest_score",
+        "rank": 29,
+        "data": {
+          "team_name": "Supernova Takeover",
+          "score": 194.78
+        }
+      },
+      {
+        "type": "biggest_blowout",
+        "rank": 165,
+        "data": {
+          "team_a": "Supernova Takeover",
+          "team_b": "VRDNO",
+          "score_a": 194.78,
+          "score_b": 140.1,
+          "margin": 54.68
+        }
+      },
+      {
+        "type": "lowest_score",
+        "rank": 195,
+        "data": {
+          "team_name": "ROK Navy's Finest",
+          "score": 94.62
+        }
+      }
+    ]
+  }
+}

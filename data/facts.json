@@ -457,7 +457,7 @@
   {
     "id": "best_season_record_0001",
     "category": "best_season_record",
-    "text": "packerlove24 (Bob) posted a 2-0-0 record in 2026 (333.54 points, 166.77 PPG) — the best single-season record in league history.",
+    "text": "packerlove24 (Bob) posted a 3-0-0 record in 2026 (482.82 points, 160.94 PPG) — the best single-season record in league history.",
     "value": 1.0,
     "season": 2026,
     "week": null,
@@ -469,19 +469,7 @@
   {
     "id": "best_season_record_0002",
     "category": "best_season_record",
-    "text": "In 2026, Chig-a-Doodle-Doo (John) went 2-0-0 — the 2nd-best regular-season mark this league has ever seen.",
-    "value": 1.0,
-    "season": 2026,
-    "week": null,
-    "round": null,
-    "managers": [
-      "john"
-    ]
-  },
-  {
-    "id": "best_season_record_0003",
-    "category": "best_season_record",
-    "text": "In 2026, Newman’s Owen went 2-0-0 — the 3rd-best regular-season mark this league has ever seen.",
+    "text": "In 2026, Newman’s Owen went 3-0-0 — the 2nd-best regular-season mark this league has ever seen.",
     "value": 1.0,
     "season": 2026,
     "week": null,
@@ -491,9 +479,9 @@
     ]
   },
   {
-    "id": "best_season_record_0004",
+    "id": "best_season_record_0003",
     "category": "best_season_record",
-    "text": "In 2026, theMadgician (Matt) went 2-0-0 — the 4th-best regular-season mark this league has ever seen.",
+    "text": "In 2026, theMadgician (Matt) went 3-0-0 — the 3rd-best regular-season mark this league has ever seen.",
     "value": 1.0,
     "season": 2026,
     "week": null,
@@ -503,21 +491,33 @@
     ]
   },
   {
-    "id": "best_season_record_0005",
+    "id": "best_season_record_0004",
     "category": "best_season_record",
-    "text": "In 2026, ROK Navy's Finest (Mikey K) went 2-0-0 — the 5th-best regular-season mark this league has ever seen.",
-    "value": 1.0,
-    "season": 2026,
+    "text": "In 2024, Kuppa My Puka (Anthony) went 13-1-0 — the 4th-best regular-season mark this league has ever seen.",
+    "value": 0.9285714285714286,
+    "season": 2024,
     "week": null,
     "round": null,
     "managers": [
-      "mikey_k"
+      "anthony"
+    ]
+  },
+  {
+    "id": "best_season_record_0005",
+    "category": "best_season_record",
+    "text": "In 2025, Supernova Takeover (Mikey G) went 12-2-0 — the 5th-best regular-season mark this league has ever seen.",
+    "value": 0.8571428571428571,
+    "season": 2025,
+    "week": null,
+    "round": null,
+    "managers": [
+      "mikey_g"
     ]
   },
   {
     "id": "worst_season_record_0001",
     "category": "worst_season_record",
-    "text": "2026 was rough for Hurts Over 10.5int @-1000 (Anthony): a 0-2-0 finish, the worst regular-season mark this league has ever produced.",
+    "text": "2026 was rough for Hurts Over 10.5int @-1000 (Anthony): a 0-3-0 finish, the worst regular-season mark this league has ever produced.",
     "value": 0.0,
     "season": 2026,
     "week": null,
@@ -529,19 +529,7 @@
   {
     "id": "worst_season_record_0002",
     "category": "worst_season_record",
-    "text": "2026 was rough for Jake From State Farm (Nick): a 0-2-0 finish, the 2nd-worst regular-season mark this league has ever produced.",
-    "value": 0.0,
-    "season": 2026,
-    "week": null,
-    "round": null,
-    "managers": [
-      "nick"
-    ]
-  },
-  {
-    "id": "worst_season_record_0003",
-    "category": "worst_season_record",
-    "text": "2026 was rough for Supernovas (Mark): a 0-2-0 finish, the 3rd-worst regular-season mark this league has ever produced.",
+    "text": "2026 was rough for Supernovas (Mark): a 0-3-0 finish, the 2nd-worst regular-season mark this league has ever produced.",
     "value": 0.0,
     "season": 2026,
     "week": null,
@@ -551,9 +539,9 @@
     ]
   },
   {
-    "id": "worst_season_record_0004",
+    "id": "worst_season_record_0003",
     "category": "worst_season_record",
-    "text": "VRDNO (Kodi) posted a 0-2-0 record in 2026 (251.94 points, 125.97 PPG) — the 4th-worst single-season record in league history.",
+    "text": "2026 was rough for VRDNO (Kodi): a 0-3-0 finish, the 3rd-worst regular-season mark this league has ever produced.",
     "value": 0.0,
     "season": 2026,
     "week": null,
@@ -563,15 +551,27 @@
     ]
   },
   {
-    "id": "worst_season_record_0005",
+    "id": "worst_season_record_0004",
     "category": "worst_season_record",
-    "text": "Bandits (Bill M) posted a 0-2-0 record in 2026 (263.56 points, 131.78 PPG) — the 5th-worst single-season record in league history.",
-    "value": 0.0,
-    "season": 2026,
+    "text": "Free Radicals (Pat) posted a 2-12-0 record in 2024 (1212.92 points, 86.64 PPG) — the 4th-worst single-season record in league history.",
+    "value": 0.14285714285714285,
+    "season": 2024,
     "week": null,
     "round": null,
     "managers": [
-      "bill_m"
+      "pat"
+    ]
+  },
+  {
+    "id": "worst_season_record_0005",
+    "category": "worst_season_record",
+    "text": "Newman’s Owen posted a 2-12-0 record in 2021 (1528.86 points, 109.20 PPG) — the 5th-worst single-season record in league history.",
+    "value": 0.14285714285714285,
+    "season": 2021,
+    "week": null,
+    "round": null,
+    "managers": [
+      "owen"
     ]
   },
   {
@@ -1554,8 +1554,8 @@
   {
     "id": "season_average_score_0012",
     "category": "season_average_score",
-    "text": "2026 regular-season scoring settled in at 137.13 points per team per week, league-wide.",
-    "value": 137.13,
+    "text": "2026 regular-season scoring settled in at 135.73 points per team per week, league-wide.",
+    "value": 135.73,
     "season": 2026,
     "week": null,
     "round": null,
@@ -1588,8 +1588,8 @@
   {
     "id": "career_wins_leaderboard_0001",
     "category": "career_wins_leaderboard",
-    "text": "Across 12 seasons in the league, Nick has piled up 93 career wins — most all-time.",
-    "value": 93,
+    "text": "Across 12 seasons in the league, Nick has piled up 94 career wins — most all-time.",
+    "value": 94,
     "season": null,
     "week": null,
     "round": null,
@@ -1600,7 +1600,7 @@
   {
     "id": "career_wins_leaderboard_0002",
     "category": "career_wins_leaderboard",
-    "text": "Mark is a career 83-67 across 12 seasons (137.11 PPG) — the 2nd-most wins in league history.",
+    "text": "Mark is a career 83-68 across 12 seasons (137.08 PPG) — the 2nd-most wins in league history.",
     "value": 83,
     "season": null,
     "week": null,
@@ -1648,7 +1648,19 @@
   {
     "id": "career_win_pct_leaderboard_0001",
     "category": "career_win_pct_leaderboard",
-    "text": "Brian carries a career 43-24 record (64.2%) across 5 seasons — the best all-time win rate in league history (min. 3 seasons played).",
+    "text": "Mikey G carries a career 20-11 record (64.5%) across 3 seasons — the best all-time win rate in league history (min. 3 seasons played).",
+    "value": 0.6451612903225806,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "mikey_g"
+    ]
+  },
+  {
+    "id": "career_win_pct_leaderboard_0002",
+    "category": "career_win_pct_leaderboard",
+    "text": "Brian carries a career 43-24 record (64.2%) across 5 seasons — the 2nd-best all-time win rate in league history (min. 3 seasons played).",
     "value": 0.6417910447761194,
     "season": null,
     "week": null,
@@ -1658,9 +1670,9 @@
     ]
   },
   {
-    "id": "career_win_pct_leaderboard_0002",
+    "id": "career_win_pct_leaderboard_0003",
     "category": "career_win_pct_leaderboard",
-    "text": "Jamie carries a career 69-39 record (63.9%) across 8 seasons — the 2nd-best all-time win rate in league history (min. 3 seasons played).",
+    "text": "Jamie carries a career 69-39 record (63.9%) across 8 seasons — the 3rd-best all-time win rate in league history (min. 3 seasons played).",
     "value": 0.6388888888888888,
     "season": null,
     "week": null,
@@ -1670,22 +1682,10 @@
     ]
   },
   {
-    "id": "career_win_pct_leaderboard_0003",
-    "category": "career_win_pct_leaderboard",
-    "text": "Mikey G carries a career 19-11 record (63.3%) across 3 seasons — the 3rd-best all-time win rate in league history (min. 3 seasons played).",
-    "value": 0.6333333333333333,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "mikey_g"
-    ]
-  },
-  {
     "id": "career_win_pct_leaderboard_0004",
     "category": "career_win_pct_leaderboard",
-    "text": "Nick carries a career 93-57 record (62.0%) across 12 seasons — the 4th-best all-time win rate in league history (min. 3 seasons played).",
-    "value": 0.62,
+    "text": "Nick carries a career 94-57 record (62.3%) across 12 seasons — the 4th-best all-time win rate in league history (min. 3 seasons played).",
+    "value": 0.6225165562913907,
     "season": null,
     "week": null,
     "round": null,
@@ -1696,8 +1696,8 @@
   {
     "id": "career_win_pct_leaderboard_0005",
     "category": "career_win_pct_leaderboard",
-    "text": "Mark carries a career 83-67 record (55.3%) across 12 seasons — the 5th-best all-time win rate in league history (min. 3 seasons played).",
-    "value": 0.5533333333333333,
+    "text": "Mark carries a career 83-68 record (55.0%) across 12 seasons — the 5th-best all-time win rate in league history (min. 3 seasons played).",
+    "value": 0.5496688741721855,
     "season": null,
     "week": null,
     "round": null,
@@ -3750,8 +3750,8 @@
   {
     "id": "head_to_head_record_0030",
     "category": "head_to_head_record",
-    "text": "Bob leads the all-time series 8-6 over Anthony (14 meetings and counting).",
-    "value": 2,
+    "text": "Bob leads the all-time series 9-6 over Anthony (15 meetings and counting).",
+    "value": 3,
     "season": null,
     "week": null,
     "round": null,
@@ -3802,8 +3802,8 @@
   {
     "id": "head_to_head_never_playoffs_0009",
     "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 14 times, Anthony and Bob have never crossed paths in the playoffs.",
-    "value": 14,
+    "text": "Despite playing 15 times, Anthony and Bob have never crossed paths in the playoffs.",
+    "value": 15,
     "season": null,
     "week": null,
     "round": null,
@@ -4348,8 +4348,8 @@
   {
     "id": "head_to_head_record_0041",
     "category": "head_to_head_record",
-    "text": "Mark leads the all-time series 10-5 over Owen (15 meetings and counting).",
-    "value": 5,
+    "text": "Mark leads the all-time series 10-6 over Owen (16 meetings and counting).",
+    "value": 4,
     "season": null,
     "week": null,
     "round": null,
@@ -4374,10 +4374,10 @@
   {
     "id": "head_to_head_closest_0028",
     "category": "head_to_head_closest",
-    "text": "The closest game ever between Mark and Owen was a 3.88-point margin in the regular season of 2021, Week 2.",
-    "value": 3.88,
-    "season": 2021,
-    "week": 2,
+    "text": "The closest game ever between Mark and Owen was a 1.58-point margin in the regular season of 2026, Week 3.",
+    "value": 1.58,
+    "season": 2026,
+    "week": 3,
     "round": "regular_season",
     "managers": [
       "mark",
@@ -8937,8 +8937,8 @@
   {
     "id": "head_to_head_record_0132",
     "category": "head_to_head_record",
-    "text": "Bill M leads the all-time series 8-1 over Dennis (9 meetings and counting).",
-    "value": 7,
+    "text": "Bill M leads the all-time series 9-1 over Dennis (10 meetings and counting).",
+    "value": 8,
     "season": null,
     "week": null,
     "round": null,
@@ -8989,8 +8989,8 @@
   {
     "id": "head_to_head_never_playoffs_0039",
     "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 9 times, Bill M and Dennis have never crossed paths in the playoffs.",
-    "value": 9,
+    "text": "Despite playing 10 times, Bill M and Dennis have never crossed paths in the playoffs.",
+    "value": 10,
     "season": null,
     "week": null,
     "round": null,
@@ -9002,8 +9002,8 @@
   {
     "id": "head_to_head_streak_0058",
     "category": "head_to_head_streak",
-    "text": "Bill M's longest winning streak against Dennis sits at 5 games.",
-    "value": 5,
+    "text": "Bill M's longest winning streak against Dennis sits at 6 games.",
+    "value": 6,
     "season": null,
     "week": null,
     "round": null,
@@ -10081,8 +10081,8 @@
   {
     "id": "head_to_head_record_0149",
     "category": "head_to_head_record",
-    "text": "Nick leads the all-time series 9-1 over John (10 meetings and counting).",
-    "value": 8,
+    "text": "Nick leads the all-time series 10-1 over John (11 meetings and counting).",
+    "value": 9,
     "season": null,
     "week": null,
     "round": null,
@@ -11238,8 +11238,8 @@
   {
     "id": "head_to_head_record_0179",
     "category": "head_to_head_record",
-    "text": "Matt is a career 1-0 against Mikey K, spanning 1 meeting.",
-    "value": 1,
+    "text": "Matt is a career 2-0 against Mikey K, spanning 2 meetings.",
+    "value": 2,
     "season": null,
     "week": null,
     "round": null,
@@ -11537,8 +11537,8 @@
   {
     "id": "head_to_head_record_0189",
     "category": "head_to_head_record",
-    "text": "Mikey G leads the all-time series 1-0 over Kodi (1 meeting and counting).",
-    "value": 1,
+    "text": "Mikey G leads the all-time series 2-0 over Kodi (2 meetings and counting).",
+    "value": 2,
     "season": null,
     "week": null,
     "round": null,
@@ -11732,27 +11732,27 @@
   {
     "id": "most_played_rivalry_0004",
     "category": "most_played_rivalry",
-    "text": "Bob vs Pat is the 4th-most-played rivalry in league history — 15 all-time meetings.",
-    "value": 15,
+    "text": "Mark vs Owen is the 4th-most-played rivalry in league history — 16 all-time meetings.",
+    "value": 16,
     "season": null,
     "week": null,
     "round": null,
     "managers": [
-      "bob",
-      "pat"
+      "mark",
+      "owen"
     ]
   },
   {
     "id": "most_played_rivalry_0005",
     "category": "most_played_rivalry",
-    "text": "Few matchups have run it back as often as Bob and Mark: 15 meetings and counting, 5th-most in league history.",
+    "text": "Few matchups have run it back as often as Anthony and Bob: 15 meetings and counting, 5th-most in league history.",
     "value": 15,
     "season": null,
     "week": null,
     "round": null,
     "managers": [
-      "bob",
-      "mark"
+      "anthony",
+      "bob"
     ]
   },
   {
@@ -12430,13 +12430,13 @@
   {
     "id": "cross_season_loss_streak_0005",
     "category": "cross_season_loss_streak",
-    "text": "Bill C lost 5 straight games spanning the 2017-2018 seasons — the 5th-longest streak to cross a season boundary in league history.",
-    "value": 5,
+    "text": "Kodi lost 6 straight games spanning the 2025-2026 seasons — the 5th-longest streak to cross a season boundary in league history.",
+    "value": 6,
     "season": null,
     "week": null,
     "round": null,
     "managers": [
-      "bill_c"
+      "kodi"
     ]
   },
   {
