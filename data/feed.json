@@ -1,7 +1,45 @@
 {
-  "generated_at": "2026-09-30T14:49:47.614110+00:00",
+  "generated_at": "2026-09-30T20:43:13.379982+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1411073177118887936",
+      "timestamp": 1790788571198,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "3271",
+        "name": "Tyler Higbee",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "11637",
+        "name": "Keon Coleman",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1411056239483375616",
+      "timestamp": 1790784532951,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "3321",
+        "name": "Tyreek Hill",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "12493",
+        "name": "Oronde Gadsden",
+        "position": "TE"
+      },
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1411026381545959424",
@@ -435,21 +473,6 @@
         "name": "Kayshon Boutte",
         "position": "WR"
       },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1408565782694174720",
-      "timestamp": 1790190761783,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "3163",
-        "name": "Jared Goff",
-        "position": "QB"
-      },
-      "dropped": null,
       "faab": null,
       "remark": null
     }
