@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T15:21:06.062689+00:00",
+  "generated_at": "2026-10-01T20:57:09.014931+00:00",
   "window_days": 7,
   "items": [
     {
@@ -403,40 +403,6 @@
       "dropped": null,
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1408935143963406336",
-      "timestamp": 1790278824371,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "CAR",
-        "name": "CAR",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "LV",
-        "name": "LV",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1408934670036439040",
-      "timestamp": 1790278711378,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "7600",
-        "name": "Pat Freiermuth",
-        "position": "TE"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
     }
   ]
 }
