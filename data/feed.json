@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T20:43:13.379982+00:00",
+  "generated_at": "2026-10-01T05:28:08.168137+00:00",
   "window_days": 7,
   "items": [
     {
@@ -296,7 +296,7 @@
       },
       "dropped": null,
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -330,7 +330,7 @@
         "position": "WR"
       },
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -453,25 +453,6 @@
         "player_id": "13545",
         "name": "Trey Smack",
         "position": "K"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1408613082346913792",
-      "timestamp": 1790202038898,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "MIN",
-        "name": "MIN",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "9504",
-        "name": "Kayshon Boutte",
-        "position": "WR"
       },
       "faab": null,
       "remark": null
