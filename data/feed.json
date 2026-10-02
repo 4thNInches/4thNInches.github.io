@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T05:15:50.892200+00:00",
+  "generated_at": "2026-10-02T14:39:17.371115+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,123 @@
       "week": 4,
       "team_a": "Newman’s Owen",
       "score_a": 11.7,
-      "projected_a": 145.18,
+      "projected_a": 145.8,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 145.3,
-      "timestamp": 1790918150892.084
+      "projected_b": 145.36,
+      "timestamp": 1790951957371.02
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "packerlove24",
       "score_a": 21.6,
-      "projected_a": 165.71,
+      "projected_a": 165.75,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 126.74,
-      "timestamp": 1790918150892.08
+      "projected_b": 126.93,
+      "timestamp": 1790951957371.017
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "VRDNO",
       "score_a": 15.6,
-      "projected_a": 148.09,
+      "projected_a": 148.05,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 10.7,
-      "projected_b": 123.26,
-      "timestamp": 1790918150892.075
+      "projected_b": 123.4,
+      "timestamp": 1790951957371.013
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "Big Dumb Sports",
       "score_a": 23.6,
-      "projected_a": 136.01,
+      "projected_a": 136.33,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.0,
-      "projected_b": 139.59,
-      "timestamp": 1790918150892.07
+      "projected_b": 139.62,
+      "timestamp": 1790951957371.009
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "ROK Navy's Finest",
       "score_a": 15.9,
-      "projected_a": 129.81,
+      "projected_a": 130.15,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 152.17,
-      "timestamp": 1790918150892.056
+      "projected_b": 153.32,
+      "timestamp": 1790951957370.997
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1411721202501730304",
+      "timestamp": 1790943072490,
+      "manager_id": "mikey_k",
+      "team_name": "ROK Navy's Finest",
+      "added": {
+        "player_id": "10219",
+        "name": "Chris Rodriguez",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1411720468590817280",
+      "timestamp": 1790942897511,
+      "manager_id": "mikey_k",
+      "team_name": "ROK Navy's Finest",
+      "added": {
+        "player_id": "1166",
+        "name": "Kirk Cousins",
+        "position": "QB"
+      },
+      "dropped": {
+        "player_id": "7670",
+        "name": "Joshua Palmer",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1411720019405971456",
+      "timestamp": 1790942790417,
+      "manager_id": "mikey_k",
+      "team_name": "ROK Navy's Finest",
+      "added": {
+        "player_id": "13305",
+        "name": "Mike Washington",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1411719286375849984",
+      "timestamp": 1790942615649,
+      "manager_id": "mikey_k",
+      "team_name": "ROK Navy's Finest",
+      "added": {
+        "player_id": "DET",
+        "name": "DET",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "DAL",
+        "name": "DAL",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
