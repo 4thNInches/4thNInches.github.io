@@ -1,7 +1,81 @@
 {
-  "generated_at": "2026-10-01T20:57:09.014931+00:00",
+  "generated_at": "2026-10-02T05:15:50.892200+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "live_score",
+      "week": 4,
+      "team_a": "Newman’s Owen",
+      "score_a": 11.7,
+      "projected_a": 145.18,
+      "team_b": "Bandits",
+      "score_b": 0,
+      "projected_b": 145.3,
+      "timestamp": 1790918150892.084
+    },
+    {
+      "type": "live_score",
+      "week": 4,
+      "team_a": "packerlove24",
+      "score_a": 21.6,
+      "projected_a": 165.71,
+      "team_b": "Jake From State Farm",
+      "score_b": 0,
+      "projected_b": 126.74,
+      "timestamp": 1790918150892.08
+    },
+    {
+      "type": "live_score",
+      "week": 4,
+      "team_a": "VRDNO",
+      "score_a": 15.6,
+      "projected_a": 148.09,
+      "team_b": "Hurts Over 10.5int @-1000",
+      "score_b": 10.7,
+      "projected_b": 123.26,
+      "timestamp": 1790918150892.075
+    },
+    {
+      "type": "live_score",
+      "week": 4,
+      "team_a": "Big Dumb Sports",
+      "score_a": 23.6,
+      "projected_a": 136.01,
+      "team_b": "Chig-a-Doodle-Doo",
+      "score_b": 6.0,
+      "projected_b": 139.59,
+      "timestamp": 1790918150892.07
+    },
+    {
+      "type": "live_score",
+      "week": 4,
+      "team_a": "ROK Navy's Finest",
+      "score_a": 15.9,
+      "projected_a": 129.81,
+      "team_b": "Supernova Takeover",
+      "score_b": 0,
+      "projected_b": 152.17,
+      "timestamp": 1790918150892.056
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1411503903375175680",
+      "timestamp": 1790891264340,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "9757",
+        "name": "Kendre Miller",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "13296",
+        "name": "Caleb Douglas",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1411073177118887936",
