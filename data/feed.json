@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T19:08:51.271409+00:00",
+  "generated_at": "2026-10-03T22:48:13.552900+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,55 @@
       "week": 4,
       "team_a": "Newman’s Owen",
       "score_a": 11.7,
-      "projected_a": 147.82,
+      "projected_a": 148.01,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 145.36,
-      "timestamp": 1791054531271.307
+      "projected_b": 145.52,
+      "timestamp": 1791067693552.785
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "packerlove24",
       "score_a": 21.6,
-      "projected_a": 165.48,
+      "projected_a": 165.52,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 129.3,
-      "timestamp": 1791054531271.304
+      "projected_b": 129.18,
+      "timestamp": 1791067693552.781
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "VRDNO",
       "score_a": 15.6,
-      "projected_a": 152.24,
+      "projected_a": 152.59,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 10.7,
-      "projected_b": 123.97,
-      "timestamp": 1791054531271.301
+      "projected_b": 124.08,
+      "timestamp": 1791067693552.777
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "Big Dumb Sports",
       "score_a": 23.6,
-      "projected_a": 136.52,
+      "projected_a": 136.51,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.0,
-      "projected_b": 139.63,
-      "timestamp": 1791054531271.2979
+      "projected_b": 139.83,
+      "timestamp": 1791067693552.773
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "ROK Navy's Finest",
       "score_a": 15.9,
-      "projected_a": 133.08,
+      "projected_a": 133.1,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 139.86,
-      "timestamp": 1791054531271.282
+      "projected_b": 139.73,
+      "timestamp": 1791067693552.7551
     },
     {
       "type": "waiver_move",
