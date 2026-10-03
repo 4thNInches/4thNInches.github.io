@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T20:35:40.220555+00:00",
+  "generated_at": "2026-10-03T04:58:39.685298+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,70 @@
       "week": 4,
       "team_a": "Newman’s Owen",
       "score_a": 11.7,
-      "projected_a": 145.65,
+      "projected_a": 145.94,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 145.37,
-      "timestamp": 1790973340220.446
+      "projected_b": 144.5,
+      "timestamp": 1791003519685.181
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "packerlove24",
       "score_a": 21.6,
-      "projected_a": 165.71,
+      "projected_a": 165.45,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 126.74,
-      "timestamp": 1790973340220.443
+      "projected_b": 128.07,
+      "timestamp": 1791003519685.179
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "VRDNO",
       "score_a": 15.6,
-      "projected_a": 150.34,
+      "projected_a": 152.2,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 10.7,
-      "projected_b": 123.77,
-      "timestamp": 1790973340220.439
+      "projected_b": 123.9,
+      "timestamp": 1791003519685.175
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "Big Dumb Sports",
       "score_a": 23.6,
-      "projected_a": 135.93,
+      "projected_a": 136.57,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.0,
-      "projected_b": 139.94,
-      "timestamp": 1790973340220.4348
+      "projected_b": 139.57,
+      "timestamp": 1791003519685.171
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "ROK Navy's Finest",
       "score_a": 15.9,
-      "projected_a": 133.54,
+      "projected_a": 133.04,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 153.13,
-      "timestamp": 1790973340220.416
+      "projected_b": 151.9,
+      "timestamp": 1791003519685.152
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1411850160727752704",
+      "timestamp": 1790973818527,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "11571",
+        "name": "Isaiah Davis",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
