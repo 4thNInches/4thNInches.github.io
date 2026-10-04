@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T22:48:13.552900+00:00",
+  "generated_at": "2026-10-04T05:31:37.962240+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,74 @@
       "week": 4,
       "team_a": "Newman’s Owen",
       "score_a": 11.7,
-      "projected_a": 148.01,
+      "projected_a": 148.6,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 145.52,
-      "timestamp": 1791067693552.785
+      "projected_b": 145.36,
+      "timestamp": 1791091897962.118
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "packerlove24",
       "score_a": 21.6,
-      "projected_a": 165.52,
+      "projected_a": 165.66,
       "team_b": "Jake From State Farm",
       "score_b": 0,
       "projected_b": 129.18,
-      "timestamp": 1791067693552.781
+      "timestamp": 1791091897962.115
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "VRDNO",
       "score_a": 15.6,
-      "projected_a": 152.59,
+      "projected_a": 152.5,
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 10.7,
-      "projected_b": 124.08,
-      "timestamp": 1791067693552.777
+      "projected_b": 124.06,
+      "timestamp": 1791091897962.111
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "Big Dumb Sports",
       "score_a": 23.6,
-      "projected_a": 136.51,
+      "projected_a": 136.65,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.0,
-      "projected_b": 139.83,
-      "timestamp": 1791067693552.773
+      "projected_b": 140.41,
+      "timestamp": 1791091897962.106
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "ROK Navy's Finest",
       "score_a": 15.9,
-      "projected_a": 133.1,
+      "projected_a": 133.21,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 139.73,
-      "timestamp": 1791067693552.7551
+      "projected_b": 150.81,
+      "timestamp": 1791091897962.091
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1412333768588447744",
+      "timestamp": 1791089119625,
+      "manager_id": "owen",
+      "team_name": "Newman’s Owen",
+      "added": {
+        "player_id": "BUF",
+        "name": "BUF",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "4943",
+        "name": "Sam Darnold",
+        "position": "QB"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
