@@ -1,72 +1,91 @@
 {
-  "generated_at": "2026-10-04T13:52:31.445775+00:00",
+  "generated_at": "2026-10-04T19:28:36.773035+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 4,
-      "team_a": "Newman’s Owen",
-      "score_a": 13.6,
-      "projected_a": 149.09,
-      "team_b": "Bandits",
-      "score_b": 0,
-      "projected_b": 145.48,
-      "timestamp": 1791121951445.676
+      "team_a": "Bandits",
+      "score_a": 100.66,
+      "projected_a": 145.34,
+      "team_b": "Newman’s Owen",
+      "score_b": 41.6,
+      "projected_b": 151.09,
+      "timestamp": 1791142116772.928
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "packerlove24",
-      "score_a": 21.6,
-      "projected_a": 165.88,
+      "score_a": 51.5,
+      "projected_a": 166.16,
       "team_b": "Jake From State Farm",
-      "score_b": 1.2,
-      "projected_b": 128.91,
-      "timestamp": 1791121951445.6738
+      "score_b": 45.7,
+      "projected_b": 130.73,
+      "timestamp": 1791142116772.9248
     },
     {
       "type": "live_score",
       "week": 4,
-      "team_a": "Supernovas",
-      "score_a": 4.6,
-      "projected_a": 147.96,
-      "team_b": "theMadgician",
-      "score_b": 0,
-      "projected_b": 148.53,
-      "timestamp": 1791121951445.672
+      "team_a": "theMadgician",
+      "score_a": 90.82,
+      "projected_a": 150.97,
+      "team_b": "Supernovas",
+      "score_b": 62.1,
+      "projected_b": 127.28,
+      "timestamp": 1791142116772.9211
     },
     {
       "type": "live_score",
       "week": 4,
-      "team_a": "VRDNO",
-      "score_a": 15.6,
-      "projected_a": 152.37,
-      "team_b": "Hurts Over 10.5int @-1000",
-      "score_b": 10.7,
-      "projected_b": 124.14,
-      "timestamp": 1791121951445.67
+      "team_a": "Hurts Over 10.5int @-1000",
+      "score_a": 88.88,
+      "projected_a": 108.85,
+      "team_b": "VRDNO",
+      "score_b": 54.5,
+      "projected_b": 152.7,
+      "timestamp": 1791142116772.917
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "Big Dumb Sports",
-      "score_a": 25.1,
-      "projected_a": 136.89,
+      "score_a": 99.32,
+      "projected_a": 137.59,
       "team_b": "Chig-a-Doodle-Doo",
-      "score_b": 6.0,
-      "projected_b": 140.24,
-      "timestamp": 1791121951445.667
+      "score_b": 65.24,
+      "projected_b": 139.18,
+      "timestamp": 1791142116772.913
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "ROK Navy's Finest",
-      "score_a": 15.9,
-      "projected_a": 133.13,
+      "score_a": 83.02,
+      "projected_a": 132.95,
       "team_b": "Supernova Takeover",
-      "score_b": 0,
-      "projected_b": 152.35,
-      "timestamp": 1791121951445.6501
+      "score_b": 31.6,
+      "projected_b": 152.41,
+      "timestamp": 1791142116772.898
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1412516249350533120",
+      "timestamp": 1791132626429,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "11157",
+        "name": "Brycen Tremayne",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "1479",
+        "name": "Keenan Allen",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -488,74 +507,6 @@
       },
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1410010372156510208",
-      "timestamp": 1790535178749,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "11783",
-        "name": "Ryan Flournoy",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1410004213454458880",
-      "timestamp": 1790533710400,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "9493",
-        "name": "Puka Nacua",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1409999982882275328",
-      "timestamp": 1790532701753,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "11783",
-        "name": "Ryan Flournoy",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "9493",
-        "name": "Puka Nacua",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1409959084404305920",
-      "timestamp": 1790522950796,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "5095",
-        "name": "Daniel Carlson",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "2020",
-        "name": "Cairo Santos",
-        "position": "K"
-      },
-      "faab": null,
-      "remark": "streamer"
     }
   ]
 }
