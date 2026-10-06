@@ -219,9 +219,9 @@
                 "leader": "a",
                 "projected_ppw": {
                   "a": 21.54,
-                  "b": 13.81
+                  "b": 13.75
                 },
-                "gap": 7.73
+                "gap": 7.79
               },
               {
                 "position": "TE",
@@ -605,10 +605,10 @@
                 "position": "QB",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 16.47,
+                  "a": 16.29,
                   "b": 0.0
                 },
-                "gap": 16.47
+                "gap": 16.29
               },
               {
                 "position": "RB",

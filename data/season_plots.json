@@ -18,12 +18,12 @@
         "DEF": 10.5
       },
       "positional_ranks": {
+        "WR": 11,
         "RB": 4,
         "TE": 2,
-        "WR": 11,
         "DEF": 4,
-        "QB": 2,
-        "K": 11
+        "K": 11,
+        "QB": 2
       },
       "streak": {
         "type": "W",
@@ -49,12 +49,12 @@
         "DEF": 12.0
       },
       "positional_ranks": {
+        "WR": 3,
         "RB": 9,
         "TE": 9,
-        "WR": 3,
         "DEF": 1,
-        "QB": 12,
-        "K": 8
+        "K": 8,
+        "QB": 12
       },
       "streak": {
         "type": "L",
@@ -80,12 +80,12 @@
         "DEF": 11.0
       },
       "positional_ranks": {
+        "WR": 12,
         "RB": 12,
         "TE": 12,
-        "WR": 12,
         "DEF": 2,
-        "QB": 3,
-        "K": 6
+        "K": 6,
+        "QB": 3
       },
       "streak": {
         "type": "W",
@@ -111,12 +111,12 @@
         "DEF": 8.75
       },
       "positional_ranks": {
+        "WR": 7,
         "RB": 2,
         "TE": 11,
-        "WR": 7,
         "DEF": 6,
-        "QB": 7,
-        "K": 9
+        "K": 9,
+        "QB": 7
       },
       "streak": {
         "type": "W",
@@ -142,12 +142,12 @@
         "DEF": 6.25
       },
       "positional_ranks": {
+        "WR": 4,
         "RB": 7,
         "TE": 8,
-        "WR": 4,
         "DEF": 8,
-        "QB": 1,
-        "K": 7
+        "K": 7,
+        "QB": 1
       },
       "streak": {
         "type": "W",
@@ -173,12 +173,12 @@
         "DEF": 4.0
       },
       "positional_ranks": {
+        "WR": 10,
         "RB": 8,
         "TE": 3,
-        "WR": 10,
         "DEF": 9,
-        "QB": 10,
-        "K": 1
+        "K": 1,
+        "QB": 10
       },
       "streak": {
         "type": "L",
@@ -204,12 +204,12 @@
         "DEF": 9.5
       },
       "positional_ranks": {
+        "WR": 9,
         "RB": 6,
         "TE": 5,
-        "WR": 9,
         "DEF": 5,
-        "QB": 6,
-        "K": 12
+        "K": 12,
+        "QB": 6
       },
       "streak": {
         "type": "L",
@@ -235,12 +235,12 @@
         "DEF": 4.0
       },
       "positional_ranks": {
+        "WR": 8,
         "RB": 1,
         "TE": 10,
-        "WR": 8,
         "DEF": 10,
-        "QB": 4,
-        "K": 2
+        "K": 2,
+        "QB": 4
       },
       "streak": {
         "type": "W",
@@ -266,12 +266,12 @@
         "DEF": 1.75
       },
       "positional_ranks": {
+        "WR": 5,
         "RB": 11,
         "TE": 7,
-        "WR": 5,
         "DEF": 12,
-        "QB": 9,
-        "K": 4
+        "K": 4,
+        "QB": 9
       },
       "streak": {
         "type": "L",
@@ -297,12 +297,12 @@
         "DEF": 3.25
       },
       "positional_ranks": {
+        "WR": 1,
         "RB": 5,
         "TE": 6,
-        "WR": 1,
         "DEF": 11,
-        "QB": 5,
-        "K": 10
+        "K": 10,
+        "QB": 5
       },
       "streak": {
         "type": "L",
@@ -328,12 +328,12 @@
         "DEF": 10.75
       },
       "positional_ranks": {
+        "WR": 2,
         "RB": 3,
         "TE": 4,
-        "WR": 2,
         "DEF": 3,
-        "QB": 8,
-        "K": 5
+        "K": 5,
+        "QB": 8
       },
       "streak": {
         "type": "W",
@@ -359,12 +359,12 @@
         "DEF": 6.5
       },
       "positional_ranks": {
+        "WR": 6,
         "RB": 10,
         "TE": 1,
-        "WR": 6,
         "DEF": 7,
-        "QB": 11,
-        "K": 3
+        "K": 3,
+        "QB": 11
       },
       "streak": {
         "type": "L",
