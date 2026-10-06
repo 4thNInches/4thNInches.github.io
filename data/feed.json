@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-10-05T17:03:07.197469+00:00",
+  "generated_at": "2026-10-06T01:15:20.737235+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 4,
-      "team_a": "Newman’s Owen",
-      "score_a": 140.66,
-      "projected_a": 151.52,
-      "team_b": "Bandits",
-      "score_b": 136.6,
-      "projected_b": 146.26,
-      "timestamp": 1791219787197.329
+      "team_a": "Bandits",
+      "score_a": 161.4,
+      "projected_a": 146.22,
+      "team_b": "Newman’s Owen",
+      "score_b": 140.66,
+      "projected_b": 151.52,
+      "timestamp": 1791249320737.123
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "packerlove24",
-      "score_a": 177.42,
-      "projected_a": 165.89,
+      "score_a": 185.82,
+      "projected_a": 166.19,
       "team_b": "Jake From State Farm",
-      "score_b": 122.1,
-      "projected_b": 131.38,
-      "timestamp": 1791219787197.326
+      "score_b": 129.3,
+      "projected_b": 131.51,
+      "timestamp": 1791249320737.1199
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "theMadgician",
-      "score_a": 137.02,
-      "projected_a": 150.97,
+      "score_a": 141.52,
+      "projected_a": 151.94,
       "team_b": "Supernovas",
       "score_b": 130.78,
-      "projected_b": 128.54,
-      "timestamp": 1791219787197.323
+      "projected_b": 128.47,
+      "timestamp": 1791249320737.118
     },
     {
       "type": "live_score",
       "week": 4,
       "team_a": "Hurts Over 10.5int @-1000",
-      "score_a": 121.78,
-      "projected_a": 109.85,
+      "score_a": 123.98,
+      "projected_a": 109.77,
       "team_b": "VRDNO",
       "score_b": 114.1,
       "projected_b": 152.65,
-      "timestamp": 1791219787197.32
+      "timestamp": 1791249320737.115
     },
     {
       "type": "live_score",
@@ -55,7 +55,7 @@
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 100.58,
       "projected_b": 125.7,
-      "timestamp": 1791219787197.316
+      "timestamp": 1791249320737.111
     },
     {
       "type": "live_score",
@@ -64,9 +64,28 @@
       "score_a": 122.82,
       "projected_a": 133.03,
       "team_b": "Supernova Takeover",
-      "score_b": 112.02,
-      "projected_b": 153.14,
-      "timestamp": 1791219787197.3
+      "score_b": 113.22,
+      "projected_b": 153.93,
+      "timestamp": 1791249320737.094
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1412960209105633280",
+      "timestamp": 1791238474684,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "4018",
+        "name": "Joe Mixon",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "3634",
+        "name": "Kalif Raymond",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -469,25 +488,6 @@
       },
       "faab": 15,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1410398838153342976",
-      "timestamp": 1790627796260,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "1339",
-        "name": "Zach Ertz",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "11435",
-        "name": "Emanuel Wilson",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
