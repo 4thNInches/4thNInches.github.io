@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T18:14:32.517848+00:00",
+  "generated_at": "2026-10-06T23:43:12.209142+00:00",
   "window_days": 7,
   "items": [
     {
@@ -19,7 +19,7 @@
         "position": "WR"
       },
       "faab": null,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
