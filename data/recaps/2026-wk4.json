@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 4,
+  "context": "This week's 12 teams put up 1708.5 points between them, 142.38 a team.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "Nobody stranded more points on the bench than Supernovas (81.08), headlined by Emanuel Wilson's 27.0-point no-show in the starting lineup."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "Proof records can lie: Supernova Takeover beat ROK Navy's Finest despite the 9th-worst score of the week."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "Big Dumb Sports's defense (well, their opponent's offense) did the work: Chig-a-Doodle-Doo finished with just 100.58."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "Chig-a-Doodle-Doo lost by 67.2 to Big Dumb Sports this week -- the kind of score you screenshot and never bring up again."
+    }
+  ]
+}

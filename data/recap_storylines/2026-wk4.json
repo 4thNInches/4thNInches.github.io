@@ -1,0 +1,116 @@
+{
+  "season": "2026",
+  "week": 4,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "mark",
+        "team_name": "Supernovas",
+        "bench_points": 81.08,
+        "top_bench_player": {
+          "name": "Emanuel Wilson",
+          "points": 27.0
+        }
+      }
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "data": {
+        "winner": {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "score": 129.42,
+          "rank": 9
+        },
+        "loser": {
+          "manager_id": "mikey_k",
+          "team_name": "ROK Navy's Finest",
+          "score": 122.82,
+          "rank": 10
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "dennis",
+          "team_name": "Big Dumb Sports",
+          "score": 167.78
+        },
+        "loser": {
+          "manager_id": "john",
+          "team_name": "Chig-a-Doodle-Doo",
+          "score": 100.58,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "dennis",
+          "team_name": "Big Dumb Sports",
+          "score": 167.78
+        },
+        "loser": {
+          "manager_id": "john",
+          "team_name": "Chig-a-Doodle-Doo",
+          "score": 100.58
+        },
+        "margin": 67.2
+      }
+    }
+  ],
+  "context": {
+    "weekly_total": 1708.5,
+    "weekly_avg": 142.38,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "highest_score",
+        "rank": 19,
+        "data": {
+          "team_name": "packerlove24",
+          "score": 201.02
+        }
+      },
+      {
+        "type": "biggest_blowout",
+        "rank": 89,
+        "data": {
+          "team_a": "Chig-a-Doodle-Doo",
+          "team_b": "Big Dumb Sports",
+          "score_a": 100.58,
+          "score_b": 167.78,
+          "margin": 67.2
+        }
+      },
+      {
+        "type": "closest_game",
+        "rank": 131,
+        "data": {
+          "team_a": "Supernova Takeover",
+          "team_b": "ROK Navy's Finest",
+          "score_a": 129.42,
+          "score_b": 122.82,
+          "margin": 6.6
+        }
+      },
+      {
+        "type": "lowest_score",
+        "rank": 278,
+        "data": {
+          "team_name": "Chig-a-Doodle-Doo",
+          "score": 100.58
+        }
+      }
+    ]
+  }
+}

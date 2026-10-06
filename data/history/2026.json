@@ -4,11 +4,11 @@
   "teams": {
     "1": {
       "team_name": "Supernova Takeover",
-      "wins": 2,
+      "wins": 3,
       "losses": 1,
       "ties": 0,
-      "points_for": 469.66,
-      "points_against": 409.04,
+      "points_for": 599.08,
+      "points_against": 531.86,
       "schedule": [
         {
           "week": 1,
@@ -33,16 +33,24 @@
           "my_score": 194.78,
           "opp_score": 140.1,
           "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 9,
+          "opponent_name": "ROK Navy's Finest",
+          "my_score": 129.42,
+          "opp_score": 122.82,
+          "result": "Win"
         }
       ]
     },
     "2": {
       "team_name": "Chig-a-Doodle-Doo",
       "wins": 2,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "points_for": 428.34,
-      "points_against": 348.42,
+      "points_for": 528.92,
+      "points_against": 516.2,
       "schedule": [
         {
           "week": 1,
@@ -67,16 +75,24 @@
           "my_score": 99.28,
           "opp_score": 144.2,
           "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 4,
+          "opponent_name": "Big Dumb Sports",
+          "my_score": 100.58,
+          "opp_score": 167.78,
+          "result": "Loss"
         }
       ]
     },
     "3": {
       "team_name": "Hurts Over 10.5int @-1000",
-      "wins": 0,
+      "wins": 1,
       "losses": 3,
       "ties": 0,
-      "points_for": 268.0,
-      "points_against": 436.2,
+      "points_for": 404.38,
+      "points_against": 550.3,
       "schedule": [
         {
           "week": 1,
@@ -101,16 +117,24 @@
           "my_score": 95.44,
           "opp_score": 149.28,
           "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 12,
+          "opponent_name": "VRDNO",
+          "my_score": 136.38,
+          "opp_score": 114.1,
+          "result": "Win"
         }
       ]
     },
     "4": {
       "team_name": "Big Dumb Sports",
-      "wins": 1,
+      "wins": 2,
       "losses": 2,
       "ties": 0,
-      "points_for": 427.18,
-      "points_against": 440.78,
+      "points_for": 594.96,
+      "points_against": 541.36,
       "schedule": [
         {
           "week": 1,
@@ -135,16 +159,24 @@
           "my_score": 139.6,
           "opp_score": 146.34,
           "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 2,
+          "opponent_name": "Chig-a-Doodle-Doo",
+          "my_score": 167.78,
+          "opp_score": 100.58,
+          "result": "Win"
         }
       ]
     },
     "5": {
       "team_name": "theMadgician",
-      "wins": 3,
+      "wins": 4,
       "losses": 0,
       "ties": 0,
-      "points_for": 432.54,
-      "points_against": 302.62,
+      "points_for": 581.46,
+      "points_against": 438.1,
       "schedule": [
         {
           "week": 1,
@@ -169,16 +201,24 @@
           "my_score": 125.96,
           "opp_score": 94.62,
           "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 7,
+          "opponent_name": "Supernovas",
+          "my_score": 148.92,
+          "opp_score": 135.48,
+          "result": "Win"
         }
       ]
     },
     "6": {
       "team_name": "Jake From State Farm",
       "wins": 1,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "points_for": 376.84,
-      "points_against": 426.32,
+      "points_for": 517.88,
+      "points_against": 627.34,
       "schedule": [
         {
           "week": 1,
@@ -203,16 +243,24 @@
           "my_score": 144.2,
           "opp_score": 99.28,
           "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 11,
+          "opponent_name": "packerlove24",
+          "my_score": 141.04,
+          "opp_score": 201.02,
+          "result": "Loss"
         }
       ]
     },
     "7": {
       "team_name": "Supernovas",
       "wins": 0,
-      "losses": 3,
+      "losses": 4,
       "ties": 0,
-      "points_for": 366.86,
-      "points_against": 442.32,
+      "points_for": 502.34,
+      "points_against": 591.24,
       "schedule": [
         {
           "week": 1,
@@ -237,16 +285,24 @@
           "my_score": 131.96,
           "opp_score": 133.54,
           "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 5,
+          "opponent_name": "theMadgician",
+          "my_score": 135.48,
+          "opp_score": 148.92,
+          "result": "Loss"
         }
       ]
     },
     "8": {
       "team_name": "Bandits",
-      "wins": 1,
+      "wins": 2,
       "losses": 2,
       "ties": 0,
-      "points_for": 409.9,
-      "points_against": 493.52,
+      "points_for": 580.2,
+      "points_against": 634.18,
       "schedule": [
         {
           "week": 1,
@@ -271,16 +327,24 @@
           "my_score": 146.34,
           "opp_score": 139.6,
           "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 10,
+          "opponent_name": "Newman\u2019s Owen",
+          "my_score": 170.3,
+          "opp_score": 140.66,
+          "result": "Win"
         }
       ]
     },
     "9": {
       "team_name": "ROK Navy's Finest",
       "wins": 2,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "points_for": 369.8,
-      "points_against": 339.04,
+      "points_for": 492.62,
+      "points_against": 468.46,
       "schedule": [
         {
           "week": 1,
@@ -305,16 +369,24 @@
           "my_score": 94.62,
           "opp_score": 125.96,
           "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 1,
+          "opponent_name": "Supernova Takeover",
+          "my_score": 122.82,
+          "opp_score": 129.42,
+          "result": "Loss"
         }
       ]
     },
     "10": {
       "team_name": "Newman\u2019s Owen",
       "wins": 3,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "points_for": 462.22,
-      "points_against": 403.46,
+      "points_for": 602.88,
+      "points_against": 573.76,
       "schedule": [
         {
           "week": 1,
@@ -339,16 +411,24 @@
           "my_score": 133.54,
           "opp_score": 131.96,
           "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 8,
+          "opponent_name": "Bandits",
+          "my_score": 140.66,
+          "opp_score": 170.3,
+          "result": "Loss"
         }
       ]
     },
     "11": {
       "team_name": "packerlove24",
-      "wins": 3,
+      "wins": 4,
       "losses": 0,
       "ties": 0,
-      "points_for": 482.82,
-      "points_against": 372.88,
+      "points_for": 683.84,
+      "points_against": 513.92,
       "schedule": [
         {
           "week": 1,
@@ -373,16 +453,24 @@
           "my_score": 149.28,
           "opp_score": 95.44,
           "result": "Win"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 6,
+          "opponent_name": "Jake From State Farm",
+          "my_score": 201.02,
+          "opp_score": 141.04,
+          "result": "Win"
         }
       ]
     },
     "12": {
       "team_name": "VRDNO",
       "wins": 0,
-      "losses": 3,
+      "losses": 4,
       "ties": 0,
-      "points_for": 392.04,
-      "points_against": 471.6,
+      "points_for": 506.14,
+      "points_against": 607.98,
       "schedule": [
         {
           "week": 1,
@@ -406,6 +494,14 @@
           "opponent_name": "Supernova Takeover",
           "my_score": 140.1,
           "opp_score": 194.78,
+          "result": "Loss"
+        },
+        {
+          "week": 4,
+          "opponent_team_id": 3,
+          "opponent_name": "Hurts Over 10.5int @-1000",
+          "my_score": 114.1,
+          "opp_score": 136.38,
           "result": "Loss"
         }
       ]
