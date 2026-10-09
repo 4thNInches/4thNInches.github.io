@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T05:46:46.059508+00:00",
+  "generated_at": "2026-10-09T15:11:18.951865+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,63 @@
       "week": 5,
       "team_a": "VRDNO",
       "score_a": 35.5,
-      "projected_a": 137.76,
+      "projected_a": 137.8,
       "team_b": "Supernovas",
       "score_b": 29.0,
-      "projected_b": 150.44,
-      "timestamp": 1791524806059.392
+      "projected_b": 150.62,
+      "timestamp": 1791558678951.7568
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Bandits",
       "score_a": 30.84,
-      "projected_a": 155.84,
+      "projected_a": 155.77,
       "team_b": "theMadgician",
       "score_b": 0,
       "projected_b": 145.43,
-      "timestamp": 1791524806059.388
+      "timestamp": 1791558678951.7542
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Chig-a-Doodle-Doo",
       "score_a": 2.9,
-      "projected_a": 125.48,
+      "projected_a": 125.2,
       "team_b": "Jake From State Farm",
       "score_b": 0,
       "projected_b": 121.3,
-      "timestamp": 1791524806059.3828
+      "timestamp": 1791558678951.7478
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 12.1,
-      "projected_a": 124.95,
+      "projected_a": 124.94,
       "team_b": "Supernova Takeover",
       "score_b": 0,
       "projected_b": 149.8,
-      "timestamp": 1791524806059.368
+      "timestamp": 1791558678951.7332
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1414228689268322304",
+      "timestamp": 1791540903921,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "3257",
+        "name": "Jacoby Brissett",
+        "position": "QB"
+      },
+      "dropped": {
+        "player_id": "KC",
+        "name": "KC",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -299,74 +318,6 @@
       "dropped": null,
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1411721202501730304",
-      "timestamp": 1790943072490,
-      "manager_id": "mikey_k",
-      "team_name": "ROK Navy's Finest",
-      "added": {
-        "player_id": "10219",
-        "name": "Chris Rodriguez",
-        "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1411720468590817280",
-      "timestamp": 1790942897511,
-      "manager_id": "mikey_k",
-      "team_name": "ROK Navy's Finest",
-      "added": {
-        "player_id": "1166",
-        "name": "Kirk Cousins",
-        "position": "QB"
-      },
-      "dropped": {
-        "player_id": "7670",
-        "name": "Joshua Palmer",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1411720019405971456",
-      "timestamp": 1790942790417,
-      "manager_id": "mikey_k",
-      "team_name": "ROK Navy's Finest",
-      "added": {
-        "player_id": "13305",
-        "name": "Mike Washington",
-        "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1411719286375849984",
-      "timestamp": 1790942615649,
-      "manager_id": "mikey_k",
-      "team_name": "ROK Navy's Finest",
-      "added": {
-        "player_id": "DET",
-        "name": "DET",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "DAL",
-        "name": "DAL",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": null
     }
   ]
 }
