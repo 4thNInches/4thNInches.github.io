@@ -1,7 +1,51 @@
 {
-  "generated_at": "2026-10-08T21:13:53.760643+00:00",
+  "generated_at": "2026-10-09T05:46:46.059508+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "live_score",
+      "week": 5,
+      "team_a": "VRDNO",
+      "score_a": 35.5,
+      "projected_a": 137.76,
+      "team_b": "Supernovas",
+      "score_b": 29.0,
+      "projected_b": 150.44,
+      "timestamp": 1791524806059.392
+    },
+    {
+      "type": "live_score",
+      "week": 5,
+      "team_a": "Bandits",
+      "score_a": 30.84,
+      "projected_a": 155.84,
+      "team_b": "theMadgician",
+      "score_b": 0,
+      "projected_b": 145.43,
+      "timestamp": 1791524806059.388
+    },
+    {
+      "type": "live_score",
+      "week": 5,
+      "team_a": "Chig-a-Doodle-Doo",
+      "score_a": 2.9,
+      "projected_a": 125.48,
+      "team_b": "Jake From State Farm",
+      "score_b": 0,
+      "projected_b": 121.3,
+      "timestamp": 1791524806059.3828
+    },
+    {
+      "type": "live_score",
+      "week": 5,
+      "team_a": "Hurts Over 10.5int @-1000",
+      "score_a": 12.1,
+      "projected_a": 124.95,
+      "team_b": "Supernova Takeover",
+      "score_b": 0,
+      "projected_b": 149.8,
+      "timestamp": 1791524806059.368
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1413536446152708096",
@@ -323,25 +367,6 @@
       },
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1411503903375175680",
-      "timestamp": 1790891264340,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "9757",
-        "name": "Kendre Miller",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "13296",
-        "name": "Caleb Douglas",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
