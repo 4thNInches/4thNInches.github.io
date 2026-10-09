@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T15:11:18.951865+00:00",
+  "generated_at": "2026-10-09T20:44:35.231159+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,82 @@
       "week": 5,
       "team_a": "VRDNO",
       "score_a": 35.5,
-      "projected_a": 137.8,
+      "projected_a": 127.82,
       "team_b": "Supernovas",
       "score_b": 29.0,
-      "projected_b": 150.62,
-      "timestamp": 1791558678951.7568
+      "projected_b": 155.09,
+      "timestamp": 1791578675231.049
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Bandits",
       "score_a": 30.84,
-      "projected_a": 155.77,
+      "projected_a": 156.3,
       "team_b": "theMadgician",
       "score_b": 0,
-      "projected_b": 145.43,
-      "timestamp": 1791558678951.7542
+      "projected_b": 143.91,
+      "timestamp": 1791578675231.046
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Chig-a-Doodle-Doo",
       "score_a": 2.9,
-      "projected_a": 125.2,
+      "projected_a": 127.08,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 121.3,
-      "timestamp": 1791558678951.7478
+      "projected_b": 121.32,
+      "timestamp": 1791578675231.042
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 12.1,
-      "projected_a": 124.94,
+      "projected_a": 125.74,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 149.8,
-      "timestamp": 1791558678951.7332
+      "projected_b": 151.15,
+      "timestamp": 1791578675231.026
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1414377988522266624",
+      "timestamp": 1791576499637,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "13264",
+        "name": "Dohnte Meyers",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "11571",
+        "name": "Isaiah Davis",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1414340264914378752",
+      "timestamp": 1791567505628,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "10235",
+        "name": "Roschon Johnson",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "3321",
+        "name": "Tyreek Hill",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -303,21 +341,6 @@
       },
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1411850160727752704",
-      "timestamp": 1790973818527,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "11571",
-        "name": "Isaiah Davis",
-        "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
