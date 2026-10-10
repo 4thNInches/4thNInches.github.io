@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T14:24:20.275555+00:00",
+  "generated_at": "2026-10-10T19:57:47.935035+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,44 @@
       "week": 5,
       "team_a": "VRDNO",
       "score_a": 35.5,
-      "projected_a": 128.82,
+      "projected_a": 128.93,
       "team_b": "Supernovas",
       "score_b": 29.0,
-      "projected_b": 155.73,
-      "timestamp": 1791642260275.441
+      "projected_b": 155.35,
+      "timestamp": 1791662267934.9312
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Bandits",
       "score_a": 30.84,
-      "projected_a": 156.09,
+      "projected_a": 156.14,
       "team_b": "theMadgician",
       "score_b": 0,
-      "projected_b": 142.42,
-      "timestamp": 1791642260275.437
+      "projected_b": 142.74,
+      "timestamp": 1791662267934.928
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Chig-a-Doodle-Doo",
       "score_a": 2.9,
-      "projected_a": 129.98,
+      "projected_a": 130.02,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 121.93,
-      "timestamp": 1791642260275.433
+      "projected_b": 125.87,
+      "timestamp": 1791662267934.9238
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 12.1,
-      "projected_a": 125.1,
+      "projected_a": 125.2,
       "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 151.67,
-      "timestamp": 1791642260275.415
+      "projected_b": 151.63,
+      "timestamp": 1791662267934.908
     },
     {
       "type": "waiver_move",
@@ -226,7 +226,7 @@
         "position": "QB"
       },
       "faab": 11,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -319,25 +319,6 @@
         "player_id": "4943",
         "name": "Sam Darnold",
         "position": "QB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1412132209606860800",
-      "timestamp": 1791041064219,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "11435",
-        "name": "Emanuel Wilson",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "12492",
-        "name": "Pat Bryant",
-        "position": "WR"
       },
       "faab": null,
       "remark": null
