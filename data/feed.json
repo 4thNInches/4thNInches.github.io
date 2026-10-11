@@ -1,50 +1,99 @@
 {
-  "generated_at": "2026-10-11T05:24:39.615830+00:00",
+  "generated_at": "2026-10-11T14:50:45.416303+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 5,
+      "team_a": "ROK Navy's Finest",
+      "score_a": 14.08,
+      "projected_a": 129.36,
+      "team_b": "Newman’s Owen",
+      "score_b": 2.8,
+      "projected_b": 129.53,
+      "timestamp": 1791730245415.959
+    },
+    {
+      "type": "live_score",
+      "week": 5,
       "team_a": "VRDNO",
-      "score_a": 35.5,
-      "projected_a": 128.96,
+      "score_a": 41.2,
+      "projected_a": 146.78,
       "team_b": "Supernovas",
-      "score_b": 29.0,
-      "projected_b": 155.86,
-      "timestamp": 1791696279615.719
+      "score_b": 30.3,
+      "projected_b": 155.14,
+      "timestamp": 1791730245415.955
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Bandits",
       "score_a": 30.84,
-      "projected_a": 156.33,
+      "projected_a": 156.28,
       "team_b": "theMadgician",
-      "score_b": 0,
-      "projected_b": 142.49,
-      "timestamp": 1791696279615.716
+      "score_b": 1.0,
+      "projected_b": 142.98,
+      "timestamp": 1791730245415.952
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Chig-a-Doodle-Doo",
-      "score_a": 2.9,
-      "projected_a": 130.17,
+      "score_a": 35.34,
+      "projected_a": 138.77,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 126.33,
-      "timestamp": 1791696279615.712
+      "projected_b": 125.42,
+      "timestamp": 1791730245415.946
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Hurts Over 10.5int @-1000",
-      "score_a": 12.1,
-      "projected_a": 125.14,
+      "score_a": 20.4,
+      "projected_a": 125.22,
       "team_b": "Supernova Takeover",
-      "score_b": 0,
-      "projected_b": 151.74,
-      "timestamp": 1791696279615.696
+      "score_b": 6.0,
+      "projected_b": 151.19,
+      "timestamp": 1791730245415.93
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1415000327039574017",
+      "timestamp": 1791724876702,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "4454",
+        "name": "Kendrick Bourne",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "5849",
+        "name": "Kyler Murray",
+        "position": "QB"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1414982683452358656",
+      "timestamp": 1791720670144,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "12509",
+        "name": "Tre' Harris",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "4177",
+        "name": "Mack Hollins",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
