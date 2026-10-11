@@ -1,61 +1,72 @@
 {
-  "generated_at": "2026-10-11T14:50:45.416303+00:00",
+  "generated_at": "2026-10-11T20:08:18.685438+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 5,
       "team_a": "ROK Navy's Finest",
-      "score_a": 14.08,
-      "projected_a": 129.36,
+      "score_a": 140.7,
+      "projected_a": 130.51,
       "team_b": "Newman’s Owen",
-      "score_b": 2.8,
-      "projected_b": 129.53,
-      "timestamp": 1791730245415.959
+      "score_b": 49.0,
+      "projected_b": 131.25,
+      "timestamp": 1791749298685.293
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "VRDNO",
-      "score_a": 41.2,
-      "projected_a": 146.78,
+      "score_a": 175.76,
+      "projected_a": 146.91,
       "team_b": "Supernovas",
-      "score_b": 30.3,
-      "projected_b": 155.14,
-      "timestamp": 1791730245415.955
+      "score_b": 126.3,
+      "projected_b": 155.9,
+      "timestamp": 1791749298685.2888
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Bandits",
-      "score_a": 30.84,
-      "projected_a": 156.28,
+      "score_a": 100.94,
+      "projected_a": 157.4,
       "team_b": "theMadgician",
-      "score_b": 1.0,
-      "projected_b": 142.98,
-      "timestamp": 1791730245415.952
+      "score_b": 57.3,
+      "projected_b": 143.56,
+      "timestamp": 1791749298685.2861
+    },
+    {
+      "type": "live_score",
+      "week": 5,
+      "team_a": "packerlove24",
+      "score_a": 72.5,
+      "projected_a": 135.16,
+      "team_b": "Big Dumb Sports",
+      "score_b": 30.7,
+      "projected_b": 141.59,
+      "timestamp": 1791749298685.283
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Chig-a-Doodle-Doo",
-      "score_a": 35.34,
-      "projected_a": 138.77,
+      "score_a": 108.84,
+      "projected_a": 139.09,
       "team_b": "Jake From State Farm",
-      "score_b": 0,
-      "projected_b": 125.42,
-      "timestamp": 1791730245415.946
+      "score_b": 81.2,
+      "projected_b": 125.93,
+      "timestamp": 1791749298685.2778
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Hurts Over 10.5int @-1000",
-      "score_a": 20.4,
-      "projected_a": 125.22,
+      "score_a": 78.2,
+      "projected_a": 125.26,
       "team_b": "Supernova Takeover",
-      "score_b": 6.0,
-      "projected_b": 151.19,
-      "timestamp": 1791730245415.93
+      "score_b": 20.1,
+      "projected_b": 151.93,
+      "timestamp": 1791749298685.263
     },
     {
       "type": "waiver_move",
@@ -333,25 +344,6 @@
       },
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1412516249350533120",
-      "timestamp": 1791132626429,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "11157",
-        "name": "Brycen Tremayne",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "1479",
-        "name": "Keenan Allen",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
