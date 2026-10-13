@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-12T17:41:41.753122+00:00",
+  "generated_at": "2026-10-13T01:56:52.595729+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 5,
       "team_a": "ROK Navy's Finest",
-      "score_a": 148.7,
-      "projected_a": 130.38,
+      "score_a": 150.4,
+      "projected_a": 131.15,
       "team_b": "Newman’s Owen",
-      "score_b": 71.4,
-      "projected_b": 131.7,
-      "timestamp": 1791826901752.999
+      "score_b": 90.1,
+      "projected_b": 129.83,
+      "timestamp": 1791856612595.5378
     },
     {
       "type": "live_score",
@@ -22,40 +22,40 @@
       "team_b": "Supernovas",
       "score_b": 195.64,
       "projected_b": 155.9,
-      "timestamp": 1791826901752.9958
+      "timestamp": 1791856612595.5342
     },
     {
       "type": "live_score",
       "week": 5,
-      "team_a": "Bandits",
-      "score_a": 116.64,
-      "projected_a": 157.46,
-      "team_b": "theMadgician",
-      "score_b": 116.4,
-      "projected_b": 144.74,
-      "timestamp": 1791826901752.9932
+      "team_a": "theMadgician",
+      "score_a": 121.9,
+      "projected_a": 145.1,
+      "team_b": "Bandits",
+      "score_b": 118.24,
+      "projected_b": 157.46,
+      "timestamp": 1791856612595.531
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "packerlove24",
-      "score_a": 98.9,
-      "projected_a": 134.59,
+      "score_a": 119.8,
+      "projected_a": 134.9,
       "team_b": "Big Dumb Sports",
-      "score_b": 64.8,
-      "projected_b": 143.19,
-      "timestamp": 1791826901752.99
+      "score_b": 92.06,
+      "projected_b": 143.63,
+      "timestamp": 1791856612595.5269
     },
     {
       "type": "live_score",
       "week": 5,
       "team_a": "Jake From State Farm",
-      "score_a": 142.68,
-      "projected_a": 125.97,
+      "score_a": 155.88,
+      "projected_a": 126.84,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 108.84,
       "projected_b": 139.09,
-      "timestamp": 1791826901752.9841
+      "timestamp": 1791856612595.5232
     },
     {
       "type": "live_score",
@@ -66,7 +66,7 @@
       "team_b": "Hurts Over 10.5int @-1000",
       "score_b": 105.92,
       "projected_b": 125.3,
-      "timestamp": 1791826901752.969
+      "timestamp": 1791856612595.508
     },
     {
       "type": "waiver_move",
@@ -324,25 +324,6 @@
         "position": "DEF"
       },
       "faab": 3,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1412960209105633280",
-      "timestamp": 1791238474684,
-      "manager_id": "mikey_g",
-      "team_name": "Supernova Takeover",
-      "added": {
-        "player_id": "4018",
-        "name": "Joe Mixon",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "3634",
-        "name": "Kalif Raymond",
-        "position": "WR"
-      },
-      "faab": null,
       "remark": null
     }
   ]
