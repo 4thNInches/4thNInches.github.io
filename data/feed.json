@@ -1,73 +1,7 @@
 {
-  "generated_at": "2026-10-13T01:56:52.595729+00:00",
+  "generated_at": "2026-10-13T11:37:51.019994+00:00",
   "window_days": 7,
   "items": [
-    {
-      "type": "live_score",
-      "week": 5,
-      "team_a": "ROK Navy's Finest",
-      "score_a": 150.4,
-      "projected_a": 131.15,
-      "team_b": "Newman’s Owen",
-      "score_b": 90.1,
-      "projected_b": 129.83,
-      "timestamp": 1791856612595.5378
-    },
-    {
-      "type": "live_score",
-      "week": 5,
-      "team_a": "VRDNO",
-      "score_a": 224.96,
-      "projected_a": 146.95,
-      "team_b": "Supernovas",
-      "score_b": 195.64,
-      "projected_b": 155.9,
-      "timestamp": 1791856612595.5342
-    },
-    {
-      "type": "live_score",
-      "week": 5,
-      "team_a": "theMadgician",
-      "score_a": 121.9,
-      "projected_a": 145.1,
-      "team_b": "Bandits",
-      "score_b": 118.24,
-      "projected_b": 157.46,
-      "timestamp": 1791856612595.531
-    },
-    {
-      "type": "live_score",
-      "week": 5,
-      "team_a": "packerlove24",
-      "score_a": 119.8,
-      "projected_a": 134.9,
-      "team_b": "Big Dumb Sports",
-      "score_b": 92.06,
-      "projected_b": 143.63,
-      "timestamp": 1791856612595.5269
-    },
-    {
-      "type": "live_score",
-      "week": 5,
-      "team_a": "Jake From State Farm",
-      "score_a": 155.88,
-      "projected_a": 126.84,
-      "team_b": "Chig-a-Doodle-Doo",
-      "score_b": 108.84,
-      "projected_b": 139.09,
-      "timestamp": 1791856612595.5232
-    },
-    {
-      "type": "live_score",
-      "week": 5,
-      "team_a": "Supernova Takeover",
-      "score_a": 116.54,
-      "projected_a": 151.93,
-      "team_b": "Hurts Over 10.5int @-1000",
-      "score_b": 105.92,
-      "projected_b": 125.3,
-      "timestamp": 1791856612595.508
-    },
     {
       "type": "waiver_move",
       "transaction_id": "1415000327039574017",
@@ -85,7 +19,7 @@
         "position": "QB"
       },
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -123,7 +57,7 @@
         "position": "RB"
       },
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -267,7 +201,7 @@
       },
       "dropped": null,
       "faab": 6,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
