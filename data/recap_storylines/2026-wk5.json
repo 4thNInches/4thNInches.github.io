@@ -1,0 +1,116 @@
+{
+  "season": "2026",
+  "week": 5,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "bill_m",
+        "team_name": "Bandits",
+        "bench_points": 85.18,
+        "top_bench_player": {
+          "name": "Jordan Love",
+          "points": 42.28
+        }
+      }
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "data": {
+        "winner": {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "score": 116.54,
+          "rank": 8
+        },
+        "loser": {
+          "manager_id": "anthony",
+          "team_name": "Hurts Over 10.5int @-1000",
+          "score": 105.92,
+          "rank": 11
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "mikey_k",
+          "team_name": "ROK Navy's Finest",
+          "score": 152.4
+        },
+        "loser": {
+          "manager_id": "owen",
+          "team_name": "Newman’s Owen",
+          "score": 93.5,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "nick",
+          "team_name": "Jake From State Farm",
+          "score": 174.18
+        },
+        "loser": {
+          "manager_id": "john",
+          "team_name": "Chig-a-Doodle-Doo",
+          "score": 108.84
+        },
+        "margin": 65.34
+      }
+    }
+  ],
+  "context": {
+    "weekly_total": 1722.04,
+    "weekly_avg": 143.5,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "highest_score",
+        "rank": 3,
+        "data": {
+          "team_name": "VRDNO",
+          "score": 224.96
+        }
+      },
+      {
+        "type": "biggest_blowout",
+        "rank": 102,
+        "data": {
+          "team_a": "Chig-a-Doodle-Doo",
+          "team_b": "Jake From State Farm",
+          "score_a": 108.84,
+          "score_b": 174.18,
+          "margin": 65.34
+        }
+      },
+      {
+        "type": "lowest_score",
+        "rank": 185,
+        "data": {
+          "team_name": "Newman’s Owen",
+          "score": 93.5
+        }
+      },
+      {
+        "type": "closest_game",
+        "rank": 218,
+        "data": {
+          "team_a": "Supernova Takeover",
+          "team_b": "Hurts Over 10.5int @-1000",
+          "score_a": 116.54,
+          "score_b": 105.92,
+          "margin": 10.62
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 5,
+  "context": "1722.04 points got scored across the league this week, 143.5 per team -- make of that what you will. Nobody topped VRDNO's 224.96, good for the 3rd-best week any team has ever had.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "Somewhere, Jordan Love is still on Bandits's bench wondering why -- 42.28 points' worth of wondering, out of 85.18 total left stranded."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "Supernova Takeover scored just 116.54 -- the 8th-highest score in the league this week -- but Hurts Over 10.5int @-1000 somehow scored even less (105.92), so the win counts all the same."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "ROK Navy's Finest's defense (well, their opponent's offense) did the work: Newman’s Owen finished with just 93.5."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "The week's biggest mismatch: Jake From State Farm over Chig-a-Doodle-Doo, 174.18-108.84 (65.34 points)."
+    }
+  ]
+}
