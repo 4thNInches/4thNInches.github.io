@@ -1,7 +1,64 @@
 {
-  "generated_at": "2026-10-15T19:48:49.753973+00:00",
+  "generated_at": "2026-10-15T22:59:02.873712+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "trade",
+      "transaction_id": "1416591947895709696",
+      "timestamp": 1792104616610,
+      "sides": [
+        {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "gave": [],
+          "got": [
+            {
+              "player_id": "3163",
+              "name": "Jared Goff",
+              "position": "QB"
+            }
+          ],
+          "faab_sent": [
+            {
+              "amount": 5,
+              "to": "Supernovas"
+            }
+          ]
+        },
+        {
+          "manager_id": "mark",
+          "team_name": "Supernovas",
+          "gave": [
+            {
+              "player_id": "3163",
+              "name": "Jared Goff",
+              "position": "QB"
+            }
+          ],
+          "got": [],
+          "faab_sent": []
+        }
+      ]
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1416563064400060416",
+      "timestamp": 1792097462323,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "7567",
+        "name": "Kenny Gainwell",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "11577",
+        "name": "Will Shipley",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "trade",
       "transaction_id": "1416249743796940800",
