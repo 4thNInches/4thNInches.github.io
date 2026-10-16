@@ -1,7 +1,152 @@
 {
-  "generated_at": "2026-10-15T22:59:02.873712+00:00",
+  "generated_at": "2026-10-16T04:11:37.161860+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "live_score",
+      "week": 6,
+      "team_a": "VRDNO",
+      "score_a": 26.4,
+      "projected_a": 141.98,
+      "team_b": "packerlove24",
+      "score_b": 7.0,
+      "projected_b": 150.42,
+      "timestamp": 1792123897161.722
+    },
+    {
+      "type": "live_score",
+      "week": 6,
+      "team_a": "Supernovas",
+      "score_a": 5.2,
+      "projected_a": 95.95,
+      "team_b": "Bandits",
+      "score_b": 0,
+      "projected_b": 154.39,
+      "timestamp": 1792123897161.719
+    },
+    {
+      "type": "live_score",
+      "week": 6,
+      "team_a": "Big Dumb Sports",
+      "score_a": 6.4,
+      "projected_a": 151.31,
+      "team_b": "Jake From State Farm",
+      "score_b": 0,
+      "projected_b": 124.0,
+      "timestamp": 1792123897161.716
+    },
+    {
+      "type": "live_score",
+      "week": 6,
+      "team_a": "Hurts Over 10.5int @-1000",
+      "score_a": 25.6,
+      "projected_a": 115.22,
+      "team_b": "theMadgician",
+      "score_b": 0,
+      "projected_b": 158.0,
+      "timestamp": 1792123897161.711
+    },
+    {
+      "type": "live_score",
+      "week": 6,
+      "team_a": "Supernova Takeover",
+      "score_a": 4.6,
+      "projected_a": 141.0,
+      "team_b": "Newman’s Owen",
+      "score_b": 0,
+      "projected_b": 116.86,
+      "timestamp": 1792123897161.695
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1416613322073112576",
+      "timestamp": 1792109444686,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "11603",
+        "name": "AJ Barner",
+        "position": "TE"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "trade",
+      "transaction_id": "1416607967037419520",
+      "timestamp": 1792109318266,
+      "sides": [
+        {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "gave": [
+            {
+              "player_id": "5892",
+              "name": "David Montgomery",
+              "position": "RB"
+            },
+            {
+              "player_id": "5927",
+              "name": "Terry McLaurin",
+              "position": "WR"
+            },
+            {
+              "player_id": "8130",
+              "name": "Trey McBride",
+              "position": "TE"
+            }
+          ],
+          "got": [
+            {
+              "player_id": "7594",
+              "name": "Chuba Hubbard",
+              "position": "RB"
+            },
+            {
+              "player_id": "8144",
+              "name": "Chris Olave",
+              "position": "WR"
+            }
+          ],
+          "faab_sent": []
+        },
+        {
+          "manager_id": "bob",
+          "team_name": "packerlove24",
+          "gave": [
+            {
+              "player_id": "7594",
+              "name": "Chuba Hubbard",
+              "position": "RB"
+            },
+            {
+              "player_id": "8144",
+              "name": "Chris Olave",
+              "position": "WR"
+            }
+          ],
+          "got": [
+            {
+              "player_id": "5892",
+              "name": "David Montgomery",
+              "position": "RB"
+            },
+            {
+              "player_id": "5927",
+              "name": "Terry McLaurin",
+              "position": "WR"
+            },
+            {
+              "player_id": "8130",
+              "name": "Trey McBride",
+              "position": "TE"
+            }
+          ],
+          "faab_sent": []
+        }
+      ]
+    },
     {
       "type": "trade",
       "transaction_id": "1416591947895709696",
@@ -255,7 +400,7 @@
         "position": "DEF"
       },
       "faab": 0,
-      "remark": "streamer"
+      "remark": null
     },
     {
       "type": "waiver_move",
