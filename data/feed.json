@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T13:09:32.955573+00:00",
+  "generated_at": "2026-10-16T19:29:42.299845+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,93 @@
       "week": 6,
       "team_a": "VRDNO",
       "score_a": 26.4,
-      "projected_a": 141.34,
+      "projected_a": 140.67,
       "team_b": "packerlove24",
       "score_b": 7.0,
-      "projected_b": 150.27,
-      "timestamp": 1792156172955.1748
+      "projected_b": 153.17,
+      "timestamp": 1792178982299.5752
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernovas",
       "score_a": 5.2,
-      "projected_a": 121.39,
+      "projected_a": 120.81,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 155.55,
-      "timestamp": 1792156172955.1711
+      "projected_b": 155.16,
+      "timestamp": 1792178982299.572
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Big Dumb Sports",
       "score_a": 6.4,
-      "projected_a": 152.66,
+      "projected_a": 153.52,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 124.17,
-      "timestamp": 1792156172955.166
+      "projected_b": 123.95,
+      "timestamp": 1792178982299.5688
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 25.6,
-      "projected_a": 117.57,
+      "projected_a": 98.74,
       "team_b": "theMadgician",
       "score_b": 0,
-      "projected_b": 157.87,
-      "timestamp": 1792156172955.162
+      "projected_b": 155.41,
+      "timestamp": 1792178982299.566
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernova Takeover",
       "score_a": 4.6,
-      "projected_a": 141.12,
+      "projected_a": 126.67,
       "team_b": "Newman’s Owen",
       "score_b": 0,
-      "projected_b": 118.08,
-      "timestamp": 1792156172955.1448
+      "projected_b": 111.04,
+      "timestamp": 1792178982299.549
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1416859013974425600",
+      "timestamp": 1792168022200,
+      "manager_id": "anthony",
+      "team_name": "Hurts Over 10.5int @-1000",
+      "added": {
+        "player_id": "9230",
+        "name": "Tanner McKee",
+        "position": "QB"
+      },
+      "dropped": {
+        "player_id": "13264",
+        "name": "Dohnte Meyers",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1416854828004425728",
+      "timestamp": 1792167024187,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "13833",
+        "name": "Dominic Zvada",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "11157",
+        "name": "Brycen Tremayne",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": "streamer"
     },
     {
       "type": "waiver_move",
@@ -583,25 +621,6 @@
       },
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1414340264914378752",
-      "timestamp": 1791567505628,
-      "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
-      "added": {
-        "player_id": "10235",
-        "name": "Roschon Johnson",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "3321",
-        "name": "Tyreek Hill",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": null
     }
   ]
 }
