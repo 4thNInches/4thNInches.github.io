@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T22:44:09.080288+00:00",
+  "generated_at": "2026-10-17T04:01:47.429907+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,11 +7,11 @@
       "week": 6,
       "team_a": "VRDNO",
       "score_a": 26.4,
-      "projected_a": 140.92,
+      "projected_a": 140.68,
       "team_b": "packerlove24",
       "score_b": 7.0,
-      "projected_b": 152.6,
-      "timestamp": 1792190649080.1448
+      "projected_b": 152.92,
+      "timestamp": 1792209707429.6428
     },
     {
       "type": "live_score",
@@ -21,41 +21,41 @@
       "projected_a": 123.09,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 153.94,
-      "timestamp": 1792190649080.141
+      "projected_b": 154.73,
+      "timestamp": 1792209707429.6401
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Big Dumb Sports",
       "score_a": 6.4,
-      "projected_a": 153.21,
+      "projected_a": 153.03,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 137.58,
-      "timestamp": 1792190649080.138
+      "projected_b": 136.86,
+      "timestamp": 1792209707429.637
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 25.6,
-      "projected_a": 100.47,
+      "projected_a": 100.02,
       "team_b": "theMadgician",
       "score_b": 0,
-      "projected_b": 155.94,
-      "timestamp": 1792190649080.134
+      "projected_b": 155.43,
+      "timestamp": 1792209707429.6328
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernova Takeover",
       "score_a": 4.6,
-      "projected_a": 125.56,
+      "projected_a": 125.55,
       "team_b": "Newman’s Owen",
       "score_b": 0,
-      "projected_b": 118.6,
-      "timestamp": 1792190649080.113
+      "projected_b": 118.3,
+      "timestamp": 1792209707429.614
     },
     {
       "type": "waiver_move",
