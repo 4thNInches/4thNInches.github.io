@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T18:20:52.191167+00:00",
+  "generated_at": "2026-10-17T22:08:34.484384+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,55 @@
       "week": 6,
       "team_a": "VRDNO",
       "score_a": 26.4,
-      "projected_a": 140.33,
+      "projected_a": 138.16,
       "team_b": "packerlove24",
       "score_b": 7.0,
-      "projected_b": 154.76,
-      "timestamp": 1792261252191.018
+      "projected_b": 154.35,
+      "timestamp": 1792274914484.257
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernovas",
       "score_a": 5.2,
-      "projected_a": 127.21,
+      "projected_a": 124.5,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 157.01,
-      "timestamp": 1792261252191.015
+      "projected_b": 155.72,
+      "timestamp": 1792274914484.2551
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Big Dumb Sports",
       "score_a": 6.4,
-      "projected_a": 153.03,
+      "projected_a": 152.97,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 136.75,
-      "timestamp": 1792261252191.012
+      "projected_b": 136.26,
+      "timestamp": 1792274914484.252
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 25.6,
-      "projected_a": 102.22,
+      "projected_a": 99.18,
       "team_b": "theMadgician",
       "score_b": 0,
-      "projected_b": 156.39,
-      "timestamp": 1792261252191.008
+      "projected_b": 155.17,
+      "timestamp": 1792274914484.249
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernova Takeover",
       "score_a": 4.6,
-      "projected_a": 137.12,
+      "projected_a": 137.1,
       "team_b": "Newman’s Owen",
       "score_b": 0,
-      "projected_b": 119.55,
-      "timestamp": 1792261252190.991
+      "projected_b": 119.07,
+      "timestamp": 1792274914484.232
     },
     {
       "type": "waiver_move",
