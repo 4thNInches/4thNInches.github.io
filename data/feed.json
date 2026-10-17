@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T04:01:47.429907+00:00",
+  "generated_at": "2026-10-17T12:05:32.726351+00:00",
   "window_days": 7,
   "items": [
     {
@@ -10,19 +10,19 @@
       "projected_a": 140.68,
       "team_b": "packerlove24",
       "score_b": 7.0,
-      "projected_b": 152.92,
-      "timestamp": 1792209707429.6428
+      "projected_b": 152.95,
+      "timestamp": 1792238732726.064
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernovas",
       "score_a": 5.2,
-      "projected_a": 123.09,
+      "projected_a": 123.1,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 154.73,
-      "timestamp": 1792209707429.6401
+      "projected_b": 154.84,
+      "timestamp": 1792238732726.061
     },
     {
       "type": "live_score",
@@ -33,18 +33,18 @@
       "team_b": "Jake From State Farm",
       "score_b": 0,
       "projected_b": 136.86,
-      "timestamp": 1792209707429.637
+      "timestamp": 1792238732726.058
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 25.6,
-      "projected_a": 100.02,
+      "projected_a": 100.03,
       "team_b": "theMadgician",
       "score_b": 0,
       "projected_b": 155.43,
-      "timestamp": 1792209707429.6328
+      "timestamp": 1792238732726.055
     },
     {
       "type": "live_score",
@@ -55,7 +55,7 @@
       "team_b": "Newman’s Owen",
       "score_b": 0,
       "projected_b": 118.3,
-      "timestamp": 1792209707429.614
+      "timestamp": 1792238732726.043
     },
     {
       "type": "waiver_move",
