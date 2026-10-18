@@ -1,61 +1,87 @@
 {
-  "generated_at": "2026-10-18T12:33:33.553970+00:00",
+  "generated_at": "2026-10-18T18:33:30.547834+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 6,
       "team_a": "VRDNO",
-      "score_a": 26.4,
-      "projected_a": 138.15,
+      "score_a": 86.4,
+      "projected_a": 153.68,
       "team_b": "packerlove24",
-      "score_b": 7.0,
-      "projected_b": 154.44,
-      "timestamp": 1792326813553.835
+      "score_b": 45.08,
+      "projected_b": 142.62,
+      "timestamp": 1792348410547.707
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernovas",
-      "score_a": 5.2,
-      "projected_a": 134.65,
+      "score_a": 77.7,
+      "projected_a": 134.71,
       "team_b": "Bandits",
-      "score_b": 0,
-      "projected_b": 155.71,
-      "timestamp": 1792326813553.8298
+      "score_b": 32.6,
+      "projected_b": 143.68,
+      "timestamp": 1792348410547.704
     },
     {
       "type": "live_score",
       "week": 6,
-      "team_a": "Big Dumb Sports",
-      "score_a": 6.4,
-      "projected_a": 152.39,
-      "team_b": "Jake From State Farm",
-      "score_b": 0,
-      "projected_b": 137.02,
-      "timestamp": 1792326813553.8271
+      "team_a": "Jake From State Farm",
+      "score_a": 51.82,
+      "projected_a": 136.92,
+      "team_b": "Big Dumb Sports",
+      "score_b": 30.6,
+      "projected_b": 153.59,
+      "timestamp": 1792348410547.701
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Hurts Over 10.5int @-1000",
-      "score_a": 25.6,
-      "projected_a": 99.15,
+      "score_a": 71.16,
+      "projected_a": 99.98,
       "team_b": "theMadgician",
-      "score_b": 0,
-      "projected_b": 156.22,
-      "timestamp": 1792326813553.823
+      "score_b": 27.7,
+      "projected_b": 154.57,
+      "timestamp": 1792348410547.697
+    },
+    {
+      "type": "live_score",
+      "week": 6,
+      "team_a": "Chig-a-Doodle-Doo",
+      "score_a": 81.14,
+      "projected_a": 126.3,
+      "team_b": "ROK Navy's Finest",
+      "score_b": 28.1,
+      "projected_b": 111.46,
+      "timestamp": 1792348410547.6921
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernova Takeover",
-      "score_a": 4.6,
-      "projected_a": 136.96,
+      "score_a": 25.0,
+      "projected_a": 136.94,
       "team_b": "Newman’s Owen",
-      "score_b": 0,
-      "projected_b": 119.36,
-      "timestamp": 1792326813553.8052
+      "score_b": 24.92,
+      "projected_b": 119.69,
+      "timestamp": 1792348410547.676
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1417558008010944512",
+      "timestamp": 1792334675366,
+      "manager_id": "matt",
+      "team_name": "theMadgician",
+      "added": {
+        "player_id": "7528",
+        "name": "Najee Harris",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -612,25 +638,6 @@
         "position": "DEF"
       },
       "faab": 6,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1415000327039574017",
-      "timestamp": 1791724876702,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "4454",
-        "name": "Kendrick Bourne",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "5849",
-        "name": "Kyler Murray",
-        "position": "QB"
-      },
-      "faab": null,
       "remark": null
     }
   ]
