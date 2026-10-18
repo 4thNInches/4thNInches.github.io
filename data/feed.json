@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T04:09:00.261411+00:00",
+  "generated_at": "2026-10-18T12:33:33.553970+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,70 @@
       "week": 6,
       "team_a": "VRDNO",
       "score_a": 26.4,
-      "projected_a": 138.41,
+      "projected_a": 138.15,
       "team_b": "packerlove24",
       "score_b": 7.0,
-      "projected_b": 154.21,
-      "timestamp": 1792296540261.281
+      "projected_b": 154.44,
+      "timestamp": 1792326813553.835
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernovas",
       "score_a": 5.2,
-      "projected_a": 124.4,
+      "projected_a": 134.65,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 155.62,
-      "timestamp": 1792296540261.2778
+      "projected_b": 155.71,
+      "timestamp": 1792326813553.8298
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Big Dumb Sports",
       "score_a": 6.4,
-      "projected_a": 152.97,
+      "projected_a": 152.39,
       "team_b": "Jake From State Farm",
       "score_b": 0,
-      "projected_b": 136.5,
-      "timestamp": 1792296540261.2751
+      "projected_b": 137.02,
+      "timestamp": 1792326813553.8271
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Hurts Over 10.5int @-1000",
       "score_a": 25.6,
-      "projected_a": 99.08,
+      "projected_a": 99.15,
       "team_b": "theMadgician",
       "score_b": 0,
-      "projected_b": 155.1,
-      "timestamp": 1792296540261.271
+      "projected_b": 156.22,
+      "timestamp": 1792326813553.823
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernova Takeover",
       "score_a": 4.6,
-      "projected_a": 136.89,
+      "projected_a": 136.96,
       "team_b": "Newman’s Owen",
       "score_b": 0,
-      "projected_b": 119.35,
-      "timestamp": 1792296540261.2542
+      "projected_b": 119.36,
+      "timestamp": 1792326813553.8052
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1417524511594577920",
+      "timestamp": 1792326689197,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "11058",
+        "name": "Blake Grupe",
+        "position": "K"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": "streamer"
     },
     {
       "type": "waiver_move",
@@ -614,25 +629,6 @@
         "player_id": "5849",
         "name": "Kyler Murray",
         "position": "QB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1414982683452358656",
-      "timestamp": 1791720670144,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "12509",
-        "name": "Tre' Harris",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "4177",
-        "name": "Mack Hollins",
-        "position": "WR"
       },
       "faab": null,
       "remark": null
