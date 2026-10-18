@@ -1,72 +1,72 @@
 {
-  "generated_at": "2026-10-18T18:33:30.547834+00:00",
+  "generated_at": "2026-10-18T22:21:26.372002+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 6,
       "team_a": "VRDNO",
-      "score_a": 86.4,
-      "projected_a": 153.68,
+      "score_a": 104.1,
+      "projected_a": 153.58,
       "team_b": "packerlove24",
-      "score_b": 45.08,
-      "projected_b": 142.62,
-      "timestamp": 1792348410547.707
+      "score_b": 102.28,
+      "projected_b": 142.81,
+      "timestamp": 1792362086371.8618
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernovas",
-      "score_a": 77.7,
-      "projected_a": 134.71,
+      "score_a": 114.9,
+      "projected_a": 134.64,
       "team_b": "Bandits",
-      "score_b": 32.6,
-      "projected_b": 143.68,
-      "timestamp": 1792348410547.704
+      "score_b": 59.8,
+      "projected_b": 145.16,
+      "timestamp": 1792362086371.8591
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Jake From State Farm",
-      "score_a": 51.82,
-      "projected_a": 136.92,
+      "score_a": 129.26,
+      "projected_a": 137.19,
       "team_b": "Big Dumb Sports",
-      "score_b": 30.6,
-      "projected_b": 153.59,
-      "timestamp": 1792348410547.701
+      "score_b": 92.84,
+      "projected_b": 153.25,
+      "timestamp": 1792362086371.856
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Hurts Over 10.5int @-1000",
-      "score_a": 71.16,
-      "projected_a": 99.98,
+      "score_a": 89.5,
+      "projected_a": 99.43,
       "team_b": "theMadgician",
-      "score_b": 27.7,
-      "projected_b": 154.57,
-      "timestamp": 1792348410547.697
+      "score_b": 67.72,
+      "projected_b": 154.91,
+      "timestamp": 1792362086371.8518
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Chig-a-Doodle-Doo",
-      "score_a": 81.14,
-      "projected_a": 126.3,
+      "score_a": 96.04,
+      "projected_a": 126.38,
       "team_b": "ROK Navy's Finest",
-      "score_b": 28.1,
-      "projected_b": 111.46,
-      "timestamp": 1792348410547.6921
+      "score_b": 48.84,
+      "projected_b": 110.89,
+      "timestamp": 1792362086371.846
     },
     {
       "type": "live_score",
       "week": 6,
-      "team_a": "Supernova Takeover",
-      "score_a": 25.0,
-      "projected_a": 136.94,
-      "team_b": "Newman’s Owen",
-      "score_b": 24.92,
-      "projected_b": 119.69,
-      "timestamp": 1792348410547.676
+      "team_a": "Newman’s Owen",
+      "score_a": 83.52,
+      "projected_a": 119.58,
+      "team_b": "Supernova Takeover",
+      "score_b": 78.7,
+      "projected_b": 136.95,
+      "timestamp": 1792362086371.83
     },
     {
       "type": "waiver_move",
