@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T04:18:28.126966+00:00",
+  "generated_at": "2026-10-19T15:28:53.947040+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,33 +7,33 @@
       "week": 6,
       "team_a": "packerlove24",
       "score_a": 119.38,
-      "projected_a": 142.81,
+      "projected_a": 142.67,
       "team_b": "VRDNO",
       "score_b": 116.1,
       "projected_b": 153.55,
-      "timestamp": 1792383508126.83
+      "timestamp": 1792423733946.909
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Supernovas",
       "score_a": 128.2,
-      "projected_a": 134.8,
+      "projected_a": 134.66,
       "team_b": "Bandits",
       "score_b": 127.74,
-      "projected_b": 145.66,
-      "timestamp": 1792383508126.826
+      "projected_b": 145.62,
+      "timestamp": 1792423733946.9048
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Jake From State Farm",
       "score_a": 146.26,
-      "projected_a": 137.19,
+      "projected_a": 137.0,
       "team_b": "Big Dumb Sports",
       "score_b": 136.38,
       "projected_b": 153.25,
-      "timestamp": 1792383508126.823
+      "timestamp": 1792423733946.9011
     },
     {
       "type": "live_score",
@@ -43,8 +43,8 @@
       "projected_a": 100.18,
       "team_b": "theMadgician",
       "score_b": 81.1,
-      "projected_b": 154.91,
-      "timestamp": 1792383508126.82
+      "projected_b": 154.57,
+      "timestamp": 1792423733946.897
     },
     {
       "type": "live_score",
@@ -55,18 +55,18 @@
       "team_b": "ROK Navy's Finest",
       "score_b": 84.72,
       "projected_b": 111.8,
-      "timestamp": 1792383508126.816
+      "timestamp": 1792423733946.892
     },
     {
       "type": "live_score",
       "week": 6,
       "team_a": "Newman’s Owen",
       "score_a": 90.12,
-      "projected_a": 119.58,
+      "projected_a": 119.48,
       "team_b": "Supernova Takeover",
       "score_b": 82.1,
-      "projected_b": 136.95,
-      "timestamp": 1792383508126.8
+      "projected_b": 136.68,
+      "timestamp": 1792423733946.875
     },
     {
       "type": "waiver_move",
