@@ -18,12 +18,12 @@
         "DEF": 7.83
       },
       "positional_ranks": {
-        "DEF": 6,
         "WR": 11,
+        "DEF": 6,
         "RB": 4,
+        "TE": 3,
         "K": 11,
-        "QB": 2,
-        "TE": 3
+        "QB": 2
       },
       "streak": {
         "type": "L",
@@ -49,12 +49,12 @@
         "DEF": 9.83
       },
       "positional_ranks": {
-        "DEF": 3,
         "WR": 6,
+        "DEF": 3,
         "RB": 10,
+        "TE": 7,
         "K": 7,
-        "QB": 9,
-        "TE": 7
+        "QB": 9
       },
       "streak": {
         "type": "W",
@@ -65,7 +65,7 @@
       "last_week_bench_points": 32.2
     },
     "anthony": {
-      "team_name": "Hurts Over 10.5int @-1000",
+      "team_name": "Tanner Time",
       "wins": 1,
       "losses": 5,
       "ties": 0,
@@ -80,12 +80,12 @@
         "DEF": 12.0
       },
       "positional_ranks": {
-        "DEF": 1,
         "WR": 12,
+        "DEF": 1,
         "RB": 12,
+        "TE": 11,
         "K": 10,
-        "QB": 11,
-        "TE": 11
+        "QB": 11
       },
       "streak": {
         "type": "L",
@@ -111,12 +111,12 @@
         "DEF": 6.17
       },
       "positional_ranks": {
-        "DEF": 9,
         "WR": 10,
+        "DEF": 9,
         "RB": 1,
+        "TE": 12,
         "K": 4,
-        "QB": 7,
-        "TE": 12
+        "QB": 7
       },
       "streak": {
         "type": "L",
@@ -142,12 +142,12 @@
         "DEF": 8.83
       },
       "positional_ranks": {
-        "DEF": 5,
         "WR": 3,
+        "DEF": 5,
         "RB": 8,
+        "TE": 10,
         "K": 6,
-        "QB": 1,
-        "TE": 10
+        "QB": 1
       },
       "streak": {
         "type": "W",
@@ -173,12 +173,12 @@
         "DEF": 7.33
       },
       "positional_ranks": {
-        "DEF": 7,
         "WR": 9,
+        "DEF": 7,
         "RB": 7,
+        "TE": 1,
         "K": 1,
-        "QB": 10,
-        "TE": 1
+        "QB": 10
       },
       "streak": {
         "type": "W",
@@ -204,12 +204,12 @@
         "DEF": 9.83
       },
       "positional_ranks": {
-        "DEF": 4,
         "WR": 4,
+        "DEF": 4,
         "RB": 5,
+        "TE": 4,
         "K": 12,
-        "QB": 5,
-        "TE": 4
+        "QB": 5
       },
       "streak": {
         "type": "W",
@@ -235,12 +235,12 @@
         "DEF": 3.0
       },
       "positional_ranks": {
-        "DEF": 12,
         "WR": 7,
+        "DEF": 12,
         "RB": 2,
+        "TE": 6,
         "K": 2,
-        "QB": 8,
-        "TE": 6
+        "QB": 8
       },
       "streak": {
         "type": "L",
@@ -266,12 +266,12 @@
         "DEF": 3.67
       },
       "positional_ranks": {
-        "DEF": 11,
         "WR": 5,
+        "DEF": 11,
         "RB": 11,
+        "TE": 8,
         "K": 3,
-        "QB": 12,
-        "TE": 8
+        "QB": 12
       },
       "streak": {
         "type": "L",
@@ -297,12 +297,12 @@
         "DEF": 4.83
       },
       "positional_ranks": {
-        "DEF": 10,
         "WR": 2,
+        "DEF": 10,
         "RB": 9,
+        "TE": 9,
         "K": 9,
-        "QB": 6,
-        "TE": 9
+        "QB": 6
       },
       "streak": {
         "type": "W",
@@ -328,12 +328,12 @@
         "DEF": 10.17
       },
       "positional_ranks": {
-        "DEF": 2,
         "WR": 1,
+        "DEF": 2,
         "RB": 3,
+        "TE": 5,
         "K": 8,
-        "QB": 3,
-        "TE": 5
+        "QB": 3
       },
       "streak": {
         "type": "W",
@@ -359,12 +359,12 @@
         "DEF": 7.33
       },
       "positional_ranks": {
-        "DEF": 8,
         "WR": 8,
+        "DEF": 8,
         "RB": 6,
+        "TE": 2,
         "K": 5,
-        "QB": 4,
-        "TE": 2
+        "QB": 4
       },
       "streak": {
         "type": "L",
@@ -398,7 +398,7 @@
     "team_names": {
       "mikey_g": "Supernova Takeover",
       "john": "Chig-a-Doodle-Doo",
-      "anthony": "Hurts Over 10.5int @-1000",
+      "anthony": "Tanner Time",
       "dennis": "Big Dumb Sports",
       "matt": "theMadgician",
       "nick": "Jake From State Farm",
