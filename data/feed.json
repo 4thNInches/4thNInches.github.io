@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T13:29:44.914916+00:00",
+  "generated_at": "2026-10-20T19:57:04.827176+00:00",
   "window_days": 7,
   "items": [
     {
@@ -71,7 +71,7 @@
       "transaction_id": "1416859013974425600",
       "timestamp": 1792168022200,
       "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
+      "team_name": "Tanner Time",
       "added": {
         "player_id": "9230",
         "name": "Tanner McKee",
@@ -237,7 +237,7 @@
       "transaction_id": "1416563064400060416",
       "timestamp": 1792097462323,
       "manager_id": "anthony",
-      "team_name": "Hurts Over 10.5int @-1000",
+      "team_name": "Tanner Time",
       "added": {
         "player_id": "7567",
         "name": "Kenny Gainwell",
@@ -258,7 +258,7 @@
       "sides": [
         {
           "manager_id": "anthony",
-          "team_name": "Hurts Over 10.5int @-1000",
+          "team_name": "Tanner Time",
           "gave": [
             {
               "player_id": "13279",
@@ -295,7 +295,7 @@
           "faab_sent": [
             {
               "amount": 1,
-              "to": "Hurts Over 10.5int @-1000"
+              "to": "Tanner Time"
             }
           ]
         }
@@ -466,7 +466,7 @@
         "position": "K"
       },
       "faab": 12,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
