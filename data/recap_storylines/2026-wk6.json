@@ -1,0 +1,116 @@
+{
+  "season": "2026",
+  "week": 6,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "dennis",
+        "team_name": "Big Dumb Sports",
+        "bench_points": 51.8,
+        "top_bench_player": {
+          "name": "Kyle Pitts",
+          "points": 23.0
+        }
+      }
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "data": {
+        "winner": {
+          "manager_id": "owen",
+          "team_name": "Newman’s Owen",
+          "score": 106.52,
+          "rank": 9
+        },
+        "loser": {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "score": 102.46,
+          "rank": 10
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "john",
+          "team_name": "Chig-a-Doodle-Doo",
+          "score": 112.04
+        },
+        "loser": {
+          "manager_id": "mikey_k",
+          "team_name": "ROK Navy's Finest",
+          "score": 84.72,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "matt",
+          "team_name": "theMadgician",
+          "score": 127.2
+        },
+        "loser": {
+          "manager_id": "anthony",
+          "team_name": "Hurts Over 10.5int @-1000",
+          "score": 90.5
+        },
+        "margin": 36.7
+      }
+    }
+  ],
+  "context": {
+    "weekly_total": 1448.1,
+    "weekly_avg": 120.67,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "closest_game",
+        "rank": 85,
+        "data": {
+          "team_a": "Supernova Takeover",
+          "team_b": "Newman’s Owen",
+          "score_a": 102.46,
+          "score_b": 106.52,
+          "margin": 4.06
+        }
+      },
+      {
+        "type": "lowest_score",
+        "rank": 99,
+        "data": {
+          "team_name": "ROK Navy's Finest",
+          "score": 84.72
+        }
+      },
+      {
+        "type": "highest_score",
+        "rank": 234,
+        "data": {
+          "team_name": "Jake From State Farm",
+          "score": 164.16
+        }
+      },
+      {
+        "type": "biggest_blowout",
+        "rank": 349,
+        "data": {
+          "team_a": "Hurts Over 10.5int @-1000",
+          "team_b": "theMadgician",
+          "score_a": 90.5,
+          "score_b": 127.2,
+          "margin": 36.7
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 6,
+  "context": "1448.1 points got scored across the league this week, 120.67 per team -- make of that what you will.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "Big Dumb Sports's bench outscored their good sense: 51.8 points left sitting, 23.0 of it from Kyle Pitts alone."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "Newman’s Owen scored just 106.52 -- the 9th-highest score in the league this week -- but Supernova Takeover somehow scored even less (102.46), so the win counts all the same."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "Chig-a-Doodle-Doo's defense (well, their opponent's offense) did the work: ROK Navy's Finest finished with just 84.72."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "The week's biggest mismatch: theMadgician over Hurts Over 10.5int @-1000, 127.2-90.5 (36.7 points)."
+    }
+  ]
+}
