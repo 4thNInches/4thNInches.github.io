@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T13:39:36.830395+00:00",
+  "generated_at": "2026-10-21T20:01:43.195100+00:00",
   "window_days": 7,
   "items": [
     {
@@ -91,7 +91,7 @@
         "position": "TE"
       },
       "faab": 0,
-      "remark": null
+      "remark": "streamer"
     },
     {
       "type": "waiver_move",
@@ -306,7 +306,7 @@
         "position": "DEF"
       },
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
