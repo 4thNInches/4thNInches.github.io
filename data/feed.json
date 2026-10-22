@@ -1,7 +1,37 @@
 {
-  "generated_at": "2026-10-21T20:01:43.195100+00:00",
+  "generated_at": "2026-10-22T04:20:29.289206+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1418819643732197376",
+      "timestamp": 1792635472761,
+      "manager_id": "bill_m",
+      "team_name": "Bandits",
+      "added": {
+        "player_id": "13424",
+        "name": "Seth McGowan",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1418738717828358144",
+      "timestamp": 1792616178523,
+      "manager_id": "owen",
+      "team_name": "Newman’s Owen",
+      "added": {
+        "player_id": "8122",
+        "name": "Zonovan Knight",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1418575290522742784",
@@ -169,7 +199,7 @@
       "team_name": "Chig-a-Doodle-Doo",
       "added": {
         "player_id": "13276",
-        "name": "Omar Cooper",
+        "name": "Omar Cooper Jr.",
         "position": "WR"
       },
       "dropped": {
@@ -489,128 +519,6 @@
         "player_id": "11577",
         "name": "Will Shipley",
         "position": "RB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "trade",
-      "transaction_id": "1416249743796940800",
-      "timestamp": 1792022821116,
-      "sides": [
-        {
-          "manager_id": "anthony",
-          "team_name": "Tanner Time",
-          "gave": [
-            {
-              "player_id": "13279",
-              "name": "Carnell Tate",
-              "position": "WR"
-            }
-          ],
-          "got": [
-            {
-              "player_id": "11628",
-              "name": "Marvin Harrison",
-              "position": "WR"
-            }
-          ],
-          "faab_sent": []
-        },
-        {
-          "manager_id": "nick",
-          "team_name": "Jake From State Farm",
-          "gave": [
-            {
-              "player_id": "11628",
-              "name": "Marvin Harrison",
-              "position": "WR"
-            }
-          ],
-          "got": [
-            {
-              "player_id": "13279",
-              "name": "Carnell Tate",
-              "position": "WR"
-            }
-          ],
-          "faab_sent": [
-            {
-              "amount": 1,
-              "to": "Tanner Time"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1416235639614996480",
-      "timestamp": 1792019398172,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "3214",
-        "name": "Hunter Henry",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "11603",
-        "name": "AJ Barner",
-        "position": "TE"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1416234854848241664",
-      "timestamp": 1792019211068,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "1479",
-        "name": "Keenan Allen",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1416232458835271680",
-      "timestamp": 1792018639814,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "9758",
-        "name": "C.J. Stroud",
-        "position": "QB"
-      },
-      "dropped": {
-        "player_id": "4892",
-        "name": "Baker Mayfield",
-        "position": "QB"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1416232072149803008",
-      "timestamp": 1792018547621,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "650",
-        "name": "Nick Folk",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "11539",
-        "name": "Jake Bates",
-        "position": "K"
       },
       "faab": null,
       "remark": null
