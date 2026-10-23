@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T13:17:20.048890+00:00",
+  "generated_at": "2026-10-23T19:53:39.802318+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,55 @@
       "week": 7,
       "team_a": "VRDNO",
       "score_a": 41.24,
-      "projected_a": 150.04,
+      "projected_a": 149.41,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 134.36,
-      "timestamp": 1792761440048.717
+      "projected_b": 134.42,
+      "timestamp": 1792785219802.007
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "theMadgician",
       "score_a": 55.2,
-      "projected_a": 138.39,
+      "projected_a": 138.17,
       "team_b": "packerlove24",
       "score_b": 14.1,
-      "projected_b": 149.32,
-      "timestamp": 1792761440048.7139
+      "projected_b": 150.22,
+      "timestamp": 1792785219802.0042
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Newman’s Owen",
       "score_a": 31.42,
-      "projected_a": 131.67,
+      "projected_a": 131.86,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 140.61,
-      "timestamp": 1792761440048.712
+      "projected_b": 140.11,
+      "timestamp": 1792785219802.0
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Tanner Time",
       "score_a": 19.9,
-      "projected_a": 121.06,
+      "projected_a": 122.8,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 145.3,
-      "timestamp": 1792761440048.708
+      "projected_b": 131.69,
+      "timestamp": 1792785219801.996
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Supernovas",
       "score_a": 19.0,
-      "projected_a": 135.17,
+      "projected_a": 135.04,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 126.0,
-      "timestamp": 1792761440048.689
+      "projected_b": 125.84,
+      "timestamp": 1792785219801.98
     },
     {
       "type": "waiver_move",
@@ -411,63 +411,6 @@
       "dropped": null,
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1416907744711118848",
-      "timestamp": 1792179640513,
-      "manager_id": "owen",
-      "team_name": "Newman’s Owen",
-      "added": {
-        "player_id": "11647",
-        "name": "Kimani Vidal",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "BUF",
-        "name": "BUF",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1416859013974425600",
-      "timestamp": 1792168022200,
-      "manager_id": "anthony",
-      "team_name": "Tanner Time",
-      "added": {
-        "player_id": "9230",
-        "name": "Tanner McKee",
-        "position": "QB"
-      },
-      "dropped": {
-        "player_id": "13264",
-        "name": "Dohnte Meyers",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1416854828004425728",
-      "timestamp": 1792167024187,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "13833",
-        "name": "Dominic Zvada",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "11157",
-        "name": "Brycen Tremayne",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
