@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T04:24:58.765533+00:00",
+  "generated_at": "2026-10-23T13:17:20.048890+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,22 +7,22 @@
       "week": 7,
       "team_a": "VRDNO",
       "score_a": 41.24,
-      "projected_a": 150.55,
+      "projected_a": 150.04,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 92.3,
-      "timestamp": 1792729498765.141
+      "projected_b": 134.36,
+      "timestamp": 1792761440048.717
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "theMadgician",
       "score_a": 55.2,
-      "projected_a": 125.4,
+      "projected_a": 138.39,
       "team_b": "packerlove24",
       "score_b": 14.1,
-      "projected_b": 149.19,
-      "timestamp": 1792729498765.137
+      "projected_b": 149.32,
+      "timestamp": 1792761440048.7139
     },
     {
       "type": "live_score",
@@ -32,30 +32,30 @@
       "projected_a": 131.67,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 140.69,
-      "timestamp": 1792729498765.1328
+      "projected_b": 140.61,
+      "timestamp": 1792761440048.712
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Tanner Time",
       "score_a": 19.9,
-      "projected_a": 121.11,
+      "projected_a": 121.06,
       "team_b": "Bandits",
       "score_b": 0,
       "projected_b": 145.3,
-      "timestamp": 1792729498765.126
+      "timestamp": 1792761440048.708
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Supernovas",
       "score_a": 19.0,
-      "projected_a": 135.07,
+      "projected_a": 135.17,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 126.04,
-      "timestamp": 1792729498765.1091
+      "projected_b": 126.0,
+      "timestamp": 1792761440048.689
     },
     {
       "type": "waiver_move",
