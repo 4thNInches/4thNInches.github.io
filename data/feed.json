@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T23:00:32.324002+00:00",
+  "generated_at": "2026-10-24T04:15:22.594676+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,74 @@
       "week": 7,
       "team_a": "VRDNO",
       "score_a": 41.24,
-      "projected_a": 149.71,
+      "projected_a": 150.95,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 134.46,
-      "timestamp": 1792796432323.8398
+      "projected_b": 134.19,
+      "timestamp": 1792815322594.285
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "theMadgician",
       "score_a": 55.2,
-      "projected_a": 137.84,
+      "projected_a": 137.75,
       "team_b": "packerlove24",
       "score_b": 14.1,
-      "projected_b": 150.07,
-      "timestamp": 1792796432323.8372
+      "projected_b": 150.53,
+      "timestamp": 1792815322594.282
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Newman’s Owen",
       "score_a": 31.42,
-      "projected_a": 131.64,
+      "projected_a": 131.81,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 139.08,
-      "timestamp": 1792796432323.834
+      "projected_b": 138.15,
+      "timestamp": 1792815322594.278
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Tanner Time",
       "score_a": 19.9,
-      "projected_a": 123.1,
+      "projected_a": 123.03,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 131.94,
-      "timestamp": 1792796432323.8298
+      "projected_b": 141.38,
+      "timestamp": 1792815322594.2732
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Supernovas",
       "score_a": 19.0,
-      "projected_a": 137.65,
+      "projected_a": 137.98,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 126.04,
-      "timestamp": 1792796432323.814
+      "projected_b": 126.0,
+      "timestamp": 1792815322594.2559
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1419536922878943232",
+      "timestamp": 1792806485436,
+      "manager_id": "bill_m",
+      "team_name": "Bandits",
+      "added": {
+        "player_id": "12536",
+        "name": "Jaylin Noel",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "13424",
+        "name": "Seth McGowan",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
