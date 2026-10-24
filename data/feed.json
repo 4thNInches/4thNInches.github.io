@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T12:35:35.485103+00:00",
+  "generated_at": "2026-10-24T18:42:32.346930+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,22 +7,22 @@
       "week": 7,
       "team_a": "VRDNO",
       "score_a": 41.24,
-      "projected_a": 151.07,
+      "projected_a": 150.97,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 134.15,
-      "timestamp": 1792845335484.8298
+      "projected_b": 134.12,
+      "timestamp": 1792867352346.773
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "theMadgician",
       "score_a": 55.2,
-      "projected_a": 137.68,
+      "projected_a": 137.49,
       "team_b": "packerlove24",
       "score_b": 14.1,
-      "projected_b": 150.52,
-      "timestamp": 1792845335484.828
+      "projected_b": 150.53,
+      "timestamp": 1792867352346.77
     },
     {
       "type": "live_score",
@@ -32,30 +32,98 @@
       "projected_a": 131.88,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 138.15,
-      "timestamp": 1792845335484.8262
+      "projected_b": 137.94,
+      "timestamp": 1792867352346.7651
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Tanner Time",
       "score_a": 19.9,
-      "projected_a": 123.03,
+      "projected_a": 123.0,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 141.38,
-      "timestamp": 1792845335484.822
+      "projected_b": 141.33,
+      "timestamp": 1792867352346.761
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Supernovas",
       "score_a": 19.0,
-      "projected_a": 137.92,
+      "projected_a": 148.08,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 126.0,
-      "timestamp": 1792845335484.8052
+      "projected_b": 125.94,
+      "timestamp": 1792867352346.7441
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1419759016636100608",
+      "timestamp": 1792859436714,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "12718",
+        "name": "Konata Mumpfield",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1419708821634297856",
+      "timestamp": 1792847469293,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "6650",
+        "name": "Chase McLaughlin",
+        "position": "K"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": "streamer"
+    },
+    {
+      "type": "trade",
+      "transaction_id": "1419706826735230976",
+      "timestamp": 1792847319824,
+      "sides": [
+        {
+          "manager_id": "nick",
+          "team_name": "Jake From State Farm",
+          "gave": [],
+          "got": [
+            {
+              "player_id": "11435",
+              "name": "Emanuel Wilson",
+              "position": "RB"
+            }
+          ],
+          "faab_sent": [
+            {
+              "amount": 5,
+              "to": "Supernovas"
+            }
+          ]
+        },
+        {
+          "manager_id": "mark",
+          "team_name": "Supernovas",
+          "gave": [
+            {
+              "player_id": "11435",
+              "name": "Emanuel Wilson",
+              "position": "RB"
+            }
+          ],
+          "got": [],
+          "faab_sent": []
+        }
+      ]
     },
     {
       "type": "waiver_move",
@@ -112,7 +180,7 @@
         "position": "QB"
       },
       "faab": 4,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -414,22 +482,7 @@
       },
       "dropped": null,
       "faab": null,
-      "remark": "streamer"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1417166087648223232",
-      "timestamp": 1792241234269,
-      "manager_id": "mikey_k",
-      "team_name": "ROK Navy's Finest",
-      "added": {
-        "player_id": "CAR",
-        "name": "CAR",
-        "position": "DEF"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
+      "remark": "depth"
     }
   ]
 }
