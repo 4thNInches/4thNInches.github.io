@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T04:18:36.835596+00:00",
+  "generated_at": "2026-10-25T13:07:28.194363+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,55 @@
       "week": 7,
       "team_a": "VRDNO",
       "score_a": 41.24,
-      "projected_a": 150.97,
+      "projected_a": 150.75,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 135.08,
-      "timestamp": 1792901916835.4412
+      "projected_b": 135.18,
+      "timestamp": 1792933648194.218
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "theMadgician",
       "score_a": 55.2,
-      "projected_a": 136.36,
+      "projected_a": 136.02,
       "team_b": "packerlove24",
       "score_b": 14.1,
-      "projected_b": 150.42,
-      "timestamp": 1792901916835.438
+      "projected_b": 150.35,
+      "timestamp": 1792933648194.215
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Newman’s Owen",
       "score_a": 31.42,
-      "projected_a": 132.24,
+      "projected_a": 132.73,
       "team_b": "Big Dumb Sports",
       "score_b": 0,
-      "projected_b": 136.76,
-      "timestamp": 1792901916835.4348
+      "projected_b": 136.52,
+      "timestamp": 1792933648194.212
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Tanner Time",
       "score_a": 19.9,
-      "projected_a": 122.57,
+      "projected_a": 122.23,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 142.13,
-      "timestamp": 1792901916835.4312
+      "projected_b": 142.94,
+      "timestamp": 1792933648194.209
     },
     {
       "type": "live_score",
       "week": 7,
       "team_a": "Supernovas",
       "score_a": 19.0,
-      "projected_a": 148.82,
+      "projected_a": 148.96,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 0,
-      "projected_b": 126.11,
-      "timestamp": 1792901916835.4111
+      "projected_b": 110.69,
+      "timestamp": 1792933648194.192
     },
     {
       "type": "waiver_move",
@@ -464,21 +464,6 @@
         "player_id": "7528",
         "name": "Najee Harris",
         "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1417524511594577920",
-      "timestamp": 1792326689197,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "11058",
-        "name": "Blake Grupe",
-        "position": "K"
       },
       "dropped": null,
       "faab": null,
