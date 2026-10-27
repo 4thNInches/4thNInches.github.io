@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 7,
+  "context": "This week's 12 teams put up 1551.02 points between them, 129.25 a team.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "Somewhere, Joe Burrow is still on packerlove24's bench wondering why -- 34.88 points' worth of wondering, out of 84.58 total left stranded."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "Jake From State Farm scored just 102.92 -- the 10th-highest score in the league this week -- but Supernova Takeover somehow scored even less (95.52), so the win counts all the same."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "Tanner Time held Bandits to just 84.96 points -- the 12th-worst score in the league this week -- on the way to the win."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "Not close: Tanner Time beat Bandits by 37.08 points, 122.04 to 84.96."
+    }
+  ]
+}

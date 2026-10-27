@@ -1,0 +1,116 @@
+{
+  "season": "2026",
+  "week": 7,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "bob",
+        "team_name": "packerlove24",
+        "bench_points": 84.58,
+        "top_bench_player": {
+          "name": "Joe Burrow",
+          "points": 34.88
+        }
+      }
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "data": {
+        "winner": {
+          "manager_id": "nick",
+          "team_name": "Jake From State Farm",
+          "score": 102.92,
+          "rank": 10
+        },
+        "loser": {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "score": 95.52,
+          "rank": 11
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "anthony",
+          "team_name": "Tanner Time",
+          "score": 122.04
+        },
+        "loser": {
+          "manager_id": "bill_m",
+          "team_name": "Bandits",
+          "score": 84.96,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "anthony",
+          "team_name": "Tanner Time",
+          "score": 122.04
+        },
+        "loser": {
+          "manager_id": "bill_m",
+          "team_name": "Bandits",
+          "score": 84.96
+        },
+        "margin": 37.08
+      }
+    }
+  ],
+  "context": {
+    "weekly_total": 1551.02,
+    "weekly_avg": 129.25,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "lowest_score",
+        "rank": 100,
+        "data": {
+          "team_name": "Bandits",
+          "score": 84.96
+        }
+      },
+      {
+        "type": "closest_game",
+        "rank": 152,
+        "data": {
+          "team_a": "Supernova Takeover",
+          "team_b": "Jake From State Farm",
+          "score_a": 95.52,
+          "score_b": 102.92,
+          "margin": 7.4
+        }
+      },
+      {
+        "type": "highest_score",
+        "rank": 166,
+        "data": {
+          "team_name": "theMadgician",
+          "score": 169.88
+        }
+      },
+      {
+        "type": "biggest_blowout",
+        "rank": 346,
+        "data": {
+          "team_a": "Tanner Time",
+          "team_b": "Bandits",
+          "score_a": 122.04,
+          "score_b": 84.96,
+          "margin": 37.08
+        }
+      }
+    ]
+  }
+}
