@@ -1,73 +1,7 @@
 {
-  "generated_at": "2026-10-26T20:58:33.026078+00:00",
+  "generated_at": "2026-10-27T04:41:14.029577+00:00",
   "window_days": 7,
   "items": [
-    {
-      "type": "live_score",
-      "week": 7,
-      "team_a": "ROK Navy's Finest",
-      "score_a": 149.6,
-      "projected_a": 138.63,
-      "team_b": "VRDNO",
-      "score_b": 133.34,
-      "projected_b": 156.09,
-      "timestamp": 1793048313025.907
-    },
-    {
-      "type": "live_score",
-      "week": 7,
-      "team_a": "theMadgician",
-      "score_a": 169.88,
-      "projected_a": 137.84,
-      "team_b": "packerlove24",
-      "score_b": 151.62,
-      "projected_b": 150.43,
-      "timestamp": 1793048313025.904
-    },
-    {
-      "type": "live_score",
-      "week": 7,
-      "team_a": "Newman’s Owen",
-      "score_a": 125.92,
-      "projected_a": 133.17,
-      "team_b": "Big Dumb Sports",
-      "score_b": 115.8,
-      "projected_b": 138.0,
-      "timestamp": 1793048313025.9011
-    },
-    {
-      "type": "live_score",
-      "week": 7,
-      "team_a": "Tanner Time",
-      "score_a": 82.8,
-      "projected_a": 127.03,
-      "team_b": "Bandits",
-      "score_b": 62.46,
-      "projected_b": 142.42,
-      "timestamp": 1793048313025.897
-    },
-    {
-      "type": "live_score",
-      "week": 7,
-      "team_a": "Supernovas",
-      "score_a": 104.92,
-      "projected_a": 149.4,
-      "team_b": "Chig-a-Doodle-Doo",
-      "score_b": 99.4,
-      "projected_b": 122.76,
-      "timestamp": 1793048313025.893
-    },
-    {
-      "type": "live_score",
-      "week": 7,
-      "team_a": "Jake From State Farm",
-      "score_a": 102.92,
-      "projected_a": 121.31,
-      "team_b": "Supernova Takeover",
-      "score_b": 95.52,
-      "projected_b": 153.95,
-      "timestamp": 1793048313025.875
-    },
     {
       "type": "waiver_move",
       "transaction_id": "1420079699257835520",
@@ -126,7 +60,7 @@
       },
       "dropped": null,
       "faab": null,
-      "remark": "streamer"
+      "remark": null
     },
     {
       "type": "trade",
@@ -342,7 +276,7 @@
         "position": "TE"
       },
       "faab": 0,
-      "remark": "streamer"
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -410,7 +344,7 @@
         "position": "TE"
       },
       "faab": 9,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
