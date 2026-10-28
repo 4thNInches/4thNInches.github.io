@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T20:33:47.912703+00:00",
+  "generated_at": "2026-10-28T05:15:21.438436+00:00",
   "window_days": 7,
   "items": [
     {
@@ -383,51 +383,6 @@
       },
       "faab": 0,
       "remark": null
-    },
-    {
-      "type": "trade",
-      "transaction_id": "1418356570848243712",
-      "timestamp": 1792530237387,
-      "sides": [
-        {
-          "manager_id": "matt",
-          "team_name": "theMadgician",
-          "gave": [
-            {
-              "player_id": "13337",
-              "name": "Emmett Johnson",
-              "position": "RB"
-            }
-          ],
-          "got": [
-            {
-              "player_id": "9480",
-              "name": "Brenton Strange",
-              "position": "TE"
-            }
-          ],
-          "faab_sent": []
-        },
-        {
-          "manager_id": "mark",
-          "team_name": "Supernovas",
-          "gave": [
-            {
-              "player_id": "9480",
-              "name": "Brenton Strange",
-              "position": "TE"
-            }
-          ],
-          "got": [
-            {
-              "player_id": "13337",
-              "name": "Emmett Johnson",
-              "position": "RB"
-            }
-          ],
-          "faab_sent": []
-        }
-      ]
     }
   ]
 }
