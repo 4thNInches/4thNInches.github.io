@@ -1,7 +1,45 @@
 {
-  "generated_at": "2026-10-28T20:55:14.623353+00:00",
+  "generated_at": "2026-10-29T05:26:09.131539+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1421288601701912576",
+      "timestamp": 1793224118212,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "13421",
+        "name": "Eli Raridon",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "3271",
+        "name": "Tyler Higbee",
+        "position": "TE"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1421288039656820736",
+      "timestamp": 1793223984211,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "7021",
+        "name": "Rico Dowdle",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "13150",
+        "name": "Darius Cooper",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1421158763208962048",
@@ -334,36 +372,6 @@
       },
       "faab": 4,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1418819643732197376",
-      "timestamp": 1792635472761,
-      "manager_id": "bill_m",
-      "team_name": "Bandits",
-      "added": {
-        "player_id": "13424",
-        "name": "Seth McGowan",
-        "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1418738717828358144",
-      "timestamp": 1792616178523,
-      "manager_id": "owen",
-      "team_name": "Newman’s Owen",
-      "added": {
-        "player_id": "8122",
-        "name": "Zonovan Knight",
-        "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
     }
   ]
 }
