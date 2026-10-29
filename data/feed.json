@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T05:26:09.131539+00:00",
+  "generated_at": "2026-10-29T15:07:41.512357+00:00",
   "window_days": 7,
   "items": [
     {
@@ -353,25 +353,6 @@
       },
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1418579025223286784",
-      "timestamp": 1792649687737,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "7021",
-        "name": "Rico Dowdle",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "3257",
-        "name": "Jacoby Brissett",
-        "position": "QB"
-      },
-      "faab": 4,
-      "remark": "depth"
     }
   ]
 }
