@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T14:58:44.574225+00:00",
+  "generated_at": "2026-10-30T20:38:04.121470+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,59 @@
       "week": 8,
       "team_a": "Bandits",
       "score_a": 20.9,
-      "projected_a": 142.07,
+      "projected_a": 141.98,
       "team_b": "Newman’s Owen",
       "score_b": 11.8,
-      "projected_b": 124.62,
-      "timestamp": 1793372324574.064
+      "projected_b": 124.34,
+      "timestamp": 1793392684121.308
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernovas",
       "score_a": 9.6,
-      "projected_a": 143.16,
+      "projected_a": 142.5,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 148.41,
-      "timestamp": 1793372324574.062
+      "projected_b": 148.49,
+      "timestamp": 1793392684121.305
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "ROK Navy's Finest",
       "score_a": 29.4,
-      "projected_a": 121.69,
+      "projected_a": 124.64,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 23.2,
-      "projected_b": 151.55,
-      "timestamp": 1793372324574.058
+      "projected_b": 148.78,
+      "timestamp": 1793392684121.3
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernova Takeover",
       "score_a": 24.9,
-      "projected_a": 132.31,
+      "projected_a": 132.12,
       "team_b": "theMadgician",
       "score_b": 17.3,
-      "projected_b": 138.93,
-      "timestamp": 1793372324574.04
+      "projected_b": 138.58,
+      "timestamp": 1793392684121.284
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1421984572572176384",
+      "timestamp": 1793390050599,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "12499",
+        "name": "Elic Ayomanor",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
