@@ -1,7 +1,70 @@
 {
-  "generated_at": "2026-10-29T20:59:18.526673+00:00",
+  "generated_at": "2026-10-30T05:26:01.014378+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "live_score",
+      "week": 8,
+      "team_a": "Bandits",
+      "score_a": 20.9,
+      "projected_a": 141.98,
+      "team_b": "Newman’s Owen",
+      "score_b": 11.8,
+      "projected_b": 124.47,
+      "timestamp": 1793337961014.208
+    },
+    {
+      "type": "live_score",
+      "week": 8,
+      "team_a": "Supernovas",
+      "score_a": 9.6,
+      "projected_a": 142.63,
+      "team_b": "VRDNO",
+      "score_b": 0,
+      "projected_b": 148.03,
+      "timestamp": 1793337961014.205
+    },
+    {
+      "type": "live_score",
+      "week": 8,
+      "team_a": "ROK Navy's Finest",
+      "score_a": 29.4,
+      "projected_a": 121.68,
+      "team_b": "Chig-a-Doodle-Doo",
+      "score_b": 23.2,
+      "projected_b": 150.64,
+      "timestamp": 1793337961014.199
+    },
+    {
+      "type": "live_score",
+      "week": 8,
+      "team_a": "Supernova Takeover",
+      "score_a": 24.9,
+      "projected_a": 134.64,
+      "team_b": "theMadgician",
+      "score_b": 17.3,
+      "projected_b": 139.07,
+      "timestamp": 1793337961014.185
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1421672695753388032",
+      "timestamp": 1793315693371,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "9500",
+        "name": "Josh Downs",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "5849",
+        "name": "Kyler Murray",
+        "position": "QB"
+      },
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1421288601701912576",
@@ -197,7 +260,7 @@
         "position": "WR"
       },
       "faab": 0,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -216,7 +279,7 @@
         "position": "RB"
       },
       "faab": 1,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -261,7 +324,7 @@
       },
       "dropped": null,
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -334,25 +397,6 @@
       },
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1419110723463766016",
-      "timestamp": 1792704871577,
-      "manager_id": "owen",
-      "team_name": "Newman’s Owen",
-      "added": {
-        "player_id": "11783",
-        "name": "Ryan Flournoy",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "CHI",
-        "name": "CHI",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": null
     }
   ]
 }
