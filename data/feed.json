@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T20:38:04.121470+00:00",
+  "generated_at": "2026-10-31T05:10:30.043332+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,63 @@
       "week": 8,
       "team_a": "Bandits",
       "score_a": 20.9,
-      "projected_a": 141.98,
+      "projected_a": 143.47,
       "team_b": "Newman’s Owen",
       "score_b": 11.8,
-      "projected_b": 124.34,
-      "timestamp": 1793392684121.308
+      "projected_b": 118.88,
+      "timestamp": 1793423430043.165
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernovas",
       "score_a": 9.6,
-      "projected_a": 142.5,
+      "projected_a": 143.66,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 148.49,
-      "timestamp": 1793392684121.305
+      "projected_b": 155.24,
+      "timestamp": 1793423430043.162
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "ROK Navy's Finest",
       "score_a": 29.4,
-      "projected_a": 124.64,
+      "projected_a": 123.46,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 23.2,
-      "projected_b": 148.78,
-      "timestamp": 1793392684121.3
+      "projected_b": 145.64,
+      "timestamp": 1793423430043.157
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernova Takeover",
       "score_a": 24.9,
-      "projected_a": 132.12,
+      "projected_a": 131.42,
       "team_b": "theMadgician",
       "score_b": 17.3,
-      "projected_b": 138.58,
-      "timestamp": 1793392684121.284
+      "projected_b": 141.23,
+      "timestamp": 1793423430043.1409
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1422055366690148352",
+      "timestamp": 1793406929232,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "WAS",
+        "name": "WAS",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "BAL",
+        "name": "BAL",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -393,25 +412,6 @@
           "faab_sent": []
         }
       ]
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1419536922878943232",
-      "timestamp": 1792806485436,
-      "manager_id": "bill_m",
-      "team_name": "Bandits",
-      "added": {
-        "player_id": "12536",
-        "name": "Jaylin Noel",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "13424",
-        "name": "Seth McGowan",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
