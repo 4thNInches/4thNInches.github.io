@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T05:10:30.043332+00:00",
+  "generated_at": "2026-10-31T14:27:59.302694+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,44 @@
       "week": 8,
       "team_a": "Bandits",
       "score_a": 20.9,
-      "projected_a": 143.47,
+      "projected_a": 146.96,
       "team_b": "Newman’s Owen",
       "score_b": 11.8,
-      "projected_b": 118.88,
-      "timestamp": 1793423430043.165
+      "projected_b": 118.97,
+      "timestamp": 1793456879302.5242
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernovas",
       "score_a": 9.6,
-      "projected_a": 143.66,
+      "projected_a": 143.73,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 155.24,
-      "timestamp": 1793423430043.162
+      "projected_b": 155.75,
+      "timestamp": 1793456879302.521
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "ROK Navy's Finest",
       "score_a": 29.4,
-      "projected_a": 123.46,
+      "projected_a": 123.37,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 23.2,
-      "projected_b": 145.64,
-      "timestamp": 1793423430043.157
+      "projected_b": 144.97,
+      "timestamp": 1793456879302.5151
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernova Takeover",
       "score_a": 24.9,
-      "projected_a": 131.42,
+      "projected_a": 131.33,
       "team_b": "theMadgician",
       "score_b": 17.3,
-      "projected_b": 141.23,
-      "timestamp": 1793423430043.1409
+      "projected_b": 140.83,
+      "timestamp": 1793456879302.5
     },
     {
       "type": "waiver_move",
@@ -222,7 +222,7 @@
       },
       "dropped": null,
       "faab": 1,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -359,59 +359,6 @@
       "dropped": null,
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1419708821634297856",
-      "timestamp": 1792847469293,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "6650",
-        "name": "Chase McLaughlin",
-        "position": "K"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "trade",
-      "transaction_id": "1419706826735230976",
-      "timestamp": 1792847319824,
-      "sides": [
-        {
-          "manager_id": "nick",
-          "team_name": "Jake From State Farm",
-          "gave": [],
-          "got": [
-            {
-              "player_id": "11435",
-              "name": "Emanuel Wilson",
-              "position": "RB"
-            }
-          ],
-          "faab_sent": [
-            {
-              "amount": 5,
-              "to": "Supernovas"
-            }
-          ]
-        },
-        {
-          "manager_id": "mark",
-          "team_name": "Supernovas",
-          "gave": [
-            {
-              "player_id": "11435",
-              "name": "Emanuel Wilson",
-              "position": "RB"
-            }
-          ],
-          "got": [],
-          "faab_sent": []
-        }
-      ]
     }
   ]
 }
