@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T14:27:59.302694+00:00",
+  "generated_at": "2026-10-31T19:51:10.326985+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,22 +7,22 @@
       "week": 8,
       "team_a": "Bandits",
       "score_a": 20.9,
-      "projected_a": 146.96,
+      "projected_a": 147.1,
       "team_b": "Newman’s Owen",
       "score_b": 11.8,
-      "projected_b": 118.97,
-      "timestamp": 1793456879302.5242
+      "projected_b": 120.45,
+      "timestamp": 1793476270326.68
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernovas",
       "score_a": 9.6,
-      "projected_a": 143.73,
+      "projected_a": 143.63,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 155.75,
-      "timestamp": 1793456879302.521
+      "projected_b": 150.13,
+      "timestamp": 1793476270326.678
     },
     {
       "type": "live_score",
@@ -32,19 +32,38 @@
       "projected_a": 123.37,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 23.2,
-      "projected_b": 144.97,
-      "timestamp": 1793456879302.5151
+      "projected_b": 146.19,
+      "timestamp": 1793476270326.673
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernova Takeover",
       "score_a": 24.9,
-      "projected_a": 131.33,
+      "projected_a": 131.27,
       "team_b": "theMadgician",
       "score_b": 17.3,
-      "projected_b": 140.83,
-      "timestamp": 1793456879302.5
+      "projected_b": 143.84,
+      "timestamp": 1793476270326.656
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1422305772104056832",
+      "timestamp": 1793466630534,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "8111",
+        "name": "Cade Otton",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "12509",
+        "name": "Tre' Harris",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -344,21 +363,6 @@
       "dropped": null,
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1419759016636100608",
-      "timestamp": 1792859436714,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "12718",
-        "name": "Konata Mumpfield",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
