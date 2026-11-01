@@ -1,50 +1,129 @@
 {
-  "generated_at": "2026-11-01T14:54:52.807974+00:00",
+  "generated_at": "2026-11-01T20:25:09.026174+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Bandits",
-      "score_a": 20.9,
-      "projected_a": 153.84,
+      "score_a": 92.4,
+      "projected_a": 154.27,
       "team_b": "Newman’s Owen",
-      "score_b": 11.8,
-      "projected_b": 130.4,
-      "timestamp": 1793544892807.807
+      "score_b": 71.5,
+      "projected_b": 126.53,
+      "timestamp": 1793564709026.006
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernovas",
-      "score_a": 9.6,
-      "projected_a": 143.88,
+      "score_a": 101.1,
+      "projected_a": 133.69,
       "team_b": "VRDNO",
-      "score_b": 0,
-      "projected_b": 149.38,
-      "timestamp": 1793544892807.8042
+      "score_b": 80.3,
+      "projected_b": 149.49,
+      "timestamp": 1793564709026.003
+    },
+    {
+      "type": "live_score",
+      "week": 8,
+      "team_a": "packerlove24",
+      "score_a": 50.06,
+      "projected_a": 159.34,
+      "team_b": "Big Dumb Sports",
+      "score_b": 33.3,
+      "projected_b": 132.69,
+      "timestamp": 1793564709026.001
+    },
+    {
+      "type": "live_score",
+      "week": 8,
+      "team_a": "Jake From State Farm",
+      "score_a": 53.16,
+      "projected_a": 112.08,
+      "team_b": "Tanner Time",
+      "score_b": 39.7,
+      "projected_b": 127.04,
+      "timestamp": 1793564709025.9968
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "ROK Navy's Finest",
-      "score_a": 29.4,
-      "projected_a": 123.34,
+      "score_a": 130.76,
+      "projected_a": 123.18,
       "team_b": "Chig-a-Doodle-Doo",
-      "score_b": 23.2,
-      "projected_b": 146.97,
-      "timestamp": 1793544892807.8
+      "score_b": 91.7,
+      "projected_b": 146.32,
+      "timestamp": 1793564709025.9941
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernova Takeover",
-      "score_a": 24.9,
-      "projected_a": 131.33,
+      "score_a": 77.56,
+      "projected_a": 137.35,
       "team_b": "theMadgician",
-      "score_b": 17.3,
-      "projected_b": 143.97,
-      "timestamp": 1793544892807.782
+      "score_b": 56.44,
+      "projected_b": 142.32,
+      "timestamp": 1793564709025.979
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1422679848962240512",
+      "timestamp": 1793555817408,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "DEN",
+        "name": "DEN",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "12499",
+        "name": "Elic Ayomanor",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": "streamer"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1422679163898200064",
+      "timestamp": 1793555654076,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "12485",
+        "name": "Tez Johnson",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "11435",
+        "name": "Emanuel Wilson",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1422676409297436672",
+      "timestamp": 1793554997327,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "LV",
+        "name": "LV",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "TEN",
+        "name": "TEN",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
