@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T23:16:05.983907+00:00",
+  "generated_at": "2026-11-01T05:40:19.461165+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,44 @@
       "week": 8,
       "team_a": "Bandits",
       "score_a": 20.9,
-      "projected_a": 147.16,
+      "projected_a": 147.64,
       "team_b": "Newman’s Owen",
       "score_b": 11.8,
-      "projected_b": 120.45,
-      "timestamp": 1793488565983.732
+      "projected_b": 130.17,
+      "timestamp": 1793511619461.001
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernovas",
       "score_a": 9.6,
-      "projected_a": 143.88,
+      "projected_a": 143.8,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 150.19,
-      "timestamp": 1793488565983.729
+      "projected_b": 150.24,
+      "timestamp": 1793511619460.997
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "ROK Navy's Finest",
       "score_a": 29.4,
-      "projected_a": 123.47,
+      "projected_a": 123.34,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 23.2,
-      "projected_b": 146.17,
-      "timestamp": 1793488565983.724
+      "projected_b": 147.1,
+      "timestamp": 1793511619460.9922
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernova Takeover",
       "score_a": 24.9,
-      "projected_a": 131.26,
+      "projected_a": 131.17,
       "team_b": "theMadgician",
       "score_b": 17.3,
-      "projected_b": 143.99,
-      "timestamp": 1793488565983.708
+      "projected_b": 144.3,
+      "timestamp": 1793511619460.978
     },
     {
       "type": "waiver_move",
