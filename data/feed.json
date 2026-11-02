@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T05:38:56.122587+00:00",
+  "generated_at": "2026-11-02T18:08:16.926926+00:00",
   "window_days": 7,
   "items": [
     {
@@ -11,18 +11,18 @@
       "team_b": "Newman’s Owen",
       "score_b": 106.3,
       "projected_b": 126.63,
-      "timestamp": 1793597936122.2898
+      "timestamp": 1793642896926.423
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "VRDNO",
       "score_a": 148.46,
-      "projected_a": 149.58,
+      "projected_a": 149.57,
       "team_b": "Supernovas",
       "score_b": 127.98,
       "projected_b": 133.8,
-      "timestamp": 1793597936122.287
+      "timestamp": 1793642896926.42
     },
     {
       "type": "live_score",
@@ -33,7 +33,7 @@
       "team_b": "Big Dumb Sports",
       "score_b": 73.98,
       "projected_b": 132.79,
-      "timestamp": 1793597936122.285
+      "timestamp": 1793642896926.417
     },
     {
       "type": "live_score",
@@ -44,7 +44,7 @@
       "team_b": "Tanner Time",
       "score_b": 76.7,
       "projected_b": 127.06,
-      "timestamp": 1793597936122.282
+      "timestamp": 1793642896926.413
     },
     {
       "type": "live_score",
@@ -55,18 +55,18 @@
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 116.2,
       "projected_b": 146.48,
-      "timestamp": 1793597936122.278
+      "timestamp": 1793642896926.409
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernova Takeover",
       "score_a": 134.34,
-      "projected_a": 137.35,
+      "projected_a": 137.34,
       "team_b": "theMadgician",
       "score_b": 110.06,
       "projected_b": 142.38,
-      "timestamp": 1793597936122.261
+      "timestamp": 1793642896926.383
     },
     {
       "type": "waiver_move",
