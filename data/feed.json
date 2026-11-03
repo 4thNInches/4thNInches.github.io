@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T18:08:16.926926+00:00",
+  "generated_at": "2026-11-03T02:09:08.867933+00:00",
   "window_days": 7,
   "items": [
     {
@@ -9,42 +9,42 @@
       "score_a": 113.2,
       "projected_a": 154.27,
       "team_b": "Newman’s Owen",
-      "score_b": 106.3,
+      "score_b": 112.78,
       "projected_b": 126.63,
-      "timestamp": 1793642896926.423
+      "timestamp": 1793671748867.604
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "VRDNO",
-      "score_a": 148.46,
-      "projected_a": 149.57,
+      "score_a": 154.16,
+      "projected_a": 149.58,
       "team_b": "Supernovas",
-      "score_b": 127.98,
+      "score_b": 131.28,
       "projected_b": 133.8,
-      "timestamp": 1793642896926.42
+      "timestamp": 1793671748867.6008
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "packerlove24",
-      "score_a": 148.78,
+      "score_a": 158.78,
       "projected_a": 159.42,
       "team_b": "Big Dumb Sports",
       "score_b": 73.98,
       "projected_b": 132.79,
-      "timestamp": 1793642896926.417
+      "timestamp": 1793671748867.5981
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Jake From State Farm",
-      "score_a": 84.86,
+      "score_a": 87.56,
       "projected_a": 112.36,
       "team_b": "Tanner Time",
-      "score_b": 76.7,
+      "score_b": 83.8,
       "projected_b": 127.06,
-      "timestamp": 1793642896926.413
+      "timestamp": 1793671748867.595
     },
     {
       "type": "live_score",
@@ -55,18 +55,18 @@
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 116.2,
       "projected_b": 146.48,
-      "timestamp": 1793642896926.409
+      "timestamp": 1793671748867.5908
     },
     {
       "type": "live_score",
       "week": 8,
       "team_a": "Supernova Takeover",
       "score_a": 134.34,
-      "projected_a": 137.34,
+      "projected_a": 137.35,
       "team_b": "theMadgician",
-      "score_b": 110.06,
+      "score_b": 122.36,
       "projected_b": 142.38,
-      "timestamp": 1793642896926.383
+      "timestamp": 1793671748867.572
     },
     {
       "type": "waiver_move",
