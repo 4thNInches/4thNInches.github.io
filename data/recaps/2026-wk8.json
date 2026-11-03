@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 8,
+  "context": "1518.62 points got scored across the league this week, 126.55 per team -- make of that what you will.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "Somewhere, Jonah Coleman is still on ROK Navy's Finest's bench wondering why -- 23.4 points' worth of wondering, out of 89.7 total left stranded."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "Jake From State Farm did the bare minimum (90.76, 10th in the league) and it was enough, because Tanner Time did even less (88.2)."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "packerlove24's defense (well, their opponent's offense) did the work: Big Dumb Sports finished with just 73.98."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "The week's biggest mismatch: packerlove24 over Big Dumb Sports, 150.78-73.98 (76.8 points)."
+    }
+  ]
+}

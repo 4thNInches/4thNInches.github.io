@@ -1,0 +1,116 @@
+{
+  "season": "2026",
+  "week": 8,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "mikey_k",
+        "team_name": "ROK Navy's Finest",
+        "bench_points": 89.7,
+        "top_bench_player": {
+          "name": "Jonah Coleman",
+          "points": 23.4
+        }
+      }
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "data": {
+        "winner": {
+          "manager_id": "nick",
+          "team_name": "Jake From State Farm",
+          "score": 90.76,
+          "rank": 10
+        },
+        "loser": {
+          "manager_id": "anthony",
+          "team_name": "Tanner Time",
+          "score": 88.2,
+          "rank": 11
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "bob",
+          "team_name": "packerlove24",
+          "score": 150.78
+        },
+        "loser": {
+          "manager_id": "dennis",
+          "team_name": "Big Dumb Sports",
+          "score": 73.98,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "bob",
+          "team_name": "packerlove24",
+          "score": 150.78
+        },
+        "loser": {
+          "manager_id": "dennis",
+          "team_name": "Big Dumb Sports",
+          "score": 73.98
+        },
+        "margin": 76.8
+      }
+    }
+  ],
+  "context": {
+    "weekly_total": 1518.62,
+    "weekly_avg": 126.55,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "lowest_score",
+        "rank": 35,
+        "data": {
+          "team_name": "Big Dumb Sports",
+          "score": 73.98
+        }
+      },
+      {
+        "type": "closest_game",
+        "rank": 46,
+        "data": {
+          "team_a": "Tanner Time",
+          "team_b": "Jake From State Farm",
+          "score_a": 88.2,
+          "score_b": 90.76,
+          "margin": 2.56
+        }
+      },
+      {
+        "type": "biggest_blowout",
+        "rank": 46,
+        "data": {
+          "team_a": "Big Dumb Sports",
+          "team_b": "packerlove24",
+          "score_a": 73.98,
+          "score_b": 150.78,
+          "margin": 76.8
+        }
+      },
+      {
+        "type": "highest_score",
+        "rank": 103,
+        "data": {
+          "team_name": "VRDNO",
+          "score": 178.26
+        }
+      }
+    ]
+  }
+}
