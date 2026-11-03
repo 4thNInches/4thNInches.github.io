@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T11:47:43.423527+00:00",
+  "generated_at": "2026-11-03T19:23:04.503496+00:00",
   "window_days": 7,
   "items": [
     {
@@ -19,7 +19,7 @@
         "position": "WR"
       },
       "faab": null,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -38,7 +38,7 @@
         "position": "RB"
       },
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -326,7 +326,7 @@
         "position": "WR"
       },
       "faab": 0,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -345,7 +345,7 @@
         "position": "RB"
       },
       "faab": 1,
-      "remark": null
+      "remark": "depth"
     }
   ]
 }
