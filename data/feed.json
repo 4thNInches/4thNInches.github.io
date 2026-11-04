@@ -1,7 +1,178 @@
 {
-  "generated_at": "2026-11-04T00:32:30.599340+00:00",
+  "generated_at": "2026-11-04T11:58:48.210383+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1423669473424027648",
+      "timestamp": 1793791762265,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "8161",
+        "name": "Malik Willis",
+        "position": "QB"
+      },
+      "dropped": {
+        "player_id": "8210",
+        "name": "Chig Okonkwo",
+        "position": "TE"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1423651478714753024",
+      "timestamp": 1793787471992,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "BUF",
+        "name": "BUF",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "WAS",
+        "name": "WAS",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1423651325194854400",
+      "timestamp": 1793787435390,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "2020",
+        "name": "Cairo Santos",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "7049",
+        "name": "Jauan Jennings",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1423651096676626432",
+      "timestamp": 1793787380907,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "4993",
+        "name": "Mike Gesicki",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "8111",
+        "name": "Cade Otton",
+        "position": "TE"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1423650620245630976",
+      "timestamp": 1793787267317,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "7561",
+        "name": "Elijah Mitchell",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "12711",
+        "name": "Tyler Loop",
+        "position": "K"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1423507778906939392",
+      "timestamp": 1793780101890,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "6130",
+        "name": "Devin Singletary",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "4454",
+        "name": "Kendrick Bourne",
+        "position": "WR"
+      },
+      "faab": 4,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1423500603392380928",
+      "timestamp": 1793780101890,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "CHI",
+        "name": "CHI",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "3257",
+        "name": "Jacoby Brissett",
+        "position": "QB"
+      },
+      "faab": 0,
+      "remark": "streamer"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1423500331806965760",
+      "timestamp": 1793780101890,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "11625",
+        "name": "Adonai Mitchell",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "12485",
+        "name": "Tez Johnson",
+        "position": "WR"
+      },
+      "faab": 4,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1423494283628965888",
+      "timestamp": 1793780101890,
+      "manager_id": "bill_m",
+      "team_name": "Bandits",
+      "added": {
+        "player_id": "7042",
+        "name": "Tyler Bass",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "7839",
+        "name": "Evan McPherson",
+        "position": "K"
+      },
+      "faab": 1,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1422679848962240512",
@@ -76,7 +247,7 @@
         "position": "WR"
       },
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -206,146 +377,6 @@
       },
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1421029884339224576",
-      "timestamp": 1793171653712,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "13424",
-        "name": "Seth McGowan",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "9228",
-        "name": "Bryce Young",
-        "position": "QB"
-      },
-      "faab": 7,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1420974089501147136",
-      "timestamp": 1793171653712,
-      "manager_id": "bill_m",
-      "team_name": "Bandits",
-      "added": {
-        "player_id": "CIN",
-        "name": "CIN",
-        "position": "DEF"
-      },
-      "dropped": null,
-      "faab": 1,
-      "remark": "streamer"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1420972793280892928",
-      "timestamp": 1793171653712,
-      "manager_id": "bill_m",
-      "team_name": "Bandits",
-      "added": {
-        "player_id": "9482",
-        "name": "Michael Mayer",
-        "position": "TE"
-      },
-      "dropped": null,
-      "faab": 1,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1420968014265810944",
-      "timestamp": 1793171653712,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "JAX",
-        "name": "JAX",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "NYJ",
-        "name": "NYJ",
-        "position": "DEF"
-      },
-      "faab": 1,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1420846979000352768",
-      "timestamp": 1793171653712,
-      "manager_id": "anthony",
-      "team_name": "Tanner Time",
-      "added": {
-        "player_id": "13296",
-        "name": "Caleb Douglas",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "9754",
-        "name": "Quentin Johnston",
-        "position": "WR"
-      },
-      "faab": 1,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1420789628776013824",
-      "timestamp": 1793171653712,
-      "manager_id": "bill_m",
-      "team_name": "Bandits",
-      "added": {
-        "player_id": "13298",
-        "name": "KC Concepcion Jr.",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": 3,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1420772100355964928",
-      "timestamp": 1793171653712,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "8210",
-        "name": "Chig Okonkwo",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "9500",
-        "name": "Josh Downs",
-        "position": "WR"
-      },
-      "faab": 0,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1420771537354543104",
-      "timestamp": 1793171653712,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "3257",
-        "name": "Jacoby Brissett",
-        "position": "QB"
-      },
-      "dropped": {
-        "player_id": "9757",
-        "name": "Kendre Miller",
-        "position": "RB"
-      },
-      "faab": 1,
-      "remark": "depth"
     }
   ]
 }
