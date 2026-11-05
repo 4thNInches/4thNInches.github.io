@@ -1,7 +1,22 @@
 {
-  "generated_at": "2026-11-05T00:49:29.513106+00:00",
+  "generated_at": "2026-11-05T12:06:21.422667+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1424040434992193536",
+      "timestamp": 1793880206396,
+      "manager_id": "anthony",
+      "team_name": "Tanner Time",
+      "added": {
+        "player_id": "NO",
+        "name": "NO",
+        "position": "DEF"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": "streamer"
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1423711427339771904",
