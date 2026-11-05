@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T19:41:13.173185+00:00",
+  "generated_at": "2026-11-05T00:49:29.513106+00:00",
   "window_days": 7,
   "items": [
     {
@@ -320,44 +320,6 @@
       },
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1421288601701912576",
-      "timestamp": 1793224118212,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "13421",
-        "name": "Eli Raridon",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "3271",
-        "name": "Tyler Higbee",
-        "position": "TE"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1421288039656820736",
-      "timestamp": 1793223984211,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "7021",
-        "name": "Rico Dowdle",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "13150",
-        "name": "Darius Cooper",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
