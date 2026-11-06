@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T15:50:29.977765+00:00",
+  "generated_at": "2026-11-06T21:25:10.150927+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,33 +7,33 @@
       "week": 9,
       "team_a": "theMadgician",
       "score_a": 24.4,
-      "projected_a": 134.62,
+      "projected_a": 137.96,
       "team_b": "Jake From State Farm",
       "score_b": 14.0,
-      "projected_b": 123.8,
-      "timestamp": 1793980229977.616
+      "projected_b": 126.18,
+      "timestamp": 1794000310150.7559
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Big Dumb Sports",
       "score_a": 9.48,
-      "projected_a": 119.85,
+      "projected_a": 119.07,
       "team_b": "Supernovas",
       "score_b": 8.9,
-      "projected_b": 152.53,
-      "timestamp": 1793980229977.612
+      "projected_b": 152.31,
+      "timestamp": 1794000310150.752
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Chig-a-Doodle-Doo",
       "score_a": 40.68,
-      "projected_a": 140.83,
+      "projected_a": 146.16,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 142.54,
-      "timestamp": 1793980229977.596
+      "projected_b": 142.53,
+      "timestamp": 1794000310150.734
     },
     {
       "type": "waiver_move",
@@ -347,21 +347,6 @@
         "name": "BAL",
         "position": "DEF"
       },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1421984572572176384",
-      "timestamp": 1793390050599,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "12499",
-        "name": "Elic Ayomanor",
-        "position": "WR"
-      },
-      "dropped": null,
       "faab": null,
       "remark": null
     }
