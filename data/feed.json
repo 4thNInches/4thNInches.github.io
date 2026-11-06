@@ -1,7 +1,55 @@
 {
-  "generated_at": "2026-11-05T21:53:00.824509+00:00",
+  "generated_at": "2026-11-06T06:10:07.034296+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "live_score",
+      "week": 9,
+      "team_a": "theMadgician",
+      "score_a": 24.4,
+      "projected_a": 134.76,
+      "team_b": "Jake From State Farm",
+      "score_b": 14.0,
+      "projected_b": 123.79,
+      "timestamp": 1793945407034.097
+    },
+    {
+      "type": "live_score",
+      "week": 9,
+      "team_a": "Big Dumb Sports",
+      "score_a": 9.48,
+      "projected_a": 119.49,
+      "team_b": "Supernovas",
+      "score_b": 8.9,
+      "projected_b": 152.43,
+      "timestamp": 1793945407034.09
+    },
+    {
+      "type": "live_score",
+      "week": 9,
+      "team_a": "Chig-a-Doodle-Doo",
+      "score_a": 40.68,
+      "projected_a": 140.76,
+      "team_b": "VRDNO",
+      "score_b": 0,
+      "projected_b": 142.59,
+      "timestamp": 1793945407034.07
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1424255503265021952",
+      "timestamp": 1793931482667,
+      "manager_id": "dennis",
+      "team_name": "Big Dumb Sports",
+      "added": {
+        "player_id": "7839",
+        "name": "Evan McPherson",
+        "position": "K"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1424040434992193536",
@@ -314,25 +362,6 @@
         "position": "WR"
       },
       "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1421672695753388032",
-      "timestamp": 1793315693371,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "9500",
-        "name": "Josh Downs",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "5849",
-        "name": "Kyler Murray",
-        "position": "QB"
-      },
       "faab": null,
       "remark": null
     }
