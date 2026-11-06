@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T06:10:07.034296+00:00",
+  "generated_at": "2026-11-06T15:50:29.977765+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,33 +7,33 @@
       "week": 9,
       "team_a": "theMadgician",
       "score_a": 24.4,
-      "projected_a": 134.76,
+      "projected_a": 134.62,
       "team_b": "Jake From State Farm",
       "score_b": 14.0,
-      "projected_b": 123.79,
-      "timestamp": 1793945407034.097
+      "projected_b": 123.8,
+      "timestamp": 1793980229977.616
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Big Dumb Sports",
       "score_a": 9.48,
-      "projected_a": 119.49,
+      "projected_a": 119.85,
       "team_b": "Supernovas",
       "score_b": 8.9,
-      "projected_b": 152.43,
-      "timestamp": 1793945407034.09
+      "projected_b": 152.53,
+      "timestamp": 1793980229977.612
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Chig-a-Doodle-Doo",
       "score_a": 40.68,
-      "projected_a": 140.76,
+      "projected_a": 140.83,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 142.59,
-      "timestamp": 1793945407034.07
+      "projected_b": 142.54,
+      "timestamp": 1793980229977.596
     },
     {
       "type": "waiver_move",
