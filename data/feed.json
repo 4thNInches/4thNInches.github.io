@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T14:49:58.374661+00:00",
+  "generated_at": "2026-11-07T20:06:10.761286+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,22 +7,22 @@
       "week": 9,
       "team_a": "theMadgician",
       "score_a": 24.4,
-      "projected_a": 147.26,
+      "projected_a": 148.03,
       "team_b": "Jake From State Farm",
       "score_b": 14.0,
-      "projected_b": 127.81,
-      "timestamp": 1794062998374.468
+      "projected_b": 129.94,
+      "timestamp": 1794081970761.105
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Big Dumb Sports",
       "score_a": 9.48,
-      "projected_a": 119.43,
+      "projected_a": 119.38,
       "team_b": "Supernovas",
       "score_b": 8.9,
       "projected_b": 152.24,
-      "timestamp": 1794062998374.4631
+      "timestamp": 1794081970761.102
     },
     {
       "type": "live_score",
@@ -32,8 +32,23 @@
       "projected_a": 146.11,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 142.51,
-      "timestamp": 1794062998374.45
+      "projected_b": 142.39,
+      "timestamp": 1794081970761.082
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1424814512950796288",
+      "timestamp": 1794064760962,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "9757",
+        "name": "Kendre Miller",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -330,25 +345,6 @@
       },
       "faab": null,
       "remark": "streamer"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1422305772104056832",
-      "timestamp": 1793466630534,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "8111",
-        "name": "Cade Otton",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "12509",
-        "name": "Tre' Harris",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": "depth"
     }
   ]
 }
