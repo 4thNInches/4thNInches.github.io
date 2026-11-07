@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T21:25:10.150927+00:00",
+  "generated_at": "2026-11-07T05:39:25.688568+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,33 +7,52 @@
       "week": 9,
       "team_a": "theMadgician",
       "score_a": 24.4,
-      "projected_a": 137.96,
+      "projected_a": 147.47,
       "team_b": "Jake From State Farm",
       "score_b": 14.0,
-      "projected_b": 126.18,
-      "timestamp": 1794000310150.7559
+      "projected_b": 127.83,
+      "timestamp": 1794029965688.349
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Big Dumb Sports",
       "score_a": 9.48,
-      "projected_a": 119.07,
+      "projected_a": 119.42,
       "team_b": "Supernovas",
       "score_b": 8.9,
-      "projected_b": 152.31,
-      "timestamp": 1794000310150.752
+      "projected_b": 152.22,
+      "timestamp": 1794029965688.345
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Chig-a-Doodle-Doo",
       "score_a": 40.68,
-      "projected_a": 146.16,
+      "projected_a": 146.23,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 142.53,
-      "timestamp": 1794000310150.734
+      "projected_b": 142.72,
+      "timestamp": 1794029965688.329
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1424427968779841536",
+      "timestamp": 1794014643311,
+      "manager_id": "bill_m",
+      "team_name": "Bandits",
+      "added": {
+        "player_id": "13414",
+        "name": "Kaelon Black",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "13298",
+        "name": "KC Concepcion Jr.",
+        "position": "WR"
+      },
+      "faab": 2,
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -330,25 +349,6 @@
       },
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1422055366690148352",
-      "timestamp": 1793406929232,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "WAS",
-        "name": "WAS",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "BAL",
-        "name": "BAL",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": null
     }
   ]
 }
