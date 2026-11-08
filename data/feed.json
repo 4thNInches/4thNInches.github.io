@@ -1,72 +1,72 @@
 {
-  "generated_at": "2026-11-08T14:57:13.294694+00:00",
+  "generated_at": "2026-11-08T20:20:54.828108+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Bandits",
-      "score_a": 5.9,
-      "projected_a": 155.29,
+      "score_a": 68.74,
+      "projected_a": 155.0,
       "team_b": "ROK Navy's Finest",
-      "score_b": 0,
-      "projected_b": 137.32,
-      "timestamp": 1794149833294.555
+      "score_b": 50.3,
+      "projected_b": 137.45,
+      "timestamp": 1794169254827.929
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "theMadgician",
-      "score_a": 24.4,
-      "projected_a": 147.0,
+      "score_a": 52.2,
+      "projected_a": 147.24,
       "team_b": "Jake From State Farm",
-      "score_b": 14.0,
-      "projected_b": 127.84,
-      "timestamp": 1794149833294.553
+      "score_b": 48.6,
+      "projected_b": 131.19,
+      "timestamp": 1794169254827.926
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Supernovas",
-      "score_a": 25.6,
-      "projected_a": 154.45,
+      "score_a": 76.74,
+      "projected_a": 154.94,
       "team_b": "Big Dumb Sports",
-      "score_b": 10.48,
-      "projected_b": 118.47,
-      "timestamp": 1794149833294.5508
+      "score_b": 65.96,
+      "projected_b": 131.2,
+      "timestamp": 1794169254827.924
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Tanner Time",
-      "score_a": 2.5,
-      "projected_a": 123.59,
+      "score_a": 70.78,
+      "projected_a": 123.95,
       "team_b": "Newman’s Owen",
-      "score_b": 0,
-      "projected_b": 130.55,
-      "timestamp": 1794149833294.548
+      "score_b": 37.5,
+      "projected_b": 130.86,
+      "timestamp": 1794169254827.921
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Chig-a-Doodle-Doo",
-      "score_a": 40.68,
-      "projected_a": 145.41,
+      "score_a": 87.28,
+      "projected_a": 146.65,
       "team_b": "VRDNO",
-      "score_b": 1.8,
-      "projected_b": 142.99,
-      "timestamp": 1794149833294.545
+      "score_b": 31.62,
+      "projected_b": 142.36,
+      "timestamp": 1794169254827.917
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "packerlove24",
-      "score_a": 12.36,
-      "projected_a": 145.5,
+      "score_a": 119.74,
+      "projected_a": 159.54,
       "team_b": "Supernova Takeover",
-      "score_b": 0,
-      "projected_b": 158.49,
-      "timestamp": 1794149833294.527
+      "score_b": 65.3,
+      "projected_b": 158.57,
+      "timestamp": 1794169254827.896
     },
     {
       "type": "waiver_move",
@@ -316,7 +316,7 @@
         "position": "WR"
       },
       "faab": 4,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -354,7 +354,7 @@
         "position": "WR"
       },
       "faab": 4,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -374,63 +374,6 @@
       },
       "faab": 1,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1422679848962240512",
-      "timestamp": 1793555817408,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "DEN",
-        "name": "DEN",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "12499",
-        "name": "Elic Ayomanor",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1422679163898200064",
-      "timestamp": 1793555654076,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "12485",
-        "name": "Tez Johnson",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "11435",
-        "name": "Emanuel Wilson",
-        "position": "RB"
-      },
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1422676409297436672",
-      "timestamp": 1793554997327,
-      "manager_id": "mikey_g",
-      "team_name": "Supernova Takeover",
-      "added": {
-        "player_id": "LV",
-        "name": "LV",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "TEN",
-        "name": "TEN",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": "streamer"
     }
   ]
 }
