@@ -1,39 +1,110 @@
 {
-  "generated_at": "2026-11-08T05:41:57.188758+00:00",
+  "generated_at": "2026-11-08T14:57:13.294694+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 9,
-      "team_a": "theMadgician",
-      "score_a": 24.4,
-      "projected_a": 146.97,
-      "team_b": "Jake From State Farm",
-      "score_b": 14.0,
-      "projected_b": 127.62,
-      "timestamp": 1794116517188.528
+      "team_a": "Bandits",
+      "score_a": 5.9,
+      "projected_a": 155.29,
+      "team_b": "ROK Navy's Finest",
+      "score_b": 0,
+      "projected_b": 137.32,
+      "timestamp": 1794149833294.555
     },
     {
       "type": "live_score",
       "week": 9,
-      "team_a": "Big Dumb Sports",
-      "score_a": 9.48,
-      "projected_a": 118.52,
-      "team_b": "Supernovas",
-      "score_b": 8.9,
-      "projected_b": 152.12,
-      "timestamp": 1794116517188.524
+      "team_a": "theMadgician",
+      "score_a": 24.4,
+      "projected_a": 147.0,
+      "team_b": "Jake From State Farm",
+      "score_b": 14.0,
+      "projected_b": 127.84,
+      "timestamp": 1794149833294.553
+    },
+    {
+      "type": "live_score",
+      "week": 9,
+      "team_a": "Supernovas",
+      "score_a": 25.6,
+      "projected_a": 154.45,
+      "team_b": "Big Dumb Sports",
+      "score_b": 10.48,
+      "projected_b": 118.47,
+      "timestamp": 1794149833294.5508
+    },
+    {
+      "type": "live_score",
+      "week": 9,
+      "team_a": "Tanner Time",
+      "score_a": 2.5,
+      "projected_a": 123.59,
+      "team_b": "Newman’s Owen",
+      "score_b": 0,
+      "projected_b": 130.55,
+      "timestamp": 1794149833294.548
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Chig-a-Doodle-Doo",
       "score_a": 40.68,
-      "projected_a": 145.46,
+      "projected_a": 145.41,
       "team_b": "VRDNO",
+      "score_b": 1.8,
+      "projected_b": 142.99,
+      "timestamp": 1794149833294.545
+    },
+    {
+      "type": "live_score",
+      "week": 9,
+      "team_a": "packerlove24",
+      "score_a": 12.36,
+      "projected_a": 145.5,
+      "team_b": "Supernova Takeover",
       "score_b": 0,
-      "projected_b": 143.06,
-      "timestamp": 1794116517188.505
+      "projected_b": 158.49,
+      "timestamp": 1794149833294.527
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1425154159614668800",
+      "timestamp": 1794145739037,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "3271",
+        "name": "Tyler Higbee",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "5001",
+        "name": "Dalton Schultz",
+        "position": "TE"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1425153819720884224",
+      "timestamp": 1794145658001,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "5001",
+        "name": "Dalton Schultz",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "11603",
+        "name": "AJ Barner",
+        "position": "TE"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
