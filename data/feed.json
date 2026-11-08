@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T20:06:10.761286+00:00",
+  "generated_at": "2026-11-08T05:41:57.188758+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,33 +7,48 @@
       "week": 9,
       "team_a": "theMadgician",
       "score_a": 24.4,
-      "projected_a": 148.03,
+      "projected_a": 146.97,
       "team_b": "Jake From State Farm",
       "score_b": 14.0,
-      "projected_b": 129.94,
-      "timestamp": 1794081970761.105
+      "projected_b": 127.62,
+      "timestamp": 1794116517188.528
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Big Dumb Sports",
       "score_a": 9.48,
-      "projected_a": 119.38,
+      "projected_a": 118.52,
       "team_b": "Supernovas",
       "score_b": 8.9,
-      "projected_b": 152.24,
-      "timestamp": 1794081970761.102
+      "projected_b": 152.12,
+      "timestamp": 1794116517188.524
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Chig-a-Doodle-Doo",
       "score_a": 40.68,
-      "projected_a": 146.11,
+      "projected_a": 145.46,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 142.39,
-      "timestamp": 1794081970761.082
+      "projected_b": 143.06,
+      "timestamp": 1794116517188.505
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1424888757928071168",
+      "timestamp": 1794082462345,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "11579",
+        "name": "Audric Estime",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
