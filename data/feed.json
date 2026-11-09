@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:51:37.543562+00:00",
+  "generated_at": "2026-11-09T18:38:04.991769+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,22 +7,22 @@
       "week": 9,
       "team_a": "Bandits",
       "score_a": 175.4,
-      "projected_a": 154.84,
+      "projected_a": 155.0,
       "team_b": "ROK Navy's Finest",
       "score_b": 134.34,
-      "projected_b": 137.59,
-      "timestamp": 1794203497543.2998
+      "projected_b": 138.09,
+      "timestamp": 1794249484991.558
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "theMadgician",
       "score_a": 125.8,
-      "projected_a": 147.12,
+      "projected_a": 147.59,
       "team_b": "Jake From State Farm",
       "score_b": 81.62,
-      "projected_b": 131.11,
-      "timestamp": 1794203497543.295
+      "projected_b": 131.21,
+      "timestamp": 1794249484991.555
     },
     {
       "type": "live_score",
@@ -33,7 +33,7 @@
       "team_b": "Big Dumb Sports",
       "score_b": 84.2,
       "projected_b": 131.3,
-      "timestamp": 1794203497543.2898
+      "timestamp": 1794249484991.552
     },
     {
       "type": "live_score",
@@ -44,29 +44,29 @@
       "team_b": "Tanner Time",
       "score_b": 107.18,
       "projected_b": 123.98,
-      "timestamp": 1794203497543.285
+      "timestamp": 1794249484991.548
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "VRDNO",
       "score_a": 120.48,
-      "projected_a": 142.31,
+      "projected_a": 141.42,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 114.18,
-      "projected_b": 147.78,
-      "timestamp": 1794203497543.2798
+      "projected_b": 147.97,
+      "timestamp": 1794249484991.545
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "packerlove24",
       "score_a": 171.74,
-      "projected_a": 159.52,
+      "projected_a": 159.74,
       "team_b": "Supernova Takeover",
       "score_b": 134.08,
       "projected_b": 158.41,
-      "timestamp": 1794203497543.26
+      "timestamp": 1794249484991.527
     },
     {
       "type": "waiver_move",
