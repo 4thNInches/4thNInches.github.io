@@ -1,0 +1,116 @@
+{
+  "season": "2026",
+  "week": 9,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "bill_m",
+        "team_name": "Bandits",
+        "bench_points": 77.58,
+        "top_bench_player": {
+          "name": "Jordan Love",
+          "points": 46.18
+        }
+      }
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "data": {
+        "winner": {
+          "manager_id": "owen",
+          "team_name": "Newman’s Owen",
+          "score": 117.06,
+          "rank": 9
+        },
+        "loser": {
+          "manager_id": "anthony",
+          "team_name": "Tanner Time",
+          "score": 107.18,
+          "rank": 10
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "mark",
+          "team_name": "Supernovas",
+          "score": 122.36
+        },
+        "loser": {
+          "manager_id": "dennis",
+          "team_name": "Big Dumb Sports",
+          "score": 84.2,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "bob",
+          "team_name": "packerlove24",
+          "score": 179.04
+        },
+        "loser": {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "score": 134.08
+        },
+        "margin": 44.96
+      }
+    }
+  ],
+  "context": {
+    "weekly_total": 1588.2,
+    "weekly_avg": 132.35,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "highest_score",
+        "rank": 51,
+        "data": {
+          "team_name": "Bandits",
+          "score": 189.0
+        }
+      },
+      {
+        "type": "lowest_score",
+        "rank": 97,
+        "data": {
+          "team_name": "Big Dumb Sports",
+          "score": 84.2
+        }
+      },
+      {
+        "type": "closest_game",
+        "rank": 210,
+        "data": {
+          "team_a": "Tanner Time",
+          "team_b": "Newman’s Owen",
+          "score_a": 107.18,
+          "score_b": 117.06,
+          "margin": 9.88
+        }
+      },
+      {
+        "type": "biggest_blowout",
+        "rank": 265,
+        "data": {
+          "team_a": "Supernova Takeover",
+          "team_b": "packerlove24",
+          "score_a": 134.08,
+          "score_b": 179.04,
+          "margin": 44.96
+        }
+      }
+    ]
+  }
+}

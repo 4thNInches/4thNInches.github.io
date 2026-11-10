@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 9,
+  "context": "This week's 12 teams put up 1588.2 points between them, 132.35 a team.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "Somewhere, Jordan Love is still on Bandits's bench wondering why -- 46.18 points' worth of wondering, out of 77.58 total left stranded."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "Newman’s Owen put up a bottom-half 117.06 and still walked away with a win, thanks to Tanner Time's 107.18."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "Big Dumb Sports never had a chance against Supernovas, managing only 84.2 points all week."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "Not close: packerlove24 beat Supernova Takeover by 44.96 points, 179.04 to 134.08."
+    }
+  ]
+}
