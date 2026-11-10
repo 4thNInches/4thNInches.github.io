@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-09T18:38:04.991769+00:00",
+  "generated_at": "2026-11-10T02:38:11.489400+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 9,
       "team_a": "Bandits",
-      "score_a": 175.4,
-      "projected_a": 155.0,
+      "score_a": 179.3,
+      "projected_a": 155.04,
       "team_b": "ROK Navy's Finest",
-      "score_b": 134.34,
-      "projected_b": 138.09,
-      "timestamp": 1794249484991.558
+      "score_b": 139.04,
+      "projected_b": 138.73,
+      "timestamp": 1794278291489.227
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "theMadgician",
-      "score_a": 125.8,
-      "projected_a": 147.59,
+      "score_a": 126.9,
+      "projected_a": 147.32,
       "team_b": "Jake From State Farm",
-      "score_b": 81.62,
-      "projected_b": 131.21,
-      "timestamp": 1794249484991.555
+      "score_b": 84.92,
+      "projected_b": 131.46,
+      "timestamp": 1794278291489.2239
     },
     {
       "type": "live_score",
@@ -33,7 +33,7 @@
       "team_b": "Big Dumb Sports",
       "score_b": 84.2,
       "projected_b": 131.3,
-      "timestamp": 1794249484991.552
+      "timestamp": 1794278291489.2212
     },
     {
       "type": "live_score",
@@ -44,29 +44,29 @@
       "team_b": "Tanner Time",
       "score_b": 107.18,
       "projected_b": 123.98,
-      "timestamp": 1794249484991.548
+      "timestamp": 1794278291489.218
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "VRDNO",
-      "score_a": 120.48,
-      "projected_a": 141.42,
+      "score_a": 136.48,
+      "projected_a": 141.45,
       "team_b": "Chig-a-Doodle-Doo",
-      "score_b": 114.18,
-      "projected_b": 147.97,
-      "timestamp": 1794249484991.545
+      "score_b": 118.48,
+      "projected_b": 147.93,
+      "timestamp": 1794278291489.2148
     },
     {
       "type": "live_score",
       "week": 9,
       "team_a": "packerlove24",
-      "score_a": 171.74,
-      "projected_a": 159.74,
+      "score_a": 175.44,
+      "projected_a": 160.21,
       "team_b": "Supernova Takeover",
       "score_b": 134.08,
-      "projected_b": 158.41,
-      "timestamp": 1794249484991.527
+      "projected_b": 143.95,
+      "timestamp": 1794278291489.197
     },
     {
       "type": "waiver_move",
