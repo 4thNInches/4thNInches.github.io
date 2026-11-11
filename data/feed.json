@@ -1,7 +1,45 @@
 {
-  "generated_at": "2026-11-10T21:44:49.550518+00:00",
+  "generated_at": "2026-11-11T05:48:24.547722+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "trade",
+      "transaction_id": "1426016960633634816",
+      "timestamp": 1794352588350,
+      "sides": [
+        {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "gave": [],
+          "got": [
+            {
+              "player_id": "6130",
+              "name": "Devin Singletary",
+              "position": "RB"
+            }
+          ],
+          "faab_sent": [
+            {
+              "amount": 5,
+              "to": "Supernovas"
+            }
+          ]
+        },
+        {
+          "manager_id": "mark",
+          "team_name": "Supernovas",
+          "gave": [
+            {
+              "player_id": "6130",
+              "name": "Devin Singletary",
+              "position": "RB"
+            }
+          ],
+          "got": [],
+          "faab_sent": []
+        }
+      ]
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1425154159614668800",
@@ -68,7 +106,7 @@
       },
       "dropped": null,
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -231,7 +269,7 @@
         "position": "K"
       },
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
