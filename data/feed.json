@@ -1,7 +1,204 @@
 {
-  "generated_at": "2026-11-11T05:48:24.547722+00:00",
+  "generated_at": "2026-11-11T16:00:31.702513+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426214796180586496",
+      "timestamp": 1794398614501,
+      "manager_id": "anthony",
+      "team_name": "Tanner Time",
+      "added": {
+        "player_id": "7562",
+        "name": "Tutu Atwell",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "6806",
+        "name": "J.K. Dobbins",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426213974604537856",
+      "timestamp": 1794398418621,
+      "manager_id": "anthony",
+      "team_name": "Tanner Time",
+      "added": {
+        "player_id": "9228",
+        "name": "Bryce Young",
+        "position": "QB"
+      },
+      "dropped": {
+        "player_id": "TB",
+        "name": "TB",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426159653808529408",
+      "timestamp": 1794385467534,
+      "manager_id": "matt",
+      "team_name": "theMadgician",
+      "added": {
+        "player_id": "BAL",
+        "name": "BAL",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "KC",
+        "name": "KC",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": "streamer"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426081122424459264",
+      "timestamp": 1794384872857,
+      "manager_id": "matt",
+      "team_name": "theMadgician",
+      "added": {
+        "player_id": "12491",
+        "name": "Corey Kiner",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": 12,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426070515398754304",
+      "timestamp": 1794384872857,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "12504",
+        "name": "Kaleb Johnson",
+        "position": "RB"
+      },
+      "dropped": null,
+      "faab": 0,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426021985695072256",
+      "timestamp": 1794384872857,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "13269",
+        "name": "Fernando Mendoza",
+        "position": "QB"
+      },
+      "dropped": {
+        "player_id": "8161",
+        "name": "Malik Willis",
+        "position": "QB"
+      },
+      "faab": 1,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426021938144215040",
+      "timestamp": 1794384872857,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "13298",
+        "name": "KC Concepcion Jr.",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": 10,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426015345243598848",
+      "timestamp": 1794384872857,
+      "manager_id": "bill_m",
+      "team_name": "Bandits",
+      "added": {
+        "player_id": "3286",
+        "name": "Demarcus Robinson",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "11610",
+        "name": "Malik Washington",
+        "position": "WR"
+      },
+      "faab": 0,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426000936337170432",
+      "timestamp": 1794384872857,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "5189",
+        "name": "Eddy Pineiro",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "2020",
+        "name": "Cairo Santos",
+        "position": "K"
+      },
+      "faab": 0,
+      "remark": "streamer"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426000786613096448",
+      "timestamp": 1794384872857,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "12718",
+        "name": "Konata Mumpfield",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "11581",
+        "name": "MarShawn Lloyd",
+        "position": "RB"
+      },
+      "faab": 14,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426000248991420416",
+      "timestamp": 1794384872857,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "4663",
+        "name": "Austin Ekeler",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "7561",
+        "name": "Elijah Mitchell",
+        "position": "RB"
+      },
+      "faab": 0,
+      "remark": "depth"
+    },
     {
       "type": "trade",
       "transaction_id": "1426016960633634816",
@@ -156,196 +353,6 @@
       "dropped": null,
       "faab": null,
       "remark": "streamer"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423711427339771904",
-      "timestamp": 1793801764858,
-      "manager_id": "mikey_g",
-      "team_name": "Supernova Takeover",
-      "added": {
-        "player_id": "NYG",
-        "name": "NYG",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "LV",
-        "name": "LV",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423669473424027648",
-      "timestamp": 1793791762265,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "8161",
-        "name": "Malik Willis",
-        "position": "QB"
-      },
-      "dropped": {
-        "player_id": "8210",
-        "name": "Chig Okonkwo",
-        "position": "TE"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423651478714753024",
-      "timestamp": 1793787471992,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "BUF",
-        "name": "BUF",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "WAS",
-        "name": "WAS",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423651325194854400",
-      "timestamp": 1793787435390,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "2020",
-        "name": "Cairo Santos",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "7049",
-        "name": "Jauan Jennings",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423651096676626432",
-      "timestamp": 1793787380907,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "4993",
-        "name": "Mike Gesicki",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "8111",
-        "name": "Cade Otton",
-        "position": "TE"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423650620245630976",
-      "timestamp": 1793787267317,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "7561",
-        "name": "Elijah Mitchell",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "12711",
-        "name": "Tyler Loop",
-        "position": "K"
-      },
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423507778906939392",
-      "timestamp": 1793780101890,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "6130",
-        "name": "Devin Singletary",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "4454",
-        "name": "Kendrick Bourne",
-        "position": "WR"
-      },
-      "faab": 4,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423500603392380928",
-      "timestamp": 1793780101890,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "CHI",
-        "name": "CHI",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "3257",
-        "name": "Jacoby Brissett",
-        "position": "QB"
-      },
-      "faab": 0,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423500331806965760",
-      "timestamp": 1793780101890,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "11625",
-        "name": "Adonai Mitchell",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "12485",
-        "name": "Tez Johnson",
-        "position": "WR"
-      },
-      "faab": 4,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1423494283628965888",
-      "timestamp": 1793780101890,
-      "manager_id": "bill_m",
-      "team_name": "Bandits",
-      "added": {
-        "player_id": "7042",
-        "name": "Tyler Bass",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "7839",
-        "name": "Evan McPherson",
-        "position": "K"
-      },
-      "faab": 1,
-      "remark": null
     }
   ]
 }
