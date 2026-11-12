@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T16:00:31.702513+00:00",
+  "generated_at": "2026-11-12T01:51:48.769631+00:00",
   "window_days": 7,
   "items": [
     {
@@ -197,7 +197,7 @@
         "position": "RB"
       },
       "faab": 0,
-      "remark": "depth"
+      "remark": null
     },
     {
       "type": "trade",
