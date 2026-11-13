@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T06:14:28.576365+00:00",
+  "generated_at": "2026-11-13T16:03:59.656546+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,11 +7,11 @@
       "week": 10,
       "team_a": "Newman’s Owen",
       "score_a": 20.3,
-      "projected_a": 124.54,
+      "projected_a": 124.48,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 139.9,
-      "timestamp": 1794550468576.176
+      "projected_b": 140.12,
+      "timestamp": 1794585839656.372
     },
     {
       "type": "live_score",
@@ -21,41 +21,79 @@
       "projected_a": 124.98,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 128.26,
-      "timestamp": 1794550468576.172
+      "projected_b": 130.77,
+      "timestamp": 1794585839656.367
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Jake From State Farm",
       "score_a": 45.9,
-      "projected_a": 135.67,
+      "projected_a": 136.32,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 141.25,
-      "timestamp": 1794550468576.167
+      "projected_b": 140.94,
+      "timestamp": 1794585839656.364
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "theMadgician",
       "score_a": 33.4,
-      "projected_a": 143.0,
+      "projected_a": 142.7,
       "team_b": "VRDNO",
       "score_b": 9.2,
       "projected_b": 142.53,
-      "timestamp": 1794550468576.14
+      "timestamp": 1794585839656.3599
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernova Takeover",
       "score_a": 7.0,
-      "projected_a": 148.08,
+      "projected_a": 147.79,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.4,
-      "projected_b": 135.11,
-      "timestamp": 1794550468576.1199
+      "projected_b": 135.08,
+      "timestamp": 1794585839656.341
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426940985035722752",
+      "timestamp": 1794571751415,
+      "manager_id": "mikey_k",
+      "team_name": "ROK Navy's Finest",
+      "added": {
+        "player_id": "KC",
+        "name": "KC",
+        "position": "DEF"
+      },
+      "dropped": {
+        "player_id": "DET",
+        "name": "DET",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1426940305839493120",
+      "timestamp": 1794571589483,
+      "manager_id": "mikey_k",
+      "team_name": "ROK Navy's Finest",
+      "added": {
+        "player_id": "5995",
+        "name": "Justice Hill",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "CAR",
+        "name": "CAR",
+        "position": "DEF"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
