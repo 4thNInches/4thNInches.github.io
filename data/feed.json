@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:52:49.825563+00:00",
+  "generated_at": "2026-11-14T23:47:46.378443+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,55 @@
       "week": 10,
       "team_a": "Newman’s Owen",
       "score_a": 20.3,
-      "projected_a": 124.42,
+      "projected_a": 124.55,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 107.35,
-      "timestamp": 1794678769825.373
+      "projected_b": 118.3,
+      "timestamp": 1794700066378.247
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernovas",
       "score_a": 28.16,
-      "projected_a": 133.52,
+      "projected_a": 133.55,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 132.1,
-      "timestamp": 1794678769825.371
+      "projected_b": 132.05,
+      "timestamp": 1794700066378.244
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Jake From State Farm",
       "score_a": 45.9,
-      "projected_a": 131.7,
+      "projected_a": 132.55,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 140.5,
-      "timestamp": 1794678769825.367
+      "projected_b": 140.93,
+      "timestamp": 1794700066378.241
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "theMadgician",
       "score_a": 33.4,
-      "projected_a": 144.35,
+      "projected_a": 143.99,
       "team_b": "VRDNO",
       "score_b": 9.2,
-      "projected_b": 142.47,
-      "timestamp": 1794678769825.363
+      "projected_b": 142.17,
+      "timestamp": 1794700066378.237
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernova Takeover",
       "score_a": 7.0,
-      "projected_a": 152.16,
+      "projected_a": 155.61,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.4,
-      "projected_b": 134.57,
-      "timestamp": 1794678769825.348
+      "projected_b": 134.64,
+      "timestamp": 1794700066378.218
     },
     {
       "type": "waiver_move",
@@ -467,21 +467,6 @@
         "name": "AJ Barner",
         "position": "TE"
       },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1424888757928071168",
-      "timestamp": 1794082462345,
-      "manager_id": "mikey_g",
-      "team_name": "Supernova Takeover",
-      "added": {
-        "player_id": "11579",
-        "name": "Audric Estime",
-        "position": "RB"
-      },
-      "dropped": null,
       "faab": null,
       "remark": null
     }
