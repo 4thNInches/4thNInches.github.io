@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T16:03:59.656546+00:00",
+  "generated_at": "2026-11-14T00:49:53.556986+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,89 @@
       "week": 10,
       "team_a": "Newman’s Owen",
       "score_a": 20.3,
-      "projected_a": 124.48,
+      "projected_a": 124.4,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 140.12,
-      "timestamp": 1794585839656.372
+      "projected_b": 125.26,
+      "timestamp": 1794617393556.8188
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernovas",
       "score_a": 28.16,
-      "projected_a": 124.98,
+      "projected_a": 133.52,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 130.77,
-      "timestamp": 1794585839656.367
+      "projected_b": 132.07,
+      "timestamp": 1794617393556.8171
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Jake From State Farm",
       "score_a": 45.9,
-      "projected_a": 136.32,
+      "projected_a": 131.7,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 140.94,
-      "timestamp": 1794585839656.364
+      "projected_b": 140.44,
+      "timestamp": 1794617393556.814
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "theMadgician",
       "score_a": 33.4,
-      "projected_a": 142.7,
+      "projected_a": 144.35,
       "team_b": "VRDNO",
       "score_b": 9.2,
-      "projected_b": 142.53,
-      "timestamp": 1794585839656.3599
+      "projected_b": 142.47,
+      "timestamp": 1794617393556.812
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernova Takeover",
       "score_a": 7.0,
-      "projected_a": 147.79,
+      "projected_a": 150.11,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.4,
-      "projected_b": 135.08,
-      "timestamp": 1794585839656.341
+      "projected_b": 134.57,
+      "timestamp": 1794617393556.802
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1427079948350263296",
+      "timestamp": 1794604882852,
+      "manager_id": "nick",
+      "team_name": "Jake From State Farm",
+      "added": {
+        "player_id": "TB",
+        "name": "TB",
+        "position": "DEF"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": "streamer"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1427035093578305536",
+      "timestamp": 1794594188641,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "11653",
+        "name": "Charlie Smyth",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "6650",
+        "name": "Chase McLaughlin",
+        "position": "K"
+      },
+      "faab": null,
+      "remark": "streamer"
     },
     {
       "type": "waiver_move",
