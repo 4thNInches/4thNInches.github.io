@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T00:49:53.556986+00:00",
+  "generated_at": "2026-11-14T11:20:36.973691+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,11 +7,11 @@
       "week": 10,
       "team_a": "Newman’s Owen",
       "score_a": 20.3,
-      "projected_a": 124.4,
+      "projected_a": 124.42,
       "team_b": "packerlove24",
       "score_b": 0,
       "projected_b": 125.26,
-      "timestamp": 1794617393556.8188
+      "timestamp": 1794655236973.5078
     },
     {
       "type": "live_score",
@@ -21,8 +21,8 @@
       "projected_a": 133.52,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 132.07,
-      "timestamp": 1794617393556.8171
+      "projected_b": 132.1,
+      "timestamp": 1794655236973.5051
     },
     {
       "type": "live_score",
@@ -32,8 +32,8 @@
       "projected_a": 131.7,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 140.44,
-      "timestamp": 1794617393556.814
+      "projected_b": 140.5,
+      "timestamp": 1794655236973.501
     },
     {
       "type": "live_score",
@@ -44,18 +44,18 @@
       "team_b": "VRDNO",
       "score_b": 9.2,
       "projected_b": 142.47,
-      "timestamp": 1794617393556.812
+      "timestamp": 1794655236973.4968
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernova Takeover",
       "score_a": 7.0,
-      "projected_a": 150.11,
+      "projected_a": 150.19,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.4,
       "projected_b": 134.57,
-      "timestamp": 1794617393556.802
+      "timestamp": 1794655236973.478
     },
     {
       "type": "waiver_move",
@@ -499,25 +499,6 @@
       "dropped": null,
       "faab": null,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1424427968779841536",
-      "timestamp": 1794014643311,
-      "manager_id": "bill_m",
-      "team_name": "Bandits",
-      "added": {
-        "player_id": "13414",
-        "name": "Kaelon Black",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "13298",
-        "name": "KC Concepcion Jr.",
-        "position": "WR"
-      },
-      "faab": 2,
-      "remark": "depth"
     }
   ]
 }
