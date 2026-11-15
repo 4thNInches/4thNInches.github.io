@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T23:47:46.378443+00:00",
+  "generated_at": "2026-11-15T05:59:13.984730+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,55 +7,55 @@
       "week": 10,
       "team_a": "Newman’s Owen",
       "score_a": 20.3,
-      "projected_a": 124.55,
+      "projected_a": 124.86,
       "team_b": "packerlove24",
       "score_b": 0,
-      "projected_b": 118.3,
-      "timestamp": 1794700066378.247
+      "projected_b": 118.11,
+      "timestamp": 1794722353984.539
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernovas",
       "score_a": 28.16,
-      "projected_a": 133.55,
+      "projected_a": 151.25,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 132.05,
-      "timestamp": 1794700066378.244
+      "projected_b": 132.29,
+      "timestamp": 1794722353984.536
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Jake From State Farm",
       "score_a": 45.9,
-      "projected_a": 132.55,
+      "projected_a": 132.64,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 140.93,
-      "timestamp": 1794700066378.241
+      "projected_b": 141.48,
+      "timestamp": 1794722353984.531
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "theMadgician",
       "score_a": 33.4,
-      "projected_a": 143.99,
+      "projected_a": 144.09,
       "team_b": "VRDNO",
       "score_b": 9.2,
-      "projected_b": 142.17,
-      "timestamp": 1794700066378.237
+      "projected_b": 142.09,
+      "timestamp": 1794722353984.526
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernova Takeover",
       "score_a": 7.0,
-      "projected_a": 155.61,
+      "projected_a": 155.62,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.4,
-      "projected_b": 134.64,
-      "timestamp": 1794700066378.218
+      "projected_b": 134.97,
+      "timestamp": 1794722353984.508
     },
     {
       "type": "waiver_move",
