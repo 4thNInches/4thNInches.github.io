@@ -1,61 +1,99 @@
 {
-  "generated_at": "2026-11-15T05:59:13.984730+00:00",
+  "generated_at": "2026-11-15T15:33:23.307886+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Newman’s Owen",
-      "score_a": 20.3,
-      "projected_a": 124.86,
+      "score_a": 41.0,
+      "projected_a": 125.19,
       "team_b": "packerlove24",
-      "score_b": 0,
-      "projected_b": 118.11,
-      "timestamp": 1794722353984.539
+      "score_b": 4.2,
+      "projected_b": 118.0,
+      "timestamp": 1794756803307.749
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernovas",
       "score_a": 28.16,
-      "projected_a": 151.25,
+      "projected_a": 151.37,
       "team_b": "ROK Navy's Finest",
       "score_b": 0,
-      "projected_b": 132.29,
-      "timestamp": 1794722353984.536
+      "projected_b": 132.15,
+      "timestamp": 1794756803307.7468
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Jake From State Farm",
       "score_a": 45.9,
-      "projected_a": 132.64,
+      "projected_a": 132.4,
       "team_b": "Bandits",
       "score_b": 0,
-      "projected_b": 141.48,
-      "timestamp": 1794722353984.531
+      "projected_b": 141.33,
+      "timestamp": 1794756803307.7441
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "theMadgician",
       "score_a": 33.4,
-      "projected_a": 144.09,
+      "projected_a": 143.67,
       "team_b": "VRDNO",
-      "score_b": 9.2,
-      "projected_b": 142.09,
-      "timestamp": 1794722353984.526
+      "score_b": 12.22,
+      "projected_b": 142.7,
+      "timestamp": 1794756803307.741
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Supernova Takeover",
-      "score_a": 7.0,
-      "projected_a": 155.62,
+      "score_a": 16.3,
+      "projected_a": 156.01,
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 6.4,
-      "projected_b": 134.97,
-      "timestamp": 1794722353984.508
+      "projected_b": 134.78,
+      "timestamp": 1794756803307.724
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1427683779257827328",
+      "timestamp": 1794748847358,
+      "manager_id": "anthony",
+      "team_name": "Tanner Time",
+      "added": {
+        "player_id": "12700",
+        "name": "Gavin Bartholomew",
+        "position": "TE"
+      },
+      "dropped": {
+        "player_id": "4037",
+        "name": "Chris Godwin Jr.",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1427639994800951296",
+      "timestamp": 1794738408331,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "12540",
+        "name": "Chimere Dike",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "12529",
+        "name": "TreVeyon Henderson",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -431,44 +469,6 @@
           "faab_sent": []
         }
       ]
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1425154159614668800",
-      "timestamp": 1794145739037,
-      "manager_id": "mikey_g",
-      "team_name": "Supernova Takeover",
-      "added": {
-        "player_id": "3271",
-        "name": "Tyler Higbee",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "5001",
-        "name": "Dalton Schultz",
-        "position": "TE"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1425153819720884224",
-      "timestamp": 1794145658001,
-      "manager_id": "mikey_g",
-      "team_name": "Supernova Takeover",
-      "added": {
-        "player_id": "5001",
-        "name": "Dalton Schultz",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "11603",
-        "name": "AJ Barner",
-        "position": "TE"
-      },
-      "faab": null,
-      "remark": null
     }
   ]
 }
