@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:59:15.361629+00:00",
+  "generated_at": "2026-11-16T18:16:56.065889+00:00",
   "window_days": 7,
   "items": [
     {
@@ -10,8 +10,8 @@
       "projected_a": 118.8,
       "team_b": "Newman’s Owen",
       "score_b": 115.82,
-      "projected_b": 125.37,
-      "timestamp": 1794808755361.441
+      "projected_b": 125.45,
+      "timestamp": 1794853016065.6829
     },
     {
       "type": "live_score",
@@ -22,7 +22,7 @@
       "team_b": "ROK Navy's Finest",
       "score_b": 120.38,
       "projected_b": 132.69,
-      "timestamp": 1794808755361.438
+      "timestamp": 1794853016065.679
     },
     {
       "type": "live_score",
@@ -33,29 +33,29 @@
       "team_b": "Bandits",
       "score_b": 96.2,
       "projected_b": 142.22,
-      "timestamp": 1794808755361.435
+      "timestamp": 1794853016065.676
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "theMadgician",
       "score_a": 167.94,
-      "projected_a": 144.84,
+      "projected_a": 144.63,
       "team_b": "VRDNO",
       "score_b": 103.72,
       "projected_b": 142.57,
-      "timestamp": 1794808755361.4321
+      "timestamp": 1794853016065.6719
     },
     {
       "type": "live_score",
       "week": 10,
       "team_a": "Big Dumb Sports",
       "score_a": 109.36,
-      "projected_a": 133.01,
+      "projected_a": 132.83,
       "team_b": "Tanner Time",
       "score_b": 97.0,
-      "projected_b": 111.82,
-      "timestamp": 1794808755361.428
+      "projected_b": 111.92,
+      "timestamp": 1794853016065.6682
     },
     {
       "type": "live_score",
@@ -66,7 +66,26 @@
       "team_b": "Chig-a-Doodle-Doo",
       "score_b": 157.78,
       "projected_b": 135.08,
-      "timestamp": 1794808755361.412
+      "timestamp": 1794853016065.6519
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1427711105051955200",
+      "timestamp": 1794831877166,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "4037",
+        "name": "Chris Godwin Jr.",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "12504",
+        "name": "Kaleb Johnson",
+        "position": "RB"
+      },
+      "faab": 0,
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
