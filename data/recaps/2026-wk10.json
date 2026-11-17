@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 10,
+  "context": "Across all 12 teams, the week added up to 1678.36 points -- 139.86 on average.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "Somewhere, Deebo Samuel Sr. is still on Big Dumb Sports's bench wondering why -- 30.9 points' worth of wondering, out of 59.8 total left stranded."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "Jake From State Farm did the bare minimum (133.88, 7th in the league) and it was enough, because Bandits did even less (96.2)."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "Jake From State Farm held Bandits to just 96.2 points -- the 12th-worst score in the league this week -- on the way to the win."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "Not close: theMadgician beat VRDNO by 79.62 points, 183.34 to 103.72."
+    }
+  ]
+}

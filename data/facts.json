@@ -469,8 +469,8 @@
   {
     "id": "best_season_record_0002",
     "category": "best_season_record",
-    "text": "In 2026, packerlove24 (Bob) went 8-1-0 — the 2nd-best regular-season mark this league has ever seen.",
-    "value": 0.8888888888888888,
+    "text": "In 2026, packerlove24 (Bob) went 9-1-0 — the 2nd-best regular-season mark this league has ever seen.",
+    "value": 0.9,
     "season": 2026,
     "week": null,
     "round": null,
@@ -481,8 +481,8 @@
   {
     "id": "best_season_record_0003",
     "category": "best_season_record",
-    "text": "In 2026, theMadgician (Matt) went 8-1-0 — the 3rd-best regular-season mark this league has ever seen.",
-    "value": 0.8888888888888888,
+    "text": "In 2026, theMadgician (Matt) went 9-1-0 — the 3rd-best regular-season mark this league has ever seen.",
+    "value": 0.9,
     "season": 2026,
     "week": null,
     "round": null,
@@ -1554,8 +1554,8 @@
   {
     "id": "season_average_score_0012",
     "category": "season_average_score",
-    "text": "2026 regular-season scoring settled in at 133.54 points per team per week, league-wide.",
-    "value": 133.54,
+    "text": "2026 regular-season scoring settled in at 134.18 points per team per week, league-wide.",
+    "value": 134.18,
     "season": 2026,
     "week": null,
     "round": null,
@@ -1588,8 +1588,8 @@
   {
     "id": "career_wins_leaderboard_0001",
     "category": "career_wins_leaderboard",
-    "text": "Across 12 seasons in the league, Nick has piled up 98 career wins — most all-time.",
-    "value": 98,
+    "text": "Across 12 seasons in the league, Nick has piled up 99 career wins — most all-time.",
+    "value": 99,
     "season": null,
     "week": null,
     "round": null,
@@ -1600,8 +1600,8 @@
   {
     "id": "career_wins_leaderboard_0002",
     "category": "career_wins_leaderboard",
-    "text": "Mark is a career 85-72 across 12 seasons (137.45 PPG) — the 2nd-most wins in league history.",
-    "value": 85,
+    "text": "Mark is a career 86-72 across 12 seasons (137.76 PPG) — the 2nd-most wins in league history.",
+    "value": 86,
     "season": null,
     "week": null,
     "round": null,
@@ -1624,8 +1624,8 @@
   {
     "id": "career_wins_leaderboard_0004",
     "category": "career_wins_leaderboard",
-    "text": "Bob is a career 72-85 across 12 seasons (131.02 PPG) — the 4th-most wins in league history.",
-    "value": 72,
+    "text": "Bob is a career 73-85 across 12 seasons (131.05 PPG) — the 4th-most wins in league history.",
+    "value": 73,
     "season": null,
     "week": null,
     "round": null,
@@ -1672,20 +1672,8 @@
   {
     "id": "career_win_pct_leaderboard_0003",
     "category": "career_win_pct_leaderboard",
-    "text": "Nick carries a career 98-59 record (62.4%) across 12 seasons — the 3rd-best all-time win rate in league history (min. 3 seasons played).",
-    "value": 0.6242038216560509,
-    "season": null,
-    "week": null,
-    "round": null,
-    "managers": [
-      "nick"
-    ]
-  },
-  {
-    "id": "career_win_pct_leaderboard_0004",
-    "category": "career_win_pct_leaderboard",
-    "text": "Mikey G carries a career 23-14 record (62.2%) across 3 seasons — the 4th-best all-time win rate in league history (min. 3 seasons played).",
-    "value": 0.6216216216216216,
+    "text": "Mikey G carries a career 24-14 record (63.2%) across 3 seasons — the 3rd-best all-time win rate in league history (min. 3 seasons played).",
+    "value": 0.631578947368421,
     "season": null,
     "week": null,
     "round": null,
@@ -1694,10 +1682,22 @@
     ]
   },
   {
+    "id": "career_win_pct_leaderboard_0004",
+    "category": "career_win_pct_leaderboard",
+    "text": "Nick carries a career 99-59 record (62.7%) across 12 seasons — the 4th-best all-time win rate in league history (min. 3 seasons played).",
+    "value": 0.6265822784810127,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "nick"
+    ]
+  },
+  {
     "id": "career_win_pct_leaderboard_0005",
     "category": "career_win_pct_leaderboard",
-    "text": "Mark carries a career 85-72 record (54.1%) across 12 seasons — the 5th-best all-time win rate in league history (min. 3 seasons played).",
-    "value": 0.5414012738853503,
+    "text": "Mark carries a career 86-72 record (54.4%) across 12 seasons — the 5th-best all-time win rate in league history (min. 3 seasons played).",
+    "value": 0.5443037974683544,
     "season": null,
     "week": null,
     "round": null,
@@ -5193,8 +5193,8 @@
   {
     "id": "head_to_head_record_0061",
     "category": "head_to_head_record",
-    "text": "Bob leads the all-time series 7-6 over Owen (13 meetings and counting).",
-    "value": 1,
+    "text": "Bob leads the all-time series 8-6 over Owen (14 meetings and counting).",
+    "value": 2,
     "season": null,
     "week": null,
     "round": null,
@@ -7676,8 +7676,8 @@
   {
     "id": "head_to_head_record_0108",
     "category": "head_to_head_record",
-    "text": "Nick leads the all-time series 6-4 over Bill M (10 meetings and counting).",
-    "value": 2,
+    "text": "Nick leads the all-time series 7-4 over Bill M (11 meetings and counting).",
+    "value": 3,
     "season": null,
     "week": null,
     "round": null,
@@ -9223,8 +9223,8 @@
   {
     "id": "head_to_head_record_0136",
     "category": "head_to_head_record",
-    "text": "Anthony leads the all-time series 6-3 over Dennis (9 meetings and counting).",
-    "value": 3,
+    "text": "Anthony leads the all-time series 6-4 over Dennis (10 meetings and counting).",
+    "value": 2,
     "season": null,
     "week": null,
     "round": null,
@@ -9275,8 +9275,8 @@
   {
     "id": "head_to_head_never_playoffs_0043",
     "category": "head_to_head_never_playoffs",
-    "text": "Despite playing 9 times, Anthony and Dennis have never crossed paths in the playoffs.",
-    "value": 9,
+    "text": "Despite playing 10 times, Anthony and Dennis have never crossed paths in the playoffs.",
+    "value": 10,
     "season": null,
     "week": null,
     "round": null,
@@ -10796,8 +10796,8 @@
   {
     "id": "head_to_head_record_0162",
     "category": "head_to_head_record",
-    "text": "Mikey G is a career 2-0 against John, spanning 2 meetings.",
-    "value": 2,
+    "text": "Mikey G is a career 3-0 against John, spanning 3 meetings.",
+    "value": 3,
     "season": null,
     "week": null,
     "round": null,
@@ -10820,9 +10820,74 @@
     ]
   },
   {
+    "id": "head_to_head_closest_0106",
+    "category": "head_to_head_closest",
+    "text": "The closest game ever between John and Mikey G was a 2.92-point margin in the regular season of 2024, Week 14.",
+    "value": 2.92,
+    "season": 2024,
+    "week": 14,
+    "round": "regular_season",
+    "managers": [
+      "john",
+      "mikey_g"
+    ]
+  },
+  {
+    "id": "head_to_head_highest_combined_0106",
+    "category": "head_to_head_highest_combined",
+    "text": "John and Mikey G combined for 346.94 points in the regular season of 2026, Week 10 — their highest-scoring meeting ever.",
+    "value": 346.94,
+    "season": 2026,
+    "week": 10,
+    "round": "regular_season",
+    "managers": [
+      "john",
+      "mikey_g"
+    ]
+  },
+  {
+    "id": "head_to_head_never_playoffs_0053",
+    "category": "head_to_head_never_playoffs",
+    "text": "Despite playing 3 times, John and Mikey G have never crossed paths in the playoffs.",
+    "value": 3,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "john",
+      "mikey_g"
+    ]
+  },
+  {
+    "id": "head_to_head_shutout_0006",
+    "category": "head_to_head_shutout",
+    "text": "John is winless against Mikey G, 0-3 across their history.",
+    "value": 3,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "john",
+      "mikey_g"
+    ]
+  },
+  {
+    "id": "head_to_head_streak_0076",
+    "category": "head_to_head_streak",
+    "text": "Mikey G has strung together as many as 3 straight wins against John.",
+    "value": 3,
+    "season": null,
+    "week": null,
+    "round": null,
+    "managers": [
+      "john",
+      "mikey_g"
+    ]
+  },
+  {
     "id": "head_to_head_record_0163",
     "category": "head_to_head_record",
-    "text": "Owen is a career 2-1 against Mikey G, spanning 3 meetings.",
+    "text": "Owen leads the all-time series 2-1 over Mikey G (3 meetings and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -10846,7 +10911,7 @@
     ]
   },
   {
-    "id": "head_to_head_closest_0106",
+    "id": "head_to_head_closest_0107",
     "category": "head_to_head_closest",
     "text": "The closest game ever between Mikey G and Owen was a 3.34-point margin in the regular season of 2025, Week 4.",
     "value": 3.34,
@@ -10859,7 +10924,7 @@
     ]
   },
   {
-    "id": "head_to_head_highest_combined_0106",
+    "id": "head_to_head_highest_combined_0107",
     "category": "head_to_head_highest_combined",
     "text": "Mikey G and Owen combined for 327.30 points in the regular season of 2025, Week 4 — their highest-scoring meeting ever.",
     "value": 327.3,
@@ -10872,7 +10937,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0053",
+    "id": "head_to_head_never_playoffs_0054",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Mikey G and Owen have never crossed paths in the playoffs.",
     "value": 3,
@@ -10913,7 +10978,7 @@
   {
     "id": "head_to_head_record_0165",
     "category": "head_to_head_record",
-    "text": "Kodi leads the all-time series 2-1 over Mark (3 meetings and counting).",
+    "text": "Kodi is a career 2-1 against Mark, spanning 3 meetings.",
     "value": 1,
     "season": null,
     "week": null,
@@ -10937,7 +11002,7 @@
     ]
   },
   {
-    "id": "head_to_head_closest_0107",
+    "id": "head_to_head_closest_0108",
     "category": "head_to_head_closest",
     "text": "The closest game ever between Kodi and Mark was a 2.82-point margin in the regular season of 2025, Week 1.",
     "value": 2.82,
@@ -10950,7 +11015,7 @@
     ]
   },
   {
-    "id": "head_to_head_highest_combined_0107",
+    "id": "head_to_head_highest_combined_0108",
     "category": "head_to_head_highest_combined",
     "text": "Kodi and Mark combined for 420.60 points in the regular season of 2026, Week 5 — their highest-scoring meeting ever.",
     "value": 420.6,
@@ -10963,7 +11028,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0054",
+    "id": "head_to_head_never_playoffs_0055",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Kodi and Mark have never crossed paths in the playoffs.",
     "value": 3,
@@ -10978,7 +11043,7 @@
   {
     "id": "head_to_head_record_0166",
     "category": "head_to_head_record",
-    "text": "Matt leads the all-time series 2-0 over Mark (2 meetings and counting).",
+    "text": "Matt is a career 2-0 against Mark, spanning 2 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -11004,8 +11069,8 @@
   {
     "id": "head_to_head_record_0167",
     "category": "head_to_head_record",
-    "text": "Mark is a career 1-0 against Mikey K, spanning 1 meeting.",
-    "value": 1,
+    "text": "Mark leads the all-time series 2-0 over Mikey K (2 meetings and counting).",
+    "value": 2,
     "season": null,
     "week": null,
     "round": null,
@@ -11056,7 +11121,7 @@
   {
     "id": "head_to_head_record_0169",
     "category": "head_to_head_record",
-    "text": "Bill M leads the all-time series 2-0 over Mikey K (2 meetings and counting).",
+    "text": "Bill M is a career 2-0 against Mikey K, spanning 2 meetings.",
     "value": 2,
     "season": null,
     "week": null,
@@ -11082,7 +11147,7 @@
   {
     "id": "head_to_head_record_0170",
     "category": "head_to_head_record",
-    "text": "Bill M is a career 1-0 against Kodi, spanning 1 meeting.",
+    "text": "Bill M leads the all-time series 1-0 over Kodi (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -11262,7 +11327,7 @@
     ]
   },
   {
-    "id": "head_to_head_closest_0108",
+    "id": "head_to_head_closest_0109",
     "category": "head_to_head_closest",
     "text": "The closest game ever between John and Mikey K was a 14.62-point margin in the regular season of 2025, Week 4.",
     "value": 14.62,
@@ -11275,7 +11340,7 @@
     ]
   },
   {
-    "id": "head_to_head_highest_combined_0108",
+    "id": "head_to_head_highest_combined_0109",
     "category": "head_to_head_highest_combined",
     "text": "John and Mikey K combined for 296.74 points in the regular season of 2025, Week 4 — their highest-scoring meeting ever.",
     "value": 296.74,
@@ -11288,7 +11353,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0055",
+    "id": "head_to_head_never_playoffs_0056",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 4 times, John and Mikey K have never crossed paths in the playoffs.",
     "value": 4,
@@ -11353,7 +11418,7 @@
     ]
   },
   {
-    "id": "head_to_head_closest_0109",
+    "id": "head_to_head_closest_0110",
     "category": "head_to_head_closest",
     "text": "The closest game ever between Mikey G and Mikey K was a 6.60-point margin in the regular season of 2026, Week 4.",
     "value": 6.6,
@@ -11366,7 +11431,7 @@
     ]
   },
   {
-    "id": "head_to_head_highest_combined_0109",
+    "id": "head_to_head_highest_combined_0110",
     "category": "head_to_head_highest_combined",
     "text": "Mikey G and Mikey K combined for 283.56 points in the regular season of 2025, Week 7 — their highest-scoring meeting ever.",
     "value": 283.56,
@@ -11379,7 +11444,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0056",
+    "id": "head_to_head_never_playoffs_0057",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Mikey G and Mikey K have never crossed paths in the playoffs.",
     "value": 3,
@@ -11392,9 +11457,9 @@
     ]
   },
   {
-    "id": "head_to_head_shutout_0006",
+    "id": "head_to_head_shutout_0007",
     "category": "head_to_head_shutout",
-    "text": "Mikey G owns Mikey K outright: 3-0 all-time, no ties.",
+    "text": "Mikey K is winless against Mikey G, 0-3 across their history.",
     "value": 3,
     "season": null,
     "week": null,
@@ -11405,7 +11470,7 @@
     ]
   },
   {
-    "id": "head_to_head_streak_0076",
+    "id": "head_to_head_streak_0077",
     "category": "head_to_head_streak",
     "text": "Mikey G's longest winning streak against Mikey K sits at 3 games.",
     "value": 3,
@@ -11420,7 +11485,7 @@
   {
     "id": "head_to_head_record_0179",
     "category": "head_to_head_record",
-    "text": "Matt is a career 2-0 against Mikey K, spanning 2 meetings.",
+    "text": "Matt leads the all-time series 2-0 over Mikey K (2 meetings and counting).",
     "value": 2,
     "season": null,
     "week": null,
@@ -11446,7 +11511,7 @@
   {
     "id": "head_to_head_record_0180",
     "category": "head_to_head_record",
-    "text": "Kodi is a career 2-1 against Mikey K, spanning 3 meetings.",
+    "text": "Kodi leads the all-time series 2-1 over Mikey K (3 meetings and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -11470,7 +11535,7 @@
     ]
   },
   {
-    "id": "head_to_head_closest_0110",
+    "id": "head_to_head_closest_0111",
     "category": "head_to_head_closest",
     "text": "The closest game ever between Kodi and Mikey K was a 3.74-point margin in the regular season of 2026, Week 2.",
     "value": 3.74,
@@ -11483,7 +11548,7 @@
     ]
   },
   {
-    "id": "head_to_head_highest_combined_0110",
+    "id": "head_to_head_highest_combined_0111",
     "category": "head_to_head_highest_combined",
     "text": "Kodi and Mikey K combined for 312.44 points in the regular season of 2026, Week 7 — their highest-scoring meeting ever.",
     "value": 312.44,
@@ -11496,7 +11561,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0057",
+    "id": "head_to_head_never_playoffs_0058",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Kodi and Mikey K have never crossed paths in the playoffs.",
     "value": 3,
@@ -11537,7 +11602,7 @@
   {
     "id": "head_to_head_record_0182",
     "category": "head_to_head_record",
-    "text": "Anthony leads the all-time series 3-0 over Kodi (3 meetings and counting).",
+    "text": "Anthony is a career 3-0 against Kodi, spanning 3 meetings.",
     "value": 3,
     "season": null,
     "week": null,
@@ -11561,7 +11626,7 @@
     ]
   },
   {
-    "id": "head_to_head_closest_0111",
+    "id": "head_to_head_closest_0112",
     "category": "head_to_head_closest",
     "text": "The closest game ever between Anthony and Kodi was a 20.52-point margin in the regular season of 2025, Week 14.",
     "value": 20.52,
@@ -11574,7 +11639,7 @@
     ]
   },
   {
-    "id": "head_to_head_highest_combined_0111",
+    "id": "head_to_head_highest_combined_0112",
     "category": "head_to_head_highest_combined",
     "text": "Anthony and Kodi combined for 341.26 points in the regular season of 2025, Week 2 — their highest-scoring meeting ever.",
     "value": 341.26,
@@ -11587,7 +11652,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0058",
+    "id": "head_to_head_never_playoffs_0059",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Anthony and Kodi have never crossed paths in the playoffs.",
     "value": 3,
@@ -11600,9 +11665,9 @@
     ]
   },
   {
-    "id": "head_to_head_shutout_0007",
+    "id": "head_to_head_shutout_0008",
     "category": "head_to_head_shutout",
-    "text": "Anthony owns Kodi outright: 3-0 all-time, no ties.",
+    "text": "Kodi is winless against Anthony, 0-3 across their history.",
     "value": 3,
     "season": null,
     "week": null,
@@ -11613,9 +11678,9 @@
     ]
   },
   {
-    "id": "head_to_head_streak_0077",
+    "id": "head_to_head_streak_0078",
     "category": "head_to_head_streak",
-    "text": "Anthony's longest winning streak against Kodi sits at 3 games.",
+    "text": "Anthony has strung together as many as 3 straight wins against Kodi.",
     "value": 3,
     "season": null,
     "week": null,
@@ -11652,7 +11717,7 @@
     ]
   },
   {
-    "id": "head_to_head_closest_0112",
+    "id": "head_to_head_closest_0113",
     "category": "head_to_head_closest",
     "text": "The closest game ever between Anthony and Matt was a 9.64-point margin in the regular season of 2025, Week 6.",
     "value": 9.64,
@@ -11665,7 +11730,7 @@
     ]
   },
   {
-    "id": "head_to_head_highest_combined_0112",
+    "id": "head_to_head_highest_combined_0113",
     "category": "head_to_head_highest_combined",
     "text": "Anthony and Matt combined for 240.78 points in the regular season of 2025, Week 12 — their highest-scoring meeting ever.",
     "value": 240.78,
@@ -11678,7 +11743,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0059",
+    "id": "head_to_head_never_playoffs_0060",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 4 times, Anthony and Matt have never crossed paths in the playoffs.",
     "value": 4,
@@ -11691,7 +11756,7 @@
     ]
   },
   {
-    "id": "head_to_head_streak_0078",
+    "id": "head_to_head_streak_0079",
     "category": "head_to_head_streak",
     "text": "Matt has strung together as many as 3 straight wins against Anthony.",
     "value": 3,
@@ -11732,7 +11797,7 @@
   {
     "id": "head_to_head_record_0185",
     "category": "head_to_head_record",
-    "text": "Nick is a career 1-0 against Kodi, spanning 1 meeting.",
+    "text": "Nick leads the all-time series 1-0 over Kodi (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -11758,7 +11823,7 @@
   {
     "id": "head_to_head_record_0186",
     "category": "head_to_head_record",
-    "text": "Bob leads the all-time series 3-0 over Kodi (3 meetings and counting).",
+    "text": "Bob is a career 3-0 against Kodi, spanning 3 meetings.",
     "value": 3,
     "season": null,
     "week": null,
@@ -11782,7 +11847,7 @@
     ]
   },
   {
-    "id": "head_to_head_closest_0113",
+    "id": "head_to_head_closest_0114",
     "category": "head_to_head_closest",
     "text": "The closest game ever between Bob and Kodi was a 6.98-point margin in the regular season of 2026, Week 6.",
     "value": 6.98,
@@ -11795,7 +11860,7 @@
     ]
   },
   {
-    "id": "head_to_head_highest_combined_0113",
+    "id": "head_to_head_highest_combined_0114",
     "category": "head_to_head_highest_combined",
     "text": "Bob and Kodi combined for 314.16 points in the regular season of 2025, Week 4 — their highest-scoring meeting ever.",
     "value": 314.16,
@@ -11808,7 +11873,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0060",
+    "id": "head_to_head_never_playoffs_0061",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Bob and Kodi have never crossed paths in the playoffs.",
     "value": 3,
@@ -11821,7 +11886,7 @@
     ]
   },
   {
-    "id": "head_to_head_shutout_0008",
+    "id": "head_to_head_shutout_0009",
     "category": "head_to_head_shutout",
     "text": "Bob owns Kodi outright: 3-0 all-time, no ties.",
     "value": 3,
@@ -11834,9 +11899,9 @@
     ]
   },
   {
-    "id": "head_to_head_streak_0079",
+    "id": "head_to_head_streak_0080",
     "category": "head_to_head_streak",
-    "text": "Bob's longest winning streak against Kodi sits at 3 games.",
+    "text": "Bob has strung together as many as 3 straight wins against Kodi.",
     "value": 3,
     "season": null,
     "week": null,
@@ -11875,8 +11940,8 @@
   {
     "id": "head_to_head_record_0188",
     "category": "head_to_head_record",
-    "text": "Kodi leads the all-time series 2-0 over Matt (2 meetings and counting).",
-    "value": 2,
+    "text": "Kodi is a career 2-1 against Matt, spanning 3 meetings.",
+    "value": 1,
     "season": null,
     "week": null,
     "round": null,
@@ -11893,6 +11958,45 @@
     "season": 2025,
     "week": 3,
     "round": "regular_season",
+    "managers": [
+      "kodi",
+      "matt"
+    ]
+  },
+  {
+    "id": "head_to_head_closest_0115",
+    "category": "head_to_head_closest",
+    "text": "The closest game ever between Kodi and Matt was a 74.56-point margin in the regular season of 2025, Week 3.",
+    "value": 74.56,
+    "season": 2025,
+    "week": 3,
+    "round": "regular_season",
+    "managers": [
+      "kodi",
+      "matt"
+    ]
+  },
+  {
+    "id": "head_to_head_highest_combined_0115",
+    "category": "head_to_head_highest_combined",
+    "text": "Kodi and Matt combined for 287.06 points in the regular season of 2026, Week 10 — their highest-scoring meeting ever.",
+    "value": 287.06,
+    "season": 2026,
+    "week": 10,
+    "round": "regular_season",
+    "managers": [
+      "kodi",
+      "matt"
+    ]
+  },
+  {
+    "id": "head_to_head_never_playoffs_0062",
+    "category": "head_to_head_never_playoffs",
+    "text": "Despite playing 3 times, Kodi and Matt have never crossed paths in the playoffs.",
+    "value": 3,
+    "season": null,
+    "week": null,
+    "round": null,
     "managers": [
       "kodi",
       "matt"
@@ -11979,7 +12083,7 @@
   {
     "id": "head_to_head_record_0192",
     "category": "head_to_head_record",
-    "text": "John is a career 1-0 against Matt, spanning 1 meeting.",
+    "text": "John leads the all-time series 1-0 over Matt (1 meeting and counting).",
     "value": 1,
     "season": null,
     "week": null,
@@ -12005,7 +12109,7 @@
   {
     "id": "head_to_head_record_0193",
     "category": "head_to_head_record",
-    "text": "Matt leads the all-time series 1-0 over Owen (1 meeting and counting).",
+    "text": "Matt is a career 1-0 against Owen, spanning 1 meeting.",
     "value": 1,
     "season": null,
     "week": null,
@@ -12055,7 +12159,7 @@
     ]
   },
   {
-    "id": "head_to_head_closest_0114",
+    "id": "head_to_head_closest_0116",
     "category": "head_to_head_closest",
     "text": "The closest game ever between Matt and Mikey G was a 0.22-point margin in the regular season of 2025, Week 9.",
     "value": 0.22,
@@ -12068,7 +12172,7 @@
     ]
   },
   {
-    "id": "head_to_head_highest_combined_0114",
+    "id": "head_to_head_highest_combined_0116",
     "category": "head_to_head_highest_combined",
     "text": "Matt and Mikey G combined for 287.02 points in the regular season of 2025, Week 9 — their highest-scoring meeting ever.",
     "value": 287.02,
@@ -12081,7 +12185,7 @@
     ]
   },
   {
-    "id": "head_to_head_never_playoffs_0061",
+    "id": "head_to_head_never_playoffs_0063",
     "category": "head_to_head_never_playoffs",
     "text": "Despite playing 3 times, Matt and Mikey G have never crossed paths in the playoffs.",
     "value": 3,
@@ -12096,7 +12200,7 @@
   {
     "id": "most_played_rivalry_0001",
     "category": "most_played_rivalry",
-    "text": "Anthony vs Owen is the most-played rivalry in league history — 18 all-time meetings.",
+    "text": "Few matchups have run it back as often as Anthony and Owen: 18 meetings and counting, most in league history.",
     "value": 18,
     "season": null,
     "week": null,
@@ -12109,7 +12213,7 @@
   {
     "id": "most_played_rivalry_0002",
     "category": "most_played_rivalry",
-    "text": "Few matchups have run it back as often as Mark and Nick: 17 meetings and counting, 2nd-most in league history.",
+    "text": "Mark vs Nick is the 2nd-most-played rivalry in league history — 17 all-time meetings.",
     "value": 17,
     "season": null,
     "week": null,
@@ -12148,7 +12252,7 @@
   {
     "id": "most_played_rivalry_0005",
     "category": "most_played_rivalry",
-    "text": "Few matchups have run it back as often as Bob and Nick: 16 meetings and counting, 5th-most in league history.",
+    "text": "Bob vs Nick is the 5th-most-played rivalry in league history — 16 all-time meetings.",
     "value": 16,
     "season": null,
     "week": null,
@@ -12171,7 +12275,7 @@
   {
     "id": "seed_champion_history_0002",
     "category": "seed_champion_history",
-    "text": "The #2 seed has won the championship 3 times in league history (2015, 2018, 2024).",
+    "text": "#2 seeds are 3-for-11 in championships won (2015, 2018, 2024).",
     "value": 3,
     "season": null,
     "week": null,
@@ -12181,7 +12285,7 @@
   {
     "id": "seed_champion_history_0003",
     "category": "seed_champion_history",
-    "text": "The #3 seed has won the championship 1 time in league history (2019).",
+    "text": "#3 seeds are 1-for-11 in championships won (2019).",
     "value": 1,
     "season": null,
     "week": null,
@@ -12191,7 +12295,7 @@
   {
     "id": "seed_champion_history_0004",
     "category": "seed_champion_history",
-    "text": "#4 seeds are 2-for-11 in championships won (2016, 2021).",
+    "text": "The #4 seed has won the championship 2 times in league history (2016, 2021).",
     "value": 2,
     "season": null,
     "week": null,
@@ -12653,13 +12757,13 @@
   {
     "id": "luckiest_season_0005",
     "category": "luckiest_season",
-    "text": "Newman’s Owen went 7-2-0 in 2026 despite an expected record of just 4.3 wins by scoring alone — the 5th-luckiest season (by X-Win) in league history.",
-    "value": 2.7272727272727275,
-    "season": 2026,
+    "text": "Cock Warts (Bill C) went 10-3-0 in 2017 despite an expected record of just 7.4 wins by scoring alone — the 5th-luckiest season (by X-Win) in league history.",
+    "value": 2.6363636363636376,
+    "season": 2017,
     "week": null,
     "round": null,
     "managers": [
-      "owen"
+      "bill_c"
     ]
   },
   {
@@ -12713,13 +12817,13 @@
   {
     "id": "unluckiest_season_0005",
     "category": "unluckiest_season",
-    "text": "Supernovas (Mark) went just 2-7-0 in 2026 despite an expected record of 4.7 wins by scoring alone — the 5th-unluckiest season (by X-Win) in league history.",
-    "value": -2.7272727272727275,
-    "season": 2026,
+    "text": "WINNING (Steve) went just 5-8-0 in 2018 despite an expected record of 7.7 wins by scoring alone — the 5th-unluckiest season (by X-Win) in league history.",
+    "value": -2.7272727272727266,
+    "season": 2018,
     "week": null,
     "round": null,
     "managers": [
-      "mark"
+      "steve"
     ]
   },
   {

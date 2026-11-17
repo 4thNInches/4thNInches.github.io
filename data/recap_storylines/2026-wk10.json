@@ -1,0 +1,116 @@
+{
+  "season": "2026",
+  "week": 10,
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "data": {
+        "manager_id": "dennis",
+        "team_name": "Big Dumb Sports",
+        "bench_points": 59.8,
+        "top_bench_player": {
+          "name": "Deebo Samuel Sr.",
+          "points": 30.9
+        }
+      }
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "data": {
+        "winner": {
+          "manager_id": "nick",
+          "team_name": "Jake From State Farm",
+          "score": 133.88,
+          "rank": 7
+        },
+        "loser": {
+          "manager_id": "bill_m",
+          "team_name": "Bandits",
+          "score": 96.2,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "data": {
+        "winner": {
+          "manager_id": "nick",
+          "team_name": "Jake From State Farm",
+          "score": 133.88
+        },
+        "loser": {
+          "manager_id": "bill_m",
+          "team_name": "Bandits",
+          "score": 96.2,
+          "rank": 12
+        }
+      }
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "data": {
+        "winner": {
+          "manager_id": "matt",
+          "team_name": "theMadgician",
+          "score": 183.34
+        },
+        "loser": {
+          "manager_id": "kodi",
+          "team_name": "VRDNO",
+          "score": 103.72
+        },
+        "margin": 79.62
+      }
+    }
+  ],
+  "context": {
+    "weekly_total": 1678.36,
+    "weekly_avg": 139.86,
+    "num_teams": 12,
+    "candidates": [
+      {
+        "type": "biggest_blowout",
+        "rank": 39,
+        "data": {
+          "team_a": "theMadgician",
+          "team_b": "VRDNO",
+          "score_a": 183.34,
+          "score_b": 103.72,
+          "margin": 79.62
+        }
+      },
+      {
+        "type": "highest_score",
+        "rank": 50,
+        "data": {
+          "team_name": "Supernova Takeover",
+          "score": 189.16
+        }
+      },
+      {
+        "type": "lowest_score",
+        "rank": 237,
+        "data": {
+          "team_name": "Bandits",
+          "score": 96.2
+        }
+      },
+      {
+        "type": "closest_game",
+        "rank": 345,
+        "data": {
+          "team_a": "Newman’s Owen",
+          "team_b": "packerlove24",
+          "score_a": 119.22,
+          "score_b": 136.46,
+          "margin": 17.24
+        }
+      }
+    ]
+  }
+}
