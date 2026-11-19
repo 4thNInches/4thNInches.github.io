@@ -1,7 +1,64 @@
 {
-  "generated_at": "2026-11-19T01:49:15.913302+00:00",
+  "generated_at": "2026-11-19T12:45:18.845589+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1429120436968366080",
+      "timestamp": 1795091373248,
+      "manager_id": "anthony",
+      "team_name": "Tanner Time",
+      "added": {
+        "player_id": "5045",
+        "name": "Courtland Sutton",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "9228",
+        "name": "Bryce Young",
+        "position": "QB"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1429120115005214720",
+      "timestamp": 1795091296486,
+      "manager_id": "anthony",
+      "team_name": "Tanner Time",
+      "added": {
+        "player_id": "12492",
+        "name": "Pat Bryant",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "7562",
+        "name": "Tutu Atwell",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1429109491978227712",
+      "timestamp": 1795088763759,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "2020",
+        "name": "Cairo Santos",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "11653",
+        "name": "Charlie Smyth",
+        "position": "K"
+      },
+      "faab": null,
+      "remark": "streamer"
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1428872177502916608",
@@ -363,7 +420,7 @@
         "position": "K"
       },
       "faab": null,
-      "remark": "streamer"
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -438,36 +495,6 @@
         "name": "Eli Raridon",
         "position": "TE"
       },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1426431615843713024",
-      "timestamp": 1794450308337,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "6427",
-        "name": "Ashton Dulin",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1426428774290829312",
-      "timestamp": 1794449630857,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "5119",
-        "name": "Jason Sanders",
-        "position": "K"
-      },
-      "dropped": null,
       "faab": null,
       "remark": null
     }
