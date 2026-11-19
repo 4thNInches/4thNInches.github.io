@@ -1,7 +1,112 @@
 {
-  "generated_at": "2026-11-18T17:08:10.886928+00:00",
+  "generated_at": "2026-11-19T01:49:15.913302+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "waiver_move",
+      "transaction_id": "1428872177502916608",
+      "timestamp": 1795032183579,
+      "manager_id": "dennis",
+      "team_name": "Big Dumb Sports",
+      "added": {
+        "player_id": "10218",
+        "name": "Xavier Hutchinson",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1428871991816884224",
+      "timestamp": 1795032139308,
+      "manager_id": "dennis",
+      "team_name": "Big Dumb Sports",
+      "added": {
+        "player_id": "6819",
+        "name": "Michael Pittman Jr.",
+        "position": "WR"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": "depth"
+    },
+    {
+      "type": "trade",
+      "transaction_id": "1428858573097566208",
+      "timestamp": 1795029098542,
+      "sides": [
+        {
+          "manager_id": "mikey_g",
+          "team_name": "Supernova Takeover",
+          "gave": [
+            {
+              "player_id": "3163",
+              "name": "Jared Goff",
+              "position": "QB"
+            },
+            {
+              "player_id": "9221",
+              "name": "Jahmyr Gibbs",
+              "position": "RB"
+            }
+          ],
+          "got": [
+            {
+              "player_id": "11620",
+              "name": "Rome Odunze",
+              "position": "WR"
+            },
+            {
+              "player_id": "6813",
+              "name": "Jonathan Taylor",
+              "position": "RB"
+            },
+            {
+              "player_id": "8150",
+              "name": "Kyren Williams",
+              "position": "RB"
+            }
+          ],
+          "faab_sent": []
+        },
+        {
+          "manager_id": "dennis",
+          "team_name": "Big Dumb Sports",
+          "gave": [
+            {
+              "player_id": "11620",
+              "name": "Rome Odunze",
+              "position": "WR"
+            },
+            {
+              "player_id": "6813",
+              "name": "Jonathan Taylor",
+              "position": "RB"
+            },
+            {
+              "player_id": "8150",
+              "name": "Kyren Williams",
+              "position": "RB"
+            }
+          ],
+          "got": [
+            {
+              "player_id": "3163",
+              "name": "Jared Goff",
+              "position": "QB"
+            },
+            {
+              "player_id": "9221",
+              "name": "Jahmyr Gibbs",
+              "position": "RB"
+            }
+          ],
+          "faab_sent": []
+        }
+      ]
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1428785043806900224",
