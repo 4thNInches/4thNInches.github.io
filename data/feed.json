@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T06:52:27.929987+00:00",
+  "generated_at": "2026-11-20T16:53:28.618026+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,82 @@
       "week": 11,
       "team_a": "Jake From State Farm",
       "score_a": 1.4,
-      "projected_a": 139.04,
+      "projected_a": 138.79,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 122.49,
-      "timestamp": 1795157547929.781
+      "projected_b": 134.5,
+      "timestamp": 1795193608617.801
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "ROK Navy's Finest",
       "score_a": 5.7,
-      "projected_a": 147.09,
+      "projected_a": 147.18,
       "team_b": "Big Dumb Sports",
       "score_b": 3.3,
-      "projected_b": 126.25,
-      "timestamp": 1795157547929.7769
+      "projected_b": 126.24,
+      "timestamp": 1795193608617.7969
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Supernovas",
       "score_a": 22.0,
-      "projected_a": 164.52,
+      "projected_a": 164.53,
       "team_b": "Tanner Time",
       "score_b": 0,
-      "projected_b": 108.83,
-      "timestamp": 1795157547929.7732
+      "projected_b": 108.75,
+      "timestamp": 1795193608617.793
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Bandits",
       "score_a": 23.0,
-      "projected_a": 130.9,
+      "projected_a": 131.19,
       "team_b": "Supernova Takeover",
       "score_b": 8.8,
-      "projected_b": 133.63,
-      "timestamp": 1795157547929.7559
+      "projected_b": 133.68,
+      "timestamp": 1795193608617.776
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1429299249023041536",
+      "timestamp": 1795193055894,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "5947",
+        "name": "Jakobi Meyers",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "11631",
+        "name": "Brian Thomas Jr.",
+        "position": "WR"
+      },
+      "faab": 0,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1429298502428557312",
+      "timestamp": 1795174451382,
+      "manager_id": "kodi",
+      "team_name": "VRDNO",
+      "added": {
+        "player_id": "11625",
+        "name": "Adonai Mitchell",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "4663",
+        "name": "Austin Ekeler",
+        "position": "RB"
+      },
+      "faab": 0,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -522,44 +560,6 @@
       },
       "faab": null,
       "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1426940985035722752",
-      "timestamp": 1794571751415,
-      "manager_id": "mikey_k",
-      "team_name": "ROK Navy's Finest",
-      "added": {
-        "player_id": "KC",
-        "name": "KC",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "DET",
-        "name": "DET",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1426940305839493120",
-      "timestamp": 1794571589483,
-      "manager_id": "mikey_k",
-      "team_name": "ROK Navy's Finest",
-      "added": {
-        "player_id": "5995",
-        "name": "Justice Hill",
-        "position": "RB"
-      },
-      "dropped": {
-        "player_id": "CAR",
-        "name": "CAR",
-        "position": "DEF"
-      },
-      "faab": null,
-      "remark": null
     }
   ]
 }
