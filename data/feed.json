@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T16:53:28.618026+00:00",
+  "generated_at": "2026-11-21T01:18:45.323919+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,33 +7,33 @@
       "week": 11,
       "team_a": "Jake From State Farm",
       "score_a": 1.4,
-      "projected_a": 138.79,
+      "projected_a": 139.0,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 134.5,
-      "timestamp": 1795193608617.801
+      "projected_b": 140.61,
+      "timestamp": 1795223925323.676
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "ROK Navy's Finest",
       "score_a": 5.7,
-      "projected_a": 147.18,
+      "projected_a": 147.21,
       "team_b": "Big Dumb Sports",
       "score_b": 3.3,
-      "projected_b": 126.24,
-      "timestamp": 1795193608617.7969
+      "projected_b": 125.93,
+      "timestamp": 1795223925323.672
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Supernovas",
       "score_a": 22.0,
-      "projected_a": 164.53,
+      "projected_a": 164.78,
       "team_b": "Tanner Time",
       "score_b": 0,
-      "projected_b": 108.75,
-      "timestamp": 1795193608617.793
+      "projected_b": 108.88,
+      "timestamp": 1795223925323.668
     },
     {
       "type": "live_score",
@@ -43,8 +43,8 @@
       "projected_a": 131.19,
       "team_b": "Supernova Takeover",
       "score_b": 8.8,
-      "projected_b": 133.68,
-      "timestamp": 1795193608617.776
+      "projected_b": 135.82,
+      "timestamp": 1795223925323.6511
     },
     {
       "type": "waiver_move",
@@ -523,40 +523,6 @@
         "player_id": "12529",
         "name": "TreVeyon Henderson",
         "position": "RB"
-      },
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1427079948350263296",
-      "timestamp": 1794604882852,
-      "manager_id": "nick",
-      "team_name": "Jake From State Farm",
-      "added": {
-        "player_id": "TB",
-        "name": "TB",
-        "position": "DEF"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "streamer"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1427035093578305536",
-      "timestamp": 1794594188641,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "11653",
-        "name": "Charlie Smyth",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "6650",
-        "name": "Chase McLaughlin",
-        "position": "K"
       },
       "faab": null,
       "remark": "depth"
