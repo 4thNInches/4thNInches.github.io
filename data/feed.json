@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T21:33:30.694948+00:00",
+  "generated_at": "2026-11-22T06:18:20.610044+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,63 @@
       "week": 11,
       "team_a": "Jake From State Farm",
       "score_a": 1.4,
-      "projected_a": 140.26,
+      "projected_a": 140.37,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 137.76,
-      "timestamp": 1795296810694.741
+      "projected_b": 138.11,
+      "timestamp": 1795328300609.903
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "ROK Navy's Finest",
       "score_a": 5.7,
-      "projected_a": 148.9,
+      "projected_a": 149.45,
       "team_b": "Big Dumb Sports",
       "score_b": 3.3,
-      "projected_b": 126.28,
-      "timestamp": 1795296810694.7378
+      "projected_b": 126.49,
+      "timestamp": 1795328300609.9
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Supernovas",
       "score_a": 22.0,
-      "projected_a": 164.41,
+      "projected_a": 172.29,
       "team_b": "Tanner Time",
       "score_b": 0,
-      "projected_b": 109.99,
-      "timestamp": 1795296810694.7341
+      "projected_b": 109.71,
+      "timestamp": 1795328300609.8982
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Bandits",
       "score_a": 23.0,
-      "projected_a": 130.74,
+      "projected_a": 130.95,
       "team_b": "Supernova Takeover",
       "score_b": 8.8,
-      "projected_b": 134.51,
-      "timestamp": 1795296810694.717
+      "projected_b": 134.59,
+      "timestamp": 1795328300609.887
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1429704861825396760",
+      "timestamp": 1795313647125,
+      "manager_id": "dennis",
+      "team_name": "Big Dumb Sports",
+      "added": {
+        "player_id": "12512",
+        "name": "Quinshon Judkins",
+        "position": "RB"
+      },
+      "dropped": {
+        "player_id": "10213",
+        "name": "Tre Tucker",
+        "position": "WR"
+      },
+      "faab": 40,
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
