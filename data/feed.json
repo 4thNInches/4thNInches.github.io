@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T06:18:20.610044+00:00",
+  "generated_at": "2026-11-22T16:08:37.268009+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,44 +7,44 @@
       "week": 11,
       "team_a": "Jake From State Farm",
       "score_a": 1.4,
-      "projected_a": 140.37,
+      "projected_a": 140.15,
       "team_b": "VRDNO",
       "score_b": 0,
-      "projected_b": 138.11,
-      "timestamp": 1795328300609.903
+      "projected_b": 138.14,
+      "timestamp": 1795363717267.811
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "ROK Navy's Finest",
       "score_a": 5.7,
-      "projected_a": 149.45,
+      "projected_a": 148.95,
       "team_b": "Big Dumb Sports",
       "score_b": 3.3,
-      "projected_b": 126.49,
-      "timestamp": 1795328300609.9
+      "projected_b": 127.04,
+      "timestamp": 1795363717267.8071
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Supernovas",
       "score_a": 22.0,
-      "projected_a": 172.29,
+      "projected_a": 171.92,
       "team_b": "Tanner Time",
       "score_b": 0,
-      "projected_b": 109.71,
-      "timestamp": 1795328300609.8982
+      "projected_b": 108.82,
+      "timestamp": 1795363717267.804
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Bandits",
       "score_a": 23.0,
-      "projected_a": 130.95,
+      "projected_a": 130.6,
       "team_b": "Supernova Takeover",
       "score_b": 8.8,
-      "projected_b": 134.59,
-      "timestamp": 1795328300609.887
+      "projected_b": 133.9,
+      "timestamp": 1795363717267.7852
     },
     {
       "type": "waiver_move",
@@ -623,44 +623,6 @@
         "position": "RB"
       },
       "faab": 0,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1427683779257827328",
-      "timestamp": 1794748847358,
-      "manager_id": "anthony",
-      "team_name": "Tanner Time",
-      "added": {
-        "player_id": "12700",
-        "name": "Gavin Bartholomew",
-        "position": "TE"
-      },
-      "dropped": {
-        "player_id": "4037",
-        "name": "Chris Godwin Jr.",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1427639994800951296",
-      "timestamp": 1794738408331,
-      "manager_id": "john",
-      "team_name": "Chig-a-Doodle-Doo",
-      "added": {
-        "player_id": "12540",
-        "name": "Chimere Dike",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "12529",
-        "name": "TreVeyon Henderson",
-        "position": "RB"
-      },
-      "faab": null,
       "remark": "depth"
     }
   ]
