@@ -1,50 +1,106 @@
 {
-  "generated_at": "2026-11-22T16:08:37.268009+00:00",
+  "generated_at": "2026-11-23T00:43:43.994869+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Jake From State Farm",
-      "score_a": 1.4,
-      "projected_a": 140.15,
+      "score_a": 117.82,
+      "projected_a": 140.75,
       "team_b": "VRDNO",
-      "score_b": 0,
-      "projected_b": 138.14,
-      "timestamp": 1795363717267.811
+      "score_b": 87.96,
+      "projected_b": 130.38,
+      "timestamp": 1795394623994.629
     },
     {
       "type": "live_score",
       "week": 11,
-      "team_a": "ROK Navy's Finest",
-      "score_a": 5.7,
-      "projected_a": 148.95,
-      "team_b": "Big Dumb Sports",
-      "score_b": 3.3,
-      "projected_b": 127.04,
-      "timestamp": 1795363717267.8071
+      "team_a": "Newman’s Owen",
+      "score_a": 110.44,
+      "projected_a": 131.87,
+      "team_b": "theMadgician",
+      "score_b": 55.76,
+      "projected_b": 151.65,
+      "timestamp": 1795394623994.625
+    },
+    {
+      "type": "live_score",
+      "week": 11,
+      "team_a": "Big Dumb Sports",
+      "score_a": 137.96,
+      "projected_a": 127.66,
+      "team_b": "ROK Navy's Finest",
+      "score_b": 71.8,
+      "projected_b": 139.0,
+      "timestamp": 1795394623994.622
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Supernovas",
-      "score_a": 22.0,
-      "projected_a": 171.92,
+      "score_a": 130.6,
+      "projected_a": 171.8,
       "team_b": "Tanner Time",
-      "score_b": 0,
-      "projected_b": 108.82,
-      "timestamp": 1795363717267.804
+      "score_b": 81.9,
+      "projected_b": 109.52,
+      "timestamp": 1795394623994.618
+    },
+    {
+      "type": "live_score",
+      "week": 11,
+      "team_a": "Chig-a-Doodle-Doo",
+      "score_a": 108.64,
+      "projected_a": 141.6,
+      "team_b": "packerlove24",
+      "score_b": 71.9,
+      "projected_b": 129.52,
+      "timestamp": 1795394623994.6138
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Bandits",
-      "score_a": 23.0,
-      "projected_a": 130.6,
+      "score_a": 138.1,
+      "projected_a": 132.77,
       "team_b": "Supernova Takeover",
-      "score_b": 8.8,
-      "projected_b": 133.9,
-      "timestamp": 1795363717267.7852
+      "score_b": 96.1,
+      "projected_b": 133.99,
+      "timestamp": 1795394623994.6
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1430286071266054144",
+      "timestamp": 1795369282121,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "11565",
+        "name": "J.J. McCarthy",
+        "position": "QB"
+      },
+      "dropped": null,
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1430266316580741120",
+      "timestamp": 1795364572237,
+      "manager_id": "owen",
+      "team_name": "Newman’s Owen",
+      "added": {
+        "player_id": "6650",
+        "name": "Chase McLaughlin",
+        "position": "K"
+      },
+      "dropped": {
+        "player_id": "6083",
+        "name": "Matt Gay",
+        "position": "K"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
