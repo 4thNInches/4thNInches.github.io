@@ -1,72 +1,72 @@
 {
-  "generated_at": "2026-11-23T00:43:43.994869+00:00",
+  "generated_at": "2026-11-23T14:18:55.556489+00:00",
   "window_days": 7,
   "items": [
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Jake From State Farm",
-      "score_a": 117.82,
-      "projected_a": 140.75,
+      "score_a": 136.22,
+      "projected_a": 140.8,
       "team_b": "VRDNO",
-      "score_b": 87.96,
-      "projected_b": 130.38,
-      "timestamp": 1795394623994.629
+      "score_b": 93.16,
+      "projected_b": 130.3,
+      "timestamp": 1795443535556.285
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Newman’s Owen",
       "score_a": 110.44,
-      "projected_a": 131.87,
+      "projected_a": 131.83,
       "team_b": "theMadgician",
-      "score_b": 55.76,
-      "projected_b": 151.65,
-      "timestamp": 1795394623994.625
+      "score_b": 97.76,
+      "projected_b": 151.7,
+      "timestamp": 1795443535556.282
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Big Dumb Sports",
-      "score_a": 137.96,
-      "projected_a": 127.66,
+      "score_a": 145.66,
+      "projected_a": 127.65,
       "team_b": "ROK Navy's Finest",
-      "score_b": 71.8,
-      "projected_b": 139.0,
-      "timestamp": 1795394623994.622
+      "score_b": 104.2,
+      "projected_b": 138.62,
+      "timestamp": 1795443535556.279
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Supernovas",
       "score_a": 130.6,
-      "projected_a": 171.8,
+      "projected_a": 171.4,
       "team_b": "Tanner Time",
-      "score_b": 81.9,
+      "score_b": 81.7,
       "projected_b": 109.52,
-      "timestamp": 1795394623994.618
+      "timestamp": 1795443535556.2761
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Chig-a-Doodle-Doo",
-      "score_a": 108.64,
-      "projected_a": 141.6,
+      "score_a": 112.34,
+      "projected_a": 141.34,
       "team_b": "packerlove24",
-      "score_b": 71.9,
-      "projected_b": 129.52,
-      "timestamp": 1795394623994.6138
+      "score_b": 85.4,
+      "projected_b": 129.0,
+      "timestamp": 1795443535556.272
     },
     {
       "type": "live_score",
       "week": 11,
       "team_a": "Bandits",
       "score_a": 138.1,
-      "projected_a": 132.77,
+      "projected_a": 132.74,
       "team_b": "Supernova Takeover",
-      "score_b": 96.1,
-      "projected_b": 133.99,
-      "timestamp": 1795394623994.6
+      "score_b": 118.3,
+      "projected_b": 134.02,
+      "timestamp": 1795443535556.256
     },
     {
       "type": "waiver_move",
@@ -661,25 +661,6 @@
       },
       "faab": 0,
       "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1427711105051955200",
-      "timestamp": 1794831877166,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "4037",
-        "name": "Chris Godwin Jr.",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "12504",
-        "name": "Kaleb Johnson",
-        "position": "RB"
-      },
-      "faab": 0,
-      "remark": "depth"
     }
   ]
 }
