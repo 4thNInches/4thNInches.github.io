@@ -1,0 +1,27 @@
+{
+  "season": "2026",
+  "week": 11,
+  "context": "1490.74 points got scored across the league this week, 124.23 per team -- make of that what you will.",
+  "awards": [
+    {
+      "type": "best_bench",
+      "name": "Best Bench",
+      "text": "Nobody stranded more points on the bench than Jake From State Farm (77.96), headlined by Fernando Mendoza's 27.88-point no-show in the starting lineup."
+    },
+    {
+      "type": "you_didnt_lose",
+      "name": "You Didn't Lose!",
+      "text": "Newman’s Owen scored just 118.94 -- the 7th-highest score in the league this week -- but theMadgician somehow scored even less (97.76), so the win counts all the same."
+    },
+    {
+      "type": "great_defense",
+      "name": "Great Defense!",
+      "text": "Tanner Time put up 81.7 -- the 12th-worst week anyone had -- and Supernovas happily took the free win."
+    },
+    {
+      "type": "mega_blowout",
+      "name": "Mega Blowout",
+      "text": "Supernovas demolished Tanner Time 161.76-81.7, a 80.06-point margin -- the biggest blowout of the week."
+    }
+  ]
+}
