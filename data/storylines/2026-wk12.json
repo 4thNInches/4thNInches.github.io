@@ -76,10 +76,10 @@
                 "position": "QB",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 17.22,
+                  "a": 16.94,
                   "b": 20.95
                 },
-                "gap": 3.73
+                "gap": 4.01
               },
               {
                 "position": "RB",
@@ -94,10 +94,10 @@
                 "position": "WR",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 17.7,
-                  "b": 13.46
+                  "a": 17.65,
+                  "b": 12.18
                 },
-                "gap": 4.25
+                "gap": 5.46
               }
             ]
           }
@@ -171,28 +171,28 @@
                 "position": "QB",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 24.0,
-                  "b": 21.94
+                  "a": 23.84,
+                  "b": 20.95
                 },
-                "gap": 2.07
+                "gap": 2.89
               },
               {
                 "position": "RB",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 17.67,
+                  "a": 17.73,
                   "b": 21.08
                 },
-                "gap": 3.4
+                "gap": 3.34
               },
               {
                 "position": "WR",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 21.31,
+                  "a": 21.22,
                   "b": 18.5
                 },
-                "gap": 2.81
+                "gap": 2.72
               }
             ]
           }
@@ -301,13 +301,22 @@
           "data": {
             "positional_edge": [
               {
+                "position": "QB",
+                "leader": "b",
+                "projected_ppw": {
+                  "a": 15.89,
+                  "b": 17.96
+                },
+                "gap": 2.07
+              },
+              {
                 "position": "RB",
                 "leader": "b",
                 "projected_ppw": {
                   "a": 14.58,
-                  "b": 16.95
+                  "b": 18.03
                 },
-                "gap": 2.37
+                "gap": 3.44
               },
               {
                 "position": "TE",
@@ -397,28 +406,19 @@
                 "position": "QB",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 23.44,
-                  "b": 18.86
+                  "a": 23.32,
+                  "b": 18.61
                 },
-                "gap": 4.58
-              },
-              {
-                "position": "RB",
-                "leader": "a",
-                "projected_ppw": {
-                  "a": 18.74,
-                  "b": 15.65
-                },
-                "gap": 3.08
+                "gap": 4.71
               },
               {
                 "position": "TE",
                 "leader": "a",
                 "projected_ppw": {
                   "a": 14.1,
-                  "b": 10.15
+                  "b": 9.17
                 },
-                "gap": 3.95
+                "gap": 4.93
               }
             ]
           }
@@ -499,37 +499,37 @@
                 "position": "QB",
                 "leader": "a",
                 "projected_ppw": {
-                  "a": 22.04,
-                  "b": 19.08
+                  "a": 21.96,
+                  "b": 17.76
                 },
-                "gap": 2.96
+                "gap": 4.2
               },
               {
                 "position": "RB",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 19.84,
+                  "a": 19.63,
                   "b": 22.06
                 },
-                "gap": 2.22
+                "gap": 2.44
               },
               {
                 "position": "WR",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 18.52,
-                  "b": 26.86
+                  "a": 18.69,
+                  "b": 26.48
                 },
-                "gap": 8.34
+                "gap": 7.79
               },
               {
                 "position": "TE",
                 "leader": "b",
                 "projected_ppw": {
                   "a": 11.79,
-                  "b": 18.89
+                  "b": 18.8
                 },
-                "gap": 7.1
+                "gap": 7.02
               }
             ]
           }
@@ -627,7 +627,7 @@
                 "leader": "b",
                 "projected_ppw": {
                   "a": 22.6,
-                  "b": 25.85
+                  "b": 25.84
                 },
                 "gap": 3.25
               },
@@ -635,28 +635,28 @@
                 "position": "RB",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 14.9,
-                  "b": 21.19
+                  "a": 14.81,
+                  "b": 22.16
                 },
-                "gap": 6.3
+                "gap": 7.36
               },
               {
                 "position": "WR",
                 "leader": "a",
                 "projected_ppw": {
                   "a": 22.93,
-                  "b": 17.22
+                  "b": 17.17
                 },
-                "gap": 5.71
+                "gap": 5.75
               },
               {
                 "position": "TE",
                 "leader": "b",
                 "projected_ppw": {
-                  "a": 13.08,
-                  "b": 17.73
+                  "a": 12.96,
+                  "b": 17.81
                 },
-                "gap": 4.65
+                "gap": 4.85
               }
             ]
           }
