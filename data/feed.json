@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T14:43:03.117782+00:00",
+  "generated_at": "2026-11-25T00:32:02.725402+00:00",
   "window_days": 7,
   "items": [
     {
@@ -284,7 +284,7 @@
         "position": "QB"
       },
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
