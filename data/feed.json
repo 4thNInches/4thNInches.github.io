@@ -1,7 +1,67 @@
 {
-  "generated_at": "2026-11-26T00:08:17.871530+00:00",
+  "generated_at": "2026-11-26T13:43:11.186457+00:00",
   "window_days": 7,
   "items": [
+    {
+      "type": "live_score",
+      "week": 12,
+      "team_a": "Bandits",
+      "score_a": 4.9,
+      "projected_a": 138.46,
+      "team_b": "VRDNO",
+      "score_b": 0,
+      "projected_b": 146.86,
+      "timestamp": 1795700591186.2449
+    },
+    {
+      "type": "live_score",
+      "week": 12,
+      "team_a": "Supernova Takeover",
+      "score_a": 16.5,
+      "projected_a": 128.61,
+      "team_b": "Big Dumb Sports",
+      "score_b": 13.0,
+      "projected_b": 134.22,
+      "timestamp": 1795700591186.2258
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1431494243385380864",
+      "timestamp": 1795657332801,
+      "manager_id": "bob",
+      "team_name": "packerlove24",
+      "added": {
+        "player_id": "12496",
+        "name": "Tai Felton",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "11624",
+        "name": "Xavier Worthy",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1431493466294063104",
+      "timestamp": 1795657147528,
+      "manager_id": "bob",
+      "team_name": "packerlove24",
+      "added": {
+        "player_id": "13317",
+        "name": "Ted Hurst III",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "6806",
+        "name": "J.K. Dobbins",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": null
+    },
     {
       "type": "waiver_move",
       "transaction_id": "1431462185913028608",
@@ -307,7 +367,7 @@
       },
       "dropped": null,
       "faab": null,
-      "remark": null
+      "remark": "depth"
     },
     {
       "type": "waiver_move",
@@ -468,63 +528,6 @@
         "player_id": "5947",
         "name": "Jakobi Meyers",
         "position": "WR"
-      },
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429120436968366080",
-      "timestamp": 1795091373248,
-      "manager_id": "anthony",
-      "team_name": "Tanner Time",
-      "added": {
-        "player_id": "5045",
-        "name": "Courtland Sutton",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "9228",
-        "name": "Bryce Young",
-        "position": "QB"
-      },
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429120115005214720",
-      "timestamp": 1795091296486,
-      "manager_id": "anthony",
-      "team_name": "Tanner Time",
-      "added": {
-        "player_id": "12492",
-        "name": "Pat Bryant",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "7562",
-        "name": "Tutu Atwell",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429109491978227712",
-      "timestamp": 1795088763759,
-      "manager_id": "mark",
-      "team_name": "Supernovas",
-      "added": {
-        "player_id": "2020",
-        "name": "Cairo Santos",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "11653",
-        "name": "Charlie Smyth",
-        "position": "K"
       },
       "faab": null,
       "remark": "depth"
