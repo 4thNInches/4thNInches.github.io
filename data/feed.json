@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T00:28:19.227728+00:00",
+  "generated_at": "2026-11-27T13:40:32.045322+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,66 +7,66 @@
       "week": 12,
       "team_a": "Newman’s Owen",
       "score_a": 58.9,
-      "projected_a": 133.93,
+      "projected_a": 134.01,
       "team_b": "packerlove24",
-      "score_b": 0,
-      "projected_b": 130.27,
-      "timestamp": 1795739299227.522
+      "score_b": 11.1,
+      "projected_b": 130.26,
+      "timestamp": 1795786832045.1208
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Bandits",
-      "score_a": 51.92,
-      "projected_a": 139.43,
+      "score_a": 83.14,
+      "projected_a": 139.35,
       "team_b": "VRDNO",
-      "score_b": 1.9,
-      "projected_b": 147.07,
-      "timestamp": 1795739299227.519
+      "score_b": 9.06,
+      "projected_b": 146.99,
+      "timestamp": 1795786832045.1182
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Supernovas",
-      "score_a": 51.4,
-      "projected_a": 160.95,
+      "score_a": 74.9,
+      "projected_a": 161.0,
       "team_b": "ROK Navy's Finest",
-      "score_b": 0,
-      "projected_b": 135.8,
-      "timestamp": 1795739299227.5159
+      "score_b": 15.3,
+      "projected_b": 135.91,
+      "timestamp": 1795786832045.113
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Jake From State Farm",
-      "score_a": 59.9,
-      "projected_a": 140.25,
+      "score_a": 89.5,
+      "projected_a": 140.27,
       "team_b": "Tanner Time",
       "score_b": 10.1,
       "projected_b": 117.93,
-      "timestamp": 1795739299227.5132
+      "timestamp": 1795786832045.1091
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Chig-a-Doodle-Doo",
-      "score_a": 13.3,
-      "projected_a": 137.27,
+      "score_a": 21.4,
+      "projected_a": 137.41,
       "team_b": "theMadgician",
-      "score_b": 7.5,
-      "projected_b": 147.6,
-      "timestamp": 1795739299227.509
+      "score_b": 11.04,
+      "projected_b": 154.83,
+      "timestamp": 1795786832045.105
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Big Dumb Sports",
-      "score_a": 85.02,
-      "projected_a": 134.5,
+      "score_a": 88.52,
+      "projected_a": 134.54,
       "team_b": "Supernova Takeover",
-      "score_b": 64.6,
-      "projected_b": 128.82,
-      "timestamp": 1795739299227.4932
+      "score_b": 64.5,
+      "projected_b": 128.74,
+      "timestamp": 1795786832045.0872
     },
     {
       "type": "waiver_move",
@@ -252,7 +252,7 @@
         "position": "DEF"
       },
       "faab": 4,
-      "remark": "streamer"
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -496,25 +496,6 @@
         "player_id": "11631",
         "name": "Brian Thomas Jr.",
         "position": "WR"
-      },
-      "faab": 0,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429298502428557312",
-      "timestamp": 1795174451382,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "11625",
-        "name": "Adonai Mitchell",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "4663",
-        "name": "Austin Ekeler",
-        "position": "RB"
       },
       "faab": 0,
       "remark": null
