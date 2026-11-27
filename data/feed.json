@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T13:40:32.045322+00:00",
+  "generated_at": "2026-11-27T23:58:47.193935+00:00",
   "window_days": 7,
   "items": [
     {
@@ -7,66 +7,123 @@
       "week": 12,
       "team_a": "Newman’s Owen",
       "score_a": 58.9,
-      "projected_a": 134.01,
+      "projected_a": 132.54,
       "team_b": "packerlove24",
-      "score_b": 11.1,
-      "projected_b": 130.26,
-      "timestamp": 1795786832045.1208
+      "score_b": 21.1,
+      "projected_b": 128.94,
+      "timestamp": 1795823927193.703
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Bandits",
       "score_a": 83.14,
-      "projected_a": 139.35,
+      "projected_a": 140.91,
       "team_b": "VRDNO",
-      "score_b": 9.06,
-      "projected_b": 146.99,
-      "timestamp": 1795786832045.1182
+      "score_b": 14.66,
+      "projected_b": 149.74,
+      "timestamp": 1795823927193.7002
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Supernovas",
       "score_a": 74.9,
-      "projected_a": 161.0,
+      "projected_a": 153.37,
       "team_b": "ROK Navy's Finest",
-      "score_b": 15.3,
-      "projected_b": 135.91,
-      "timestamp": 1795786832045.113
+      "score_b": 30.5,
+      "projected_b": 135.55,
+      "timestamp": 1795823927193.697
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Jake From State Farm",
       "score_a": 89.5,
-      "projected_a": 140.27,
+      "projected_a": 139.96,
       "team_b": "Tanner Time",
-      "score_b": 10.1,
-      "projected_b": 117.93,
-      "timestamp": 1795786832045.1091
+      "score_b": 20.86,
+      "projected_b": 117.49,
+      "timestamp": 1795823927193.694
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Chig-a-Doodle-Doo",
       "score_a": 21.4,
-      "projected_a": 137.41,
+      "projected_a": 135.93,
       "team_b": "theMadgician",
       "score_b": 11.04,
-      "projected_b": 154.83,
-      "timestamp": 1795786832045.105
+      "projected_b": 149.92,
+      "timestamp": 1795823927193.69
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Big Dumb Sports",
-      "score_a": 88.52,
-      "projected_a": 134.54,
+      "score_a": 109.82,
+      "projected_a": 135.32,
       "team_b": "Supernova Takeover",
       "score_b": 64.5,
-      "projected_b": 128.74,
-      "timestamp": 1795786832045.0872
+      "projected_b": 139.83,
+      "timestamp": 1795823927193.676
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1432181802792939520",
+      "timestamp": 1795821259739,
+      "manager_id": "mikey_g",
+      "team_name": "Supernova Takeover",
+      "added": {
+        "player_id": "1373",
+        "name": "Geno Smith",
+        "position": "QB"
+      },
+      "dropped": {
+        "player_id": "3271",
+        "name": "Tyler Higbee",
+        "position": "TE"
+      },
+      "faab": null,
+      "remark": null
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1432150788653723648",
+      "timestamp": 1795813865391,
+      "manager_id": "mark",
+      "team_name": "Supernovas",
+      "added": {
+        "player_id": "11631",
+        "name": "Brian Thomas Jr.",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "8154",
+        "name": "Brian Robinson Jr.",
+        "position": "RB"
+      },
+      "faab": null,
+      "remark": "depth"
+    },
+    {
+      "type": "waiver_move",
+      "transaction_id": "1432079196699521024",
+      "timestamp": 1795796796540,
+      "manager_id": "john",
+      "team_name": "Chig-a-Doodle-Doo",
+      "added": {
+        "player_id": "11646",
+        "name": "Jalen Coker",
+        "position": "WR"
+      },
+      "dropped": {
+        "player_id": "9502",
+        "name": "Tank Dell",
+        "position": "WR"
+      },
+      "faab": null,
+      "remark": null
     },
     {
       "type": "waiver_move",
@@ -479,25 +536,6 @@
         "position": "DEF"
       },
       "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429299249023041536",
-      "timestamp": 1795193055894,
-      "manager_id": "kodi",
-      "team_name": "VRDNO",
-      "added": {
-        "player_id": "5947",
-        "name": "Jakobi Meyers",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "11631",
-        "name": "Brian Thomas Jr.",
-        "position": "WR"
-      },
-      "faab": 0,
       "remark": null
     }
   ]
