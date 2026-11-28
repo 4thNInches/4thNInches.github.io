@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T23:58:47.193935+00:00",
+  "generated_at": "2026-11-28T07:34:43.959279+00:00",
   "window_days": 7,
   "items": [
     {
@@ -10,8 +10,8 @@
       "projected_a": 132.54,
       "team_b": "packerlove24",
       "score_b": 21.1,
-      "projected_b": 128.94,
-      "timestamp": 1795823927193.703
+      "projected_b": 129.01,
+      "timestamp": 1795851283959.064
     },
     {
       "type": "live_score",
@@ -21,30 +21,30 @@
       "projected_a": 140.91,
       "team_b": "VRDNO",
       "score_b": 14.66,
-      "projected_b": 149.74,
-      "timestamp": 1795823927193.7002
+      "projected_b": 149.89,
+      "timestamp": 1795851283959.062
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Supernovas",
       "score_a": 74.9,
-      "projected_a": 153.37,
+      "projected_a": 153.38,
       "team_b": "ROK Navy's Finest",
       "score_b": 30.5,
-      "projected_b": 135.55,
-      "timestamp": 1795823927193.697
+      "projected_b": 135.56,
+      "timestamp": 1795851283959.059
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Jake From State Farm",
       "score_a": 89.5,
-      "projected_a": 139.96,
+      "projected_a": 140.1,
       "team_b": "Tanner Time",
       "score_b": 20.86,
       "projected_b": 117.49,
-      "timestamp": 1795823927193.694
+      "timestamp": 1795851283959.055
     },
     {
       "type": "live_score",
@@ -54,19 +54,19 @@
       "projected_a": 135.93,
       "team_b": "theMadgician",
       "score_b": 11.04,
-      "projected_b": 149.92,
-      "timestamp": 1795823927193.69
+      "projected_b": 149.97,
+      "timestamp": 1795851283959.052
     },
     {
       "type": "live_score",
       "week": 12,
       "team_a": "Big Dumb Sports",
       "score_a": 109.82,
-      "projected_a": 135.32,
+      "projected_a": 135.37,
       "team_b": "Supernova Takeover",
       "score_b": 64.5,
-      "projected_b": 139.83,
-      "timestamp": 1795823927193.676
+      "projected_b": 139.84,
+      "timestamp": 1795851283959.033
     },
     {
       "type": "waiver_move",
@@ -433,108 +433,6 @@
         "position": "WR"
       },
       "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429708802717925376",
-      "timestamp": 1795231650574,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "7839",
-        "name": "Evan McPherson",
-        "position": "K"
-      },
-      "dropped": {
-        "player_id": "5119",
-        "name": "Jason Sanders",
-        "position": "K"
-      },
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429707284832845824",
-      "timestamp": 1795231288682,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "11624",
-        "name": "Xavier Worthy",
-        "position": "WR"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429706553354625024",
-      "timestamp": 1795231114284,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "11637",
-        "name": "Keon Coleman",
-        "position": "WR"
-      },
-      "dropped": {
-        "player_id": "6427",
-        "name": "Ashton Dulin",
-        "position": "WR"
-      },
-      "faab": null,
-      "remark": "depth"
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429704756191830016",
-      "timestamp": 1795230685807,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "6806",
-        "name": "J.K. Dobbins",
-        "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429702370547216384",
-      "timestamp": 1795230117025,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "4147",
-        "name": "Samaje Perine",
-        "position": "RB"
-      },
-      "dropped": null,
-      "faab": null,
-      "remark": null
-    },
-    {
-      "type": "waiver_move",
-      "transaction_id": "1429700227975106560",
-      "timestamp": 1795229606196,
-      "manager_id": "bob",
-      "team_name": "packerlove24",
-      "added": {
-        "player_id": "DEN",
-        "name": "DEN",
-        "position": "DEF"
-      },
-      "dropped": {
-        "player_id": "SEA",
-        "name": "SEA",
-        "position": "DEF"
-      },
       "faab": null,
       "remark": null
     }
